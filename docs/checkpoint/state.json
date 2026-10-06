@@ -1,0 +1,141 @@
+{
+  "schema": "valve.recovery-checkpoint/1.0",
+  "recorded_at_utc": "2026-10-06T16:55:00Z",
+  "state": "RESEARCH_DELIVERED_CONTROLLED_DESIGN_PENDING",
+  "repository": "reknottycat/valve-agent-design",
+  "local_snapshot_kind": "PARTIAL_TEXT_SNAPSHOT_PLUS_NEW_ARTIFACTS_NOT_FULL_UPSTREAM_CLONE",
+  "local_branch": "design/c3-interface-study-20261006",
+  "frozen_C2_commit": "2566bdee5b52024036e0bbac559dd78f8a903a34",
+  "frozen_C3_commit": "31662e66f0a14e426ab60b53c870f958a60f4ce1",
+  "upstream_reference_commit": "4222b3d4df248b07777315068b9f3c99273d47c4",
+  "engineering_acceptance": false,
+  "manufacturing_authorized": false,
+  "frozen_directories": [
+    {
+      "path": "runs/20261006/CLOUD/T04",
+      "file_count": 64,
+      "manifest_sha256": "38a8de3d58d7afe12892b85850750de6bbbc7bf72e5b746c0f3a3729fea8417a"
+    },
+    {
+      "path": "runs/20261006/C2",
+      "file_count": 93,
+      "manifest_sha256": "9219a22d8f890be233b0019caf6d50b907c7bf65964f7eff4a78f163761cde26"
+    },
+    {
+      "path": "runs/20261006/C3",
+      "file_count": 203,
+      "manifest_sha256": "94dee58d5bdb0664530c4f8b7ed3c3f725059fa0763d7aa28ab7cebcbdbeacb3"
+    }
+  ],
+  "archives": [
+    {
+      "filename": "valve-cloud-T04-20261006.zip",
+      "sha256": "32dcd79b035434752eb152dd7fd6074fae06489554ed221c2182c0a94704fbb0",
+      "bytes": 601957
+    },
+    {
+      "filename": "valve-C2-research-package-20261006.zip",
+      "sha256": "d716892fadf965eee7947c1184c4712daac2f2d2d7277b2eb6e3e3dfc90270c7",
+      "bytes": 12550017
+    },
+    {
+      "filename": "valve-C3-interface-supplement-20261006.zip",
+      "sha256": "2ff71f2b98fd378a4a47e034e045cc98fb9743dd9849d80ed9dc16ec5216e142",
+      "bytes": 1360180
+    },
+    {
+      "filename": "valve-solvers-20261006-evidence.tar.gz",
+      "sha256": "60da7f2b882fcba5bc543befdf0d6107a531fa5702b1c00633d6da334cbf7296",
+      "bytes": 9758743
+    }
+  ],
+  "remote_observation": {
+    "observed_approximately_at_utc": "2026-10-06T16:50:00Z",
+    "read_only": true,
+    "branches": {
+      "main": "4222b3d4df248b07777315068b9f3c99273d47c4",
+      "design/c1-geometry-verification-20261006": "4222b3d4df248b07777315068b9f3c99273d47c4",
+      "design/cloud-validation-20261006": "4222b3d4df248b07777315068b9f3c99273d47c4"
+    },
+    "open_pull_requests": 0,
+    "sync_status": "PAUSED_AFTER_CANCELED_UPLOAD_NOT_SYNCHRONIZED",
+    "known_effects": [
+      "Cloud-validation branch was created at the unchanged upstream commit",
+      "28 standalone blob writes confirmed before cancellation; further parallel batch results uncertain",
+      "No new remote tree, commit, ref update or pull request created"
+    ],
+    "canceled_blob_path": "runs/20261006/CLOUD/T04/evidence/source-replay/T12/out/assembly/lever_asm.step",
+    "must_recheck_before_resume": true,
+    "safe_resume": "Obtain clarification of canceled operation; read fresh branch SHAs; construct a new tree on real upstream base preserving every original path; update isolated branch using expected_sha and force=false; open draft PR; do not push partial local snapshot history or merge automatically."
+  },
+  "solver_state": {
+    "status": "PAUSED_AFTER_CANCELED_APPROVAL",
+    "workspace": "/workspace/shared/valve-solvers-20261006",
+    "pause_flag": "evidence/approval-paused.flag",
+    "openfoam": "Debian v1912 packages extracted and static dependencies resolved; runtime benchmark not executed",
+    "calculix": "Upstream 2.23 executable requires unavailable libgfortran.so.4; runtime not accepted",
+    "canceled_action": "Download/extract official Debian libgfortran4_7.4.0-6_amd64.deb and run ccx -v",
+    "benchmark_inputs": "OpenFOAM standard cavity and four analytical CalculiX tension decks prepared; four synthetic parser tests only",
+    "actual_valve_solver_evidence": false,
+    "resume_rule": "No retry or alternate route until canceled action clarified. Preserve pause flag. Standard benchmark acceptance precedes any actual-valve solver case."
+  },
+  "minimum_design_inputs": [
+    {
+      "id": "D1",
+      "decision": "Target source variant or new derivative; actual P-T, closing/reverse differential, transient and installation envelope/conditions",
+      "why_not_publicly_inferable": "Source variant applicability gives possible service, not the actual intended duty. Literal Ру6, analogous PN6.3 and an unverified PN10 lead do not establish design or test pressure.",
+      "evidence": [
+        "runs/20261006/C2/T06/variant_input_matrix.json",
+        "runs/20261006/C2/T06/study_contract.json",
+        "runs/20261006/C2/T06/evidence_matrix.md"
+      ]
+    },
+    {
+      "id": "D2",
+      "decision": "Governing contract/classification and acceptance requirements, including authorized standard editions/clauses",
+      "why_not_publicly_inferable": "Official metadata verifies scope/status only. Required full text was unavailable or access controlled; a matching flange table does not establish all product requirements.",
+      "evidence": [
+        "runs/20261006/C2/T06/evidence_matrix.md",
+        "https://protect.gost.ru/gost/details/23b3dd83-c416-4ccf-ae9c-77f26bdaffdb",
+        "https://protect.gost.ru/gost/details/8ffe7e89-ad99-4d7d-86b0-b48f85461d3a"
+      ]
+    },
+    {
+      "id": "D3",
+      "decision": "For faithful reconstruction, controlled missing part/connection details; for a new derivative, agreed functional and installation constraints allowing redesigned cover/guide/drive layout",
+      "why_not_publicly_inferable": "GA establishes axial layout and starred references but not complete capture, guide, threads, preload or tolerances. Current C3 cover coupons expand the C2 study envelope; no candidate is selected.",
+      "evidence": [
+        "runs/20261006/C2/T06/sources/source_geometry.jpg",
+        "runs/20261006/C3/README.zh-CN.md",
+        "runs/20261006/C3/manufacturing_work_breakdown.json"
+      ]
+    }
+  ],
+  "stopping_assessment": {
+    "completed_independent_scope": [
+      "Primary source correction and variant mapping",
+      "Actual open-source CAD and exchange validation",
+      "C2 motion/contact and explicit-SI mesh geometry checks",
+      "C3 unselected bolting/packing/drive interfaces, surface support and withdrawal negative controls",
+      "Detailed manufacturing work breakdown and dimension-source register"
+    ],
+    "open_but_not_unconditionally_executable": [
+      "M09 guide/capture detail and continuous motion needs reconstruction source or derivative decision",
+      "Formal material/allowable selection and pressure-part, bolt, gasket, drive sizing require D1/D2",
+      "Final drawings, BOM, inspection and physical test acceptance depend on controlled selections",
+      "Remote synchronization and standard solver benchmarks await cancellation clarification"
+    ],
+    "no_further_speculative_candidates_planned": true,
+    "next_deliverable_when_inputs_resolved": "New C4 controlled design basis with evidence and decisions; preserve C2/C3; then follow M01-M15 dependency order"
+  },
+  "checkpoint_validation": {
+    "normal_unit_tests_passed": 10,
+    "optimized_unit_tests_passed": 10,
+    "frozen_file_records_verified": 360,
+    "four_delivery_archive_hashes_verified": true,
+    "zip_crc_verified": true,
+    "materialized_local_frozen_commit_integrity_verified": true,
+    "cad_rebuild_performed_at_checkpoint": false,
+    "product_or_manufacturing_acceptance": false
+  }
+}
