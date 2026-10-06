@@ -1,0 +1,62 @@
+{
+  "format": "valve-artifact-transport-v1",
+  "original_path_prefix": "runs/20261006/",
+  "chunk_bytes": 409600,
+  "notice": "LOSSLESS TRANSPORT ONLY. Chunks are not original usable files. Run the offline restorer explicitly. Frozen scientific manifests are unchanged.",
+  "files": [
+    {
+      "path": "runs/20261006/C3/T12/out/J12-16/assembly.step",
+      "bytes": 1215110,
+      "sha256": "3f41018289861a7d5c87544b0ed48b921277aa69c3cbd444cb457d36a8a57c96",
+      "git_blob_sha1": "090077bb0d3c0bf6e54cd5bea3b69006c15fa574",
+      "encoding": "zlib",
+      "encoded_bytes": 185593,
+      "encoded_sha256": "66d7dabf66c3b173fbacf140a6f72873453dac6a043c8e6c097ba3c0487e0686",
+      "chunks": [
+        {
+          "path": "artifact_storage/chunks/55e1a820b8f5292246b2eb9f103ce71ad5a2e38cb64871bf38d2bca6dba4e034/000000.bin",
+          "bytes": 185593,
+          "sha256": "66d7dabf66c3b173fbacf140a6f72873453dac6a043c8e6c097ba3c0487e0686"
+        }
+      ],
+      "source_commit": "31662e66f0a14e426ab60b53c870f958a60f4ce1",
+      "content_id": "55e1a820b8f5292246b2eb9f103ce71ad5a2e38cb64871bf38d2bca6dba4e034"
+    },
+    {
+      "path": "runs/20261006/C3/T12/out/J8-16/assembly.step",
+      "bytes": 818381,
+      "sha256": "29a586999a51fdd92a77aa2b6d55155ee8fe62689b57466847da74f2f2fb1927",
+      "git_blob_sha1": "a74428d13ae2abcb82c573baa779f2e3fc99d8e5",
+      "encoding": "zlib",
+      "encoded_bytes": 126331,
+      "encoded_sha256": "66d43341b2971b9a1ada2cf4f6a0161dea171eb2488d61513e6354994ba2be1d",
+      "chunks": [
+        {
+          "path": "artifact_storage/chunks/dcdca960c526eb78c06b5442529c134a40ad06d7255c616cbc1f21c5f0a753a1/000000.bin",
+          "bytes": 126331,
+          "sha256": "66d43341b2971b9a1ada2cf4f6a0161dea171eb2488d61513e6354994ba2be1d"
+        }
+      ],
+      "source_commit": "31662e66f0a14e426ab60b53c870f958a60f4ce1",
+      "content_id": "dcdca960c526eb78c06b5442529c134a40ad06d7255c616cbc1f21c5f0a753a1"
+    },
+    {
+      "path": "runs/20261006/C3/T12/out/J8-20/assembly.step",
+      "bytes": 818563,
+      "sha256": "c310be573391b260c1a3c5f126185d92e19f3c682f14fe3d59972815ff74b5e1",
+      "git_blob_sha1": "b591356b6a7f326f4dbb5609cbb499c845924ef2",
+      "encoding": "zlib",
+      "encoded_bytes": 126479,
+      "encoded_sha256": "c06631d11a86df2c5e76b22e9ec8ad24f51cab2c2d305bb10f7c37efbb5fa06d",
+      "chunks": [
+        {
+          "path": "artifact_storage/chunks/32406c3f3ebdc6073b4d464da5230195eab2d0fda4e5bccffef2999eac7b9582/000000.bin",
+          "bytes": 126479,
+          "sha256": "c06631d11a86df2c5e76b22e9ec8ad24f51cab2c2d305bb10f7c37efbb5fa06d"
+        }
+      ],
+      "source_commit": "31662e66f0a14e426ab60b53c870f958a60f4ce1",
+      "content_id": "32406c3f3ebdc6073b4d464da5230195eab2d0fda4e5bccffef2999eac7b9582"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "schema": "valve.drawing-register/1.0",
+  "status": "STRUCTURE_ONLY_NOT_RELEASE",
+  "drawings": [
+    {
+      "drawing_id": "GA-001",
+      "title": "总装、动作顺序与介质路径",
+      "required_views_and_notes": [
+        "主剖面",
+        "关闭/止回/全开状态",
+        "安装接口",
+        "关键基准"
+      ],
+      "dimension_ids": [
+        "D001",
+        "D002",
+        "D003",
+        "D004",
+        "D005"
+      ],
+      "manufacturing_issue_ready": false
+    },
+    {
+      "drawing_id": "P-101",
+      "title": "阀体",
+      "required_views_and_notes": [
+        "纵剖面",
+        "法兰端视",
+        "局部壁厚",
+        "铸造/加工基准"
+      ],
+      "dimension_ids": [
+        "D001",
+        "D002",
+        "D006",
+        "D010"
+      ],
+      "manufacturing_issue_ready": false
+    },
+    {
+      "drawing_id": "P-102",
+      "title": "阀盖与支架",
+      "required_views_and_notes": [
+        "主剖面",
+        "接头密封面",
+        "螺母和压盖安装部"
+      ],
+      "dimension_ids": [
+        "D007",
+        "D008",
+        "D010"
+      ],
+      "manufacturing_issue_ready": false
+    },
+    {
+      "drawing_id": "P-103",
+      "title": "阀座环",
+      "required_views_and_notes": [
+        "剖面",
+        "连续密封环带",
+        "定位和保持"
+      ],
+      "dimension_ids": [
+        "D006",
+        "D009"
+      ],
+      "manufacturing_issue_ready": false
+    },
+    {
+      "drawing_id": "P-104",
+      "title": "阀瓣与导向",
+      "required_views_and_notes": [
+        "剖面",
+        "密封面",
+        "导向、防脱和行程"
+      ],
+      "dimension_ids": [
+        "D005",
+        "D009"
+      ],
+      "manufacturing_issue_ready": false
+    },
+    {
+      "drawing_id": "P-105",
+      "title": "阀杆",
+      "required_views_and_notes": [
+        "全长",
+        "Tr36x6牙型/公差",
+        "驱动方头",
+        "端部连接"
+      ],
+      "dimension_ids": [
+        "D003",
+        "D004",
+        "D005"
+      ],
+      "manufacturing_issue_ready": false
+    },
+    {
+      "drawing_id": "P-106",
+      "title": "丝杆螺母与保持件",
+      "required_views_and_notes": [
+        "轴向剖面",
+        "外部保持/防转",
+        "啮合长度"
+      ],
+      "dimension_ids": [
+        "D003",
+        "D008"
+      ],
+      "manufacturing_issue_ready": false
+    },
+    {
+      "drawing_id": "P-107",
+      "title": "填料压盖及密封件",
+      "required_views_and_notes": [
+        "剖面",
+        "压紧/调整范围",
+        "防挤出及维护空间"
+      ],
+      "dimension_ids": [
+        "D007",
+        "D010"
+      ],
+      "manufacturing_issue_ready": false
+    },
+    {
+      "drawing_id": "P-108",
+      "title": "阀盖垫片",
+      "required_views_and_notes": [
+        "环形尺寸",
+        "表面要求",
+        "压缩状态"
+      ],
+      "dimension_ids": [
+        "D007"
+      ],
+      "manufacturing_issue_ready": false
+    },
+    {
+      "drawing_id": "STD-120",
+      "title": "紧固件和锁紧配置",
+      "required_views_and_notes": [
+        "件号表",
+        "螺纹/等级",
+        "装配顺序及预紧要求"
+      ],
+      "dimension_ids": [
+        "D007",
+        "D010"
+      ],
+      "manufacturing_issue_ready": false
+    }
+  ]
+}

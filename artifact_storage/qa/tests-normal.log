@@ -1,0 +1,38 @@
+test_altered_final_chunk_batch_preflight (__main__.TransportTests.test_altered_final_chunk_batch_preflight) ... ok
+test_bad_paths (__main__.TransportTests.test_bad_paths) ... ok
+test_chunk_path_escape (__main__.TransportTests.test_chunk_path_escape) ... ok
+test_chunk_size_bool_and_huge (__main__.TransportTests.test_chunk_size_bool_and_huge) ... ok
+test_destination_symlink_ancestor (__main__.TransportTests.test_destination_symlink_ancestor) ... ok
+test_destination_symlink_leaf (__main__.TransportTests.test_destination_symlink_leaf) ... ok
+test_direct_child_original_path (__main__.TransportTests.test_direct_child_original_path) ... ok
+test_duplicates_and_casefold (__main__.TransportTests.test_duplicates_and_casefold) ... ok
+test_existing_matching_skips (__main__.TransportTests.test_existing_matching_skips) ... ok
+test_existing_mismatch_batch_preflight (__main__.TransportTests.test_existing_mismatch_batch_preflight) ... ok
+test_manifest_duplicate_keys (__main__.TransportTests.test_manifest_duplicate_keys) ... ok
+test_missing_final_chunk_batch_preflight (__main__.TransportTests.test_missing_final_chunk_batch_preflight) ... ok
+test_raw_roundtrip_multichunk (__main__.TransportTests.test_raw_roundtrip_multichunk) ... ok
+test_restore_requires_destination (__main__.TransportTests.test_restore_requires_destination) ... ok
+test_root_symlink_and_ancestor (__main__.TransportTests.test_root_symlink_and_ancestor) ... ok
+test_size_types_and_bounds (__main__.TransportTests.test_size_types_and_bounds) ... ok
+test_source_symlink_ancestor (__main__.TransportTests.test_source_symlink_ancestor) ... ok
+test_source_symlink_leaf (__main__.TransportTests.test_source_symlink_leaf) ... ok
+test_split_does_not_modify_source (__main__.TransportTests.test_split_does_not_modify_source) ... ok
+test_split_existing_manifest_never_overwritten (__main__.TransportTests.test_split_existing_manifest_never_overwritten) ... ok
+test_storage_symlink_ancestor (__main__.TransportTests.test_storage_symlink_ancestor) ... ok
+test_storage_symlink_chunk (__main__.TransportTests.test_storage_symlink_chunk) ... ok
+test_target_created_during_atomic_publish (__main__.TransportTests.test_target_created_during_atomic_publish) ... ok
+test_unsupported_codec (__main__.TransportTests.test_unsupported_codec) ... ok
+test_verify_only_no_dest_writes (__main__.TransportTests.test_verify_only_no_dest_writes) ... ok
+test_verify_only_without_destination (__main__.TransportTests.test_verify_only_without_destination) ... ok
+test_writer_rejects_incorrect_raw_digest (__main__.TransportTests.test_writer_rejects_incorrect_raw_digest) ... ok
+test_writer_rejects_oversized_payload (__main__.TransportTests.test_writer_rejects_oversized_payload) ... ok
+test_wrong_git_blob_sha (__main__.TransportTests.test_wrong_git_blob_sha) ... ok
+test_zero_length_raw_and_zlib (__main__.TransportTests.test_zero_length_raw_and_zlib) ... ok
+test_zlib_expansion_limit (__main__.TransportTests.test_zlib_expansion_limit) ... ok
+test_zlib_roundtrip_multimegabyte (__main__.TransportTests.test_zlib_roundtrip_multimegabyte) ... ok
+test_zlib_trailing_and_truncated (__main__.TransportTests.test_zlib_trailing_and_truncated) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 0.100s
+
+OK

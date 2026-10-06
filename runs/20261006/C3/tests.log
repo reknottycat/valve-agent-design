@@ -1,0 +1,26 @@
+test_adjacent_washers_cannot_overlap (test_c3_interfaces.InterfaceTests.test_adjacent_washers_cannot_overlap) ... ok
+test_candidate_paths_are_bounded (test_c3_interfaces.InterfaceTests.test_candidate_paths_are_bounded) ... ok
+test_candidates_remain_unselected (test_c3_interfaces.InterfaceTests.test_candidates_remain_unselected) ... ok
+test_catalog_envelopes_do_not_silently_pass (test_c3_interfaces.InterfaceTests.test_catalog_envelopes_do_not_silently_pass) ... ok
+test_drive_nut_must_surround_stem (test_c3_interfaces.InterfaceTests.test_drive_nut_must_surround_stem) ... ok
+test_duplicate_candidate_ids_rejected (test_c3_interfaces.InterfaceTests.test_duplicate_candidate_ids_rejected) ... ok
+test_gland_stud_must_fit_its_hole (test_c3_interfaces.InterfaceTests.test_gland_stud_must_fit_its_hole) ... ok
+test_hole_gasket_conflict_rejected (test_c3_interfaces.InterfaceTests.test_hole_gasket_conflict_rejected) ... ok
+test_inherited_datum_drift_rejected (test_c3_interfaces.InterfaceTests.test_inherited_datum_drift_rejected) ... ok
+test_material_selection_not_implicit (test_c3_interfaces.InterfaceTests.test_material_selection_not_implicit) ... ok
+test_missing_unknown_fields_do_not_pass_vacuously (test_c3_interfaces.InterfaceTests.test_missing_unknown_fields_do_not_pass_vacuously) ... ok
+test_nan_and_bool_dimensions_rejected (test_c3_interfaces.InterfaceTests.test_nan_and_bool_dimensions_rejected) ... ok
+test_packing_cannot_exceed_follower_axial_space (test_c3_interfaces.InterfaceTests.test_packing_cannot_exceed_follower_axial_space) ... ok
+test_pressure_cannot_be_invented (test_c3_interfaces.InterfaceTests.test_pressure_cannot_be_invented) ... ok
+test_selected_hardware_rejected (test_c3_interfaces.InterfaceTests.test_selected_hardware_rejected) ... ok
+test_torque_cannot_be_invented (test_c3_interfaces.InterfaceTests.test_torque_cannot_be_invented) ... ok
+test_unverified_origin_not_promoted_to_standard (test_c3_interfaces.InterfaceTests.test_unverified_origin_not_promoted_to_standard) ... ok
+test_washer_cannot_cross_pressure_opening (test_c3_interfaces.InterfaceTests.test_washer_cannot_cross_pressure_opening) ... ok
+test_washer_must_have_positive_ring_width (test_c3_interfaces.InterfaceTests.test_washer_must_have_positive_ring_width) ... ok
+test_washer_overhang_is_a_real_negative_control (test_c3_interfaces.InterfaceTests.test_washer_overhang_is_a_real_negative_control) ... ok
+test_wrong_units_rejected (test_c3_interfaces.InterfaceTests.test_wrong_units_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.010s
+
+OK

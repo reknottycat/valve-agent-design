@@ -1,0 +1,55 @@
+{
+  "status": "GEOMETRIC_MEASUREMENTS_ONLY",
+  "interfaces_sha256": "343b1c8f437cab36f16eeef5a2a73a7584f0a1e0c59e70ee3eafd18f74a26053",
+  "joint_support": [
+    {
+      "id": "J8-16",
+      "gasket_face_area_mm2": 17530.087007031045,
+      "gasket_contact_mm2": {
+        "body": 17530.087007031034,
+        "cover": 17530.087007031034
+      },
+      "washer_faces_checked": 16,
+      "washer_expected_face_mm2": 777.3478322226244,
+      "washer_min_contact_mm2": 777.3478322226244,
+      "geometric_support": "FULL_FOR_GASKET_AND_WASHERS",
+      "strength_seating_preload_acceptance": "UNASSESSED"
+    },
+    {
+      "id": "J12-16",
+      "gasket_face_area_mm2": 17530.087007031045,
+      "gasket_contact_mm2": {
+        "body": 17530.087007031034,
+        "cover": 17530.087007031034
+      },
+      "washer_faces_checked": 24,
+      "washer_expected_face_mm2": 777.3478322226244,
+      "washer_min_contact_mm2": 777.3478322226244,
+      "geometric_support": "FULL_FOR_GASKET_AND_WASHERS",
+      "strength_seating_preload_acceptance": "UNASSESSED"
+    },
+    {
+      "id": "J8-20",
+      "gasket_face_area_mm2": 25974.68805988041,
+      "gasket_contact_mm2": {
+        "body": 25974.6880598804,
+        "cover": 25974.6880598804
+      },
+      "washer_faces_checked": 16,
+      "washer_expected_face_mm2": 1210.2985697954678,
+      "washer_min_contact_mm2": 1210.2985697954675,
+      "geometric_support": "FULL_FOR_GASKET_AND_WASHERS",
+      "strength_seating_preload_acceptance": "UNASSESSED"
+    }
+  ],
+  "packing_end_support": {
+    "annular_face_area_mm2": 502.6548245743669,
+    "bottom_housing_contact_mm2": 479.9096937623783,
+    "top_follower_contact_mm2": 466.11810201311596,
+    "bottom_contact_fraction": 0.954750000000003,
+    "top_contact_fraction": 0.9273124999999968,
+    "status": "PARTIAL_GEOMETRIC_END_SUPPORT",
+    "extrusion_compression_and_leakage_acceptance": "UNASSESSED"
+  },
+  "manufacturing_authorized": false
+}

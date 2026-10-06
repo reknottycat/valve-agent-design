@@ -1,0 +1,42 @@
+{
+  "format": "valve-transport-evidence-v1",
+  "frozen_stages": {
+    "T04": "705e3574ade324c382552ff5ff46d992697cbf92",
+    "C2": "2566bdee5b52024036e0bbac559dd78f8a903a34",
+    "C3": "31662e66f0a14e426ab60b53c870f958a60f4ce1",
+    "recovery": "102ee213568ffe1b8a36f9fd3ace45a4039cc6ed",
+    "C4": "79887e8e6fbfaf074262facb5cd9d8ed1b863d27"
+  },
+  "excluded": [
+    "unfrozen C5",
+    "R0 not yet explicitly frozen",
+    "unavailable upstream assets"
+  ],
+  "artifact_count": 20,
+  "raw_bytes": 17982098,
+  "encoded_bytes": 11445335,
+  "chunk_count": 41,
+  "largest_chunk_bytes": 409600,
+  "fresh_restore_verified": true,
+  "verify_only": {
+    "mode": "verify-only",
+    "verified_files": 20,
+    "verified_raw_bytes": 17982098,
+    "created_files": 0,
+    "existing_matching_files": 0
+  },
+  "first_restore": {
+    "mode": "restore",
+    "verified_files": 20,
+    "verified_raw_bytes": 17982098,
+    "created_files": 20,
+    "existing_matching_files": 0
+  },
+  "second_restore": {
+    "mode": "restore",
+    "verified_files": 20,
+    "verified_raw_bytes": 17982098,
+    "created_files": 0,
+    "existing_matching_files": 20
+  }
+}

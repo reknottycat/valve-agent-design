@@ -1,0 +1,25 @@
+{
+  "joint_part_counts": {
+    "J8-16": 43,
+    "J12-16": 63,
+    "J8-20": 43
+  },
+  "packing_parts": 13,
+  "drive_collisions": [
+    {
+      "id": "D40-custom",
+      "measured_overlap_with_C2_handwheel_mm3": 0.0,
+      "measured_collision": false
+    },
+    {
+      "id": "D54-index-scenario",
+      "measured_overlap_with_C2_handwheel_mm3": 7722.903356023227,
+      "measured_collision": true
+    },
+    {
+      "id": "D70-vendor-envelope",
+      "measured_overlap_with_C2_handwheel_mm3": 39361.427590155065,
+      "measured_collision": true
+    }
+  ]
+}

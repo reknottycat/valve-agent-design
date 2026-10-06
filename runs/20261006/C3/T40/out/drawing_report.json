@@ -1,0 +1,9 @@
+{
+  "status": "STUDY_NOT_FOR_MANUFACTURE",
+  "interfaces_sha256": "343b1c8f437cab36f16eeef5a2a73a7584f0a1e0c59e70ee3eafd18f74a26053",
+  "source_preview_report_sha256": "7d3044f4ba9e22865dd3b3695529c5e3f0d466dc824fa021537c0f695a2c1c2a",
+  "output_hashes": {
+    "C3_interface_studies.png": "9aaeece1f493e407de42bb74846668e4d688e2395cb4ccef244ed9104b4d11da",
+    "C3_interface_studies.svg": "94e0e1a7bcef90af3966b11b33bdf742d107905cac9599296a4ca303ef44f233"
+  }
+}

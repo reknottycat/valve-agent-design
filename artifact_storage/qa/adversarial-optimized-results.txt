@@ -1,0 +1,36 @@
+test_altered_later_chunk_publishes_nothing (__main__.Review.test_altered_later_chunk_publishes_nothing) ... ok
+test_bad_original_paths (__main__.Review.test_bad_original_paths) ... ok
+test_conflicting_later_destination_publishes_nothing (__main__.Review.test_conflicting_later_destination_publishes_nothing) ... ok
+test_destination_fifo_is_rejected_without_blocking (__main__.Review.test_destination_fifo_is_rejected_without_blocking) ... ok
+test_destination_file_as_ancestor (__main__.Review.test_destination_file_as_ancestor) ... ok
+test_duplicate_casefold_and_prefix_conflicts (__main__.Review.test_duplicate_casefold_and_prefix_conflicts) ... ok
+test_duplicate_json_keys_are_rejected (__main__.Review.test_duplicate_json_keys_are_rejected) ... ok
+test_invalid_integer_fields (__main__.Review.test_invalid_integer_fields) ... ok
+test_large_zlib_decode_buffers (__main__.Review.test_large_zlib_decode_buffers) ... ok
+test_missing_later_chunk_publishes_nothing (__main__.Review.test_missing_later_chunk_publishes_nothing) ... ok
+test_no_overwrite_when_leaf_appears_at_publish (__main__.Review.test_no_overwrite_when_leaf_appears_at_publish) ... ok
+test_nonfinite_json_numbers_are_rejected (__main__.Review.test_nonfinite_json_numbers_are_rejected) ... ok
+test_overexpansion_publishes_nothing (__main__.Review.test_overexpansion_publishes_nothing) ... ok
+test_roundtrip_modes_and_chunk_boundaries (__main__.Review.test_roundtrip_modes_and_chunk_boundaries) ... ok
+test_source_fifo_is_rejected_without_blocking (__main__.Review.test_source_fifo_is_rejected_without_blocking) ... ok
+test_split_later_invalid_source_publishes_nothing (__main__.Review.test_split_later_invalid_source_publishes_nothing) ... ok
+test_symlink_bundle_root_ancestor (__main__.Review.test_symlink_bundle_root_ancestor) ... ok
+test_symlink_chunk_ancestor (__main__.Review.test_symlink_chunk_ancestor) ... ok
+test_symlink_chunk_leaf (__main__.Review.test_symlink_chunk_leaf) ... ok
+test_symlink_destination_ancestor (__main__.Review.test_symlink_destination_ancestor) ... ok
+test_symlink_destination_leaf (__main__.Review.test_symlink_destination_leaf) ... ok
+test_symlink_destination_root (__main__.Review.test_symlink_destination_root) ... ok
+test_symlink_manifest (__main__.Review.test_symlink_manifest) ... ok
+test_symlink_source_ancestor (__main__.Review.test_symlink_source_ancestor) ... ok
+test_symlink_source_leaf (__main__.Review.test_symlink_source_leaf) ... ok
+test_symlink_source_root (__main__.Review.test_symlink_source_root) ... ok
+test_unsupported_codec (__main__.Review.test_unsupported_codec) ... ok
+test_verify_only_has_no_publication (__main__.Review.test_verify_only_has_no_publication) ... ok
+test_wrong_git_hash_publishes_nothing (__main__.Review.test_wrong_git_hash_publishes_nothing) ... ok
+test_wrong_raw_hash_publishes_nothing (__main__.Review.test_wrong_raw_hash_publishes_nothing) ... ok
+test_zlib_bad_streams (__main__.Review.test_zlib_bad_streams) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.632s
+
+OK

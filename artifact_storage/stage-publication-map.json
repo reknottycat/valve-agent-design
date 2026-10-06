@@ -1,0 +1,102 @@
+[
+  {
+    "stage": "T04",
+    "frozen_commit": "705e3574ade324c382552ff5ff46d992697cbf92",
+    "manifest_path": null,
+    "transport_original_paths": [],
+    "transport_chunk_paths": []
+  },
+  {
+    "stage": "C2",
+    "frozen_commit": "2566bdee5b52024036e0bbac559dd78f8a903a34",
+    "manifest_path": "artifact_storage/manifests/C2.json",
+    "transport_original_paths": [
+      "runs/20261006/C2/T06/sources/fastener_detail.png",
+      "runs/20261006/C2/T06/sources/length600_reference.png",
+      "runs/20261006/C2/T06/sources/notes10_26.png",
+      "runs/20261006/C2/T06/sources/notes1_9.png",
+      "runs/20261006/C2/T06/sources/notes27_31.png",
+      "runs/20261006/C2/T06/sources/source_geometry.jpg",
+      "runs/20261006/C2/T06/sources/source_requirements.jpg",
+      "runs/20261006/C2/T06/sources/spindle_disc_section.png",
+      "runs/20261006/C2/T06/sources/variant_table.png",
+      "runs/20261006/C2/T12/out/check_closed/assembly.step",
+      "runs/20261006/C2/T12/out/check_closed/body.step",
+      "runs/20261006/C2/T12/out/closed/assembly.step",
+      "runs/20261006/C2/T12/out/closed/body.step",
+      "runs/20261006/C2/T12/out/open/assembly.step",
+      "runs/20261006/C2/T12/out/open/body.step",
+      "runs/20261006/C2/T22/out/body.step",
+      "runs/20261006/C2/T23/out/fluid_open_si.msh"
+    ],
+    "transport_chunk_paths": [
+      "artifact_storage/chunks/940c3f09c77165f41bcf2f7b55333ca89ff6c7354ca33de27dfb330b3074db87/000000.bin",
+      "artifact_storage/chunks/940c3f09c77165f41bcf2f7b55333ca89ff6c7354ca33de27dfb330b3074db87/000001.bin",
+      "artifact_storage/chunks/c9e8f52f381b171cee797cd51383d81f1d9ee90bd9e46b77de895f9f967a262d/000000.bin",
+      "artifact_storage/chunks/c9e8f52f381b171cee797cd51383d81f1d9ee90bd9e46b77de895f9f967a262d/000001.bin",
+      "artifact_storage/chunks/e2725a64d8dab6f2cc6e1a43521f4a8c64de314721495b852999b7c0a12c8ed3/000000.bin",
+      "artifact_storage/chunks/e2725a64d8dab6f2cc6e1a43521f4a8c64de314721495b852999b7c0a12c8ed3/000001.bin",
+      "artifact_storage/chunks/e2725a64d8dab6f2cc6e1a43521f4a8c64de314721495b852999b7c0a12c8ed3/000002.bin",
+      "artifact_storage/chunks/e2725a64d8dab6f2cc6e1a43521f4a8c64de314721495b852999b7c0a12c8ed3/000003.bin",
+      "artifact_storage/chunks/e2725a64d8dab6f2cc6e1a43521f4a8c64de314721495b852999b7c0a12c8ed3/000004.bin",
+      "artifact_storage/chunks/e2725a64d8dab6f2cc6e1a43521f4a8c64de314721495b852999b7c0a12c8ed3/000005.bin",
+      "artifact_storage/chunks/e2725a64d8dab6f2cc6e1a43521f4a8c64de314721495b852999b7c0a12c8ed3/000006.bin",
+      "artifact_storage/chunks/f6311796c2f550e07e18e4639b007a8138f570a2eb78321902ac627affc52691/000000.bin",
+      "artifact_storage/chunks/f6311796c2f550e07e18e4639b007a8138f570a2eb78321902ac627affc52691/000001.bin",
+      "artifact_storage/chunks/f6311796c2f550e07e18e4639b007a8138f570a2eb78321902ac627affc52691/000002.bin",
+      "artifact_storage/chunks/f6311796c2f550e07e18e4639b007a8138f570a2eb78321902ac627affc52691/000003.bin",
+      "artifact_storage/chunks/f6311796c2f550e07e18e4639b007a8138f570a2eb78321902ac627affc52691/000004.bin",
+      "artifact_storage/chunks/cce4ed1d8296457c06266b70f563600d375bd8bea247a364d69c6d9d58e2bfe2/000000.bin",
+      "artifact_storage/chunks/cce4ed1d8296457c06266b70f563600d375bd8bea247a364d69c6d9d58e2bfe2/000001.bin",
+      "artifact_storage/chunks/cce4ed1d8296457c06266b70f563600d375bd8bea247a364d69c6d9d58e2bfe2/000002.bin",
+      "artifact_storage/chunks/023bcd77ae56587c878b0c84e2292956d84b4404ea39f36be6f85867023ab283/000000.bin",
+      "artifact_storage/chunks/023bcd77ae56587c878b0c84e2292956d84b4404ea39f36be6f85867023ab283/000001.bin",
+      "artifact_storage/chunks/480a59b672b1bf174fe33631817763f6219bed75620c6296f80ede1d4ea56feb/000000.bin",
+      "artifact_storage/chunks/480a59b672b1bf174fe33631817763f6219bed75620c6296f80ede1d4ea56feb/000001.bin",
+      "artifact_storage/chunks/d1c0157f953f411c7c9c564a3f89f3d0aa228d010ab2bba148b327e28e21ca86/000000.bin",
+      "artifact_storage/chunks/d1c0157f953f411c7c9c564a3f89f3d0aa228d010ab2bba148b327e28e21ca86/000001.bin",
+      "artifact_storage/chunks/d1c0157f953f411c7c9c564a3f89f3d0aa228d010ab2bba148b327e28e21ca86/000002.bin",
+      "artifact_storage/chunks/aa5916ae51330103a55fe774a2a44b0086328d49adbc6c4851bb6a13f97a7e53/000000.bin",
+      "artifact_storage/chunks/aa5916ae51330103a55fe774a2a44b0086328d49adbc6c4851bb6a13f97a7e53/000001.bin",
+      "artifact_storage/chunks/bf09e5daa3dc48d471854682ee55e1920de0508afa1b45ce816cd499ff387286/000000.bin",
+      "artifact_storage/chunks/968f036358494e72066003a0aa46599e4a231d13f53eb61ae3231324eaf13d1c/000000.bin",
+      "artifact_storage/chunks/3db4bd556eabf486ef66e528900a8b1ec355c885986dc8f287b834aebe7a1fff/000000.bin",
+      "artifact_storage/chunks/ca8103d59240f657256832ff7283b7cee8af73bcc1c28b2f407cea0b38a6aed3/000000.bin",
+      "artifact_storage/chunks/4d0047f01f19cdaab1511b3e5038ed14aab349d7184fbb3ab6f3478548d519c5/000000.bin",
+      "artifact_storage/chunks/8b5fb08761ffea9113ccebf3eefb0958f2597086f3becb70f3bd70442727186c/000000.bin",
+      "artifact_storage/chunks/53c4265c1cf93ac347d17c5d876760db9e7bcaa412a2506bacb6a170067a2e22/000000.bin",
+      "artifact_storage/chunks/f0c71a202d10f56c7c2d7b35da2edeb5814477ed1c0495263b97ff2d10a48818/000000.bin",
+      "artifact_storage/chunks/f0c71a202d10f56c7c2d7b35da2edeb5814477ed1c0495263b97ff2d10a48818/000001.bin",
+      "artifact_storage/chunks/f0c71a202d10f56c7c2d7b35da2edeb5814477ed1c0495263b97ff2d10a48818/000002.bin"
+    ]
+  },
+  {
+    "stage": "C3",
+    "frozen_commit": "31662e66f0a14e426ab60b53c870f958a60f4ce1",
+    "manifest_path": "artifact_storage/manifests/C3.json",
+    "transport_original_paths": [
+      "runs/20261006/C3/T12/out/J12-16/assembly.step",
+      "runs/20261006/C3/T12/out/J8-16/assembly.step",
+      "runs/20261006/C3/T12/out/J8-20/assembly.step"
+    ],
+    "transport_chunk_paths": [
+      "artifact_storage/chunks/55e1a820b8f5292246b2eb9f103ce71ad5a2e38cb64871bf38d2bca6dba4e034/000000.bin",
+      "artifact_storage/chunks/dcdca960c526eb78c06b5442529c134a40ad06d7255c616cbc1f21c5f0a753a1/000000.bin",
+      "artifact_storage/chunks/32406c3f3ebdc6073b4d464da5230195eab2d0fda4e5bccffef2999eac7b9582/000000.bin"
+    ]
+  },
+  {
+    "stage": "recovery",
+    "frozen_commit": "102ee213568ffe1b8a36f9fd3ace45a4039cc6ed",
+    "manifest_path": null,
+    "transport_original_paths": [],
+    "transport_chunk_paths": []
+  },
+  {
+    "stage": "C4",
+    "frozen_commit": "79887e8e6fbfaf074262facb5cd9d8ed1b863d27",
+    "manifest_path": null,
+    "transport_original_paths": [],
+    "transport_chunk_paths": []
+  }
+]

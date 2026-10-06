@@ -1,0 +1,146 @@
+{
+  "schema": "valve.c3-interface-check/1.0",
+  "status": "UNSELECTED_STUDY",
+  "joint_candidates": [
+    {
+      "id": "J8-16",
+      "fit_gate": "PASS",
+      "metrics": {
+        "radial_bolt_clearance_mm": 0.75,
+        "hole_to_flange_edge_mm": 11.25,
+        "washer_to_flange_edge_mm": 2.0,
+        "washer_radial_band_mm": 9.25,
+        "washer_to_pressure_opening_gap_mm": 17.0,
+        "washer_to_nut_envelope_margin_mm": 2.98889300106973,
+        "nut_proxy_wall_mm": 5.0,
+        "nut_envelope_to_flange_edge_mm": 4.98889300106973,
+        "gasket_to_hole_gap_mm": 7.25,
+        "gasket_width_mm": 18.0,
+        "gasket_to_pressure_opening_gap_mm": 1.0,
+        "adjacent_hole_ligament_mm": 120.26603565143233,
+        "adjacent_washer_gap_mm": 101.76603565143233,
+        "adjacent_nut_envelope_gap_mm": 107.74382165357179
+      },
+      "failures": [],
+      "opening_area_mm2": 66051.9855417254,
+      "opening_area_divided_by_fastener_count_mm2": 8256.498192715675,
+      "load_scope": "Geometric opening area only. Effective pressure/sealing diameter, true joint separating force and load sharing remain unknown.",
+      "nominal_grip_mm": 48,
+      "qualification": "Positive geometric distances only; not code minimums, strength, gasket seating, preload or torque acceptance"
+    },
+    {
+      "id": "J12-16",
+      "fit_gate": "PASS",
+      "metrics": {
+        "radial_bolt_clearance_mm": 0.75,
+        "hole_to_flange_edge_mm": 11.25,
+        "washer_to_flange_edge_mm": 2.0,
+        "washer_radial_band_mm": 9.25,
+        "washer_to_pressure_opening_gap_mm": 17.0,
+        "washer_to_nut_envelope_margin_mm": 2.98889300106973,
+        "nut_proxy_wall_mm": 5.0,
+        "nut_envelope_to_flange_edge_mm": 4.98889300106973,
+        "gasket_to_hole_gap_mm": 7.25,
+        "gasket_width_mm": 18.0,
+        "gasket_to_pressure_opening_gap_mm": 1.0,
+        "adjacent_hole_ligament_mm": 75.67485623690746,
+        "adjacent_washer_gap_mm": 57.17485623690746,
+        "adjacent_nut_envelope_gap_mm": 63.15264223904692
+      },
+      "failures": [],
+      "opening_area_mm2": 66051.9855417254,
+      "opening_area_divided_by_fastener_count_mm2": 5504.332128477116,
+      "load_scope": "Geometric opening area only. Effective pressure/sealing diameter, true joint separating force and load sharing remain unknown.",
+      "nominal_grip_mm": 48,
+      "qualification": "Positive geometric distances only; not code minimums, strength, gasket seating, preload or torque acceptance"
+    },
+    {
+      "id": "J8-20",
+      "fit_gate": "PASS",
+      "metrics": {
+        "radial_bolt_clearance_mm": 1.0,
+        "hole_to_flange_edge_mm": 19.0,
+        "washer_to_flange_edge_mm": 7.5,
+        "washer_radial_band_mm": 11.5,
+        "washer_to_pressure_opening_gap_mm": 22.5,
+        "washer_to_nut_envelope_margin_mm": 3.7361162513371617,
+        "nut_proxy_wall_mm": 6.25,
+        "nut_envelope_to_flange_edge_mm": 11.236116251337162,
+        "gasket_to_hole_gap_mm": 7.0,
+        "gasket_width_mm": 26.0,
+        "gasket_to_pressure_opening_gap_mm": 1.0,
+        "adjacent_hole_ligament_mm": 123.4197042987341,
+        "adjacent_washer_gap_mm": 100.4197042987341,
+        "adjacent_nut_envelope_gap_mm": 107.89193680140843
+      },
+      "failures": [],
+      "opening_area_mm2": 66051.9855417254,
+      "opening_area_divided_by_fastener_count_mm2": 8256.498192715675,
+      "load_scope": "Geometric opening area only. Effective pressure/sealing diameter, true joint separating force and load sharing remain unknown.",
+      "nominal_grip_mm": 48,
+      "qualification": "Positive geometric distances only; not code minimums, strength, gasket seating, preload or torque acceptance"
+    }
+  ],
+  "packing_stack": {
+    "packing_top_z_mm": 350,
+    "follower_collar_bottom_z_mm": 363,
+    "gland_nut_top_z_mm": 385,
+    "gland_stud_tip_z_mm": 390.0,
+    "drive_support_bottom_z_mm": 388,
+    "scope_note": "Support plane is a proposed nut-top stack datum; full support/retention geometry and vendor flange not modeled",
+    "nut_available_axial_space_mm": 50,
+    "follower_radial_clearance_mm": 0.10000000000000142,
+    "stem_radial_clearance_mm": 0.1999999999999993,
+    "packing_compression_and_leakage": "UNASSESSED"
+  },
+  "drive_candidates": [
+    {
+      "id": "D40-custom",
+      "nut_bottom_z_mm": 388,
+      "nut_top_z_mm": 428.0,
+      "handwheel_hub_gap_mm": 10.0,
+      "packaging_gate": "PASS",
+      "additional_axial_space_required_mm": 0,
+      "status": "UNSELECTED",
+      "thread_capacity": "UNASSESSED",
+      "full_drive_fit": "UNASSESSED",
+      "source_kind": "PROPOSED_CUSTOM_ENVELOPE",
+      "qualification": "Envelope screen only; thread hand, material, retention, engagement and supplier drawing remain unresolved"
+    },
+    {
+      "id": "D54-index-scenario",
+      "nut_bottom_z_mm": 388,
+      "nut_top_z_mm": 442.0,
+      "handwheel_hub_gap_mm": -4.0,
+      "packaging_gate": "FAIL",
+      "additional_axial_space_required_mm": 7.0,
+      "status": "UNSELECTED",
+      "thread_capacity": "UNASSESSED",
+      "full_drive_fit": "UNASSESSED",
+      "source_kind": "UNVERIFIED_SENSITIVITY_ENVELOPE",
+      "qualification": "Envelope screen only; thread hand, material, retention, engagement and supplier drawing remain unresolved"
+    },
+    {
+      "id": "D70-vendor-envelope",
+      "nut_bottom_z_mm": 388,
+      "nut_top_z_mm": 458.0,
+      "handwheel_hub_gap_mm": -20.0,
+      "packaging_gate": "FAIL",
+      "additional_axial_space_required_mm": 23.0,
+      "status": "UNSELECTED",
+      "thread_capacity": "UNASSESSED",
+      "full_drive_fit": "UNASSESSED",
+      "source_kind": "VENDOR_ENVELOPE_ONLY",
+      "qualification": "Envelope screen only; thread hand, material, retention, engagement and supplier drawing remain unresolved"
+    }
+  ],
+  "selection": null,
+  "manufacturing_authorized": false,
+  "minimal_owner_decisions": [
+    "Governing product variant and pressure-temperature/differential duty",
+    "Governing classification/standards edition and authorized acceptance basis",
+    "Whether a new derivative may change reference external envelope; no such change has been selected"
+  ],
+  "interfaces_sha256": "343b1c8f437cab36f16eeef5a2a73a7584f0a1e0c59e70ee3eafd18f74a26053",
+  "checker_sha256": "e34403c9ef19869eafd975243a491bf4030aa7cd313de7aabee26f21931520a7"
+}

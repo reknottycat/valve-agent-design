@@ -1,0 +1,118 @@
+{
+  "schema": "valve.dimension-register/1.0",
+  "dimensions": [
+    {
+      "id": "D001",
+      "name": "面到面",
+      "value_or_candidates": 600,
+      "unit": "mm",
+      "origin_kind": "DRAWING_REFERENCE",
+      "source": "GA600*",
+      "blocker": "安装接口公差未定",
+      "manufacturing_controlled": false
+    },
+    {
+      "id": "D002",
+      "name": "端法兰/孔系",
+      "value_or_candidates": {
+        "bore": 200,
+        "OD": 295,
+        "PCD": 264,
+        "raised_face": 247,
+        "holes": "12x15"
+      },
+      "unit": "mm",
+      "origin_kind": "DRAWING_REFERENCE",
+      "source": "GA注星尺寸，ГОСТ1536适用性记录",
+      "blocker": "标准版本/接口公差待核",
+      "manufacturing_controlled": false
+    },
+    {
+      "id": "D003",
+      "name": "梯形螺纹",
+      "value_or_candidates": "Tr36x6",
+      "unit": "designation",
+      "origin_kind": "DRAWING_CALLOUT",
+      "source": "GA主剖面",
+      "blocker": "牙型标准、公差、旋向和承载未冻结",
+      "manufacturing_controlled": false
+    },
+    {
+      "id": "D004",
+      "name": "驱动方头",
+      "value_or_candidates": 24,
+      "unit": "mm",
+      "origin_kind": "DRAWING_REFERENCE",
+      "source": "GA无手轮视图□24*",
+      "blocker": "配合/有效啮合长度未定",
+      "manufacturing_controlled": false
+    },
+    {
+      "id": "D005",
+      "name": "阀杆行程/自由阀瓣升程",
+      "value_or_candidates": {
+        "stem_travel": 57,
+        "disc_lift_study": 57
+      },
+      "unit": "mm",
+      "origin_kind": "MIXED_REFERENCE_AND_STUDY",
+      "source": "57*为丝杆行程；自由升程为C2假设",
+      "blocker": "不得把自由升程升级成原图尺寸",
+      "manufacturing_controlled": false
+    },
+    {
+      "id": "D006",
+      "name": "承压壁厚/座圈保持",
+      "value_or_candidates": null,
+      "unit": "mm",
+      "origin_kind": "UNRESOLVED",
+      "source": "C2几何仅研究值",
+      "blocker": "需压力材料和连接校核",
+      "manufacturing_controlled": false
+    },
+    {
+      "id": "D007",
+      "name": "阀盖接头/填料压盖候选",
+      "value_or_candidates": null,
+      "unit": "mm",
+      "origin_kind": "PROPOSED_CANDIDATES",
+      "source": "C3/T11/interface_candidates.json",
+      "blocker": "候选均未选定；无预紧、扭矩或材料放行",
+      "manufacturing_controlled": false
+    },
+    {
+      "id": "D008",
+      "name": "螺母轴向包络",
+      "value_or_candidates": [
+        40,
+        54,
+        70
+      ],
+      "unit": "mm",
+      "origin_kind": "PROPOSED_OR_VENDOR_ENVELOPE",
+      "source": "C3来源登记；54仅索引线索，70为igus几何包络",
+      "blocker": "不是标准件适用性或有效啮合长度",
+      "manufacturing_controlled": false
+    },
+    {
+      "id": "D009",
+      "name": "密封和导向配合",
+      "value_or_candidates": null,
+      "unit": "mm",
+      "origin_kind": "UNRESOLVED",
+      "source": "GA未给完整零件尺寸",
+      "blocker": "需泄漏标准、导向间隙和防脱设计",
+      "manufacturing_controlled": false
+    },
+    {
+      "id": "D010",
+      "name": "制造公差/粗糙度/扭矩",
+      "value_or_candidates": null,
+      "unit": "mixed",
+      "origin_kind": "UNRESOLVED",
+      "source": "待受控设计规则和计算",
+      "blocker": "不使用默认公差或默认扭矩自动填补",
+      "manufacturing_controlled": false
+    }
+  ]
+}

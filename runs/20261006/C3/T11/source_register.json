@@ -1,0 +1,52 @@
+{
+  "schema": "valve.c3-source-register/1.0",
+  "base_commit": "2566bdee5b52024036e0bbac559dd78f8a903a34",
+  "base_parameters_sha256": "c35a4064403f98e3462bfea3650eebe2695ced39a15fb928f817e465169576ba",
+  "sources": [
+    {
+      "id": "GA",
+      "kind": "USER_DRAWING",
+      "path": "C2/T06/sources/source_geometry.jpg",
+      "sha256": "9401cc66f20f95fbf7dcc6dbbd820f64a848e98dd4a0ebcfa4f80471ebbaa25b",
+      "scope": "Reference dimensions and arrangement; no unannotated dimensions measured from pixels"
+    },
+    {
+      "id": "C2",
+      "kind": "FROZEN_STUDY",
+      "path": "C2/T11/parameters.json",
+      "sha256": "c35a4064403f98e3462bfea3650eebe2695ced39a15fb928f817e465169576ba",
+      "scope": "Inherit proposed interfaces, not certified sizes"
+    },
+    {
+      "id": "IGUS",
+      "kind": "PRIMARY_VENDOR_PAGE",
+      "url": "https://www.igus.com/product/drylin_SD_TR_WFLM",
+      "checked_utc": "2026-10-06",
+      "observed": "WFLM-6770TR36X6, left hand, body diameter67, b1 length70, flange diameter95mm",
+      "limit": "Geometry reference only. Page material entries conflict; no material or valve suitability adopted. The page's4-5MPa description concerns thread surface/contact pressure, not valve design pressure."
+    },
+    {
+      "id": "NORELEM_INDEX",
+      "kind": "INDEXED_LEAD_ONLY",
+      "url": "https://www.norelem-china.com/doc/cn/en/did.89617/24003_Datasheet_5025_Trapezoidal_thread_nuts_round_single-start_RH_or_LH_thread--en.pdf",
+      "checked_utc": "2026-10-06",
+      "observed": "Index suggests Tr36x6 envelope diameter75, lengths54/72mm",
+      "limit": "Direct China URL timeout; UK link404. Not controlling evidence; lengths are sensitivity scenarios."
+    },
+    {
+      "id": "BOSSARD",
+      "kind": "PRIMARY_VENDOR_RESOURCES",
+      "url": "https://www.bossard.com/global-en/knowledge-hub/resources/",
+      "checked_utc": "2026-10-06",
+      "observed": "Technical resources and calculators identified",
+      "limit": "Legacy PDF URL404; indexed ISO273 sizes not accepted as verified standard clauses."
+    },
+    {
+      "id": "C3",
+      "kind": "PROPOSED_RESEARCH_DESIGN",
+      "path": "C3/T11/interface_candidates.json",
+      "scope": "Locally proposed dimensions, no standard-compliance, material or load approval"
+    }
+  ],
+  "path_base": "runs/20261006"
+}

@@ -1,67 +1,23 @@
 {
   "format": "valve-transport-evidence-v1",
-  "stage": "C2",
-  "frozen_commit": "2566bdee5b52024036e0bbac559dd78f8a903a34",
-  "artifact_count": 17,
-  "raw_bytes": 15130044,
-  "encoded_bytes": 11006932,
-  "chunk_count": 38,
+  "frozen_stages": {
+    "T04": "705e3574ade324c382552ff5ff46d992697cbf92",
+    "C2": "2566bdee5b52024036e0bbac559dd78f8a903a34",
+    "C3": "31662e66f0a14e426ab60b53c870f958a60f4ce1",
+    "recovery": "102ee213568ffe1b8a36f9fd3ace45a4039cc6ed",
+    "C4": "79887e8e6fbfaf074262facb5cd9d8ed1b863d27"
+  },
+  "excluded": [
+    "unfrozen C5",
+    "R0 not yet explicitly frozen",
+    "unavailable upstream assets"
+  ],
+  "artifact_count": 20,
+  "raw_bytes": 17982098,
+  "encoded_bytes": 11445335,
+  "chunk_count": 41,
   "largest_chunk_bytes": 409600,
   "fresh_restore_verified": true,
-  "modes": {
-    "normal": {
-      "verify_only": {
-        "mode": "verify-only",
-        "verified_files": 17,
-        "verified_raw_bytes": 15130044,
-        "created_files": 0,
-        "existing_matching_files": 0
-      },
-      "first_restore": {
-        "mode": "restore",
-        "verified_files": 17,
-        "verified_raw_bytes": 15130044,
-        "created_files": 17,
-        "existing_matching_files": 0
-      },
-      "second_restore": {
-        "mode": "restore",
-        "verified_files": 17,
-        "verified_raw_bytes": 15130044,
-        "created_files": 0,
-        "existing_matching_files": 17
-      },
-      "included_regression_tests": 33,
-      "regression_tests_passed": true,
-      "all_17_equal_frozen_git_bytes": true
-    },
-    "optimized": {
-      "verify_only": {
-        "mode": "verify-only",
-        "verified_files": 17,
-        "verified_raw_bytes": 15130044,
-        "created_files": 0,
-        "existing_matching_files": 0
-      },
-      "first_restore": {
-        "mode": "restore",
-        "verified_files": 17,
-        "verified_raw_bytes": 15130044,
-        "created_files": 17,
-        "existing_matching_files": 0
-      },
-      "second_restore": {
-        "mode": "restore",
-        "verified_files": 17,
-        "verified_raw_bytes": 15130044,
-        "created_files": 0,
-        "existing_matching_files": 17
-      },
-      "included_regression_tests": 33,
-      "regression_tests_passed": true,
-      "all_17_equal_frozen_git_bytes": true
-    }
-  },
   "per_file": [
     {
       "path": "runs/20261006/C2/T06/sources/fastener_detail.png",
@@ -181,12 +137,48 @@
       "sha256": "4457944a64ee8e98d9fc9077083990129a747be2be37ef4a5de3b2662804dc3b",
       "git_blob_sha1": "00f278e6b1a6d7b44f8364dcdc12b14f0d903500",
       "exact_git_bytes_equal": true
+    },
+    {
+      "path": "runs/20261006/C3/T12/out/J12-16/assembly.step",
+      "bytes": 1215110,
+      "sha256": "3f41018289861a7d5c87544b0ed48b921277aa69c3cbd444cb457d36a8a57c96",
+      "git_blob_sha1": "090077bb0d3c0bf6e54cd5bea3b69006c15fa574",
+      "exact_git_bytes_equal": true
+    },
+    {
+      "path": "runs/20261006/C3/T12/out/J8-16/assembly.step",
+      "bytes": 818381,
+      "sha256": "29a586999a51fdd92a77aa2b6d55155ee8fe62689b57466847da74f2f2fb1927",
+      "git_blob_sha1": "a74428d13ae2abcb82c573baa779f2e3fc99d8e5",
+      "exact_git_bytes_equal": true
+    },
+    {
+      "path": "runs/20261006/C3/T12/out/J8-20/assembly.step",
+      "bytes": 818563,
+      "sha256": "c310be573391b260c1a3c5f126185d92e19f3c682f14fe3d59972815ff74b5e1",
+      "git_blob_sha1": "b591356b6a7f326f4dbb5609cbb499c845924ef2",
+      "exact_git_bytes_equal": true
     }
   ],
-  "excluded": [
-    "C3 artifacts",
-    "R0 calculation book",
-    "unfrozen C5",
-    "unavailable upstream sources"
-  ]
+  "verify_only": {
+    "mode": "verify-only",
+    "verified_files": 20,
+    "verified_raw_bytes": 17982098,
+    "created_files": 0,
+    "existing_matching_files": 0
+  },
+  "first_restore": {
+    "mode": "restore",
+    "verified_files": 20,
+    "verified_raw_bytes": 17982098,
+    "created_files": 20,
+    "existing_matching_files": 0
+  },
+  "second_restore": {
+    "mode": "restore",
+    "verified_files": 20,
+    "verified_raw_bytes": 17982098,
+    "created_files": 0,
+    "existing_matching_files": 20
+  }
 }

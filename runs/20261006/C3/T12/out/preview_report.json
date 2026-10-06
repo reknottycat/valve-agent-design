@@ -1,0 +1,2138 @@
+{
+  "schema": "valve.c3-preview/1.0",
+  "interfaces_sha256": "343b1c8f437cab36f16eeef5a2a73a7584f0a1e0c59e70ee3eafd18f74a26053",
+  "builder_sha256": "0688956bcfe51085faa5a5bf18be07e0c92934d893aed62ed3b52bd633bbd80d",
+  "status": "UNSELECTED_COUPONS_AND_ENVELOPES",
+  "checker_sha256": "e34403c9ef19869eafd975243a491bf4030aa7cd313de7aabee26f21931520a7",
+  "joint_candidates": {
+    "J8-16": {
+      "parts": {
+        "gasket_uncompressed": {
+          "volume_mm3": 35060.17401406212,
+          "sha256": "db870657cbc8b72964ff39fb60a0e1c53162cd7f72ed55013b2e95f438b176f0",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 2.0752770968179298e-15,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_01": {
+          "volume_mm3": 18095.573684677198,
+          "sha256": "323f02c020d4b8796adbb38dcfb248061c381b69ef3b260922b3bcd801ed9f06",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_01": {
+          "volume_mm3": 2332.0434966678727,
+          "sha256": "c31ea64578e4c45b110e0d33b969339ad63122ce430ce8b5e52c67727ea4e61e",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_01": {
+          "volume_mm3": 2332.043496667873,
+          "sha256": "6379abc83ff54f8475e130e7d41268caae9ea96422bd72c4c1e90c58bfce9c09",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.949995150331575e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_01": {
+          "volume_mm3": 6149.939890056542,
+          "sha256": "9e6bc820a8feb9e14049a4ed8144b0bbfee57a6ef3fb23a973d62c9aa0b07881",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 9.61263958218896e-15,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_01": {
+          "volume_mm3": 6149.93989005654,
+          "sha256": "398ff53e0b769556e974d3bd0dff2fa004ed25c2093a63f9769c1fc27b721786",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 9.908413107794776e-15,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_02": {
+          "volume_mm3": 18095.5736846772,
+          "sha256": "35e8db41b2d77bdb923f135efec3004927de56186ca4be0c3e65208e27007164",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_02": {
+          "volume_mm3": 2332.043496667872,
+          "sha256": "19ad5766f04980cc6a9e40f8d44054568be9c80757a36d298c92137665b3fd47",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 3.8999903006631515e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_02": {
+          "volume_mm3": 2332.043496667872,
+          "sha256": "c8a01903eeb31a2047fc00f92cd5dae5938f873d449138d9b80bf6b381a08e98",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 5.849985450994727e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_02": {
+          "volume_mm3": 6149.939890056547,
+          "sha256": "c958a5e7453f4ccea45222d6a3458054a7df109f5f3dc22021620f9f9985bfd4",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.9935135625831859e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_02": {
+          "volume_mm3": 6149.939890056547,
+          "sha256": "949acb93ce107252a5c70b5736868003766054abfafd1b4b1e7179cc59a0ad4a",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.9935135625831859e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_03": {
+          "volume_mm3": 18095.573684677205,
+          "sha256": "db7ef2a9bd21b2b207582f9b03341926f1e50034a85bd5c1ded3eeb60273d5e0",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_03": {
+          "volume_mm3": 2332.043496667873,
+          "sha256": "f2ff5913fc00a5617ae5fbd8c1b9b03b5adc73d1595b51c3c74e37bdf46a875a",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_03": {
+          "volume_mm3": 2332.043496667873,
+          "sha256": "9ab1c88792710a3e4fbc125549d38f252fd2e61e57a0505e2e52b01dad00674c",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_03": {
+          "volume_mm3": 6149.939890056539,
+          "sha256": "1ed69fc4cd93ada17ba592adfbc1175dbfff495d24006c715a6e2ef4f6448478",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 9.376020761704313e-14,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_03": {
+          "volume_mm3": 6149.939890056539,
+          "sha256": "08efc475a7001545475da6a0744f7c76c55f13e251068b7ddf441ed34e52b7b7",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 9.376020761704313e-14,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_04": {
+          "volume_mm3": 18095.573684677216,
+          "sha256": "bc1c4bc0a06026e0785a704bcabd5505fe450988af0f70731440318f9a3ee562",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 8.041698750169481e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_04": {
+          "volume_mm3": 2332.043496667874,
+          "sha256": "76ea28dc75f6a7958b763af0ad0611448af7b6ced7c51d63bf0d95947557993f",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.9499951503315743e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_04": {
+          "volume_mm3": 2332.043496667874,
+          "sha256": "5edf8335ef9dd5e229f57fc20ac9d2763b3e1d7be6dedf2bb1f1e32ae0aabfe5",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.9499951503315743e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_04": {
+          "volume_mm3": 6149.939890056539,
+          "sha256": "070bc26bde228fcc08ff63270ac3aa14a0f308bf883eeabc9d51eee3208df3e6",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 8.361517568876369e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_04": {
+          "volume_mm3": 6149.939890056539,
+          "sha256": "28125e26a3d1affc83f8b2df91f7722510d3f50002c9fcb0ea3b822184099c44",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 8.361517568876369e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_05": {
+          "volume_mm3": 18095.573684677198,
+          "sha256": "6210b792f4fb1ef87a1b8002113b8b7730d22a6a962bb65edbe7c13b8d8b49f9",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_05": {
+          "volume_mm3": 2332.0434966678727,
+          "sha256": "225ea5b0cfc0f823413d26206f0dad95ceaa19d0a7a4f95dd7225a4876f815cc",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_05": {
+          "volume_mm3": 2332.0434966678727,
+          "sha256": "06c1d893783f2ca7352a333a1cd35d73c14d6a17fa2864569bc2fd7aae253f2b",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_05": {
+          "volume_mm3": 6149.939890056542,
+          "sha256": "882a979485c2f04def19af4dd81fc644dc3e0114897fc825ceaf25da1cab1072",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 8.362996436504395e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_05": {
+          "volume_mm3": 6149.93989005654,
+          "sha256": "4fb94f874402db13086f1e698f9c93acb3a58bbc9949e08501dcf2e53fe2e9ec",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 8.365954171760456e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_06": {
+          "volume_mm3": 18095.573684677205,
+          "sha256": "b724642f709721c2136aeeed906579b292e712a37d5cc8351ea5a8be383a8fa7",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 4.020849375084743e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_06": {
+          "volume_mm3": 2332.0434966678727,
+          "sha256": "33d397d5e7970b111a6469833913e22a1adc36adb3921f08ae8710c78143119f",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.9499951503315755e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_06": {
+          "volume_mm3": 2332.0434966678727,
+          "sha256": "9fad4dcb4d5631660fa44f890363908addf3c95472f7d2903d575b2066392d91",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.9499951503315755e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_06": {
+          "volume_mm3": 6149.939890056541,
+          "sha256": "2b90165a64803b2ea863cf3b94afab48445de75c745e1bd4abab88a531b8ac7d",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 8.358559833620309e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_06": {
+          "volume_mm3": 6149.939890056541,
+          "sha256": "8b7404c79a631172fb78f629fb18f52a4a5e6f9655c38581cc3e9815f7cd5606",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 8.358559833620309e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_07": {
+          "volume_mm3": 18095.57368467721,
+          "sha256": "64d50addddffa3274b1a4a7062daed274160d40b148948e1c24a1309bc745b4a",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_07": {
+          "volume_mm3": 2332.043496667873,
+          "sha256": "349a49c33ffdae5c71ae3d3016c2815f22a3fde6e786364047673c3c3b4f52e8",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 3.89999030066315e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_07": {
+          "volume_mm3": 2332.043496667873,
+          "sha256": "c12acf85b7f140dc9391aaac41ed05c2530d3051c81d6d1fcc3b6488ff31914c",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 3.89999030066315e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_07": {
+          "volume_mm3": 6149.939890056541,
+          "sha256": "54eee0500a5b9c9423f6fef54aa62b664733e775cc2729b4bfcbb460447c4bb6",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 9.405598114264891e-14,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_07": {
+          "volume_mm3": 6149.939890056541,
+          "sha256": "3cd4cc7e35ef74c2cd4e638c1d9d7610cbd3cb5c2337c213eca054690dc353ab",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 9.405598114264891e-14,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_08": {
+          "volume_mm3": 18095.57368467719,
+          "sha256": "b00c421848f0cbf9a108a6a3222da0c6b5ead9463f8dfb767056a7da968b8477",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 8.041698750169492e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_08": {
+          "volume_mm3": 2332.0434966678713,
+          "sha256": "24ea9746629f1adf0c941a658ec0e4e92bb0ad51de41a821236aa513fca547b0",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 5.84998545099473e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_08": {
+          "volume_mm3": 2332.0434966678713,
+          "sha256": "56b4d007558ca9f7ae54d30aefc55335fccef1bd7240332be56e33d89a319d7c",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 5.84998545099473e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_08": {
+          "volume_mm3": 6149.939890056541,
+          "sha256": "496f246bd1fb7c8646ae04a897c71bd7dd6c580a837375c56e44a6dfb01709d2",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.9861192244430423e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_08": {
+          "volume_mm3": 6149.939890056539,
+          "sha256": "e02d97df7b0a28b3f9b2e826b0a23c39931c6a508f5424ff07a60c5b5cb27593",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.9831614891869847e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "body_flange_coupon": {
+          "volume_mm3": 1153749.9020308508,
+          "sha256": "1e7a484fac02d255c68e59ccca1643b2b63acedab010038835469d45a1685a7e",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.009016959585596e-15,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "cover_coupon": {
+          "volume_mm3": 2444378.9959786087,
+          "sha256": "dc01df4d52dd69671c60c12e6e92ac1e19f0744613ee5b2e4b2fe69db4ccef23",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        }
+      },
+      "part_count": 43,
+      "assembly_exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 4.521369899733341e-15,
+        "relative_volume_tolerance": 1e-06
+      },
+      "assembly_sha256": "29a586999a51fdd92a77aa2b6d55155ee8fe62689b57466847da74f2f2fb1927"
+    },
+    "J12-16": {
+      "parts": {
+        "gasket_uncompressed": {
+          "volume_mm3": 35060.17401406212,
+          "sha256": "3a75cb402f2ea8da28ff273c361d702ca54cb47908f2c5b0eb4f6f582fb91d76",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 2.0752770968179298e-15,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_01": {
+          "volume_mm3": 18095.573684677198,
+          "sha256": "af78d5fead60c4d6c51eb593faa8a4be28a57e5587a094028d694345ae68fc72",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_01": {
+          "volume_mm3": 2332.0434966678727,
+          "sha256": "254931bfac39b7d0cf88fae487dd2fab67dd7deba73e197c8fd6eefeb29c8441",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_01": {
+          "volume_mm3": 2332.043496667873,
+          "sha256": "477c7f7fcbae90ac8c47d0504652d5ba3279d4c0076ee966c7cb8d3e42a277fd",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.949995150331575e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_01": {
+          "volume_mm3": 6149.939890056542,
+          "sha256": "845b93eca070fce90e84ddab8db8fd80d152f6e966cd316d7377d04063d64b99",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 9.61263958218896e-15,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_01": {
+          "volume_mm3": 6149.93989005654,
+          "sha256": "1c97b8113c929f9d320f1b1ff45ec665ad437977a4d5e00a0d41a91ba9196368",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 9.908413107794776e-15,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_02": {
+          "volume_mm3": 18095.573684677198,
+          "sha256": "46866d114091b1be5484bba08886980136ca654bca78710a469c01f137e3e23f",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 4.0208493750847445e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_02": {
+          "volume_mm3": 2332.043496667872,
+          "sha256": "b68ddcde8d75fb3ba85d84f3adcde7c7c3edfac7d201daa575cf153251c17328",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 5.849985450994727e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_02": {
+          "volume_mm3": 2332.043496667872,
+          "sha256": "e3aa60eb9d9785d291b065bac65237c5b53961d6d7d6b6f7b46aa26d1b24b2d3",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 5.849985450994727e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_02": {
+          "volume_mm3": 6149.939890056543,
+          "sha256": "2aefe156be9ee81808b49fe0a55ae7b9ea916608dc4517ae70907a2488bf0ab8",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.9787248863028964e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_02": {
+          "volume_mm3": 6149.939890056541,
+          "sha256": "61cfa383b2788df8a53e80e1684f77d69a4ef27fa30ed5732664512f2e66001a",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.9757671510468388e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_03": {
+          "volume_mm3": 18095.573684677205,
+          "sha256": "203a984ff5246b9b1cc3488eb5e00d255c26acf578c59c646a725137afa3e14b",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 4.020849375084743e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_03": {
+          "volume_mm3": 2332.0434966678736,
+          "sha256": "4921f8d42890b6c6c392f2c4db5a03e19067e0eb4c3d1e963a73da458400cec4",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 5.849985450994724e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_03": {
+          "volume_mm3": 2332.0434966678736,
+          "sha256": "7f0a43b53407eacd446d8e3a6ab505df01bbfea0e6f88e7cbc04762998c99884",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 3.8999903006631495e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_03": {
+          "volume_mm3": 6149.939890056544,
+          "sha256": "f139b32c370f398d984b0c35db57b02bff4ca26aa263a1b57ca42036d0910d70",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 9.509118848226922e-14,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_03": {
+          "volume_mm3": 6149.939890056544,
+          "sha256": "cea854acc7eb0f5cb31cc2e6120fd9dc70d7bdc2d24ef7988462193b315df0a3",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 9.509118848226922e-14,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_04": {
+          "volume_mm3": 18095.573684677205,
+          "sha256": "9d8d08c4ec7024593ce8e0495d29f687dfb5867f9595f5946f4ff1658bc15f71",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_04": {
+          "volume_mm3": 2332.043496667873,
+          "sha256": "a6b5c6b40d451b17fb79f5dba4cf5484633395333daa803af5e45bc01c7fee0c",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_04": {
+          "volume_mm3": 2332.043496667873,
+          "sha256": "7513035c0108ed2cc500e7b68f910a51b0cb3468c14669d0c1c8e255d31e6e54",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_04": {
+          "volume_mm3": 6149.939890056539,
+          "sha256": "831d1519a617427b9c5f3889100153b074df852b5a00948c21287b903584c006",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 9.376020761704313e-14,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_04": {
+          "volume_mm3": 6149.939890056539,
+          "sha256": "5f18d211a998f35d7e007db7090bcdcdb69a1a821127b9bbf3a8347e7337df72",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 9.376020761704313e-14,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_05": {
+          "volume_mm3": 18095.573684677198,
+          "sha256": "f0665a0fd1828866294e90178f1a65534d9f5a6f95f997939518c2bff11ce92c",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 8.041698750169489e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_05": {
+          "volume_mm3": 2332.0434966678736,
+          "sha256": "cbc00c9825319a6fd2f0b91e2fec28aa4b592522c45ca26ecaa42b306409a781",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 5.849985450994724e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_05": {
+          "volume_mm3": 2332.043496667874,
+          "sha256": "9f29d0ed16f84651881138c83d0bcaeb31069f0f620adbf06ef242a18bd7a08d",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 5.849985450994723e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_05": {
+          "volume_mm3": 6149.939890056541,
+          "sha256": "0562d3bdaa9d682572491571d658e3668ffc5e4fa03c81689aac7f2b3db638b9",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.1536646366254782e-12,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_05": {
+          "volume_mm3": 6149.939890056541,
+          "sha256": "e14150dbb9fc8a538d9312aecf297cfe3bcd67902384c46af9a2b742e0d597b5",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.1536646366254782e-12,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_06": {
+          "volume_mm3": 18095.573684677198,
+          "sha256": "f224eb07dd888ad3308435397fcec626cd13000ee4d8aeafa05647606f16ef7e",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_06": {
+          "volume_mm3": 2332.043496667872,
+          "sha256": "887a96ac6e873fdc516f6e51e820205dac5e1109d2d963d8eb1c237b206d2f64",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_06": {
+          "volume_mm3": 2332.043496667872,
+          "sha256": "c2aa1409f6bb9eb0554f06dc15a2b3c4a5addad5670d3cfea32ab6d9f80d6767",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_06": {
+          "volume_mm3": 6149.939890056545,
+          "sha256": "9c891dbade1bbb96311b3803c6801972d579ce8cdd8ffc282443b0b03ae3d2d5",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 8.351165495480159e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_06": {
+          "volume_mm3": 6149.939890056543,
+          "sha256": "68817b6da9ae0de9bedc02f58d8211b8c83b80d5a41b854b020ae514391cc799",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 8.35412323073622e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_07": {
+          "volume_mm3": 18095.573684677198,
+          "sha256": "785c12277595f9ec0a78d80ffa331cd9f4165f6db66470dae2a33bb10e07cfd5",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_07": {
+          "volume_mm3": 2332.0434966678727,
+          "sha256": "0400174d0e2e21a7f13628f6b7e2b9bb027c18ad0a303911cd2aa357baa86f8e",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_07": {
+          "volume_mm3": 2332.0434966678727,
+          "sha256": "e17dad392e43884730d7e7a9d602a4204f1f33b9dd712d5ce9a302b86b29e6ec",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_07": {
+          "volume_mm3": 6149.939890056542,
+          "sha256": "f9a8d4eda5fa23af3cb893f9a6985c52064c2b9e8a9328ebb7cb3cd7fd31a99f",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 8.362996436504395e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_07": {
+          "volume_mm3": 6149.93989005654,
+          "sha256": "4deb5bec54689b0392031817c68bf2ca0aca39adb3fa92f7b794f5c14c0298ec",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 8.365954171760456e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_08": {
+          "volume_mm3": 18095.573684677194,
+          "sha256": "4d535dbb7ea8223e80e3a552a8fe115d1589952a20baa74c0c2975d88322a8f3",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 2.0104246875423728e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_08": {
+          "volume_mm3": 2332.043496667872,
+          "sha256": "1c4ef83478372824335a6a19a8d057aabb368a6aa3c86e3b11e382f16ea09c1d",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_08": {
+          "volume_mm3": 2332.043496667872,
+          "sha256": "b3f86ccd9c85100b077144380438e09e9b248f01ad49ea5298312f49a53dbe15",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_08": {
+          "volume_mm3": 6149.939890056541,
+          "sha256": "b28da2f125615893cbd6154291ec7cdab125dd8e45ca616ad8d44f2cbad69acf",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 8.35708096599228e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_08": {
+          "volume_mm3": 6149.939890056541,
+          "sha256": "4f7de7eb02f2dcaf96afaa3d8cb76c0f880f2b7e6acd8d2af2b21244761d3108",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 8.35708096599228e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_09": {
+          "volume_mm3": 18095.573684677205,
+          "sha256": "34f186170474c378b819291bd424ed122f82f165d4f9e1213cf4312330ec0731",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 4.020849375084743e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_09": {
+          "volume_mm3": 2332.0434966678736,
+          "sha256": "1f40bc14ecd673b5011715e63ea1287f1f1413d70ebfb86ce4099a6b209701e8",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.9499951503315748e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_09": {
+          "volume_mm3": 2332.0434966678736,
+          "sha256": "2132416ec4334d19bc6a5d34d3782ac4186ab13e358504c116671837cf2eb700",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.9499951503315748e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_09": {
+          "volume_mm3": 6149.939890056543,
+          "sha256": "79eca9dfc0156f6cf1682e00b3992070aa2cec832c4ed0efc2a297b9a876aab7",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.1541082969138867e-12,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_09": {
+          "volume_mm3": 6149.939890056543,
+          "sha256": "c3837bbdeb12e18984cedef9ed921191667cb71e4a2c6be8ea82b1715cf103b8",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.1541082969138867e-12,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_10": {
+          "volume_mm3": 18095.57368467721,
+          "sha256": "f910576c7f7598ac1e4d4b25ce08338ec18ba73b4cfaed612029d94e4de0dec3",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_10": {
+          "volume_mm3": 2332.043496667873,
+          "sha256": "aef00e5a29b555c6e55ae0c6b1e78b52990fd317ba80a185a2ccb7d0d30654d6",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 3.89999030066315e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_10": {
+          "volume_mm3": 2332.043496667873,
+          "sha256": "82a5f333100ec98e2a15a254e4f439fa167e541f403704ddb29a8e8562cdbc7f",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 3.89999030066315e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_10": {
+          "volume_mm3": 6149.939890056541,
+          "sha256": "49313a3559789813ebe959c744092e8f3185212e535fc84167ce520212f1355d",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 9.405598114264891e-14,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_10": {
+          "volume_mm3": 6149.939890056541,
+          "sha256": "f00f55f6430614c03b367cc037c2f5c1d01ab262ef1d4749b5e740423d173958",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 9.405598114264891e-14,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_11": {
+          "volume_mm3": 18095.573684677205,
+          "sha256": "7812d270dddd5f879a3af210d34e24494e2c822a118c01ec2e6b7d976d9a178f",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 4.020849375084743e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_11": {
+          "volume_mm3": 2332.043496667873,
+          "sha256": "c1ca318dbaea1ecf3cf79836af9ed4d6ae1c4492ad695b0349f8f0b27e01695a",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.949995150331575e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_11": {
+          "volume_mm3": 2332.043496667873,
+          "sha256": "96ebca483959b123cf2c04df9ac8e4f9f15458c36ab4098c8c7274e002d0b103",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_11": {
+          "volume_mm3": 6149.939890056542,
+          "sha256": "1e502c98537868774c20cf6320691fc126932116ff6b8a437dfe21947c435455",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 9.449964143105761e-14,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_11": {
+          "volume_mm3": 6149.939890056542,
+          "sha256": "6d64b45956976b1b51ace0a146291a25b99e1685bf38d10bb18e148a8d50f8f3",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 9.449964143105761e-14,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_12": {
+          "volume_mm3": 18095.573684677205,
+          "sha256": "a3054547e0be319d4095c8a25931d86f287eab2af6a58f310409d2c9b9b03886",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_12": {
+          "volume_mm3": 2332.0434966678736,
+          "sha256": "51647e10dd20eabd84689cb74bdd5f069fa12fa92dcf4f7cbd43844fed85c0a9",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_12": {
+          "volume_mm3": 2332.0434966678736,
+          "sha256": "ba3368aad71dddce9769983c6263dbfda76d8ddf1310531e1d8859de261aa07b",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_12": {
+          "volume_mm3": 6149.939890056543,
+          "sha256": "27cd25c7ca241e67d37cd602bf579eef6b256ea1ebf5ca8f19b9f4f4d6d46973",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.9787248863028964e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_12": {
+          "volume_mm3": 6149.939890056541,
+          "sha256": "d7579b856c7797357320fa21e1d70bb8a10077d1b98b7a5076c28005006a907a",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.9757671510468388e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "body_flange_coupon": {
+          "volume_mm3": 1134507.647027613,
+          "sha256": "847b3ac01c743c0df14577d1ee3c598f121157feafa0021742caca04e0e8485d",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 2.0522615626600772e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "cover_coupon": {
+          "volume_mm3": 2425136.740975371,
+          "sha256": "fb33cc313145a342f7841c73db4d333663ac85c52fb8833c5e2f3aba87f6b2bc",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.9201444580005576e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        }
+      },
+      "part_count": 63,
+      "assembly_exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 1.2988448667829287e-14,
+        "relative_volume_tolerance": 1e-06
+      },
+      "assembly_sha256": "3f41018289861a7d5c87544b0ed48b921277aa69c3cbd444cb457d36a8a57c96"
+    },
+    "J8-20": {
+      "parts": {
+        "gasket_uncompressed": {
+          "volume_mm3": 51949.37611976087,
+          "sha256": "876adfdc88178def29308134f3b351f4b0fb04ca62c7602707badc95547791cb",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 5.6023445574475305e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_01": {
+          "volume_mm3": 30787.60800517998,
+          "sha256": "3b104096da050a27725ef85faa59be6b93b1844c58c40dd9dc3ae668f22cac8d",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_01": {
+          "volume_mm3": 3630.8957093864024,
+          "sha256": "c28859a9907e001800bf8494bcdcf3e79c404bb63cc7329977f56dd23ae34901",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.2524384815319124e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_01": {
+          "volume_mm3": 3630.895709386403,
+          "sha256": "42f671e79cdb43aef94d75aa966000b5304e7debf56eee296bf0e749c4416fbf",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_01": {
+          "volume_mm3": 12011.601347766678,
+          "sha256": "f3a3770e6da2006a9c039eca5656e31032cf95599101b2897d5071f310985f6a",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 2.270026316201552e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_01": {
+          "volume_mm3": 12011.601347766678,
+          "sha256": "e1210dffc8a773d801c0af38aa470174afa235f2397086b0075f0ff3085a6368",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 2.270026316201552e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_02": {
+          "volume_mm3": 30787.608005179973,
+          "sha256": "b2d93109d7b106d645a1ea31ba73bc088d924348a42122126c14b76b39c7971a",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 2.363274734743685e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_02": {
+          "volume_mm3": 3630.8957093864024,
+          "sha256": "26b58b79fd264b17ec36307bffa44f144afc9f32eef7bddd211fca2d57204e12",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.2524384815319124e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_02": {
+          "volume_mm3": 3630.895709386403,
+          "sha256": "e0843083a1c7d2881f5c7783f92b5fa74ba337cac6becfef6c1708df724d8ccf",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.2524384815319121e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_02": {
+          "volume_mm3": 12011.601347766682,
+          "sha256": "380f29bdad2030df38abc315aba6d27e79a2f08d07a374555050038e640a76d1",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 3.140783575585068e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_02": {
+          "volume_mm3": 12011.601347766682,
+          "sha256": "22c2fe64d2a2ffaa4faf8de9db4a9f8e2439bde09fae728fd4851135f2365792",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 3.140783575585068e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_03": {
+          "volume_mm3": 30787.608005179973,
+          "sha256": "0ad4dde39023b4e650981e20a29248ec72fd27cad8dac57cd41e344c61f3f4b2",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_03": {
+          "volume_mm3": 3630.8957093864037,
+          "sha256": "1c4d3e2921f471ccde0303f6d7d1c0bf4270999a1fdb99edeed766eb82424076",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_03": {
+          "volume_mm3": 3630.8957093864037,
+          "sha256": "464524ff8b7820235f0e44f74535193422a9bb230ebc6c325cf91bf8299cb90c",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_03": {
+          "volume_mm3": 12011.601347766682,
+          "sha256": "d199e94a322fb18340647a734af8a564984a6db32e6967ccb8917b1af58a1238",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.4689296375687157e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_03": {
+          "volume_mm3": 12011.601347766682,
+          "sha256": "4f68ee801e57016f13282b408565cac25f2af47d7b963ab4993e246c4902be8d",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.4689296375687157e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_04": {
+          "volume_mm3": 30787.608005179973,
+          "sha256": "c16e671a459ad8d38e1018cd91f1990c8aa9bb76c4d5dcc800e8e368ab59c262",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_04": {
+          "volume_mm3": 3630.8957093864024,
+          "sha256": "c8e8e7cd78e591b10cd94391be34b2b3425d2e79ab332acceac429decb149868",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 5.00975392612765e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_04": {
+          "volume_mm3": 3630.895709386403,
+          "sha256": "554f3b518d0d08a0b23a6d923a16acfdd7ec04625136cbc83d5ca4763ef68b21",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 5.009753926127649e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_04": {
+          "volume_mm3": 12011.601347766678,
+          "sha256": "343fb174942845dd55f4f625af57142f371f502f5daa848ac7aa2ba43d5cd95b",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.1742350937843117e-12,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_04": {
+          "volume_mm3": 12011.601347766678,
+          "sha256": "b54e8e18e92f5323dda098587aaba0caafd51898fb68a21e95ecb0c03eaf80c2",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.1742350937843117e-12,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_05": {
+          "volume_mm3": 30787.60800517998,
+          "sha256": "5b51f0d798be0b16bac3a16e9ab4da2402617eb7403104a105fb9c953532ce71",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_05": {
+          "volume_mm3": 3630.8957093864024,
+          "sha256": "1a58df713a753fe14c6cdd29e24ac6365f3f65cb04299478c5c79b796ecbecdd",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.2524384815319124e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_05": {
+          "volume_mm3": 3630.895709386403,
+          "sha256": "e4c9126d1fe4a1c88217dfe056c1d947dacc00011058304c1adbefb966cde32b",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_05": {
+          "volume_mm3": 12011.601347766675,
+          "sha256": "b6356d15283fdb1c324cc03a7bb2c1b91fb1dd10a3f3fc05accf20abf7050fc8",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.7778591695934775e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_05": {
+          "volume_mm3": 12011.601347766675,
+          "sha256": "0474c698bbc3e33a53f7fc846d1114eee020cba61c09795daa55ba235220c591",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.7778591695934775e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_06": {
+          "volume_mm3": 30787.60800517998,
+          "sha256": "ec60eda455c40c9cb83c74e3addfd5411730444000e2bec8b776535a53f8a92c",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 2.3632747347436845e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_06": {
+          "volume_mm3": 3630.8957093864024,
+          "sha256": "4ff8af11390164a3f0ae5f2e9cbb35fdcdd9d0585c4392525560dca134580cc8",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 5.00975392612765e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_06": {
+          "volume_mm3": 3630.895709386403,
+          "sha256": "8f27337637ef09c1cf67fbefaf81825afad0a49702c1147bc5e77285029dd2c1",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 5.009753926127649e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_06": {
+          "volume_mm3": 12011.601347766678,
+          "sha256": "b886039bb879b2b530c1f9a48356e254ff5b2e6efaebe62b117820e992cb4745",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.1749922740098627e-12,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_06": {
+          "volume_mm3": 12011.601347766675,
+          "sha256": "e2f8e1c6adf70fa7f955f5db34a2d3ea5233a13b568001175320950e9b241db0",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.1752951461000834e-12,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_07": {
+          "volume_mm3": 30787.608005179973,
+          "sha256": "3660f56e89495d35548874f35d31e41fab8ac80cabae8f3f1357ef4886c9de5b",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_07": {
+          "volume_mm3": 3630.8957093864037,
+          "sha256": "449237c584910cc5bedffced51a3ced40c764e88f7311d9482adbc3c177ab01d",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 2.504876963063824e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_07": {
+          "volume_mm3": 3630.8957093864037,
+          "sha256": "e586fd5e6d7564689d83120b03e54e86969b847f74f8e4673bc50792a6294331",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 2.504876963063824e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_07": {
+          "volume_mm3": 12011.601347766686,
+          "sha256": "af338c17f33292163293cb0638f1202a31569637f8b03daedb4eb6e94461e0eb",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.4719583584709186e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_07": {
+          "volume_mm3": 12011.601347766684,
+          "sha256": "d46fc49056f30a6efb5c06663fee441530e55eadb0bf12f4ff1716d7b66940f7",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 1.4704439980198171e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "stud_08": {
+          "volume_mm3": 30787.60800517998,
+          "sha256": "be18ba5d3b41341b031d3f1813628e4c5b88a15fd115cc381a8f4cc2097e264c",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_lower_08": {
+          "volume_mm3": 3630.8957093864024,
+          "sha256": "79570bf1c0efbf704bcb69b300f4aa04994a8b3a12dadf03a65d337f616b3256",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "washer_upper_08": {
+          "volume_mm3": 3630.895709386403,
+          "sha256": "be95beebb3849cc6ebbfe84d50a5c36644ad3a8595ce2bfb4f17ae0219379f3d",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 0.0,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_lower_08": {
+          "volume_mm3": 12011.601347766682,
+          "sha256": "d23125865f8af6b3fbe733fe31896ef8d9311c0e320d87460da2937533533e26",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 3.1377548546828646e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "nut_proxy_upper_08": {
+          "volume_mm3": 12011.601347766682,
+          "sha256": "ffe1c22b4246b2b54e236aad1612431489987f963211ae328724b1a451b5b667",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 3.1377548546828646e-13,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "body_flange_coupon": {
+          "volume_mm3": 1659200.7440669138,
+          "sha256": "7ceb71b41ce55fa8ed2b5f835487a01579119db3fe86331a8ef53d19ec5d7f07",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 2.8065397690597927e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        },
+        "cover_coupon": {
+          "volume_mm3": 2949829.838014673,
+          "sha256": "88baa3422b1cf6a2477d425bb951b4b7a2c2e5c8ad985ea9d744bd5cb64e1058",
+          "exchange": {
+            "status": "PASS",
+            "failures": [],
+            "relative_volume_error": 3.157207790813749e-16,
+            "relative_volume_tolerance": 1e-06
+          },
+          "material": null,
+          "qualification": "ENVELOPE_ONLY"
+        }
+      },
+      "part_count": 43,
+      "assembly_exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 6.681246574301814e-15,
+        "relative_volume_tolerance": 1e-06
+      },
+      "assembly_sha256": "c310be573391b260c1a3c5f126185d92e19f3c682f14fe3d59972815ff74b5e1"
+    }
+  },
+  "drive_candidates": [
+    {
+      "id": "D40-custom",
+      "measured_overlap_with_C2_handwheel_mm3": 0.0,
+      "measured_collision": false,
+      "axial_envelope_screen": {
+        "id": "D40-custom",
+        "nut_bottom_z_mm": 388,
+        "nut_top_z_mm": 428.0,
+        "handwheel_hub_gap_mm": 10.0,
+        "packaging_gate": "PASS",
+        "additional_axial_space_required_mm": 0,
+        "status": "UNSELECTED",
+        "thread_capacity": "UNASSESSED",
+        "full_drive_fit": "UNASSESSED",
+        "source_kind": "PROPOSED_CUSTOM_ENVELOPE",
+        "qualification": "Envelope screen only; thread hand, material, retention, engagement and supplier drawing remain unresolved"
+      },
+      "export": {
+        "parts": {
+          "nut_cylindrical_envelope": {
+            "volume_mm3": 135999.54597390216,
+            "sha256": "e1d79311b075ef16f211742a1bf14e9214b85556a5af2dee845e43776dc630b4",
+            "exchange": {
+              "status": "PASS",
+              "failures": [],
+              "relative_volume_error": 2.1399946777997793e-16,
+              "relative_volume_tolerance": 1e-06
+            },
+            "material": null,
+            "qualification": "ENVELOPE_ONLY"
+          }
+        },
+        "part_count": 1,
+        "assembly_exchange": {
+          "status": "PASS",
+          "failures": [],
+          "relative_volume_error": 2.1399946777997793e-16,
+          "relative_volume_tolerance": 1e-06
+        },
+        "assembly_sha256": "ea5471440d7cc95e3e1f51116dfe2fa5d37c71e96b68b9b06616d2a73c5dfd28"
+      },
+      "qualification": "Nominal cylindrical envelope only, not exact vendor CAD or suitability approval"
+    },
+    {
+      "id": "D54-index-scenario",
+      "measured_overlap_with_C2_handwheel_mm3": 7722.903356023227,
+      "measured_collision": true,
+      "axial_envelope_screen": {
+        "id": "D54-index-scenario",
+        "nut_bottom_z_mm": 388,
+        "nut_top_z_mm": 442.0,
+        "handwheel_hub_gap_mm": -4.0,
+        "packaging_gate": "FAIL",
+        "additional_axial_space_required_mm": 7.0,
+        "status": "UNSELECTED",
+        "thread_capacity": "UNASSESSED",
+        "full_drive_fit": "UNASSESSED",
+        "source_kind": "UNVERIFIED_SENSITIVITY_ENVELOPE",
+        "qualification": "Envelope screen only; thread hand, material, retention, engagement and supplier drawing remain unresolved"
+      },
+      "export": {
+        "parts": {
+          "nut_cylindrical_envelope": {
+            "volume_mm3": 183599.38706476789,
+            "sha256": "683f2239f274225267edc7bca680773372682408a38cd27fa56adde6b3706fe9",
+            "exchange": {
+              "status": "PASS",
+              "failures": [],
+              "relative_volume_error": 1.5851812428146516e-16,
+              "relative_volume_tolerance": 1e-06
+            },
+            "material": null,
+            "qualification": "ENVELOPE_ONLY"
+          }
+        },
+        "part_count": 1,
+        "assembly_exchange": {
+          "status": "PASS",
+          "failures": [],
+          "relative_volume_error": 1.5851812428146516e-16,
+          "relative_volume_tolerance": 1e-06
+        },
+        "assembly_sha256": "5682f52183a233353c4284fe94d6a904b798ed0901a1e31781c6c7192f647e33"
+      },
+      "qualification": "Nominal cylindrical envelope only, not exact vendor CAD or suitability approval"
+    },
+    {
+      "id": "D70-vendor-envelope",
+      "measured_overlap_with_C2_handwheel_mm3": 39361.427590155065,
+      "measured_collision": true,
+      "axial_envelope_screen": {
+        "id": "D70-vendor-envelope",
+        "nut_bottom_z_mm": 388,
+        "nut_top_z_mm": 458.0,
+        "handwheel_hub_gap_mm": -20.0,
+        "packaging_gate": "FAIL",
+        "additional_axial_space_required_mm": 23.0,
+        "status": "UNSELECTED",
+        "thread_capacity": "UNASSESSED",
+        "full_drive_fit": "UNASSESSED",
+        "source_kind": "VENDOR_ENVELOPE_ONLY",
+        "qualification": "Envelope screen only; thread hand, material, retention, engagement and supplier drawing remain unresolved"
+      },
+      "export": {
+        "parts": {
+          "nut_cylindrical_envelope": {
+            "volume_mm3": 175544.3435009636,
+            "sha256": "c95688aeb115e0b3a92fd6e02bc03a11b89e8239340edf4746b50369ce5f7c6f",
+            "exchange": {
+              "status": "PASS",
+              "failures": [],
+              "relative_volume_error": 1.6579190121596798e-16,
+              "relative_volume_tolerance": 1e-06
+            },
+            "material": null,
+            "qualification": "ENVELOPE_ONLY"
+          }
+        },
+        "part_count": 1,
+        "assembly_exchange": {
+          "status": "PASS",
+          "failures": [],
+          "relative_volume_error": 1.6579190121596798e-16,
+          "relative_volume_tolerance": 1e-06
+        },
+        "assembly_sha256": "5ec05e93562a60f58e910f3898a278c7932785785695d9e5e9a402a10722b1d4"
+      },
+      "qualification": "Nominal cylindrical envelope only, not exact vendor CAD or suitability approval"
+    }
+  ],
+  "manufacturing_authorized": false,
+  "limits": [
+    "No threads modeled; smooth mating cylinders are interface proxies",
+    "No material, bolt grade, preload, torque, packing compression or load capacity selected",
+    "Joint coupons are separate from C2 and are not integrated pressure-bearing valve parts"
+  ],
+  "packing_gland": {
+    "parts": {
+      "packing_ring_1": {
+        "volume_mm3": 2513.274122871836,
+        "sha256": "dc40d8f5da9abba8d41f1415365e9df5070c8ed8adbc6df3e64a0995efeebebf",
+        "exchange": {
+          "status": "PASS",
+          "failures": [],
+          "relative_volume_error": 0.0,
+          "relative_volume_tolerance": 1e-06
+        },
+        "material": null,
+        "qualification": "ENVELOPE_ONLY"
+      },
+      "packing_ring_2": {
+        "volume_mm3": 2513.2741228718355,
+        "sha256": "c6c4396a963e5c00d8b7c8498e5408a3630053888190ef3fc7b09d1385184355",
+        "exchange": {
+          "status": "PASS",
+          "failures": [],
+          "relative_volume_error": 1.8093822187881332e-16,
+          "relative_volume_tolerance": 1e-06
+        },
+        "material": null,
+        "qualification": "ENVELOPE_ONLY"
+      },
+      "packing_ring_3": {
+        "volume_mm3": 2513.2741228718355,
+        "sha256": "6e07d266f006a5378ce57a21bb43da77224efd4fff556137fbf4ee0081d666e7",
+        "exchange": {
+          "status": "PASS",
+          "failures": [],
+          "relative_volume_error": 1.8093822187881332e-16,
+          "relative_volume_tolerance": 1e-06
+        },
+        "material": null,
+        "qualification": "ENVELOPE_ONLY"
+      },
+      "packing_ring_4": {
+        "volume_mm3": 2513.2741228718355,
+        "sha256": "0827b48145282a91936a11ec22e1f1938a60852549000ed8e97bac948f639de1",
+        "exchange": {
+          "status": "PASS",
+          "failures": [],
+          "relative_volume_error": 1.8093822187881332e-16,
+          "relative_volume_tolerance": 1e-06
+        },
+        "material": null,
+        "qualification": "ENVELOPE_ONLY"
+      },
+      "gland_stud_1": {
+        "volume_mm3": 4162.610266006476,
+        "sha256": "da7d7fa9fa673effbba12353974e901db987b5e13dc42c26b2c8159568926a42",
+        "exchange": {
+          "status": "PASS",
+          "failures": [],
+          "relative_volume_error": 2.184914377404539e-16,
+          "relative_volume_tolerance": 1e-06
+        },
+        "material": null,
+        "qualification": "ENVELOPE_ONLY"
+      },
+      "gland_washer_1": {
+        "volume_mm3": 714.712328691678,
+        "sha256": "598d4b70d8c6bc24d40ccd0673f5668828aabb84405304ffb5eb200204a25f5f",
+        "exchange": {
+          "status": "PASS",
+          "failures": [],
+          "relative_volume_error": 1.5906656868467112e-16,
+          "relative_volume_tolerance": 1e-06
+        },
+        "material": null,
+        "qualification": "ENVELOPE_ONLY"
+      },
+      "gland_nut_proxy_1": {
+        "volume_mm3": 2020.524144864134,
+        "sha256": "c7ae57933db55ad51c8338a6cf093b0d417559fa03ee190e514843696b105ec6",
+        "exchange": {
+          "status": "PASS",
+          "failures": [],
+          "relative_volume_error": 2.76828783764899e-14,
+          "relative_volume_tolerance": 1e-06
+        },
+        "material": null,
+        "qualification": "ENVELOPE_ONLY"
+      },
+      "gland_stud_2": {
+        "volume_mm3": 4162.610266006473,
+        "sha256": "7f18ea8570735a81187525e1378324a7f103854f70ec7aff651880041b66fdb5",
+        "exchange": {
+          "status": "PASS",
+          "failures": [],
+          "relative_volume_error": 2.1849143774045409e-16,
+          "relative_volume_tolerance": 1e-06
+        },
+        "material": null,
+        "qualification": "ENVELOPE_ONLY"
+      },
+      "gland_washer_2": {
+        "volume_mm3": 714.712328691678,
+        "sha256": "b43758811aa6d0ba8085d79f42bba83720502bde60cf673044e59a2a060b2ce5",
+        "exchange": {
+          "status": "PASS",
+          "failures": [],
+          "relative_volume_error": 1.5906656868467112e-16,
+          "relative_volume_tolerance": 1e-06
+        },
+        "material": null,
+        "qualification": "ENVELOPE_ONLY"
+      },
+      "gland_nut_proxy_2": {
+        "volume_mm3": 2020.5241448641352,
+        "sha256": "a588bed3fe023cbad86d038334fd06ec78e1151b49c4a3b9c527fee8c9b4f956",
+        "exchange": {
+          "status": "PASS",
+          "failures": [],
+          "relative_volume_error": 2.7457814324648504e-14,
+          "relative_volume_tolerance": 1e-06
+        },
+        "material": null,
+        "qualification": "ENVELOPE_ONLY"
+      },
+      "housing_coupon": {
+        "volume_mm3": 470155.3627322459,
+        "sha256": "e6408bdeb7dcdb3a2181b100dc63fba3da9bfcf52940786d5c15d2bc767216d2",
+        "exchange": {
+          "status": "PASS",
+          "failures": [],
+          "relative_volume_error": 1.2380516213874762e-16,
+          "relative_volume_tolerance": 1e-06
+        },
+        "material": null,
+        "qualification": "ENVELOPE_ONLY"
+      },
+      "follower_and_collar": {
+        "volume_mm3": 47893.15918070613,
+        "sha256": "7e7131c26887b342bd0ec698e0ee24e53fdfe47073b88c9cc14baeff9e119160",
+        "exchange": {
+          "status": "PASS",
+          "failures": [],
+          "relative_volume_error": 3.5549421062305024e-14,
+          "relative_volume_tolerance": 1e-06
+        },
+        "material": null,
+        "qualification": "ENVELOPE_ONLY"
+      },
+      "stem_proxy": {
+        "volume_mm3": 101787.60197630932,
+        "sha256": "4610b59536146eac7cb3f470262cd7b1d983da426ba42e6d01e5f6ff97dff619",
+        "exchange": {
+          "status": "PASS",
+          "failures": [],
+          "relative_volume_error": 0.0,
+          "relative_volume_tolerance": 1e-06
+        },
+        "material": null,
+        "qualification": "ENVELOPE_ONLY"
+      }
+    },
+    "part_count": 13,
+    "assembly_exchange": {
+      "status": "PASS",
+      "failures": [],
+      "relative_volume_error": 2.8937219268687808e-15,
+      "relative_volume_tolerance": 1e-06
+    },
+    "assembly_sha256": "70a968eaa8b35813a66ae392e64e119f688cfdea199b3af18c858b9ed20148ba"
+  }
+}
