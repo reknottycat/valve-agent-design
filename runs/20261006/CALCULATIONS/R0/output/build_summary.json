@@ -1,0 +1,10 @@
+{
+  "docx": "/workspace/shared/valve-calculation-book-20261006/output/522-35.4179_工程计算书_工作稿_R0.docx",
+  "native_equations": 60,
+  "tables": 32,
+  "arithmetic_checks": 117,
+  "source_files": 32,
+  "actual_valve_CFD": "NOT YET COMPUTED",
+  "actual_valve_FEA": "NOT YET COMPUTED",
+  "manufacturing_release": "HOLD"
+}

@@ -5,17 +5,17 @@
     "C2": "2566bdee5b52024036e0bbac559dd78f8a903a34",
     "C3": "31662e66f0a14e426ab60b53c870f958a60f4ce1",
     "recovery": "102ee213568ffe1b8a36f9fd3ace45a4039cc6ed",
-    "C4": "79887e8e6fbfaf074262facb5cd9d8ed1b863d27"
+    "C4": "79887e8e6fbfaf074262facb5cd9d8ed1b863d27",
+    "R0": "dd306c88fe42e7903894ae54e0ad6b2bf49ff808"
   },
   "excluded": [
     "unfrozen C5",
-    "R0 not yet explicitly frozen",
     "unavailable upstream assets"
   ],
-  "artifact_count": 20,
-  "raw_bytes": 17982098,
-  "encoded_bytes": 11445335,
-  "chunk_count": 41,
+  "artifact_count": 22,
+  "raw_bytes": 20725188,
+  "encoded_bytes": 13450325,
+  "chunk_count": 47,
   "largest_chunk_bytes": 409600,
   "fresh_restore_verified": true,
   "per_file": [
@@ -158,27 +158,41 @@
       "sha256": "c310be573391b260c1a3c5f126185d92e19f3c682f14fe3d59972815ff74b5e1",
       "git_blob_sha1": "b591356b6a7f326f4dbb5609cbb499c845924ef2",
       "exact_git_bytes_equal": true
+    },
+    {
+      "path": "runs/20261006/CALCULATIONS/R0/output/522-35.4179_工程计算书_工作稿_R0.docx",
+      "bytes": 564350,
+      "sha256": "d380e7d38b2107b3cfe443220fb2bed814e5ee8a1d0e1441a1924b0bec889dca",
+      "git_blob_sha1": "b9b95403d74788ed99eabc33a0ff2c44365cf3b3",
+      "exact_git_bytes_equal": true
+    },
+    {
+      "path": "runs/20261006/CALCULATIONS/R0/output/522-35.4179_工程计算书_工作稿_R0.pdf",
+      "bytes": 2178740,
+      "sha256": "24c194dbb997d4aa167f3700d1dc0dfee683fd2b9b9237ec32c7a3a5cff7f567",
+      "git_blob_sha1": "0de21aecfe4a9c7cfb4c8a6dbab4c5662ec398c7",
+      "exact_git_bytes_equal": true
     }
   ],
   "verify_only": {
     "mode": "verify-only",
-    "verified_files": 20,
-    "verified_raw_bytes": 17982098,
+    "verified_files": 22,
+    "verified_raw_bytes": 20725188,
     "created_files": 0,
     "existing_matching_files": 0
   },
   "first_restore": {
     "mode": "restore",
-    "verified_files": 20,
-    "verified_raw_bytes": 17982098,
-    "created_files": 20,
+    "verified_files": 22,
+    "verified_raw_bytes": 20725188,
+    "created_files": 22,
     "existing_matching_files": 0
   },
   "second_restore": {
     "mode": "restore",
-    "verified_files": 20,
-    "verified_raw_bytes": 17982098,
+    "verified_files": 22,
+    "verified_raw_bytes": 20725188,
     "created_files": 0,
-    "existing_matching_files": 20
+    "existing_matching_files": 22
   }
 }

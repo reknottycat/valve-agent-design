@@ -1,0 +1,76 @@
+{
+  "items": [
+    {
+      "item": 1,
+      "name": "Body",
+      "file": "body.step",
+      "quantity": 1,
+      "volume_cm3": 17830.31,
+      "material": "UNSELECTED",
+      "status": "PROPOSED_SIMPLIFIED_COMPONENT"
+    },
+    {
+      "item": 2,
+      "name": "Seat ring",
+      "file": "seat_ring.step",
+      "quantity": 1,
+      "volume_cm3": 94.122,
+      "material": "UNSELECTED",
+      "status": "PROPOSED_SIMPLIFIED_COMPONENT"
+    },
+    {
+      "item": 3,
+      "name": "Disc + guide",
+      "file": "disc_guide.step",
+      "quantity": 1,
+      "volume_cm3": 702.711,
+      "material": "UNSELECTED",
+      "status": "PROPOSED_SIMPLIFIED_COMPONENT"
+    },
+    {
+      "item": 4,
+      "name": "Bonnet + support",
+      "file": "bonnet.step",
+      "quantity": 1,
+      "volume_cm3": 3533.192,
+      "material": "UNSELECTED",
+      "status": "PROPOSED_SIMPLIFIED_COMPONENT"
+    },
+    {
+      "item": 5,
+      "name": "Packing study",
+      "file": "packing.step",
+      "quantity": 1,
+      "volume_cm3": 10.053,
+      "material": "UNSELECTED",
+      "status": "PROPOSED_SIMPLIFIED_COMPONENT"
+    },
+    {
+      "item": 6,
+      "name": "Spindle envelope",
+      "file": "stem.step",
+      "quantity": 1,
+      "volume_cm3": 420.706,
+      "material": "UNSELECTED",
+      "status": "PROPOSED_SIMPLIFIED_COMPONENT"
+    },
+    {
+      "item": 7,
+      "name": "Handwheel",
+      "file": "handwheel.step",
+      "quantity": 1,
+      "volume_cm3": 440.536,
+      "material": "UNSELECTED",
+      "status": "PROPOSED_SIMPLIFIED_COMPONENT"
+    }
+  ],
+  "scope": "Seven main simplified components, not original full40-position BOM",
+  "missing": [
+    "Bonnet fasteners and gasket",
+    "Detailed stem nut/thread",
+    "Locking parts",
+    "Complete packing/gland detail",
+    "Original part-number material traceability"
+  ],
+  "manufacturing_authorized": false
+}

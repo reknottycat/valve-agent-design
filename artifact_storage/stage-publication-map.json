@@ -98,5 +98,22 @@
     "manifest_path": null,
     "transport_original_paths": [],
     "transport_chunk_paths": []
+  },
+  {
+    "stage": "R0",
+    "frozen_commit": "dd306c88fe42e7903894ae54e0ad6b2bf49ff808",
+    "manifest_path": "artifact_storage/manifests/R0.json",
+    "transport_original_paths": [
+      "runs/20261006/CALCULATIONS/R0/output/522-35.4179_工程计算书_工作稿_R0.docx",
+      "runs/20261006/CALCULATIONS/R0/output/522-35.4179_工程计算书_工作稿_R0.pdf"
+    ],
+    "transport_chunk_paths": [
+      "artifact_storage/chunks/da5fca5a938ff16d8a1bb7afe77a4462be5d9e8c7218aa67ab8ba54192c09867/000000.bin",
+      "artifact_storage/chunks/da5fca5a938ff16d8a1bb7afe77a4462be5d9e8c7218aa67ab8ba54192c09867/000001.bin",
+      "artifact_storage/chunks/5b784851df773748a02dd40a359486b74c0cdcc54b2012710cf978110c971e1a/000000.bin",
+      "artifact_storage/chunks/5b784851df773748a02dd40a359486b74c0cdcc54b2012710cf978110c971e1a/000001.bin",
+      "artifact_storage/chunks/5b784851df773748a02dd40a359486b74c0cdcc54b2012710cf978110c971e1a/000002.bin",
+      "artifact_storage/chunks/5b784851df773748a02dd40a359486b74c0cdcc54b2012710cf978110c971e1a/000003.bin"
+    ]
   }
 ]

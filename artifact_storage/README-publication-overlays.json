@@ -1,0 +1,34 @@
+{
+  "format": "valve-publication-readme-overlay-v1",
+  "description": "Publication-only notice overlays; engineering artifacts and their frozen manifests remain unchanged.",
+  "entries": [
+    {
+      "stage": "C2",
+      "source_commit": "2566bdee5b52024036e0bbac559dd78f8a903a34",
+      "original_readme_git_blob": "f081032e26d45592115a4626ba997ad7690882a6",
+      "published_readme_git_blob": "4df8c810a773f436690c5d8643877f0dcf09d14c",
+      "notice": "Only publication/restoration notice was inserted after the first project heading; frozen scientific package files are unchanged."
+    },
+    {
+      "stage": "C3",
+      "source_commit": "31662e66f0a14e426ab60b53c870f958a60f4ce1",
+      "original_readme_git_blob": "c4c64449d78a19dc5e0eb61852eec47bc5bceca0",
+      "published_readme_git_blob": "8056562e779636f9bf351497f4d28a4c76370913",
+      "notice": "Only publication/restoration notice was inserted after the first project heading; frozen scientific package files are unchanged."
+    },
+    {
+      "stage": "C4",
+      "source_commit": "79887e8e6fbfaf074262facb5cd9d8ed1b863d27",
+      "original_readme_git_blob": "2c0d27eceb6f12e62f1c67bdbb09f4c3eb9bdfc4",
+      "published_readme_git_blob": "3c8bb2d058c1f091af3099f1522f80317de014bb",
+      "notice": "Only publication/restoration notice was inserted after the first project heading; frozen scientific package files are unchanged."
+    },
+    {
+      "stage": "R0",
+      "source_commit": "dd306c88fe42e7903894ae54e0ad6b2bf49ff808",
+      "original_readme_git_blob": "af006be78ca543fc554236ff01d9845b997e7bae",
+      "published_readme_git_blob": "a42233d805818a5f3a953fcbf8ffbfa7d43f5366",
+      "notice": "Only publication/restoration notice was inserted after the first project heading; frozen scientific package files are unchanged."
+    }
+  ]
+}

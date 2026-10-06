@@ -1,0 +1,709 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "bore area",
+      "computed": 31415.926535897932,
+      "source": 31415.926535897932,
+      "passed": true
+    },
+    {
+      "check": "curtain area",
+      "computed": 35814.15625092365,
+      "source": 35814.15625092365,
+      "passed": true
+    },
+    {
+      "check": "reference turns",
+      "computed": 9.5,
+      "source": 9.5,
+      "passed": true
+    },
+    {
+      "check": "catalog pressure",
+      "computed": 0.61781895,
+      "source": 0.61781895,
+      "passed": true
+    },
+    {
+      "check": "literal6-conditional/forward-held/disc_guide",
+      "computed": 18485.099757795808,
+      "source": 18485.099757795808,
+      "passed": true
+    },
+    {
+      "check": "literal6-conditional/forward-held/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "passed": true
+    },
+    {
+      "check": "literal6-conditional/reverse-check/disc_guide",
+      "computed": -24023.235645231427,
+      "source": -24023.235645231427,
+      "passed": true
+    },
+    {
+      "check": "literal6-conditional/reverse-check/stem",
+      "computed": 598.9172321525841,
+      "source": 598.9172321525841,
+      "passed": true
+    },
+    {
+      "check": "literal6-conditional/common-held/disc_guide",
+      "computed": -4939.218655283035,
+      "source": -4939.218655283035,
+      "passed": true
+    },
+    {
+      "check": "literal6-conditional/common-held/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "passed": true
+    },
+    {
+      "check": "literal6-conditional/common-check/disc_guide",
+      "computed": -5538.135887435619,
+      "source": -5538.135887435619,
+      "passed": true
+    },
+    {
+      "check": "literal6-conditional/common-check/stem",
+      "computed": 598.9172321525841,
+      "source": 598.9172321525841,
+      "passed": true
+    },
+    {
+      "check": "literal6-conditional/forward-free-diagnostic/disc_guide",
+      "computed": 18485.099757795808,
+      "source": 18485.099757795808,
+      "passed": true
+    },
+    {
+      "check": "literal6-conditional/forward-free-diagnostic/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "passed": true
+    },
+    {
+      "check": "catalog6p3-converted/forward-held/disc_guide",
+      "computed": 19409.354745685596,
+      "source": 19409.354745685596,
+      "passed": true
+    },
+    {
+      "check": "catalog6p3-converted/forward-held/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "passed": true
+    },
+    {
+      "check": "catalog6p3-converted/reverse-check/disc_guide",
+      "computed": -25224.397427492997,
+      "source": -25224.397427492997,
+      "passed": true
+    },
+    {
+      "check": "catalog6p3-converted/reverse-check/stem",
+      "computed": 628.8630937602132,
+      "source": 628.8630937602132,
+      "passed": true
+    },
+    {
+      "check": "catalog6p3-converted/common-held/disc_guide",
+      "computed": -5186.179588047191,
+      "source": -5186.179588047191,
+      "passed": true
+    },
+    {
+      "check": "catalog6p3-converted/common-held/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "passed": true
+    },
+    {
+      "check": "catalog6p3-converted/common-check/disc_guide",
+      "computed": -5815.042681807401,
+      "source": -5815.042681807401,
+      "passed": true
+    },
+    {
+      "check": "catalog6p3-converted/common-check/stem",
+      "computed": 628.8630937602132,
+      "source": 628.8630937602132,
+      "passed": true
+    },
+    {
+      "check": "catalog6p3-converted/forward-free-diagnostic/disc_guide",
+      "computed": 19409.354745685596,
+      "source": 19409.354745685596,
+      "passed": true
+    },
+    {
+      "check": "catalog6p3-converted/forward-free-diagnostic/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "passed": true
+    },
+    {
+      "check": "selected-study/forward-held/disc_guide",
+      "computed": 19792.033717615697,
+      "source": 19792.033717615697,
+      "passed": true
+    },
+    {
+      "check": "selected-study/forward-held/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "passed": true
+    },
+    {
+      "check": "selected-study/reverse-check/disc_guide",
+      "computed": -25721.727019413356,
+      "source": -25721.727019413356,
+      "passed": true
+    },
+    {
+      "check": "selected-study/reverse-check/stem",
+      "computed": 641.2618924507485,
+      "source": 641.2618924507485,
+      "passed": true
+    },
+    {
+      "check": "selected-study/common-held/disc_guide",
+      "computed": -5288.431409346911,
+      "source": -5288.431409346911,
+      "passed": true
+    },
+    {
+      "check": "selected-study/common-held/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "passed": true
+    },
+    {
+      "check": "selected-study/common-check/disc_guide",
+      "computed": -5929.693301797659,
+      "source": -5929.693301797659,
+      "passed": true
+    },
+    {
+      "check": "selected-study/common-check/stem",
+      "computed": 641.2618924507485,
+      "source": 641.2618924507485,
+      "passed": true
+    },
+    {
+      "check": "selected-study/forward-free-diagnostic/disc_guide",
+      "computed": 19792.033717615697,
+      "source": 19792.033717615697,
+      "passed": true
+    },
+    {
+      "check": "selected-study/forward-free-diagnostic/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "passed": true
+    },
+    {
+      "check": "overload-sensitivity/forward-held/disc_guide",
+      "computed": 31415.926535897932,
+      "source": 31415.926535897932,
+      "passed": true
+    },
+    {
+      "check": "overload-sensitivity/forward-held/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "passed": true
+    },
+    {
+      "check": "overload-sensitivity/reverse-check/disc_guide",
+      "computed": -40828.138126052945,
+      "source": -40828.138126052945,
+      "passed": true
+    },
+    {
+      "check": "overload-sensitivity/reverse-check/stem",
+      "computed": 1017.8760197630929,
+      "source": 1017.8760197630929,
+      "passed": true
+    },
+    {
+      "check": "overload-sensitivity/common-held/disc_guide",
+      "computed": -8394.335570391922,
+      "source": -8394.335570391922,
+      "passed": true
+    },
+    {
+      "check": "overload-sensitivity/common-held/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "passed": true
+    },
+    {
+      "check": "overload-sensitivity/common-check/disc_guide",
+      "computed": -9412.211590155013,
+      "source": -9412.211590155013,
+      "passed": true
+    },
+    {
+      "check": "overload-sensitivity/common-check/stem",
+      "computed": 1017.8760197630929,
+      "source": 1017.8760197630929,
+      "passed": true
+    },
+    {
+      "check": "overload-sensitivity/forward-free-diagnostic/disc_guide",
+      "computed": 31415.926535897932,
+      "source": 31415.926535897932,
+      "passed": true
+    },
+    {
+      "check": "overload-sensitivity/forward-free-diagnostic/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "passed": true
+    },
+    {
+      "check": "drive0/thread torque",
+      "computed": 29.093815108958196,
+      "source": 29.093815108958196,
+      "passed": true
+    },
+    {
+      "check": "drive0/collar torque",
+      "computed": 0.0,
+      "source": 0.0,
+      "passed": true
+    },
+    {
+      "check": "drive0/rim force",
+      "computed": 181.83634443098873,
+      "source": 181.83634443098873,
+      "passed": true
+    },
+    {
+      "check": "drive1/thread torque",
+      "computed": 29.093815108958196,
+      "source": 29.093815108958196,
+      "passed": true
+    },
+    {
+      "check": "drive1/collar torque",
+      "computed": 23.750440461138837,
+      "source": 23.750440461138837,
+      "passed": true
+    },
+    {
+      "check": "drive1/rim force",
+      "computed": 330.27659731310644,
+      "source": 330.27659731310644,
+      "passed": true
+    },
+    {
+      "check": "drive2/thread torque",
+      "computed": 29.093815108958196,
+      "source": 29.093815108958196,
+      "passed": true
+    },
+    {
+      "check": "drive2/collar torque",
+      "computed": 47.50088092227767,
+      "source": 47.50088092227767,
+      "passed": true
+    },
+    {
+      "check": "drive2/rim force",
+      "computed": 478.7168501952242,
+      "source": 478.7168501952242,
+      "passed": true
+    },
+    {
+      "check": "drive3/thread torque",
+      "computed": 46.16532650117965,
+      "source": 46.16532650117965,
+      "passed": true
+    },
+    {
+      "check": "drive3/collar torque",
+      "computed": 0.0,
+      "source": 0.0,
+      "passed": true
+    },
+    {
+      "check": "drive3/rim force",
+      "computed": 288.5332906323728,
+      "source": 288.5332906323728,
+      "passed": true
+    },
+    {
+      "check": "drive4/thread torque",
+      "computed": 46.16532650117965,
+      "source": 46.16532650117965,
+      "passed": true
+    },
+    {
+      "check": "drive4/collar torque",
+      "computed": 23.750440461138837,
+      "source": 23.750440461138837,
+      "passed": true
+    },
+    {
+      "check": "drive4/rim force",
+      "computed": 436.97354351449053,
+      "source": 436.97354351449053,
+      "passed": true
+    },
+    {
+      "check": "drive5/thread torque",
+      "computed": 46.16532650117965,
+      "source": 46.16532650117965,
+      "passed": true
+    },
+    {
+      "check": "drive5/collar torque",
+      "computed": 47.50088092227767,
+      "source": 47.50088092227767,
+      "passed": true
+    },
+    {
+      "check": "drive5/rim force",
+      "computed": 585.4137963966083,
+      "source": 585.4137963966083,
+      "passed": true
+    },
+    {
+      "check": "drive6/thread torque",
+      "computed": 70.2388215487141,
+      "source": 70.2388215487141,
+      "passed": true
+    },
+    {
+      "check": "drive6/collar torque",
+      "computed": 0.0,
+      "source": 0.0,
+      "passed": true
+    },
+    {
+      "check": "drive6/rim force",
+      "computed": 438.9926346794631,
+      "source": 438.9926346794631,
+      "passed": true
+    },
+    {
+      "check": "drive7/thread torque",
+      "computed": 70.2388215487141,
+      "source": 70.2388215487141,
+      "passed": true
+    },
+    {
+      "check": "drive7/collar torque",
+      "computed": 23.750440461138837,
+      "source": 23.750440461138837,
+      "passed": true
+    },
+    {
+      "check": "drive7/rim force",
+      "computed": 587.4328875615809,
+      "source": 587.4328875615809,
+      "passed": true
+    },
+    {
+      "check": "drive8/thread torque",
+      "computed": 70.2388215487141,
+      "source": 70.2388215487141,
+      "passed": true
+    },
+    {
+      "check": "drive8/collar torque",
+      "computed": 47.50088092227767,
+      "source": 47.50088092227767,
+      "passed": true
+    },
+    {
+      "check": "drive8/rim force",
+      "computed": 735.8731404436986,
+      "source": 735.8731404436986,
+      "passed": true
+    },
+    {
+      "check": "drive9/thread torque",
+      "computed": 104.98511005539636,
+      "source": 104.98511005539636,
+      "passed": true
+    },
+    {
+      "check": "drive9/collar torque",
+      "computed": 0.0,
+      "source": 0.0,
+      "passed": true
+    },
+    {
+      "check": "drive9/rim force",
+      "computed": 656.1569378462273,
+      "source": 656.1569378462273,
+      "passed": true
+    },
+    {
+      "check": "drive10/thread torque",
+      "computed": 104.98511005539636,
+      "source": 104.98511005539636,
+      "passed": true
+    },
+    {
+      "check": "drive10/collar torque",
+      "computed": 23.750440461138837,
+      "source": 23.750440461138837,
+      "passed": true
+    },
+    {
+      "check": "drive10/rim force",
+      "computed": 804.597190728345,
+      "source": 804.597190728345,
+      "passed": true
+    },
+    {
+      "check": "drive11/thread torque",
+      "computed": 104.98511005539636,
+      "source": 104.98511005539636,
+      "passed": true
+    },
+    {
+      "check": "drive11/collar torque",
+      "computed": 47.50088092227767,
+      "source": 47.50088092227767,
+      "passed": true
+    },
+    {
+      "check": "drive11/rim force",
+      "computed": 953.0374436104626,
+      "source": 953.0374436104626,
+      "passed": true
+    },
+    {
+      "check": "nominal root axial component",
+      "computed": 29.96432818073722,
+      "source": 29.96432818073722,
+      "passed": true
+    },
+    {
+      "check": "J8-16/inner-edge",
+      "computed": 42188.699072469615,
+      "source": 42188.699072469615,
+      "passed": true
+    },
+    {
+      "check": "J8-16/mid-annulus",
+      "computed": 47550.361006571715,
+      "source": 47550.36100657171,
+      "passed": true
+    },
+    {
+      "check": "J8-16/outer-edge",
+      "computed": 53232.65388689918,
+      "source": 53232.65388689918,
+      "passed": true
+    },
+    {
+      "check": "J12-16/inner-edge",
+      "computed": 42188.699072469615,
+      "source": 42188.699072469615,
+      "passed": true
+    },
+    {
+      "check": "J12-16/mid-annulus",
+      "computed": 47550.361006571715,
+      "source": 47550.36100657171,
+      "passed": true
+    },
+    {
+      "check": "J12-16/outer-edge",
+      "computed": 53232.65388689918,
+      "source": 53232.65388689918,
+      "passed": true
+    },
+    {
+      "check": "J8-20/inner-edge",
+      "computed": 42188.699072469615,
+      "source": 42188.699072469615,
+      "passed": true
+    },
+    {
+      "check": "J8-20/mid-annulus",
+      "computed": 50036.24044150424,
+      "source": 50036.24044150424,
+      "passed": true
+    },
+    {
+      "check": "J8-20/outer-edge",
+      "computed": 58552.75255019427,
+      "source": 58552.75255019427,
+      "passed": true
+    },
+    {
+      "check": "sea0,0.03/rho",
+      "computed": 1023.9599999999999,
+      "source": 1023.9599999999999,
+      "passed": true
+    },
+    {
+      "check": "sea0,0.03/mu",
+      "computed": 0.001887118748250243,
+      "source": 0.001887118748250243,
+      "passed": true
+    },
+    {
+      "check": "sea0,0.03/nu",
+      "computed": 1.8429613932675525e-06,
+      "source": 1.8429613932675525e-06,
+      "passed": true
+    },
+    {
+      "check": "sea0,0.035/rho",
+      "computed": 1027.97,
+      "source": 1027.97,
+      "passed": true
+    },
+    {
+      "check": "sea0,0.035/mu",
+      "computed": 0.001905564439161327,
+      "source": 0.001905564439161327,
+      "passed": true
+    },
+    {
+      "check": "sea0,0.035/nu",
+      "computed": 1.8537160025694594e-06,
+      "source": 1.8537160025694594e-06,
+      "passed": true
+    },
+    {
+      "check": "sea0,0.04/rho",
+      "computed": 1031.98,
+      "source": 1031.98,
+      "passed": true
+    },
+    {
+      "check": "sea0,0.04/mu",
+      "computed": 0.0019247243787252366,
+      "source": 0.0019247243787252366,
+      "passed": true
+    },
+    {
+      "check": "sea0,0.04/nu",
+      "computed": 1.8650791475854537e-06,
+      "source": 1.8650791475854537e-06,
+      "passed": true
+    },
+    {
+      "check": "sea20,0.03/rho",
+      "computed": 1021.0687189931999,
+      "source": 1021.0687189932,
+      "passed": true
+    },
+    {
+      "check": "sea20,0.03/mu",
+      "computed": 0.0010649342600091828,
+      "source": 0.0010649342600091828,
+      "passed": true
+    },
+    {
+      "check": "sea20,0.03/nu",
+      "computed": 1.04296041999919e-06,
+      "source": 1.04296041999919e-06,
+      "passed": true
+    },
+    {
+      "check": "sea20,0.035/rho",
+      "computed": 1024.9109328963002,
+      "source": 1024.9109328963,
+      "passed": true
+    },
+    {
+      "check": "sea20,0.035/mu",
+      "computed": 0.0010766289252529323,
+      "source": 0.0010766289252529323,
+      "passed": true
+    },
+    {
+      "check": "sea20,0.035/nu",
+      "computed": 1.050460962700907e-06,
+      "source": 1.0504609627009073e-06,
+      "passed": true
+    },
+    {
+      "check": "sea20,0.04/rho",
+      "computed": 1028.7531464767999,
+      "source": 1028.7531464767999,
+      "passed": true
+    },
+    {
+      "check": "sea20,0.04/mu",
+      "computed": 0.0010886567143854782,
+      "source": 0.0010886567143854782,
+      "passed": true
+    },
+    {
+      "check": "sea20,0.04/nu",
+      "computed": 1.0582292925312858e-06,
+      "source": 1.0582292925312858e-06,
+      "passed": true
+    },
+    {
+      "check": "sea50,0.03/rho",
+      "computed": 1010.2486512075001,
+      "source": 1010.2486512075001,
+      "passed": true
+    },
+    {
+      "check": "sea50,0.03/mu",
+      "computed": 0.000587077108391207,
+      "source": 0.000587077108391207,
+      "passed": true
+    },
+    {
+      "check": "sea50,0.03/nu",
+      "computed": 5.811213978751695e-07,
+      "source": 5.811213978751695e-07,
+      "passed": true
+    },
+    {
+      "check": "sea50,0.035/rho",
+      "computed": 1013.948888101875,
+      "source": 1013.948888101875,
+      "passed": true
+    },
+    {
+      "check": "sea50,0.035/mu",
+      "computed": 0.000594324276489186,
+      "source": 0.000594324276489186,
+      "passed": true
+    },
+    {
+      "check": "sea50,0.035/nu",
+      "computed": 5.861481613750456e-07,
+      "source": 5.861481613750456e-07,
+      "passed": true
+    },
+    {
+      "check": "sea50,0.04/rho",
+      "computed": 1017.6491229800001,
+      "source": 1017.64912298,
+      "passed": true
+    },
+    {
+      "check": "sea50,0.04/mu",
+      "computed": 0.0006017183509372217,
+      "source": 0.0006017183509372217,
+      "passed": true
+    },
+    {
+      "check": "sea50,0.04/nu",
+      "computed": 5.912827293313034e-07,
+      "source": 5.912827293313035e-07,
+      "passed": true
+    }
+  ],
+  "count": 117,
+  "scope": "Independent arithmetic only; not CFD FEA strength or release"
+}

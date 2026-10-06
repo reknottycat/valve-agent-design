@@ -1,0 +1,36 @@
+{
+  "status": "PASS_DOCUMENT_AND_ARITHMETIC_REVIEW_ONLY",
+  "pages": 29,
+  "native_editable_equations": 60,
+  "tables": 32,
+  "source_files": 32,
+  "generator_arithmetic_checks": 117,
+  "independent_numeric_checks": 208,
+  "visual_review": {
+    "pages_1_to_15": "All full-size page PNGs reviewed; pages1-3 unchanged from reviewed render3 and byte-verified",
+    "pages_16_to_29": "All full-size final render4 PNGs independently reviewed",
+    "clipping_overlap_missing_glyphs": "NONE_OBSERVED",
+    "reserved_word_formula_rendering": "FIXED_AND_VERIFIED",
+    "pdf_red_syntax_error_spans": 0,
+    "pdf_margin_overflow_spans": 0
+  },
+  "artifacts": [
+    {
+      "file": "output/522-35.4179_工程计算书_工作稿_R0.docx",
+      "bytes": 564350,
+      "sha256": "d380e7d38b2107b3cfe443220fb2bed814e5ee8a1d0e1441a1924b0bec889dca"
+    },
+    {
+      "file": "output/522-35.4179_工程计算书_工作稿_R0.pdf",
+      "bytes": 2178740,
+      "sha256": "24c194dbb997d4aa167f3700d1dc0dfee683fd2b9b9237ec32c7a3a5cff7f567"
+    }
+  ],
+  "engineering_limits": {
+    "actual_valve_cfd": "NOT YET COMPUTED",
+    "actual_valve_fea": "NOT YET COMPUTED",
+    "allowable_stresses": "UNSET",
+    "physical_test_pressure": "UNSET",
+    "manufacturing_release": "HOLD"
+  }
+}

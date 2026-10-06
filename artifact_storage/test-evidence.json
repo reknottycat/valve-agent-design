@@ -28,8 +28,14 @@
       "optimized_log": "qa/edge-optimized-results.txt"
     }
   ],
-  "all_20_exact_git_blob_roundtrips_passed": true,
   "linux_proc_descriptor_atomic_publication_required": true,
   "original_engineering_repository_modified": false,
-  "remote_writes_performed": false
+  "remote_writes_performed": false,
+  "all_22_exact_git_blob_roundtrips_passed": true,
+  "full_bundle_roundtrip_modes": [
+    "normal",
+    "optimized"
+  ],
+  "R0_frozen_commit": "dd306c88fe42e7903894ae54e0ad6b2bf49ff808",
+  "unchanged_base_chunk_count": 41
 }

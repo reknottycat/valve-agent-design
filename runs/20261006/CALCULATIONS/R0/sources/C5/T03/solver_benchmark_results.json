@@ -1,0 +1,112 @@
+{
+  "ccx": [
+    {
+      "case": "cases/ccx_tension_n1_N-mm-MPa",
+      "units": "N-mm-MPa",
+      "elements": 1,
+      "mean_end_displacement": 0.005,
+      "mean_axial_stress": 10.0,
+      "reaction_x": -1000.0,
+      "relative_errors": {
+        "displacement": 0.0,
+        "stress": 0.0,
+        "force_balance": 0.0,
+        "spurious_stress": 1.3568820000000001e-15
+      },
+      "passed": true,
+      "scope": "Analytical uniform-strain patch and consistent-unit check; not actual valve FEA or nonlinear validation"
+    },
+    {
+      "case": "cases/ccx_tension_n2_N-mm-MPa",
+      "units": "N-mm-MPa",
+      "elements": 8,
+      "mean_end_displacement": 0.005,
+      "mean_axial_stress": 10.0,
+      "reaction_x": -1000.0,
+      "relative_errors": {
+        "displacement": 0.0,
+        "stress": 0.0,
+        "force_balance": 0.0,
+        "spurious_stress": 5.533406e-15
+      },
+      "passed": true,
+      "scope": "Analytical uniform-strain patch and consistent-unit check; not actual valve FEA or nonlinear validation"
+    },
+    {
+      "case": "cases/ccx_tension_n4_N-mm-MPa",
+      "units": "N-mm-MPa",
+      "elements": 64,
+      "mean_end_displacement": 0.005,
+      "mean_axial_stress": 10.0,
+      "reaction_x": -1000.0,
+      "relative_errors": {
+        "displacement": 0.0,
+        "stress": 0.0,
+        "force_balance": 0.0,
+        "spurious_stress": 1.480679e-14
+      },
+      "passed": true,
+      "scope": "Analytical uniform-strain patch and consistent-unit check; not actual valve FEA or nonlinear validation"
+    },
+    {
+      "case": "cases/ccx_tension_n2_N-m-Pa",
+      "units": "N-m-Pa",
+      "elements": 8,
+      "mean_end_displacement": 5e-06,
+      "mean_axial_stress": 10000000.0,
+      "reaction_x": -1000.0,
+      "relative_errors": {
+        "displacement": 0.0,
+        "stress": 0.0,
+        "force_balance": 0.0,
+        "spurious_stress": 4.3785090000000004e-15
+      },
+      "passed": true,
+      "scope": "Analytical uniform-strain patch and consistent-unit check; not actual valve FEA or nonlinear validation"
+    }
+  ],
+  "openfoam": {
+    "case": "openfoam_cavity_Re10",
+    "final_time": 0.5,
+    "timesteps": 100,
+    "last_linear_solves": {
+      "Ux": {
+        "field": "Ux",
+        "initial": 2.3091e-07,
+        "final": 2.3091e-07,
+        "iterations": 0
+      },
+      "Uy": {
+        "field": "Uy",
+        "initial": 5.0684e-07,
+        "final": 5.0684e-07,
+        "iterations": 0
+      },
+      "p": {
+        "field": "p",
+        "initial": 9.59103e-07,
+        "final": 9.59103e-07,
+        "iterations": 0
+      }
+    },
+    "final_continuity": {
+      "local": 9.66354e-09,
+      "global_error": 1.13175e-18,
+      "cumulative": 1.21735e-17
+    },
+    "max_courant": 0.852134,
+    "checks": {
+      "mesh_ok": true,
+      "completed": true,
+      "no_fatal": true,
+      "final_linear_residuals": true,
+      "continuity": true,
+      "courant": true,
+      "pressure_is_kinematic": true,
+      "velocity_is_m_per_s": true
+    },
+    "passed": true,
+    "scope": "Standard Re=10 cavity execution and log/unit smoke test; no mesh-convergence or validated valve flow coefficient"
+  },
+  "passed": true
+}

@@ -18,6 +18,7 @@ STAGES = [
     ('C3', '31662e66f0a14e426ab60b53c870f958a60f4ce1'),
     ('recovery', '102ee213568ffe1b8a36f9fd3ace45a4039cc6ed'),
     ('C4', '79887e8e6fbfaf074262facb5cd9d8ed1b863d27'),
+    ('R0', 'dd306c88fe42e7903894ae54e0ad6b2bf49ff808'),
 ]
 
 def git(repo, *args):
@@ -61,7 +62,7 @@ def build(repo, output):
                           'transport_chunk_paths': [c['path'] for e in stage_entries for c in e['chunks']]})
     manifest = t.write_bundle(output, packed)
     evidence = {'format': 'valve-transport-evidence-v1', 'frozen_stages': dict(STAGES),
-                'excluded': ['unfrozen C5', 'R0 not yet explicitly frozen', 'unavailable upstream assets'],
+                'excluded': ['unfrozen C5', 'unavailable upstream assets'],
                 'artifact_count': len(packed), 'raw_bytes': sum(e['bytes'] for e, _ in packed),
                 'encoded_bytes': sum(e['encoded_bytes'] for e, _ in packed),
                 'chunk_count': sum(len(e['chunks']) for e, _ in packed),

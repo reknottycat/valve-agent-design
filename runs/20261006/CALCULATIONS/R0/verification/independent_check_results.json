@@ -1,0 +1,1260 @@
+{
+  "scope": "Independent arithmetic/source/text review; no solver or generator execution and no geometry reconstruction. Visual QA handled separately.",
+  "numeric_checks": 208,
+  "all_numeric_passed": true,
+  "source_hashes_passed": true,
+  "source_files": 32,
+  "native_equations": 60,
+  "all_equations_numbered": true,
+  "equation_number_unique": true,
+  "checks": [
+    {
+      "label": "closed/disc_guide/inlet coefficient",
+      "computed": 31415.926535897932,
+      "source": 31415.926535897932,
+      "ok": true
+    },
+    {
+      "label": "closed/disc_guide/outlet coefficient",
+      "computed": -39810.26210628986,
+      "source": -39810.262106289854,
+      "ok": true
+    },
+    {
+      "label": "closed/stem/inlet coefficient",
+      "computed": 0,
+      "source": 0.0,
+      "ok": true
+    },
+    {
+      "label": "closed/stem/outlet coefficient",
+      "computed": 0,
+      "source": 0.0,
+      "ok": true
+    },
+    {
+      "label": "check_closed/disc_guide/inlet coefficient",
+      "computed": 31415.926535897932,
+      "source": 31415.926535897932,
+      "ok": true
+    },
+    {
+      "label": "check_closed/disc_guide/outlet coefficient",
+      "computed": -40828.13812605295,
+      "source": -40828.138126052945,
+      "ok": true
+    },
+    {
+      "label": "check_closed/stem/inlet coefficient",
+      "computed": 0,
+      "source": 0.0,
+      "ok": true
+    },
+    {
+      "label": "check_closed/stem/outlet coefficient",
+      "computed": 1017.8760197630929,
+      "source": 1017.8760197630929,
+      "ok": true
+    },
+    {
+      "label": "literal6-conditional/forward-held/disc",
+      "computed": 18485.099757795808,
+      "source": 18485.099757795808,
+      "ok": true
+    },
+    {
+      "label": "literal6-conditional/forward-held/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "ok": true
+    },
+    {
+      "label": "literal6-conditional/reverse-check/disc",
+      "computed": -24023.23564523143,
+      "source": -24023.235645231427,
+      "ok": true
+    },
+    {
+      "label": "literal6-conditional/reverse-check/stem",
+      "computed": 598.9172321525841,
+      "source": 598.9172321525841,
+      "ok": true
+    },
+    {
+      "label": "literal6-conditional/common-held/disc",
+      "computed": -4939.218655283039,
+      "source": -4939.218655283035,
+      "ok": true
+    },
+    {
+      "label": "literal6-conditional/common-held/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "ok": true
+    },
+    {
+      "label": "literal6-conditional/common-check/disc",
+      "computed": -5538.135887435623,
+      "source": -5538.135887435619,
+      "ok": true
+    },
+    {
+      "label": "literal6-conditional/common-check/stem",
+      "computed": 598.9172321525841,
+      "source": 598.9172321525841,
+      "ok": true
+    },
+    {
+      "label": "literal6-conditional/forward-free-diagnostic/disc",
+      "computed": 18485.099757795808,
+      "source": 18485.099757795808,
+      "ok": true
+    },
+    {
+      "label": "literal6-conditional/forward-free-diagnostic/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "ok": true
+    },
+    {
+      "label": "catalog6p3-converted/forward-held/disc",
+      "computed": 19409.354745685596,
+      "source": 19409.354745685596,
+      "ok": true
+    },
+    {
+      "label": "catalog6p3-converted/forward-held/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "ok": true
+    },
+    {
+      "label": "catalog6p3-converted/reverse-check/disc",
+      "computed": -25224.397427493,
+      "source": -25224.397427492997,
+      "ok": true
+    },
+    {
+      "label": "catalog6p3-converted/reverse-check/stem",
+      "computed": 628.8630937602132,
+      "source": 628.8630937602132,
+      "ok": true
+    },
+    {
+      "label": "catalog6p3-converted/common-held/disc",
+      "computed": -5186.179588047195,
+      "source": -5186.179588047191,
+      "ok": true
+    },
+    {
+      "label": "catalog6p3-converted/common-held/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "ok": true
+    },
+    {
+      "label": "catalog6p3-converted/common-check/disc",
+      "computed": -5815.042681807405,
+      "source": -5815.042681807401,
+      "ok": true
+    },
+    {
+      "label": "catalog6p3-converted/common-check/stem",
+      "computed": 628.8630937602132,
+      "source": 628.8630937602132,
+      "ok": true
+    },
+    {
+      "label": "catalog6p3-converted/forward-free-diagnostic/disc",
+      "computed": 19409.354745685596,
+      "source": 19409.354745685596,
+      "ok": true
+    },
+    {
+      "label": "catalog6p3-converted/forward-free-diagnostic/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "ok": true
+    },
+    {
+      "label": "selected-study/forward-held/disc",
+      "computed": 19792.033717615697,
+      "source": 19792.033717615697,
+      "ok": true
+    },
+    {
+      "label": "selected-study/forward-held/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "ok": true
+    },
+    {
+      "label": "selected-study/reverse-check/disc",
+      "computed": -25721.72701941336,
+      "source": -25721.727019413356,
+      "ok": true
+    },
+    {
+      "label": "selected-study/reverse-check/stem",
+      "computed": 641.2618924507485,
+      "source": 641.2618924507485,
+      "ok": true
+    },
+    {
+      "label": "selected-study/common-held/disc",
+      "computed": -5288.431409346915,
+      "source": -5288.431409346911,
+      "ok": true
+    },
+    {
+      "label": "selected-study/common-held/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "ok": true
+    },
+    {
+      "label": "selected-study/common-check/disc",
+      "computed": -5929.693301797663,
+      "source": -5929.693301797659,
+      "ok": true
+    },
+    {
+      "label": "selected-study/common-check/stem",
+      "computed": 641.2618924507485,
+      "source": 641.2618924507485,
+      "ok": true
+    },
+    {
+      "label": "selected-study/forward-free-diagnostic/disc",
+      "computed": 19792.033717615697,
+      "source": 19792.033717615697,
+      "ok": true
+    },
+    {
+      "label": "selected-study/forward-free-diagnostic/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "ok": true
+    },
+    {
+      "label": "overload-sensitivity/forward-held/disc",
+      "computed": 31415.926535897932,
+      "source": 31415.926535897932,
+      "ok": true
+    },
+    {
+      "label": "overload-sensitivity/forward-held/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "ok": true
+    },
+    {
+      "label": "overload-sensitivity/reverse-check/disc",
+      "computed": -40828.13812605295,
+      "source": -40828.138126052945,
+      "ok": true
+    },
+    {
+      "label": "overload-sensitivity/reverse-check/stem",
+      "computed": 1017.8760197630929,
+      "source": 1017.8760197630929,
+      "ok": true
+    },
+    {
+      "label": "overload-sensitivity/common-held/disc",
+      "computed": -8394.33557039193,
+      "source": -8394.335570391922,
+      "ok": true
+    },
+    {
+      "label": "overload-sensitivity/common-held/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "ok": true
+    },
+    {
+      "label": "overload-sensitivity/common-check/disc",
+      "computed": -9412.21159015502,
+      "source": -9412.211590155013,
+      "ok": true
+    },
+    {
+      "label": "overload-sensitivity/common-check/stem",
+      "computed": 1017.8760197630929,
+      "source": 1017.8760197630929,
+      "ok": true
+    },
+    {
+      "label": "overload-sensitivity/forward-free-diagnostic/disc",
+      "computed": 31415.926535897932,
+      "source": 31415.926535897932,
+      "ok": true
+    },
+    {
+      "label": "overload-sensitivity/forward-free-diagnostic/stem",
+      "computed": 0.0,
+      "source": 0.0,
+      "ok": true
+    },
+    {
+      "label": "drive0/thread_torque_Nm",
+      "computed": 29.093815108958196,
+      "source": 29.093815108958196,
+      "ok": true
+    },
+    {
+      "label": "drive0/ideal_frictionless_torque_Nm",
+      "computed": 18.900000000000002,
+      "source": 18.900000000000002,
+      "ok": true
+    },
+    {
+      "label": "drive0/thread_efficiency",
+      "computed": 0.6496226063587156,
+      "source": 0.6496226063587155,
+      "ok": true
+    },
+    {
+      "label": "drive0/lead_angle_deg",
+      "computed": 3.3122712001290506,
+      "source": 3.3122712001290506,
+      "ok": true
+    },
+    {
+      "label": "drive0/normal_half_flank_angle_deg",
+      "computed": 14.9760686730493,
+      "source": 14.9760686730493,
+      "ok": true
+    },
+    {
+      "label": "drive0/self_lock_mu_threshold",
+      "computed": 0.05590874972175022,
+      "source": 0.05590874972175022,
+      "ok": true
+    },
+    {
+      "label": "drive0/collar_torque_Nm",
+      "computed": 0.0,
+      "source": 0.0,
+      "ok": true
+    },
+    {
+      "label": "drive0/combined_model_torque_Nm",
+      "computed": 29.093815108958196,
+      "source": 29.093815108958196,
+      "ok": true
+    },
+    {
+      "label": "drive0/handwheel_rim_force_N",
+      "computed": 181.83634443098873,
+      "source": 181.83634443098873,
+      "ok": true
+    },
+    {
+      "label": "drive1/thread_torque_Nm",
+      "computed": 29.093815108958196,
+      "source": 29.093815108958196,
+      "ok": true
+    },
+    {
+      "label": "drive1/ideal_frictionless_torque_Nm",
+      "computed": 18.900000000000002,
+      "source": 18.900000000000002,
+      "ok": true
+    },
+    {
+      "label": "drive1/thread_efficiency",
+      "computed": 0.6496226063587156,
+      "source": 0.6496226063587155,
+      "ok": true
+    },
+    {
+      "label": "drive1/lead_angle_deg",
+      "computed": 3.3122712001290506,
+      "source": 3.3122712001290506,
+      "ok": true
+    },
+    {
+      "label": "drive1/normal_half_flank_angle_deg",
+      "computed": 14.9760686730493,
+      "source": 14.9760686730493,
+      "ok": true
+    },
+    {
+      "label": "drive1/self_lock_mu_threshold",
+      "computed": 0.05590874972175022,
+      "source": 0.05590874972175022,
+      "ok": true
+    },
+    {
+      "label": "drive1/collar_torque_Nm",
+      "computed": 23.750440461138837,
+      "source": 23.750440461138837,
+      "ok": true
+    },
+    {
+      "label": "drive1/combined_model_torque_Nm",
+      "computed": 52.84425557009703,
+      "source": 52.84425557009703,
+      "ok": true
+    },
+    {
+      "label": "drive1/handwheel_rim_force_N",
+      "computed": 330.27659731310644,
+      "source": 330.27659731310644,
+      "ok": true
+    },
+    {
+      "label": "drive2/thread_torque_Nm",
+      "computed": 29.093815108958196,
+      "source": 29.093815108958196,
+      "ok": true
+    },
+    {
+      "label": "drive2/ideal_frictionless_torque_Nm",
+      "computed": 18.900000000000002,
+      "source": 18.900000000000002,
+      "ok": true
+    },
+    {
+      "label": "drive2/thread_efficiency",
+      "computed": 0.6496226063587156,
+      "source": 0.6496226063587155,
+      "ok": true
+    },
+    {
+      "label": "drive2/lead_angle_deg",
+      "computed": 3.3122712001290506,
+      "source": 3.3122712001290506,
+      "ok": true
+    },
+    {
+      "label": "drive2/normal_half_flank_angle_deg",
+      "computed": 14.9760686730493,
+      "source": 14.9760686730493,
+      "ok": true
+    },
+    {
+      "label": "drive2/self_lock_mu_threshold",
+      "computed": 0.05590874972175022,
+      "source": 0.05590874972175022,
+      "ok": true
+    },
+    {
+      "label": "drive2/collar_torque_Nm",
+      "computed": 47.50088092227767,
+      "source": 47.50088092227767,
+      "ok": true
+    },
+    {
+      "label": "drive2/combined_model_torque_Nm",
+      "computed": 76.59469603123587,
+      "source": 76.59469603123587,
+      "ok": true
+    },
+    {
+      "label": "drive2/handwheel_rim_force_N",
+      "computed": 478.7168501952242,
+      "source": 478.7168501952242,
+      "ok": true
+    },
+    {
+      "label": "drive3/thread_torque_Nm",
+      "computed": 46.16532650117965,
+      "source": 46.16532650117965,
+      "ok": true
+    },
+    {
+      "label": "drive3/ideal_frictionless_torque_Nm",
+      "computed": 18.900000000000002,
+      "source": 18.900000000000002,
+      "ok": true
+    },
+    {
+      "label": "drive3/thread_efficiency",
+      "computed": 0.40939816594857303,
+      "source": 0.40939816594857303,
+      "ok": true
+    },
+    {
+      "label": "drive3/lead_angle_deg",
+      "computed": 3.3122712001290506,
+      "source": 3.3122712001290506,
+      "ok": true
+    },
+    {
+      "label": "drive3/normal_half_flank_angle_deg",
+      "computed": 14.9760686730493,
+      "source": 14.9760686730493,
+      "ok": true
+    },
+    {
+      "label": "drive3/self_lock_mu_threshold",
+      "computed": 0.05590874972175022,
+      "source": 0.05590874972175022,
+      "ok": true
+    },
+    {
+      "label": "drive3/collar_torque_Nm",
+      "computed": 0.0,
+      "source": 0.0,
+      "ok": true
+    },
+    {
+      "label": "drive3/combined_model_torque_Nm",
+      "computed": 46.16532650117965,
+      "source": 46.16532650117965,
+      "ok": true
+    },
+    {
+      "label": "drive3/handwheel_rim_force_N",
+      "computed": 288.5332906323728,
+      "source": 288.5332906323728,
+      "ok": true
+    },
+    {
+      "label": "drive4/thread_torque_Nm",
+      "computed": 46.16532650117965,
+      "source": 46.16532650117965,
+      "ok": true
+    },
+    {
+      "label": "drive4/ideal_frictionless_torque_Nm",
+      "computed": 18.900000000000002,
+      "source": 18.900000000000002,
+      "ok": true
+    },
+    {
+      "label": "drive4/thread_efficiency",
+      "computed": 0.40939816594857303,
+      "source": 0.40939816594857303,
+      "ok": true
+    },
+    {
+      "label": "drive4/lead_angle_deg",
+      "computed": 3.3122712001290506,
+      "source": 3.3122712001290506,
+      "ok": true
+    },
+    {
+      "label": "drive4/normal_half_flank_angle_deg",
+      "computed": 14.9760686730493,
+      "source": 14.9760686730493,
+      "ok": true
+    },
+    {
+      "label": "drive4/self_lock_mu_threshold",
+      "computed": 0.05590874972175022,
+      "source": 0.05590874972175022,
+      "ok": true
+    },
+    {
+      "label": "drive4/collar_torque_Nm",
+      "computed": 23.750440461138837,
+      "source": 23.750440461138837,
+      "ok": true
+    },
+    {
+      "label": "drive4/combined_model_torque_Nm",
+      "computed": 69.91576696231849,
+      "source": 69.91576696231849,
+      "ok": true
+    },
+    {
+      "label": "drive4/handwheel_rim_force_N",
+      "computed": 436.97354351449053,
+      "source": 436.97354351449053,
+      "ok": true
+    },
+    {
+      "label": "drive5/thread_torque_Nm",
+      "computed": 46.16532650117965,
+      "source": 46.16532650117965,
+      "ok": true
+    },
+    {
+      "label": "drive5/ideal_frictionless_torque_Nm",
+      "computed": 18.900000000000002,
+      "source": 18.900000000000002,
+      "ok": true
+    },
+    {
+      "label": "drive5/thread_efficiency",
+      "computed": 0.40939816594857303,
+      "source": 0.40939816594857303,
+      "ok": true
+    },
+    {
+      "label": "drive5/lead_angle_deg",
+      "computed": 3.3122712001290506,
+      "source": 3.3122712001290506,
+      "ok": true
+    },
+    {
+      "label": "drive5/normal_half_flank_angle_deg",
+      "computed": 14.9760686730493,
+      "source": 14.9760686730493,
+      "ok": true
+    },
+    {
+      "label": "drive5/self_lock_mu_threshold",
+      "computed": 0.05590874972175022,
+      "source": 0.05590874972175022,
+      "ok": true
+    },
+    {
+      "label": "drive5/collar_torque_Nm",
+      "computed": 47.50088092227767,
+      "source": 47.50088092227767,
+      "ok": true
+    },
+    {
+      "label": "drive5/combined_model_torque_Nm",
+      "computed": 93.66620742345732,
+      "source": 93.66620742345732,
+      "ok": true
+    },
+    {
+      "label": "drive5/handwheel_rim_force_N",
+      "computed": 585.4137963966083,
+      "source": 585.4137963966083,
+      "ok": true
+    },
+    {
+      "label": "drive6/thread_torque_Nm",
+      "computed": 70.2388215487141,
+      "source": 70.2388215487141,
+      "ok": true
+    },
+    {
+      "label": "drive6/ideal_frictionless_torque_Nm",
+      "computed": 18.900000000000002,
+      "source": 18.900000000000002,
+      "ok": true
+    },
+    {
+      "label": "drive6/thread_efficiency",
+      "computed": 0.26908196326858813,
+      "source": 0.269081963268588,
+      "ok": true
+    },
+    {
+      "label": "drive6/lead_angle_deg",
+      "computed": 3.3122712001290506,
+      "source": 3.3122712001290506,
+      "ok": true
+    },
+    {
+      "label": "drive6/normal_half_flank_angle_deg",
+      "computed": 14.9760686730493,
+      "source": 14.9760686730493,
+      "ok": true
+    },
+    {
+      "label": "drive6/self_lock_mu_threshold",
+      "computed": 0.05590874972175022,
+      "source": 0.05590874972175022,
+      "ok": true
+    },
+    {
+      "label": "drive6/collar_torque_Nm",
+      "computed": 0.0,
+      "source": 0.0,
+      "ok": true
+    },
+    {
+      "label": "drive6/combined_model_torque_Nm",
+      "computed": 70.2388215487141,
+      "source": 70.2388215487141,
+      "ok": true
+    },
+    {
+      "label": "drive6/handwheel_rim_force_N",
+      "computed": 438.9926346794631,
+      "source": 438.9926346794631,
+      "ok": true
+    },
+    {
+      "label": "drive7/thread_torque_Nm",
+      "computed": 70.2388215487141,
+      "source": 70.2388215487141,
+      "ok": true
+    },
+    {
+      "label": "drive7/ideal_frictionless_torque_Nm",
+      "computed": 18.900000000000002,
+      "source": 18.900000000000002,
+      "ok": true
+    },
+    {
+      "label": "drive7/thread_efficiency",
+      "computed": 0.26908196326858813,
+      "source": 0.269081963268588,
+      "ok": true
+    },
+    {
+      "label": "drive7/lead_angle_deg",
+      "computed": 3.3122712001290506,
+      "source": 3.3122712001290506,
+      "ok": true
+    },
+    {
+      "label": "drive7/normal_half_flank_angle_deg",
+      "computed": 14.9760686730493,
+      "source": 14.9760686730493,
+      "ok": true
+    },
+    {
+      "label": "drive7/self_lock_mu_threshold",
+      "computed": 0.05590874972175022,
+      "source": 0.05590874972175022,
+      "ok": true
+    },
+    {
+      "label": "drive7/collar_torque_Nm",
+      "computed": 23.750440461138837,
+      "source": 23.750440461138837,
+      "ok": true
+    },
+    {
+      "label": "drive7/combined_model_torque_Nm",
+      "computed": 93.98926200985294,
+      "source": 93.98926200985294,
+      "ok": true
+    },
+    {
+      "label": "drive7/handwheel_rim_force_N",
+      "computed": 587.4328875615809,
+      "source": 587.4328875615809,
+      "ok": true
+    },
+    {
+      "label": "drive8/thread_torque_Nm",
+      "computed": 70.2388215487141,
+      "source": 70.2388215487141,
+      "ok": true
+    },
+    {
+      "label": "drive8/ideal_frictionless_torque_Nm",
+      "computed": 18.900000000000002,
+      "source": 18.900000000000002,
+      "ok": true
+    },
+    {
+      "label": "drive8/thread_efficiency",
+      "computed": 0.26908196326858813,
+      "source": 0.269081963268588,
+      "ok": true
+    },
+    {
+      "label": "drive8/lead_angle_deg",
+      "computed": 3.3122712001290506,
+      "source": 3.3122712001290506,
+      "ok": true
+    },
+    {
+      "label": "drive8/normal_half_flank_angle_deg",
+      "computed": 14.9760686730493,
+      "source": 14.9760686730493,
+      "ok": true
+    },
+    {
+      "label": "drive8/self_lock_mu_threshold",
+      "computed": 0.05590874972175022,
+      "source": 0.05590874972175022,
+      "ok": true
+    },
+    {
+      "label": "drive8/collar_torque_Nm",
+      "computed": 47.50088092227767,
+      "source": 47.50088092227767,
+      "ok": true
+    },
+    {
+      "label": "drive8/combined_model_torque_Nm",
+      "computed": 117.73970247099177,
+      "source": 117.73970247099177,
+      "ok": true
+    },
+    {
+      "label": "drive8/handwheel_rim_force_N",
+      "computed": 735.8731404436986,
+      "source": 735.8731404436986,
+      "ok": true
+    },
+    {
+      "label": "drive9/thread_torque_Nm",
+      "computed": 104.98511005539636,
+      "source": 104.98511005539636,
+      "ok": true
+    },
+    {
+      "label": "drive9/ideal_frictionless_torque_Nm",
+      "computed": 18.900000000000002,
+      "source": 18.900000000000002,
+      "ok": true
+    },
+    {
+      "label": "drive9/thread_efficiency",
+      "computed": 0.1800255292395964,
+      "source": 0.18002552923959642,
+      "ok": true
+    },
+    {
+      "label": "drive9/lead_angle_deg",
+      "computed": 3.3122712001290506,
+      "source": 3.3122712001290506,
+      "ok": true
+    },
+    {
+      "label": "drive9/normal_half_flank_angle_deg",
+      "computed": 14.9760686730493,
+      "source": 14.9760686730493,
+      "ok": true
+    },
+    {
+      "label": "drive9/self_lock_mu_threshold",
+      "computed": 0.05590874972175022,
+      "source": 0.05590874972175022,
+      "ok": true
+    },
+    {
+      "label": "drive9/collar_torque_Nm",
+      "computed": 0.0,
+      "source": 0.0,
+      "ok": true
+    },
+    {
+      "label": "drive9/combined_model_torque_Nm",
+      "computed": 104.98511005539636,
+      "source": 104.98511005539636,
+      "ok": true
+    },
+    {
+      "label": "drive9/handwheel_rim_force_N",
+      "computed": 656.1569378462273,
+      "source": 656.1569378462273,
+      "ok": true
+    },
+    {
+      "label": "drive10/thread_torque_Nm",
+      "computed": 104.98511005539636,
+      "source": 104.98511005539636,
+      "ok": true
+    },
+    {
+      "label": "drive10/ideal_frictionless_torque_Nm",
+      "computed": 18.900000000000002,
+      "source": 18.900000000000002,
+      "ok": true
+    },
+    {
+      "label": "drive10/thread_efficiency",
+      "computed": 0.1800255292395964,
+      "source": 0.18002552923959642,
+      "ok": true
+    },
+    {
+      "label": "drive10/lead_angle_deg",
+      "computed": 3.3122712001290506,
+      "source": 3.3122712001290506,
+      "ok": true
+    },
+    {
+      "label": "drive10/normal_half_flank_angle_deg",
+      "computed": 14.9760686730493,
+      "source": 14.9760686730493,
+      "ok": true
+    },
+    {
+      "label": "drive10/self_lock_mu_threshold",
+      "computed": 0.05590874972175022,
+      "source": 0.05590874972175022,
+      "ok": true
+    },
+    {
+      "label": "drive10/collar_torque_Nm",
+      "computed": 23.750440461138837,
+      "source": 23.750440461138837,
+      "ok": true
+    },
+    {
+      "label": "drive10/combined_model_torque_Nm",
+      "computed": 128.7355505165352,
+      "source": 128.7355505165352,
+      "ok": true
+    },
+    {
+      "label": "drive10/handwheel_rim_force_N",
+      "computed": 804.597190728345,
+      "source": 804.597190728345,
+      "ok": true
+    },
+    {
+      "label": "drive11/thread_torque_Nm",
+      "computed": 104.98511005539636,
+      "source": 104.98511005539636,
+      "ok": true
+    },
+    {
+      "label": "drive11/ideal_frictionless_torque_Nm",
+      "computed": 18.900000000000002,
+      "source": 18.900000000000002,
+      "ok": true
+    },
+    {
+      "label": "drive11/thread_efficiency",
+      "computed": 0.1800255292395964,
+      "source": 0.18002552923959642,
+      "ok": true
+    },
+    {
+      "label": "drive11/lead_angle_deg",
+      "computed": 3.3122712001290506,
+      "source": 3.3122712001290506,
+      "ok": true
+    },
+    {
+      "label": "drive11/normal_half_flank_angle_deg",
+      "computed": 14.9760686730493,
+      "source": 14.9760686730493,
+      "ok": true
+    },
+    {
+      "label": "drive11/self_lock_mu_threshold",
+      "computed": 0.05590874972175022,
+      "source": 0.05590874972175022,
+      "ok": true
+    },
+    {
+      "label": "drive11/collar_torque_Nm",
+      "computed": 47.50088092227767,
+      "source": 47.50088092227767,
+      "ok": true
+    },
+    {
+      "label": "drive11/combined_model_torque_Nm",
+      "computed": 152.48599097767402,
+      "source": 152.48599097767402,
+      "ok": true
+    },
+    {
+      "label": "drive11/handwheel_rim_force_N",
+      "computed": 953.0374436104626,
+      "source": 953.0374436104626,
+      "ok": true
+    },
+    {
+      "label": "root stress",
+      "computed": 29.96432818073722,
+      "source": 29.96432818073722,
+      "ok": true
+    },
+    {
+      "label": "flank area",
+      "computed": 2073.4511513692637,
+      "source": 2073.4511513692637,
+      "ok": true
+    },
+    {
+      "label": "flank pressure",
+      "computed": 9.545454545454545,
+      "source": 9.545454545454545,
+      "ok": true
+    },
+    {
+      "label": "flank area",
+      "computed": 2799.159054348506,
+      "source": 2799.159054348506,
+      "ok": true
+    },
+    {
+      "label": "flank pressure",
+      "computed": 7.070707070707071,
+      "source": 7.070707070707071,
+      "ok": true
+    },
+    {
+      "label": "flank area",
+      "computed": 3628.539514896211,
+      "source": 3628.539514896211,
+      "ok": true
+    },
+    {
+      "label": "flank pressure",
+      "computed": 5.454545454545455,
+      "source": 5.454545454545455,
+      "ok": true
+    },
+    {
+      "label": "joint J8-16/inner-edge",
+      "computed": 42188.699072469615,
+      "source": 42188.699072469615,
+      "ok": true
+    },
+    {
+      "label": "joint count",
+      "computed": 5273.587384058702,
+      "source": 5273.587384058702,
+      "ok": true
+    },
+    {
+      "label": "joint J8-16/mid-annulus",
+      "computed": 47550.361006571715,
+      "source": 47550.36100657171,
+      "ok": true
+    },
+    {
+      "label": "joint count",
+      "computed": 5943.795125821464,
+      "source": 5943.795125821463,
+      "ok": true
+    },
+    {
+      "label": "joint J8-16/outer-edge",
+      "computed": 53232.65388689918,
+      "source": 53232.65388689918,
+      "ok": true
+    },
+    {
+      "label": "joint count",
+      "computed": 6654.081735862397,
+      "source": 6654.081735862397,
+      "ok": true
+    },
+    {
+      "label": "joint J12-16/inner-edge",
+      "computed": 42188.699072469615,
+      "source": 42188.699072469615,
+      "ok": true
+    },
+    {
+      "label": "joint count",
+      "computed": 3515.7249227058014,
+      "source": 3515.7249227058014,
+      "ok": true
+    },
+    {
+      "label": "joint J12-16/mid-annulus",
+      "computed": 47550.361006571715,
+      "source": 47550.36100657171,
+      "ok": true
+    },
+    {
+      "label": "joint count",
+      "computed": 3962.5300838809762,
+      "source": 3962.530083880976,
+      "ok": true
+    },
+    {
+      "label": "joint J12-16/outer-edge",
+      "computed": 53232.65388689918,
+      "source": 53232.65388689918,
+      "ok": true
+    },
+    {
+      "label": "joint count",
+      "computed": 4436.054490574931,
+      "source": 4436.054490574931,
+      "ok": true
+    },
+    {
+      "label": "joint J8-20/inner-edge",
+      "computed": 42188.699072469615,
+      "source": 42188.699072469615,
+      "ok": true
+    },
+    {
+      "label": "joint count",
+      "computed": 5273.587384058702,
+      "source": 5273.587384058702,
+      "ok": true
+    },
+    {
+      "label": "joint J8-20/mid-annulus",
+      "computed": 50036.24044150424,
+      "source": 50036.24044150424,
+      "ok": true
+    },
+    {
+      "label": "joint count",
+      "computed": 6254.53005518803,
+      "source": 6254.53005518803,
+      "ok": true
+    },
+    {
+      "label": "joint J8-20/outer-edge",
+      "computed": 58552.75255019427,
+      "source": 58552.75255019427,
+      "ok": true
+    },
+    {
+      "label": "joint count",
+      "computed": 7319.094068774284,
+      "source": 7319.094068774284,
+      "ok": true
+    },
+    {
+      "label": "sea0,0.03/rho",
+      "computed": 1023.9599999999999,
+      "source": 1023.9599999999999,
+      "ok": true
+    },
+    {
+      "label": "sea0,0.03/mu",
+      "computed": 0.001887118748250243,
+      "source": 0.001887118748250243,
+      "ok": true
+    },
+    {
+      "label": "sea0,0.03/nu",
+      "computed": 1.8429613932675525e-06,
+      "source": 1.8429613932675525e-06,
+      "ok": true
+    },
+    {
+      "label": "sea0,0.035/rho",
+      "computed": 1027.97,
+      "source": 1027.97,
+      "ok": true
+    },
+    {
+      "label": "sea0,0.035/mu",
+      "computed": 0.001905564439161327,
+      "source": 0.001905564439161327,
+      "ok": true
+    },
+    {
+      "label": "sea0,0.035/nu",
+      "computed": 1.8537160025694594e-06,
+      "source": 1.8537160025694594e-06,
+      "ok": true
+    },
+    {
+      "label": "sea0,0.04/rho",
+      "computed": 1031.98,
+      "source": 1031.98,
+      "ok": true
+    },
+    {
+      "label": "sea0,0.04/mu",
+      "computed": 0.0019247243787252366,
+      "source": 0.0019247243787252366,
+      "ok": true
+    },
+    {
+      "label": "sea0,0.04/nu",
+      "computed": 1.8650791475854537e-06,
+      "source": 1.8650791475854537e-06,
+      "ok": true
+    },
+    {
+      "label": "sea20,0.03/rho",
+      "computed": 1021.0687189932,
+      "source": 1021.0687189932,
+      "ok": true
+    },
+    {
+      "label": "sea20,0.03/mu",
+      "computed": 0.0010649342600091828,
+      "source": 0.0010649342600091828,
+      "ok": true
+    },
+    {
+      "label": "sea20,0.03/nu",
+      "computed": 1.04296041999919e-06,
+      "source": 1.04296041999919e-06,
+      "ok": true
+    },
+    {
+      "label": "sea20,0.035/rho",
+      "computed": 1024.9109328963,
+      "source": 1024.9109328963,
+      "ok": true
+    },
+    {
+      "label": "sea20,0.035/mu",
+      "computed": 0.0010766289252529323,
+      "source": 0.0010766289252529323,
+      "ok": true
+    },
+    {
+      "label": "sea20,0.035/nu",
+      "computed": 1.0504609627009073e-06,
+      "source": 1.0504609627009073e-06,
+      "ok": true
+    },
+    {
+      "label": "sea20,0.04/rho",
+      "computed": 1028.7531464767999,
+      "source": 1028.7531464767999,
+      "ok": true
+    },
+    {
+      "label": "sea20,0.04/mu",
+      "computed": 0.0010886567143854782,
+      "source": 0.0010886567143854782,
+      "ok": true
+    },
+    {
+      "label": "sea20,0.04/nu",
+      "computed": 1.0582292925312858e-06,
+      "source": 1.0582292925312858e-06,
+      "ok": true
+    },
+    {
+      "label": "sea50,0.03/rho",
+      "computed": 1010.2486512075,
+      "source": 1010.2486512075001,
+      "ok": true
+    },
+    {
+      "label": "sea50,0.03/mu",
+      "computed": 0.0005870771083912071,
+      "source": 0.000587077108391207,
+      "ok": true
+    },
+    {
+      "label": "sea50,0.03/nu",
+      "computed": 5.811213978751697e-07,
+      "source": 5.811213978751695e-07,
+      "ok": true
+    },
+    {
+      "label": "sea50,0.035/rho",
+      "computed": 1013.9488881018749,
+      "source": 1013.948888101875,
+      "ok": true
+    },
+    {
+      "label": "sea50,0.035/mu",
+      "computed": 0.000594324276489186,
+      "source": 0.000594324276489186,
+      "ok": true
+    },
+    {
+      "label": "sea50,0.035/nu",
+      "computed": 5.861481613750457e-07,
+      "source": 5.861481613750456e-07,
+      "ok": true
+    },
+    {
+      "label": "sea50,0.04/rho",
+      "computed": 1017.6491229799999,
+      "source": 1017.64912298,
+      "ok": true
+    },
+    {
+      "label": "sea50,0.04/mu",
+      "computed": 0.0006017183509372218,
+      "source": 0.0006017183509372217,
+      "ok": true
+    },
+    {
+      "label": "sea50,0.04/nu",
+      "computed": 5.912827293313036e-07,
+      "source": 5.912827293313035e-07,
+      "ok": true
+    }
+  ]
+}

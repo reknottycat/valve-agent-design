@@ -6,6 +6,10 @@ connector uploads timed out. Do not rename a chunk to `.step`, `.msh`, or an ima
 extension. Restore the original files before using them or checking their frozen
 scientific manifests.
 
+**Restoration is Linux-only. Only Linux has been tested.** Read-only `--verify-only`
+also requires POSIX `O_NOFOLLOW` and directory-descriptor APIs; Windows is not
+supported, and macOS compatibility has not been verified.
+
 ## Clone, verify, restore
 
 Use a normal Git clone of the authorized private repository, and check out the
@@ -28,9 +32,9 @@ original files without creating any. Both roots and all traversed directories
 must be real directories, not symbolic links. Unsupported write environments
 fail closed; use a Linux environment rather than disabling safety checks.
 
-The combined `manifest.json` covers all 20 large artifacts from the frozen
+The combined `manifest.json` covers all 22 large artifacts from the frozen
 snapshots below. For a historical stage whose later chunks are not present, use
-`--manifest artifact_storage/manifests/C2.json` or `C3.json`. A missing chunk is
+`--manifest artifact_storage/manifests/C2.json` , `C3.json`, or `R0.json`. A missing chunk is
 an error, never permission to fabricate or substitute an original.
 
 ## What is preserved
@@ -47,10 +51,10 @@ modify engineering calculations. Frozen engineering/scientific manifests are
 unchanged and still describe the original raw files. The separate transport
 manifest describes how to recover those files.
 
-This package covers **20 files, 17,982,098 original bytes**, stored as **41 chunks,
-11,445,335 encoded bytes**. All 20 were reconstructed into a fresh empty directory,
+This package covers **22 files, 20,725,188 original bytes**, stored as **47 chunks,
+13,450,325 encoded bytes**. All 22 were reconstructed into a fresh empty directory,
 checked against their full SHA256s, and compared byte-for-byte with the frozen Git
-objects. A second restore skipped all 20 matching existing files. See
+objects. A second restore skipped all 22 matching existing files. See
 `verification-evidence.json`, `test-evidence.json`, and the regression tests.
 
 Frozen sources:
@@ -60,10 +64,11 @@ Frozen sources:
 - C3: `31662e66f0a14e426ab60b53c870f958a60f4ce1`
 - Recovery: `102ee213568ffe1b8a36f9fd3ace45a4039cc6ed`
 - C4: `79887e8e6fbfaf074262facb5cd9d8ed1b863d27`
+- R0 calculation book: `dd306c88fe42e7903894ae54e0ad6b2bf49ff808`
 
-Only C2 (17 files) and C3 (3 files) contribute artifacts over the size threshold.
-The unfrozen C5 directory, later R0 calculation book, and unavailable upstream
-assets are outside this manifest. This is a transport-integrity statement, not a
+C2 (17 files), C3 (3 files), and R0 (the 2 DOCX/PDF calculation-book originals)
+contribute artifacts over the size threshold. The unfrozen C5 directory and
+unavailable upstream assets are outside this manifest. This is a transport-integrity statement, not a
 claim that an upstream snapshot is complete or an engineering result is valid.
 Uncertain, unavailable, and unvalidated scientific results remain as recorded in
 the project. Transport cannot recover a source that was never available.

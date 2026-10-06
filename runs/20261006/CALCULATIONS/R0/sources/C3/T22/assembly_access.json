@@ -1,0 +1,51 @@
+{
+  "status": "GEOMETRIC_ROUTE_ONLY",
+  "withdrawal_samples": [
+    {
+      "lift_mm": 0,
+      "body_overlap_mm3": 0.0,
+      "seat_overlap_mm3": 0.0
+    },
+    {
+      "lift_mm": 25,
+      "body_overlap_mm3": 0.0,
+      "seat_overlap_mm3": 0.0
+    },
+    {
+      "lift_mm": 50,
+      "body_overlap_mm3": 0.0,
+      "seat_overlap_mm3": 0.0
+    },
+    {
+      "lift_mm": 100,
+      "body_overlap_mm3": 0.0,
+      "seat_overlap_mm3": 0.0
+    },
+    {
+      "lift_mm": 150,
+      "body_overlap_mm3": 0.0,
+      "seat_overlap_mm3": 0.0
+    },
+    {
+      "lift_mm": 200,
+      "body_overlap_mm3": 0.0,
+      "seat_overlap_mm3": 0.0
+    },
+    {
+      "lift_mm": 250,
+      "body_overlap_mm3": 0.0,
+      "seat_overlap_mm3": 0.0
+    }
+  ],
+  "requires_bonnet_and_stem_group_removed": true,
+  "negative_control_disc_lift200_with_bonnet_present_overlap_mm3": 468518.2788004601,
+  "negative_control_disc_lift25_with_fixed_stem_overlap_mm3": 14250.264276683305,
+  "scope": "Frozen C2 main geometry; not C3 joint coupon integration",
+  "limits": [
+    "Discrete axial samples, not continuous swept-volume proof",
+    "Actual retention, guides, fasteners and lifting access not yet designed",
+    "No extraction-force or service-maintenance approval",
+    "Not instructions for work on physical equipment"
+  ],
+  "manufacturing_authorized": false
+}

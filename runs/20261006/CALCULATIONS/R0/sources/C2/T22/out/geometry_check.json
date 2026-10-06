@@ -1,0 +1,829 @@
+{
+  "schema": "valve.c2-geometry/1.0",
+  "parameters_sha256": "c35a4064403f98e3462bfea3650eebe2695ced39a15fb928f817e465169576ba",
+  "builder_code_sha256": "be096d9284884c09d75a0fd19c4fc5cf7bbbff121287839b4d161e36483e640a",
+  "validator_code_sha256": "01e1c801f3d5f110c989fb409a01f47b72e9824cd9ccc1f0b9cbc48cc3b04534",
+  "status": "EXPLORATORY_GEOMETRY_ONLY",
+  "parts": {
+    "body": {
+      "native_mm": {
+        "valid": true,
+        "solid_count": 1,
+        "volume": 17830310.405330516,
+        "x_span": 600.0000001999999,
+        "y_span": 360.0,
+        "z_span": 375.0000002,
+        "bbox": {
+          "xmin": -1e-07,
+          "xmax": 600.0000001,
+          "ymin": -180.0,
+          "ymax": 180.0,
+          "zmin": -165.0000001,
+          "zmax": 210.0000001
+        },
+        "components": [
+          {
+            "volume": 17830310.405330516,
+            "xmin": -1e-07,
+            "xmax": 600.0000001
+          }
+        ],
+        "volume_integration_tolerance": 1e-09
+      },
+      "geometry_gate": {
+        "status": "PASS",
+        "failures": []
+      },
+      "step_exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 1.3323564441756278e-09,
+        "relative_volume_tolerance": 1e-06
+      },
+      "step_unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      }
+    },
+    "seat_ring": {
+      "native_mm": {
+        "valid": true,
+        "solid_count": 1,
+        "volume": 94122.11590155028,
+        "x_span": 228.0,
+        "y_span": 228.0,
+        "z_span": 10.000000000000002,
+        "bbox": {
+          "xmin": 186.0,
+          "xmax": 414.0,
+          "ymin": -114.0,
+          "ymax": 114.0,
+          "zmin": 11.999999999999998,
+          "zmax": 22.0
+        },
+        "components": [
+          {
+            "volume": 94122.11590155028,
+            "xmin": 186.0,
+            "xmax": 414.0
+          }
+        ],
+        "volume_integration_tolerance": 1e-09
+      },
+      "geometry_gate": {
+        "status": "PASS",
+        "failures": []
+      },
+      "step_exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 3.092135166954352e-16,
+        "relative_volume_tolerance": 1e-06
+      },
+      "step_unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      }
+    },
+    "bonnet": {
+      "native_mm": {
+        "valid": true,
+        "solid_count": 1,
+        "volume": 3533192.17785976,
+        "x_span": 360.0,
+        "y_span": 360.0,
+        "z_span": 150.0,
+        "bbox": {
+          "xmin": 120.0,
+          "xmax": 480.0,
+          "ymin": -180.0,
+          "ymax": 180.0,
+          "zmin": 210.0,
+          "zmax": 360.0
+        },
+        "components": [
+          {
+            "volume": 3533192.17785976,
+            "xmin": 120.0,
+            "xmax": 480.0
+          }
+        ],
+        "volume_integration_tolerance": 1e-09
+      },
+      "geometry_gate": {
+        "status": "PASS",
+        "failures": []
+      },
+      "step_exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 0.0,
+        "relative_volume_tolerance": 1e-06
+      },
+      "step_unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      }
+    },
+    "packing": {
+      "native_mm": {
+        "valid": true,
+        "solid_count": 1,
+        "volume": 10053.096491487346,
+        "x_span": 44.0,
+        "y_span": 44.0,
+        "z_span": 20.000000000000057,
+        "bbox": {
+          "xmin": 278.0,
+          "xmax": 322.0,
+          "ymin": -22.0,
+          "ymax": 22.0,
+          "zmin": 329.99999999999994,
+          "zmax": 350.0
+        },
+        "components": [
+          {
+            "volume": 10053.096491487346,
+            "xmin": 278.0,
+            "xmax": 322.0
+          }
+        ],
+        "volume_integration_tolerance": 1e-09
+      },
+      "geometry_gate": {
+        "status": "PASS",
+        "failures": []
+      },
+      "step_exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 0.0,
+        "relative_volume_tolerance": 1e-06
+      },
+      "step_unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      }
+    },
+    "disc_guide": {
+      "native_mm": {
+        "valid": true,
+        "solid_count": 1,
+        "volume": 702711.4447549647,
+        "x_span": 240.0,
+        "y_span": 240.0,
+        "z_span": 94.0,
+        "bbox": {
+          "xmin": 180.0,
+          "xmax": 420.0,
+          "ymin": -120.0,
+          "ymax": 120.0,
+          "zmin": 22.0,
+          "zmax": 116.0
+        },
+        "components": [
+          {
+            "volume": 702711.4447549647,
+            "xmin": 180.0,
+            "xmax": 420.0
+          }
+        ],
+        "volume_integration_tolerance": 1e-09
+      },
+      "geometry_gate": {
+        "status": "PASS",
+        "failures": []
+      },
+      "step_exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 0.0,
+        "relative_volume_tolerance": 1e-06
+      },
+      "step_unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      }
+    },
+    "stem": {
+      "native_mm": {
+        "valid": true,
+        "solid_count": 1,
+        "volume": 420706.1599447633,
+        "x_span": 36.0,
+        "y_span": 36.0,
+        "z_span": 422.0,
+        "bbox": {
+          "xmin": 282.0,
+          "xmax": 318.0,
+          "ymin": -18.0,
+          "ymax": 18.0,
+          "zmin": 36.0,
+          "zmax": 458.0
+        },
+        "components": [
+          {
+            "volume": 420706.1599447633,
+            "xmin": 282.0,
+            "xmax": 318.0
+          }
+        ],
+        "volume_integration_tolerance": 1e-09
+      },
+      "geometry_gate": {
+        "status": "PASS",
+        "failures": []
+      },
+      "step_exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 0.0,
+        "relative_volume_tolerance": 1e-06
+      },
+      "step_unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      }
+    },
+    "handwheel": {
+      "native_mm": {
+        "valid": true,
+        "solid_count": 1,
+        "volume": 440536.29038860765,
+        "x_span": 320.00000020000004,
+        "y_span": 320.0000002,
+        "z_span": 20.000000200000045,
+        "bbox": {
+          "xmin": 139.9999999,
+          "xmax": 460.0000001,
+          "ymin": -160.0000001,
+          "ymax": 160.0000001,
+          "zmin": 437.9999999,
+          "zmax": 458.0000001
+        },
+        "components": [
+          {
+            "volume": 440536.29038860765,
+            "xmin": 139.9999999,
+            "xmax": 460.0000001
+          }
+        ],
+        "volume_integration_tolerance": 1e-09
+      },
+      "geometry_gate": {
+        "status": "PASS",
+        "failures": []
+      },
+      "step_exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 1.3097876487289917e-09,
+        "relative_volume_tolerance": 1e-06
+      },
+      "step_unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      }
+    }
+  },
+  "motion": [
+    {
+      "disc_lift_mm": 0.0,
+      "stem_retraction_mm": 0.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 9412.211590155028,
+        "stem": 1017.8760197630929
+      }
+    },
+    {
+      "disc_lift_mm": 0.0,
+      "stem_retraction_mm": 1.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 9412.211590155028,
+        "stem": 0.0
+      }
+    },
+    {
+      "disc_lift_mm": 1.0,
+      "stem_retraction_mm": 1.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 0.0,
+        "stem": 1017.8760197630929
+      }
+    },
+    {
+      "disc_lift_mm": 0.0,
+      "stem_retraction_mm": 5.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 9412.211590155028,
+        "stem": 0.0
+      }
+    },
+    {
+      "disc_lift_mm": 1.0,
+      "stem_retraction_mm": 5.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 0.0,
+        "stem": 0.0
+      }
+    },
+    {
+      "disc_lift_mm": 5.0,
+      "stem_retraction_mm": 5.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 0.0,
+        "stem": 1017.8760197630929
+      }
+    },
+    {
+      "disc_lift_mm": 0.0,
+      "stem_retraction_mm": 10.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 9412.211590155028,
+        "stem": 0.0
+      }
+    },
+    {
+      "disc_lift_mm": 1.0,
+      "stem_retraction_mm": 10.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 0.0,
+        "stem": 0.0
+      }
+    },
+    {
+      "disc_lift_mm": 5.0,
+      "stem_retraction_mm": 10.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 0.0,
+        "stem": 0.0
+      }
+    },
+    {
+      "disc_lift_mm": 10.0,
+      "stem_retraction_mm": 10.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 0.0,
+        "stem": 1017.8760197630929
+      }
+    },
+    {
+      "disc_lift_mm": 0.0,
+      "stem_retraction_mm": 20.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 9412.211590155028,
+        "stem": 0.0
+      }
+    },
+    {
+      "disc_lift_mm": 1.0,
+      "stem_retraction_mm": 20.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 0.0,
+        "stem": 0.0
+      }
+    },
+    {
+      "disc_lift_mm": 5.0,
+      "stem_retraction_mm": 20.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 0.0,
+        "stem": 0.0
+      }
+    },
+    {
+      "disc_lift_mm": 10.0,
+      "stem_retraction_mm": 20.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 0.0,
+        "stem": 0.0
+      }
+    },
+    {
+      "disc_lift_mm": 20.0,
+      "stem_retraction_mm": 20.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 0.0,
+        "stem": 1017.8760197630929
+      }
+    },
+    {
+      "disc_lift_mm": 0.0,
+      "stem_retraction_mm": 35.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 9412.211590155028,
+        "stem": 0.0
+      }
+    },
+    {
+      "disc_lift_mm": 1.0,
+      "stem_retraction_mm": 35.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 0.0,
+        "stem": 0.0
+      }
+    },
+    {
+      "disc_lift_mm": 5.0,
+      "stem_retraction_mm": 35.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 0.0,
+        "stem": 0.0
+      }
+    },
+    {
+      "disc_lift_mm": 10.0,
+      "stem_retraction_mm": 35.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 0.0,
+        "stem": 0.0
+      }
+    },
+    {
+      "disc_lift_mm": 20.0,
+      "stem_retraction_mm": 35.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 0.0,
+        "stem": 0.0
+      }
+    },
+    {
+      "disc_lift_mm": 35.0,
+      "stem_retraction_mm": 35.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 0.0,
+        "stem": 1017.8760197630929
+      }
+    },
+    {
+      "disc_lift_mm": 0.0,
+      "stem_retraction_mm": 57.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 9412.211590155028,
+        "stem": 0.0
+      }
+    },
+    {
+      "disc_lift_mm": 1.0,
+      "stem_retraction_mm": 57.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 0.0,
+        "stem": 0.0
+      }
+    },
+    {
+      "disc_lift_mm": 5.0,
+      "stem_retraction_mm": 57.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 0.0,
+        "stem": 0.0
+      }
+    },
+    {
+      "disc_lift_mm": 10.0,
+      "stem_retraction_mm": 57.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 0.0,
+        "stem": 0.0
+      }
+    },
+    {
+      "disc_lift_mm": 20.0,
+      "stem_retraction_mm": 57.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 0.0,
+        "stem": 0.0
+      }
+    },
+    {
+      "disc_lift_mm": 35.0,
+      "stem_retraction_mm": 57.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 0.0,
+        "stem": 0.0
+      }
+    },
+    {
+      "disc_lift_mm": 57.0,
+      "stem_retraction_mm": 57.0,
+      "overlaps": [],
+      "disc_contact_area_mm2": {
+        "body": 0.0,
+        "seat_ring": 0.0,
+        "stem": 1017.8760197630929
+      }
+    }
+  ],
+  "fluid_states": [
+    {
+      "disc_lift_mm": 0.0,
+      "expected_solids": 2,
+      "measurement_mm": {
+        "valid": true,
+        "solid_count": 2,
+        "volume": 64501926.36021482,
+        "x_span": 1800.0,
+        "y_span": 290.0000002,
+        "z_span": 475.00000009999997,
+        "bbox": {
+          "xmin": -600.0,
+          "xmax": 1200.0,
+          "ymin": -145.0000001,
+          "ymax": 145.0000001,
+          "zmin": -145.0000001,
+          "zmax": 330.0
+        },
+        "components": [
+          {
+            "volume": 29121906.856078684,
+            "xmin": -600.0,
+            "xmax": 400.0000001
+          },
+          {
+            "volume": 35380019.50521665,
+            "xmin": 154.9999999,
+            "xmax": 1200.0
+          }
+        ],
+        "volume_integration_tolerance": 1e-09
+      },
+      "gate": {
+        "status": "PASS",
+        "failures": []
+      }
+    },
+    {
+      "disc_lift_mm": 1.0,
+      "expected_solids": 1,
+      "measurement_mm": {
+        "valid": true,
+        "solid_count": 1,
+        "volume": 64501926.36021306,
+        "x_span": 1800.0,
+        "y_span": 290.0000002,
+        "z_span": 475.00000009999997,
+        "bbox": {
+          "xmin": -600.0,
+          "xmax": 1200.0,
+          "ymin": -145.0000001,
+          "ymax": 145.0000001,
+          "zmin": -145.0000001,
+          "zmax": 330.0
+        },
+        "components": [
+          {
+            "volume": 64501926.36021306,
+            "xmin": -600.0,
+            "xmax": 1200.0
+          }
+        ],
+        "volume_integration_tolerance": 1e-09
+      },
+      "gate": {
+        "status": "PASS",
+        "failures": []
+      }
+    },
+    {
+      "disc_lift_mm": 5.0,
+      "expected_solids": 1,
+      "measurement_mm": {
+        "valid": true,
+        "solid_count": 1,
+        "volume": 64501926.360206,
+        "x_span": 1800.0,
+        "y_span": 290.0000002,
+        "z_span": 475.00000009999997,
+        "bbox": {
+          "xmin": -600.0,
+          "xmax": 1200.0,
+          "ymin": -145.0000001,
+          "ymax": 145.0000001,
+          "zmin": -145.0000001,
+          "zmax": 330.0
+        },
+        "components": [
+          {
+            "volume": 64501926.360206,
+            "xmin": -600.0,
+            "xmax": 1200.0
+          }
+        ],
+        "volume_integration_tolerance": 1e-09
+      },
+      "gate": {
+        "status": "PASS",
+        "failures": []
+      }
+    },
+    {
+      "disc_lift_mm": 10.0,
+      "expected_solids": 1,
+      "measurement_mm": {
+        "valid": true,
+        "solid_count": 1,
+        "volume": 64501926.36019717,
+        "x_span": 1800.0,
+        "y_span": 290.0000002,
+        "z_span": 475.00000009999997,
+        "bbox": {
+          "xmin": -600.0,
+          "xmax": 1200.0,
+          "ymin": -145.0000001,
+          "ymax": 145.0000001,
+          "zmin": -145.0000001,
+          "zmax": 330.0
+        },
+        "components": [
+          {
+            "volume": 64501926.36019717,
+            "xmin": -600.0,
+            "xmax": 1200.0
+          }
+        ],
+        "volume_integration_tolerance": 1e-09
+      },
+      "gate": {
+        "status": "PASS",
+        "failures": []
+      }
+    },
+    {
+      "disc_lift_mm": 20.0,
+      "expected_solids": 1,
+      "measurement_mm": {
+        "valid": true,
+        "solid_count": 1,
+        "volume": 64501926.360179506,
+        "x_span": 1800.0,
+        "y_span": 290.0000002,
+        "z_span": 475.00000009999997,
+        "bbox": {
+          "xmin": -600.0,
+          "xmax": 1200.0,
+          "ymin": -145.0000001,
+          "ymax": 145.0000001,
+          "zmin": -145.0000001,
+          "zmax": 330.0
+        },
+        "components": [
+          {
+            "volume": 64501926.360179506,
+            "xmin": -600.0,
+            "xmax": 1200.0
+          }
+        ],
+        "volume_integration_tolerance": 1e-09
+      },
+      "gate": {
+        "status": "PASS",
+        "failures": []
+      }
+    },
+    {
+      "disc_lift_mm": 35.0,
+      "expected_solids": 1,
+      "measurement_mm": {
+        "valid": true,
+        "solid_count": 1,
+        "volume": 64501926.36015299,
+        "x_span": 1800.0,
+        "y_span": 290.0000002,
+        "z_span": 475.00000009999997,
+        "bbox": {
+          "xmin": -600.0,
+          "xmax": 1200.0,
+          "ymin": -145.0000001,
+          "ymax": 145.0000001,
+          "zmin": -145.0000001,
+          "zmax": 330.0
+        },
+        "components": [
+          {
+            "volume": 64501926.36015299,
+            "xmin": -600.0,
+            "xmax": 1200.0
+          }
+        ],
+        "volume_integration_tolerance": 1e-09
+      },
+      "gate": {
+        "status": "PASS",
+        "failures": []
+      }
+    },
+    {
+      "disc_lift_mm": 57.0,
+      "expected_solids": 1,
+      "measurement_mm": {
+        "valid": true,
+        "solid_count": 1,
+        "volume": 64501926.36011414,
+        "x_span": 1800.0,
+        "y_span": 290.0000002,
+        "z_span": 475.00000009999997,
+        "bbox": {
+          "xmin": -600.0,
+          "xmax": 1200.0,
+          "ymin": -145.0000001,
+          "ymax": 145.0000001,
+          "zmin": -145.0000001,
+          "zmax": 330.0
+        },
+        "components": [
+          {
+            "volume": 64501926.36011414,
+            "xmin": -600.0,
+            "xmax": 1200.0
+          }
+        ],
+        "volume_integration_tolerance": 1e-09
+      },
+      "gate": {
+        "status": "PASS",
+        "failures": []
+      }
+    }
+  ],
+  "contact_method": "Opposing coplanar face-face Boolean intersections; curved contacts not assessed",
+  "engineering_compliance": "NOT_ASSESSED",
+  "manufacturing_authorized": false,
+  "limitations": [
+    "Motion is sampled, not a mathematical proof for every intermediate position",
+    "Geometric interference checks do not establish load carrying capacity or leak tightness",
+    "Analytical cylinder wall offsets are not a certified global minimum wall",
+    "Bonnet bolt, gasket, anti-rotation, guide and packing details remain proposed/incomplete"
+  ],
+  "static_overlaps": [],
+  "reference_checks": {
+    "face_to_face_mm": 600.0000001999999,
+    "target_face_to_face_reference_mm": 600.0,
+    "upper_height_mm": 515.0000001,
+    "target_upper_height_reference_mm": 515.0,
+    "handwheel_y_span_mm": 320.0000002,
+    "target_handwheel_od_reference_mm": 320.0
+  },
+  "geometry_gate": "PASS",
+  "failures": []
+}

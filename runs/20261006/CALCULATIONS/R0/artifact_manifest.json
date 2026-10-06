@@ -1,0 +1,232 @@
+{
+  "schema": "valve.calculation-book-package/1.0",
+  "state": "WORKING_DRAFT_NOT_MANUFACTURING_RELEASE",
+  "version": "R0",
+  "files": [
+    {
+      "path": "README.zh-CN.md",
+      "bytes": 3780,
+      "sha256": "8456e36c7b26f2c49c3a4613c8df1d053d5c65c4a69bc3b1f2388062f7c60c07"
+    },
+    {
+      "path": "build_calculation_book.py",
+      "bytes": 68333,
+      "sha256": "4c5da81dd578190b05f823e3214bb7414fcfe9ee8038d9a55ecbf1d946800d16"
+    },
+    {
+      "path": "source_manifest.json",
+      "bytes": 7978,
+      "sha256": "b7aaaa6e7c213729abd3388338a5978d087753952a006e4c654ef13e8edd42a2"
+    },
+    {
+      "path": "arithmetic_verification.json",
+      "bytes": 17387,
+      "sha256": "c288b31ce55997843752206021ed4ee24618a598bd9a4db881baa97d4d3de5f6"
+    },
+    {
+      "path": "sources/C2/T06/evidence_matrix.md",
+      "bytes": 15730,
+      "sha256": "3dfc9784fab7df01764ff1138c3c748b8e9a72d21b183bfbb1f656f09bc24cf6"
+    },
+    {
+      "path": "sources/C2/T06/source_manifest.json",
+      "bytes": 5427,
+      "sha256": "15ccdeffcb6c21e989a1b2b48ecf6a7a01268c3574727957db5bc24ccb2a2710"
+    },
+    {
+      "path": "sources/C2/T06/variant_input_matrix.json",
+      "bytes": 15351,
+      "sha256": "5a37637adbed5d0ea04b26fd3356b47156d7cd2615337f933b02ed0b1b5cf252"
+    },
+    {
+      "path": "sources/C2/T11/parameters.json",
+      "bytes": 6446,
+      "sha256": "c35a4064403f98e3462bfea3650eebe2695ced39a15fb928f817e465169576ba"
+    },
+    {
+      "path": "sources/C2/T15/calc_results.json",
+      "bytes": 2768,
+      "sha256": "75ff6c55d4d70476f2c6be33e135c7445a5bb9047b39a311a3faa03866b95244"
+    },
+    {
+      "path": "sources/C2/T22/out/asset_roundtrip_report.json",
+      "bytes": 12361,
+      "sha256": "f19d6115529f36d66cf3efb0c923f867db4368832c38dd95fc79dc231837f997"
+    },
+    {
+      "path": "sources/C2/T22/out/geometry_check.json",
+      "bytes": 19668,
+      "sha256": "d9e0a2bf8ace5788e330d7b8da7ff298c42bb3a87a86aceaa172e0b4d2b0d3f3"
+    },
+    {
+      "path": "sources/C2/T22/out/negative_contact_control.json",
+      "bytes": 315,
+      "sha256": "527fee6b287be5ab3278b00fd292fa38165ff062549fd7252020e9813158ba05"
+    },
+    {
+      "path": "sources/C2/T23/out/mesh_report.json",
+      "bytes": 1585,
+      "sha256": "091b10e7d9c04bb51979205bc7f6000929f58890f1a9da84ed571121c71e2c72"
+    },
+    {
+      "path": "sources/C2/T40/out/BOM_study.json",
+      "bytes": 1866,
+      "sha256": "58791a81bb40b76f5720497cde3ca3d73220a215676d4967dc8293b47e3125ca"
+    },
+    {
+      "path": "sources/C2/T40/out/GA_C2.png",
+      "bytes": 164153,
+      "sha256": "85dcad3e6d44e036135d8b6ab86534bcfe79cabc7987956823a1c0014dd94783"
+    },
+    {
+      "path": "sources/C3/T11/interface_candidates.json",
+      "bytes": 18497,
+      "sha256": "343b1c8f437cab36f16eeef5a2a73a7584f0a1e0c59e70ee3eafd18f74a26053"
+    },
+    {
+      "path": "sources/C3/T22/assembly_access.json",
+      "bytes": 1338,
+      "sha256": "380cf5c2c4ecff27860ffeb711c2c9488072ec310364c9638a49823b4d086c8d"
+    },
+    {
+      "path": "sources/C3/T22/interface_check.json",
+      "bytes": 6324,
+      "sha256": "8acb82648040484846020716c8b8ce56ad335b887ee68855fe12e4978c70df2a"
+    },
+    {
+      "path": "sources/C3/T22/surface_support.json",
+      "bytes": 1938,
+      "sha256": "af6dcd0022b8638318dcb165c589bc888162789ce6d6b0c48fa7d386dbbd83f7"
+    },
+    {
+      "path": "sources/C3/manufacturing_work_breakdown.json",
+      "bytes": 8031,
+      "sha256": "9ad9b5c140c38a32ad2015a2ca2c32361091725ca6c297d29244a8bfef1f5f62"
+    },
+    {
+      "path": "sources/C4/README.zh-CN.md",
+      "bytes": 8042,
+      "sha256": "266fb676d3c93297c085ddd25a854165185acd45d09e4754582d396bf2a3004c"
+    },
+    {
+      "path": "sources/C4/T06/research_basis.json",
+      "bytes": 5979,
+      "sha256": "a30b4aceb654b2589d4d41c1cac6eeb9a7a9950322fcb8ca83397e0c91524558"
+    },
+    {
+      "path": "sources/C4/T06/research_sources/external_sources.json",
+      "bytes": 3887,
+      "sha256": "6b81f14fb793187e78c91888ed7ecbf529af6cf954d5664232e94cde14e8ce20"
+    },
+    {
+      "path": "sources/C4/T06/seawater_study.py",
+      "bytes": 6528,
+      "sha256": "2767f043bd35ce52305192495003f9f639d0913e4bdf299f55c2a285b6bc214c"
+    },
+    {
+      "path": "sources/C4/T06/seawater_study_cases.json",
+      "bytes": 5862,
+      "sha256": "dd39b778058673c846109a4e5bc409147a8820a06efd4891e83b9b1938b5a0fa"
+    },
+    {
+      "path": "sources/C4/T15/calculate_loads.py",
+      "bytes": 13677,
+      "sha256": "4638752c2ef793f139e75ddd7a2d707c2df6b1200269150008e14951ee52051e"
+    },
+    {
+      "path": "sources/C4/T15/load_study.json",
+      "bytes": 30399,
+      "sha256": "22e2849a8a486e96c0cb4df7981fb95b40217879edf5495175f65baae563e23c"
+    },
+    {
+      "path": "sources/C4/T19/extract_pressure_faces.py",
+      "bytes": 7560,
+      "sha256": "165bc21975b0a1632990ae70518ffc714dc5c0faedc74df7bbecf48f8c312c1e"
+    },
+    {
+      "path": "sources/C4/T19/pressure_areas.json",
+      "bytes": 6474,
+      "sha256": "abec1ed3f307be3e3656bb1f8ae1d2fdc6e690af38d75788a7eff863bca18a08"
+    },
+    {
+      "path": "sources/C4/T40/out/C4_load_study.png",
+      "bytes": 386002,
+      "sha256": "d452cc63744fc7299d70e09a4d1b5c57ae8bdcb6c76a88af21465e42de34c71c"
+    },
+    {
+      "path": "sources/C4/tests-optimized.log",
+      "bytes": 4801,
+      "sha256": "633ee859b3d67fa1466e7cd87c7f9519542fa0016c1fc3b11e33b984463d2f2b"
+    },
+    {
+      "path": "sources/C4/tests.log",
+      "bytes": 4801,
+      "sha256": "1f232967b1d6f50baf5ea1f6b1e1620156fbd4ee2c41817b2fbb893884d311f1"
+    },
+    {
+      "path": "sources/C5/T03/solver_benchmark_results.json",
+      "bytes": 3179,
+      "sha256": "fdcbfc3f0452107cacf2bdb4587bacc7783b873ee528f9c787e9caa5e064035c"
+    },
+    {
+      "path": "sources/C5/T05/material_cards.json",
+      "bytes": 11338,
+      "sha256": "7cfbbca2adb2698ad623278fcfe53704f11d4eaf89f3395ef386487860216c09"
+    },
+    {
+      "path": "sources/C5/cases/c2_dual_preflight/log.checkMesh",
+      "bytes": 6248,
+      "sha256": "ed08edf8e73b920d0c5f145f2219e11382622ca1e472bb1c1c273ab811992c63"
+    },
+    {
+      "path": "sources/C5/cases/c2_mesh_preflight/log.checkMesh.complete",
+      "bytes": 5013,
+      "sha256": "1b40c356377ae916534740d9c199b144e4b1274337dc0964609c27408dbab6d6"
+    },
+    {
+      "path": "output/522-35.4179_工程计算书_工作稿_R0.docx",
+      "bytes": 564350,
+      "sha256": "d380e7d38b2107b3cfe443220fb2bed814e5ee8a1d0e1441a1924b0bec889dca"
+    },
+    {
+      "path": "output/522-35.4179_工程计算书_工作稿_R0.pdf",
+      "bytes": 2178740,
+      "sha256": "24c194dbb997d4aa167f3700d1dc0dfee683fd2b9b9237ec32c7a3a5cff7f567"
+    },
+    {
+      "path": "output/build_summary.json",
+      "bytes": 330,
+      "sha256": "93f8a16785ef1e632fcf0103d2cfab5ef82ce4d72022036e97b088444b289880"
+    },
+    {
+      "path": "verification/accessibility_audit.json",
+      "bytes": 201,
+      "sha256": "2bda9ab08c8fffa199f92d42f378a89c35309010a32486477c235e13d6e6d1d9"
+    },
+    {
+      "path": "verification/document_qa_summary.json",
+      "bytes": 1263,
+      "sha256": "5552cbc80db5b3eac7c0a7d5ebfe6a135462f53375d528ec12167b2cf6539c42"
+    },
+    {
+      "path": "verification/independent_check_results.json",
+      "bytes": 30871,
+      "sha256": "638b89a1648de6c92c90fd1ada8329d39f1d2ec1a66dd731ebbcf2dd4a3bbac6"
+    },
+    {
+      "path": "verification/review_report.json",
+      "bytes": 956,
+      "sha256": "ae0fe568b7c1ea7838129e8e2566a925ffde09f38660add615618e76c8a92616"
+    },
+    {
+      "path": "verification/review_report.md",
+      "bytes": 5734,
+      "sha256": "cc418750ad3753303a165ff098bc955379f653a773bee27e1feff429b9e881ad"
+    },
+    {
+      "path": "verification/technical_review.md",
+      "bytes": 3150,
+      "sha256": "61460870982689d58447dca66857c0fd528d7750eaf9a11b6d71235925529f2f"
+    }
+  ]
+}

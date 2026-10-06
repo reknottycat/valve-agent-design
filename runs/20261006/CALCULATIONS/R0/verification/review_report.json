@@ -1,0 +1,31 @@
+{
+  "docx": "output/522-35.4179_工程计算书_工作稿_R0.docx",
+  "docx_sha256": "d380e7d38b2107b3cfe443220fb2bed814e5ee8a1d0e1441a1924b0bec889dca",
+  "arithmetic_checks": 208,
+  "arithmetic_passed": true,
+  "source_files": 32,
+  "source_hashes_passed": true,
+  "native_equations": 60,
+  "visual_render": "qa/render4",
+  "pages_visually_reviewed": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "visual_method": "Every original-resolution PNG opened and inspected individually",
+  "unresolved_findings": [],
+  "render3_equation_findings": "Re label, bar unit and mass-flow denominator rendering resolved and visually verified in render4",
+  "engineering_release": "Not assessed. No actual-valve CFD/FEA or manufacturing approval inferred.",
+  "source_revalidation": "Offline snapshot comparison only; no external-source revalidation, no CAD reconstruction or solver execution"
+}

@@ -1,0 +1,270 @@
+{
+  "schema": "valve.manufacturing-work/1.0",
+  "state": "OPEN",
+  "tasks": [
+    {
+      "id": "M01",
+      "title": "受控产品和载荷基准",
+      "status": "BLOCKED_INPUT",
+      "required_inputs": [
+        "选定变型/新派生边界",
+        "逐温度工作/设计/试验压力、关闭压差、瞬态和安装方向"
+      ],
+      "deliverables": "T06/controlled_design_basis.json",
+      "acceptance": "每个载荷有客户/工况或经批准规范来源，未知不得填零",
+      "downstream": [
+        "M02",
+        "M04",
+        "M06",
+        "M08",
+        "M13"
+      ],
+      "engineering_acceptance": false
+    },
+    {
+      "id": "M02",
+      "title": "零件材料和设计许用值",
+      "status": "BLOCKED_INPUT",
+      "required_inputs": [
+        "M01",
+        "材料牌号、铸造/锻造/棒料状态、温度性能、腐蚀和质量系数"
+      ],
+      "deliverables": "T05/material_specification.json",
+      "acceptance": "逐零件关联正式材料标准/证书或批准值；抗拉强度不冒充许用应力",
+      "downstream": [
+        "M04",
+        "M06",
+        "M07",
+        "M08",
+        "M13"
+      ],
+      "engineering_acceptance": false
+    },
+    {
+      "id": "M03",
+      "title": "标准适用性和合法条款正文",
+      "status": "BLOCKED_INPUT",
+      "required_inputs": [
+        "船级/合同/法规依据",
+        "授权可读标准正文和修订"
+      ],
+      "deliverables": "T03/controlled_standards_matrix.json",
+      "acceptance": "逐条版本、适用范围、读取证据及冲突处理；目录或搜索摘要不能给条款通过",
+      "downstream": [
+        "M04",
+        "M06",
+        "M07",
+        "M13",
+        "M15"
+      ],
+      "engineering_acceptance": false
+    },
+    {
+      "id": "M04",
+      "title": "阀体和阀盖承压详细设计",
+      "status": "BLOCKED_INPUT",
+      "required_inputs": [
+        "M01",
+        "M02",
+        "M03"
+      ],
+      "deliverables": "T12/pressure_parts + T19/load_cases",
+      "acceptance": "内压/外载/连接载荷、最小有效壁厚、铸造缺陷和腐蚀余量已校核；无危险薄弱部位",
+      "downstream": [
+        "M10",
+        "M13",
+        "M15"
+      ],
+      "engineering_acceptance": false
+    },
+    {
+      "id": "M05",
+      "title": "阀盖接头参数化接口候选",
+      "status": "RESEARCH_STAGE_DONE_SELECTION_BLOCKED",
+      "required_inputs": [
+        "冻结C2参考几何"
+      ],
+      "deliverables": "T11/interface_candidates.json + T12/out/J*",
+      "acceptance": "各候选孔边距/垫片通道/孔距为正，真实CAD单实体与STEP交换；不选材料、预紧或扭矩",
+      "downstream": [
+        "M06",
+        "M07"
+      ],
+      "engineering_acceptance": false
+    },
+    {
+      "id": "M06",
+      "title": "紧固件最终选型与接头计算",
+      "status": "BLOCKED_INPUT",
+      "required_inputs": [
+        "M01",
+        "M02",
+        "M03",
+        "M05"
+      ],
+      "deliverables": "T16/bolted_joint_calculation.json",
+      "acceptance": "螺栓等级、螺纹应力面积、载荷分配、接头刚度、预紧散差/嵌入损失及疲劳符合选定规则",
+      "downstream": [
+        "M10",
+        "M15"
+      ],
+      "engineering_acceptance": false
+    },
+    {
+      "id": "M07",
+      "title": "静密封和填料性能设计",
+      "status": "BLOCKED_INPUT",
+      "required_inputs": [
+        "M01",
+        "M02",
+        "M03",
+        "M05"
+      ],
+      "deliverables": "T17/sealing_design.json",
+      "acceptance": "材料兼容、座面/垫片最小和最大压紧应力、挤出间隙、泄漏等级、压盖调节/维护空间均有依据",
+      "downstream": [
+        "M10",
+        "M15"
+      ],
+      "engineering_acceptance": false
+    },
+    {
+      "id": "M08",
+      "title": "丝杆螺母和驱动保持机构",
+      "status": "RESEARCH_STAGE_DONE_SELECTION_BLOCKED",
+      "required_inputs": [
+        "C2闭位手轮和Tr36x6标注",
+        "M01",
+        "M02",
+        "M03 for capacity"
+      ],
+      "deliverables": "T14/drive_interface.json + T16/drive_checks",
+      "acceptance": "包络不撞手轮/压盖，螺母有保持/防转/反力路径；牙型、公差、承载/磨损、自锁和操作力有证据",
+      "downstream": [
+        "M10",
+        "M15"
+      ],
+      "engineering_acceptance": false
+    },
+    {
+      "id": "M09",
+      "title": "自由升降导向与防脱机构",
+      "status": "RESEARCH_PENDING",
+      "required_inputs": [
+        "原图剖面",
+        "导向/连接细节缺失"
+      ],
+      "deliverables": "T13/guide_capture.json",
+      "acceptance": "明确自由度、非止回/强制关闭顺序、限位、防脱、导向长度和间隙；连续行程/装配路径检查",
+      "downstream": [
+        "M10",
+        "M13",
+        "M15"
+      ],
+      "engineering_acceptance": false
+    },
+    {
+      "id": "M10",
+      "title": "完整零件明细和装配路径",
+      "status": "PARTIAL_GEOMETRIC_WITHDRAWAL_STUDY_DONE",
+      "required_inputs": [
+        "M04",
+        "M06",
+        "M07",
+        "M08",
+        "M09"
+      ],
+      "deliverables": "T21/complete_BOM.csv + assembly_sequence",
+      "acceptance": "每个实体有唯一件号、材料、数量、标准和来源；零件可装入/拆出，不把七主件表当完整BOM",
+      "downstream": [
+        "M11",
+        "M15"
+      ],
+      "engineering_acceptance": false
+    },
+    {
+      "id": "M11",
+      "title": "详细图纸结构与尺寸来源",
+      "status": "RESEARCH_STAGE_DONE_SELECTION_BLOCKED",
+      "required_inputs": [
+        "冻结C2和C3候选"
+      ],
+      "deliverables": "T40/drawing_register.json + dimension_register.json",
+      "acceptance": "每张图列视图、基准、尺寸、公差、表面/热处理和检验要求；源图参考值、推导和研究值分开",
+      "downstream": [
+        "M12",
+        "M15"
+      ],
+      "engineering_acceptance": false
+    },
+    {
+      "id": "M12",
+      "title": "制造与检验图纸冻结",
+      "status": "BLOCKED_INPUT",
+      "required_inputs": [
+        "M03",
+        "M04",
+        "M06",
+        "M07",
+        "M08",
+        "M09",
+        "M10",
+        "M11"
+      ],
+      "deliverables": "T40/manufacturing_drawings + inspection_plan",
+      "acceptance": "不含未定制造尺寸/公差/材料；对接工艺及检验能力，经工程负责人审签",
+      "downstream": [
+        "M15"
+      ],
+      "engineering_acceptance": false
+    },
+    {
+      "id": "M13",
+      "title": "求解基准和本阀仿真",
+      "status": "BLOCKED_PERMISSION_AND_INPUT",
+      "required_inputs": [
+        "取消审批恢复",
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M09"
+      ],
+      "deliverables": "T25-T32/verified_cases",
+      "acceptance": "独立已知解、单位/载荷/边界校验、收敛/守恒/网格敏感性；求解成功和工程达标分开",
+      "downstream": [
+        "M15"
+      ],
+      "engineering_acceptance": false
+    },
+    {
+      "id": "M14",
+      "title": "实物试验计划与证据",
+      "status": "BLOCKED_INPUT",
+      "required_inputs": [
+        "M01",
+        "M03",
+        "M10"
+      ],
+      "deliverables": "T35/test_evidence_matrix.json",
+      "acceptance": "泄漏、承压、流阻、耐久、冲击振动等有适用方法和实际证据；仿真不替代实物",
+      "downstream": [
+        "M15"
+      ],
+      "engineering_acceptance": false
+    },
+    {
+      "id": "M15",
+      "title": "工程审签和最终制造放行",
+      "status": "BLOCKED_INPUT",
+      "required_inputs": [
+        "M01-M14"
+      ],
+      "deliverables": "T36/freeze_decision.json + signed_release",
+      "acceptance": "所有硬需求有新鲜可追溯证据、无未决关键项，合资格工程审签；此助手不自行签发",
+      "downstream": [],
+      "engineering_acceptance": false
+    }
+  ],
+  "manufacturing_authorized": false
+}

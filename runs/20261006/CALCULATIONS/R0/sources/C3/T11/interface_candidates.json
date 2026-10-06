@@ -1,0 +1,625 @@
+{
+  "schema": "valve.c3-interface-candidates/1.0",
+  "status": "UNSELECTED_INTERFACES_ONLY",
+  "base_commit": "2566bdee5b52024036e0bbac559dd78f8a903a34",
+  "base_parameters_sha256": "c35a4064403f98e3462bfea3650eebe2695ced39a15fb928f817e465169576ba",
+  "common": {
+    "pressure_opening_d": {
+      "value": 290,
+      "unit": "mm",
+      "kind": "INHERITED_STUDY",
+      "source": "C2",
+      "note": "Twice C2 chamber radius; not a rated pressure area"
+    },
+    "stem_d": {
+      "value": 36,
+      "unit": "mm",
+      "kind": "INHERITED_STUDY",
+      "source": "C2",
+      "note": "Smooth Tr36x6 envelope, no root/profile"
+    },
+    "stuffing_box_d": {
+      "value": 44,
+      "unit": "mm",
+      "kind": "INHERITED_STUDY",
+      "source": "C2",
+      "note": "Research geometry, no strength or material approval"
+    },
+    "packing_bottom_z": {
+      "value": 330,
+      "unit": "mm",
+      "kind": "INHERITED_STUDY",
+      "source": "C2",
+      "note": "Research geometry, no strength or material approval"
+    },
+    "neck_top_z": {
+      "value": 360,
+      "unit": "mm",
+      "kind": "INHERITED_STUDY",
+      "source": "C2",
+      "note": "Research geometry, no strength or material approval"
+    },
+    "handwheel_hub_closed_bottom_z": {
+      "value": 438,
+      "unit": "mm",
+      "kind": "DERIVED_STUDY",
+      "source": "C2",
+      "note": "515-57-20; verify against actual C2 STEP"
+    },
+    "minimum_visual_gap": {
+      "value": 3,
+      "unit": "mm",
+      "kind": "PROPOSED",
+      "source": "C3",
+      "note": "Geometric packaging allowance only, not standard safety/access clearance"
+    },
+    "valve_center_x": {
+      "value": 300.0,
+      "unit": "mm",
+      "kind": "DERIVED_STUDY",
+      "source": "C2",
+      "note": "Half of reference600mm face-to-face"
+    }
+  },
+  "bonnet_joint_candidates": [
+    {
+      "id": "J8-16",
+      "selected": false,
+      "status": "UNSELECTED_RESEARCH_CANDIDATE",
+      "bolt_count": 8,
+      "values": {
+        "bolt_nominal_d": {
+          "value": 16,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "bolt_hole_d": {
+          "value": 17.5,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "flange_od": {
+          "value": 400,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "bolt_circle_d": {
+          "value": 360,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "gasket_id": {
+          "value": 292,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "gasket_od": {
+          "value": 328,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "gasket_nominal_t": {
+          "value": 2,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "body_flange_t": {
+          "value": 20,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "cover_flange_t": {
+          "value": 20,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "washer_od": {
+          "value": 36.0,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "washer_t": {
+          "value": 3,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "nut_af_envelope": {
+          "value": 26.0,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "nut_h_envelope": {
+          "value": 16,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "stud_protrusion_each": {
+          "value": 5,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        }
+      },
+      "unresolved": {
+        "bolt_material": null,
+        "strength_class": null,
+        "preload_N": null,
+        "tightening_torque_Nm": null,
+        "gasket_material": null,
+        "gasket_compression": null,
+        "flange_stress_acceptance": null
+      },
+      "qualification": "Dimension envelopes only, not selected ISO hardware or a pressure-joint design"
+    },
+    {
+      "id": "J12-16",
+      "selected": false,
+      "status": "UNSELECTED_RESEARCH_CANDIDATE",
+      "bolt_count": 12,
+      "values": {
+        "bolt_nominal_d": {
+          "value": 16,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "bolt_hole_d": {
+          "value": 17.5,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "flange_od": {
+          "value": 400,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "bolt_circle_d": {
+          "value": 360,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "gasket_id": {
+          "value": 292,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "gasket_od": {
+          "value": 328,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "gasket_nominal_t": {
+          "value": 2,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "body_flange_t": {
+          "value": 20,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "cover_flange_t": {
+          "value": 20,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "washer_od": {
+          "value": 36.0,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "washer_t": {
+          "value": 3,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "nut_af_envelope": {
+          "value": 26.0,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "nut_h_envelope": {
+          "value": 16,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "stud_protrusion_each": {
+          "value": 5,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        }
+      },
+      "unresolved": {
+        "bolt_material": null,
+        "strength_class": null,
+        "preload_N": null,
+        "tightening_torque_Nm": null,
+        "gasket_material": null,
+        "gasket_compression": null,
+        "flange_stress_acceptance": null
+      },
+      "qualification": "Dimension envelopes only, not selected ISO hardware or a pressure-joint design"
+    },
+    {
+      "id": "J8-20",
+      "selected": false,
+      "status": "UNSELECTED_RESEARCH_CANDIDATE",
+      "bolt_count": 8,
+      "values": {
+        "bolt_nominal_d": {
+          "value": 20,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "bolt_hole_d": {
+          "value": 22,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "flange_od": {
+          "value": 440.0,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Expanded from420 to keep45mm washer fully on coupon; does not establish flange strength"
+        },
+        "bolt_circle_d": {
+          "value": 380,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "gasket_id": {
+          "value": 292,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "gasket_od": {
+          "value": 344,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "gasket_nominal_t": {
+          "value": 2,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "body_flange_t": {
+          "value": 20,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "cover_flange_t": {
+          "value": 20,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "washer_od": {
+          "value": 45.0,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "washer_t": {
+          "value": 3,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "nut_af_envelope": {
+          "value": 32.5,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "nut_h_envelope": {
+          "value": 20,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        },
+        "stud_protrusion_each": {
+          "value": 5,
+          "unit": "mm",
+          "kind": "PROPOSED",
+          "source": "C3",
+          "note": "Research geometry, no strength or material approval"
+        }
+      },
+      "unresolved": {
+        "bolt_material": null,
+        "strength_class": null,
+        "preload_N": null,
+        "tightening_torque_Nm": null,
+        "gasket_material": null,
+        "gasket_compression": null,
+        "flange_stress_acceptance": null
+      },
+      "qualification": "Dimension envelopes only, not selected ISO hardware or a pressure-joint design"
+    }
+  ],
+  "packing_gland": {
+    "selected": false,
+    "values": {
+      "housing_od": {
+        "value": 130,
+        "unit": "mm",
+        "kind": "PROPOSED",
+        "source": "C3",
+        "note": "Research geometry, no strength or material approval"
+      },
+      "packing_height": {
+        "value": 20,
+        "unit": "mm",
+        "kind": "PROPOSED",
+        "source": "C3",
+        "note": "Research geometry, no strength or material approval"
+      },
+      "ring_count": {
+        "value": 4,
+        "unit": "count",
+        "kind": "PROPOSED",
+        "source": "C3",
+        "note": "Research geometry, no strength or material approval"
+      },
+      "follower_id": {
+        "value": 36.4,
+        "unit": "mm",
+        "kind": "PROPOSED",
+        "source": "C3",
+        "note": "Research geometry, no strength or material approval"
+      },
+      "follower_od": {
+        "value": 43.8,
+        "unit": "mm",
+        "kind": "PROPOSED",
+        "source": "C3",
+        "note": "Research geometry, no strength or material approval"
+      },
+      "gland_gap": {
+        "value": 3,
+        "unit": "mm",
+        "kind": "PROPOSED",
+        "source": "C3",
+        "note": "Research geometry, no strength or material approval"
+      },
+      "gland_collar_t": {
+        "value": 10,
+        "unit": "mm",
+        "kind": "PROPOSED",
+        "source": "C3",
+        "note": "Research geometry, no strength or material approval"
+      },
+      "gland_stud_nominal_d": {
+        "value": 10,
+        "unit": "mm",
+        "kind": "PROPOSED",
+        "source": "C3",
+        "note": "Research geometry, no strength or material approval"
+      },
+      "gland_stud_hole_d": {
+        "value": 11,
+        "unit": "mm",
+        "kind": "PROPOSED",
+        "source": "C3",
+        "note": "Research geometry, no strength or material approval"
+      },
+      "gland_stud_pitch": {
+        "value": 96,
+        "unit": "mm",
+        "kind": "PROPOSED",
+        "source": "C3",
+        "note": "Research geometry, no strength or material approval"
+      },
+      "gland_washer_t": {
+        "value": 2,
+        "unit": "mm",
+        "kind": "PROPOSED",
+        "source": "C3",
+        "note": "Research geometry, no strength or material approval"
+      },
+      "gland_nut_h_envelope": {
+        "value": 10,
+        "unit": "mm",
+        "kind": "PROPOSED",
+        "source": "C3",
+        "note": "Research geometry, no strength or material approval"
+      },
+      "collar_od": {
+        "value": 70.0,
+        "unit": "mm",
+        "kind": "PROPOSED",
+        "source": "C3",
+        "note": "Research envelope, not standard hardware or strength sizing"
+      },
+      "collar_bar_length": {
+        "value": 124.0,
+        "unit": "mm",
+        "kind": "PROPOSED",
+        "source": "C3",
+        "note": "Research envelope, not standard hardware or strength sizing"
+      },
+      "collar_bar_width": {
+        "value": 28.0,
+        "unit": "mm",
+        "kind": "PROPOSED",
+        "source": "C3",
+        "note": "Research envelope, not standard hardware or strength sizing"
+      },
+      "gland_washer_od": {
+        "value": 24.0,
+        "unit": "mm",
+        "kind": "PROPOSED",
+        "source": "C3",
+        "note": "Research envelope, not standard hardware or strength sizing"
+      },
+      "gland_nut_af_envelope": {
+        "value": 18.0,
+        "unit": "mm",
+        "kind": "PROPOSED",
+        "source": "C3",
+        "note": "Research envelope, not standard hardware or strength sizing"
+      },
+      "housing_below_packing": {
+        "value": 10.0,
+        "unit": "mm",
+        "kind": "PROPOSED",
+        "source": "C3",
+        "note": "Research envelope, not standard hardware or strength sizing"
+      },
+      "blind_hole_bottom_offset": {
+        "value": 5.0,
+        "unit": "mm",
+        "kind": "PROPOSED",
+        "source": "C3",
+        "note": "Research envelope, not standard hardware or strength sizing"
+      },
+      "stud_bottom_offset": {
+        "value": 7.0,
+        "unit": "mm",
+        "kind": "PROPOSED",
+        "source": "C3",
+        "note": "Research envelope, not standard hardware or strength sizing"
+      },
+      "gland_stud_protrusion": {
+        "value": 5.0,
+        "unit": "mm",
+        "kind": "PROPOSED",
+        "source": "C3",
+        "note": "Research envelope, not standard hardware or strength sizing"
+      },
+      "stem_proxy_length": {
+        "value": 100.0,
+        "unit": "mm",
+        "kind": "PROPOSED",
+        "source": "C3",
+        "note": "Research envelope, not standard hardware or strength sizing"
+      },
+      "stem_proxy_below_packing": {
+        "value": 20.0,
+        "unit": "mm",
+        "kind": "PROPOSED",
+        "source": "C3",
+        "note": "Research envelope, not standard hardware or strength sizing"
+      }
+    },
+    "unresolved": {
+      "packing_material": null,
+      "compression_load_N": null,
+      "allowable_compression_ratio": null,
+      "leakage_acceptance": null
+    }
+  },
+  "drive_nut_candidates": [
+    {
+      "id": "D40-custom",
+      "selected": false,
+      "body_od": 75.0,
+      "length": 40.0,
+      "source": "C3",
+      "kind": "PROPOSED_CUSTOM_ENVELOPE",
+      "external_thread_or_retention": null
+    },
+    {
+      "id": "D54-index-scenario",
+      "selected": false,
+      "body_od": 75.0,
+      "length": 54.0,
+      "source": "NORELEM_INDEX",
+      "kind": "UNVERIFIED_SENSITIVITY_ENVELOPE",
+      "external_thread_or_retention": null
+    },
+    {
+      "id": "D70-vendor-envelope",
+      "selected": false,
+      "body_od": 67.0,
+      "length": 70.0,
+      "flange_od": 95.0,
+      "source": "IGUS",
+      "kind": "VENDOR_ENVELOPE_ONLY",
+      "external_thread_or_retention": null
+    }
+  ],
+  "global_unknowns": {
+    "design_pressure_MPa": null,
+    "material_grade_selection": null,
+    "allowable_stresses": null,
+    "design_torque_Nm": null
+  },
+  "release_authorized": false,
+  "solver_execution_allowed": false,
+  "scope_note": "Coupons and packaging interfaces only; no modification of frozen C2 or automatic manufacturing selection"
+}

@@ -468,6 +468,62 @@
       ],
       "source_commit": "31662e66f0a14e426ab60b53c870f958a60f4ce1",
       "content_id": "32406c3f3ebdc6073b4d464da5230195eab2d0fda4e5bccffef2999eac7b9582"
+    },
+    {
+      "path": "runs/20261006/CALCULATIONS/R0/output/522-35.4179_工程计算书_工作稿_R0.docx",
+      "bytes": 564350,
+      "sha256": "d380e7d38b2107b3cfe443220fb2bed814e5ee8a1d0e1441a1924b0bec889dca",
+      "git_blob_sha1": "b9b95403d74788ed99eabc33a0ff2c44365cf3b3",
+      "encoding": "zlib",
+      "encoded_bytes": 561710,
+      "encoded_sha256": "28b435d0be8f846fa661f68d743056df5e8a711f90bbe6b3684f9507fff8fb9a",
+      "chunks": [
+        {
+          "path": "artifact_storage/chunks/da5fca5a938ff16d8a1bb7afe77a4462be5d9e8c7218aa67ab8ba54192c09867/000000.bin",
+          "bytes": 409600,
+          "sha256": "a6104195c06bf10160b2387e1a4a5915775aa6e2a6abe2a51878aae47df0fbc7"
+        },
+        {
+          "path": "artifact_storage/chunks/da5fca5a938ff16d8a1bb7afe77a4462be5d9e8c7218aa67ab8ba54192c09867/000001.bin",
+          "bytes": 152110,
+          "sha256": "e2129e1fd58608944b274d8eb5090db9ed4f117e3a4124441090d75a3da1e4d8"
+        }
+      ],
+      "source_commit": "dd306c88fe42e7903894ae54e0ad6b2bf49ff808",
+      "content_id": "da5fca5a938ff16d8a1bb7afe77a4462be5d9e8c7218aa67ab8ba54192c09867"
+    },
+    {
+      "path": "runs/20261006/CALCULATIONS/R0/output/522-35.4179_工程计算书_工作稿_R0.pdf",
+      "bytes": 2178740,
+      "sha256": "24c194dbb997d4aa167f3700d1dc0dfee683fd2b9b9237ec32c7a3a5cff7f567",
+      "git_blob_sha1": "0de21aecfe4a9c7cfb4c8a6dbab4c5662ec398c7",
+      "encoding": "zlib",
+      "encoded_bytes": 1443280,
+      "encoded_sha256": "79869133a195447bfd8e86d23e96b79990575c68e86e21522e978aa2765f4756",
+      "chunks": [
+        {
+          "path": "artifact_storage/chunks/5b784851df773748a02dd40a359486b74c0cdcc54b2012710cf978110c971e1a/000000.bin",
+          "bytes": 409600,
+          "sha256": "f965fdff5e01f2203c8cba10a16abcc2217d68c33cb5e8b74e6761b4fb2a1957"
+        },
+        {
+          "path": "artifact_storage/chunks/5b784851df773748a02dd40a359486b74c0cdcc54b2012710cf978110c971e1a/000001.bin",
+          "bytes": 409600,
+          "sha256": "ab26b6debb9dd1b498e58077e4627e364e755ff42a84a269e76a0158d3e6b266"
+        },
+        {
+          "path": "artifact_storage/chunks/5b784851df773748a02dd40a359486b74c0cdcc54b2012710cf978110c971e1a/000002.bin",
+          "bytes": 409600,
+          "sha256": "76a7d337bed1fad5f9a7ba6644c2c0836e1839614a361e72b3a969a8773b119e"
+        },
+        {
+          "path": "artifact_storage/chunks/5b784851df773748a02dd40a359486b74c0cdcc54b2012710cf978110c971e1a/000003.bin",
+          "bytes": 214480,
+          "sha256": "9745227f3e853ebc8c334266f3e032c3e0d39b49cf275cf7da1d7e56e9d54677"
+        }
+      ],
+      "source_commit": "dd306c88fe42e7903894ae54e0ad6b2bf49ff808",
+      "content_id": "5b784851df773748a02dd40a359486b74c0cdcc54b2012710cf978110c971e1a"
     }
   ]
 }
