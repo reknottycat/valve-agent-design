@@ -1,0 +1,92 @@
+{
+  "schema": "valve.pressure_sources/1.0",
+  "date_utc": "2026-10-06",
+  "files": [
+    {
+      "path": "sources/MIT_seawater_tables_2023.pdf",
+      "bytes": 1772646,
+      "sha256": "e0b5fda408b7e3a474291d4a01133a1d4309a1874b59e5208d7cb1d0be50338f",
+      "source_url": "https://web.mit.edu/seawater/2017_MIT_Seawater_Property_Tables_r2b_2023c.pdf",
+      "repo_inclusion": "LOCAL_SOURCE_INSPECTION_ONLY_DO_NOT_BUNDLE"
+    },
+    {
+      "path": "sources/SEAWATER_v3.1.5_07Aug24.zip",
+      "bytes": 225025,
+      "sha256": "5eff86e99b56eb1564c8afd98fc507f923003db8d28ccc6887b48782e107a54c",
+      "source_url": "https://web.mit.edu/seawater/SEAWATER_v3.1.5_07Aug24.zip",
+      "repo_inclusion": "LOCAL_SOURCE_INSPECTION_ONLY_DO_NOT_BUNDLE"
+    },
+    {
+      "path": "sources/SW_Density.m",
+      "bytes": 6507,
+      "sha256": "b5ac618ec5ea4e87bc359211824e6bcdd1b06ac472e44d9b15c133e4c0f19c16",
+      "source_url": null,
+      "repo_inclusion": "LOCAL_SOURCE_INSPECTION_ONLY_DO_NOT_BUNDLE"
+    },
+    {
+      "path": "sources/SW_Psat.m",
+      "bytes": 3953,
+      "sha256": "1557d8c7c35b2a25d05c2d9e807e9159bce695e66c43800b250b3cd0b23ab8e3",
+      "source_url": null,
+      "repo_inclusion": "LOCAL_SOURCE_INSPECTION_ONLY_DO_NOT_BUNDLE"
+    },
+    {
+      "path": "sources/SW_Viscosity.m",
+      "bytes": 4156,
+      "sha256": "ac3bd8dfa97ccde5d186a86bd86b31ad23aa0a85a676384ad885620c4660773c",
+      "source_url": null,
+      "repo_inclusion": "LOCAL_SOURCE_INSPECTION_ONLY_DO_NOT_BUNDLE"
+    },
+    {
+      "path": "sources/SW_copy.m",
+      "bytes": 9129,
+      "sha256": "34bd7491a4276f52b2fa10b63877e3729b0eb38faaad8f85c01be2e54bc4b77e",
+      "source_url": null,
+      "repo_inclusion": "LOCAL_SOURCE_INSPECTION_ONLY_DO_NOT_BUNDLE"
+    },
+    {
+      "path": "sources/SW_copy.txt",
+      "bytes": 9406,
+      "sha256": "7c0aed0e12156353797a7c5f1be11ec2e4b8e2dbba5a183a709ebefdba24dc7b",
+      "source_url": null,
+      "repo_inclusion": "LOCAL_SOURCE_INSPECTION_ONLY_DO_NOT_BUNDLE"
+    },
+    {
+      "path": "sources/Sharqawy2010.txt",
+      "bytes": 155765,
+      "sha256": "985223b84dbae8d912b7556f5e8efb10bbdb76b8fc794799c71942d217bd0238",
+      "source_url": null,
+      "repo_inclusion": "LOCAL_SOURCE_INSPECTION_ONLY_DO_NOT_BUNDLE"
+    },
+    {
+      "path": "sources/Sharqawy2010_corrected2023.pdf",
+      "bytes": 1561546,
+      "sha256": "25a0f8b4165b90d2b00a3e5181a90b0e59ad55a65ebef835424659afbfea53f8",
+      "source_url": "https://web.mit.edu/lienhard/www/papers/journal/Thermophysical_properties_of_seawater-DWT-16-354-2010.pdf",
+      "repo_inclusion": "LOCAL_SOURCE_INSPECTION_ONLY_DO_NOT_BUNDLE"
+    },
+    {
+      "path": "sources/mu_table-05.png",
+      "bytes": 337913,
+      "sha256": "e37a8192a8bfe76f3d44e8461f20ffcc74acb953c25fc3e8d5cae7347caf6184",
+      "source_url": null,
+      "repo_inclusion": "LOCAL_SOURCE_INSPECTION_ONLY_DO_NOT_BUNDLE"
+    },
+    {
+      "path": "sources/rho_table-24.png",
+      "bytes": 322124,
+      "sha256": "d016c9fd9fc895354df3c692b6c78adc9482d9ab8b26fdfbfa219d545fbb6eff",
+      "source_url": null,
+      "repo_inclusion": "LOCAL_SOURCE_INSPECTION_ONLY_DO_NOT_BUNDLE"
+    }
+  ],
+  "additional_primary_links": [
+    "https://lenpromarmatura.ru/downloads/LPA_catalog_sudarm.pdf#page=54",
+    "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b8",
+    "https://protect.gost.ru/gost/details/23b3dd83-c416-4ccf-ae9c-77f26bdaffdb",
+    "https://teos-10.org/pubs/gsw/html/gsw_t_freezing.html",
+    "https://www.bornemann-gewindetechnik.de/en/products/trapezoidal-threads/data/",
+    "https://iacs.s3.af-south-1.amazonaws.com/wp-content/uploads/2022/05/01130803/UR_P2_Oct_2023_CLN1.pdf#page=26"
+  ],
+  "purpose": "Provenance of unbundled third-party sources inspected during research; these source files are deliberately absent from the delivery archive"
+}

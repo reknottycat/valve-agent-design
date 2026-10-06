@@ -1,0 +1,168 @@
+{
+  "schema": "valve.c4-study-basis/1.0",
+  "status": "SELECTED_BASE_STUDY_NOT_PRODUCT_RATING",
+  "target": {
+    "designation": "522-35.4179",
+    "selection": "USER_SELECTED_UNSUFFIXED_BASE",
+    "medium": "seawater",
+    "service_temperature_C": [
+      -2,
+      50
+    ],
+    "source": "SOURCE_DRAWING_NOTE4"
+  },
+  "authorization": {
+    "date_utc": "2026-10-06",
+    "decision": "Base model and autonomous analogous-data research assumptions selected by user",
+    "does_not_authorize": "Manufacturing certification or resumption of previously canceled tool operations"
+  },
+  "pressure_unit_conversion": {
+    "kgf_cm2_to_MPa": 0.0980665,
+    "standard_gravity_m_s2": 9.80665,
+    "catalog_value": 6.3,
+    "catalog_unit": "kgf/cm2",
+    "catalog_converted_MPa": 0.61781895,
+    "literal_drawing_marking": "Ру6",
+    "drawing_conditional_if_kgf_cm2_MPa": 0.588399,
+    "source": "LPA_P53",
+    "note": "Unit conversion of a nominal marking is not a product design-pressure or proof-pressure determination"
+  },
+  "selected_study_inputs": {
+    "internal_design_pressure": {
+      "value": 0.63,
+      "unit": "MPa(g)",
+      "kind": "STUDY_ASSUMPTION",
+      "source": "LPA_P53_UPWARD_ENVELOPE"
+    },
+    "maximum_static_closure_differential": {
+      "value": 0.63,
+      "unit": "MPa",
+      "kind": "STUDY_ASSUMPTION",
+      "source": "FULL_DIFFERENTIAL_ASSUMPTION"
+    },
+    "ambient_absolute_pressure": {
+      "value": 0.101325,
+      "unit": "MPa(abs)",
+      "kind": "STUDY_ASSUMPTION",
+      "source": "REFERENCE_ATMOSPHERE_NOT_SITE_MEASUREMENT"
+    },
+    "salinity": {
+      "value": 35.0,
+      "unit": "g/kg",
+      "kind": "STUDY_ASSUMPTION",
+      "source": "REPRESENTATIVE_SEAWATER_NOT_MEASURED"
+    },
+    "pipe_axis": "horizontal",
+    "stem_axis": "vertical +Z",
+    "orientation_kind": "DRAWING_CONSISTENT_STUDY_ASSUMPTION"
+  },
+  "pressure_sensitivity": [
+    {
+      "id": "literal6-conditional",
+      "pressure_MPa_g": 0.588399,
+      "kind": "CONDITIONAL_UNIT_INTERPRETATION"
+    },
+    {
+      "id": "catalog6p3-converted",
+      "pressure_MPa_g": 0.61781895,
+      "kind": "ANALOG_NOMINAL_UNIT_CONVERSION"
+    },
+    {
+      "id": "selected-study",
+      "pressure_MPa_g": 0.63,
+      "kind": "STUDY_ASSUMPTION"
+    },
+    {
+      "id": "overload-sensitivity",
+      "pressure_MPa_g": 1.0,
+      "kind": "OVERLOAD_SENSITIVITY_NOT_PROOF_TEST"
+    }
+  ],
+  "temperature_note": "Mechanical pressure-component forces do not model thermal expansion or temperature-dependent strength; -2 C liquid-phase/property eligibility is separately unresolved",
+  "thread_study": {
+    "name": "Tr36x6",
+    "pitch_diameter_mm": 33.0,
+    "nominal_external_root_d_mm": 29.0,
+    "nominal_internal_root_d_mm": 30.0,
+    "nominal_internal_major_d_mm": 37.0,
+    "lead_mm": 6.0,
+    "starts_assumed": 1,
+    "axial_half_flank_angle_deg_assumed": 15.0,
+    "geometry_kind": "VENDOR_NOMINAL_DIN103_ANALOG_NOT_ORIGINAL_THREAD_TOLERANCE",
+    "source": "BORNEMANN",
+    "friction_coefficients": [
+      0.03,
+      0.08,
+      0.15,
+      0.25
+    ],
+    "friction_kind": "SENSITIVITY_NOT_MEASURED",
+    "thread_hand": "UNCONFIRMED_MAGNITUDE_CALCULATION_ONLY",
+    "effective_engagement_lengths_mm": [
+      40.0,
+      54.0,
+      70.0
+    ],
+    "engagement_kind": "C3_ENVELOPE_SENSITIVITY_NOT_SELECTED_THREAD_ENGAGEMENT"
+  },
+  "collar_study": {
+    "inner_d_mm": 36.0,
+    "outer_d_mm": 60.0,
+    "contact_model": "UNIFORM_WEAR_SENSITIVITY_PROXY",
+    "friction_coefficients": [
+      0.0,
+      0.05,
+      0.1
+    ],
+    "kind": "STUDY_ASSUMPTION_NOT_SELECTED_BEARING"
+  },
+  "unresolved": {
+    "actual_operating_pressure_MPa": null,
+    "manufacturer_rating_MPa": null,
+    "physical_proof_pressure_MPa": null,
+    "transient_time_history": null,
+    "selected_part_materials": null,
+    "material_allowable_stresses_MPa": null,
+    "seating_preload_N": null,
+    "packing_friction_N": null,
+    "thread_tolerance_class": null,
+    "bolt_preload_N": null,
+    "gasket_material": null,
+    "applicable_classification": null
+  },
+  "release": {
+    "manufacturing_authorized": false,
+    "engineering_acceptance": false,
+    "solver_execution_allowed": false,
+    "github_write_allowed": false
+  },
+  "input_hashes": {
+    "../C2/T11/parameters.json": "c35a4064403f98e3462bfea3650eebe2695ced39a15fb928f817e465169576ba",
+    "../C2/artifact_manifest.json": "9219a22d8f890be233b0019caf6d50b907c7bf65964f7eff4a78f163761cde26",
+    "../C3/T11/interface_candidates.json": "343b1c8f437cab36f16eeef5a2a73a7584f0a1e0c59e70ee3eafd18f74a26053",
+    "../C3/artifact_manifest.json": "94dee58d5bdb0664530c4f8b7ed3c3f725059fa0763d7aa28ab7cebcbdbeacb3"
+  },
+  "sources": [
+    {
+      "id": "SOURCE_DRAWING_NOTE4",
+      "path": "../C2/T06/variant_input_matrix.json",
+      "scope": "Base seawater -2..50 C; excludes -02 brine duty"
+    },
+    {
+      "id": "LPA_P53",
+      "url": "https://lenpromarmatura.ru/downloads/LPA_catalog_sudarm.pdf#page=54",
+      "scope": "Analogous base 522-35.4179 maps to LPA49011-200-10; PN column6.3 kgf/cm2, not6.3 MPa; no original design rating inferred"
+    },
+    {
+      "id": "BORNEMANN",
+      "url": "https://www.bornemann-gewindetechnik.de/en/products/trapezoidal-threads/data/",
+      "scope": "DIN103 nominal Tr36x6 d2=33,d3=29,D1=30,D4=37 mm; no original tolerance or minimum manufactured root"
+    },
+    {
+      "id": "ROTON",
+      "url": "https://www.roton.com/screw-university/formula-calculators/efficiency-power-screws-forward-drive/",
+      "scope": "Power-screw efficiency relation in normal-plane thread angle; used as independent identity of Coulomb screw model, not selected product performance"
+    }
+  ],
+  "execution_scope_note": "The false solver/GitHub flags limit this C4 calculation stage. Subsequent user clarification separately permits solver capability validation and explicitly authorized project-artifact synchronization; those activities have independent evidence and never run from these scripts."
+}

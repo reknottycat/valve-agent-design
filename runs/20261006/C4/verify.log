@@ -1,0 +1,56 @@
+{
+  "status": "FROZEN_ARTIFACT_INTEGRITY_PASS",
+  "directories": [
+    {
+      "directory": "runs/20261006/CLOUD/T04",
+      "verified_files": 64
+    },
+    {
+      "directory": "runs/20261006/C2",
+      "verified_files": 93
+    },
+    {
+      "directory": "runs/20261006/C3",
+      "verified_files": 203
+    }
+  ],
+  "archives_verified": [],
+  "archives_requested": false,
+  "engineering_acceptance": false,
+  "manufacturing_authorized": false,
+  "solver_execution_performed": false,
+  "github_write_performed": false
+}
+{
+  "study_input_gate": "PASS",
+  "basis_class": "EXPLICIT_STUDY_ASSUMPTIONS",
+  "manufacturing_authorized": false
+}
+{
+  "schema": "valve.c4-evidence-gate/1.0",
+  "study_gate": "PASS",
+  "load_cases": 20,
+  "drive_scenarios": 12,
+  "joint_scenarios": 9,
+  "property_reference_points": 9,
+  "expected_red_free_disc_cases": 4,
+  "engineering_gates": {
+    "source_pressure_and_selected_assumption": "DISTINCT",
+    "physical_proof_test": "NOT_SELECTED",
+    "cold_minus2_liquid_properties": "HOLD",
+    "property_pressure_dependence": "HOLD",
+    "allowables_and_strength": "HOLD",
+    "actual_drive_joint_seal_selection": "HOLD",
+    "CFD_FEA": "ACTUAL_VALVE_NOT_RUN_IN_C4_STANDARD_BENCHMARKS_SEPARATE"
+  },
+  "manufacturing_release": "HOLD",
+  "manufacturing_authorized": false,
+  "source_hashes": {
+    "basis": "a30b4aceb654b2589d4d41c1cac6eeb9a7a9950322fcb8ca83397e0c91524558",
+    "pressure_areas": "abec1ed3f307be3e3656bb1f8ae1d2fdc6e690af38d75788a7eff863bca18a08",
+    "parameters": "c35a4064403f98e3462bfea3650eebe2695ced39a15fb928f817e465169576ba",
+    "interfaces": "343b1c8f437cab36f16eeef5a2a73a7584f0a1e0c59e70ee3eafd18f74a26053"
+  },
+  "solver_execution_performed": false
+}
+C4 study checks passed; engineering/manufacturing release remains HOLD. No solver or network write.

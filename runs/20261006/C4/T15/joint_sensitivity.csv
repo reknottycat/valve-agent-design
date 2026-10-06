@@ -1,0 +1,10 @@
+candidate,pressure_MPa_g,effective_diameter_scenario,assumed_effective_pressure_diameter_mm,pressure_separation_component_N,equal_count_division_N,actual_bolt_load_N,preload_N,selected
+J8-16,0.63,inner-edge,292,42188.699072469615,5273.587384058702,,,False
+J8-16,0.63,mid-annulus,310.0,47550.36100657171,5943.795125821463,,,False
+J8-16,0.63,outer-edge,328,53232.65388689918,6654.081735862397,,,False
+J12-16,0.63,inner-edge,292,42188.699072469615,3515.7249227058014,,,False
+J12-16,0.63,mid-annulus,310.0,47550.36100657171,3962.530083880976,,,False
+J12-16,0.63,outer-edge,328,53232.65388689918,4436.054490574931,,,False
+J8-20,0.63,inner-edge,292,42188.699072469615,5273.587384058702,,,False
+J8-20,0.63,mid-annulus,318.0,50036.24044150424,6254.53005518803,,,False
+J8-20,0.63,outer-edge,344,58552.75255019427,7319.094068774284,,,False

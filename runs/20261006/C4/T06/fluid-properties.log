@@ -1,0 +1,42 @@
+[
+  {
+    "temperature_C": 0,
+    "reference_composition_salinity_g_kg": 35,
+    "reference_pressure_MPa_absolute": 0.101325,
+    "density_kg_m3": 1027.97,
+    "dynamic_viscosity_Pa_s": 0.001905564439161327,
+    "kinematic_viscosity_m2_s": 1.8537160025694594e-06,
+    "reference_table_density_kg_m3": 1028.0,
+    "reference_table_viscosity_Pa_s": 0.001906,
+    "source": "Sharqawy2010Eqs8,22,23; MIT2023tables2,21",
+    "actual_seawater_measurement": false,
+    "pressure_correction_applied": false
+  },
+  {
+    "temperature_C": 20,
+    "reference_composition_salinity_g_kg": 35,
+    "reference_pressure_MPa_absolute": 0.101325,
+    "density_kg_m3": 1024.9109328963,
+    "dynamic_viscosity_Pa_s": 0.0010766289252529323,
+    "kinematic_viscosity_m2_s": 1.0504609627009073e-06,
+    "reference_table_density_kg_m3": 1024.9,
+    "reference_table_viscosity_Pa_s": 0.001077,
+    "source": "Sharqawy2010Eqs8,22,23; MIT2023tables2,21",
+    "actual_seawater_measurement": false,
+    "pressure_correction_applied": false
+  },
+  {
+    "temperature_C": 50,
+    "reference_composition_salinity_g_kg": 35,
+    "reference_pressure_MPa_absolute": 0.101325,
+    "density_kg_m3": 1013.948888101875,
+    "dynamic_viscosity_Pa_s": 0.000594324276489186,
+    "kinematic_viscosity_m2_s": 5.861481613750456e-07,
+    "reference_table_density_kg_m3": 1014.0,
+    "reference_table_viscosity_Pa_s": 0.000594,
+    "source": "Sharqawy2010Eqs8,22,23; MIT2023tables2,21",
+    "actual_seawater_measurement": false,
+    "pressure_correction_applied": false
+  }
+]
+PASS9 table crosschecks; cold guard

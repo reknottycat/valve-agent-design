@@ -1,0 +1,9 @@
+{
+  "load_study_sha256": "22e2849a8a486e96c0cb4df7981fb95b40217879edf5495175f65baae563e23c",
+  "seawater_table_sha256": "dd39b778058673c846109a4e5bc409147a8820a06efd4891e83b9b1938b5a0fa",
+  "plot_script_sha256": "0ae37b0a5b234d5a6da5359a314bb5771b651ef3dfefba2864e8190036df1238",
+  "images": {
+    "C4_load_study.png": "d452cc63744fc7299d70e09a4d1b5c57ae8bdcb6c76a88af21465e42de34c71c",
+    "C4_load_study.svg": "d3f4008f942d8d8982d59c73d3fd0dd9d4e3c141b837c30683b978db715a4fc8"
+  }
+}

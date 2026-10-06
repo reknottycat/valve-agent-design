@@ -1,0 +1,168 @@
+{
+  "schema": "valve.study_design_basis/1.0",
+  "date_utc": "2026-10-06",
+  "revision": "C4_research_proposal_v1",
+  "authority": {
+    "user_message_id": "Sentinel_5194dcc47e748191a9dbbbe8bbdc02db",
+    "user_choice": "unsuffixed base522-35.4179; autonomous analogous study design-input selection"
+  },
+  "status": "PROPOSED_ASSUMED_ENGINEERING_STUDY_BASELINE",
+  "not_for": [
+    "manufacture release",
+    "installation",
+    "operating authorization",
+    "physical pressure test",
+    "material compliance certification"
+  ],
+  "product": {
+    "designation": "522-35.4179",
+    "variant": "BASE_UNSUFFIXED",
+    "nominal_DN": 200,
+    "source_pressure_marking_literal": "Ру6",
+    "flow_mechanism": "axial-lift stop-check study interpretation",
+    "source_revision": "4222b3d4df248b07777315068b9f3c99273d47c4"
+  },
+  "pressure_audit": {
+    "kgf_cm2_to_MPa_exact": "0.0980665",
+    "source": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b8",
+    "drawing_6_as_kgf_cm2_if_that_unit_applies_MPa": "0.5883990",
+    "catalog_PN_column_value": "6.3",
+    "catalog_PN_column_unit": "kgf/cm2",
+    "catalog_arithmetic_conversion_MPa": "0.61781895",
+    "catalog_mapping": "ЛПА49011-200-10 →522-35.4179 / ИТШЛ.491925.015",
+    "catalog_source": "https://lenpromarmatura.ru/downloads/LPA_catalog_sudarm.pdf#page=54",
+    "catalog_printed_page": 53,
+    "selected_study_design_pressure_MPa_gauge": "0.63",
+    "uplift_vs_catalog_exact_percent": "1.971621297792824257009274300",
+    "uplift_vs_drawing6_conversion_percent": "7.070202362682465469859738000",
+    "nominal_series_context": "GOST1536 public scope includes0.63MPa class; nominal class identification is not exact conversion of a physical working pressure",
+    "warning": "Arithmetic unit conversion does not establish manufacturer maximum-working,design,or proof pressure"
+  },
+  "selected_study_basis": {
+    "medium": "seawater",
+    "design_temperature_C": {
+      "min": -2,
+      "max": 50,
+      "evidence": "drawing note4 applies to selected base"
+    },
+    "design_pressure_MPa_gauge": 0.63,
+    "pressure_temperature_envelope_assumption": "uniform0.63MPa(g) rectangular design-load envelope at−2,20,50°C; material capacity vsT not established",
+    "max_static_closing_or_reverse_differential_MPa": 0.63,
+    "reference_atmosphere_MPa_absolute": 0.101325,
+    "max_internal_pressure_MPa_absolute_at_reference_atmosphere": 0.731325,
+    "physical_proof_test_pressure_MPa": null,
+    "physical_proof_test_reason": "applicable code/class,material limits,testprocedure and acceptance not established",
+    "overload_sensitivity_MPa_gauge": 1.0,
+    "overload_purpose": "numerical sensitivity only; not a selected actual service pressure or physical proof test",
+    "material_allowable_stress_MPa": null,
+    "transient_pressure_basis": "not established; static envelope does not bound waterhammer by evidence",
+    "vacuum_or_external_pressure": "not included; separate service requirement needed"
+  },
+  "load_cases": [
+    {
+      "id": "LC_SHELL_COMMON",
+      "pressure_port_A_MPa_g": 0.63,
+      "pressure_port_B_MPa_g": 0.63,
+      "differential_MPa": 0,
+      "temperatures_C": [
+        -2,
+        20,
+        50
+      ],
+      "purpose": "shell/bonnet uniform internal pressure; define wetted faces and end restraints"
+    },
+    {
+      "id": "LC_CLOSED_FORWARD",
+      "pressure_port_A_MPa_g": 0.63,
+      "pressure_port_B_MPa_g": 0,
+      "differential_MPa": 0.63,
+      "temperatures_C": [
+        -2,
+        20,
+        50
+      ],
+      "purpose": "closed forward differential; pressure only on actual upstream-wetted cavity"
+    },
+    {
+      "id": "LC_CLOSED_REVERSE",
+      "pressure_port_A_MPa_g": 0,
+      "pressure_port_B_MPa_g": 0.63,
+      "differential_MPa": -0.63,
+      "temperatures_C": [
+        -2,
+        20,
+        50
+      ],
+      "purpose": "reverse closure load; use actual reverse-wetted cavity"
+    },
+    {
+      "id": "LC_OVERLOAD_NUMERICAL_ONLY",
+      "common_internal_pressure_MPa_g": 1.0,
+      "temperature_C": 20,
+      "purpose": "higher-load structural sensitivity only; do not label hydrostatic test"
+    }
+  ],
+  "pressure_alternatives": [
+    {
+      "MPa": 0.588399,
+      "meaning": "strict6kgf/cm² arithmetic alternative;sourceunit/PNmeaningunresolved"
+    },
+    {
+      "MPa": 0.61781895,
+      "meaning": "catalog6.3kgf/cm² arithmetic alternative;notanactualservicepressure"
+    },
+    {
+      "MPa": 0.63,
+      "meaning": "SELECTED_ASSUMED_STUDY_ENVELOPE"
+    }
+  ],
+  "fluid_study": {
+    "reference_composition_salinity_g_kg": 35,
+    "salinity_sensitivity_g_kg": [
+      30,
+      40
+    ],
+    "salinity_evidence_status": "ASSUMED_NOT_MEASURED",
+    "property_temperature_nodes_C": [
+      0,
+      20,
+      50
+    ],
+    "property_pressure_MPa_absolute": 0.101325,
+    "dataset": "seawater_study_cases.json",
+    "phase_at_minus2_status": "UNRESOLVED;do not extrapolate correlations",
+    "density_pressure_correction": "not applied; densitypressurereference not confused with mechanical designload",
+    "viscosity_pressure_dependence": "P0correlation only; broaderpressureuse is an unvalidatedstudyapproximation"
+  },
+  "material_candidates": {
+    "basis": "manufactureranalogidentityonly",
+    "body": "БрО8ц4",
+    "cover_disc": "БрАЖНМц9-4-4-1",
+    "seat_spindle_catalog_label": "Сплав3М",
+    "stand_catalog_label": "Сталь20",
+    "material_state": "not specified/verified",
+    "allowables": "not assigned",
+    "selection_limit": "analog grades may guide screening;not original BOM nor adopted certified materialpropertycard"
+  },
+  "screw_nominal_reference": {
+    "designation": "Tr36x6",
+    "pitch_diameter_mm": 33,
+    "external_thread_root_diameter_mm": 29,
+    "internal_thread_major_diameter_mm": 37,
+    "internal_thread_minor_diameter_mm": 30,
+    "source": "https://www.bornemann-gewindetechnik.de/en/products/trapezoidal-threads/data/",
+    "source_standard": "DIN103 basicnominal supplier table;not a verified GOST equivalency",
+    "actual_tolerances": "not verified",
+    "engagement_length_mm": null,
+    "allowable_thread_load_N": null
+  },
+  "acceptance_gates": [
+    "material identity,state,allowablesvsT and corrosion",
+    "pressure boundary/endload/bolting/seat effectiveareas",
+    "actual operatingflow and hydraulic duty",
+    "−2°C phasecondition and appropriateproperties",
+    "proofprocedure and applicableclass/standard",
+    "surge/waterhammer and fatigue spectra",
+    "approved manufacture and test documentation"
+  ]
+}

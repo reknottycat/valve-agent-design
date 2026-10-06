@@ -1,0 +1,27 @@
+Cannot create cache home directory: '/home/agent/.cache/ezdxf', cache files will not be saved.
+See also issue https://github.com/mozman/ezdxf/issues/923.
+{
+  "status": "GEOMETRIC_PRESSURE_AREA_PASS",
+  "poses": {
+    "closed": {
+      "disc_guide": {
+        "inlet": 31415.926535897932,
+        "outlet": -39810.262106289854
+      },
+      "stem": {
+        "inlet": 0.0,
+        "outlet": 0.0
+      }
+    },
+    "check_closed": {
+      "disc_guide": {
+        "inlet": 31415.926535897932,
+        "outlet": -40828.138126052945
+      },
+      "stem": {
+        "inlet": 0.0,
+        "outlet": 1017.8760197630929
+      }
+    }
+  }
+}
