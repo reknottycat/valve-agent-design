@@ -1,0 +1,45 @@
+{
+  "schema": "valve.fea_results/1.0",
+  "generated_at": "2026-10-06T21:14:29",
+  "solver": "CalculiX ccx 2.21",
+  "benchmark": {
+    "ccx_ok": true,
+    "fea_max_component_MPa": 2.8957,
+    "frd_stress_samples": 90,
+    "fea_vs_analytic_basis": "sigma_theta_inner (hoop stress at bore)",
+    "fea_value_MPa": 2.8957,
+    "rel_err_vs_analytic_%": 2.43,
+    "verdict": "FE 与解析解一致(<=5%),工具链可信",
+    "analytic": {
+      "sigma_theta_inner_MPa": 2.827,
+      "sigma_theta_outer_MPa": 2.239,
+      "sigma_r_inner_MPa": -0.588,
+      "sigma_r_outer_MPa": 0.0,
+      "von_mises_inner_MPa": 3.415,
+      "von_mises_outer_MPa": 2.239,
+      "formula": "A=(pi*ri^2-po*ro^2)/(ro^2-ri^2); B=ri^2*ro^2*(pi-po)/(ro^2-ri^2)",
+      "check_sigma_r_inner_eq_minus_p": true
+    }
+  },
+  "materials": {
+    "body": {
+      "grade": "БрА10Ж3Мц2",
+      "std": "ГОСТ 493-79",
+      "sigma_b_sand": 392000000.0,
+      "sigma_b_metal": 490000000.0,
+      "E": 100000000000.0,
+      "nu": 0.3,
+      "status": "E_from_handbook=ASSUMED; sigma_b=sourced"
+    },
+    "disc": {
+      "grade": "БрО10Ф1",
+      "std": "ГОСТ 613-79",
+      "sigma_b_sand": 215000000.0,
+      "sigma_b_metal": 245000000.0,
+      "E": 100000000000.0,
+      "nu": 0.3,
+      "status": "E_from_handbook=ASSUMED; sigma_b=sourced"
+    }
+  },
+  "limitation": "E 与许用应力[σ]均为 ASSUMED/未核实;本轮只报应力值与 σb 之比,不构成许用占用率结论"
+}

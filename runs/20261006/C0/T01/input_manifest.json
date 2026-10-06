@@ -1,0 +1,83 @@
+{
+  "schema": "valve.input_manifest/1.0",
+  "run_id": "20261006",
+  "candidate_id": "C0",
+  "project_id": "522-35.4179-C0",
+  "created": "2026-10-06",
+  "task": "T01 资料入库与版本登记",
+  "state_after_task": "INPUTS_REGISTERED",
+
+  "registry_note": [
+    "两份扫描件由用户于 2026-10-06 17:31 通过会话附件提供,无 Xref/图层信息(光栅图)。",
+    "重要: 归档时发现【文件名与图纸内容不一致】。用户文件名 sheet1/sheet2 与图面 л1/л2 恰好对调。",
+    "本 manifest 以【内容判定】为准,文件名仅作物理标识。后续所有 source_file 均指向内容正确的文件。",
+    "该不一致不影响尺寸读取,但会影响下游 ifc/xref 引用,故显式留痕,不静默修正。"
+  ],
+
+  "content_map": [
+    {
+      "physical_filename": "522-35.4179SB_sheet1.jpg",
+      "sha256": "c9e5da28d1d9e43ed3903c91f62777dc36d94c5dd32e486ab3fce5727afb8008",
+      "actual_content": "图纸第 2 张 (обозначение л2) —— 技术要求 + 总体技术要求 + 明细表 + 标题栏",
+      "user_supplied_name": "522-35.4179СБ л2.jpg",
+      "content_vs_name": "MATCH",
+      "note": "OCR 在本文件上产出全部技术要求正文(条目 1-30)。"
+    },
+    {
+      "physical_filename": "522-35.4179SB_sheet2.jpg",
+      "sha256": "9401cc66f20f95fbf7dcc6dbbd820f64a848e9587f6d9c0d5f1e0aa52a0d2ee",
+      "actual_content": "图纸第 1 张 (обозначение л1) —— Рис.1 主剖视 + Общий вид主视 + поз.31 局部放大",
+      "user_supplied_name": "522-35.4179СБ л1.jpg",
+      "content_vs_name": "MATCH",
+      "note": "OCR 在本文件上仅产出 2 个图像块、无正文(该页以图形为主)。全部尺寸读自本文件。"
+    }
+  ],
+
+  "files": [
+    {
+      "id": "IMG-L2",
+      "role": "drawing_sheet_2_technical_requirements",
+      "path": "00_inputs/522-35.4179SB_sheet1.jpg",
+      "sha256": "c9e5da28d1d9e43ed3903c91f62777dc36d94c5dd32e486ab3fce5727afb8008",
+      "bytes": 566242,
+      "pixel_width": 1920,
+      "pixel_height": 1342,
+      "format": "JPEG",
+      "color": "grayscale-toned",
+      "read_only": true,
+      "effective_resolution_note": "1920 px 宽;A1(841x594mm)幅面下约 2.28 px/mm。小号俄文技术要求字高仅约 5-7 px,已用 PaddleOCR-VL-1.6 + 3x 局部放大双重核验,仍有 OCR 字符级误差,故凡 OCR 文本均标注 confidence。",
+      "vector_source_available": false,
+      "unit_on_drawing": "mm (俄罗斯制图惯例,未在图上显式声明)",
+      "scale_on_drawing": "1:2 (标题栏, 仅图面比例, 不作为尺寸来源)"
+    },
+    {
+      "id": "IMG-L1",
+      "role": "drawing_sheet_1_ga_views",
+      "path": "00_inputs/522-35.4179SB_sheet2.jpg",
+      "sha256": "9401cc66f20f95fbf7dcc6dbbd820f64a848e9587f6d9c0d5f1e0aa52a0d2ee",
+      "bytes": 572436,
+      "pixel_width": 1920,
+      "pixel_height": 1330,
+      "format": "JPEG",
+      "read_only": true,
+      "vector_source_available": false,
+      "unit_on_drawing": "mm",
+      "scale_on_drawing": "1:2"
+    }
+  ],
+
+  "missing_inputs": [
+    { "item": "原始 CAD (DWG/DXF)", "impact": "无法读取实体、图层、公差与文字的原生精度;全部尺寸只能从光栅图人工判读", "blocking": ["T12", "T13", "T14", "T22", "T39", "T40"] },
+    { "item": "明细表(спецификация)零部件清单", "impact": "40+ 项零件的材料、数量、件号不可追溯", "blocking": ["T05", "T21", "T40"] },
+    { "item": "零件图", "impact": "内部结构完全未知,只能按方案研究处理", "blocking": ["T09", "T13", "T14"] },
+    { "item": "技术条件说明书 (Технические условия)", "impact": "强度、密封等级、Kv/Cv、允许工作压差无来源", "blocking": ["T06", "T08"] },
+    { "item": "可靠性计算书 522-354150", "impact": "п.27 的 0.97 无失效判据可核", "blocking": ["T35"] },
+    { "item": "流量曲线 / 水力特性表", "impact": "Кз≤6 无法转为设计目标", "blocking": ["T06", "T08", "T30"] }
+  ],
+
+  "integrity_statement": [
+    "原件只读,未做任何像素级修改;放大裁切件为派生副本,存于 T02/crops/。",
+    "本轮未声称已读取任何未实际提供的图纸或清单。",
+    "所有尺寸均标注来源视图与状态标签,未做无来源补齐。"
+  ]
+}

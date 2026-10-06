@@ -1,0 +1,889 @@
+{
+  "schema_version": "0.1",
+  "project": "valve_design_from_ga",
+  "created": "2026-10-06",
+  "status": "TEMPLATE_NOT_EXECUTION_READY",
+  "scope": "design_only",
+  "requires_real_inputs": true,
+  "notes": [
+    "任务图为每个候选设计的一轮模板；迭代创建新 DAG，不在当前 DAG 中回连。",
+    "SUCCEEDED 代表作业产物有效，不代表工程指标通过。",
+    "T33/T34 仅在确认不适用后写入显式豁免结果；null 是待定，不是 false。",
+    "本附件不是已部署的调度器或已经验证的阀门设计。"
+  ],
+  "project_flags": {
+    "system_scope": null,
+    "coupling_scope": null
+  },
+  "roles": {
+    "O": "总体设计／集成",
+    "R": "需求与标准",
+    "M": "机械与结构",
+    "C": "CAD",
+    "F": "流体与系统",
+    "V": "独立核验",
+    "D": "文档执行器"
+  },
+  "resource_pools": {
+    "light": {
+      "max_concurrent": 4
+    },
+    "cad": {
+      "max_concurrent": 1,
+      "exclusive_session": true
+    },
+    "cae": {
+      "max_concurrent": 1,
+      "note": "CFD 与 FEA 共享；按实测 CPU/RAM/许可调整"
+    },
+    "capability_probe": {
+      "max_concurrent": 1
+    }
+  },
+  "task_completion": {
+    "run_status": [
+      "PENDING",
+      "READY",
+      "RUNNING",
+      "SUCCEEDED",
+      "FAILED",
+      "BLOCKED",
+      "CANCELLED"
+    ],
+    "numerical_status": [
+      "NOT_APPLICABLE",
+      "NOT_ASSESSED",
+      "VALID",
+      "INVALID"
+    ],
+    "requirement_status": [
+      "NOT_ASSESSED",
+      "PASS",
+      "FAIL",
+      "UNKNOWN",
+      "WAIVED_WITH_REASON"
+    ]
+  },
+  "tasks": [
+    {
+      "id": "T01",
+      "name": "资料入库与版本登记",
+      "owner": "R",
+      "depends_on": [],
+      "action": "登记外形图、技术说明及已知历史资料；保存原件，识别文件格式、单位与可解析程度。",
+      "output": "input_manifest.json；原件哈希；缺件清单。",
+      "acceptance_check": "原件只读；不得声称已读取缺失图纸。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T01/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T02",
+      "name": "外形图参数提取",
+      "owner": "R",
+      "depends_on": [
+        "T01"
+      ],
+      "action": "提取标注尺寸、接口、包络及图纸说明；区分明确标注、比例估算和未知。",
+      "output": "ga_facts.json；每项对应图号、视图或位置。",
+      "acceptance_check": "单位一致；关键参数有证据；估算不自动冻结。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T02/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T03",
+      "name": "标准适用性与条款映射",
+      "owner": "R",
+      "depends_on": [
+        "T01"
+      ],
+      "action": "依已知用途筛选产品、压力设计、连接与性能标准；建立版本、范围和正文可用性台账。",
+      "output": "standards_matrix.json；条款规则候选；冲突单。",
+      "acceptance_check": "无正文不得生成条款级通过结论；适用性未定保留待定。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T03/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T04",
+      "name": "工具链与资源冒烟测试",
+      "owner": "C",
+      "depends_on": [
+        "T01"
+      ],
+      "action": "用独立测试模型验证打开、重建、导出、简单网格和求解结果读取；检测版本、许可与资源。",
+      "output": "capability_matrix.json；测试日志；资源画像。",
+      "acceptance_check": "每个适配器独立标记已验证／不可用；不能因 CAD 可用推定 CFD 可用。",
+      "resource_pool": "capability_probe",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T04/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T05",
+      "name": "材料与物性证据登记",
+      "owner": "R",
+      "depends_on": [
+        "T01"
+      ],
+      "action": "登记候选材料、许用值与温度范围；收集密度、黏度、蒸气压及摩擦系数来源和不确定性。",
+      "output": "property_registry.json；来源、有效范围、缺口。",
+      "acceptance_check": "不给无来源数值；材料选择与使用范围在 T07 确认。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T05/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T06",
+      "name": "工况与指标合同草案",
+      "owner": "R",
+      "depends_on": [
+        "T02",
+        "T03",
+        "T05"
+      ],
+      "action": "编制用途、压力温度组合、关闭压差、流量目标、接口锁定项和未知项；区分关断／调节。",
+      "output": "design_contract.draft.json；需求编号；问题清单。",
+      "acceptance_check": "不同时强加互不相容的 P1、P2、Q；待定项不视为零。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T06/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T07",
+      "name": "设计基础冻结",
+      "owner": "O",
+      "depends_on": [
+        "T06"
+      ],
+      "action": "确认结构用途、材料、适用规则、硬约束及必需工况；记录授权和变更权限。",
+      "output": "basis@B1；requirements@R1；获准的探索分支。",
+      "acceptance_check": "必需字段完备方可冻结；存在关键缺口则正式分支阻塞，概念研究另标假设。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T07/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T08",
+      "name": "验证计划与验收判据",
+      "owner": "V",
+      "depends_on": [
+        "T07"
+      ],
+      "action": "将每项需求映射到计算、几何、CFD、FEA 或待实测证据；设数值质量与不确定性方法。",
+      "output": "verification_plan@V1；覆盖矩阵；工况集合。",
+      "acceptance_check": "判据在运行前冻结；不适用项必须有理由；不把数值门槛说成标准条款。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T08/",
+      "max_attempts": 2,
+      "start_guards": [
+        "basis.frozen == true"
+      ]
+    },
+    {
+      "id": "T09",
+      "name": "内部结构候选方案",
+      "owner": "O",
+      "depends_on": [
+        "T07"
+      ],
+      "action": "在固定接口和工况内提出少量内部拓扑；列流道、密封副、运动与载荷路径。",
+      "output": "concepts.json；候选剖面定义；取舍理由。",
+      "acceptance_check": "不从外形猜唯一原设计；候选数量受策略预算限制。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T09/",
+      "max_attempts": 2,
+      "start_guards": [
+        "basis.frozen == true"
+      ]
+    },
+    {
+      "id": "T10",
+      "name": "方案级快速筛选",
+      "owner": "M",
+      "depends_on": [
+        "T08",
+        "T09"
+      ],
+      "action": "按相同设计基础做尺寸量级、承压、操作力与流通面积初算；淘汰明显不可行方案。",
+      "output": "screening_report.json；保留候选与初始参数。",
+      "acceptance_check": "采用可复算脚本；不靠语言评分绕过硬约束。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T10/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T11",
+      "name": "骨架与共享接口冻结",
+      "owner": "O",
+      "depends_on": [
+        "T10"
+      ],
+      "action": "定义基准轴面、阀座／阀盖／阀杆接口、运动范围、装配关系和参数所有权。",
+      "output": "interfaces@I1；skeleton_spec；parameter_registry。",
+      "acceptance_check": "每个共享尺寸只有一个所有者；局部设计不得擅自改接口。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T11/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T12",
+      "name": "阀体阀盖参数化建模",
+      "owner": "C",
+      "depends_on": [
+        "T04",
+        "T11"
+      ],
+      "action": "根据 I1 在独立工作区生成压力壳体零件；记录特征树、材料和关键几何。",
+      "output": "shell_parts；重建脚本；导出文件。",
+      "acceptance_check": "重建可重复；接口与 I1 一致；尚不是整机最终通过。",
+      "resource_pool": "cad",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T12/",
+      "max_attempts": 2,
+      "start_guards": [
+        "interfaces.frozen == true",
+        "capabilities.cad_modeling == VERIFIED"
+      ]
+    },
+    {
+      "id": "T13",
+      "name": "启闭件与阀座建模",
+      "owner": "C",
+      "depends_on": [
+        "T04",
+        "T11"
+      ],
+      "action": "按结构类型生成闸板／球体／阀瓣及阀座等；遵守密封副和流道接口。",
+      "output": "closure_seat_parts；参数与特征映射。",
+      "acceptance_check": "零件隔离写入；配对接口不得在本任务内单方面修改。",
+      "resource_pool": "cad",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T13/",
+      "max_attempts": 2,
+      "start_guards": [
+        "interfaces.frozen == true",
+        "capabilities.cad_modeling == VERIFIED"
+      ]
+    },
+    {
+      "id": "T14",
+      "name": "阀杆与支撑密封件建模",
+      "owner": "C",
+      "depends_on": [
+        "T04",
+        "T11"
+      ],
+      "action": "生成阀杆、压盖、支撑等设计零件；标准件可使用受控简化模型。",
+      "output": "stem_support_parts；接口及行程信息。",
+      "acceptance_check": "定位与运动定义齐全；不省略影响载荷或密封的几何。",
+      "resource_pool": "cad",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T14/",
+      "max_attempts": 2,
+      "start_guards": [
+        "interfaces.frozen == true",
+        "capabilities.cad_modeling == VERIFIED"
+      ]
+    },
+    {
+      "id": "T15",
+      "name": "承压与连接解析计算",
+      "owner": "M",
+      "depends_on": [
+        "T08",
+        "T11"
+      ],
+      "action": "使用 B1、I1 与材料证据计算压力边界、阀盖、螺栓连接及相关载荷组合。",
+      "output": "pressure_calc.json；脚本；公式来源。",
+      "acceptance_check": "数值、单位、适用范围可审计；许用准则按已选规范。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T15/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T16",
+      "name": "密封与操作载荷计算",
+      "owner": "M",
+      "depends_on": [
+        "T08",
+        "T11"
+      ],
+      "action": "计算关闭载荷、密封接触需求、填料／垫片预紧、启闭推力与扭矩范围。",
+      "output": "seal_operation_calc.json；载荷包。",
+      "acceptance_check": "考虑工况及摩擦不确定性；不把接触计算当实测泄漏等级。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T16/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T17",
+      "name": "阀杆与传力件计算",
+      "owner": "M",
+      "depends_on": [
+        "T15",
+        "T16"
+      ],
+      "action": "计算拉压扭转、螺纹、稳定性及传力件强度；与密封和操作载荷包联动。",
+      "output": "stem_calc.json；尺寸建议；载荷一致性结果。",
+      "acceptance_check": "载荷版本与 T16 一致；超限必须产生变更请求。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T17/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T18",
+      "name": "CFD 模板与工况配置",
+      "owner": "F",
+      "depends_on": [
+        "T08",
+        "T11"
+      ],
+      "action": "准备流体模型、物性、取压位置、入口出口及开度采样方案；此时可先不绑定最终几何。",
+      "output": "cfd_template；case_matrix.json。",
+      "acceptance_check": "边界不超定；压力基准和系数定义明确；采样计划有预算。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T18/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T19",
+      "name": "FEA 模板与载荷配置",
+      "owner": "M",
+      "depends_on": [
+        "T08",
+        "T15",
+        "T16",
+        "T17"
+      ],
+      "action": "准备材料、接触、预紧、约束、压力温度组合及求解类型；区分独立载荷和耦合载荷。",
+      "output": "fea_template；load_cases.json。",
+      "acceptance_check": "约束有物理依据；涉及流体映射的载荷明确等待 T34。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T19/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T20",
+      "name": "图纸与报告模板准备",
+      "owner": "D",
+      "depends_on": [
+        "T11"
+      ],
+      "action": "准备图框、编号、BOM 字段、视图规则与报告结构；不提前冻结最终性能和尺寸。",
+      "output": "drawing_templates；report_templates。",
+      "acceptance_check": "所有数值来自后续资产引用；禁止手工编造最终结果。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T20/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T21",
+      "name": "整机装配与参数协调",
+      "owner": "C",
+      "depends_on": [
+        "T12",
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17"
+      ],
+      "action": "将零件与解析计算尺寸合并到单一装配分支；若冲突，提出变更而非强行配合。",
+      "output": "assembly@G1；零件清单；参数一致性日志。",
+      "acceptance_check": "只由集成写入者发布；计算尺寸和实际模型必须一致。",
+      "resource_pool": "cad",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T21/",
+      "max_attempts": 2,
+      "start_guards": [
+        "interfaces.conflict_count == 0",
+        "capabilities.cad_modeling == VERIFIED"
+      ]
+    },
+    {
+      "id": "T22",
+      "name": "几何、行程与配合校验",
+      "owner": "C",
+      "depends_on": [
+        "T21"
+      ],
+      "action": "检查干涉、有效壁厚、全行程、密封压缩、装配路径和关键公差链；提取语义区域。",
+      "output": "geometry_check.json；fluid/solid/接口子哈希。",
+      "acceptance_check": "全行程与接口检查通过方可进入有效仿真；保留命名面映射。",
+      "resource_pool": "cad",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T22/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T23",
+      "name": "流体域与网格构建",
+      "owner": "F",
+      "depends_on": [
+        "T18",
+        "T22"
+      ],
+      "action": "从冻结装配建立封闭流体域；检查入口出口、泄漏缝、取压段和网格质量。",
+      "output": "fluid_domain；mesh；区域标签；质量报告。",
+      "acceptance_check": "封闭且连通性符合设计；流体区域与开度正确。",
+      "resource_pool": "cae",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T23/",
+      "max_attempts": 2,
+      "start_guards": [
+        "geometry_check.requirement_status == PASS",
+        "capabilities.cfd == VERIFIED"
+      ]
+    },
+    {
+      "id": "T24",
+      "name": "结构域与网格构建",
+      "owner": "M",
+      "depends_on": [
+        "T19",
+        "T22"
+      ],
+      "action": "建立结构分析域并映射压力面、接触面、材料和约束；保存简化依据。",
+      "output": "solid_mesh；FEA 输入文件；映射报告。",
+      "acceptance_check": "命名面和载荷绑定校验通过；不得沿用失效的面索引。",
+      "resource_pool": "cae",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T24/",
+      "max_attempts": 2,
+      "start_guards": [
+        "geometry_check.requirement_status == PASS",
+        "capabilities.fea == VERIFIED"
+      ]
+    },
+    {
+      "id": "T25",
+      "name": "代表 CFD 算例试运行",
+      "owner": "F",
+      "depends_on": [
+        "T23"
+      ],
+      "action": "先求一个代表工况，检查量级、残差、流量稳定性与质量守恒；避免直接铺开全曲线。",
+      "output": "pilot_result；日志；指标时间序列。",
+      "acceptance_check": "产物齐全；求解完成与数值有效分开记录。",
+      "resource_pool": "cae",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T25/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T26",
+      "name": "基础结构工况求解",
+      "owner": "M",
+      "depends_on": [
+        "T24"
+      ],
+      "action": "按冻结载荷包运行压力、关闭压差、操作等适用工况；可按工况展开独立作业。",
+      "output": "fea_base_results；应力、位移、反力与接触数据。",
+      "acceptance_check": "每个结果绑定网格和载荷版本；有完整求解日志。",
+      "resource_pool": "cae",
+      "when": "always",
+      "fanout": "approved_independent_structural_cases",
+      "write_scope": "runs/{run_id}/{candidate_id}/T26/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T27",
+      "name": "CFD 试算数值核验",
+      "owner": "V",
+      "depends_on": [
+        "T25"
+      ],
+      "action": "核验守恒、残差、监控量、边界与物性；仅通过后批准同模板的批量算例。",
+      "output": "cfd_pilot_quality.json；批处理许可。",
+      "acceptance_check": "质量合格不是流量目标合格；模板不合格则局部修复。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T27/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T28",
+      "name": "开度与流量工况批量求解",
+      "owner": "F",
+      "depends_on": [
+        "T27"
+      ],
+      "action": "按获准采样矩阵展开独立开度／工况作业；每个作业独立目录，求解器读取固定快照。",
+      "output": "curve_case_results；逐点 Q、压降、Kv 等原始量。",
+      "acceptance_check": "所有必需点有结果和状态；不得用插值冒充实际求解点。",
+      "resource_pool": "cae",
+      "when": "always",
+      "fanout": "approved_openings_x_operating_cases",
+      "write_scope": "runs/{run_id}/{candidate_id}/T28/",
+      "max_attempts": 2,
+      "start_guards": [
+        "pilot_verification.numerical_status == VALID"
+      ]
+    },
+    {
+      "id": "T29",
+      "name": "CFD 数值与模型敏感性",
+      "owner": "F",
+      "depends_on": [
+        "T27"
+      ],
+      "action": "按验证计划进行网格加密、必要的时间步／物理模型敏感性；选取代表与最不利点。",
+      "output": "cfd_uncertainty.json；收敛证据；适用区间。",
+      "acceptance_check": "不以单一残差阈值替代可信度；不能把筛选网格当最终证据。",
+      "resource_pool": "cae",
+      "when": "always",
+      "fanout": "approved_verification_matrix",
+      "write_scope": "runs/{run_id}/{candidate_id}/T29/",
+      "max_attempts": 2,
+      "start_guards": [
+        "pilot_verification.numerical_status == VALID"
+      ]
+    },
+    {
+      "id": "T30",
+      "name": "流量曲线与流动判定",
+      "owner": "F",
+      "depends_on": [
+        "T28",
+        "T29"
+      ],
+      "action": "汇总固有曲线、压降、局部低压与高速区；标注模拟／估算／试验来源及不确定性。",
+      "output": "flow_performance.json；曲线数据与判定。",
+      "acceptance_check": "曲线坐标和条件明确；汽蚀等仅在获准模型与证据范围内评价。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T30/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T31",
+      "name": "FEA 加密与边界敏感性",
+      "owner": "M",
+      "depends_on": [
+        "T26"
+      ],
+      "action": "对关键区域、接触、约束和预紧进行加密或敏感性计算；处理奇异应力解释。",
+      "output": "fea_verification_results；网格与边界比较。",
+      "acceptance_check": "比较等价物理量；不以最大 von Mises 单值替代规范判据。",
+      "resource_pool": "cae",
+      "when": "always",
+      "fanout": "approved_structural_verification_cases",
+      "write_scope": "runs/{run_id}/{candidate_id}/T31/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T32",
+      "name": "结构与操作性能判定",
+      "owner": "V",
+      "depends_on": [
+        "T15",
+        "T16",
+        "T17",
+        "T26",
+        "T31"
+      ],
+      "action": "按需求与适用规范核验结构、接触、位移和操作裕量；对解析与数值差异给出可复核解释。",
+      "output": "structural_assessment.json；需求级状态。",
+      "acceptance_check": "关键结论有独立证据；不可无依据放过解析／数值不一致。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T32/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T33",
+      "name": "系统工作点与安装特性",
+      "owner": "F",
+      "depends_on": [
+        "T07",
+        "T30"
+      ],
+      "action": "当系统数据已纳入设计输入时，联立供压／泵曲线、管路阻力与阀门模型，求工作点和 Q(h)。",
+      "output": "system_performance.json；安装特性与限制。",
+      "acceptance_check": "缺少系统数据只阻塞本分支；只有明确排除系统目标才能豁免。",
+      "resource_pool": "light",
+      "when": "system_scope",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T33/",
+      "max_attempts": 2,
+      "start_guards": [
+        "project.system_scope == true",
+        "system_inputs.complete == true"
+      ]
+    },
+    {
+      "id": "T34",
+      "name": "流固／热结构耦合分支",
+      "owner": "M",
+      "depends_on": [
+        "T30",
+        "T32"
+      ],
+      "action": "仅在必要时映射流体压力／温度重跑结构；显著变形影响流场时按预算做双向外循环。",
+      "output": "coupling_assessment.json；映射和迭代证据。",
+      "acceptance_check": "物理相关性有判定；不适用必须留理由，不能静默跳过。",
+      "resource_pool": "cae",
+      "when": "coupling_scope",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T34/",
+      "max_attempts": 2,
+      "start_guards": [
+        "project.coupling_scope == true",
+        "coupled_inputs.complete == true"
+      ]
+    },
+    {
+      "id": "T35",
+      "name": "需求证据汇总",
+      "owner": "V",
+      "depends_on": [
+        "T22",
+        "T30",
+        "T32",
+        "T33",
+        "T34"
+      ],
+      "action": "检查每项硬需求、证据等级、适用范围和资产版本；区分失败、未知与获准不适用。",
+      "output": "evidence_matrix.json；缺口与冲突。",
+      "acceptance_check": "所有引用可解析；过期证据失效；未达标也应输出有效诊断。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T35/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T36",
+      "name": "候选决策与停止判断",
+      "owner": "O",
+      "depends_on": [
+        "T35"
+      ],
+      "action": "先检查硬约束与证据有效性，再判断保留、改进、冻结或停止；不按综合分抵消违规。",
+      "output": "decision.json：ITERATE／FREEZE／HOLD。",
+      "acceptance_check": "决策依据可追溯；预算不足时保留最近有效版本并报告未解项。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T36/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T37",
+      "name": "增量变更与下一轮编译",
+      "owner": "O",
+      "depends_on": [
+        "T36"
+      ],
+      "action": "针对问题提出有界参数补丁，检查影响范围；创建新候选 DAG，仅重跑失效节点。",
+      "output": "change_request.json；next_round_plan。",
+      "acceptance_check": "不得在当前 DAG 里造环；硬约束变更须单独授权。",
+      "resource_pool": "light",
+      "when": "decision_iterate",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T37/",
+      "max_attempts": 2,
+      "start_guards": [
+        "candidate_decision == ITERATE",
+        "design_budget.remaining > 0"
+      ]
+    },
+    {
+      "id": "T38",
+      "name": "候选设计基线冻结",
+      "owner": "O",
+      "depends_on": [
+        "T36"
+      ],
+      "action": "将满足已声明设计判据的候选及其证据冻结；记录仍依赖实测或工程复核的事项。",
+      "output": "selected_design_manifest.json；发布级别。",
+      "acceptance_check": "仅 FREEZE 分支执行；不称为制造放行或试验认证。",
+      "resource_pool": "light",
+      "when": "decision_freeze",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T38/",
+      "max_attempts": 2,
+      "start_guards": [
+        "candidate_decision == FREEZE",
+        "evidence.hard_requirements_current_and_pass == true",
+        "evidence.unresolved_hard_count == 0"
+      ]
+    },
+    {
+      "id": "T39",
+      "name": "最终零件工程图",
+      "owner": "C",
+      "depends_on": [
+        "T20",
+        "T38"
+      ],
+      "action": "按选定模型生成尺寸、基准、公差、材料及技术要求；覆盖全部设计零件。",
+      "output": "part_drawings；原生 CAD 图纸及约定中性格式。",
+      "acceptance_check": "关键尺寸可回查模型；缺失公差或密封要求不得隐藏。",
+      "resource_pool": "cad",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T39/",
+      "max_attempts": 2,
+      "start_guards": [
+        "selected_baseline.frozen == true",
+        "capabilities.cad_drawings == VERIFIED"
+      ]
+    },
+    {
+      "id": "T40",
+      "name": "外形装配图与设计清单",
+      "owner": "C",
+      "depends_on": [
+        "T20",
+        "T38"
+      ],
+      "action": "生成 GA、装配剖视、序号、设计 BOM 和技术数据表；使用同一选定基线。",
+      "output": "GA；assembly_drawing；EBOM；datasheet。",
+      "acceptance_check": "编号、数量、版本、接口与装配一致。",
+      "resource_pool": "cad",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T40/",
+      "max_attempts": 2,
+      "start_guards": [
+        "selected_baseline.frozen == true",
+        "capabilities.cad_drawings == VERIFIED"
+      ]
+    },
+    {
+      "id": "T41",
+      "name": "计算与仿真报告生成",
+      "owner": "D",
+      "depends_on": [
+        "T38"
+      ],
+      "action": "从已验证结果自动汇编计算书、CFD、FEA、系统曲线和限制条件，不重新手填数值。",
+      "output": "calculation_report；simulation_reports；证据索引。",
+      "acceptance_check": "图表和数值均关联原始结果；模拟与实测标签不混用。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T41/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T42",
+      "name": "全设计包一致性核验",
+      "owner": "V",
+      "depends_on": [
+        "T39",
+        "T40",
+        "T41"
+      ],
+      "action": "核验参数、模型、图纸、BOM、曲线与报告同版；检查全部需求和例外记录。",
+      "output": "package_check.json；缺口清单。",
+      "acceptance_check": "无过期资产；未知和不适用均有可见处理；不凭文字自评通过。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T42/",
+      "max_attempts": 2,
+      "start_guards": []
+    },
+    {
+      "id": "T43",
+      "name": "设计域交付包",
+      "owner": "D",
+      "depends_on": [
+        "T42"
+      ],
+      "action": "封装外形／装配／零件图、模型、计算与仿真输入输出、技术指标、标准映射及变更历史。",
+      "output": "design_package_manifest.json；完整设计包。",
+      "acceptance_check": "标为设计候选／设计复核就绪；保留未实测项目，不扩展到制造执行。",
+      "resource_pool": "light",
+      "when": "always",
+      "fanout": null,
+      "write_scope": "runs/{run_id}/{candidate_id}/T43/",
+      "max_attempts": 2,
+      "start_guards": [
+        "final_consistency.requirement_status == PASS",
+        "evidence.stale_count == 0"
+      ]
+    }
+  ],
+  "dispatch_semantics": {
+    "dependency_default": "SUCCEEDED_WITH_CURRENT_VALID_OUTPUT_MANIFEST",
+    "explicit_not_applicable": "APPROVED_WAIVER_WITH_REASON_AND_SCOPE",
+    "unknown_predicate": "BLOCK_AFFECTED_BRANCH",
+    "start_guards": "All predicates must be true against versioned output JSON; this is a declarative contract, not Python eval.",
+    "diagnostic_jobs": "Engineering FAIL may still produce valid job outputs; allow assessment and change planning, never silently pass the design.",
+    "capabilities": "Resolve available adapters from T04; do not infer CAD/CFD/FEA support from a successful tool probe process alone."
+  }
+}

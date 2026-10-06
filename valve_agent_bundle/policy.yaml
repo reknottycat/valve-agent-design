@@ -1,0 +1,79 @@
+# 框架无关的策略草案；不是任何现成工作流引擎的原生配置。
+version: '0.1'
+mode: design_only
+execution_ready: false
+basis:
+  product_type: null
+  design_pressure: null
+  temperature_cases: null
+  pressure_reference: null
+  medium: null
+  material_selection: null
+  interface_dimensions: null
+  system_scope: null
+  coupling_scope: null
+  standards_and_editions: null
+  authorized_rules: null
+  flow_targets: null
+  numerical_quality_targets: null
+# 以上必需项必须有真实依据；不得用示例值自动填充。
+autonomy:
+  can_expand_approved_case_matrices: true
+  can_change_locked_requirements: false
+  can_modify_other_task_outputs: false
+  can_relax_acceptance_to_pass: false
+  can_issue_manufacturing_release: false
+  subagent_recursion_depth_max: 1
+  concept_candidates_max_example: 3
+  active_design_candidates_max_example: 2
+  design_iterations_max_example: 12
+  numerical_repair_attempts_max_example: 2
+  budget_values_require_project_confirmation: true
+resources:
+  llm_calls_in_flight_initial: 4
+  cad_sessions_initial: 1
+  cae_jobs_total_initial: 1
+  count_cpu_ram_and_license_tokens: true
+  acquire_all_resources_atomically: true
+  never_assume_gpu_acceleration: true
+scheduling:
+  mode: event_driven_dag
+  priority_order:
+    - unblock_critical_path
+    - resolve_shared_interface_blocker
+    - retire_high_risk_uncertainty
+    - evaluate_remaining_candidates
+    - documentation_polish
+  no_global_wave_barrier: true
+  same_input_snapshot_required: true
+  unknown_condition_blocks_branch: true
+  explicit_waiver_artifact_required: true
+  deterministic_validator_after_agent: true
+failure:
+  max_attempts: 2
+  retry_only_idempotent_or_checkpointed_operations: true
+  engineering_failure_is_not_tool_failure: true
+  block_only_affected_descendants: true
+  keep_last_valid_design: true
+versions:
+  immutable_input_snapshots: true
+  single_writer_selected_baseline: true
+  write_only_task_workspace: true
+  compare_and_swap_on_publish: true
+  invalidate_transitive_consumers_only: true
+  hashes:
+    - requirements
+    - standard_rules
+    - interfaces
+    - wetted_geometry
+    - structural_geometry
+    - properties
+    - load_cases
+    - mesh_and_physics
+    - solver_and_script_versions
+    - validation_rules
+release:
+  max_claim: DESIGN_REVIEW_READY
+  unresolved_hard_requirements_block: true
+  stale_evidence_blocks: true
+  numerical_simulation_is_not_physical_validation: true

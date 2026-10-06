@@ -1,0 +1,79 @@
+[
+  {
+    "id": "S01",
+    "title": "ASME B16.34 — Valves, Flanged, Threaded, and Welding End",
+    "url": "https://www.asme.org/codes-standards/find-codes-standards/b16-34-valves-flanged-threaded-welding-end",
+    "note": "官方目录显示 2025 版；核对范围，不等于已获取条款全文。",
+    "checked_on": "2026-10-06"
+  },
+  {
+    "id": "S02",
+    "title": "IEC 60534-2-1:2011 — Flow capacity sizing equations",
+    "url": "https://webstore.iec.ch/en/publication/2461",
+    "note": "控制阀流量计算范围；公开说明包含 2015 勘误。",
+    "checked_on": "2026-10-06"
+  },
+  {
+    "id": "S03",
+    "title": "IEC 60534-2-3:2015 — Flow capacity test procedures",
+    "url": "https://webstore.iec.ch/en/publication/23942",
+    "note": "控制阀流量系数及相关因子的试验方法范围。",
+    "checked_on": "2026-10-06"
+  },
+  {
+    "id": "S04",
+    "title": "IEC 60534-2-4:2009 — Inherent flow characteristics",
+    "url": "https://webstore.iec.ch/en/publication/2463",
+    "note": "固有流量特性及可调比的表述范围。",
+    "checked_on": "2026-10-06"
+  },
+  {
+    "id": "S05",
+    "title": "ISO 5208:2015 — Pressure testing of metallic valves",
+    "url": "https://www.iso.org/standard/65111.html",
+    "note": "压力边界与关闭密封试验；页面显示 2025 年确认。",
+    "checked_on": "2026-10-06"
+  },
+  {
+    "id": "S06",
+    "title": "SOLIDWORKS — Flow Simulation official product page",
+    "url": "https://www.solidworks.com/product/solidworks-flow-simulation",
+    "note": "CFD 插件、许可依赖与单向流固／热结构映射说明。",
+    "checked_on": "2026-10-06"
+  },
+  {
+    "id": "S07",
+    "title": "SOLIDWORKS — Automation using Simulation API",
+    "url": "https://blogs.solidworks.com/products/solidworks/automation-using-solidworks-simulation-api/",
+    "note": "结构仿真 API 自动化官方示例；不据此推定 Flow API 全流程可用。",
+    "checked_on": "2026-10-06"
+  },
+  {
+    "id": "S08",
+    "title": "FreeCAD — Official source repository",
+    "url": "https://github.com/FreeCAD/FreeCAD",
+    "note": "官方参数化建模项目；本机脚本及导出兼容性仍须冒烟测试。",
+    "checked_on": "2026-10-06"
+  },
+  {
+    "id": "S09",
+    "title": "OpenFOAM v14 User Guide — Running applications in parallel",
+    "url": "https://doc.cfd.direct/openfoam/user-guide-v14/running-applications-parallel",
+    "note": "区域分解、MPI 求解与结果重构。",
+    "checked_on": "2026-10-06"
+  },
+  {
+    "id": "S10",
+    "title": "NASA / NPARC — Overview of CFD Verification & Validation",
+    "url": "https://www.grc.nasa.gov/www/wind/valid/tutorial/overview.html",
+    "note": "区分数值验证与物理模型验证。",
+    "checked_on": "2026-10-06"
+  },
+  {
+    "id": "S11",
+    "title": "NASA / NPARC — Examining Spatial Grid Convergence",
+    "url": "https://www.grc.nasa.gov/www/wind/valid/tutorial/spatconv.html",
+    "note": "网格收敛及离散误差评估的公开方法指导。",
+    "checked_on": "2026-10-06"
+  }
+]

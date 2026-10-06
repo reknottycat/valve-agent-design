@@ -1,0 +1,112 @@
+{
+  "schema": "valve.capability_matrix/1.0",
+  "run_id": "20261006",
+  "candidate_id": "C0",
+  "task": "T04 工具链与资源冒烟测试",
+  "probed_at": "2026-10-06",
+  "principle": "能力状态必须有实测证据。'二进制存在'不等于'能力可用' —— 本表每项都记录实际跑出的结果。",
+
+  "capabilities": [
+    {
+      "id": "capabilities.cad_drawings",
+      "status": "VERIFIED",
+      "tool": "AutoCAD 2026 简体中文 (25.1.60.0)",
+      "path_evidence": "C:/Program Files/Autodesk/AutoCAD 2026/acad.exe",
+      "com_probe": "AutoCAD.Application -> AVAILABLE (COM 已注册)",
+      "headless": "accoreconsole.exe 存在",
+      "test_evidence": "本轮生成的 DXF(1316 实体)由 accoreconsole 成功打开并另存为 DWG(22,854 字节),产物 verified_by_autocad.dwg",
+      "evidence_level": "E0->E1",
+      "limitations": "仅验证了 DXF 读写。未验证:参数化约束驱动、装配约束、工程图自动标注、STEP 导入导出往返"
+    },
+    {
+      "id": "capabilities.cad_modeling",
+      "status": "PARTIAL",
+      "tool": "AutoCAD 2026",
+      "test_evidence": "可生成/读写几何,但本机无 SOLIDWORKS 主程序",
+      "evidence_level": "E0",
+      "limitations": "SOLIDWORKS 主程序未安装(仅有 Exchange/eDrawings/Marketplace 插件,SldWorks.Application 未注册),不能承担参数化装配与出图"
+    },
+    {
+      "id": "capabilities.cfd",
+      "status": "VERIFIED",
+      "tool": "OpenFOAM v2506 (openfoam.com 官方源)",
+      "path_evidence": "/usr/lib/openfoam/openfoam2506",
+      "env_required": "source /usr/lib/openfoam/openfoam2506/etc/bashrc",
+      "test_evidence": {
+        "case": "tutorials/incompressible/icoFoam/cavity/cavity",
+        "blockMesh": "OK - 882 points / 400 cells / 1640 faces",
+        "checkMesh": "Mesh OK",
+        "solver": "icoFoam SOLVED, 100 time steps, ExecutionTime 0.06 s",
+        "continuity_error": "sum local 9.66e-09 / global 1.13e-18 / cumulative 1.22e-17",
+        "result_fields": ["0", "0.1", "0.2", "0.3", "0.4", "0.5"],
+        "post": "foamToVTK -> 13 files"
+      },
+      "evidence_level": "E1",
+      "known_gotchas": [
+        "v2506 的 controlDict / blockMeshDict 等必须带 FoamFile 头,且必须含 object 条目,否则报 'problem while reading header' 或 'Entry object not found'",
+        "WSL 的 /tmp 在会话结束后被清空,算例必须放在持久目录(如 /root/)",
+        "Ubuntu 官方源的 openfoam 包(1912)是坏的:/usr/share/openfoam 下只有 etc,缺 bin/platforms,必须用 openfoam.com 源"
+      ],
+      "limitations": "仅验证稳态不可压缩。瞬态、湍流、多相、可压缩均未验证;网格加密与 GCI 流程未跑"
+    },
+    {
+      "id": "capabilities.mesh",
+      "status": "VERIFIED",
+      "tool": "Gmsh 4.12.1",
+      "test_evidence": "0.2x0.05 m 平面矩形,特征尺寸 0.012 -> 48 nodes / 68 triangles;meshio 5.3.5 可读回并统计",
+      "evidence_level": "E1",
+      "limitations": "未验证三维体网格、法兰/O 型圈等复杂几何的网格生成与边界命名"
+    },
+    {
+      "id": "capabilities.fea",
+      "status": "VERIFIED",
+      "tool": "CalculiX ccx 2.21",
+      "test_evidence": "三维悬臂梁 C3D8,L=100mm,10x10mm 截面,E=210GPa,P=100N -> Job finished, Total CalculiX Time 0.016 s",
+      "evidence_level": "E1",
+      "known_gotchas": [
+        "输入文件扩展名必须是 .inp(给 .in 会报 cannot open file xxx.inp)",
+        "退化单元(所有节点共面)会报 nonpositive jacobian —— 必须是真实三维体"
+      ],
+      "limitations": "仅验证静力线弹性。未验证接触、非线性材料、温度场、屈曲"
+    },
+    {
+      "id": "capabilities.post",
+      "status": "VERIFIED",
+      "tool": "meshio 5.3.5 / numpy 1.26.4 / scipy 1.11.4",
+      "test_evidence": "meshio 成功读取 Gmsh msh2 并统计点数/单元数",
+      "evidence_level": "E0"
+    },
+    {
+      "id": "capabilities.ocr",
+      "status": "VERIFIED",
+      "tool": "PaddleOCR-VL-1.6 (云端异步 API)",
+      "test_evidence": "2 张 1920px 扫描件全部成功解析;配合 3-4x 局部放大目视复核,关键参数双重确认",
+      "evidence_level": "E1",
+      "limitations": "俄文手写体小字仍有字符级误差,凡影响设计输入的数值均需目视复核"
+    }
+  ],
+
+  "resources": {
+    "host": "24 cores / 47.8 GB RAM (x86_64)",
+    "wsl_allocation": "20 cores / 32 GB RAM / 16 GB swap (由 .wslconfig 设定,原默认仅 7 GB)",
+    "wslconfig_backup": "~/.wslconfig.bak.20261006",
+    "disk_free": "946 GB in WSL ext4",
+    "parallel_cae": "OpenFOAM 与 CalculiX 可并行(资源池 cae 的 max_concurrent=1 限制来自策略,非硬件)"
+  },
+
+  "network_findings": [
+    {
+      "issue": "WSL 的 DNS 解析被 FlClash 的 fake-ip 模式劫持",
+      "evidence": "getent hosts archive.ubuntu.com -> 198.18.0.176 (RFC2544 基准测试段,非真实地址)",
+      "impact": "apt/curl 可能连接失败或超时;SourceForge、dl.openfoam.com 间歇不可达",
+      "mitigation_applied": "apt 源切到 mirrors.tuna.tsinghua.edu.cn 后稳定(359 kB/s,40 MB/1m52s)",
+      "note": "这是机器级环境约束,非本项目问题。换源能解决 apt;sourceforge 类站点仍可能被挡"
+    }
+  ],
+
+  "consequences_for_T07": {
+    "B6_resolved": "本机 CFD/FEA 能力已 VERIFIED,B6 从阻塞降级为 '已具备但受工况输入阻塞'",
+    "remaining_blockers": ["B1 青铜牌号", "B2 设计压力/试验压力", "B3 内部件几何", "B4 Кз 基准", "B5 结构长度/颈高"],
+    "statement": "工具链不再是瓶颈。输入数据才是。T23/T24/T26/T28/T29/T31 在拿到几何与工况前仍不能启动 —— 但它们现在是'等输入'而非'等软件'。"
+  }
+}

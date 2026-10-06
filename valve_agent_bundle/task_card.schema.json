@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Valve Agent Task Card",
+  "type": "object",
+  "required": [
+    "task_id",
+    "owner",
+    "candidate_id",
+    "input_refs",
+    "write_scope",
+    "resources",
+    "permissions",
+    "acceptance_ref",
+    "max_attempts"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "owner": {
+      "enum": [
+        "O",
+        "R",
+        "M",
+        "C",
+        "F",
+        "V",
+        "D"
+      ]
+    },
+    "candidate_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "input_refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "uri",
+          "sha256"
+        ],
+        "properties": {
+          "uri": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "write_scope": {
+      "type": "string",
+      "pattern": "^runs/(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\]+$"
+    },
+    "resources": {
+      "type": "object",
+      "required": [
+        "pool",
+        "cpu_cores",
+        "ram_gb"
+      ],
+      "properties": {
+        "pool": {
+          "type": "string"
+        },
+        "cpu_cores": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "ram_gb": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "license_tokens": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "permissions": {
+      "type": "object",
+      "required": [
+        "edit_requirements",
+        "edit_acceptance"
+      ],
+      "properties": {
+        "edit_requirements": {
+          "const": false
+        },
+        "edit_acceptance": {
+          "const": false
+        },
+        "edit_geometry": {
+          "type": "boolean"
+        }
+      }
+    },
+    "acceptance_ref": {
+      "type": "object",
+      "required": [
+        "uri",
+        "sha256"
+      ],
+      "properties": {
+        "uri": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "max_attempts": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3
+    }
+  },
+  "description": "任务卡字段校验不构成工程正确性验证；总体设计的需求变更应走独立授权流程。 task_card_example.yaml 是同一结构的待绑定模板；占位符不得通过运行时校验。"
+}

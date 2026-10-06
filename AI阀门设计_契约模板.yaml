@@ -1,0 +1,86 @@
+# VA-DS-001 v1.0 — FRAMEWORK_ONLY
+# null 是未知，不是已满足。记录 example 不会被当作实际 requirement。
+schema_version: "1.0"
+project_id: "VALVE-TBD"
+state: FRAMEWORK_ONLY
+scope: design_only
+release_target: DESIGN_CANDIDATE
+baseline_revision: null
+input_files: []
+product:
+  valve_type: null
+  service_function: null  # isolation / control / check / other
+  nominal_size: {value: null, system: null}
+  pressure_class: {value: null, system: null}
+  flow_direction: null
+  installation_orientation: null
+interfaces:
+  face_to_face: {value: null, unit: mm, status: MISSING}
+  end_connection: {value: null, status: MISSING}
+  envelope: {value: null, unit: mm, status: MISSING}
+  actuator_interface: {value: null, status: MISSING}
+service:
+  medium: null
+  phase: null
+  properties_source: null
+  pressure_temperature_cases: []
+  maximum_shutoff_dp: {value: null, unit: Pa}
+  normal_flow_range: {min: null, max: null, unit: m3/h}
+  operating_cycles: null
+system_boundary:
+  source_characteristic_file: null
+  downstream_pressure: {value: null, unit: Pa, basis: absolute}
+  network_model_file: null
+standards: []  # 每项填版本、条款、适用性、来源、核验状态
+materials: []  # 每项填牌号、状态、温度属性、来源
+allowed_design_variables: []
+allowed_discrete_choices: []
+uncertain_inputs: []
+load_cases: []
+requirements: []
+assumptions: []
+unresolved_issues: []
+
+requirement_record_example:
+  id: REQ-HYD-01
+  applies_when: service_function_is_confirmed
+  mandatory: true
+  case_ids: []
+  metric: valve_pressure_drop
+  unit: Pa
+  comparison: less_than_or_equal
+  limit: null
+  limit_source: null
+  evidence_required: [raw_data, numerical_checks]
+  required_evidence_level: null
+  result: null
+  uncertainty_bound: null
+  status: UNKNOWN
+  mutable_by_design_agent: false
+
+design_variable_record_example:
+  id: seat_inner_diameter
+  value: null
+  unit: mm
+  lower_bound: null
+  upper_bound: null
+  bounds_source: null
+  dependencies: [body_wall, seal_width, closure_overlap]
+  status: MISSING
+
+exploration_policy:
+  note: "建议启动策略，非产品标准或物理精度保证"
+  proposed_initial_openings: [0.1, 0.2, 0.3, 0.4, 0.5,
+                              0.6, 0.7, 0.8, 0.9, 1.0]
+  apply_openings_only_to_allowed_effective_range: true
+  steady_mass_imbalance_max: 0.001
+  monitor_relative_drift_max: 0.01
+  monitor_iteration_window: 100
+  mesh_levels_min: 3
+  cfd_medium_fine_relative_change_target: 0.02
+  fea_response_relative_change_target: 0.05
+  near_zero_absolute_tolerance: null
+  transient_averaging_protocol: null
+  candidate_budget: null
+  compute_budget: null
+  approved_for_this_project: false

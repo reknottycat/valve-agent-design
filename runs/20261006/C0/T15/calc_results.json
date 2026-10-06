@@ -1,0 +1,321 @@
+{
+  "schema": "valve.calc_results/1.0",
+  "run_id": "20261006",
+  "candidate_id": "C0",
+  "tasks": [
+    "T10",
+    "T15",
+    "T16",
+    "T17"
+  ],
+  "generated_at": "2026-10-06T18:10:26",
+  "evidence_level": "E1 (数值与公式自洽,未做实验/CAE 验证)",
+  "inputs": {
+    "DN": {
+      "v": 200.0,
+      "unit": "mm",
+      "src": "DRAWING",
+      "note": "标题栏 ДУ200"
+    },
+    "PN_kgf": {
+      "v": 6.0,
+      "unit": "kgf/cm2",
+      "src": "DRAWING",
+      "note": "标题栏 Ру6"
+    },
+    "bore": {
+      "v": 200.0,
+      "unit": "mm",
+      "src": "DRAWING",
+      "note": "Рис.1 Ø200*"
+    },
+    "flange_od": {
+      "v": 295.0,
+      "unit": "mm",
+      "src": "DRAWING",
+      "note": "Рис.1 Ø295*"
+    },
+    "flange_thk": {
+      "v": 15.0,
+      "unit": "mm",
+      "src": "DRAWING",
+      "note": "Рис.1 15* (低置信)"
+    },
+    "hub_od": {
+      "v": 247.0,
+      "unit": "mm",
+      "src": "DRAWING",
+      "note": "Рис.1 Ø247*"
+    },
+    "bolt_circle": {
+      "v": 264.0,
+      "unit": "mm",
+      "src": "DRAWING",
+      "note": "Общий вид Ø264*"
+    },
+    "bolt_holes": {
+      "v": 12,
+      "unit": "pcs",
+      "src": "DRAWING",
+      "note": "12 отв. ф15*"
+    },
+    "bolt_hole_d": {
+      "v": 15.0,
+      "unit": "mm",
+      "src": "DRAWING",
+      "note": "ф15*"
+    },
+    "height_total": {
+      "v": 515.0,
+      "unit": "mm",
+      "src": "DRAWING",
+      "note": "Рис.1 515*"
+    },
+    "lever_span": {
+      "v": 320.0,
+      "unit": "mm",
+      "src": "DRAWING",
+      "note": "φ320* 杠杆跨度"
+    },
+    "stem_thread": {
+      "v": "Tr36x6",
+      "unit": "-",
+      "src": "DRAWING",
+      "note": "公制粗牙"
+    },
+    "mass_spec": {
+      "v": 119.0,
+      "unit": "kg",
+      "src": "DRAWING",
+      "note": "明细表 522-35.4179 Р3,П3"
+    },
+    "handwheel_turns": {
+      "v": 9.5,
+      "unit": "turn",
+      "src": "DRAWING",
+      "note": "п.19 参考值"
+    },
+    "key_force_max": {
+      "v": 45.0,
+      "unit": "kgf",
+      "src": "DRAWING",
+      "note": "п.20"
+    },
+    "Kz_limit": {
+      "v": 6.0,
+      "unit": "-",
+      "src": "DRAWING",
+      "note": "п.23 液压阻力系数上限"
+    },
+    "t_min_service": {
+      "v": -40.0,
+      "unit": "degC",
+      "src": "DRAWING",
+      "note": "28% CaCl2 低温点"
+    },
+    "t_max_service": {
+      "v": 50.0,
+      "unit": "degC",
+      "src": "DRAWING",
+      "note": "海水/CaCl2 高温点"
+    },
+    "t_body_wall": {
+      "v": 12.0,
+      "unit": "mm",
+      "src": "ASSUMED",
+      "note": "阀体最小有效壁厚假设"
+    },
+    "disc_thk": {
+      "v": 14.0,
+      "unit": "mm",
+      "src": "ASSUMED",
+      "note": "摆盘厚度假设"
+    },
+    "pivot_to_disc_c": {
+      "v": 95.0,
+      "unit": "mm",
+      "src": "ASSUMED",
+      "note": "铰轴到盘中心的力臂假设"
+    },
+    "lever_arm": {
+      "v": 150.0,
+      "unit": "mm",
+      "src": "ASSUMED",
+      "note": "手轮端到阀杆轴的有效力臂假设"
+    },
+    "mu_thread": {
+      "v": 0.15,
+      "unit": "-",
+      "src": "ASSUMED",
+      "note": "青铜-青铜螺纹摩擦系数"
+    },
+    "mu_seal_face": {
+      "v": 0.12,
+      "unit": "-",
+      "src": "ASSUMED",
+      "note": "盘/座密封面摩擦"
+    },
+    "seal_q_min": {
+      "v": 16.0,
+      "unit": "N/mm2",
+      "src": "ASSUMED",
+      "note": "金属密封面最小接触压强假设"
+    },
+    "allow_stress": {
+      "v": 80.0,
+      "unit": "MPa",
+      "src": "ASSUMED",
+      "note": "锡青铜许用应力假设(低温需降额)"
+    },
+    "corrosion_allow": {
+      "v": 1.5,
+      "unit": "mm",
+      "src": "ASSUMED",
+      "note": "海水+CaCl2 腐蚀裕量假设"
+    }
+  },
+  "results": {
+    "01_pressure": {
+      "PN_MPa": 0.5884,
+      "formula": "p[MPa] = PN[kgf/cm2] x 0.0980665",
+      "src_PN": "DRAWING",
+      "note": "PN 是公称压力,不是设计压力。设计压力/试验压力图上未给(MISSING)。"
+    },
+    "02_area": {
+      "bore_area_mm2": 31415.9,
+      "formula": "A = pi/4 * D^2, D=200mm",
+      "src": "DRAWING"
+    },
+    "03_hydraulic": {
+      "interpretation_A_absolute": {
+        "meaning": "Кз 即阀门总局部阻力系数 zeta",
+        "zeta": 6.0,
+        "Kv_m3h": 653.0,
+        "Cv_US": 754.8,
+        "formula": "Kv = A*3600*sqrt(2e5/(zeta*rho))/1000, SG=1, rho=1000",
+        "note": "该解释给出最悲观的 Kv。"
+      },
+      "interpretation_B_relative_to_pipe": {
+        "meaning": "Кз 为相对同口径直管的倍数,有效 zeta = Кз + 直管沿程",
+        "zeta_effective": 7.0,
+        "Kv_m3h": 604.5,
+        "Cv_US": 698.8
+      },
+      "spread": "两种解释的 Kv 相差约 1.4 倍 —— 这就是图纸未定义 Кз 基准的后果。",
+      "conversion": "Cv_US = 1.156 x Kv (固定换算,见方案第 09 节)",
+      "status": "DERIVED",
+      "blocking_gap": "п.23 未给出取压截面、参考流速与通径基准;正式验收前必须冻结定义。"
+    },
+    "04_closing_load": {
+      "dp_used_MPa": 0.5884,
+      "dp_basis": "以 PN 代替设计压力 —— 图纸未给设计压力,属保守不足,见 gap",
+      "F_close_N": 18485.1,
+      "F_close_kgf": 1885.0,
+      "formula": "F = A * dP (Borda-Carnot); A=pi/4*200^2",
+      "M_close_Nm": 1756.1,
+      "M_close_formula": "M = F * L, L = 铰轴到盘中心假设臂长",
+      "src_A": "DRAWING",
+      "src_L": "ASSUMED",
+      "status": "DERIVED",
+      "gap": "摆盘实际受压面积与开启角未标注;力矩值仅用于传动链量级判断。"
+    },
+    "05_stem_drive": {
+      "thread": "Tr36x6 (公制粗牙, 牙型半角 30deg)",
+      "d_mean_mm": 33.0,
+      "helex_angle_deg": 3.312,
+      "mu_prime": 0.1732,
+      "T_to_close_Nm": 77.7,
+      "T_to_open_Nm": 38.0,
+      "formula_T": "T = F*d/2 * (mu' +- tan l)/(1 -+ mu'*tan l)",
+      "lever_ratio": 8.33,
+      "hand_force_close_N": 517.8,
+      "hand_force_close_kgf": 52.8,
+      "hand_force_open_kgf": 25.83,
+      "compare_key_limit_45kgf": {
+        "required_hand_force_kgf": 52.8,
+        "drawing_limit_kgf": 45.0,
+        "drawing_limit_semantics": "п.20 限制的是【辅助扳手】施加的力,不是手轮操作力 —— 两者不是同一个量",
+        "verdict": "不可直接比较(对象不同)。手轮操作力 52.8 kgf 处于人力手动的常见量级内,未构成矛盾。",
+        "proper_check": "手轮操作力的上限应由驱动选型/标准规定给出,图上没有。需取得 ТУ 才能判定。"
+      },
+      "status": "DERIVED",
+      "sensitivity": "结论对 mu 与 L 假设敏感:mu 每 ±0.05,T 约 ∓25%。"
+    },
+    "06_pressure_boundary": {
+      "t_nominal_mm": 12.0,
+      "t_corrosion_allowance_mm": 1.5,
+      "t_effective_mm": 10.5,
+      "hoop_stress_MPa": 5.6,
+      "hoop_formula": "sigma = p*D/(2*t_net), D=200mm(公称通径)",
+      "utilization_vs_allow": 0.07,
+      "allow_stress_MPa": 80.0,
+      "verdict_hoop": "通过(许用占用率 7.0%) —— 但这不是最终判据",
+      "bolt_group": {
+        "total_axial_N": 18485.1,
+        "n_bolts": 12.0,
+        "assumed_thread": "M14 (按 ф15 孔推定)",
+        "As_mm2_each": 147.0,
+        "bolt_stress_MPa": 10.48,
+        "note": "孔径 ф15* 对应 M14 只是推定;实际螺栓规格来自 ГОСТ 1536-76,本轮未取得该表。"
+      },
+      "status": "DERIVED",
+      "limitations": [
+        "薄膜公式不适用于本阀体(中部有加强、非圆截面、端部有法兰过渡)。",
+        "允许壁厚的真正控制项是 抗冲击(п.22 等级2) 与 低温脆性(-40degC),不是 0.6MPa 内压。",
+        "阀体最小壁厚必须按选定规范的结构要求单独判定,不得用此处的许用占用率代替。"
+      ]
+    },
+    "07_seal": {
+      "mechanism": "倾斜盘几何放大 (F_seat = F_flow / sin(phi)),非平压式",
+      "seat_inclination_phi_deg": 45.0,
+      "phi_status": "ASSUMED —— 图上未标注盘角,这是设计变量不是已知量",
+      "seal_line_width_mm": 4.0,
+      "contact_line_area_mm2": 2513.3,
+      "seat_normal_force_N": 26141.9,
+      "resulting_contact_pressure_MPa": 10.4,
+      "sensitivity_phi": {
+        "30deg": 14.71,
+        "45deg": 10.4,
+        "60deg": 8.49,
+        "75deg": 7.61
+      },
+      "verdict": "在 phi=45deg、线宽 4mm 假设下接触压强约 10.4 MPa,属青铜对青铜金属密封的可行量级",
+      "status": "DERIVED + 参数化",
+      "boundary": [
+        "金属对金属密封可关闭性 != 泄漏等级。本轮无 ГОСТ/ОСТ 正文,不给任何泄漏结论。",
+        "上述结论对 phi 与 w 极敏感:phi 从 30 增到 75 度,接触压强变化约 2 倍。",
+        "phi 实际取值必须由 CAD 模型 + CFD 反压工况确定,本轮无 CAD/CAE,故为量级研究。"
+      ]
+    },
+    "08_thermal_material": {
+      "service_range_C": [
+        -40.0,
+        50.0
+      ],
+      "ΔT_check_MPa": "需按 E·α·ΔT 评估颈-阀体法兰螺栓副的温差应力(图上未给颈高 H)",
+      "material_status": "MISSING —— 图纸只说'бронзовый',无牌号",
+      "why_critical": "-40degC 的 28% CaCl2 工况是材料选择的控制工况。锡青铜在低温下强度上升但韧性下降;铝青铜更好但可焊性/铸造性不同。未取得牌号前不能定许用应力。",
+      "action": "取得 ГОСТ 1536-76 + 制造厂 ТУ,确认阀体/阀盖/摆盘的青铜牌号与低温冲击要求"
+    },
+    "09_mass_check": {
+      "drawing_mass_kg": 119.0,
+      "assumed_bronze_density_g_cm3": 8.8,
+      "implied_volume_cm3": 13523.0,
+      "implied_volume_litre": 13.52,
+      "verdict": "119 kg 与青铜密度下的体积量级相容,未发现矛盾",
+      "status": "DERIVED(仅体积量级校核,非质量复算)",
+      "limit": "未做壁厚分布建模,不能复算质量。"
+    },
+    "10_summary": {
+      "hard_requirements_checked": 5,
+      "passed_with_caveats": 4,
+      "blocked_by_missing_input": 5,
+      "key_message": [
+        "0.6MPa 的承压在本阀上不是控制项 —— 壁厚由抗冲击与低温韧性控制。",
+        "真正卡住设计的是三个缺口: (a) 青铜牌号未知; (b) Кз 的测量基准未定义; (c) 设计压力/试验压力未给。",
+        "本轮所有数字为 E1 级(公式与量级自洽),不是实物证据。",
+        "在拿到 ТУ 与明细表前,不得进入 T07 冻结。"
+      ]
+    }
+  }
+}

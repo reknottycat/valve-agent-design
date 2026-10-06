@@ -1,0 +1,205 @@
+{
+  "schema": "valve.ga_facts/1.0",
+  "run_id": "20261006",
+  "candidate_id": "C0",
+  "task": "T02 外形图参数提取",
+  "extracted_at": "2026-10-06",
+  "method": "PaddleOCR-VL-1.6 (cloud) + 局部放大目视复核 + 交叉网络核验",
+
+  "status_legend": {
+    "CONFIRMED": "图面明确标注且 OCR 与目视一致",
+    "DERIVED": "由图面数据按公式推出,附公式",
+    "ASSUMED": "图面无此信息,本轮由我方工程判断补入,仅用于探索分支",
+    "MISSING": "图面未给且无法推导",
+    "CONFLICT": "图面之间或与外部资料矛盾"
+  },
+
+  "identity": [
+    {
+      "id": "drawing_number",
+      "value": "522-35.4179 СБ",
+      "source_file": "IMG-L2",
+      "source_location": "标题栏右上, 3 格宽",
+      "status": "CONFIRMED",
+      "confidence": "high",
+      "constraint_type": "REFERENCE"
+    },
+    {
+      "id": "product_name_ru",
+      "value": "Клапан невозвратно-запорный проходной фланцевый бронзовый",
+      "value_cn": "止回-截止 两用直通式 法兰 青铜阀",
+      "source_file": "IMG-L2",
+      "source_location": "标题栏 Наименование 栏",
+      "status": "CONFIRMED",
+      "confidence": "high",
+      "cross_check": "三个独立商业来源一致",
+      "cross_check_refs": [
+        "https://www.metallium.tech/msk/product/item-69008180ee3ec",
+        "https://dobro-steel-dv.ru/category/klapan_nevozvratno_-_zapornyj_flancevyj_prohodnoj/marka__522-35-4179-itshl-491925-015",
+        "https://pkfvolga76.ru/"
+      ],
+      "note": "这是本轮最关键的一次纠正。'невозвратно-запорный' = 同时具备止回与截止功能,不能按单纯截止阀或蝶阀设计。"
+    },
+    {
+      "id": "valve_family",
+      "value": "船用阀门系列 522-35",
+      "status": "CONFIRMED",
+      "confidence": "medium",
+      "basis": "ОСТ 5.51xx 系列 + ГОСТ 1536-76 船用法兰 + ОМ5 户外执行 三者一致指向船用"
+    },
+    {
+      "id": "drawing_type",
+      "value": "Сборочный чертёж (assembly drawing)",
+      "source_location": "标题栏 左下, 比例 1:2 同行",
+      "status": "CONFIRMED",
+      "confidence": "medium"
+    },
+    {
+      "id": "nominal_size",
+      "value": 200,
+      "unit": "mm",
+      "system": "Ду (DN)",
+      "source_location": "标题栏 第 3 行 \"Ду 200\"",
+      "status": "CONFIRMED",
+      "confidence": "high",
+      "constraint_type": "FIXED"
+    },
+    {
+      "id": "pressure_class",
+      "value": 6,
+      "unit": "kgf/cm2",
+      "system": "Ру",
+      "equiv_MPa": 0.5886,
+      "source_location": "标题栏 第 3 行 \"Ру 6\"",
+      "status": "CONFIRMED",
+      "confidence": "high",
+      "constraint_type": "FIXED",
+      "conversion_note": "1 kgf/cm2 = 0.0980665 MPa, 故 Ру6 = 0.5884 MPa。外部来源另列该阀族 Pn 6/10/25 kgf/cm2,本图对应 6。"
+    },
+    {
+      "id": "end_connection",
+      "value": "双法兰对夹 (flanged both ends)",
+      "status": "CONFIRMED",
+      "confidence": "high",
+      "source_location": "Рис.1 两侧法兰 + 标题栏 'фланцевый'"
+    },
+    {
+      "id": "material_of_construction_class",
+      "value": "бронзовый (bronze)",
+      "status": "CONFIRMED",
+      "confidence": "high",
+      "source_location": "标题栏 产品名后缀",
+      "note": "外部来源进一步提到钛等特殊合金件,但图纸未给出具体牌号 → 见 materials 缺口。"
+    }
+  ],
+
+  "dimensions": {
+    "governing_note": "技术要求第 31 条原文:「31. * размеры для справок.」= 凡带 * 号的尺寸【仅供参考】。本图全部关键尺寸均带 *。因此本阀的 GA 外形不提供任何可控公称尺寸,接口尺寸必须回 ГОСТ 1536-76 取,不能把下列数值当冻结接口。",
+    "items": [
+      { "id": "D01", "name": "flange_od",           "value": 295,   "unit": "mm", "status": "CONFIRMED", "mark": "*", "src_view": "Рис.1", "confidence": "high",   "constraint_type": "BOUNDED" },
+      { "id": "D02", "name": "bore_nominal",        "value": 200,   "unit": "mm", "status": "CONFIRMED", "mark": "*", "src_view": "Рис.1", "confidence": "high",   "constraint_type": "BOUNDED", "note": "与标题栏 ДУ200 互证" },
+      { "id": "D03", "name": "body_hub_od",         "value": 247,   "unit": "mm", "status": "CONFIRMED", "mark": "*", "src_view": "Рис.1", "confidence": "medium", "constraint_type": "BOUNDED" },
+      { "id": "D04", "name": "bolt_circle_dia",     "value": 264,   "unit": "mm", "status": "CONFIRMED", "mark": "*", "src_view": "Общий вид", "confidence": "medium", "constraint_type": "BOUNDED" },
+      { "id": "D05", "name": "flange_hole_count",   "value": 12,    "unit": "pcs", "status": "CONFIRMED", "mark": "*", "src_view": "Общий вид", "confidence": "high", "note": "标注 '12 отв. ф15*'", "constraint_type": "BOUNDED" },
+      { "id": "D06", "name": "flange_hole_dia",     "value": 15,    "unit": "mm", "status": "CONFIRMED", "mark": "*", "src_view": "Общий вид", "confidence": "medium", "constraint_type": "BOUNDED" },
+      { "id": "D07", "name": "overall_height",      "value": 515,   "unit": "mm", "status": "CONFIRMED", "mark": "*", "src_view": "Рис.1", "confidence": "medium", "constraint_type": "BOUNDED" },
+      { "id": "D08", "name": "flange_thickness",    "value": 15,    "unit": "mm", "status": "CONFIRMED", "mark": "*", "src_view": "Рис.1", "confidence": "low",    "constraint_type": "REFERENCE", "note": "标注 '15*' 指向法兰厚度方向,引线较短,判读置信度低" },
+      { "id": "D09", "name": "lever_span",          "value": 320,   "unit": "mm", "status": "CONFIRMED", "mark": "*", "src_view": "Рис.1", "confidence": "medium", "note": "φ320* 杠杆总跨度", "constraint_type": "BOUNDED" },
+      { "id": "D10", "name": "stem_thread",         "value": "Тр36х6", "unit": "-", "status": "CONFIRMED", "mark": "*", "src_view": "Рис.1", "confidence": "medium", "note": "公制粗牙 Tr36x6", "constraint_type": "BOUNDED" },
+      { "id": "D11", "name": "stem_key_af",         "value": "4",   "unit": "pcs", "status": "CONFIRMED", "mark": "*", "src_view": "Рис.1", "confidence": "medium", "note": "阀杆端部法兰螺栓数,标 '4*'", "constraint_type": "BOUNDED" },
+      { "id": "D12", "name": "top_clearance",       "value": 51,    "unit": "mm", "status": "CONFIRMED", "mark": "*", "src_view": "Рис.1", "confidence": "low",    "constraint_type": "REFERENCE" },
+      { "id": "D13", "name": "gauge_square_af",     "value": 24,    "unit": "mm", "status": "CONFIRMED", "mark": "*", "src_view": "Общий вид (поз.15 处)", "confidence": "low", "note": "标注 '□24*',紧邻 'Манометр поз.15 не показан'", "constraint_type": "REFERENCE" },
+      { "id": "D14", "name": "pos31_plug_len",      "value": 26,    "unit": "mm", "status": "CONFIRMED", "mark": "", "src_view": "поз.31 局部 (М2:1)", "confidence": "medium", "note": "п.31 局部放大,是本图少数带公差的尺寸", "constraint_type": "FIXED" },
+      { "id": "D15", "name": "pos31_plug_thread",   "value": "М6-7H", "unit": "-", "status": "CONFIRMED", "mark": "", "src_view": "поз.31 局部", "confidence": "high", "constraint_type": "FIXED" },
+      { "id": "D16", "name": "pos31_dia_upper",     "value": 26,    "unit": "mm", "status": "CONFIRMED", "tolerance": "+0.052/0", "src_view": "поз.31 局部", "confidence": "high", "constraint_type": "FIXED" },
+      { "id": "D17", "name": "pos31_dia_inner",     "value": 20,    "unit": "mm", "status": "CONFIRMED", "tolerance": "+0.052/0", "src_view": "поз.31 局部", "confidence": "high", "constraint_type": "FIXED" },
+      { "id": "D18", "name": "neck_height_H",       "value": null,  "unit": "mm", "status": "MISSING", "mark": "H", "src_view": "Общий вид", "note": "只标了符号 H,无数值 → 无法冻结颈高接口" },
+      { "id": "D19", "name": "face_to_face",        "value": null,  "unit": "mm", "status": "MISSING", "src_view": "-", "note": "本图未读到总长标注。结构长度须按 ГОСТ 1536-76 取,不能由 Ø295/Ø200 反推。" },
+      { "id": "D20", "name": "disc_od",             "value": null,  "unit": "mm", "status": "MISSING", "src_view": "Рис.1", "note": "倾斜盘外径无标注;1035/1047 号引线只到零件,未给尺寸" }
+    ]
+  },
+
+  "architecture": {
+    "closure_element": {
+      "type": "swing_disc_tilted",
+      "type_cn": "底部枢轴倾斜摆盘(止回盘)",
+      "pivot_location": "阀腔底部中心,水平铰轴",
+      "evidence": "Рис.1: 盘 1 绕底部铰轴 7/8 倾斜;10 为阀座环;28 为盘上密封环",
+      "status": "CONFIRMED",
+      "confidence": "medium",
+      "disc_geometry": "MISSING —— 盘的外径、厚度、曲率、开启角均无标注"
+    },
+    "shutoff_mechanism": {
+      "type": "top_lever_with_countermass",
+      "type_cn": "顶部杠杆 + 配重,经阀杆下压强制盘密封",
+      "stem_thread": "Tr36x6",
+      "lever_span_mm": 320,
+      "handwheel_turns": 9.5,
+      "evidence": "Рис.1 顶部横杆 + 技术要求 п.19「Число оборотов маховика при установке на 'невозврат' или закрытии - 9,5」",
+      "status": "CONFIRMED",
+      "confidence": "high"
+    },
+    "seating_and_packing": {
+      "stem_packing_items": [14, 34, 37],
+      "note": "14/34/37 位于阀杆穿出处,д.37 另见镀铬要求 п.18",
+      "status": "CONFIRMED",
+      "confidence": "medium"
+    },
+    "top_neck_accessories": {
+      "items": [33, 35, 36],
+      "interpretation": "法兰顶部一组螺纹件(зaглушка/放空-泄水堵头组),按 ОСТ 5.9035-80 船用标准件",
+      "status": "CONFIRMED",
+      "confidence": "medium"
+    },
+    "fasteners": {
+      "note": "标注 '26 винт 27' = 26 件螺钉 27",
+      "count": 26,
+      "status": "CONFIRMED",
+      "confidence": "medium"
+    }
+  },
+
+  "service_conditions": [
+    { "id": "SC1", "medium": "海水 (sea water)", "t_min_C": -2,  "t_max_C": 50, "src": "ОТР п.4", "status": "CONFIRMED", "confidence": "high" },
+    { "id": "SC2", "medium": "28% 氯化钙溶液 (28% CaCl2)", "t_min_C": -40, "t_max_C": 50, "src": "ОТР п.5", "status": "CONFIRMED", "confidence": "high",
+      "design_impact": "−40°C 下青铜会进入低温脆性区,材料牌号选择的首要驱动因素" },
+    { "id": "SC3", "medium": "温度-压力作用时间分配", "ref": "гарантийный протокол № Л-ПСП-4035-85", "src": "ОТР п.6", "status": "MISSING", "note": "该协议未提供" },
+    { "id": "SC4", "medium": "设计压力", "value": null, "src": "-", "status": "MISSING", "note": "仅有 Ру6(公称压力),无设计压力 P 与试验压力 Pt" }
+  ],
+
+  "life_requirements": [
+    { "id": "L1", "text": "到厂修设计寿命", "value": 13, "unit": "year", "src": "ОТР", "status": "CONFIRMED", "confidence": "high", "extra": "其中自交付起 10 年" },
+    { "id": "L2", "text": "到报废设计寿命", "value": 120000, "unit": "hour", "src": "ОТР", "status": "CONFIRMED", "confidence": "high" },
+    { "id": "L3", "text": "到厂修资源", "value": 60000, "unit": "hour", "src": "ОТР", "status": "CONFIRMED", "confidence": "high" },
+    { "id": "L4", "text": "无维护连续工作周期", "value": 5000, "unit": "hour", "src": "ОТР + п.27", "status": "CONFIRMED", "confidence": "high" },
+    { "id": "L5", "text": "无维修连续运行可靠度", "value": 0.97, "unit": "-", "src": "п.27", "status": "CONFIRMED", "confidence": "high", "note": "由计算书 522-354150 确定,该计算书未提供 → 判据不可复核" },
+    { "id": "L6", "text": "长期贮存后仍保证性能", "value": 20, "unit": "year", "ambient_t_C": "-45…+32", "rh_pct": "30-40", "src": "ОТР п.9", "status": "CONFIRMED", "confidence": "medium" }
+  ],
+
+  "performance_requirements": [
+    { "id": "PR1", "metric": "液压阻力系数 Кз", "limit": "<= 6", "unit": "-", "src": "п.23", "status": "CONFIRMED", "confidence": "high",
+      "maps_to": "REQ-HYD-02", "caveat": "图上未定义 Кз 的测量截面、参考流速与口径基准;不同定义下该值不可比" },
+    { "id": "PR2", "metric": "空气噪声总级", "limit": "<= 70", "unit": "dB", "src": "п.25 (МКШС-71Е)", "status": "CONFIRMED", "confidence": "high", "maps_to": "REQ-NVH-01" },
+    { "id": "PR3", "metric": "振动谱级", "limit": "符合要求 №2", "unit": "-", "src": "п.26", "status": "CONFLICT", "confidence": "low", "note": "被引用的「要求 №2」文件未出现在图上 → 不可判" },
+    { "id": "PR4", "metric": "抗冲击性", "limit": "класс 2 (体 4.002)", "unit": "-", "src": "п.22", "status": "CONFIRMED", "confidence": "low", "note": "标准号 OCR 残缺,需回原图确认" },
+    { "id": "PR5", "metric": "防振性", "limit": "ОСТ В5.4347-81 группа жёсткости А", "unit": "-", "src": "п.23", "status": "CONFIRMED", "confidence": "medium" },
+    { "id": "PR6", "metric": "手轮启闭圈数", "limit": "9.5", "unit": "turn", "src": "п.19 (Справ.)", "status": "CONFIRMED", "confidence": "high", "note": "标注为参考值(справочный),非强制" },
+    { "id": "PR7", "metric": "辅助扳手最大操作力", "limit": "<= 45", "unit": "kgf", "src": "п.20", "status": "CONFIRMED", "confidence": "medium" },
+    { "id": "PR8", "metric": "外壳防护等级", "limit": "IP55; поз.33/34=IP54; поз.31=IP65(OCR存疑)", "unit": "-", "src": "п.30 (ГОСТ 14254-79)", "status": "CONFIRMED", "confidence": "low", "maps_to": "REQ-GEO-01" },
+    { "id": "PR9", "metric": "气候执行", "limit": "ОМ5", "unit": "-", "src": "п.29 (ГОСТ 15150-69)", "status": "CONFIRMED", "confidence": "high" }
+  ],
+
+  "standards_named_on_drawing": [
+    "ГОСТ 1536-76", "ОСТ 5.5131-73", "ОСТ ВД 5.5131-73", "ГОСТ 14254-79", "ГОСТ 15150-69",
+    "ГОСТ 1516-76(经 OCR 残读,存疑)", "ГОСТ 356-80", "ГОСТ 9.032-74", "ОСТ 1964-75",
+    "ОСТ 5.9035-80", "ОСТ 5.9048-85", "ОСТ В5.4347-81", "ГОСТ В15.206-84", "ГОСТ 5631-79",
+    "СП 35-71-76", "РД 5.35.9504-86", "МКШС-71Е"
+  ],
+
+  "open_conflicts": [
+    { "id": "C1", "topic": "内部结构尺寸", "detail": "盘、阀座、阀杆、壳体壁厚在 GA 图上全部无尺寸", "severity": "high", "resolution": "只能作为方案研究分支,不得进入正式基线" },
+    { "id": "C2", "topic": "OCR 年份后缀", "detail": "ОСТ 5.5131-73 的 73 年版未在公开目录中验证到;目录该号位存在其他年份", "severity": "medium", "resolution": "标 UNVERIFIED_CLAUSE,需查原版标准" },
+    { "id": "C3", "topic": "п.26 引用文件", "detail": "「требованиям №2」指向未知文件", "severity": "medium", "resolution": "该项需求不可判定" },
+    { "id": "C4", "topic": "文件名与内容错位", "detail": "见 T01 manifest", "severity": "low", "resolution": "已按内容重新归档" }
+  ]
+}

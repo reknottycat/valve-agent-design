@@ -1,0 +1,50 @@
+# 单个 CFD 工况任务卡模板；所有 ${...} 均须绑定真实值。
+# 这是待绑定模板，不能直接作为运行时合法任务卡。
+task_id: T28__candidate_A__opening_050__case_N
+parent_task: T28
+owner: F
+purpose: 在指定开度与工况下求解，不做结构修改
+candidate_id: "${candidate_id}"
+depends_on:
+  - "${pilot_quality_pass_event}"
+input_refs:
+  - name: basis
+    uri: "${basis_uri}"
+    sha256: "${basis_sha256}"
+  - name: fluid_domain
+    uri: "${fluid_domain_uri}"
+    sha256: "${fluid_domain_sha256}"
+  - name: operating_case
+    uri: "${operating_case_uri}"
+    sha256: "${operating_case_sha256}"
+  - name: physics_and_mesh
+    uri: "${physics_and_mesh_uri}"
+    sha256: "${physics_and_mesh_sha256}"
+parameters:
+  opening_fraction: "${approved_opening_fraction}"
+acceptance_ref:
+  uri: "${verification_plan_uri}"
+  sha256: "${verification_plan_sha256}"
+write_scope: "runs/${run_id}/${candidate_id}/${task_id}/"
+permissions:
+  edit_geometry: false
+  edit_requirements: false
+  edit_acceptance: false
+resources:
+  pool: cae
+  cpu_cores: "${profiled_cores}"
+  ram_gb: "${profiled_ram_gb}"
+  license_tokens: "${required_license_tokens}"
+max_attempts: 2
+wall_time_limit_seconds: "${project_limit_seconds}"
+outputs:
+  - solver.log
+  - metrics.json
+  - residuals.csv
+  - mass_balance.csv
+  - result_manifest.json
+completion_contract:
+  run_status: 由执行器根据实际结果填写
+  numerical_status: 由数值验证器填写
+  requirement_status: NOT_ASSESSED
+  note: 流量需求判定在 T30 汇总；求解任务不得自行宣布整机通过。
