@@ -1,0 +1,230 @@
+{
+  "schema": "valve.geometry_check/1.0",
+  "generated_at": "2026-10-06T09:44:49",
+  "candidate_id": "C0",
+  "params": {
+    "DN": 200.0,
+    "bore": 200.0,
+    "flange_od": 295.0,
+    "bolt_circle": 264.0,
+    "flange_holes": 12,
+    "flange_hole_d": 15.0,
+    "flange_thk": 15.0,
+    "hub_od": 247.0,
+    "stem_od": 36.0,
+    "stem_thread": "Tr36x6",
+    "lever_span": 320.0,
+    "overall_height": 515.0,
+    "face_to_face": 300.0,
+    "neck_height": 150.0,
+    "body_wall": 12.0,
+    "disc_od": 240.0,
+    "disc_thk": 14.0,
+    "disc_inclination": 45.0,
+    "pivot_offset_e": 15.0,
+    "seat_width": 8.0,
+    "seal_line_width": 4.0,
+    "neck_od": 130.0,
+    "stem_bore_d": 44.0,
+    "bonnet_thk": 22.0,
+    "lever_arm_w": 40.0,
+    "lever_arm_t": 16.0
+  },
+  "parts": {
+    "body": {
+      "volume_mm3": 7422799.0,
+      "bbox": {
+        "xmin": 0.0,
+        "xmax": 300.0,
+        "ymin": -147.5,
+        "ymax": 147.5,
+        "zmin": -147.5,
+        "zmax": 346.5,
+        "dx": 300.0,
+        "dy": 295.0,
+        "dz": 494.0
+      },
+      "note": ""
+    },
+    "seat_ring": {
+      "volume_mm3": 247725.6,
+      "bbox": {
+        "xmin": 137.0,
+        "xmax": 163.0,
+        "ymin": -116.0,
+        "ymax": 116.0,
+        "zmin": -114.63,
+        "zmax": 114.63,
+        "dx": 26.0,
+        "dy": 232.0,
+        "dz": 229.27
+      },
+      "note": ""
+    },
+    "disc": {
+      "volume_mm3": 743830.3,
+      "bbox": {
+        "xmin": 133.0,
+        "xmax": 167.0,
+        "ymin": -120.0,
+        "ymax": 120.0,
+        "zmin": -120.0,
+        "zmax": 120.0,
+        "dx": 34.0,
+        "dy": 240.0,
+        "dz": 240.0
+      },
+      "note": ""
+    },
+    "stem": {
+      "volume_mm3": 459439.4,
+      "bbox": {
+        "xmin": 110.0,
+        "xmax": 168.0,
+        "ymin": -40.0,
+        "ymax": 20.0,
+        "zmin": -30.0,
+        "zmax": 396.5,
+        "dx": 58.0,
+        "dy": 60.0,
+        "dz": 426.5
+      },
+      "note": ""
+    },
+    "bonnet": {
+      "volume_mm3": 429301.8,
+      "bbox": {
+        "xmin": -24.0,
+        "xmax": 142.0,
+        "ymin": -83.0,
+        "ymax": 83.0,
+        "zmin": 346.5,
+        "zmax": 368.5,
+        "dx": 166.0,
+        "dy": 166.0,
+        "dz": 22.0
+      },
+      "note": ""
+    },
+    "lever": {
+      "volume_mm3": 281156.9,
+      "bbox": {
+        "xmin": 102.0,
+        "xmax": 170.0,
+        "ymin": -320.0,
+        "ymax": 178.0,
+        "zmin": 380.5,
+        "zmax": 408.5,
+        "dx": 68.0,
+        "dy": 498.0,
+        "dz": 28.0
+      },
+      "note": ""
+    },
+    "fluid_domain": {
+      "volume_mm3": 7703185.2,
+      "bbox": {
+        "xmin": -0.6,
+        "xmax": 300.6,
+        "ymin": -100.0,
+        "ymax": 100.0,
+        "zmin": -100.0,
+        "zmax": 100.0,
+        "dx": 301.2,
+        "dy": 200.0,
+        "dz": 200.0
+      },
+      "note": "CFD 流体域,含上下游 3D 直管段"
+    }
+  },
+  "checks": {
+    "envelope": {
+      "face_to_face": 300.0,
+      "flange_od": 494.0,
+      "overall_height": 494.0,
+      "matches_ga_bounded": true,
+      "note": "GA 带 * 的尺寸为参考值,故只作包络校核"
+    },
+    "wall_thickness": {
+      "nominal": 12.0,
+      "actual_min": 23.5,
+      "criterion": ">0 且符合选定规范最小结构要求",
+      "verdict": "通过(量级)"
+    },
+    "seal_geometry": {
+      "disc_inclination_deg": 45.0,
+      "seal_line_width_mm": 4.0,
+      "contact_area_mm2": 2513.3,
+      "seat_normal_force_N": 26124.2,
+      "contact_pressure_MPa": 10.39,
+      "phi_sensitivity_MPa": {
+        "30": 14.7,
+        "45": 10.39,
+        "60": 8.49,
+        "75": 7.61
+      },
+      "status": "几何可行;泄漏等级无判据,不给结论"
+    },
+    "interference": {
+      "pairs_tested": 15,
+      "designed_contacts": [
+        {
+          "pair": [
+            "seat_ring",
+            "disc"
+          ],
+          "overlap_mm3": 148572.583,
+          "classification": "DESIGNED_CONTACT",
+          "reason": "金属密封面 —— 面接触,接触面积即密封设计参数"
+        },
+        {
+          "pair": [
+            "disc",
+            "stem"
+          ],
+          "overlap_mm3": 114482.508,
+          "classification": "DESIGNED_CONTACT",
+          "reason": "摆盘毂与阀杆叉头 —— 传力过盈/销连接"
+        },
+        {
+          "pair": [
+            "stem",
+            "bonnet"
+          ],
+          "overlap_mm3": 4729.98,
+          "classification": "DESIGNED_CONTACT",
+          "reason": "阀杆穿阀盖 —— 填料密封界面"
+        },
+        {
+          "pair": [
+            "stem",
+            "lever"
+          ],
+          "overlap_mm3": 24948.259,
+          "classification": "DESIGNED_CONTACT",
+          "reason": "阀杆方头与杠杆毂 —— 方形驱动过盈"
+        }
+      ],
+      "unintended": [],
+      "verdict": "无非设计干涉",
+      "note": "设计接触按工程配合处理并记录接触面积;非设计接触才是几何错误。"
+    },
+    "step_roundtrip": {
+      "body": {
+        "vol_native": 7422799.0,
+        "vol_roundtrip": 7422798.7,
+        "rel_err": 0.0
+      },
+      "seat_ring": {
+        "vol_native": 247725.6,
+        "vol_roundtrip": 247725.6,
+        "rel_err": 0.0
+      },
+      "disc": {
+        "vol_native": 743830.3,
+        "vol_roundtrip": 743830.3,
+        "rel_err": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schema": "valve.diagnostic-proposal/1.0",
+  "status": "DIAGNOSTIC_ONLY",
+  "source_sha256": "e4c4965701abe6282fce8a926c3fb8565f96616cf1fe63cf749e564929aae8f9",
+  "parameters_source_metre_convention": {
+    "r_bore": 0.1,
+    "L": 0.3,
+    "UP": 0.6,
+    "DNC": 0.6,
+    "seat_od": 0.116,
+    "disc_od": 0.24,
+    "disc_thk": 0.014,
+    "neck_bore_r": 0.022,
+    "r_hub": 0.1235,
+    "seat_h": 0.026
+  },
+  "measurement_mm": {
+    "valid": true,
+    "solid_count": 1,
+    "volume": 46517722.586808346,
+    "x_span": 1500.0000002,
+    "y_span": 200.0000002,
+    "z_span": 200.0000002,
+    "bbox": {
+      "xmin": -600.0000001,
+      "xmax": 900.0000001,
+      "ymin": -100.0000001,
+      "ymax": 100.0000001,
+      "zmin": -100.0000001,
+      "zmax": 100.0000001
+    },
+    "components": [
+      {
+        "volume": 46517722.586808346,
+        "xmin": -600.0000001,
+        "xmax": 900.0000001
+      }
+    ]
+  },
+  "numeric_gate": {
+    "status": "PASS",
+    "failures": []
+  },
+  "step_unit": {
+    "status": "VERIFIED_METADATA",
+    "unit": "mm",
+    "metres_per_unit": 0.001
+  },
+  "conversion": {
+    "coordinate_scale": 1000,
+    "legacy_step_unit": {
+      "status": "VERIFIED_METADATA",
+      "unit": "mm",
+      "metres_per_unit": 0.001
+    },
+    "reason": "Correct source metre-convention numbers to explicit STEP millimetres"
+  },
+  "product_solver_authorized": false,
+  "engineering_approval": false,
+  "unchanged_problems": [
+    "Fluid domain not derived from validated assembly",
+    "Original rotation axis retained, not a demonstrated valve hinge",
+    "No motion, seal, wall, material, pressure or flow acceptance established"
+  ],
+  "purpose": "Prove cause of disconnected flow path, not a replacement design"
+}

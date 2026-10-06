@@ -1,0 +1,16 @@
+Cannot create cache home directory: '/home/agent/.cache/ezdxf', cache files will not be saved.
+See also issue https://github.com/mozman/ezdxf/issues/923.
+  流体域体积 = 0.045930 m3   x 跨度 = 1.500 m   边界面数 = 21
+{
+  "decision": "HOLD",
+  "reasons": [
+    "T07_BASIS_NOT_FROZEN",
+    "I1_INTERFACES_NOT_FROZEN",
+    "GEOMETRY_NOT_VERIFIED",
+    "DESIGN_CONTRACT_PARSE_FAILED"
+  ],
+  "manufacturing_release": false,
+  "geometry_prerequisites_met": false,
+  "product_solver_authorized": false,
+  "evidence_ceiling": "E1"
+}

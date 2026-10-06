@@ -1,0 +1,259 @@
+# design_contract.yaml  —— 由 GA 原图 522-35.4179СБ 建立
+# run 20261006 / candidate C0 / task T06
+# 规则:CONFIRMED=图面明确 | DERIVED=按公式推出 | ASSUMED=图面无、由本轮工程判断补入
+#       MISSING=图面未给且无法推导 | CONFLICT=矛盾未解
+# 本文件是【探索分支】契约,不是已冻结基线。
+
+schema_version: "1.0"
+project_id: "522-35-4179-C0"
+state: INPUTS_REGISTERED          # 尚未到 BASELINE_BUILT
+scope: design_only
+release_target: DESIGN_CANDIDATE
+baseline_revision: null            # 未冻结 —— T07 阻塞
+contract_status: DRAFT_EXPLORATION_BASIS
+evidence_level_ceiling: E1        # 本轮全部为公式自洽,无 CAE/实测
+
+input_files:
+  - id: IMG-L1
+    role: ga_views
+    sha256: 9401cc66f20f95fbf7dcc6dbbd820f64a848e9587f6d9c0d5f1e0aa52a0d2ee
+  - id: IMG-L2
+    role: technical_requirements
+    sha256: c9e5da28d1d9e43ed3903c91f62777dc36d94c5dd32e486ab3fce5727afb8008
+
+product:
+  valve_type: "swing_disc_nonreturn_with_manual_shutoff"
+  valve_type_ru: "Клапан невозвратно-запорный проходной фланцевый бронзовый"
+  service_function: check            # 主用途=止回;兼具截止(强制关断)功能
+  secondary_function: isolation      # 手动截止, 9.5 圈
+  nominal_size:  {value: 200, system: "Ду/DN", status: CONFIRMED}
+  pressure_class: {value: 6, system: "Ру/kgf/cm2", status: CONFIRMED}
+  design_pressure: {value: null, unit: MPa, status: MISSING,
+                    note: "仅有公称压力。公称压力 != 设计压力,不能替代。"}
+  test_pressure:   {value: null, unit: MPa, status: MISSING}
+  flow_direction:  "bidirectional_body_symmetric_assumed"
+  installation_orientation: {value: "horizontal_axis_per_ga", status: ASSUMED,
+                    note: "止回阀本应竖管水平安装以利用重力,但图上未给安装姿态要求"}
+  body_material_class: "bronze"
+  body_material_grade: {value: null, status: MISSING,
+                    note: "★ 关键缺口。见 blocking_issues.B1"}
+
+interfaces:
+  face_to_face:     {value: null, unit: mm, status: MISSING,
+                      note: "图上未读到总长。须回 ГОСТ 1536-76 取,不得由 Ø295/Ø200 反推。"}
+  end_connection:   {value: "flanged_both_ends_per_GOST_1536-76", status: CONFIRMED}
+  flange_od:        {value: 295, unit: mm, status: CONFIRMED, mark: "*", constraint_type: BOUNDED}
+  bore:             {value: 200, unit: mm, status: CONFIRMED, mark: "*", constraint_type: BOUNDED}
+  bolt_circle:      {value: 264, unit: mm, status: CONFIRMED, mark: "*", constraint_type: BOUNDED}
+  flange_holes:     {value: "12 x 15", status: CONFIRMED, mark: "*"}
+  neck_height_H:    {value: null, unit: mm, status: MISSING,
+                      note: "图上只标符号 H 未给数值 → 颈部接口无法冻结"}
+  envelope_height:  {value: 515, unit: mm, status: CONFIRMED, mark: "*"}
+  lever_span:       {value: 320, unit: mm, status: CONFIRMED, mark: "*"}
+  actuator_interface: {value: "lever_manual; handwheel 9.5 turn (справочно)",
+                      status: CONFIRMED}
+
+governing_dim_note: >
+  技术要求第 31 条:「* размеры для справок」= 带 * 的尺寸仅供参考。
+  本图所有关键外形尺寸均带 *,因此 GA 图不提供任何可控公称尺寸。
+  正式接口必须以 ГОСТ 1536-76 为准,本文件的 BOUNDED 值只能用作包络校核。
+
+service:
+  media:
+    - id: SC1
+      fluid: "sea water"
+      phase: liquid
+      t_min_C: -2
+      t_max_C: 50
+      status: CONFIRMED
+      src: "ОТР п.4"
+    - id: SC2
+      fluid: "28% CaCl2 aqueous solution"
+      phase: liquid
+      t_min_C: -40
+      t_max_C: 50
+      status: CONFIRMED
+      src: "ОТР п.5"
+      design_impact: "★ -40°C 低温工况是材料牌号选择的控制工况"
+    - id: SC3
+      fluid: "temperature/pressure duty cycle split"
+      status: MISSING
+      src_ref: "гарантийный протокол № Л-ПСП-4035-85 (未提供)"
+  properties_source: MISSING
+  pressure_temperature_cases: []     # 缺设计压力与试验压力,无法编制 P-T 组合
+  maximum_shutoff_dp: {value: null, unit: Pa, status: MISSING}
+  normal_flow_range: {min: null, max: null, unit: m3/h, status: MISSING,
+                      note: "п.23 只给了阻力系数上限 Кз<=6,没给流量区间"}
+  operating_cycles: {status: CONFIRMED,
+                     detail: "5000 h 无维护连续运行 / 60000 h 到厂修 / 120000 h 到报废"}
+
+system_boundary:
+  source_characteristic_file: null
+  downstream_pressure: {value: null, unit: Pa, basis: absolute, status: MISSING}
+  network_model_file: null
+  system_scope: false
+  note: "止回阀依赖上游驱动力,系统边界影响开启/摆动工况。缺系统数据 -> T33 阻塞。"
+
+standards:
+  - {id: "S1", code: "ГОСТ 1536-76", role: "船用管路法兰连接尺寸与密封面", status: UNVERIFIED_CLAUSE}
+  - {id: "S2", code: "ОСТ 5.5131-73", role: "供货通用技术条件(阀门)", status: UNVERIFIED_CLAUSE}
+  - {id: "S3", code: "ОСТ ВД 5.5131-73", role: "供货通用技术条件", status: UNVERIFIED_CLAUSE}
+  - {id: "S4", code: "ГОСТ 14254-79", role: "外壳防护等级 IP", status: UNVERIFIED_CLAUSE}
+  - {id: "S5", code: "ГОСТ 15150-69", role: "气候型式(ОМ5)", status: UNVERIFIED_CLAUSE}
+  - {id: "S6", code: "ГОСТ 356-80", role: "石棉垫片", status: UNVERIFIED_CLAUSE}
+  - {id: "S7", code: "ОСТ 1964-75", role: "防锈/涂装/包装/贮存", status: UNVERIFIED_CLAUSE}
+  - {id: "S8", code: "ОСТ В5.4347-81", role: "抗振性(组别 А)", status: UNVERIFIED_CLAUSE}
+  - {id: "S9", code: "ГОСТ В15.206-84", role: "可靠性指标制定与验证程序", status: UNVERIFIED_CLAUSE}
+  - {id: "S10", code: "ГОСТ 9.032-74", role: "涂层等级(第 V 类)", status: UNVERIFIED_CLAUSE}
+  - {id: "S11", code: "ОСТ 5.9035-80", role: "船用标准紧固件(件 31/33/34/36)", status: UNVERIFIED_CLAUSE}
+  - {id: "S12", code: "ОСТ 5.9048-85", role: "镀层技术要求", status: UNVERIFIED_CLAUSE}
+standards_body_note: "全部条款均无正文 -> 一律 UNVERIFIED_CLAUSE,不得据此出通过/不通过结论。"
+
+materials:
+  - id: M1
+    part: "阀体/阀盖/摆盘"
+    grade: null
+    status: MISSING
+    note: "仅知为'бронзовый'(青铜)。牌号、状态、低温冲击要求全缺。★阻塞"
+  - id: M2
+    part: "密封环(件 28)/阀座(件 10)"
+    grade: null
+    status: MISSING
+    note: "推为金属对金属,但材质与硬度配对未知"
+  - id: M3
+    part: "填料(件 14/34/37)"
+    grade: null
+    status: MISSING
+    note: "件 37 另有镀铬要求(п.18)"
+  - id: M4
+    part: "涂层(件 33/34/36/35/37)"
+    grade: "НГ-216А фосфат (结构 74-0603-68-81)"
+    status: CONFIRMED
+    src: "п.17 / п.18"
+    sub_specs: ["件33 КД9", "件34/37 КД12", "件36 КД18", "件35 КД24"]
+
+allowed_design_variables:
+  - {id: DV01, name: disc_outer_diameter,   range: "待定", bounds_source: null, status: ASSUMED}
+  - {id: DV02, name: disc_thickness,        range: "待定", bounds_source: null, status: ASSUMED}
+  - {id: DV03, name: disc_inclination_phi,  range: "30-75 deg", bounds_source: "本轮参数化研究", status: ASSUMED}
+  - {id: DV04, name: seat_seal_line_width,  range: "3-6 mm", bounds_source: "本轮参数化研究", status: ASSUMED}
+  - {id: DV05, name: pivot_axis_position,   range: "待定", bounds_source: null, status: ASSUMED}
+  - {id: DV06, name: body_wall_thickness,   range: "待定", bounds_source: null, status: ASSUMED}
+  - {id: DV07, name: lever_effective_arm,   range: "待定", bounds_source: null, status: ASSUMED}
+  - {id: DV08, name: stem_thread_spec,      range: "Tr36x6 已给定;其余待定", status: CONFIRMED}
+
+allowed_discrete_choices:
+  - {id: DD1, name: bronze_grade, allowed_set: [], status: BLOCKED,
+      note: "允许集合为空 —— 未取得材料证据前不得选择"}
+  - {id: DD2, name: seal_type, allowed_set: ["金属对金属"], status: ASSUMED}
+
+uncertain_inputs:
+  - {id: U1, name: friction_coefficient, range: "mu 0.10-0.20", effect: "启闭力矩 ∓33%"}
+  - {id: U2, name: bronze_allow_stress,   range: "待定(牌号未知)", effect: "承压判据无法定标"}
+  - {id: U3, name: corrosion_rate,         range: "海水/CaCl2 未给", effect: "壁厚裕量无法定量"}
+  - {id: U4, name: Кз_measurement_basis,   range: "总zeta 或 相对直管", effect: "验收口径不可比"}
+
+load_cases: []
+  # 空:缺设计压力、试验压力、关闭压差、循环次数 -> 无法编制载荷组合
+
+requirements:
+  - id: REQ-GEO-01
+    metric: 接口与包络
+    threshold: "与 ГОСТ 1536-76 一致;GA 尺寸仅作包络校核"
+    status: NOT_ASSESSED
+    blocking: [face_to_face MISSING, neck_height_H MISSING]
+  - id: REQ-PRE-01
+    metric: 承压能力
+    threshold: "按选定规范,压力等级 Ру6 / 设计压力(未给)"
+    status: NOT_ASSESSED
+    blocking: [design_pressure MISSING, material_grade MISSING, standards body]
+  - id: REQ-SEA-01
+    metric: 关闭与外漏
+    threshold: "金属密封可关闭性已解析验证(量级可行);泄漏等级无判据"
+    status: UNKNOWN
+    blocking: [seal_geometry MISSING, standards body]
+  - id: REQ-ACT-01
+    metric: 启闭负载
+    threshold: "\"手轮操作力 %.1f kgf(本轮估算);图纸未给上限\" % 0"
+    status: NOT_ASSESSED
+    note: "见 calc_results.json -> 05_stem_drive"
+  - id: REQ-HYD-02
+    metric: 水力阻力
+    threshold: "Кз <= 6 (п.23) —— 定义未冻结"
+    status: NOT_ASSESSED
+    blocking: [Кз_measurement_basis]
+  - id: REQ-NVH-01
+    metric: 噪声 <= 70 dB (п.25)
+    status: NOT_ASSESSED
+    note: "无可用 CAE 求解器,无法评估"
+  - id: REQ-DYN-01
+    metric: 暂态/水锤/摆盘冲击
+    status: NOT_ASSESSED
+    note: "止回阀固有适用项;但无 CFD/瞬态求解器"
+
+assumptions:
+  - id: A1
+    text: "阀体名义壁厚 12 mm,腐蚀裕量 1.5 mm"
+    basis: "工程量级假设"
+    impact: "仅影响承压量级校核;实际由抗冲击与低温韧性控制"
+  - id: A2
+    text: "摆盘厚度 14 mm;铰轴到盘心臂长 95 mm"
+    basis: "工程量级假设"
+    impact: "影响关闭力矩与杠杆比,进而影响手轮操作力"
+  - id: A3
+    text: "手轮端有效力臂 150 mm;螺纹摩擦 mu=0.15"
+    basis: "青铜对青铜常见量级"
+    impact: "启闭力矩 ∓33%,是本轮不确定性最大项"
+  - id: A4
+    text: "座倾角 phi=45°,密封线宽 4 mm"
+    basis: "参数化研究中点"
+    impact: "接触压强 7.6-14.7 MPa 区间;随 phi 变化约 2 倍"
+  - id: A5
+    text: "法兰螺栓按 ф15 孔推定 M14"
+    basis: "孔径推定"
+    impact: "螺栓应力 10.5 MPa;实际规格须回 ГОСТ 1536-76"
+
+blocking_issues:
+  - id: B1
+    severity: CRITICAL
+    issue: "青铜牌号未知"
+    blocks: [T05, T07, T15, T19, T24, T26]
+    why: "-40°C 的 28% CaCl2 工况由材料低温冲击韧性控制,不同青铜牌号许用应力可差 2 倍"
+    ask: "制造厂 ТУ 或 ГОСТ 1536-76 配套材料要求"
+  - id: B2
+    severity: CRITICAL
+    issue: "设计压力与试验压力未给"
+    blocks: [T06, T08, T15, T19, T26]
+    why: "公称压力不能替代设计压力;P-T 组合无法编制"
+    ask: "技术条件说明书(ТУ)"
+  - id: B3
+    severity: HIGH
+    issue: "摆盘/阀座/铰轴几何完全未知"
+    blocks: [T09, T13, T21, T22, T23]
+    why: "GA 图对内部件零标注,方案研究需从零提出"
+    ask: "接受本轮以 ASSUMED 方案做探索分支(需授权)"
+  - id: B4
+    severity: MEDIUM
+    issue: "Кз 的测量基准未定义"
+    blocks: [T08, T30]
+    why: "无取压截面与参考基准,实测与预测不可比"
+    ask: "п.23 的完整上下文或 ТУ"
+  - id: B5
+    severity: MEDIUM
+    issue: "结构长度与颈高未给"
+    blocks: [T11, T22]
+    why: "接口冻结的最小集合缺失"
+    ask: "ГОСТ 1536-76 表 3 / 原 CAD"
+  - id: B6
+    severity: MEDIUM
+    issue: "本机无 CFD/FEA 求解器"
+    blocks: [T23, T24, T26, T28, T29, T31]
+    why: "已核实:无 OpenFOAM/Gmsh/CalculiX/ANSYS;SOLIDWORKS 主程序未安装(仅 Exchange/eDrawings 插件)"
+    ask: "是否需要安装开源求解链,或接受本轮止于解析计算"
+
+t07_freeze_decision:
+  can_freeze: false
+  reason: "B1/B2 为 CRITICAL,必需字段不完备"
+  per_framework_rule: "方案 §03: 关键缺失项阻止受影响的正式结论,但不阻止文件清点、方案研究与独立工具验证"
+  permitted_now: [T01, T02, T03, T05, T06, T09(概念), T10, T11(部分), T15, T16, T17, T18, T19(模板)]
+  blocked_now: [T07, T12, T13, T14, T21, T22, T23, T24, T26, T28, T29, T30, T31, T32, T36, T38, T39, T40, T41, T42, T43]

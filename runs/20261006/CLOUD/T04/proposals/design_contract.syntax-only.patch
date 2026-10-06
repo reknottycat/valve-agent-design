@@ -1,0 +1,11 @@
+--- a/runs/20261006/C0/T06/design_contract.yaml
++++ b/runs/20261006/C0/T06/design_contract.yaml
+@@ -53 +53 @@
+-  actuator_interface:{value: "lever_manual; handwheel 9.5 turn (справочно)",
++  actuator_interface: {value: "lever_manual; handwheel 9.5 turn (справочно)",
+@@ -110 +110 @@
+-  standards_body_note: "全部条款均无正文 -> 一律 UNVERIFIED_CLAUSE,不得据此出通过/不通过结论。"
++standards_body_note: "全部条款均无正文 -> 一律 UNVERIFIED_CLAUSE,不得据此出通过/不通过结论。"
+@@ -177 +177 @@
+-    threshold: "手轮操作力 %.1f kgf(本轮估算);图纸未给上限" % 0
++    threshold: "\"手轮操作力 %.1f kgf(本轮估算);图纸未给上限\" % 0"

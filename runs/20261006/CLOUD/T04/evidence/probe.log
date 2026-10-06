@@ -1,0 +1,11 @@
+Cannot create cache home directory: '/home/agent/.cache/ezdxf', cache files will not be saved.
+See also issue https://github.com/mozman/ezdxf/issues/923.
+
+{
+  "cadquery": "VERIFIED",
+  "gmsh": "VERIFIED",
+  "freecad": "VERIFIED",
+  "openfoam": "UNAVAILABLE",
+  "calculix": "UNAVAILABLE",
+  "assembly_constraints_motion_and_drawing": "UNTESTED"
+}

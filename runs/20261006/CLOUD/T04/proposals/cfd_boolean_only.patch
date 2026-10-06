@@ -1,0 +1,12 @@
+--- a/runs/20261006/C0/T23/cfd_pipeline.py
++++ b/runs/20261006/C0/T23/cfd_pipeline.py
+@@ -43,8 +43,7 @@
+     g = GEO
+     dom = cq.Workplane("YZ", origin=(-g["UP"], 0, 0)).circle(g["r_bore"]).extrude(
+         g["UP"] + g["L"] + g["DNC"])
+-    dom = dom.cut(cq.Workplane("YZ", origin=(g["L"]/2 - 0.013, 0, 0))
+-                  .circle(g["seat_od"]).extrude(g["seat_h"]))
++    # Diagnostic proposal: do not subtract a solid full-bore cylinder.
+     dom = dom.cut(cq.Workplane("XY", origin=(g["L"]/2, 0, -g["r_hub"]))
+                   .circle(g["neck_bore_r"]).extrude(g["r_hub"] + 0.34))
+     seat = (cq.Workplane("YZ", origin=(g["L"]/2 - 0.013, 0, 0))

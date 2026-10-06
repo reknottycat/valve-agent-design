@@ -1,0 +1,31 @@
+============================================================================
+522-35.4179-C0  参数化模型生成   L(face-to-face)=300  H(neck)=150
+============================================================================
+零件:
+  body                   vol= 7422799.0 mm3   bbox=300 x 295 x 494
+  seat_ring              vol=  247725.6 mm3   bbox=26 x 232 x 229
+  disc                   vol=  743830.3 mm3   bbox=34 x 240 x 240
+  stem                   vol=  459439.4 mm3   bbox=58 x 60 x 426
+  bonnet                 vol=  429301.8 mm3   bbox=166 x 166 x 22
+  lever                  vol=  281156.9 mm3   bbox=68 x 498 x 28
+
+=== T22 几何校验 ===
+  零件干涉检查:
+    设计接触: 4 处 / 非设计干涉: 0 处
+  STEP 往返自检:
+    body         原体积 7422799.0 -> 往返 7422798.7  相对误差 0.00e+00
+    seat_ring    原体积 247725.6 -> 往返 247725.6  相对误差 0.00e+00
+    disc         原体积 743830.3 -> 往返 743830.3  相对误差 0.00e+00
+
+零件 STEP/BREP : /workspace/shared/valve-cloud-20261006/runs/20261006/CLOUD/T04/evidence/source-replay/T12/out/parts
+装配 STEP      : /workspace/shared/valve-cloud-20261006/runs/20261006/CLOUD/T04/evidence/source-replay/T12/out/assembly
+CFD 流体域 STEP: /workspace/shared/valve-cloud-20261006/runs/20261006/CLOUD/T04/evidence/source-replay/T12/out/cfd/fluid_domain.step
+几何校验报告   : /workspace/shared/valve-cloud-20261006/runs/20261006/CLOUD/T04/evidence/source-replay/T12/out/geometry_check.json
+
+ENVELOPE       : FTF=300  OD=494  H=494 mm
+WALL (筒身)    : 23.5 mm
+SEAL q(phi=45) : 10.39 MPa
+INTERFERENCE   : 无非设计干涉
+证据等级: E1 (几何内核自洽 + STEP 往返,非实物验证)
+Cannot create cache home directory: '/home/agent/.cache/ezdxf', cache files will not be saved.
+See also issue https://github.com/mozman/ezdxf/issues/923.

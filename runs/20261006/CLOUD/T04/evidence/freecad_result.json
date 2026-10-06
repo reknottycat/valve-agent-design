@@ -1,0 +1,15 @@
+{
+  "status": "VERIFIED",
+  "version": [
+    "1",
+    "0",
+    "0",
+    "",
+    "https://code.launchpad.net/~vcs-imports/freecad/trunk",
+    "2026/08/25 11:49:11"
+  ],
+  "scope": "editable parametric box rebuild, FCStd reopen and STEP roundtrip; independent smoke only",
+  "before_mm3": 6000.0,
+  "after_mm3": 7200.0,
+  "solid_count": 1
+}

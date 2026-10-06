@@ -1,0 +1,25 @@
+test_all_six_parts_require_roundtrip (test_geometry_gate.GeometryGateTests.test_all_six_parts_require_roundtrip) ... ok
+test_baseline_unknown_or_unfrozen_blocks_solver (test_geometry_gate.GeometryGateTests.test_baseline_unknown_or_unfrozen_blocks_solver) ... ok
+test_boolean_volume_rejected (test_geometry_gate.GeometryGateTests.test_boolean_volume_rejected) ... ok
+test_connected_domain_passes_numeric_gate (test_geometry_gate.GeometryGateTests.test_connected_domain_passes_numeric_gate) ... ok
+test_disconnected_domain_rejected (test_geometry_gate.GeometryGateTests.test_disconnected_domain_rejected) ... ok
+test_empty_shape_exchange_rejected (test_geometry_gate.GeometryGateTests.test_empty_shape_exchange_rejected) ... ok
+test_invalid_brep_rejected (test_geometry_gate.GeometryGateTests.test_invalid_brep_rejected) ... ok
+test_invalid_tolerance_rejected (test_geometry_gate.GeometryGateTests.test_invalid_tolerance_rejected) ... ok
+test_missing_checks_block_solver (test_geometry_gate.GeometryGateTests.test_missing_checks_block_solver) ... ok
+test_missing_or_nonfinite_measurements_rejected (test_geometry_gate.GeometryGateTests.test_missing_or_nonfinite_measurements_rejected) ... ok
+test_mixed_millimetres_metres_rejected (test_geometry_gate.GeometryGateTests.test_mixed_millimetres_metres_rejected) ... ok
+test_numeric_success_is_not_manufacturing_release (test_geometry_gate.GeometryGateTests.test_numeric_success_is_not_manufacturing_release) ... ok
+test_roundtrip_preserves_multiple_solids_but_does_not_approve_them (test_geometry_gate.GeometryGateTests.test_roundtrip_preserves_multiple_solids_but_does_not_approve_them) ... ok
+test_unknown_check_blocks_solver (test_geometry_gate.GeometryGateTests.test_unknown_check_blocks_solver) ... ok
+test_volume_preserving_extent_drift_rejected (test_geometry_gate.GeometryGateTests.test_volume_preserving_extent_drift_rejected) ... ok
+test_direct_proposal_execution_cannot_launch_solver (test_safety_regressions.SafetyRegressionTests.test_direct_proposal_execution_cannot_launch_solver) ... ok
+test_geometry_only_proposal_contains_no_solver_routes (test_safety_regressions.SafetyRegressionTests.test_geometry_only_proposal_contains_no_solver_routes) ... ok
+test_probe_checks_cannot_be_disabled_with_python_optimize (test_safety_regressions.SafetyRegressionTests.test_probe_checks_cannot_be_disabled_with_python_optimize) ... ok
+test_step_metadata_must_be_explicit (test_safety_regressions.SafetyRegressionTests.test_step_metadata_must_be_explicit) ... ok
+test_syntax_proposal_does_not_freeze_unknown_parameters (test_safety_regressions.SafetyRegressionTests.test_syntax_proposal_does_not_freeze_unknown_parameters) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.650s
+
+OK

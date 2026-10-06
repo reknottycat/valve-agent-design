@@ -1,0 +1,2 @@
+Observed C0 audit exit: 2 (expected 2: HOLD)
+Observed-red evidence verified: both topology/unit failures, metadata mismatch, malformed contract, multi-solid parts

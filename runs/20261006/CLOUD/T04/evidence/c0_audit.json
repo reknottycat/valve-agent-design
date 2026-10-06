@@ -1,0 +1,405 @@
+{
+  "schema": "valve.cloud-c0-audit/1.0",
+  "upstream_commit": "4222b3d4df248b07777315068b9f3c99273d47c4",
+  "scope": "Unmodified C0 source replay and numerical diagnostics only; no C1 edits",
+  "cadquery_version": "2.7.0",
+  "parts": {
+    "body": {
+      "measurement_mm": {
+        "valid": true,
+        "solid_count": 1,
+        "volume": 7422798.718120603,
+        "x_span": 300.0,
+        "y_span": 295.0,
+        "z_span": 494.0000001,
+        "bbox": {
+          "xmin": 0.0,
+          "xmax": 300.0,
+          "ymin": -147.5,
+          "ymax": 147.5,
+          "zmin": -147.5,
+          "zmax": 346.5000001
+        },
+        "components": [
+          {
+            "volume": 7422798.718120603,
+            "xmin": 0.0,
+            "xmax": 300.0
+          }
+        ]
+      },
+      "single_component_screen": {
+        "status": "PASS",
+        "failures": []
+      },
+      "step_exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 3.9179253254395944e-08,
+        "relative_volume_tolerance": 1e-06
+      }
+    },
+    "seat_ring": {
+      "measurement_mm": {
+        "valid": true,
+        "solid_count": 2,
+        "volume": 247725.6111363885,
+        "x_span": 26.000000200000642,
+        "y_span": 232.0000002,
+        "z_span": 229.26840186058914,
+        "bbox": {
+          "xmin": 136.99999989999966,
+          "xmax": 163.0000001000003,
+          "ymin": -116.0000001,
+          "ymax": 116.0000001,
+          "zmin": -114.63420093029457,
+          "zmax": 114.63420093029457
+        },
+        "components": [
+          {
+            "volume": 123862.80510641902,
+            "xmin": 136.99999989999966,
+            "xmax": 163.0000001000003
+          },
+          {
+            "volume": 123862.80509931865,
+            "xmin": 136.9999998999997,
+            "xmax": 163.0000001000003
+          }
+        ]
+      },
+      "single_component_screen": {
+        "status": "FAIL",
+        "failures": [
+          "UNEXPECTED_SOLID_COUNT"
+        ]
+      },
+      "step_exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 1.0627168891436092e-10,
+        "relative_volume_tolerance": 1e-06
+      }
+    },
+    "disc": {
+      "measurement_mm": {
+        "valid": true,
+        "solid_count": 1,
+        "volume": 743830.3223898422,
+        "x_span": 34.0,
+        "y_span": 240.0,
+        "z_span": 240.0,
+        "bbox": {
+          "xmin": 133.0,
+          "xmax": 167.0,
+          "ymin": -120.0,
+          "ymax": 120.0,
+          "zmin": -120.0,
+          "zmax": 120.0
+        },
+        "components": [
+          {
+            "volume": 743830.3223898422,
+            "xmin": 133.0,
+            "xmax": 167.0
+          }
+        ]
+      },
+      "single_component_screen": {
+        "status": "PASS",
+        "failures": []
+      },
+      "step_exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 4.7265385846034295e-14,
+        "relative_volume_tolerance": 1e-06
+      }
+    },
+    "stem": {
+      "measurement_mm": {
+        "valid": true,
+        "solid_count": 1,
+        "volume": 459439.39098149637,
+        "x_span": 58.000000099999994,
+        "y_span": 60.00000010000001,
+        "z_span": 426.5000001,
+        "bbox": {
+          "xmin": 110.0,
+          "xmax": 168.0000001,
+          "ymin": -40.0,
+          "ymax": 20.000000100000005,
+          "zmin": -30.0000001,
+          "zmax": 396.5
+        },
+        "components": [
+          {
+            "volume": 459439.39098149637,
+            "xmin": 110.0,
+            "xmax": 168.0000001
+          }
+        ]
+      },
+      "single_component_screen": {
+        "status": "PASS",
+        "failures": []
+      },
+      "step_exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 2.193970269592042e-08,
+        "relative_volume_tolerance": 1e-06
+      }
+    },
+    "bonnet": {
+      "measurement_mm": {
+        "valid": true,
+        "solid_count": 1,
+        "volume": 429301.8247023693,
+        "x_span": 166.0,
+        "y_span": 166.0,
+        "z_span": 22.0,
+        "bbox": {
+          "xmin": -24.0,
+          "xmax": 142.0,
+          "ymin": -83.0,
+          "ymax": 83.0,
+          "zmin": 346.5,
+          "zmax": 368.5
+        },
+        "components": [
+          {
+            "volume": 429301.8247023693,
+            "xmin": -24.0,
+            "xmax": 142.0
+          }
+        ]
+      },
+      "single_component_screen": {
+        "status": "PASS",
+        "failures": []
+      },
+      "step_exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 1.637888551538436e-13,
+        "relative_volume_tolerance": 1e-06
+      }
+    },
+    "lever": {
+      "measurement_mm": {
+        "valid": true,
+        "solid_count": 2,
+        "volume": 281156.864446492,
+        "x_span": 68.0,
+        "y_span": 498.0,
+        "z_span": 28.0,
+        "bbox": {
+          "xmin": 102.0,
+          "xmax": 170.0,
+          "ymin": -320.0,
+          "ymax": 178.0,
+          "zmin": 380.5,
+          "zmax": 408.5
+        },
+        "components": [
+          {
+            "volume": 252656.3358931226,
+            "xmin": 102.0,
+            "xmax": 170.0
+          },
+          {
+            "volume": 28500.528553366603,
+            "xmin": 132.0,
+            "xmax": 168.0
+          }
+        ]
+      },
+      "single_component_screen": {
+        "status": "FAIL",
+        "failures": [
+          "UNEXPECTED_SOLID_COUNT"
+        ]
+      },
+      "step_exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 2.2773204250540283e-15,
+        "relative_volume_tolerance": 1e-06
+      }
+    }
+  },
+  "fluid_t12": {
+    "measurement_mm": {
+      "valid": true,
+      "solid_count": 2,
+      "volume": 7703185.186602176,
+      "x_span": 301.20000000000005,
+      "y_span": 200.0,
+      "z_span": 200.0,
+      "bbox": {
+        "xmin": -0.6,
+        "xmax": 300.6,
+        "ymin": -100.0,
+        "ymax": 100.0,
+        "zmin": -100.0,
+        "zmax": 100.0
+      },
+      "components": [
+        {
+          "volume": 3851592.5933010867,
+          "xmin": -0.6,
+          "xmax": 122.0
+        },
+        {
+          "volume": 3851592.5933010885,
+          "xmin": 178.0,
+          "xmax": 300.6
+        }
+      ]
+    },
+    "documented_span_mm": 1500.0,
+    "step_unit": {
+      "status": "VERIFIED_METADATA",
+      "unit": "mm",
+      "metres_per_unit": 0.001
+    },
+    "gate": {
+      "status": "FAIL",
+      "failures": [
+        "UNEXPECTED_SOLID_COUNT",
+        "UNITS_OR_EXTENT_MISMATCH"
+      ]
+    }
+  },
+  "fluid_t23": {
+    "measurement_mm": {
+      "valid": true,
+      "solid_count": 2,
+      "volume": 0.045929920041259564,
+      "x_span": 1.5000002,
+      "y_span": 0.20000020000000002,
+      "z_span": 0.20000020357768222,
+      "bbox": {
+        "xmin": -0.6000000999999999,
+        "xmax": 0.9000001,
+        "ymin": -0.10000010000000001,
+        "ymax": 0.10000010000000001,
+        "zmin": -0.10000010178884033,
+        "zmax": 0.10000010178884189
+      },
+      "components": [
+        {
+          "volume": 0.023096418450829385,
+          "xmin": -0.6000000999999999,
+          "xmax": 0.13700010000000265
+        },
+        {
+          "volume": 0.022833501638700696,
+          "xmin": 0.16299989999999293,
+          "xmax": 0.9000001
+        }
+      ]
+    },
+    "documented_span_m": 1.5,
+    "step_unit": {
+      "status": "VERIFIED_METADATA",
+      "unit": "mm",
+      "metres_per_unit": 0.001
+    },
+    "source_numeric_convention": "m",
+    "gate": {
+      "status": "FAIL",
+      "failures": [
+        "UNEXPECTED_SOLID_COUNT",
+        "UNITS_OR_EXTENT_MISMATCH",
+        "STEP_METADATA_DISAGREES_WITH_SOURCE_METRE_CONVENTION"
+      ]
+    }
+  },
+  "decision": {
+    "decision": "HOLD",
+    "reasons": [
+      "T07_BASIS_NOT_FROZEN",
+      "I1_INTERFACES_NOT_FROZEN",
+      "GEOMETRY_NOT_VERIFIED",
+      "DESIGN_CONTRACT_PARSE_FAILED"
+    ],
+    "manufacturing_release": false,
+    "geometry_prerequisites_met": false,
+    "product_solver_authorized": false,
+    "evidence_ceiling": "E1"
+  },
+  "design_contract_parse_error": "ParserError: while parsing a block mapping\n  in \"<unicode string>\", line 42, column 3:\n      face_to_face:     {value: null,  ... \n      ^\nexpected <block end>, but found ','\n  in \"<unicode string>\", line 53, column 76:\n     ...  handwheel 9.5 turn (справочно)\",\n                                         ^",
+  "radial_ligament_diagnostic": {
+    "at": "x=L/2, z=0, positive-y ray",
+    "segments": [
+      {
+        "length_mm": 1.5,
+        "start": [
+          150.0,
+          122.0,
+          0.0
+        ],
+        "end": [
+          150.0,
+          123.5,
+          0.0
+        ]
+      }
+    ],
+    "c0_reported_actual_min_mm": 23.5,
+    "note": "Local measured wall segment only; no structural adequacy judgement"
+  },
+  "lever_span_diagnostic_mm": {
+    "declared": 320.0,
+    "observed_y_span": 498.0,
+    "note": "Comparison against generator's own parameter only; not a frozen design requirement"
+  },
+  "source_hashes": {
+    "runs/20261006/C0/T12/build_valve_model.py": "055fd99d6c5f5cc42bc003c9f11a4ea615826bb9fecfc2b82c4d021e11e69de7",
+    "runs/20261006/C0/T23/cfd_pipeline.py": "e4c4965701abe6282fce8a926c3fb8565f96616cf1fe63cf749e564929aae8f9",
+    "runs/20261006/C0/T06/design_contract.yaml": "1b12a25b33636a13a8bdc4e060b9e897e55c69639d245c82d2f050b068a12ed1"
+  },
+  "interface_note": "No frozen I1 artifact found in pinned snapshot; never inferred from build success",
+  "original_claims_are_not_gates": {
+    "envelope": {
+      "face_to_face": 300.0,
+      "flange_od": 494.0,
+      "overall_height": 494.0,
+      "matches_ga_bounded": true,
+      "note": "GA 带 * 的尺寸为参考值,故只作包络校核"
+    },
+    "interference_verdict": "无非设计干涉"
+  },
+  "limitations": [
+    "A multi-solid part requires an explicit intended topology; screening is not a redesign decision",
+    "No pressure, material, wall-strength, sealing or motion acceptance inferred",
+    "Full motion, semantic boundaries, minimum wall and assembly routes remain unverified",
+    "No product CFD, FEA, leak performance or physical validation run"
+  ],
+  "output_hashes": {
+    "source-replay/T23/fluid_open.step": "e9728027a3563b253c34e137c191838e81b6fecd0e66c8301f75f210f9cf326d",
+    "source-replay/T12/build_valve_model.py": "055fd99d6c5f5cc42bc003c9f11a4ea615826bb9fecfc2b82c4d021e11e69de7",
+    "source-replay/T12/out/geometry_check.json": "f77e9d9ea9245cc3ed323b2424f693b2c222a66a76fe9c83ce7be7cb61355779",
+    "source-replay/T12/out/parts/seat_ring.brep": "a38caa4b348e032cc3ee42c25c5b3fe011c77b02ff1baa21477b94745095c2ea",
+    "source-replay/T12/out/parts/seat_ring.step": "623a15c2a4e56da58892979c709a7a9a2fdbd2961d251a1b4f14c29fb1e9b359",
+    "source-replay/T12/out/parts/bonnet.brep": "d43ab3762403d76c1cf135cae832d33b94aefb8a87aa329b8521b6da45507eb5",
+    "source-replay/T12/out/parts/lever.step": "5c14f67081c9eed9c69fc60f9f1a629b2923aca9e49b7b8ee182e5de06506956",
+    "source-replay/T12/out/parts/stem.brep": "21b4065b1c3c53db67e073d9b2b4613d475c162652fff36ef8d782d18acbc6cf",
+    "source-replay/T12/out/parts/bonnet.step": "a9fde26c3b7742b1cb3d0adf7a1c90097ddb62b8a5092ace2a83a5dc8ec7fdab",
+    "source-replay/T12/out/parts/disc.step": "6ca8d5f0a35218938f43421f9c315f8cd6d0afc3b892617fa571a0c2509bbd3f",
+    "source-replay/T12/out/parts/body.step": "e8ccb108626781c38da2a3b55be06305d7ebfb90a7255230c848a263d955c50c",
+    "source-replay/T12/out/parts/disc.brep": "bc006a4ced91d88a9daaf3a7b16df285271f176d4dd539544380c388cbcdd549",
+    "source-replay/T12/out/parts/body.brep": "c2749f3f11d7bc5af1726bfa6f15c73744258cbb49388e90dfa5303367c189ca",
+    "source-replay/T12/out/parts/stem.step": "57e6fa7c2be813c35670b565c03fce0652ee5e7cb3a7f88bf0d559afa0a8c5df",
+    "source-replay/T12/out/parts/lever.brep": "44056bb7027f6d6ac245b25a73b399f94a08b69ccfedcf835af7fda10582eb84",
+    "source-replay/T12/out/cfd/fluid_domain.step": "64d5fb3fbffbde9aaddce0849ed8dd7c952399658d0cdd3fe512da1c4f743e93",
+    "source-replay/T12/out/assembly/stem_asm.step": "da5a47ed83d41fb430fef1ddee42e2c70f2a537362d4e69f4ef938c251d9bbbf",
+    "source-replay/T12/out/assembly/bonnet_asm.step": "601e655400cbdb19c191df869efb614a3186029c4979420acd258be84931a17c",
+    "source-replay/T12/out/assembly/disc_asm.step": "5ac049cc401ce8e50c153f446f447f5671d79a1e86dc98a0d6fd0b2a41643e17",
+    "source-replay/T12/out/assembly/seat_ring_asm.step": "f3d05e33ecaacb35d1e935758ff7f7bbf76dbb42f57a481a0591619143f38ff4",
+    "source-replay/T12/out/assembly/body_asm.step": "af8677e65ac9e4849bcf10a6af1e59e5e24b7fe47ef30cddd7cb8d1a106bb58e",
+    "source-replay/T12/out/assembly/lever_asm.step": "ab529d47f300af6b27698d2358c1d55ea20b450bcee3d53abbaf9ad03d7603c9"
+  }
+}

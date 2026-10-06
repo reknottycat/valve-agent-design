@@ -1,0 +1,26 @@
+Manifest OK: 43 task templates; no dependency cycles.
+These groups are topological layers, not a resource-aware execution schedule.
+L01: T01
+L02: T02, T03, T04, T05
+L03: T06
+L04: T07
+L05: T08, T09
+L06: T10
+L07: T11
+L08: T12, T13, T14, T15, T16, T18, T20
+L09: T17
+L10: T19, T21
+L11: T22
+L12: T23, T24
+L13: T25, T26
+L14: T27, T31
+L15: T28, T29, T32
+L16: T30
+L17: T33, T34
+L18: T35
+L19: T36
+L20: T37, T38
+L21: T39, T40, T41
+L22: T42
+L23: T43
+Engineering readiness, conditional waivers, numerical validity, licensing and real inputs are NOT validated.

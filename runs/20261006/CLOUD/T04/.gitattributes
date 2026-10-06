@@ -1,0 +1,5 @@
+# Preserve machine-generated interchange evidence byte-for-byte.
+*.step binary
+*.brep binary
+*.msh binary
+*.FCStd binary
