@@ -1,0 +1,247 @@
+{
+  "schema": "valve.c2-parameters/1.0",
+  "candidate": "C2-axial-lift-study",
+  "status": "EXPLORATORY_NOT_FROZEN",
+  "length_unit": "mm",
+  "working_variant": "522-35.4179 base, pending final variant confirmation",
+  "mechanism": "Vertical axial-lift disc with a retractable screw stop; no swing hinge",
+  "source_geometry_sha256": "9401cc66f20f95fbf7dcc6dbbd820f64a848e98dd4a0ebcfa4f80471ebbaa25b",
+  "values": {
+    "face_to_face": {
+      "value": 600.0,
+      "kind": "DRAWING_REFERENCE",
+      "note": "GA 600*, not a manufacturing tolerance"
+    },
+    "bore": {
+      "value": 200.0,
+      "kind": "DRAWING_REFERENCE",
+      "note": "GA diameter200*"
+    },
+    "flange_od": {
+      "value": 295.0,
+      "kind": "DRAWING_REFERENCE"
+    },
+    "raised_face_od": {
+      "value": 247.0,
+      "kind": "DRAWING_REFERENCE",
+      "note": "Flange sealing-face diameter; not shell diameter"
+    },
+    "bolt_circle": {
+      "value": 264.0,
+      "kind": "DRAWING_REFERENCE"
+    },
+    "flange_holes": {
+      "value": 12,
+      "kind": "DRAWING_REFERENCE"
+    },
+    "flange_hole_d": {
+      "value": 15.0,
+      "kind": "DRAWING_REFERENCE"
+    },
+    "flange_thickness": {
+      "value": 15.0,
+      "kind": "DRAWING_REFERENCE"
+    },
+    "raised_face_height": {
+      "value": 2.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "handwheel_od": {
+      "value": 320.0,
+      "kind": "DRAWING_REFERENCE",
+      "note": "Handwheel, not a weighted lever"
+    },
+    "upper_height": {
+      "value": 515.0,
+      "kind": "DRAWING_REFERENCE",
+      "note": "Reference upper handwheel envelope above pipe axis"
+    },
+    "stem_od": {
+      "value": 36.0,
+      "kind": "DESIGN_ASSUMPTION",
+      "note": "Simplified smooth envelope of Tr36x6; actual thread root/profile not modeled"
+    },
+    "thread_lead": {
+      "value": 6.0,
+      "kind": "DESIGN_ASSUMPTION",
+      "note": "Single-start interpretation of Tr36x6, to be checked against governing thread standard"
+    },
+    "shell_wall": {
+      "value": 20.0,
+      "kind": "DESIGN_ASSUMPTION",
+      "note": "Nominal construction offset, not verified minimum wall or pressure sizing"
+    },
+    "chamber_radius": {
+      "value": 145.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "body_top": {
+      "value": 210.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "bonnet_flange_radius": {
+      "value": 180.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "bonnet_thickness": {
+      "value": 20.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "neck_radius": {
+      "value": 65.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "neck_top": {
+      "value": 360.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "stem_bore_radius": {
+      "value": 22.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "packing_bottom": {
+      "value": 330.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "seat_od": {
+      "value": 228.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "seat_thickness": {
+      "value": 10.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "disc_od": {
+      "value": 240.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "disc_thickness": {
+      "value": 14.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "guide_od": {
+      "value": 52.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "guide_id": {
+      "value": 40.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "guide_height": {
+      "value": 80.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "inlet_transition_end": {
+      "value": 155.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "lower_channel_z": {
+      "value": -80.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "lower_channel_y_radius": {
+      "value": 120.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "lower_channel_z_radius": {
+      "value": 65.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "outlet_transition_start": {
+      "value": 400.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "upper_channel_z": {
+      "value": 100.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "upper_channel_y_radius": {
+      "value": 100.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "upper_channel_z_radius": {
+      "value": 80.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "body_bottom": {
+      "value": -165.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "body_flange_thickness": {
+      "value": 12.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "packing_height": {
+      "value": 20.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "handwheel_rim_radius": {
+      "value": 10.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "handwheel_hub_radius": {
+      "value": 30.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "handwheel_hub_height": {
+      "value": 20.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "spoke_width": {
+      "value": 16.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "spoke_thickness": {
+      "value": 14.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "spoke_overlap": {
+      "value": 5.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "stem_square": {
+      "value": 24.0,
+      "kind": "DRAWING_REFERENCE",
+      "note": "GA square24* with handwheel omitted; provisional identification of drive interface"
+    },
+    "square_drive_clearance": {
+      "value": 0.2,
+      "kind": "DESIGN_ASSUMPTION",
+      "note": "Geometric clearance only; not a manufacturing tolerance"
+    },
+    "stem_travel": {
+      "value": 57.0,
+      "kind": "DRAWING_REFERENCE",
+      "note": "GA57* spindle/handwheel travel; not directly measured free disc lift"
+    },
+    "disc_max_lift": {
+      "value": 57.0,
+      "kind": "DESIGN_ASSUMPTION",
+      "note": "Proposed maximum free disc lift, numerically equal to reference spindle travel but not independently dimensioned by source"
+    },
+    "chamber_floor_z": {
+      "value": 20.0,
+      "kind": "DESIGN_ASSUMPTION"
+    },
+    "seat_proud_height": {
+      "value": 2.0,
+      "kind": "DESIGN_ASSUMPTION",
+      "note": "Proposed protrusion keeps disc off body web; not a controlled tolerance"
+    }
+  },
+  "unresolved": [
+    "Exact free-lift/capture mechanism",
+    "Controlled materials, allowable stresses and service pressure",
+    "Seat finish and leakage criteria",
+    "Thread and packing detail",
+    "Bonnet bolting and gasket specification",
+    "Manufacturing tolerances and inspection plan"
+  ],
+  "release": {
+    "manufacturing_authorized": false,
+    "engineering_compliance": "NOT_ASSESSED"
+  },
+  "derived": {
+    "seat_face_z": "chamber_floor_z + seat_proud_height"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "status": "STUDY_NOT_FOR_MANUFACTURE",
+  "parameters_sha256": "c35a4064403f98e3462bfea3650eebe2695ced39a15fb928f817e465169576ba",
+  "dxf_entities_read_back": 140,
+  "files": {
+    "GA_C2.png": "85dcad3e6d44e036135d8b6ab86534bcfe79cabc7987956823a1c0014dd94783",
+    "GA_C2.pdf": "b2968cf646bfc453879bc12651052dd42750d84dfe0e7bca56e1bf0f2294228e",
+    "BOM_study.json": "58791a81bb40b76f5720497cde3ca3d73220a215676d4967dc8293b47e3125ca",
+    "C2_closed.FCStd": "539c53f7901f2a2997a2e9ce234a7c995dc967ea39f2af4f00c0ad892a8e8ec5",
+    "C2_design_review.pdf": "e0429cfd8996cd464f37d03a39007c98b8b3ac86a73544cfd31ae11428327527",
+    "BOM_study.csv": "eec993f459174423840e7f2dd8f8c153d2735fd44adf782f968d0f7aeeac4ee3",
+    "GA_C2_section.dxf": "8ca7c70a224ca9ca3adf8a34961178fffbe8818d70f3504fe9c4b26671f8ca30",
+    "freecad_report.json": "c3b14ff0e0ce043e9ce7f678742143a7c067ad29a5cb99dc52536d563386dd6e",
+    "C2_open.FCStd": "7bef4835b1c4004bec32aefe5afa6ccf3970d13a654893cdce3e1485e913fbac",
+    "GA_C2.svg": "fc015493354acfbf2e98c74ea5aa08cb1488ac775c9a391c34692201e6a7d86f"
+  }
+}

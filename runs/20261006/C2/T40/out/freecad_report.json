@@ -1,0 +1,23 @@
+{
+  "version": [
+    "1",
+    "0",
+    "0",
+    "",
+    "https://code.launchpad.net/~vcs-imports/freecad/trunk",
+    "2026/08/25 11:49:11"
+  ],
+  "snapshot_scope": "Neutral geometry only, not CadQuery feature history",
+  "states": {
+    "closed": {
+      "parts": 7,
+      "valid": true,
+      "sha256": "539c53f7901f2a2997a2e9ce234a7c995dc967ea39f2af4f00c0ad892a8e8ec5"
+    },
+    "open": {
+      "parts": 7,
+      "valid": true,
+      "sha256": "7bef4835b1c4004bec32aefe5afa6ccf3970d13a654893cdce3e1485e913fbac"
+    }
+  }
+}

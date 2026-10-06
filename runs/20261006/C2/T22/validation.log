@@ -1,0 +1,14 @@
+{
+  "geometry_gate": "PASS",
+  "failures": [],
+  "motion_states": 28,
+  "flow_states": 7,
+  "reference_checks": {
+    "face_to_face_mm": 600.0000001999999,
+    "target_face_to_face_reference_mm": 600.0,
+    "upper_height_mm": 515.0000001,
+    "target_upper_height_reference_mm": 515.0,
+    "handwheel_y_span_mm": 320.0000002,
+    "target_handwheel_od_reference_mm": 320.0
+  }
+}

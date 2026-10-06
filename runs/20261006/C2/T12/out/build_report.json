@@ -1,0 +1,411 @@
+{
+  "schema": "valve.c2-build/1.0",
+  "status": "EXPLORATORY_NOT_FROZEN",
+  "parameters_sha256": "c35a4064403f98e3462bfea3650eebe2695ced39a15fb928f817e465169576ba",
+  "builder_code_sha256": "be096d9284884c09d75a0fd19c4fc5cf7bbbff121287839b4d161e36483e640a",
+  "parameters": {
+    "schema": "valve.c2-parameters/1.0",
+    "candidate": "C2-axial-lift-study",
+    "status": "EXPLORATORY_NOT_FROZEN",
+    "length_unit": "mm",
+    "working_variant": "522-35.4179 base, pending final variant confirmation",
+    "mechanism": "Vertical axial-lift disc with a retractable screw stop; no swing hinge",
+    "source_geometry_sha256": "9401cc66f20f95fbf7dcc6dbbd820f64a848e98dd4a0ebcfa4f80471ebbaa25b",
+    "values": {
+      "face_to_face": {
+        "value": 600.0,
+        "kind": "DRAWING_REFERENCE",
+        "note": "GA 600*, not a manufacturing tolerance"
+      },
+      "bore": {
+        "value": 200.0,
+        "kind": "DRAWING_REFERENCE",
+        "note": "GA diameter200*"
+      },
+      "flange_od": {
+        "value": 295.0,
+        "kind": "DRAWING_REFERENCE"
+      },
+      "raised_face_od": {
+        "value": 247.0,
+        "kind": "DRAWING_REFERENCE",
+        "note": "Flange sealing-face diameter; not shell diameter"
+      },
+      "bolt_circle": {
+        "value": 264.0,
+        "kind": "DRAWING_REFERENCE"
+      },
+      "flange_holes": {
+        "value": 12,
+        "kind": "DRAWING_REFERENCE"
+      },
+      "flange_hole_d": {
+        "value": 15.0,
+        "kind": "DRAWING_REFERENCE"
+      },
+      "flange_thickness": {
+        "value": 15.0,
+        "kind": "DRAWING_REFERENCE"
+      },
+      "raised_face_height": {
+        "value": 2.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "handwheel_od": {
+        "value": 320.0,
+        "kind": "DRAWING_REFERENCE",
+        "note": "Handwheel, not a weighted lever"
+      },
+      "upper_height": {
+        "value": 515.0,
+        "kind": "DRAWING_REFERENCE",
+        "note": "Reference upper handwheel envelope above pipe axis"
+      },
+      "stem_od": {
+        "value": 36.0,
+        "kind": "DESIGN_ASSUMPTION",
+        "note": "Simplified smooth envelope of Tr36x6; actual thread root/profile not modeled"
+      },
+      "thread_lead": {
+        "value": 6.0,
+        "kind": "DESIGN_ASSUMPTION",
+        "note": "Single-start interpretation of Tr36x6, to be checked against governing thread standard"
+      },
+      "shell_wall": {
+        "value": 20.0,
+        "kind": "DESIGN_ASSUMPTION",
+        "note": "Nominal construction offset, not verified minimum wall or pressure sizing"
+      },
+      "chamber_radius": {
+        "value": 145.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "body_top": {
+        "value": 210.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "bonnet_flange_radius": {
+        "value": 180.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "bonnet_thickness": {
+        "value": 20.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "neck_radius": {
+        "value": 65.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "neck_top": {
+        "value": 360.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "stem_bore_radius": {
+        "value": 22.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "packing_bottom": {
+        "value": 330.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "seat_od": {
+        "value": 228.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "seat_thickness": {
+        "value": 10.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "disc_od": {
+        "value": 240.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "disc_thickness": {
+        "value": 14.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "guide_od": {
+        "value": 52.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "guide_id": {
+        "value": 40.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "guide_height": {
+        "value": 80.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "inlet_transition_end": {
+        "value": 155.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "lower_channel_z": {
+        "value": -80.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "lower_channel_y_radius": {
+        "value": 120.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "lower_channel_z_radius": {
+        "value": 65.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "outlet_transition_start": {
+        "value": 400.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "upper_channel_z": {
+        "value": 100.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "upper_channel_y_radius": {
+        "value": 100.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "upper_channel_z_radius": {
+        "value": 80.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "body_bottom": {
+        "value": -165.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "body_flange_thickness": {
+        "value": 12.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "packing_height": {
+        "value": 20.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "handwheel_rim_radius": {
+        "value": 10.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "handwheel_hub_radius": {
+        "value": 30.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "handwheel_hub_height": {
+        "value": 20.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "spoke_width": {
+        "value": 16.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "spoke_thickness": {
+        "value": 14.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "spoke_overlap": {
+        "value": 5.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "stem_square": {
+        "value": 24.0,
+        "kind": "DRAWING_REFERENCE",
+        "note": "GA square24* with handwheel omitted; provisional identification of drive interface"
+      },
+      "square_drive_clearance": {
+        "value": 0.2,
+        "kind": "DESIGN_ASSUMPTION",
+        "note": "Geometric clearance only; not a manufacturing tolerance"
+      },
+      "stem_travel": {
+        "value": 57.0,
+        "kind": "DRAWING_REFERENCE",
+        "note": "GA57* spindle/handwheel travel; not directly measured free disc lift"
+      },
+      "disc_max_lift": {
+        "value": 57.0,
+        "kind": "DESIGN_ASSUMPTION",
+        "note": "Proposed maximum free disc lift, numerically equal to reference spindle travel but not independently dimensioned by source"
+      },
+      "chamber_floor_z": {
+        "value": 20.0,
+        "kind": "DESIGN_ASSUMPTION"
+      },
+      "seat_proud_height": {
+        "value": 2.0,
+        "kind": "DESIGN_ASSUMPTION",
+        "note": "Proposed protrusion keeps disc off body web; not a controlled tolerance"
+      }
+    },
+    "unresolved": [
+      "Exact free-lift/capture mechanism",
+      "Controlled materials, allowable stresses and service pressure",
+      "Seat finish and leakage criteria",
+      "Thread and packing detail",
+      "Bonnet bolting and gasket specification",
+      "Manufacturing tolerances and inspection plan"
+    ],
+    "release": {
+      "manufacturing_authorized": false,
+      "engineering_compliance": "NOT_ASSESSED"
+    },
+    "derived": {
+      "seat_face_z": "chamber_floor_z + seat_proud_height"
+    }
+  },
+  "poses": {
+    "closed": {
+      "disc_lift_mm": 0.0,
+      "stem_retraction_mm": 0.0,
+      "fluid_solid_count": 2,
+      "parts": {
+        "body": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 17830310.405330516
+        },
+        "seat_ring": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 94122.11590155028
+        },
+        "bonnet": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 3533192.17785976
+        },
+        "packing": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 10053.096491487346
+        },
+        "disc_guide": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 702711.4447549647
+        },
+        "stem": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 420706.1599447633
+        },
+        "handwheel": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 440536.29038860765
+        }
+      }
+    },
+    "check_closed": {
+      "disc_lift_mm": 0.0,
+      "stem_retraction_mm": 57.0,
+      "fluid_solid_count": 2,
+      "parts": {
+        "body": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 17830310.405330516
+        },
+        "seat_ring": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 94122.11590155028
+        },
+        "bonnet": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 3533192.17785976
+        },
+        "packing": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 10053.096491487346
+        },
+        "disc_guide": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 702711.4447549647
+        },
+        "stem": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 420706.1599447633
+        },
+        "handwheel": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 440536.2903886077
+        }
+      }
+    },
+    "open": {
+      "disc_lift_mm": 57.0,
+      "stem_retraction_mm": 57.0,
+      "fluid_solid_count": 1,
+      "parts": {
+        "body": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 17830310.405330516
+        },
+        "seat_ring": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 94122.11590155028
+        },
+        "bonnet": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 3533192.17785976
+        },
+        "packing": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 10053.096491487346
+        },
+        "disc_guide": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 702711.4447549647
+        },
+        "stem": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 420706.1599447633
+        },
+        "handwheel": {
+          "valid": true,
+          "solids": 1,
+          "volume_mm3": 440536.2903886077
+        }
+      }
+    }
+  },
+  "manufacturing_authorized": false,
+  "asset_hashes": {
+    "closed/disc_guide.step": "a9b823dec63d6689679c36a5dc83acc65c6d6c9774a2a452db56d868ee095a41",
+    "closed/seat_ring.step": "e3caeaf528c7896cdab24f637218b23a517375d7c0e71a8d50b5d9b065433453",
+    "closed/bonnet.step": "ca851bc01d6604dbd366c97a18b2b08ff3439b6c3126eec251872b7a65d70e21",
+    "closed/body.step": "c9782fb91e1ed951ef4dad35c2a8ee561c8da248bb6af8d1bec61e62fc857f51",
+    "closed/handwheel.step": "640ea40df881a60861d1fdae00fb757a66f5c38a06cb5c7f257e1db43672b53e",
+    "closed/fluid_domain_mm.step": "52bb7a7ba0c9b12e34f6148b2107d4059d315efee8ac38bc2d6a272c8e363110",
+    "closed/stem.step": "287a40c1b5693be1f0398f8e1acf645ce4bebff47b43fc588ba00564c09a8800",
+    "closed/packing.step": "65c2be406f987544f8a9b84873ae45594a4b24cbcf02c97898b50d5136f56404",
+    "closed/assembly.step": "6ea81cce1f80917283b2c095aa6045a81de7bebc3076373736700dbcf4c61529",
+    "open/disc_guide.step": "24d622503d8a02dd424bbdceae2bc804b2030fb129a5a012b068135609f99c28",
+    "open/seat_ring.step": "118e0edc8e5bac414864718322adb2ae751b3d6479367ab7ebce441cd9ced1eb",
+    "open/bonnet.step": "e7256ac7b88f30e4083ed7145fea8db4b309a9c8b75f65ccdd0e1a8f9c357237",
+    "open/body.step": "c72113b109650aa654d8d144d908b8a1d9354b4a7f1429a38b98273477202e54",
+    "open/handwheel.step": "45ba17421678433e6957004e75a22d0d82ffe1bcbfc476d0cfb50fc1d6e0f92a",
+    "open/fluid_domain_mm.step": "fe48de956e871e3d10bf74da67eb75ea5068c2978bbb20602315d9868dc2bcf0",
+    "open/stem.step": "f8d5866045ee3c8a5ef9edf65cf06d01d3f75c09653dd76382bef20317c2159d",
+    "open/packing.step": "e08b050290f04fa0bade5d74e7bff93265b0ae269c5aca9983c6b749426e0dfb",
+    "open/assembly.step": "3f957e03534365c9f5ff735f821aff64c11da962bb5fe3367e5f59494fa903a2",
+    "check_closed/disc_guide.step": "176d0f389e188b339132d7ec05e9e59cdd8861c5138e0839900ba653d0e85ee9",
+    "check_closed/seat_ring.step": "ff5e5ef466f0bdd507ba295bd10a176c9b39c4d7eb1aedc19350189c55082832",
+    "check_closed/bonnet.step": "570bf7c0fc0100512308bc668ce9bc9910b40ae836c586d452ab522d326eb88c",
+    "check_closed/body.step": "b68f922cabb2c9ef1c2f8c4036b45845d069413fa6bef61093f46e982ae75cac",
+    "check_closed/handwheel.step": "40f62c59a7689f72914348d6b3ed7e22bee721df86069fb6b0b7cfd12a710ad2",
+    "check_closed/fluid_domain_mm.step": "562d75bcade3f69673c4bead02d7113700bb07d37e18dd3295277656579a088c",
+    "check_closed/stem.step": "00bea2836323adead642e5623eb84f5440fab6111430b6442d47b2513e30f496",
+    "check_closed/packing.step": "21530cc17942cebb3b5d30ec719725701908e77a266774b2c0715f7172a6d870",
+    "check_closed/assembly.step": "20faaa99c6e69dd5d636beab32ba5da6a8b2df4c85ae308070d5ff45659d294c"
+  }
+}

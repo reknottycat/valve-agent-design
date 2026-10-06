@@ -1,0 +1,8 @@
+{
+  "schema": "valve.c2-export-check/1.0",
+  "parameters_sha256": "c35a4064403f98e3462bfea3650eebe2695ced39a15fb928f817e465169576ba",
+  "status": "PASS",
+  "files_checked": 27,
+  "failures": [],
+  "manufacturing_authorized": false
+}

@@ -1,0 +1,15 @@
+test_body_contact_is_rejected_even_without_volume_overlap (test_c2_contract.C2ContractTests.test_body_contact_is_rejected_even_without_volume_overlap) ... ok
+test_brine_cannot_leak_into_base_variant (test_c2_contract.C2ContractTests.test_brine_cannot_leak_into_base_variant) ... ok
+test_calculations_never_select_pressure_or_material (test_c2_contract.C2ContractTests.test_calculations_never_select_pressure_or_material) ... ok
+test_catalog_pressure_cannot_freeze_source_pressure (test_c2_contract.C2ContractTests.test_catalog_pressure_cannot_freeze_source_pressure) ... ok
+test_failed_rebuild_cannot_leave_previous_pass (test_c2_contract.C2ContractTests.test_failed_rebuild_cannot_leave_previous_pass) ... ok
+test_free_disc_cannot_touch_retracted_stem (test_c2_contract.C2ContractTests.test_free_disc_cannot_touch_retracted_stem) ... ok
+test_missing_screw_stop_contact_rejected (test_c2_contract.C2ContractTests.test_missing_screw_stop_contact_rejected) ... ok
+test_nonfinite_boolean_results_rejected (test_c2_contract.C2ContractTests.test_nonfinite_boolean_results_rejected) ... ok
+test_source_reference_and_free_disc_lift_separated (test_c2_contract.C2ContractTests.test_source_reference_and_free_disc_lift_separated) ... ok
+test_valid_contact_classification (test_c2_contract.C2ContractTests.test_valid_contact_classification) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.005s
+
+OK

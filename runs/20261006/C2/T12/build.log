@@ -1,0 +1,130 @@
+/workspace/shared/valve-cloud-20261006/.venv-cloud/lib/python3.12/site-packages/cadquery/utils.py:82: FutureWarning: save will be removed in the next release.
+  warn(f"{f.__name__} will be removed in the next release.", FutureWarning)
+{
+  "closed": {
+    "disc_lift_mm": 0.0,
+    "stem_retraction_mm": 0.0,
+    "fluid_solid_count": 2,
+    "parts": {
+      "body": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 17830310.405330516
+      },
+      "seat_ring": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 94122.11590155028
+      },
+      "bonnet": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 3533192.17785976
+      },
+      "packing": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 10053.096491487346
+      },
+      "disc_guide": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 702711.4447549647
+      },
+      "stem": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 420706.1599447633
+      },
+      "handwheel": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 440536.29038860765
+      }
+    }
+  },
+  "check_closed": {
+    "disc_lift_mm": 0.0,
+    "stem_retraction_mm": 57.0,
+    "fluid_solid_count": 2,
+    "parts": {
+      "body": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 17830310.405330516
+      },
+      "seat_ring": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 94122.11590155028
+      },
+      "bonnet": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 3533192.17785976
+      },
+      "packing": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 10053.096491487346
+      },
+      "disc_guide": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 702711.4447549647
+      },
+      "stem": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 420706.1599447633
+      },
+      "handwheel": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 440536.2903886077
+      }
+    }
+  },
+  "open": {
+    "disc_lift_mm": 57.0,
+    "stem_retraction_mm": 57.0,
+    "fluid_solid_count": 1,
+    "parts": {
+      "body": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 17830310.405330516
+      },
+      "seat_ring": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 94122.11590155028
+      },
+      "bonnet": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 3533192.17785976
+      },
+      "packing": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 10053.096491487346
+      },
+      "disc_guide": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 702711.4447549647
+      },
+      "stem": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 420706.1599447633
+      },
+      "handwheel": {
+        "valid": true,
+        "solids": 1,
+        "volume_mm3": 440536.2903886077
+      }
+    }
+  }
+}

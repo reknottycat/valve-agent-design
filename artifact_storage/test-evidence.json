@@ -1,0 +1,16 @@
+{
+  "format": "valve-transport-test-evidence-v1",
+  "stage": "C2",
+  "date_utc": "2026-10-06",
+  "implementation_sha256": "efe99bd3cc0d5599c1110a23885e24cba4e26715fd24855f2b29c5307142041f",
+  "test_script_sha256": "481a1b51580b65296e86b0b44aa614288e9e5b47dff02e528bc2089bd215d2ba",
+  "python_version": "3.12.14",
+  "tests_per_mode": 33,
+  "total_test_runs": 66,
+  "normal_passed": true,
+  "optimized_passed": true,
+  "stage_roundtrip_files_per_mode": 17,
+  "normal_and_optimized_raw_git_equality_verified": true,
+  "linux_proc_descriptor_atomic_publication_required": true,
+  "engineering_originals_modified": false
+}

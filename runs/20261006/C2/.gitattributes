@@ -1,0 +1,8 @@
+*.step binary
+*.FCStd binary
+*.msh binary
+*.dxf binary
+*.svg binary
+*.pdf binary
+*.png binary
+*.jpg binary

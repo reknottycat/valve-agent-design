@@ -1,0 +1,131 @@
+{
+  "schema": "valve.source_manifest/1.0",
+  "retrieved_date_utc": "2026-10-06",
+  "commit": "4222b3d4df248b07777315068b9f3c99273d47c4",
+  "inputs": [
+    {
+      "local": "sources/source_requirements.jpg",
+      "repo_path": "runs/20261006/C0/T01/00_inputs/522-35.4179SB_sheet1.jpg",
+      "github_blob_sha": "0b9ebf84c185b702a0064ddc0fdd880afafa927e",
+      "url": "https://github.com/reknottycat/valve-agent-design/blob/4222b3d4df248b07777315068b9f3c99273d47c4/runs/20261006/C0/T01/00_inputs/522-35.4179SB_sheet1.jpg",
+      "content_role": "Requirements sheet with variant applicability table despite sheet1 filename"
+    },
+    {
+      "local": "sources/source_geometry.jpg",
+      "repo_path": "runs/20261006/C0/T01/00_inputs/522-35.4179SB_sheet2.jpg",
+      "github_blob_sha": "159e03e6b7b47d37c2ffc02bdc09c97323b30758",
+      "url": "https://github.com/reknottycat/valve-agent-design/blob/4222b3d4df248b07777315068b9f3c99273d47c4/runs/20261006/C0/T01/00_inputs/522-35.4179SB_sheet2.jpg",
+      "content_role": "Main section and geometry sheet despite sheet2 filename"
+    }
+  ],
+  "files": [
+    {
+      "file": "sources/fastener_detail.png",
+      "sha256": "fe87ba542ea1276334974c2ad9663c1268d1661db823e14c0a3776b8b092665a",
+      "bytes": 414334
+    },
+    {
+      "file": "sources/length600_reference.png",
+      "sha256": "458798f675479318fc3ae4b902e86df97297dc6ea51991668d97ebf480e92ac6",
+      "bytes": 515393
+    },
+    {
+      "file": "sources/notes10_26.png",
+      "sha256": "ed13038c217db442922ce89ad84dfcbcd255d9e6b988859b991dded6544431a9",
+      "bytes": 2554784
+    },
+    {
+      "file": "sources/notes1_9.png",
+      "sha256": "d088a556d3791f77e2edc11e94600e23d3a4e213b272f3beb08472a506dffbc2",
+      "bytes": 2022497
+    },
+    {
+      "file": "sources/notes27_31.png",
+      "sha256": "b2d0a2f72e64b2692015b832052edac7b604432a0c0c5c42c0ba57c07b4b5308",
+      "bytes": 1121697
+    },
+    {
+      "file": "sources/source_geometry.jpg",
+      "sha256": "9401cc66f20f95fbf7dcc6dbbd820f64a848e98dd4a0ebcfa4f80471ebbaa25b",
+      "bytes": 572436
+    },
+    {
+      "file": "sources/source_requirements.jpg",
+      "sha256": "c9e5da28d1d9e43ed3903c91f62777dc36d94c5dd32e486ab3fce5727afb8008",
+      "bytes": 566242
+    },
+    {
+      "file": "sources/spindle_disc_section.png",
+      "sha256": "cf05d32157268a341fd3cbc961bd0bb135a3ada03bdc3887555ac1040787ed08",
+      "bytes": 887191
+    },
+    {
+      "file": "sources/variant_table.png",
+      "sha256": "8a0b6050754d8660cc41012a695b7cc1336a14d8a6d17644dd60e793df12f3cf",
+      "bytes": 675982
+    }
+  ],
+  "not_bundled": [
+    {
+      "observed_file": "sources/gost1536_registry.html",
+      "sha256": "00a449d27674d853a36af7235223b016e7bcbe619e4f323a6c4c77ac6813b739",
+      "bytes": 90809,
+      "delivery": "Not copied; see source URL and report, retain private research copy only"
+    },
+    {
+      "observed_file": "sources/gost1536_viewer.json",
+      "sha256": "17d90e31bf769e0bfa14becbfc0e4cdf06cbd4f0bc306e7fc632c76a9d3ec33d",
+      "bytes": 107,
+      "delivery": "Not copied; see source URL and report, retain private research copy only"
+    },
+    {
+      "observed_file": "sources/gost33260_viewer.json",
+      "sha256": "28303329589e592d319b4a9db315b22ea92b5a9c4d2612254a56d00a58a5c985",
+      "bytes": 105,
+      "delivery": "Not copied; see source URL and report, retain private research copy only"
+    },
+    {
+      "observed_file": "sources/gost356_viewer.json",
+      "sha256": "b77dd4b8de730f00b2b4e059ffa1598086653e45dd9221c563eb1af7583a3396",
+      "bytes": 105,
+      "delivery": "Not copied; see source URL and report, retain private research copy only"
+    },
+    {
+      "observed_file": "sources/gost613_viewer.json",
+      "sha256": "17d90e31bf769e0bfa14becbfc0e4cdf06cbd4f0bc306e7fc632c76a9d3ec33d",
+      "bytes": 107,
+      "delivery": "Not copied; see source URL and report, retain private research copy only"
+    },
+    {
+      "observed_file": "sources/lpa-053.png",
+      "sha256": "3c81077f1e49cb36d3ab05ffc68057c179d62494d00c48541ebaaec079d61860",
+      "bytes": 433531,
+      "delivery": "Not copied; see source URL and report, retain private research copy only"
+    },
+    {
+      "observed_file": "sources/lpa-054.png",
+      "sha256": "4ccf687c9cc2ed36dfab802a5bd0c27f537f3cedc27879967def8483b0db58f5",
+      "bytes": 414535,
+      "delivery": "Not copied; see source URL and report, retain private research copy only"
+    },
+    {
+      "observed_file": "sources/lpa_catalog_sudarm.pdf",
+      "sha256": "5c326edb6478489cc1ebfdabb2f6232e41eaaeb3b45ae37bbb9a98a40b1a1360",
+      "bytes": 8059675,
+      "delivery": "Not copied; see source URL and report, retain private research copy only"
+    },
+    {
+      "observed_file": "sources/main_section.png",
+      "sha256": "ec41f885db65fe3d6bb8cefb881355644108adec7f1ac727521b2ea603a3d87f",
+      "bytes": 4445271,
+      "delivery": "Not copied; see source URL and report, retain private research copy only"
+    },
+    {
+      "observed_file": "sources/official_viewer_access_required.jpg",
+      "sha256": "e3a0159f7880cfaaa86820693af818b40db4b4230b641e1585cdfd26449e7057",
+      "bytes": 1802234,
+      "delivery": "Not copied; see source URL and report, retain private research copy only"
+    }
+  ],
+  "distribution_note": "Only user-provided source drawings and derived inspection crops are included; no full third-party standards/catalog PDF redistributed."
+}

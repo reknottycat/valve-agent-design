@@ -1,0 +1,50 @@
+{
+  "schema": "valve.c2-study-contract/1.0",
+  "state": "GEOMETRY_STUDY_NOT_ENGINEERING_RELEASE",
+  "working_variant": "522-35.4179",
+  "variant_selection_status": "WORKING_TARGET_MATCHING_UNSUFFIXED_SOURCE",
+  "source_matrix": "variant_input_matrix.json",
+  "source_matrix_sha256": "5a37637adbed5d0ea04b26fd3356b47156d7cd2615337f933b02ed0b1b5cf252",
+  "service_cases_from_source": [
+    {
+      "medium": "seawater",
+      "t_min_C": -2,
+      "t_max_C": 50,
+      "source_note": 4
+    }
+  ],
+  "literal_pressure_marking": "Ру6",
+  "design_pressure_MPa": null,
+  "proof_pressure_MPa": null,
+  "closure_differential_MPa": null,
+  "materials": {
+    "body": null,
+    "bonnet": null,
+    "seat": null,
+    "disc": null,
+    "stem": null,
+    "packing": null
+  },
+  "allowable_stresses": null,
+  "mechanism": "Axial-lift study inferred from section; exact detail not restored",
+  "parameter_registry": "../T11/parameters.json",
+  "reference_dimensions_are_not_manufacturing_tolerances": true,
+  "formal_baseline_frozen": false,
+  "release_authorized": false,
+  "blocking_conditions": [
+    "Pressure and temperature load cases not selected",
+    "Part-level materials and allowable properties not controlled",
+    "Detailed fastener/gasket/nut/thread/guide/packing design incomplete",
+    "Applicable standard clauses and test acceptance not verified",
+    "No actual-valve CFD/FEA or physical test evidence"
+  ],
+  "allowed_work": [
+    "Source correction",
+    "Exploratory parametric CAD",
+    "Geometry and contact validation",
+    "Explicit-unit mesh generation",
+    "Normalized calculations",
+    "Study drawings and BOM"
+  ],
+  "solver_execution": "PAUSED_AFTER_CANCELED_APPROVAL"
+}

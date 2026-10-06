@@ -1,0 +1,442 @@
+{
+  "schema": "valve.c2-export-check/1.0",
+  "parameters_sha256": "c35a4064403f98e3462bfea3650eebe2695ced39a15fb928f817e465169576ba",
+  "status": "PASS",
+  "files_checked": 27,
+  "failures": [],
+  "records": [
+    {
+      "file": "closed/body.step",
+      "sha256": "c9782fb91e1ed951ef4dad35c2a8ee561c8da248bb6af8d1bec61e62fc857f51",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 1.3323564441756278e-09,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 1
+    },
+    {
+      "file": "closed/seat_ring.step",
+      "sha256": "e3caeaf528c7896cdab24f637218b23a517375d7c0e71a8d50b5d9b065433453",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 3.092135166954352e-16,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 1
+    },
+    {
+      "file": "closed/bonnet.step",
+      "sha256": "ca851bc01d6604dbd366c97a18b2b08ff3439b6c3126eec251872b7a65d70e21",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 0.0,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 1
+    },
+    {
+      "file": "closed/packing.step",
+      "sha256": "65c2be406f987544f8a9b84873ae45594a4b24cbcf02c97898b50d5136f56404",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 0.0,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 1
+    },
+    {
+      "file": "closed/disc_guide.step",
+      "sha256": "a9b823dec63d6689679c36a5dc83acc65c6d6c9774a2a452db56d868ee095a41",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 0.0,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 1
+    },
+    {
+      "file": "closed/stem.step",
+      "sha256": "287a40c1b5693be1f0398f8e1acf645ce4bebff47b43fc588ba00564c09a8800",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 0.0,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 1
+    },
+    {
+      "file": "closed/handwheel.step",
+      "sha256": "640ea40df881a60861d1fdae00fb757a66f5c38a06cb5c7f257e1db43672b53e",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 1.3097876487289917e-09,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 1
+    },
+    {
+      "file": "closed/assembly.step",
+      "sha256": "6ea81cce1f80917283b2c095aa6045a81de7bebc3076373736700dbcf4c61529",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 9.70680572005274e-10,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 7
+    },
+    {
+      "file": "closed/fluid_domain_mm.step",
+      "sha256": "52bb7a7ba0c9b12e34f6148b2107d4059d315efee8ac38bc2d6a272c8e363110",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 3.707768655180683e-10,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 2
+    },
+    {
+      "file": "check_closed/body.step",
+      "sha256": "b68f922cabb2c9ef1c2f8c4036b45845d069413fa6bef61093f46e982ae75cac",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 1.3323564441756278e-09,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 1
+    },
+    {
+      "file": "check_closed/seat_ring.step",
+      "sha256": "ff5e5ef466f0bdd507ba295bd10a176c9b39c4d7eb1aedc19350189c55082832",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 3.092135166954352e-16,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 1
+    },
+    {
+      "file": "check_closed/bonnet.step",
+      "sha256": "570bf7c0fc0100512308bc668ce9bc9910b40ae836c586d452ab522d326eb88c",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 0.0,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 1
+    },
+    {
+      "file": "check_closed/packing.step",
+      "sha256": "21530cc17942cebb3b5d30ec719725701908e77a266774b2c0715f7172a6d870",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 0.0,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 1
+    },
+    {
+      "file": "check_closed/disc_guide.step",
+      "sha256": "176d0f389e188b339132d7ec05e9e59cdd8861c5138e0839900ba653d0e85ee9",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 0.0,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 1
+    },
+    {
+      "file": "check_closed/stem.step",
+      "sha256": "00bea2836323adead642e5623eb84f5440fab6111430b6442d47b2513e30f496",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 0.0,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 1
+    },
+    {
+      "file": "check_closed/handwheel.step",
+      "sha256": "40f62c59a7689f72914348d6b3ed7e22bee721df86069fb6b0b7cfd12a710ad2",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 1.3097809101451987e-09,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 1
+    },
+    {
+      "file": "check_closed/assembly.step",
+      "sha256": "20faaa99c6e69dd5d636beab32ba5da6a8b2df4c85ae308070d5ff45659d294c",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 9.603984963646329e-10,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 7
+    },
+    {
+      "file": "check_closed/fluid_domain_mm.step",
+      "sha256": "562d75bcade3f69673c4bead02d7113700bb07d37e18dd3295277656579a088c",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 3.7014684218629243e-10,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 2
+    },
+    {
+      "file": "open/body.step",
+      "sha256": "c72113b109650aa654d8d144d908b8a1d9354b4a7f1429a38b98273477202e54",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 1.3323564441756278e-09,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 1
+    },
+    {
+      "file": "open/seat_ring.step",
+      "sha256": "118e0edc8e5bac414864718322adb2ae751b3d6479367ab7ebce441cd9ced1eb",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 3.092135166954352e-16,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 1
+    },
+    {
+      "file": "open/bonnet.step",
+      "sha256": "e7256ac7b88f30e4083ed7145fea8db4b309a9c8b75f65ccdd0e1a8f9c357237",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 0.0,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 1
+    },
+    {
+      "file": "open/packing.step",
+      "sha256": "e08b050290f04fa0bade5d74e7bff93265b0ae269c5aca9983c6b749426e0dfb",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 0.0,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 1
+    },
+    {
+      "file": "open/disc_guide.step",
+      "sha256": "24d622503d8a02dd424bbdceae2bc804b2030fb129a5a012b068135609f99c28",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 0.0,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 1
+    },
+    {
+      "file": "open/stem.step",
+      "sha256": "f8d5866045ee3c8a5ef9edf65cf06d01d3f75c09653dd76382bef20317c2159d",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 0.0,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 1
+    },
+    {
+      "file": "open/handwheel.step",
+      "sha256": "45ba17421678433e6957004e75a22d0d82ffe1bcbfc476d0cfb50fc1d6e0f92a",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 1.3097809101451987e-09,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 1
+    },
+    {
+      "file": "open/assembly.step",
+      "sha256": "3f957e03534365c9f5ff735f821aff64c11da962bb5fe3367e5f59494fa903a2",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 9.593236895778122e-10,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 7
+    },
+    {
+      "file": "open/fluid_domain_mm.step",
+      "sha256": "fe48de956e871e3d10bf74da67eb75ea5068c2978bbb20602315d9868dc2bcf0",
+      "exchange": {
+        "status": "PASS",
+        "failures": [],
+        "relative_volume_error": 3.68369498623442e-10,
+        "relative_volume_tolerance": 1e-06
+      },
+      "unit": {
+        "status": "VERIFIED_METADATA",
+        "unit": "mm",
+        "metres_per_unit": 0.001
+      },
+      "solid_count": 1
+    }
+  ],
+  "manufacturing_authorized": false
+}
