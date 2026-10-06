@@ -1,0 +1,11 @@
+{
+  "revision": "R1_REBUILT",
+  "stage": "FROZEN_WORKING_DRAFT_R1",
+  "final_frozen": true,
+  "document_QA": "FINAL_39_PAGES_REVIEWED",
+  "source_alignment": "CONFIRMED_R1_BOUND_SCOPE",
+  "actual_valve_mesh": "V2_NATIVE_CHECK_AND_BINDING_VERIFIED_WITH_54_WARNINGS",
+  "actual_valve_PDE": "NOT_YET_COMPUTED_IN_THIS_EDITION",
+  "actual_valve_flow": "NOT_RUN",
+  "engineering_release": "HOLD"
+}

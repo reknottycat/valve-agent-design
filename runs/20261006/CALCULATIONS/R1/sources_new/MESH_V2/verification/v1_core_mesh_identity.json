@@ -1,0 +1,39 @@
+{
+  "baseline": {
+    "all_core_mesh_files_byte_identical_to_v1": true,
+    "sha256": {
+      "boundary": "75ba183896158a2f64458f4f94154d5f986b510f4964ae406427091b875bf1f4",
+      "cellZones": "dbbe464f90985692a3c8cc1922168b7f9532fc704c92c85a8b9b79af4747b93f",
+      "faceZones": "1a3fc3f2f2c7f76c597df378690ccbf4b8a8013456e58f0c87dcf4ecaca5220f",
+      "faces": "a3aa2fbf28b07f4be73d9124495bc63b264d0e44b955faa471742eaefd6151f5",
+      "neighbour": "5686501eabca28166eb07571f29b791d28b06ecf4be69744ab91f6f406c1a194",
+      "owner": "7943ceefcf315356b4f3ec3d56fd9c0e33afd4740037326e000e1bab822888b5",
+      "pointZones": "a4a6a2dcd51a046ec166f12f8fb6f70d0cc21e238dc6ae1d1db90effcf542a29",
+      "points": "9cd0ddbcc19e4511f68175301cf55fcbc2272f34e85a775e9585c45b08fde8d9"
+    }
+  },
+  "agglomerated": {
+    "all_core_mesh_files_byte_identical_to_v1": true,
+    "sha256": {
+      "boundary": "5fa7adb3ab2dc7eb1e109ccf860e69c8e5d5a6b9345908fdfaa5a0661889cc0e",
+      "cellZones": "8e196af8bdfc74089fc3f0f028a04b57855b0451c31d83b74a7e9bf74c989005",
+      "faces": "641f779d7ad74fa576549dfef38ede739716de9849573a1100929c73521edda5",
+      "neighbour": "1ba1caaee71d6934c88e18d73f64ac0a069892b471ef83056839719aa15961cd",
+      "owner": "5a90733fa0a20273cb22615f14b5c944fe389cff1249de40ec202297aaf18ab6",
+      "points": "9cd0ddbcc19e4511f68175301cf55fcbc2272f34e85a775e9585c45b08fde8d9"
+    }
+  },
+  "final_candidate": {
+    "all_core_mesh_files_byte_identical_to_v1": true,
+    "sha256": {
+      "boundary": "61b7cdb70df770ee2b82654864495fcbaeabfad1257c70707d4040889ccd1af9",
+      "cellZones": "8942f05e891e872dffd04ba640e6dad246a3710248eeb533185703b70b6ba644",
+      "faceZones": "1a3fc3f2f2c7f76c597df378690ccbf4b8a8013456e58f0c87dcf4ecaca5220f",
+      "faces": "8356a72c469120af9a9e4b538fa1b3c1a0fc365c817bb7df419258d6cc824039",
+      "neighbour": "7d6fe2bacef50eb62715fdd48155e34e749838d2c254b6e265f357c68e6ce2b7",
+      "owner": "1d8d42b66f0d6ac63c995bafe6e7a50095688506d2a16a0fc7a133c83b6e2fc0",
+      "pointZones": "a4a6a2dcd51a046ec166f12f8fb6f70d0cc21e238dc6ae1d1db90effcf542a29",
+      "points": "9cd0ddbcc19e4511f68175301cf55fcbc2272f34e85a775e9585c45b08fde8d9"
+    }
+  }
+}

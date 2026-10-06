@@ -1,0 +1,2 @@
+FoamFile {version 2.0; format ascii; class dictionary; object fvOptions;}
+analyticalSource {type scalarSemiImplicitSource; active yes; scalarSemiImplicitSourceCoeffs {selectionMode all; volumeMode specific; injectionRateSuSp {T (6 0);}}}

@@ -1,0 +1,37 @@
+{
+  "scope": "DOCUMENT_SOURCE_BYTE_GUARDS_ONLY",
+  "passed": true,
+  "cases": [
+    {
+      "mode": "normal",
+      "mutation": "R0_append_byte",
+      "rejected": true
+    },
+    {
+      "mode": "normal",
+      "mutation": "fresh_append_byte",
+      "rejected": true
+    },
+    {
+      "mode": "normal",
+      "mutation": "refresh_R0_switch",
+      "rejected": true
+    },
+    {
+      "mode": "optimized",
+      "mutation": "R0_append_byte",
+      "rejected": true
+    },
+    {
+      "mode": "optimized",
+      "mutation": "fresh_append_byte",
+      "rejected": true
+    },
+    {
+      "mode": "optimized",
+      "mutation": "refresh_R0_switch",
+      "rejected": true
+    }
+  ],
+  "generator_sha256": "0050583d6820e97e0d72873a3471e4db45a7417d651c1e5d89badd3b3f9f32df"
+}

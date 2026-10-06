@@ -1,0 +1,13 @@
+{
+  "all_cells_have_four_original_facets": true,
+  "boundary_physical_identity": true,
+  "cells": 411106,
+  "conversion_differing_scalars": 51,
+  "conversion_max_absolute_difference_m": 5.551115123125783e-17,
+  "conversion_max_ulp": 1.0,
+  "faces": 865260,
+  "internal_faces": 779164,
+  "point_coordinates_bitwise_equal": false,
+  "point_index_correspondence_verified": true,
+  "points": 90900
+}

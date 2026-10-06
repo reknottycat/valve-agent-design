@@ -1,0 +1,54 @@
+{
+  "schema": "valve.c2-mesh/1.0",
+  "status": "EXPLORATORY_MESH_ONLY",
+  "solver_run": false,
+  "engineering_compliance": "NOT_ASSESSED",
+  "manufacturing_authorized": false,
+  "parameters_sha256": "c35a4064403f98e3462bfea3650eebe2695ced39a15fb928f817e465169576ba",
+  "source_step_sha256": "fe48de956e871e3d10bf74da67eb75ea5068c2978bbb20602315d9868dc2bcf0",
+  "mesher_code_sha256": "a74c23a55e7a79eba8090ef4308f502e400c23b378e673dfc6fac05770ed2dff",
+  "mesh_sha256": "4457944a64ee8e98d9fc9077083990129a747be2be37ef4a5de3b2662804dc3b",
+  "gmsh_version": "4.13.1",
+  "length_unit": "m",
+  "conversion": "STEP mm multiplied exactly once by0.001",
+  "nodes": 11178,
+  "tetrahedra": 47679,
+  "min_determinant_m3": 2.1746577700753964e-08,
+  "shared_face_components": 1,
+  "nonmanifold_faces": 0,
+  "boundary_coverage": "EXACT",
+  "boundary_faces": 13408,
+  "cad_volume_m3": 0.0645019263363536,
+  "mesh_volume_m3": 0.06422409143757256,
+  "relative_volume_error": 0.004307389167452681,
+  "geometry_volume_tolerance": 0.01,
+  "max_mesh_size_m": 0.035,
+  "physical_names": {
+    "inlet": [
+      1,
+      2
+    ],
+    "outlet": [
+      2,
+      2
+    ],
+    "wall": [
+      3,
+      2
+    ],
+    "fluid": [
+      4,
+      3
+    ]
+  },
+  "boundary_triangle_counts": {
+    "inlet": 212,
+    "outlet": 212,
+    "wall": 12984
+  },
+  "limitations": [
+    "No solver convergence or turbulence/wall-resolution acceptance established",
+    "Packing cavity cap and simplified wetted geometry are explicit study assumptions",
+    "No flow coefficient or pressure adequacy conclusion from this mesh"
+  ]
+}

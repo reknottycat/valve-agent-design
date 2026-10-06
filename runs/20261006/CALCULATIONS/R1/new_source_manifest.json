@@ -1,0 +1,701 @@
+{
+  "fresh_only": true,
+  "files": [
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h8_C3D4/model.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h8_C3D4/model.json",
+      "sha256": "d398203e563785384d3d1d9990ed7d510618b9350299698727c6144e21b36070",
+      "bytes": 4397
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h8_C3D4/run.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h8_C3D4/run.json",
+      "sha256": "1b7f2c4876c36c27c782dabe5e56eeafa78d1cee2d355f1b69f9e7a046701248",
+      "bytes": 459
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h8_C3D4/results.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h8_C3D4/results.json",
+      "sha256": "5db7aab245f5184bd7eb40a20f2f14d1f0c6f889b379f16ea1d0bbc7fec5e55a",
+      "bytes": 2011
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h8_C3D4/FROZEN_MANIFEST.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h8_C3D4/FROZEN_MANIFEST.json",
+      "sha256": "4218a7c51eb59a521b3263610f02d2e5857a7fb4060ffaa7f1b106ab4a1f0c89",
+      "bytes": 1567
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h6_C3D4/model.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h6_C3D4/model.json",
+      "sha256": "631051a72d34ca85d3f3a96d68862d35e72d074bcfae20eeeceb361d0d16f4c3",
+      "bytes": 4398
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h6_C3D4/run.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h6_C3D4/run.json",
+      "sha256": "f17090e55f95971635c40122849e1b50fe9aa28c9318dcbfdac5a792cffdd6dd",
+      "bytes": 458
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h6_C3D4/results.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h6_C3D4/results.json",
+      "sha256": "759a3e237c06c8bef737f5519dc2b2df879f9bb9db2fce10e048758d6d5ce206",
+      "bytes": 2013
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h6_C3D4/FROZEN_MANIFEST.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h6_C3D4/FROZEN_MANIFEST.json",
+      "sha256": "ec6b86b53e7229ade546bf3715ba2f85d6e5493513ab24d2291bbc9e1355d444",
+      "bytes": 1567
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h4_C3D4/model.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h4_C3D4/model.json",
+      "sha256": "cf917e6ba8a0066094f50238fb1f99b56c8719382c1b54ff2257c5a71146fb8c",
+      "bytes": 4404
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h4_C3D4/run.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h4_C3D4/run.json",
+      "sha256": "75001570b034bcaac267e16f400c503cd3a34a7082b42dc8e42a1995f5d626af",
+      "bytes": 459
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h4_C3D4/results.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h4_C3D4/results.json",
+      "sha256": "0d9ba169e12e02126e40bcfa07e3fa54fcc1c5e9182f947147b73664f53ed1e9",
+      "bytes": 2021
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h4_C3D4/FROZEN_MANIFEST.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h4_C3D4/FROZEN_MANIFEST.json",
+      "sha256": "08cea6a2636a66c4b77372386c86c27e8ccbe96e6ed4926f42c26f5c84c0b930",
+      "bytes": 1567
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h8_C3D10/model.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h8_C3D10/model.json",
+      "sha256": "37ca4d1392dc2508bdd09f2bc746293cb4b9b1dc6c684ac30c94715229709067",
+      "bytes": 4575
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h8_C3D10/run.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h8_C3D10/run.json",
+      "sha256": "3fb0a3a5a2e0b956b3646c30ddfeb6381baf0c01f92dce8491bd92e8d4f9fa0d",
+      "bytes": 458
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h8_C3D10/results.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h8_C3D10/results.json",
+      "sha256": "cfdf25bcafd5ea4b6c4e3f0501cfc6afe6ed5be6bc75f0463ba707d17dbf6a8d",
+      "bytes": 2103
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h8_C3D10/FROZEN_MANIFEST.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h8_C3D10/FROZEN_MANIFEST.json",
+      "sha256": "b72c9663dee32a512680e4255773377bebecc43442ea35c89f0f821edddb928b",
+      "bytes": 1399
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h6_C3D10/model.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h6_C3D10/model.json",
+      "sha256": "e917a783bba4a7aa8cc5502524dfb1cb55185ea6605622b0f1c8365b94c7e0d2",
+      "bytes": 4576
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h6_C3D10/run.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h6_C3D10/run.json",
+      "sha256": "fbe4f4e43f3034e7a66d2e5199e98367debeea8bad8d388562feffbdb3ad6131",
+      "bytes": 459
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h6_C3D10/results.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h6_C3D10/results.json",
+      "sha256": "4c11d18b691f51a0c90b9068a2ef79b19502174d95859986ae9ff49504ddb5fa",
+      "bytes": 2124
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h6_C3D10/FROZEN_MANIFEST.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h6_C3D10/FROZEN_MANIFEST.json",
+      "sha256": "3bef1ef69f4d6a338dc0a4f196457277e9277546ac04eb4f5dbb31c782d6ff86",
+      "bytes": 1399
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h4_C3D10/model.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h4_C3D10/model.json",
+      "sha256": "7b3ae5b9a447db79f365960c4811ec9f2d847c782e2c4fc6bac72e6b16fcf2f6",
+      "bytes": 4581
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h4_C3D10/run.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h4_C3D10/run.json",
+      "sha256": "0fd01940515404844495dae082ce4b75c8c26a00f175db08f5c9bf1791b56378",
+      "bytes": 457
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h4_C3D10/results.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h4_C3D10/results.json",
+      "sha256": "570b4036cd9967ca6d512c21d86ecfc3e29f248b9ad17ea16e2869f5ab8d391b",
+      "bytes": 2127
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/disc_h4_C3D10/FROZEN_MANIFEST.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/disc_h4_C3D10/FROZEN_MANIFEST.json",
+      "sha256": "7c8207b0479a73d80bc2ee8ded19e70a6ea58baf8827a771731e353cdce9b1ff",
+      "bytes": 1399
+    },
+    {
+      "path": "STRUCTURAL_NEW/summary.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/summary.json",
+      "sha256": "6fdecb138d6d39c2ba3384ac66cf93875100858fed337f0d4db803faf0e07e89",
+      "bytes": 25383
+    },
+    {
+      "path": "STRUCTURAL_NEW/summary.csv",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/summary.csv",
+      "sha256": "67add83979e15ea3517c3047ebda7db0a90f053a3808ad483db3ed4ec8ac8897",
+      "bytes": 2974
+    },
+    {
+      "path": "STRUCTURAL_NEW/README.md",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/README.md",
+      "sha256": "d927fe4f85a1936810b11676ec0071b77d8be6022fdd593d8f0a1159d66da7be",
+      "bytes": 1942
+    },
+    {
+      "path": "STRUCTURAL_NEW/scripts/structural.py",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/scripts/structural.py",
+      "sha256": "84468f96f8c83b993a63c432539e9628428be61b686399e88ab88c632c4e8b64",
+      "bytes": 20565
+    },
+    {
+      "path": "STRUCTURAL_NEW/scripts/freeze.py",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/scripts/freeze.py",
+      "sha256": "e4c0fc56decffe569e56f70c11e90acae3f6054bdef937a605d02e8bce05d401",
+      "bytes": 3096
+    },
+    {
+      "path": "STRUCTURAL_NEW/scripts/summarize.py",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/scripts/summarize.py",
+      "sha256": "e2530f8583a0072539f612a068d322da51513c324b61264ba4aadb4e6a612949",
+      "bytes": 3004
+    },
+    {
+      "path": "STRUCTURAL_NEW/evidence/persisted_source_index.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/evidence/persisted_source_index.json",
+      "sha256": "3c020f461ea1408280b935692fcba0b802706d916286e64c756cff95fe4d6aad",
+      "bytes": 1329
+    },
+    {
+      "path": "STRUCTURAL_NEW/evidence/fresh_case_gate_tests.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/evidence/fresh_case_gate_tests.json",
+      "sha256": "68da10eff7b27a7542fbdffa56ad566c0de498294d4e9aac4be149c1751c02c7",
+      "bytes": 1737
+    },
+    {
+      "path": "STRUCTURAL_NEW/evidence/extra_tampering_tests.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/evidence/extra_tampering_tests.json",
+      "sha256": "843a2a57a6cb475d700f0cf0c0989121424f67336011f3670e341616b2ca9640",
+      "bytes": 607
+    },
+    {
+      "path": "STRUCTURAL_NEW/evidence/source_gate_tests.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/evidence/source_gate_tests.json",
+      "sha256": "c850938a13d1cc5f6f32605458c805d3c9aa5141ec931836f1182c7799d57512",
+      "bytes": 703
+    },
+    {
+      "path": "STRUCTURAL_NEW/fresh_mesh_sensitivity.png",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/fresh_mesh_sensitivity.png",
+      "sha256": "8c4f8619fa244dd7dc0d914b3e29f048b30f4dba81a001ca783442f17cb214dc",
+      "bytes": 267482
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/pressure_patch_C3D4/model.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/pressure_patch_C3D4/model.json",
+      "sha256": "a3beb5c8707d59decfc6a99f23089c67f8aedce53846fa1c3520e6112107e81a",
+      "bytes": 2731
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/pressure_patch_C3D4/run.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/pressure_patch_C3D4/run.json",
+      "sha256": "bd4458d18ff6a4553081332fdbedf94479cadf377b2bcd563c74a46e528e0928",
+      "bytes": 460
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/pressure_patch_C3D4/results.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/pressure_patch_C3D4/results.json",
+      "sha256": "24942476721c9075fbe2a869be41fedbe42f90bad1119665b5d8d521e4eb90d7",
+      "bytes": 2131
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/pressure_patch_C3D4/FROZEN_MANIFEST.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/pressure_patch_C3D4/FROZEN_MANIFEST.json",
+      "sha256": "f0c9014e5ad9ce9dac234ea4926fc456e4d0e5de5b02232ab971d867c22a7c60",
+      "bytes": 1567
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/pressure_patch_C3D10/model.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/pressure_patch_C3D10/model.json",
+      "sha256": "b0aed53862433b1d82f5f11e8e1477bf112eb05761f4c789920c02eb21563c9f",
+      "bytes": 2909
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/pressure_patch_C3D10/run.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/pressure_patch_C3D10/run.json",
+      "sha256": "cab0845142aae33cc42c75bb0f36f3484f8a5881cc571cd1bbc561e7e3aabe3b",
+      "bytes": 459
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/pressure_patch_C3D10/results.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/pressure_patch_C3D10/results.json",
+      "sha256": "c703d0ec6074227acd2b3cd875385594a96b8ff256f9d4cb5ef1d526bbb346dd",
+      "bytes": 2240
+    },
+    {
+      "path": "STRUCTURAL_NEW/cases/pressure_patch_C3D10/FROZEN_MANIFEST.json",
+      "source": "/workspace/shared/valve-disc-rebuilt-20261006/cases/pressure_patch_C3D10/FROZEN_MANIFEST.json",
+      "sha256": "17465dec89215af85b19703e863d0ce95e9e13d61fb9198afa1d2d46eaca97b4",
+      "bytes": 1399
+    },
+    {
+      "path": "POISSON_NEW/n5_right/reference.json",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/n5_right/reference.json",
+      "sha256": "6fff986993f16e9edff79430f5659e6e9a276022dd4d0da9a77b01b15c1454ee",
+      "bytes": 46503
+    },
+    {
+      "path": "POISSON_NEW/n5_right/log.laplacianFoam",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/n5_right/log.laplacianFoam",
+      "sha256": "b93ebac4b216e7a5d9a36ecea60c6b4d887f6d10c3186c42f6b8c5aecc770d94",
+      "bytes": 2678
+    },
+    {
+      "path": "POISSON_NEW/n5_right/log.checkMesh",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/n5_right/log.checkMesh",
+      "sha256": "8595ae8ee5afbe3ff5004af00c3be494ec6c5af67b5f1abd8274f9b219b85ba0",
+      "bytes": 4604
+    },
+    {
+      "path": "POISSON_NEW/n5_right/constant/fvOptions",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/n5_right/constant/fvOptions",
+      "sha256": "28945f3f59893b150551f00aa7126a7b9cf9d80c0548e781d06db27e235e73f6",
+      "bytes": 239
+    },
+    {
+      "path": "POISSON_NEW/n5_right/constant/transportProperties",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/n5_right/constant/transportProperties",
+      "sha256": "4fc94872e0f435cb81d0a8c74b845f3bce5b4f0e382cfe222489268209d50e00",
+      "bytes": 107
+    },
+    {
+      "path": "POISSON_NEW/n5_right/system/fvSchemes",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/n5_right/system/fvSchemes",
+      "sha256": "b136214332bc29b6539d63f1ce859e3c2239babdb799c9893bfe9eddbccbe7e3",
+      "bytes": 296
+    },
+    {
+      "path": "POISSON_NEW/n5_right/system/fvSolution",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/n5_right/system/fvSolution",
+      "sha256": "beb227a1516d3ae6f4e79b644367420aa27910a91afe7bc541848308a9f29613",
+      "bytes": 227
+    },
+    {
+      "path": "POISSON_NEW/n10_right/reference.json",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/n10_right/reference.json",
+      "sha256": "6f97a12fbeead438430db3b153d9b2d302b880fef0131804a3821a6664609ec3",
+      "bytes": 209907
+    },
+    {
+      "path": "POISSON_NEW/n10_right/log.laplacianFoam",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/n10_right/log.laplacianFoam",
+      "sha256": "e9d6197883def41de30a4c626f00df96e9a22974ad9e616a82cc4ce2d63acd91",
+      "bytes": 2682
+    },
+    {
+      "path": "POISSON_NEW/n10_right/log.checkMesh",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/n10_right/log.checkMesh",
+      "sha256": "ef8d8a7d89b79a0959153887c551e44e7901b2c1e4afe335f91ff383037792d3",
+      "bytes": 4683
+    },
+    {
+      "path": "POISSON_NEW/n10_right/constant/fvOptions",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/n10_right/constant/fvOptions",
+      "sha256": "28945f3f59893b150551f00aa7126a7b9cf9d80c0548e781d06db27e235e73f6",
+      "bytes": 239
+    },
+    {
+      "path": "POISSON_NEW/n10_right/constant/transportProperties",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/n10_right/constant/transportProperties",
+      "sha256": "4fc94872e0f435cb81d0a8c74b845f3bce5b4f0e382cfe222489268209d50e00",
+      "bytes": 107
+    },
+    {
+      "path": "POISSON_NEW/n10_right/system/fvSchemes",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/n10_right/system/fvSchemes",
+      "sha256": "b136214332bc29b6539d63f1ce859e3c2239babdb799c9893bfe9eddbccbe7e3",
+      "bytes": 296
+    },
+    {
+      "path": "POISSON_NEW/n10_right/system/fvSolution",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/n10_right/system/fvSolution",
+      "sha256": "beb227a1516d3ae6f4e79b644367420aa27910a91afe7bc541848308a9f29613",
+      "bytes": 227
+    },
+    {
+      "path": "POISSON_NEW/n5_wrong_sign/reference.json",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/n5_wrong_sign/reference.json",
+      "sha256": "55194af2c58efdef827f06934bc06f5bb9c6bee9f1586f31eefcf420bcb99c23",
+      "bytes": 46502
+    },
+    {
+      "path": "POISSON_NEW/n5_wrong_sign/log.laplacianFoam",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/n5_wrong_sign/log.laplacianFoam",
+      "sha256": "bcacc41f4b197c9de7b666f1a5de04afd86e146326229608668576775e8ea384",
+      "bytes": 2682
+    },
+    {
+      "path": "POISSON_NEW/n5_wrong_sign/log.checkMesh",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/n5_wrong_sign/log.checkMesh",
+      "sha256": "3fa816522a70c2acbce0f52e01ed84ed76d7089147e7507975409b255d6f6110",
+      "bytes": 4614
+    },
+    {
+      "path": "POISSON_NEW/n5_wrong_sign/constant/fvOptions",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/n5_wrong_sign/constant/fvOptions",
+      "sha256": "faa890dbfd359a1d538ecae1f8fa8a8abee22e7bed77f4b723a142c330dac9c6",
+      "bytes": 238
+    },
+    {
+      "path": "POISSON_NEW/n5_wrong_sign/constant/transportProperties",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/n5_wrong_sign/constant/transportProperties",
+      "sha256": "4fc94872e0f435cb81d0a8c74b845f3bce5b4f0e382cfe222489268209d50e00",
+      "bytes": 107
+    },
+    {
+      "path": "POISSON_NEW/n5_wrong_sign/system/fvSchemes",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/n5_wrong_sign/system/fvSchemes",
+      "sha256": "b136214332bc29b6539d63f1ce859e3c2239babdb799c9893bfe9eddbccbe7e3",
+      "bytes": 296
+    },
+    {
+      "path": "POISSON_NEW/n5_wrong_sign/system/fvSolution",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/n5_wrong_sign/system/fvSolution",
+      "sha256": "beb227a1516d3ae6f4e79b644367420aa27910a91afe7bc541848308a9f29613",
+      "bytes": 227
+    },
+    {
+      "path": "POISSON_NEW/results.json",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/results.json",
+      "sha256": "75b1d453f8a36221ab89ae88415359d0458afa131dd00251446fc5042b555e7e",
+      "bytes": 9930
+    },
+    {
+      "path": "POISSON_NEW/README.zh-CN.md",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/README.zh-CN.md",
+      "sha256": "b4d809941bd0ccb030f1ac6ed0ac9c241585e98b5495d21da82f6cd3d8b0e320",
+      "bytes": 3737
+    },
+    {
+      "path": "POISSON_NEW/source-excerpts/createFields.H",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/source-excerpts/createFields.H",
+      "sha256": "909c98a946095ea9007fc5ba47d6c934c822d9632674ad6f8cf8c68ce3ce2992",
+      "bytes": 846
+    },
+    {
+      "path": "POISSON_NEW/source-excerpts/laplacianFoam.C",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/source-excerpts/laplacianFoam.C",
+      "sha256": "03484c908ee8c184483f111f3c106232783f93938b0e96d2eceecc872265f331",
+      "bytes": 3166
+    },
+    {
+      "path": "POISSON_NEW/source-excerpts/SemiImplicitSource.C",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/source-excerpts/SemiImplicitSource.C",
+      "sha256": "31c7b64e7f52348b8aad24a89a2cd7520f882c1386df6be28142d5e1b1a13a40",
+      "bytes": 5498
+    },
+    {
+      "path": "POISSON_NEW/scripts/poisson_prepare.py",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/scripts/poisson_prepare.py",
+      "sha256": "023372b5628e67291c7011a34c573c9089446d230a6ffd74c2e717b6de705b33",
+      "bytes": 4804
+    },
+    {
+      "path": "POISSON_NEW/scripts/poisson_verify.py",
+      "source": "/workspace/shared/valve-solvers-rebuilt-20261006/scripts/poisson_verify.py",
+      "sha256": "ca42535594e30ea4db3e8ce0595927f1cb494c504ea6e6c5e4b9648f29643cda",
+      "bytes": 4806
+    },
+    {
+      "path": "FLOW_PLAN_NEW/flow_study_plan.json",
+      "source": "/workspace/shared/valve-cfd-rebuilt-20261006/evidence/flow_study_plan.json",
+      "sha256": "0a83f513c91bb1703f6b00ed6fe59db63940e9ab9530779047b815d02d36bac6",
+      "bytes": 6453
+    },
+    {
+      "path": "FLOW_PLAN_NEW/prepare_flow_study.py",
+      "source": "/workspace/shared/valve-cfd-rebuilt-20261006/scripts/prepare_flow_study.py",
+      "sha256": "b4df88963fb40432ab93194d60a0e73d52a91fa7e30bf81853907a11992f39bc",
+      "bytes": 6121
+    },
+    {
+      "path": "MESH_REPAIR_NEW/acceptance.json",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/evidence/acceptance.json",
+      "sha256": "0cf9449766c47a7bfa7a4f49721cf02d188cc2aa9810b427d9cc4f1dca32234c",
+      "bytes": 2226
+    },
+    {
+      "path": "MESH_REPAIR_NEW/agglomeration_identity.json",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/evidence/agglomeration_identity.json",
+      "sha256": "204168096f9a34db51a8d469e29243be824cb5ed82b548d011a895a798e30fcd",
+      "bytes": 2349
+    },
+    {
+      "path": "MESH_REPAIR_NEW/patch_merge_identity.json",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/evidence/patch_merge_identity.json",
+      "sha256": "21ed9b4b2f1dcb1d5ecd5781de34e2dfb928ddc479af6ba43829a2bd2af409d1",
+      "bytes": 781
+    },
+    {
+      "path": "MESH_REPAIR_NEW/source_identity.json",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/evidence/source_identity.json",
+      "sha256": "192fd3d2af181ad3bc7e9b825d79e2f5c4d5afbb1b8a6aa423f3e234edaab3c0",
+      "bytes": 396
+    },
+    {
+      "path": "MESH_REPAIR_NEW/build_provenance.json",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/evidence/build_provenance.json",
+      "sha256": "f320ce541d35ea96ed22286073ccd09bdeccae79d3289a1fcbc0220a95bac1a9",
+      "bytes": 1565
+    },
+    {
+      "path": "MESH_REPAIR_NEW/tests.normal.log",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/evidence/tests.normal.log",
+      "sha256": "f8840a69f4a6cc7a681f6ed488b5e8cd4087ee018a478e19c69c5ba88ccb32ab",
+      "bytes": 2037
+    },
+    {
+      "path": "MESH_REPAIR_NEW/tests.optimized.log",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/evidence/tests.optimized.log",
+      "sha256": "ef5b6439cb37ae07071ac7cbc4259a3e2edc8fd671c2f7333e28eb9abc994ab6",
+      "bytes": 2037
+    },
+    {
+      "path": "MESH_REPAIR_NEW/checkMesh.final.log",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/evidence/checkMesh.final.log",
+      "sha256": "f57dfd06b5fa341828f6f58d2fbf9a3c3a286388200feb6b48e41122f15437c0",
+      "bytes": 5426
+    },
+    {
+      "path": "MESH_V2/README.md",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/README.md",
+      "sha256": "f96e77c4586d75f82be1bebae9d5f3e1c8200dde28d705b73993f4454eed8f12",
+      "bytes": 6160
+    },
+    {
+      "path": "MESH_V2/SHA256SUMS",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/SHA256SUMS",
+      "sha256": "a8c945958ba10c336024349b7e37c4ad8b31266a94dbb2fa87001c241b28a0dc",
+      "bytes": 11442
+    },
+    {
+      "path": "MESH_V2/manifest_sha256.txt",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/manifest_sha256.txt",
+      "sha256": "5554196264242d61cb2fade2401c6a8e32b76d0b7468a0ac2ac8969a15baf68a",
+      "bytes": 93
+    },
+    {
+      "path": "MESH_V2/pipeline_status.json",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/pipeline_status.json",
+      "sha256": "6bfe9780ecc5ff77782c9cebbdd7b570ec7d432b3d2adc71801401472c379e82",
+      "bytes": 356
+    },
+    {
+      "path": "MESH_V2/revalidation_manifest.json",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/revalidation_manifest.json",
+      "sha256": "98976d5277a5592284cd20c9dbce095d7c7b845e036417ade65c90e5aff0bd05",
+      "bytes": 20361
+    },
+    {
+      "path": "MESH_V2/scripts/audit_agglomeration.py",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/scripts/audit_agglomeration.py",
+      "sha256": "8bc7cc90f9c1a88c5d223e24835b13d80244e2d6b6e64d7f0114a338afbc3920",
+      "bytes": 4204
+    },
+    {
+      "path": "MESH_V2/scripts/binding.py",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/scripts/binding.py",
+      "sha256": "1a4cb7b1da885b256d5a01297216fbd747e0dd2ea6e67f5f73b01800dbfa0251",
+      "bytes": 3216
+    },
+    {
+      "path": "MESH_V2/scripts/finalize_v2.py",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/scripts/finalize_v2.py",
+      "sha256": "ab62e5a14a91beff74d9fa11c678a69004356d412e467968326c00668ac8549e",
+      "bytes": 4671
+    },
+    {
+      "path": "MESH_V2/scripts/repair_mesh.py",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/scripts/repair_mesh.py",
+      "sha256": "aee1da95149e95b1a2a2580441c0b37d5489c7091a715ac4aae271eea2d8cca4",
+      "bytes": 19936
+    },
+    {
+      "path": "MESH_V2/scripts/revalidate_v2.py",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/scripts/revalidate_v2.py",
+      "sha256": "c1ec5b61599bc81988b7c77a8638c7671c1be4b901c793f33e3b375ceeaf3d75",
+      "bytes": 6447
+    },
+    {
+      "path": "MESH_V2/stage_evidence/agglomeration.json",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/stage_evidence/agglomeration.json",
+      "sha256": "2310f4385d5266bac513b5a7923e92ae7333c4275058bdf9a01dd83883adf7d0",
+      "bytes": 15361
+    },
+    {
+      "path": "MESH_V2/stage_evidence/native_agglomerated.json",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/stage_evidence/native_agglomerated.json",
+      "sha256": "c8c558de53728132e92ecdc075082582f9468e822922d4347427dfc28985744c",
+      "bytes": 6905
+    },
+    {
+      "path": "MESH_V2/stage_evidence/native_agglomerated.log",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/stage_evidence/native_agglomerated.log",
+      "sha256": "db6746093ab33c333c8e32ddfb83c4481911f422e0cecea8ab58faa3f090aace",
+      "bytes": 5507
+    },
+    {
+      "path": "MESH_V2/stage_evidence/native_baseline.json",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/stage_evidence/native_baseline.json",
+      "sha256": "e510d391284e0e0de5f4c448df20ffe642b71a44302073a269de683f3f92f06a",
+      "bytes": 8411
+    },
+    {
+      "path": "MESH_V2/stage_evidence/native_baseline.log",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/stage_evidence/native_baseline.log",
+      "sha256": "895fee66c718e18f0c787c4c0773004c6324b6f7e91c9cdd5ac37c6bfdb02e73",
+      "bytes": 5403
+    },
+    {
+      "path": "MESH_V2/stage_evidence/native_final.json",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/stage_evidence/native_final.json",
+      "sha256": "5eaa60aacbe590d0521a7a853e09d1a6c498ac880d2ffa8e84021d15101ae0ef",
+      "bytes": 6576
+    },
+    {
+      "path": "MESH_V2/stage_evidence/native_final.log",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/stage_evidence/native_final.log",
+      "sha256": "e77307a24437cb527d4d35bd1d21594a40aa31ec03dbb35b9716539fa7f5c9bf",
+      "bytes": 5518
+    },
+    {
+      "path": "MESH_V2/stage_evidence/patch_merge.json",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/stage_evidence/patch_merge.json",
+      "sha256": "3a813bccaa1c23ab4a3a32c01881b5fda6ef60cdec14a907af199d134cf8cead",
+      "bytes": 11762
+    },
+    {
+      "path": "MESH_V2/stage_evidence/source_identity.json",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/stage_evidence/source_identity.json",
+      "sha256": "f4e9f03ea853193a727ac12e966c0e8dde3061149adaf1d2505aa969c0d7a126",
+      "bytes": 8625
+    },
+    {
+      "path": "MESH_V2/tests/test_binding.py",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/tests/test_binding.py",
+      "sha256": "3830954c25ea015c4e35adbcd26877aa964b5547cc8806eb02be3d6380b5c53f",
+      "bytes": 4524
+    },
+    {
+      "path": "MESH_V2/tests/test_repair.py",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/tests/test_repair.py",
+      "sha256": "f11292aacda4802eaaeee001deaa734bb9fd14a647b82ddbe593774e3e0c2195",
+      "bytes": 6158
+    },
+    {
+      "path": "MESH_V2/verification/acceptance.normal.json",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/verification/acceptance.normal.json",
+      "sha256": "5ba7577797f5a7a0b87ea0c6faa0f7219db3d721d2ed16969174a60f2e896406",
+      "bytes": 2547
+    },
+    {
+      "path": "MESH_V2/verification/acceptance.optimized.json",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/verification/acceptance.optimized.json",
+      "sha256": "8a068093941c9d4a88778eb3ff211bad274834e67eba83e5d818e7b58ac89263",
+      "bytes": 2547
+    },
+    {
+      "path": "MESH_V2/verification/finalize.normal.log",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/verification/finalize.normal.log",
+      "sha256": "ebb7e4ac2368a5fff7a0789dacaa9500d6e605abe9122884cf21943094d5fa1f",
+      "bytes": 112
+    },
+    {
+      "path": "MESH_V2/verification/finalize.optimized.log",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/verification/finalize.optimized.log",
+      "sha256": "ebb7e4ac2368a5fff7a0789dacaa9500d6e605abe9122884cf21943094d5fa1f",
+      "bytes": 112
+    },
+    {
+      "path": "MESH_V2/verification/independent-finalize.json",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/verification/independent-finalize.json",
+      "sha256": "cab0152e88b74cfe4e36cad312fe2db5ad72809d9acb6bd77a631f3a2e39af72",
+      "bytes": 2547
+    },
+    {
+      "path": "MESH_V2/verification/independent-review.json",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/verification/independent-review.json",
+      "sha256": "db886e46c3559de5155d390e5056bf41973b337fd2b343253571c9c768e02b3f",
+      "bytes": 2736
+    },
+    {
+      "path": "MESH_V2/verification/revalidation.log",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/verification/revalidation.log",
+      "sha256": "ca7f435ee07ace7cc991896326ec6ab108d8976a14acd9a0202381ef6cd07983",
+      "bytes": 135
+    },
+    {
+      "path": "MESH_V2/verification/tests.first-attempt.normal.log",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/verification/tests.first-attempt.normal.log",
+      "sha256": "3cd58b9c556152738adbb17ed092c2ddb6d65272dffcade72ecba47f3d06ba02",
+      "bytes": 287438
+    },
+    {
+      "path": "MESH_V2/verification/tests.first-attempt.optimized.log",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/verification/tests.first-attempt.optimized.log",
+      "sha256": "6de844b038aeed00523e50d038793acaceaa2ec93eb4149a4359b4acac7bda2c",
+      "bytes": 291110
+    },
+    {
+      "path": "MESH_V2/verification/tests.normal.log",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/verification/tests.normal.log",
+      "sha256": "5ea65f9c4212cf6786a929fb492c929309116eb0d366287fb76282f84a0a37fe",
+      "bytes": 3282
+    },
+    {
+      "path": "MESH_V2/verification/tests.optimized.log",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/verification/tests.optimized.log",
+      "sha256": "bc7638c290b0ceac51d631b8f997c82f6e9b3ee4c3110ec5f3417e898c60b5c2",
+      "bytes": 3282
+    },
+    {
+      "path": "MESH_V2/verification/v1_core_mesh_identity.json",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/verification/v1_core_mesh_identity.json",
+      "sha256": "ee14b11fa3f1c28970cb5f4d59a10ff6ca414d0498dbce19d650a2ecc996e3ba",
+      "bytes": 2182
+    },
+    {
+      "path": "MESH_V2/verification/v1_payload_preservation.log",
+      "source": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/verification/v1_payload_preservation.log",
+      "sha256": "a7a5946dae0074c4d1b881d3abe7213dc434b8975369d93e73b818be9a722bf0",
+      "bytes": 3582
+    },
+    {
+      "path": "MESH_V2/book_values.json",
+      "source": "DERIVED from pinned MESH_V2/stage_evidence/native_final.log and verification/independent-review.json using add_mesh_v2_sources.py",
+      "sha256": "f67f348d031fb53f6c6e6f79588a72b9fd4093a319583cd27767bd1abed4234e",
+      "bytes": 727
+    }
+  ]
+}

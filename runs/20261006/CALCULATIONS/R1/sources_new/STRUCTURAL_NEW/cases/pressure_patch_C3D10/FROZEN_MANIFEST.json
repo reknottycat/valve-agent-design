@@ -1,0 +1,21 @@
+{
+  "schema": "disc_frozen_manifest/1",
+  "files": {
+    "disc.12d": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "disc.cvg": "65086dedb4572132b815ace04b294909c7f6f337111f9704fc310b02320f67f7",
+    "disc.dat": "30aabb36c6e2bb29f1090b0c6d48491e4ef1dfe31750c1e1be8f0022867fae6f",
+    "disc.frd": "b14061fbd37554438743cec1f3623e5460e2ccdba3ef1e5b552e38dfa6ba4289",
+    "disc.inp": "754b74506f399fa5e29b75434968093524f390f8299752c02333b8e7cacda5a6",
+    "disc.sta": "01e324ec0ea28f4d1fd7f5e2da1277af53812b873e218be1604c17a4c8e4990d",
+    "log.ccx": "4fc9ab5d63077d0ea45501f7756644faa4b886ee7b7d3eb32e55a1a85620053d",
+    "mesh.npz": "522ecda44a2a8a1c1b86455986ba7a6eb4986ce0757cc517045a644b981778db",
+    "model.json": "b0aed53862433b1d82f5f11e8e1477bf112eb05761f4c789920c02eb21563c9f",
+    "results.json": "c703d0ec6074227acd2b3cd875385594a96b8ff256f9d4cb5ef1d526bbb346dd",
+    "run.json": "cab0845142aae33cc42c75bb0f36f3484f8a5881cc571cd1bbc561e7e3aabe3b",
+    "seat_reactions.csv": "dd0179ff39f2d7eb608f923f88a35d4f6f7a508a14c2418a432e1010960a8184",
+    "solution.npz": "676ba6ee2fefe43be6ab487c1c00cc8d7522e4e4e493db3926358d7d4e5f3c01",
+    "solver_script_snapshot.py": "84468f96f8c83b993a63c432539e9628428be61b686399e88ab88c632c4e8b64",
+    "spooles.out": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "creation_only_not_verification": true
+}

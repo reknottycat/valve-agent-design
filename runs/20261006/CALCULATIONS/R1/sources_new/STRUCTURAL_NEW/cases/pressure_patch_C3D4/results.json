@@ -1,0 +1,59 @@
+{
+  "case": "pressure_patch_C3D4",
+  "fresh_evaluated_utc": "2026-10-06T21:01:43.823755+00:00",
+  "passed_integrity": true,
+  "order": "C3D4",
+  "target_h_mm": 2,
+  "nodes": 235,
+  "elements": 733,
+  "maximum_nodal_displacement_mm": 6.065871264570161e-05,
+  "maximum_nodal_displacement_xyz_mm": [
+    10.0,
+    10.0,
+    10.0
+  ],
+  "strain_energy_Nmm": 0.001740789473684211,
+  "half_external_work_Nmm": 0.00174078954,
+  "energy_relative_error": 3.809523640985191e-08,
+  "stress_kinematics_relative_error": 2.045701229302921e-06,
+  "force_equilibrium_relative_error": 2.8571428732615713e-08,
+  "free_dof_force_residual_relative": 2.3147231312374124e-08,
+  "applied_force_N": [
+    0.0,
+    0.0,
+    -62.99999999999999
+  ],
+  "reaction_force_N": [
+    -2.034646e-14,
+    9.798493e-15,
+    62.9999982
+  ],
+  "moment_residual_Nmm": [
+    -7.649900046757807e-08,
+    -3.706162088223941e-06,
+    -1.3153987500000002e-13
+  ],
+  "raw_von_mises_peak_MPa": 0.6300000000000661,
+  "seat_node_count": 44,
+  "negative_seat_nodes": 0,
+  "negative_seat_force_N": 0.0,
+  "positive_seat_force_N": 62.99999819999999,
+  "material_for_manufacturing": false,
+  "strength_pass": false,
+  "physical_contact": "BILATERAL_REFERENCE_ONLY; negative linear/midside forces require unilateral-contact HOLD",
+  "nodal_metric_warning": "Only mesh-node maxima, not rigorous quadratic interpolation extrema",
+  "patch_validation": {
+    "passed": true,
+    "displacement_relative_error": 8.975847858573901e-08,
+    "stress_relative_error": 1.9199809523809525e-13,
+    "analytic_energy_Nmm": 0.0017407894736842107
+  },
+  "raw_input_output_binding": {
+    "disc.inp": "25b539650de7b2263eb77a67af6ba9e47eb3f7e7208bd85c83fbbd133e4bd5aa",
+    "disc.dat": "75d8b0aec1b3b8783aae2b3252b1e3267a4893bbf71c90674fe692dcc2596e57",
+    "mesh.npz": "d31e7a709d53aecb961254896d7c55bc33507aab6d6cc04ed77ea7af5ac8e27c",
+    "model.json": "a3beb5c8707d59decfc6a99f23089c67f8aedce53846fa1c3520e6112107e81a",
+    "run.json": "bd4458d18ff6a4553081332fdbedf94479cadf377b2bcd563c74a46e528e0928"
+  },
+  "checker_sha256": "84468f96f8c83b993a63c432539e9628428be61b686399e88ab88c632c4e8b64"
+}

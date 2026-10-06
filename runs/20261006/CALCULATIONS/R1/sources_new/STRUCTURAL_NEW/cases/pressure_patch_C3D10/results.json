@@ -1,0 +1,61 @@
+{
+  "case": "pressure_patch_C3D10",
+  "fresh_evaluated_utc": "2026-10-06T21:01:44.441344+00:00",
+  "passed_integrity": true,
+  "order": "C3D10",
+  "target_h_mm": 2,
+  "nodes": 1400,
+  "elements": 733,
+  "maximum_nodal_displacement_mm": 6.065871264570161e-05,
+  "maximum_nodal_displacement_xyz_mm": [
+    10.0,
+    10.0,
+    10.0
+  ],
+  "strain_energy_Nmm": 0.001740789473684212,
+  "half_external_work_Nmm": 0.00174078954,
+  "energy_relative_error": 3.809523574371809e-08,
+  "stress_kinematics_relative_error": 4.975049296085388e-06,
+  "force_equilibrium_relative_error": 4.761905298649712e-09,
+  "free_dof_force_residual_relative": 4.691467053462425e-09,
+  "applied_force_N": [
+    0.0,
+    0.0,
+    -62.99999999999998
+  ],
+  "reaction_force_N": [
+    -8.644218e-14,
+    -3.0310029999999994e-14,
+    62.99999969999994
+  ],
+  "moment_residual_Nmm": [
+    -3.430668562565131e-07,
+    7.195364202239318e-07,
+    -1.0801114999999994e-13
+  ],
+  "raw_von_mises_peak_MPa": 0.6300000000002198,
+  "seat_node_count": 153,
+  "negative_seat_nodes": 0,
+  "negative_seat_force_N": -1.4881546323e-12,
+  "positive_seat_force_N": 62.99999970000145,
+  "material_for_manufacturing": false,
+  "strength_pass": false,
+  "physical_contact": "BILATERAL_REFERENCE_ONLY; negative linear/midside forces require unilateral-contact HOLD",
+  "nodal_metric_warning": "Only mesh-node maxima, not rigorous quadratic interpolation extrema",
+  "negative_seat_midside_nodes": 0,
+  "negative_seat_midside_force_N": 0.0,
+  "patch_validation": {
+    "passed": true,
+    "displacement_relative_error": 9.040605577856583e-08,
+    "stress_relative_error": 3.8549412698412696e-13,
+    "analytic_energy_Nmm": 0.0017407894736842107
+  },
+  "raw_input_output_binding": {
+    "disc.inp": "754b74506f399fa5e29b75434968093524f390f8299752c02333b8e7cacda5a6",
+    "disc.dat": "30aabb36c6e2bb29f1090b0c6d48491e4ef1dfe31750c1e1be8f0022867fae6f",
+    "mesh.npz": "522ecda44a2a8a1c1b86455986ba7a6eb4986ce0757cc517045a644b981778db",
+    "model.json": "b0aed53862433b1d82f5f11e8e1477bf112eb05761f4c789920c02eb21563c9f",
+    "run.json": "cab0845142aae33cc42c75bb0f36f3484f8a5881cc571cd1bbc561e7e3aabe3b"
+  },
+  "checker_sha256": "84468f96f8c83b993a63c432539e9628428be61b686399e88ab88c632c4e8b64"
+}

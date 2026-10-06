@@ -1,0 +1,41 @@
+{
+  "internal_faces_and_addressing_exactly_unchanged": true,
+  "kept_boundary_faces": 86092,
+  "merged_quad_count": 2,
+  "merged_quads": [
+    {
+      "cell": 116491,
+      "max_coplanarity_distance_m": 0.0,
+      "new_quad_id": 811271,
+      "patch": "wall",
+      "quad_points": [
+        16,
+        802,
+        803,
+        798
+      ],
+      "removed_triangle_ids": [
+        809913,
+        811273
+      ]
+    },
+    {
+      "cell": 116494,
+      "max_coplanarity_distance_m": 0.0,
+      "new_quad_id": 811279,
+      "patch": "wall",
+      "quad_points": [
+        801,
+        802,
+        16,
+        800
+      ],
+      "removed_triangle_ids": [
+        811281,
+        809915
+      ]
+    }
+  ],
+  "no_external_geometry_change": true,
+  "points_exactly_unchanged": true
+}

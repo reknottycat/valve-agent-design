@@ -1,0 +1,32 @@
+{
+  "baseline": "/workspace/shared/valve-cfd-rebuilt-20261006/cases/exact_hxt12_foam",
+  "baseline_hashes": {
+    "boundary": "75ba183896158a2f64458f4f94154d5f986b510f4964ae406427091b875bf1f4",
+    "cellZones": "dbbe464f90985692a3c8cc1922168b7f9532fc704c92c85a8b9b79af4747b93f",
+    "faces": "a3aa2fbf28b07f4be73d9124495bc63b264d0e44b955faa471742eaefd6151f5",
+    "neighbour": "5686501eabca28166eb07571f29b791d28b06ecf4be69744ab91f6f406c1a194",
+    "owner": "7943ceefcf315356b4f3ec3d56fd9c0e33afd4740037326e000e1bab822888b5",
+    "points": "9cd0ddbcc19e4511f68175301cf55fcbc2272f34e85a775e9585c45b08fde8d9"
+  },
+  "candidate": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/cases/agglomerated",
+  "identity": {
+    "all_cells_have_four_original_facets": true,
+    "boundary_physical_identity": true,
+    "cells": 411106,
+    "conversion_differing_scalars": 51,
+    "conversion_max_absolute_difference_m": 5.551115123125783e-17,
+    "conversion_max_ulp": 1.0,
+    "faces": 865260,
+    "internal_faces": 779164,
+    "point_coordinates_bitwise_equal": false,
+    "point_index_correspondence_verified": true,
+    "points": 90900
+  },
+  "meshio": "5.3.5",
+  "numpy": "2.5.3",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "script_sha256": "5cdd308ae16426181e6d826023ae7b05ccde89bf452c53874f37a3e71fe423aa",
+  "source": "/workspace/shared/valve-cfd-rebuilt-20261006/cases/exact_hxt12/fluid_si.msh",
+  "source_sha256": "df5a517ff53b569a481315614d3cd4d8ba1662095fa3c7eeae96dd3cbd2430a3",
+  "status": "RUNNING_EXTERNAL_VALIDATION_REQUIRED"
+}

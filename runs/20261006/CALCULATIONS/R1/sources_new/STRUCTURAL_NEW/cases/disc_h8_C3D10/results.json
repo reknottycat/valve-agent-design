@@ -1,0 +1,55 @@
+{
+  "case": "disc_h8_C3D10",
+  "fresh_evaluated_utc": "2026-10-06T21:03:42.657020+00:00",
+  "passed_integrity": true,
+  "order": "C3D10",
+  "target_h_mm": 8,
+  "nodes": 16826,
+  "elements": 8963,
+  "maximum_nodal_displacement_mm": 0.043723390627652375,
+  "maximum_nodal_displacement_xyz_mm": [
+    298.30268715140494,
+    0.6617302225091453,
+    29.0
+  ],
+  "strain_energy_Nmm": 178.67995595322097,
+  "half_external_work_Nmm": 178.6799556277344,
+  "energy_relative_error": 1.821617745534354e-09,
+  "stress_kinematics_relative_error": 3.548993344226364e-05,
+  "force_equilibrium_relative_error": 1.433149013240813e-08,
+  "free_dof_force_residual_relative": 6.268247265461777e-09,
+  "applied_force_N": [
+    -5.684341886080802e-14,
+    3.2374103398069565e-13,
+    -25700.838014274912
+  ],
+  "reaction_force_N": [
+    -7.515789e-11,
+    3.3149954e-10,
+    25700.837645943517
+  ],
+  "moment_residual_Nmm": [
+    -0.01180975226934411,
+    -0.03886059675581066,
+    -8.989477606746732e-09
+  ],
+  "raw_von_mises_peak_MPa": 23.030610058990405,
+  "seat_node_count": 823,
+  "negative_seat_nodes": 454,
+  "negative_seat_force_N": -34294.08921645649,
+  "positive_seat_force_N": 59994.926862399996,
+  "material_for_manufacturing": false,
+  "strength_pass": false,
+  "physical_contact": "BILATERAL_REFERENCE_ONLY; negative linear/midside forces require unilateral-contact HOLD",
+  "nodal_metric_warning": "Only mesh-node maxima, not rigorous quadratic interpolation extrema",
+  "negative_seat_midside_nodes": 337,
+  "negative_seat_midside_force_N": -26752.311049156484,
+  "raw_input_output_binding": {
+    "disc.inp": "d3d1f3a4ec5c2790b759afc038b9621788103308c4feaebe96988691294b68be",
+    "disc.dat": "b997153fb1577adb741291c1b4d3f64780c8e7c0ae89f59340c5d43803140dd2",
+    "mesh.npz": "0774558f4e1757063097bcfae27c16874fc09b56ba3b998888998da1346b2f77",
+    "model.json": "37ca4d1392dc2508bdd09f2bc746293cb4b9b1dc6c684ac30c94715229709067",
+    "run.json": "3fb0a3a5a2e0b956b3646c30ddfeb6381baf0c01f92dce8491bd92e8d4f9fa0d"
+  },
+  "checker_sha256": "84468f96f8c83b993a63c432539e9628428be61b686399e88ab88c632c4e8b64"
+}

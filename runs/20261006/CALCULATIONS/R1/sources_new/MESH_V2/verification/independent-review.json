@@ -1,0 +1,59 @@
+{
+  "schema": "independent_mesh_revalidation_review/1",
+  "observed_utc": "2026-10-06T21:40:47.788418+00:00",
+  "target": "fresh rebuilt valve mesh and revalidation_v2",
+  "pinned_manifest_sha256": "98976d5277a5592284cd20c9dbce095d7c7b845e036417ade65c90e5aff0bd05",
+  "pinned_manifest_matches": true,
+  "frozen_v1_archive_sha256": "23e8105fad661a0f8dedc4dff78a4ccc57f1c848ea59a0ef3fd841dbcf8d3113",
+  "v1_payload_files_unchanged": 78,
+  "v2_core_mesh_matches_v1": true,
+  "geometry_checks": {
+    "source_sha256": "df5a517ff53b569a481315614d3cd4d8ba1662095fa3c7eeae96dd3cbd2430a3",
+    "source_native_identity_verified": true,
+    "conversion_scalars_differing_one_ulp": 51,
+    "maximum_conversion_difference_m": 5.551115123125783e-17,
+    "disjoint_convex_tetrahedron_pairs": 7,
+    "all_final_cell_determinants_recomputed": 411099,
+    "independent_minimum_determinant": 0.0010289095826444326,
+    "determinants_below_0_001": 0,
+    "serialized_cell_partition_and_boundary_identity_verified": true,
+    "coplanar_boundary_triangle_pairs": 2,
+    "native_baseline_to_final_points_byte_identical": true,
+    "inlet_area_m2": 0.03136548490545939,
+    "outlet_area_m2": 0.03136548490545938
+  },
+  "gate_tests": {
+    "normal_tests": 31,
+    "normal_passed": true,
+    "optimized_tests": 31,
+    "optimized_passed": true,
+    "test_fixture_requirement": "TMPDIR on the package filesystem and outside the package, because fixtures use hard links",
+    "original_owner_999999_false_acceptance_reproduced_in_v1": true,
+    "owner_999999_rejected_in_v2": true,
+    "old_pass_audit_output_invalidated_on_failure": true,
+    "other_rejections": [
+      "faces changed",
+      "native log replaced",
+      "audit report replaced",
+      "neighbour file missing",
+      "diagnostic set changed",
+      "audit code changed",
+      "manifest digest changed"
+    ]
+  },
+  "native_evidence": {
+    "fresh_baseline": "Expected nine small determinant cells; remains FAIL",
+    "fresh_agglomerated": "Expected two planar/concave cells; remains FAIL",
+    "fresh_final": "Mesh OK",
+    "input_code_and_log_binding_verified": true,
+    "current_native_executable_and_env_match_recorded_hashes": true
+  },
+  "independent_finalize_report_sha256": "cab0152e88b74cfe4e36cad312fe2db5ad72809d9acb6bd77a631f3a2e39af72",
+  "conclusion": "No remaining implementation blocker within reviewed mesh-revalidation scope",
+  "limitations": [
+    "54 faces above 70 degrees nonorthogonality remain; maximum 77.471484007812791 degrees",
+    "Mesh quality and geometry identity do not establish PDE or valve-flow convergence or accuracy",
+    "No physical flow solve, remeshing or package modification was performed by this reviewer",
+    "No manufacturing approval"
+  ]
+}

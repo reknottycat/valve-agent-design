@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "plan_only": true,
+  "plan_output_values_all_null": true,
+  "current_mesh_files_match_new_acceptance": true,
+  "mesh_native_log_sha256": "f57dfd06b5fa341828f6f58d2fbf9a3c3a286388200feb6b48e41122f15437c0",
+  "not_a_PDE_or_flow_acceptance": true
+}

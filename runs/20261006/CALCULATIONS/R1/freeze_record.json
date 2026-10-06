@@ -1,0 +1,79 @@
+{
+  "revision": "R1_REBUILT_WORKING_DRAFT",
+  "frozen_utc": "2026-10-06T21:51:37.320553+00:00",
+  "document_snapshot_frozen": true,
+  "engineering_approval": false,
+  "manufacturing_release": "HOLD",
+  "pages": 39,
+  "native_editable_equations": 78,
+  "tables": 48,
+  "arithmetic_checks": 197,
+  "source_files": 148,
+  "frozen_files": [
+    {
+      "path": "output/522-35.4179_工程计算书_工作稿_R1_重建版.docx",
+      "sha256": "ece9783ae9a911a0dee7f49b1992035dab9ad72fea24acdc3d36469ed5d7942e",
+      "bytes": 579961
+    },
+    {
+      "path": "output/522-35.4179_工程计算书_工作稿_R1_重建版.pdf",
+      "sha256": "4086ef20943c7961ba3301ad079fea4b030bf43edd68aeb5e74e1c1201a82eed",
+      "bytes": 2597797
+    },
+    {
+      "path": "build_calculation_book.py",
+      "sha256": "0050583d6820e97e0d72873a3471e4db45a7417d651c1e5d89badd3b3f9f32df",
+      "bytes": 75670
+    },
+    {
+      "path": "rebuilt_chapters.py",
+      "sha256": "78852fa6887db8b3e7f53598fc09d9d948ebf382c399324c2daf3af1d9f9487a",
+      "bytes": 15922
+    },
+    {
+      "path": "current_flow_chapter.py",
+      "sha256": "b9592e0ac945f19127b57ed0db244f78881974401aff824754fe006b9b369eb4",
+      "bytes": 5631
+    },
+    {
+      "path": "source_manifest.json",
+      "sha256": "b7aaaa6e7c213729abd3388338a5978d087753952a006e4c654ef13e8edd42a2",
+      "bytes": 7978
+    },
+    {
+      "path": "new_source_manifest.json",
+      "sha256": "b0874390b8abf04637b581c1d00dad96eab092e3f317ce50cfa3b70528bf7850",
+      "bytes": 32922
+    },
+    {
+      "path": "arithmetic_verification.json",
+      "sha256": "0edbc233794ca2a3544f2fc7cb0db67fedb68470c33494e27fe90ac8f9e81f74",
+      "bytes": 29993
+    },
+    {
+      "path": "verification/final_visual_QA.json",
+      "sha256": "463716dfb87dd4b88267b9b44d3fee6835d52854677f8817ed3fb4ddb08fc559",
+      "bytes": 5645
+    },
+    {
+      "path": "verification/independent_review_final.md",
+      "sha256": "464505235bc7b5dfb57d695151a9f01db0f88411549bc4dc86175dab61af621e",
+      "bytes": 1753
+    },
+    {
+      "path": "verification/mesh_v2_final_source_binding.json",
+      "sha256": "b130ab2c676a4e7b8a5ed4eca8f32c45541603d28dedc7b5365ef18c2d0a0850",
+      "bytes": 519
+    },
+    {
+      "path": "verification/generation_tests.json",
+      "sha256": "9f84872f090bac5fd072c647e5839d40c170fd4ee282b108f22ba58b52cbee11",
+      "bytes": 553
+    },
+    {
+      "path": "verification/source_guard_test_results.json",
+      "sha256": "25baea3563a45996ddc8b5d6aeb0620185be958fcbc1bd522d9936aed866c29e",
+      "bytes": 772
+    }
+  ]
+}

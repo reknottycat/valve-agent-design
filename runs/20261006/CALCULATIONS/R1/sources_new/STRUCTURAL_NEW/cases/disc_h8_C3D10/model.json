@@ -1,0 +1,184 @@
+{
+  "schema": "fresh_disc_structural/1",
+  "case": "disc_h8_C3D10",
+  "fresh_created_utc": "2026-10-06T21:03:32.800335+00:00",
+  "patch": false,
+  "order": "C3D10",
+  "target_h_mm": 8,
+  "nodes": 16826,
+  "elements": 8963,
+  "sources": {
+    "solver_env": {
+      "path": "/workspace/shared/valve-solvers-rebuilt-20261006/env.sh",
+      "sha256": "0be53f0be3749606df05d46fe49f5927c26c3e58b6838cb560e7adea2b2f4528"
+    },
+    "solver_baseline": {
+      "path": "/workspace/shared/valve-solvers-rebuilt-20261006/evidence/fresh-baseline-results.json",
+      "sha256": "53a40365d2a47cae6d67ed28aa8c3fe0ec57405b84e8752937a2568a0a5c16ec"
+    },
+    "source_step": {
+      "path": "/workspace/shared/valve-cloud-recovered-20261006/runs/20261006/C2/T12/out/check_closed/disc_guide.step",
+      "sha256": "176d0f389e188b339132d7ec05e9e59cdd8861c5138e0839900ba653d0e85ee9"
+    },
+    "material_card": {
+      "path": "/workspace/shared/valve-cloud-recovered-20261006/runs/20261006/CALCULATIONS/R0/sources/C5/T05/material_cards.json",
+      "sha256": "7cfbbca2adb2698ad623278fcfe53704f11d4eaf89f3395ef386487860216c09"
+    },
+    "R0_source_manifest": {
+      "path": "/workspace/shared/valve-cloud-recovered-20261006/runs/20261006/CALCULATIONS/R0/source_manifest.json",
+      "sha256": "b7aaaa6e7c213729abd3388338a5978d087753952a006e4c654ef13e8edd42a2"
+    }
+  },
+  "gmsh_version": "4.13.1",
+  "cad_volume_before_mm3": 702711.4447549793,
+  "cad_volume_after_mm3": 702711.4447549765,
+  "mesh_volume_mm3": 702420.6533830735,
+  "mesh_volume_relative_error": -0.0004138133426975221,
+  "quality_minSICN_min": 0.2912805265550478,
+  "quality_minSICN_median": 0.8409445646864033,
+  "surfaces": [
+    {
+      "tag": 8,
+      "kind": "dry",
+      "area_mm2": 31415.926535897932,
+      "bbox": [
+        199.9999999,
+        -100.0000001,
+        21.9999999,
+        400.0000001,
+        100.0000001,
+        22.0000001
+      ]
+    },
+    {
+      "tag": 9,
+      "kind": "seat",
+      "area_mm2": 9412.211590155028,
+      "bbox": [
+        185.9999999,
+        -114.0000001,
+        21.9999999,
+        414.0000001,
+        114.0000001,
+        22.0000001
+      ]
+    },
+    {
+      "tag": 10,
+      "kind": "wet",
+      "area_mm2": 10555.7513160624,
+      "bbox": [
+        179.9999999,
+        -120.0000001,
+        21.9999999,
+        420.0000001,
+        120.0000001,
+        36.0000001
+      ]
+    },
+    {
+      "tag": 11,
+      "kind": "wet",
+      "area_mm2": 4410.796085640082,
+      "bbox": [
+        179.9999999,
+        -120.0000001,
+        21.9999999,
+        420.0000001,
+        120.0000001,
+        22.0000001
+      ]
+    },
+    {
+      "tag": 12,
+      "kind": "wet",
+      "area_mm2": 43115.21757786633,
+      "bbox": [
+        179.9999999,
+        -120.0000001,
+        35.9999999,
+        420.0000001,
+        120.0000001,
+        36.0000001
+      ]
+    },
+    {
+      "tag": 13,
+      "kind": "wet",
+      "area_mm2": 13069.025438934397,
+      "bbox": [
+        273.9999999,
+        -26.0000001,
+        35.9999999,
+        326.0000001,
+        26.0000001,
+        116.0000001
+      ]
+    },
+    {
+      "tag": 14,
+      "kind": "wet",
+      "area_mm2": 867.0795723907831,
+      "bbox": [
+        273.9999999,
+        -26.0000001,
+        115.9999999,
+        326.0000001,
+        26.0000001,
+        116.0000001
+      ]
+    },
+    {
+      "tag": 15,
+      "kind": "wet",
+      "area_mm2": 10053.096491488,
+      "bbox": [
+        279.9999999,
+        -20.0000001,
+        35.9999999,
+        320.0000001,
+        20.0000001,
+        116.0000001
+      ]
+    },
+    {
+      "tag": 16,
+      "kind": "wet",
+      "area_mm2": 1256.6370614359173,
+      "bbox": [
+        279.9999999,
+        -20.0000001,
+        35.9999999,
+        320.0000001,
+        20.0000001,
+        36.0000001
+      ]
+    }
+  ],
+  "E_MPa": 114000.0,
+  "nu": 0.32,
+  "pressure_MPa": 0.63,
+  "analytic_Fz_N": -25721.72701941336,
+  "force_resultant_N": [
+    -1.616484723854228e-13,
+    -3.694822225952521e-13,
+    -25700.83801427479
+  ],
+  "force_area_relative_error": 0.0008121151866202769,
+  "load_moment_Nmm": [
+    4.888534022029489e-12,
+    -3.086597644141875e-11,
+    -3.382183422218077e-12
+  ],
+  "origin_mm": [
+    300,
+    0,
+    22
+  ],
+  "material_for_manufacturing": false,
+  "allowable_stress_MPa": null,
+  "contact": "Bilateral rigid frictionless seat; not unilateral contact",
+  "temperature_qualification": false,
+  "source_linear_mesh_sha256": "d9296812b2805276f8aa9730b1f54c51c68a5ec2834ab7310f66e08a34fd38d2",
+  "geometry": "Straight-sided edge midpoints; same faceted volume as C3D4"
+}

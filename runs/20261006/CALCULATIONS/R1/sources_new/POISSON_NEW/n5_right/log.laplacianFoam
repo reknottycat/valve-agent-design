@@ -1,0 +1,63 @@
+[1791320323.601026] [10ff6c3f5d85:9    :f]        vfs_fuse.c:413  UCX  ERROR failed to create VFS socket: Operation not permitted
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:                                        |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : OPENFOAM=1912 patch=200626
+Arch   : "LSB;label=32;scalar=64"
+Exec   : laplacianFoam -case /workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/n5_right
+Date   : Oct 06 2026
+Time   : 15:58:43
+Host   : 10ff6c3f5d85
+PID    : 9
+I/O    : uncollated
+Case   : /workspace/shared/valve-solvers-rebuilt-20261006/poisson-newrun/n5_right
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+SIMPLE: convergence criteria
+    field T	 tolerance 9.9999999999999994e-12
+
+Reading field T
+
+Reading diffusivity DT
+
+Creating finite volume options from "constant/fvOptions"
+
+Selecting finite volume options type scalarSemiImplicitSource
+    Source: analyticalSource
+    - selecting all cells
+    - selected 125 cell(s) with volume 1.0000000000000007
+
+Calculating temperature distribution
+
+Time = 1
+
+DICPCG:  Solving for T, Initial residual = 1, Final residual = 8.2481124565840363e-13, No Iterations 11
+DICPCG:  Solving for T, Initial residual = 8.0855701464626331e-13, Final residual = 8.0855701464626331e-13, No Iterations 0
+DICPCG:  Solving for T, Initial residual = 8.0855701464626331e-13, Final residual = 8.0855701464626331e-13, No Iterations 0
+ExecutionTime = 0.01 s  ClockTime = 0 s
+
+Time = 2
+
+DICPCG:  Solving for T, Initial residual = 8.0855701464626331e-13, Final residual = 8.0855701464626331e-13, No Iterations 0
+DICPCG:  Solving for T, Initial residual = 8.0855701464626331e-13, Final residual = 8.0855701464626331e-13, No Iterations 0
+DICPCG:  Solving for T, Initial residual = 8.0855701464626331e-13, Final residual = 8.0855701464626331e-13, No Iterations 0
+ExecutionTime = 0.01 s  ClockTime = 0 s
+
+
+SIMPLE solution converged in 2 iterations
+
+End
+

@@ -1,0 +1,131 @@
+{
+  "schema": "fresh_disc_structural/1",
+  "case": "pressure_patch_C3D4",
+  "fresh_created_utc": "2026-10-06T21:01:43.716011+00:00",
+  "patch": true,
+  "order": "C3D4",
+  "target_h_mm": 2,
+  "nodes": 235,
+  "elements": 733,
+  "sources": {
+    "solver_env": {
+      "path": "/workspace/shared/valve-solvers-rebuilt-20261006/env.sh",
+      "sha256": "0be53f0be3749606df05d46fe49f5927c26c3e58b6838cb560e7adea2b2f4528"
+    },
+    "solver_baseline": {
+      "path": "/workspace/shared/valve-solvers-rebuilt-20261006/evidence/fresh-baseline-results.json",
+      "sha256": "53a40365d2a47cae6d67ed28aa8c3fe0ec57405b84e8752937a2568a0a5c16ec"
+    }
+  },
+  "gmsh_version": "4.13.1",
+  "cad_volume_before_mm3": 1000.0,
+  "cad_volume_after_mm3": 1000.0,
+  "mesh_volume_mm3": 1000.0,
+  "mesh_volume_relative_error": 0.0,
+  "quality_minSICN_min": 0.3296962049364745,
+  "quality_minSICN_median": 0.8299167996900988,
+  "surfaces": [
+    {
+      "tag": 1,
+      "kind": "dry",
+      "area_mm2": 99.99999999999999,
+      "bbox": [
+        -1e-07,
+        -1e-07,
+        -1e-07,
+        1e-07,
+        10.0000001,
+        10.0000001
+      ]
+    },
+    {
+      "tag": 2,
+      "kind": "dry",
+      "area_mm2": 99.99999999999999,
+      "bbox": [
+        9.9999999,
+        -1e-07,
+        -1e-07,
+        10.0000001,
+        10.0000001,
+        10.0000001
+      ]
+    },
+    {
+      "tag": 3,
+      "kind": "dry",
+      "area_mm2": 99.99999999999999,
+      "bbox": [
+        -1e-07,
+        -1e-07,
+        -1e-07,
+        10.0000001,
+        1e-07,
+        10.0000001
+      ]
+    },
+    {
+      "tag": 4,
+      "kind": "dry",
+      "area_mm2": 99.99999999999999,
+      "bbox": [
+        -1e-07,
+        9.9999999,
+        -1e-07,
+        10.0000001,
+        10.0000001,
+        10.0000001
+      ]
+    },
+    {
+      "tag": 5,
+      "kind": "seat",
+      "area_mm2": 99.99999999999999,
+      "bbox": [
+        -1e-07,
+        -1e-07,
+        -1e-07,
+        10.0000001,
+        10.0000001,
+        1e-07
+      ]
+    },
+    {
+      "tag": 6,
+      "kind": "wet",
+      "area_mm2": 99.99999999999999,
+      "bbox": [
+        -1e-07,
+        -1e-07,
+        9.9999999,
+        10.0000001,
+        10.0000001,
+        10.0000001
+      ]
+    }
+  ],
+  "E_MPa": 114000.0,
+  "nu": 0.32,
+  "pressure_MPa": 0.63,
+  "analytic_Fz_N": -63.0,
+  "force_resultant_N": [
+    0.0,
+    0.0,
+    -62.99999999999999
+  ],
+  "force_area_relative_error": 0.0,
+  "load_moment_Nmm": [
+    2.220446049250313e-15,
+    1.887379141862766e-15,
+    0.0
+  ],
+  "origin_mm": [
+    5,
+    5,
+    0
+  ],
+  "material_for_manufacturing": false,
+  "allowable_stress_MPa": null,
+  "contact": "Bilateral rigid frictionless seat; not unilateral contact",
+  "temperature_qualification": false
+}

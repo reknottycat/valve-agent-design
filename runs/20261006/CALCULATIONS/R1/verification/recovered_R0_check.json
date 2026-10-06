@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "source": "/workspace/shared/valve-cloud-recovered-20261006/runs/20261006/CALCULATIONS/R0",
+  "files": 45,
+  "method": "Actual restored file SHA256 compared with frozen artifact manifest"
+}

@@ -1,0 +1,9 @@
+{
+  "attempt_id": "a38fa1159d9941cfaa5639cf8d67af45",
+  "manifest_sha256": "98976d5277a5592284cd20c9dbce095d7c7b845e036417ade65c90e5aff0bd05",
+  "operation": "fresh_revalidation",
+  "recorded_at": "2026-10-06T21:36:34.799773+00:00",
+  "run_id": "revalidation-v2-63948730eb13490098329c8b4a7bb160",
+  "schema": "valve-mesh-evidence-v2",
+  "status": "PASS"
+}

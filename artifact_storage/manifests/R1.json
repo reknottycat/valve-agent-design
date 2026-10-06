@@ -1,0 +1,124 @@
+{
+  "format": "valve-artifact-transport-v1",
+  "original_path_prefix": "runs/20261006/",
+  "chunk_bytes": 409600,
+  "notice": "LOSSLESS TRANSPORT ONLY. Chunks are not original usable files. Run the offline restorer explicitly. Frozen scientific manifests are unchanged.",
+  "files": [
+    {
+      "path": "runs/20261006/CALCULATIONS/R1/522-35.4179_R1_计算书重建检查点.zip",
+      "bytes": 3322031,
+      "sha256": "7de84ba1c6f7654aa79948c5c39cbc76d6e10a0a0fd1f13480c6c60577e4d5fe",
+      "git_blob_sha1": "a010bbf5db6f279078e9e8f02599428dc00b5747",
+      "encoding": "zlib",
+      "encoded_bytes": 3296702,
+      "encoded_sha256": "d3f22fd7549b0dc2194cc419d7fb9937ffac73fdbebe5bb48b07e3128e873dac",
+      "chunks": [
+        {
+          "path": "artifact_storage/chunks/99a84e56649c8bf005f52f1d20c7d4490e2ce069ba7ccbd312fa99226875c3b1/000000.bin",
+          "bytes": 409600,
+          "sha256": "270b5aa10fe49014a739ff460613023a2c53e888e93d595e80d569c8536f9559"
+        },
+        {
+          "path": "artifact_storage/chunks/99a84e56649c8bf005f52f1d20c7d4490e2ce069ba7ccbd312fa99226875c3b1/000001.bin",
+          "bytes": 409600,
+          "sha256": "81f908801716765f082afbfd8a0ec5b11653e373fc853561f63675bacab30d43"
+        },
+        {
+          "path": "artifact_storage/chunks/99a84e56649c8bf005f52f1d20c7d4490e2ce069ba7ccbd312fa99226875c3b1/000002.bin",
+          "bytes": 409600,
+          "sha256": "037df61f7e34b09ab2053cb919b532f8508fc5c8804890316a5b67ee8b97c78d"
+        },
+        {
+          "path": "artifact_storage/chunks/99a84e56649c8bf005f52f1d20c7d4490e2ce069ba7ccbd312fa99226875c3b1/000003.bin",
+          "bytes": 409600,
+          "sha256": "5c6aadad6b8ae2fcaa609d4c904f3d1e050e1eedd5c2a69f8489fe9ba1de9635"
+        },
+        {
+          "path": "artifact_storage/chunks/99a84e56649c8bf005f52f1d20c7d4490e2ce069ba7ccbd312fa99226875c3b1/000004.bin",
+          "bytes": 409600,
+          "sha256": "50165992ef1a2fb9f507c217256600fa8554afabb0f851898ae07049a767f2ab"
+        },
+        {
+          "path": "artifact_storage/chunks/99a84e56649c8bf005f52f1d20c7d4490e2ce069ba7ccbd312fa99226875c3b1/000005.bin",
+          "bytes": 409600,
+          "sha256": "48f5994694723dd3f1b45182e4fa2620a6417bc179f14cb2188292bc26f0335c"
+        },
+        {
+          "path": "artifact_storage/chunks/99a84e56649c8bf005f52f1d20c7d4490e2ce069ba7ccbd312fa99226875c3b1/000006.bin",
+          "bytes": 409600,
+          "sha256": "3ee2a86a82db5e47f4eb8e036afc488cf64259d2f23d5e33d02745518210bef3"
+        },
+        {
+          "path": "artifact_storage/chunks/99a84e56649c8bf005f52f1d20c7d4490e2ce069ba7ccbd312fa99226875c3b1/000007.bin",
+          "bytes": 409600,
+          "sha256": "f0b6a5588d1116de67ee97eadad1fd8912fab846811d9e8ca241c664beb38838"
+        },
+        {
+          "path": "artifact_storage/chunks/99a84e56649c8bf005f52f1d20c7d4490e2ce069ba7ccbd312fa99226875c3b1/000008.bin",
+          "bytes": 19902,
+          "sha256": "0b5c5cd71f47793768491d568317c3b5c098c6e066a623746969b276d80d765e"
+        }
+      ],
+      "content_id": "99a84e56649c8bf005f52f1d20c7d4490e2ce069ba7ccbd312fa99226875c3b1"
+    },
+    {
+      "path": "runs/20261006/CALCULATIONS/R1/output/522-35.4179_工程计算书_工作稿_R1_重建版.pdf",
+      "bytes": 2597797,
+      "sha256": "4086ef20943c7961ba3301ad079fea4b030bf43edd68aeb5e74e1c1201a82eed",
+      "git_blob_sha1": "8ca474af0d8920371503be471ca9448a6a15ba10",
+      "encoding": "zlib",
+      "encoded_bytes": 1653376,
+      "encoded_sha256": "7a0cc860b1f02084626d5e6c48e764a713eb94d83aa1af5c2a1ffecbc05aa2fb",
+      "chunks": [
+        {
+          "path": "artifact_storage/chunks/bc8a5f3d7b997c9a9e47e98f768d030a8e4d4921dd7578309f72f6331d43ae87/000000.bin",
+          "bytes": 409600,
+          "sha256": "ef51bbbc4f0d44e0d62c0a499fc9602b5117e104e47ca97051660218aae8cc4b"
+        },
+        {
+          "path": "artifact_storage/chunks/bc8a5f3d7b997c9a9e47e98f768d030a8e4d4921dd7578309f72f6331d43ae87/000001.bin",
+          "bytes": 409600,
+          "sha256": "6572d6dd6c512c06ec1783ae4d16c4f1b53ae111c859e66a5c73e385e441e709"
+        },
+        {
+          "path": "artifact_storage/chunks/bc8a5f3d7b997c9a9e47e98f768d030a8e4d4921dd7578309f72f6331d43ae87/000002.bin",
+          "bytes": 409600,
+          "sha256": "561d41c6f9a74a246a02e325b2461df91db3ff080f175106af2827210afa7316"
+        },
+        {
+          "path": "artifact_storage/chunks/bc8a5f3d7b997c9a9e47e98f768d030a8e4d4921dd7578309f72f6331d43ae87/000003.bin",
+          "bytes": 409600,
+          "sha256": "f18d54596d40c7cfd3f2f2abacae4a5af14f16b94fab9f88496604e1e8b2b5ce"
+        },
+        {
+          "path": "artifact_storage/chunks/bc8a5f3d7b997c9a9e47e98f768d030a8e4d4921dd7578309f72f6331d43ae87/000004.bin",
+          "bytes": 14976,
+          "sha256": "ea821469d0d5d59d513fcec7f6cc12d7eca5c453f8eae82edd48845091963483"
+        }
+      ],
+      "content_id": "bc8a5f3d7b997c9a9e47e98f768d030a8e4d4921dd7578309f72f6331d43ae87"
+    },
+    {
+      "path": "runs/20261006/CALCULATIONS/R1/output/522-35.4179_工程计算书_工作稿_R1_重建版.docx",
+      "bytes": 579961,
+      "sha256": "ece9783ae9a911a0dee7f49b1992035dab9ad72fea24acdc3d36469ed5d7942e",
+      "git_blob_sha1": "de6da72207e1ac102fbe6ca679a35d7146788243",
+      "encoding": "zlib",
+      "encoded_bytes": 577256,
+      "encoded_sha256": "efeadaf8e09b1363a0ee32552d644363618de53807febc71b343a8a6d59e49c4",
+      "chunks": [
+        {
+          "path": "artifact_storage/chunks/015b38c8159cf53d1f83b11ff845acbd380241b7ab7684dbba96d7863c325fab/000000.bin",
+          "bytes": 409600,
+          "sha256": "b842bafcf7f64bc0a304ef855033886d43b0127144daa1f4cfb5358c97c85342"
+        },
+        {
+          "path": "artifact_storage/chunks/015b38c8159cf53d1f83b11ff845acbd380241b7ab7684dbba96d7863c325fab/000001.bin",
+          "bytes": 167656,
+          "sha256": "6e85e5ed7b4315535269d217964fb15709ec52a9f21a38246900a9df8031ad7a"
+        }
+      ],
+      "content_id": "015b38c8159cf53d1f83b11ff845acbd380241b7ab7684dbba96d7863c325fab"
+    }
+  ]
+}

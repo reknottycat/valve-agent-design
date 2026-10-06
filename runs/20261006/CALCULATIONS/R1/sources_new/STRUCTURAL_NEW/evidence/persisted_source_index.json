@@ -1,0 +1,27 @@
+[
+  {
+    "original_path": "/workspace/shared/valve-cloud-recovered-20261006/runs/20261006/C2/T12/out/check_closed/disc_guide.step",
+    "archive_path": "sources/01_disc_guide.step",
+    "sha256": "176d0f389e188b339132d7ec05e9e59cdd8861c5138e0839900ba653d0e85ee9"
+  },
+  {
+    "original_path": "/workspace/shared/valve-cloud-recovered-20261006/runs/20261006/CALCULATIONS/R0/sources/C5/T05/material_cards.json",
+    "archive_path": "sources/02_material_cards.json",
+    "sha256": "7cfbbca2adb2698ad623278fcfe53704f11d4eaf89f3395ef386487860216c09"
+  },
+  {
+    "original_path": "/workspace/shared/valve-cloud-recovered-20261006/runs/20261006/CALCULATIONS/R0/source_manifest.json",
+    "archive_path": "sources/03_source_manifest.json",
+    "sha256": "b7aaaa6e7c213729abd3388338a5978d087753952a006e4c654ef13e8edd42a2"
+  },
+  {
+    "original_path": "/workspace/shared/valve-cloud-recovered-20261006/runs/20261006/C2/T11/parameters.json",
+    "archive_path": "sources/04_parameters.json",
+    "sha256": "c35a4064403f98e3462bfea3650eebe2695ced39a15fb928f817e465169576ba"
+  },
+  {
+    "original_path": "/workspace/shared/valve-cloud-recovered-20261006/runs/20261006/C4/T19/pressure_areas.json",
+    "archive_path": "sources/05_pressure_areas.json",
+    "sha256": "abec1ed3f307be3e3656bb1f8ae1d2fdc6e690af38d75788a7eff863bca18a08"
+  }
+]

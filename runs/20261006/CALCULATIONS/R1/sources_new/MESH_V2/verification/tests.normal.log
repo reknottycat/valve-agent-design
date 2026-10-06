@@ -1,0 +1,36 @@
+test_agglomeration_cli_invalidates_old_pass (test_binding.AuditOutputInvalidationTests.test_agglomeration_cli_invalidates_old_pass) ... ok
+test_merge_cli_invalidates_old_pass (test_binding.AuditOutputInvalidationTests.test_merge_cli_invalidates_old_pass) ... ok
+test_audit_code_mutation_rejected (test_binding.FrozenBindingTests.test_audit_code_mutation_rejected) ... ok
+test_diagnostic_set_mutation_rejected (test_binding.FrozenBindingTests.test_diagnostic_set_mutation_rejected) ... ok
+test_faces_replacement_rejected (test_binding.FrozenBindingTests.test_faces_replacement_rejected) ... ok
+test_fresh_seal_accepts (test_binding.FrozenBindingTests.test_fresh_seal_accepts) ... ok
+test_missing_mesh_input_rejected (test_binding.FrozenBindingTests.test_missing_mesh_input_rejected) ... ok
+test_old_native_log_rejected (test_binding.FrozenBindingTests.test_old_native_log_rejected) ... ok
+test_owner_out_of_range_rejected (test_binding.FrozenBindingTests.test_owner_out_of_range_rejected) ... ok
+test_report_replacement_rejected (test_binding.FrozenBindingTests.test_report_replacement_rejected) ... ok
+test_resealed_manifest_rejected_by_external_digest (test_binding.FrozenBindingTests.test_resealed_manifest_rejected_by_external_digest) ... ok
+test_bad_source_cell_identity_rejected (test_repair.RepairTests.test_bad_source_cell_identity_rejected) ... ok
+test_boundary_faces_excluded_from_determinant (test_repair.RepairTests.test_boundary_faces_excluded_from_determinant) ... ok
+test_concave_union_rejected (test_repair.RepairTests.test_concave_union_rejected) ... ok
+test_convex_union (test_repair.RepairTests.test_convex_union) ... ok
+test_empty_flagged_rejected (test_repair.RepairTests.test_empty_flagged_rejected) ... ok
+test_exact_source_identity (test_repair.RepairTests.test_exact_source_identity) ... ok
+test_flagged_bound_rejected (test_repair.RepairTests.test_flagged_bound_rejected) ... ok
+test_gate_survives_optimization (test_repair.RepairTests.test_gate_survives_optimization) ... ok
+test_merge_identity (test_repair.RepairTests.test_merge_identity) ... ok
+test_merge_internal_mutation_rejected (test_repair.RepairTests.test_merge_internal_mutation_rejected) ... ok
+test_merge_moved_point_rejected (test_repair.RepairTests.test_merge_moved_point_rejected) ... ok
+test_merge_nonplanar_rejected (test_repair.RepairTests.test_merge_nonplanar_rejected) ... ok
+test_merge_reversed_boundary_rejected (test_repair.RepairTests.test_merge_reversed_boundary_rejected) ... ok
+test_merge_wrong_cell_rejected (test_repair.RepairTests.test_merge_wrong_cell_rejected) ... ok
+test_moved_vertex_rejected (test_repair.RepairTests.test_moved_vertex_rejected) ... ok
+test_nonmanifold_union_rejected (test_repair.RepairTests.test_nonmanifold_union_rejected) ... ok
+test_one_ulp_source_conversion_recorded (test_repair.RepairTests.test_one_ulp_source_conversion_recorded) ... ok
+test_rank_deficient_determinant (test_repair.RepairTests.test_rank_deficient_determinant) ... ok
+test_reversed_boundary_rejected (test_repair.RepairTests.test_reversed_boundary_rejected) ... ok
+test_two_ulp_source_discrepancy_rejected (test_repair.RepairTests.test_two_ulp_source_discrepancy_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 1.933s
+
+OK

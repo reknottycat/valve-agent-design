@@ -1,0 +1,176 @@
+{
+  "reviewed_utc": "2026-10-06T21:40:19.739726+00:00",
+  "render": "qa/render1",
+  "pages": 39,
+  "scope": "Document visual review only, not engineering approval",
+  "visual_review_completed": true,
+  "issues_observed": [],
+  "checks": [
+    "All page images visually inspected in fresh rebuilt environment",
+    "Native equations render without red parser errors or missing glyphs",
+    "No observed clipping, table overflow or header/footer collision",
+    "Repeated table headers and intentional appendix/figure page breaks readable"
+  ],
+  "pdf_sha256": "961faea7b0f1cdd4d08b3cf0674950a42283a9fd8e8620ab6a0fc02ae0442041",
+  "docx_sha256": "b20af2001117e887f6b1d8417c176c8f581ddfe947034a13c578f905f1192296",
+  "page_images": [
+    {
+      "page": 1,
+      "sha256": "922352078cc49f2ef1d015bd08c9120276ee4119a84d346783f7faa56cd19a9f"
+    },
+    {
+      "page": 2,
+      "sha256": "9ab298791600add05e5724e97e705a09104db482c56b8595af2648deeb8d5abb"
+    },
+    {
+      "page": 3,
+      "sha256": "fbd5256e01e84c2fcf22a4c6b6156154397e7ec987ac1cf01ee34d61a83b1209"
+    },
+    {
+      "page": 4,
+      "sha256": "cbb6ac442ac52d73fe70ba13a78b77f34ee46510f42e091357fc7ba47966d503"
+    },
+    {
+      "page": 5,
+      "sha256": "3b94bbc441f02f305901ffc58eac630da72b0ebcd0b8303c77ac47ff98b5085e"
+    },
+    {
+      "page": 6,
+      "sha256": "8248ec3110aeeabd2aec1d4f458a800a5cd51cc7ca314ef23802b3fdf0c0db53"
+    },
+    {
+      "page": 7,
+      "sha256": "e759685ce5ef2378c27152b0c4dce3dbd6bf45e2fc6de0b0fa55a9decf125dd2"
+    },
+    {
+      "page": 8,
+      "sha256": "148af2cc3218993063356f9d6994bac4b70093170934db4b98869c650ac1fa3f"
+    },
+    {
+      "page": 9,
+      "sha256": "b91ce9416388af235e04f600def03c86a763059dcfaaf4d8849a9ade04760d8d"
+    },
+    {
+      "page": 10,
+      "sha256": "9d9e725ed0ec7cb5a4c6594e66c90b2f099acba4971164402cd247ef7b539e6a"
+    },
+    {
+      "page": 11,
+      "sha256": "1b97debbb9d024eb33cc5471bed41abe0e6da1756c9477d58c4b1e0c8475bd03"
+    },
+    {
+      "page": 12,
+      "sha256": "88b6e40c843fa1351c9755535ecff24a6c2b72365ad89563d546ca6aa982818a"
+    },
+    {
+      "page": 13,
+      "sha256": "17eafcd16864bd50d4c670bc019496848a6a286ba26ed7c0af9ca973a6c842f3"
+    },
+    {
+      "page": 14,
+      "sha256": "7fd88f157f9243aa852744bea1c0a322060493afbe71e5defeb18304ac779e94"
+    },
+    {
+      "page": 15,
+      "sha256": "0c2685ada1c3c8acd9dc74d25e05d0580b62485e4b73732ebd90111cbb92a395"
+    },
+    {
+      "page": 16,
+      "sha256": "777b8d317e595e96f7f3763b0199c59c2cdbcf9efda178a0e9b7a0c94e91f715"
+    },
+    {
+      "page": 17,
+      "sha256": "9c16d2e6a69c0fc545cdcc81da10a12d18a49da3da29f5ca69629e86ba57ab54"
+    },
+    {
+      "page": 18,
+      "sha256": "8723b5604c0dec7ff5f6c1fc924583ac8a2978b5f8b5273eb5da3bcad16eb85a"
+    },
+    {
+      "page": 19,
+      "sha256": "80eb6e3019a1388deea26ccc3780e8bd7cb3a3ba62f26cf57f3be6d0b13e5156"
+    },
+    {
+      "page": 20,
+      "sha256": "7f8e5a8374f1d8f721733bf4ac5ce56ada9ab580af08b9f1658c93b0e02c3013"
+    },
+    {
+      "page": 21,
+      "sha256": "1af798b0975e7c8b16c6cdce641fdca987a5dce534c09725d73412bd40da3436"
+    },
+    {
+      "page": 22,
+      "sha256": "b157d52e49cc693d16131167ba66b4a6ad472ef7f5eb32dfdd02be5f85b8ab5b"
+    },
+    {
+      "page": 23,
+      "sha256": "e517afd92fa37dc95b884ab28d0e95e108c3d297b56618a54b3efe834a90316c"
+    },
+    {
+      "page": 24,
+      "sha256": "22c47bc0c0f1ae8ac90845b2f60d8fbbc2b9359c6c3bb31d0638eeea8bb48342"
+    },
+    {
+      "page": 25,
+      "sha256": "ebf7710991cbddc0d121becee8bddd9309d105948227bd24795f025b03a8ae82"
+    },
+    {
+      "page": 26,
+      "sha256": "9ecca3ae4da1f94230ef180d23d10c1a5f48acf5bd75a21778582647c9abaff5"
+    },
+    {
+      "page": 27,
+      "sha256": "c4b343785153062e0df340ca65134aac0abef602a99eb4c5c868c24fb7c15af9"
+    },
+    {
+      "page": 28,
+      "sha256": "8fafe47dc22ce12d5fb1d60351ea1db626b731a24565e72961d0128a89682868"
+    },
+    {
+      "page": 29,
+      "sha256": "911cb06d2a1ca0a4710af039c946bcad624b36cf8e255d8e7c1d23603a5b7e89"
+    },
+    {
+      "page": 30,
+      "sha256": "963b780f7505966f89db502e751d807640d7ec10938387a344d4b366ac7f9cc9"
+    },
+    {
+      "page": 31,
+      "sha256": "8ae67fe83171337e52a6a16c923303bf3747b689eb10e077ff0bcc7827f290eb"
+    },
+    {
+      "page": 32,
+      "sha256": "e0dd8cc8221af0f8290c367885cb1deaf25612e46b69f55ba3c051daf40a6740"
+    },
+    {
+      "page": 33,
+      "sha256": "cd3e847910adeead020e53bf00054232c48c63d2874d186067047974bc29524b"
+    },
+    {
+      "page": 34,
+      "sha256": "f50f9c0605c87b2f5aaebcb067fedc988112cf8591b80e51a25b6efa23b6b0a4"
+    },
+    {
+      "page": 35,
+      "sha256": "1e1f56bc9a70b98deea38bcb88cd6932199333a22e114f4882ce41c7b7f93269"
+    },
+    {
+      "page": 36,
+      "sha256": "0428ebae7cd61c1a1cca67851675ccf8ab62a9ff1f3b515355a69201d1b01a09"
+    },
+    {
+      "page": 37,
+      "sha256": "82c6eed394900e070a03b1df35df1c59fa05bdc81fa623a5148ddd0823251dcf"
+    },
+    {
+      "page": 38,
+      "sha256": "dca3d7b6676c4a4cbfbf46460a44982a6fa142440f72b6ade296fcfa8945c7d8"
+    },
+    {
+      "page": 39,
+      "sha256": "bb37efae9c834d51a4760ae90c39644e8f0c6ed167d570a28a328e6e8dc3b8cd"
+    }
+  ],
+  "final_source_alignment": "PENDING_MESH_V2_BINDING_AND_PARENT_CONFIRMATION",
+  "release": "PREPARATION_NOT_FROZEN"
+}

@@ -1,0 +1,52 @@
+test_MPa_misread_rejected (test_c4_study.C4StudyTests.test_MPa_misread_rejected) ... ok
+test_bad_screw_numeric_rejected (test_c4_study.C4StudyTests.test_bad_screw_numeric_rejected) ... ok
+test_base_not_brine (test_c4_study.C4StudyTests.test_base_not_brine) ... ok
+test_boolean_rejected (test_c4_study.C4StudyTests.test_boolean_rejected) ... ok
+test_boolean_starts_rejected (test_c4_study.C4StudyTests.test_boolean_starts_rejected) ... ok
+test_closed_bypass_rejected (test_c4_study.C4StudyTests.test_closed_bypass_rejected) ... ok
+test_cold_property_not_extrapolated (test_c4_study.C4StudyTests.test_cold_property_not_extrapolated) ... ok
+test_current_area_report (test_c4_study.C4StudyTests.test_current_area_report) ... ok
+test_current_basis_and_source_pins (test_c4_study.C4StudyTests.test_current_basis_and_source_pins) ... ok
+test_duplicate_cases_rejected (test_c4_study.C4StudyTests.test_duplicate_cases_rejected) ... ok
+test_duplicate_property_point_rejected (test_c4_study.C4StudyTests.test_duplicate_property_point_rejected) ... ok
+test_empty_friction_rejected (test_c4_study.C4StudyTests.test_empty_friction_rejected) ... ok
+test_empty_step_provenance_rejected (test_c4_study.C4StudyTests.test_empty_step_provenance_rejected) ... ok
+test_fake_pressure_correction_rejected (test_c4_study.C4StudyTests.test_fake_pressure_correction_rejected) ... ok
+test_force_scaling (test_c4_study.C4StudyTests.test_force_scaling) ... ok
+test_friction_increases_torque (test_c4_study.C4StudyTests.test_friction_increases_torque) ... ok
+test_frictionless_work_identity (test_c4_study.C4StudyTests.test_frictionless_work_identity) ... ok
+test_gauge_absolute_mixing_rejected (test_c4_study.C4StudyTests.test_gauge_absolute_mixing_rejected) ... ok
+test_inverted_collar_rejected (test_c4_study.C4StudyTests.test_inverted_collar_rejected) ... ok
+test_load_matrix_contact_gate (test_c4_study.C4StudyTests.test_load_matrix_contact_gate) ... ok
+test_missing_pressure_face_rejected (test_c4_study.C4StudyTests.test_missing_pressure_face_rejected) ... ok
+test_nan_rejected (test_c4_study.C4StudyTests.test_nan_rejected) ... ok
+test_negative_gauge_not_silently_accepted (test_c4_study.C4StudyTests.test_negative_gauge_not_silently_accepted) ... ok
+test_no_allowable_selection (test_c4_study.C4StudyTests.test_no_allowable_selection) ... ok
+test_no_implicit_release (test_c4_study.C4StudyTests.test_no_implicit_release) ... ok
+test_no_physical_proof_selection (test_c4_study.C4StudyTests.test_no_physical_proof_selection) ... ok
+test_no_solver_restart (test_c4_study.C4StudyTests.test_no_solver_restart) ... ok
+test_nonfinite_area_rejected (test_c4_study.C4StudyTests.test_nonfinite_area_rejected) ... ok
+test_nonfinite_viscosity_rejected (test_c4_study.C4StudyTests.test_nonfinite_viscosity_rejected) ... ok
+test_overload_not_physical_proof (test_c4_study.C4StudyTests.test_overload_not_physical_proof) ... ok
+test_pressure_false_rating_rejected (test_c4_study.C4StudyTests.test_pressure_false_rating_rejected) ... ok
+test_pressure_sides_not_only_differential (test_c4_study.C4StudyTests.test_pressure_sides_not_only_differential) ... ok
+test_pressure_unit_drift_rejected (test_c4_study.C4StudyTests.test_pressure_unit_drift_rejected) ... ok
+test_property_dataset_recomputes (test_c4_study.C4StudyTests.test_property_dataset_recomputes) ... ok
+test_property_numeric_invalid (test_c4_study.C4StudyTests.test_property_numeric_invalid) ... ok
+test_property_pressure_not_design_pressure (test_c4_study.C4StudyTests.test_property_pressure_not_design_pressure) ... ok
+test_property_reference_point (test_c4_study.C4StudyTests.test_property_reference_point) ... ok
+test_property_salinity_domain (test_c4_study.C4StudyTests.test_property_salinity_domain) ... ok
+test_self_lock_is_conditional (test_c4_study.C4StudyTests.test_self_lock_is_conditional) ... ok
+test_stale_pass_invalidated_on_failure (test_c4_study.C4StudyTests.test_stale_pass_invalidated_on_failure) ... ok
+test_tampered_negative_density_rejected (test_c4_study.C4StudyTests.test_tampered_negative_density_rejected) ... ok
+test_tampered_positive_density_rejected (test_c4_study.C4StudyTests.test_tampered_positive_density_rejected) ... ok
+test_unknown_boolean_area_rejected (test_c4_study.C4StudyTests.test_unknown_boolean_area_rejected) ... ok
+test_unknown_cannot_disappear (test_c4_study.C4StudyTests.test_unknown_cannot_disappear) ... ok
+test_wrong_parameter_provenance_rejected (test_c4_study.C4StudyTests.test_wrong_parameter_provenance_rejected) ... ok
+test_wrong_pressure_face_sign_rejected (test_c4_study.C4StudyTests.test_wrong_pressure_face_sign_rejected) ... ok
+test_wrong_variant_rejected (test_c4_study.C4StudyTests.test_wrong_variant_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 47 tests in 0.032s
+
+OK

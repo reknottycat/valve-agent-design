@@ -1,0 +1,43 @@
+{
+  "cells": 411099,
+  "faces": 865251,
+  "faces_over_70_degrees": 54,
+  "final_mesh_hashes": {
+    "boundary": "61b7cdb70df770ee2b82654864495fcbaeabfad1257c70707d4040889ccd1af9",
+    "cellZones": "8942f05e891e872dffd04ba640e6dad246a3710248eeb533185703b70b6ba644",
+    "faceZones": "1a3fc3f2f2c7f76c597df378690ccbf4b8a8013456e58f0c87dcf4ecaca5220f",
+    "faces": "8356a72c469120af9a9e4b538fa1b3c1a0fc365c817bb7df419258d6cc824039",
+    "neighbour": "7d6fe2bacef50eb62715fdd48155e34e749838d2c254b6e265f357c68e6ce2b7",
+    "owner": "1d8d42b66f0d6ac63c995bafe6e7a50095688506d2a16a0fc7a133c83b6e2fc0",
+    "pointZones": "a4a6a2dcd51a046ec166f12f8fb6f70d0cc21e238dc6ae1d1db90effcf542a29",
+    "points": "9cd0ddbcc19e4511f68175301cf55fcbc2272f34e85a775e9585c45b08fde8d9"
+  },
+  "final_native_check_sha256": "f57dfd06b5fa341828f6f58d2fbf9a3c3a286388200feb6b48e41122f15437c0",
+  "internal_faces": 779157,
+  "maximum_nonorthogonality_degrees": 77.47148400781279,
+  "maximum_skewness": 1.5908053303312517,
+  "merged_boundary_triangle_pairs": 2,
+  "merged_tetrahedron_groups": 7,
+  "min_cell_determinant": 0.0010289095826444307,
+  "native_total_volume_m3": 0.06443540618760644,
+  "native_total_volume_text_identical": true,
+  "normal_and_optimized_tests": 20,
+  "points": 90900,
+  "scope": "Bounded mesh repair only; no valve flow solve, performance claim, or manufacturing authorization",
+  "source_native_conversion_note": {
+    "all_cells_have_four_original_facets": true,
+    "boundary_physical_identity": true,
+    "cells": 411106,
+    "conversion_differing_scalars": 51,
+    "conversion_max_absolute_difference_m": 5.551115123125783e-17,
+    "conversion_max_ulp": 1.0,
+    "faces": 865260,
+    "internal_faces": 779164,
+    "point_coordinates_bitwise_equal": false,
+    "point_index_correspondence_verified": true,
+    "points": 90900
+  },
+  "source_sha256": "df5a517ff53b569a481315614d3cd4d8ba1662095fa3c7eeae96dd3cbd2430a3",
+  "status": "MESH_QUALITY_AND_GEOMETRIC_IDENTITY_ACCEPTED",
+  "warnings": "54 severe nonorthogonal faces remain; maximum 77.471484007812791 degrees. Full logs retain OpenFOAM time-selection warning and nonfatal UCX VFS socket diagnostic. Mesh OK does not establish flow-solver convergence or accuracy."
+}

@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "scope": "SOURCE_ONLY_NO_SOLVER_RESULT",
+  "orientation_test": true,
+  "quadratic_exact_weights": [
+    -2.7755575615628914e-17,
+    -2.7755575615628914e-17,
+    -2.7755575615628914e-17,
+    0.3333333333333333,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "negative_tests": [
+    {
+      "test": "explicit_gate",
+      "mode": "normal",
+      "rejected": true
+    },
+    {
+      "test": "raw_DAT",
+      "mode": "normal",
+      "rejected": true
+    },
+    {
+      "test": "explicit_gate",
+      "mode": "optimized",
+      "rejected": true
+    },
+    {
+      "test": "raw_DAT",
+      "mode": "optimized",
+      "rejected": true
+    }
+  ],
+  "old_run_results_used": false
+}

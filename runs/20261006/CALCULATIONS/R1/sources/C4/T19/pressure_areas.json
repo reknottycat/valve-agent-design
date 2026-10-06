@@ -1,0 +1,183 @@
+{
+  "schema": "valve.c4-pressure-areas/1.0",
+  "status": "GEOMETRIC_PRESSURE_AREA_PASS",
+  "force_sign": "+Z lifts disc/retracts spindle",
+  "length_unit": "mm",
+  "pressure_unit": "MPa",
+  "force_unit": "N",
+  "input_asset_sha256": {
+    "closed/fluid_domain_mm.step": "52bb7a7ba0c9b12e34f6148b2107d4059d315efee8ac38bc2d6a272c8e363110",
+    "closed/disc_guide.step": "a9b823dec63d6689679c36a5dc83acc65c6d6c9774a2a452db56d868ee095a41",
+    "closed/stem.step": "287a40c1b5693be1f0398f8e1acf645ce4bebff47b43fc588ba00564c09a8800",
+    "check_closed/fluid_domain_mm.step": "562d75bcade3f69673c4bead02d7113700bb07d37e18dd3295277656579a088c",
+    "check_closed/disc_guide.step": "176d0f389e188b339132d7ec05e9e59cdd8861c5138e0839900ba653d0e85ee9",
+    "check_closed/stem.step": "00bea2836323adead642e5623eb84f5440fab6111430b6442d47b2513e30f496"
+  },
+  "parameters_sha256": "c35a4064403f98e3462bfea3650eebe2695ced39a15fb928f817e465169576ba",
+  "extractor_sha256": "165bc21975b0a1632990ae70518ffc714dc5c0faedc74df7bbecf48f8c312c1e",
+  "poses": {
+    "closed": {
+      "pressure_compartments": 2,
+      "parts": {
+        "disc_guide": {
+          "inlet": {
+            "axial_force_coefficient_N_per_MPa": 31415.926535897932,
+            "faces": [
+              {
+                "part_face_index": 1,
+                "z_mm": 22.0,
+                "outward_normal_z": -1.0,
+                "wetted_area_mm2": 31415.926535897932,
+                "axial_force_coefficient_mm2": 31415.926535897932
+              }
+            ]
+          },
+          "outlet": {
+            "axial_force_coefficient_N_per_MPa": -39810.262106289854,
+            "faces": [
+              {
+                "part_face_index": 1,
+                "z_mm": 22.0,
+                "outward_normal_z": -1.0,
+                "wetted_area_mm2": 4410.796085640082,
+                "axial_force_coefficient_mm2": 4410.796085640082
+              },
+              {
+                "part_face_index": 2,
+                "z_mm": 36.0,
+                "outward_normal_z": 1.0,
+                "wetted_area_mm2": 43115.21757786633,
+                "axial_force_coefficient_mm2": -43115.21757786633
+              },
+              {
+                "part_face_index": 4,
+                "z_mm": 116.0,
+                "outward_normal_z": 1.0,
+                "wetted_area_mm2": 867.0795723907831,
+                "axial_force_coefficient_mm2": -867.0795723907831
+              },
+              {
+                "part_face_index": 6,
+                "z_mm": 36.0,
+                "outward_normal_z": 1.0,
+                "wetted_area_mm2": 238.76104167282438,
+                "axial_force_coefficient_mm2": -238.76104167282438
+              }
+            ]
+          }
+        },
+        "stem": {
+          "inlet": {
+            "axial_force_coefficient_N_per_MPa": 0.0,
+            "faces": []
+          },
+          "outlet": {
+            "axial_force_coefficient_N_per_MPa": 0.0,
+            "faces": []
+          }
+        }
+      },
+      "independent_projected_area_control": {
+        "disc_guide": {
+          "inlet": 31415.926535897932,
+          "outlet": -39810.26210628986
+        },
+        "stem": {
+          "inlet": 0.0,
+          "outlet": 0.0
+        }
+      },
+      "analytical_check": "PASS"
+    },
+    "check_closed": {
+      "pressure_compartments": 2,
+      "parts": {
+        "disc_guide": {
+          "inlet": {
+            "axial_force_coefficient_N_per_MPa": 31415.926535897932,
+            "faces": [
+              {
+                "part_face_index": 1,
+                "z_mm": 22.0,
+                "outward_normal_z": -1.0,
+                "wetted_area_mm2": 31415.926535897932,
+                "axial_force_coefficient_mm2": 31415.926535897932
+              }
+            ]
+          },
+          "outlet": {
+            "axial_force_coefficient_N_per_MPa": -40828.138126052945,
+            "faces": [
+              {
+                "part_face_index": 1,
+                "z_mm": 22.0,
+                "outward_normal_z": -1.0,
+                "wetted_area_mm2": 4410.796085640082,
+                "axial_force_coefficient_mm2": 4410.796085640082
+              },
+              {
+                "part_face_index": 2,
+                "z_mm": 36.0,
+                "outward_normal_z": 1.0,
+                "wetted_area_mm2": 43115.21757786633,
+                "axial_force_coefficient_mm2": -43115.21757786633
+              },
+              {
+                "part_face_index": 4,
+                "z_mm": 116.0,
+                "outward_normal_z": 1.0,
+                "wetted_area_mm2": 867.0795723907831,
+                "axial_force_coefficient_mm2": -867.0795723907831
+              },
+              {
+                "part_face_index": 6,
+                "z_mm": 36.0,
+                "outward_normal_z": 1.0,
+                "wetted_area_mm2": 1256.6370614359173,
+                "axial_force_coefficient_mm2": -1256.6370614359173
+              }
+            ]
+          }
+        },
+        "stem": {
+          "inlet": {
+            "axial_force_coefficient_N_per_MPa": 0.0,
+            "faces": []
+          },
+          "outlet": {
+            "axial_force_coefficient_N_per_MPa": 1017.8760197630929,
+            "faces": [
+              {
+                "part_face_index": 1,
+                "z_mm": 93.0,
+                "outward_normal_z": -1.0,
+                "wetted_area_mm2": 1017.8760197630929,
+                "axial_force_coefficient_mm2": 1017.8760197630929
+              }
+            ]
+          }
+        }
+      },
+      "independent_projected_area_control": {
+        "disc_guide": {
+          "inlet": 31415.926535897932,
+          "outlet": -40828.13812605295
+        },
+        "stem": {
+          "inlet": 0.0,
+          "outlet": 1017.8760197630929
+        }
+      },
+      "analytical_check": "PASS"
+    }
+  },
+  "manufacturing_authorized": false,
+  "solver_execution_performed": false,
+  "limitations": [
+    "Frozen geometric compartments, uniform compartment pressures and dry contact faces are modeling assumptions",
+    "No leakage, elastic opening, seat contact-pressure penetration or hydrostatic head distribution is solved",
+    "Cylinder surfaces are included only as analytically zero axial projected area after checking their axes",
+    "Forces are pressure components, excluding weight, inertia, contact reactions, friction and preload",
+    "No valid material allowable or engineering acceptance is inferred from load calculation"
+  ]
+}

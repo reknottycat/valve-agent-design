@@ -1,0 +1,222 @@
+{
+  "status": "STOCK_LAPLACIANFOAM_PDE_MMS_PASSED_ON_INDEPENDENT_CUBES",
+  "fresh_run_utc": "2026-10-06T21:02:01.542667+00:00",
+  "passed": true,
+  "records": [
+    {
+      "case": "n5_right",
+      "n": 5,
+      "cells": 125,
+      "latest_time": "2",
+      "initial_field": "uniform zero",
+      "analytic_target_laplacian": 6,
+      "fvOptions_Su": -6,
+      "l2_temperature_error_K": 0.010000000000037198,
+      "linf_temperature_error_K": 0.010000000000947917,
+      "mean_error_K": -0.010000000000037198,
+      "numerical_outward_diffusive_gradient_flux_K_m3_per_s": 6.000000000002352,
+      "volume_source_for_DeltaT_equation_K_m3_per_s": 6,
+      "analytic_target_volume_source_K_m3_per_s": 6.0,
+      "balance_error": 2.3518964553659316e-12,
+      "matches_positive_analytic_target": true,
+      "linear_solver_calls": [
+        {
+          "initial": 1.0,
+          "final": 8.248112456584036e-13,
+          "iterations": 11
+        },
+        {
+          "initial": 8.085570146462633e-13,
+          "final": 8.085570146462633e-13,
+          "iterations": 0
+        },
+        {
+          "initial": 8.085570146462633e-13,
+          "final": 8.085570146462633e-13,
+          "iterations": 0
+        },
+        {
+          "initial": 8.085570146462633e-13,
+          "final": 8.085570146462633e-13,
+          "iterations": 0
+        },
+        {
+          "initial": 8.085570146462633e-13,
+          "final": 8.085570146462633e-13,
+          "iterations": 0
+        },
+        {
+          "initial": 8.085570146462633e-13,
+          "final": 8.085570146462633e-13,
+          "iterations": 0
+        }
+      ],
+      "linear_iterations_total": 11,
+      "nonorthogonal_correctors": 2,
+      "mesh_nonorthogonality": "0 degrees, verified checkMesh",
+      "source_from_discrete_exact_field": false,
+      "T_file_sha256": "85eddb2db2ab3b7af368c8af32c798a077eb6b481f0ee718004fbcc36b7be361",
+      "input_hashes": {
+        "system/controlDict": "a411b694e4a47bccd234a71b46760e0fa9966c2e24c7f9f25860b60eda5923d6",
+        "system/fvSchemes": "b136214332bc29b6539d63f1ce859e3c2239babdb799c9893bfe9eddbccbe7e3",
+        "system/fvSolution": "beb227a1516d3ae6f4e79b644367420aa27910a91afe7bc541848308a9f29613",
+        "system/blockMeshDict": "0f715926f1130c247411c0f45af4cac88b512f3657fd1e3d7dca52fcad674914",
+        "constant/transportProperties": "4fc94872e0f435cb81d0a8c74b845f3bce5b4f0e382cfe222489268209d50e00",
+        "constant/fvOptions": "28945f3f59893b150551f00aa7126a7b9cf9d80c0548e781d06db27e235e73f6",
+        "constant/polyMesh/faces": "db7638d722c6cd87c9b64d4e002922ec1e45ac25b6527404668d233799fe40c0",
+        "constant/polyMesh/boundary": "62fbd3c2a7775ed3a74e40e851ac66ff520b66f8829e4e26891cd57d2054119b",
+        "constant/polyMesh/points": "e785b807f8282a6cd16f86649c64b05479e38f76772af7ab3754090e5fbf163a",
+        "constant/polyMesh/owner": "6e5aed48ac977e8717deec679093b592e1a72fb201999122f3e7539256571735",
+        "constant/polyMesh/neighbour": "7ae797490da7640eeb9140f55e6a43488e18feac50da0f3ba4a9e24aa0d6783e",
+        "0/T": "f124c2233047b36dd4bbe60fa087566ee7b1ca9e883ca81b4c093745d6c34490"
+      }
+    },
+    {
+      "case": "n10_right",
+      "n": 10,
+      "cells": 1000,
+      "latest_time": "2",
+      "initial_field": "uniform zero",
+      "analytic_target_laplacian": 6,
+      "fvOptions_Su": -6,
+      "l2_temperature_error_K": 0.0024999999999929514,
+      "linf_temperature_error_K": 0.002500000001853131,
+      "mean_error_K": -0.0024999999999929514,
+      "numerical_outward_diffusive_gradient_flux_K_m3_per_s": 5.9999999999992095,
+      "volume_source_for_DeltaT_equation_K_m3_per_s": 6,
+      "analytic_target_volume_source_K_m3_per_s": 6.0,
+      "balance_error": -7.904787935331115e-13,
+      "matches_positive_analytic_target": true,
+      "linear_solver_calls": [
+        {
+          "initial": 1.0,
+          "final": 8.572451902389618e-13,
+          "iterations": 18
+        },
+        {
+          "initial": 8.634442820955292e-13,
+          "final": 8.634442820955292e-13,
+          "iterations": 0
+        },
+        {
+          "initial": 8.634442820955292e-13,
+          "final": 8.634442820955292e-13,
+          "iterations": 0
+        },
+        {
+          "initial": 8.634442820955292e-13,
+          "final": 8.634442820955292e-13,
+          "iterations": 0
+        },
+        {
+          "initial": 8.634442820955292e-13,
+          "final": 8.634442820955292e-13,
+          "iterations": 0
+        },
+        {
+          "initial": 8.634442820955292e-13,
+          "final": 8.634442820955292e-13,
+          "iterations": 0
+        }
+      ],
+      "linear_iterations_total": 18,
+      "nonorthogonal_correctors": 2,
+      "mesh_nonorthogonality": "0 degrees, verified checkMesh",
+      "source_from_discrete_exact_field": false,
+      "T_file_sha256": "f0b5c02cff51dfa4ffc98f1068f751640d0b2477bd1ace8380442118ad1ac02e",
+      "input_hashes": {
+        "system/controlDict": "a411b694e4a47bccd234a71b46760e0fa9966c2e24c7f9f25860b60eda5923d6",
+        "system/fvSchemes": "b136214332bc29b6539d63f1ce859e3c2239babdb799c9893bfe9eddbccbe7e3",
+        "system/fvSolution": "beb227a1516d3ae6f4e79b644367420aa27910a91afe7bc541848308a9f29613",
+        "system/blockMeshDict": "3e98f77ecd2cedcdbc5a9b79feba7978e62351fd7d63a6876c5da8874326d62e",
+        "constant/transportProperties": "4fc94872e0f435cb81d0a8c74b845f3bce5b4f0e382cfe222489268209d50e00",
+        "constant/fvOptions": "28945f3f59893b150551f00aa7126a7b9cf9d80c0548e781d06db27e235e73f6",
+        "constant/polyMesh/faces": "b5d986659763bc1c84d44a03e81655d19e0be08daf5025fa4de8a7a4059cc80f",
+        "constant/polyMesh/boundary": "119d1c4351e615b907f151a25bc7f975c48bfdb8ce043a37b141dda8d566ad41",
+        "constant/polyMesh/points": "db3f98ace3bb796f2fdd8121bb05faf704611d382234f218e38de4b310b6e59d",
+        "constant/polyMesh/owner": "eb6e5fafb5bc2e359d1fa25e5e795e98feb705220a219717092d080d94e63bcb",
+        "constant/polyMesh/neighbour": "52a428870f4cfdf7acbd5ee78c727d70db716a86d24e92f7c4ac48172642dd2d",
+        "0/T": "83269b43c82c7a2e4a24f540f1e47402aa707d1053c6f46176bdc23545f45c40"
+      }
+    },
+    {
+      "case": "n5_wrong_sign",
+      "n": 5,
+      "cells": 125,
+      "latest_time": "2",
+      "initial_field": "uniform zero",
+      "analytic_target_laplacian": 6,
+      "fvOptions_Su": 6,
+      "l2_temperature_error_K": 0.32217186480635035,
+      "linf_temperature_error_K": 0.6822770665168567,
+      "mean_error_K": 0.2866747065825599,
+      "numerical_outward_diffusive_gradient_flux_K_m3_per_s": -5.999999999997884,
+      "volume_source_for_DeltaT_equation_K_m3_per_s": -6,
+      "analytic_target_volume_source_K_m3_per_s": 6.0,
+      "balance_error": 2.1156409957256983e-12,
+      "matches_positive_analytic_target": false,
+      "linear_solver_calls": [
+        {
+          "initial": 1.0,
+          "final": 7.421878779566872e-13,
+          "iterations": 11
+        },
+        {
+          "initial": 8.377221144501891e-13,
+          "final": 8.377221144501891e-13,
+          "iterations": 0
+        },
+        {
+          "initial": 8.377221144501891e-13,
+          "final": 8.377221144501891e-13,
+          "iterations": 0
+        },
+        {
+          "initial": 8.377221144501891e-13,
+          "final": 8.377221144501891e-13,
+          "iterations": 0
+        },
+        {
+          "initial": 8.377221144501891e-13,
+          "final": 8.377221144501891e-13,
+          "iterations": 0
+        },
+        {
+          "initial": 8.377221144501891e-13,
+          "final": 8.377221144501891e-13,
+          "iterations": 0
+        }
+      ],
+      "linear_iterations_total": 11,
+      "nonorthogonal_correctors": 2,
+      "mesh_nonorthogonality": "0 degrees, verified checkMesh",
+      "source_from_discrete_exact_field": false,
+      "T_file_sha256": "d242b57d7d3eb0d8715db1ca077a9f8ec5ceea112d7b734a66c3ff125b49ad6e",
+      "input_hashes": {
+        "system/controlDict": "a411b694e4a47bccd234a71b46760e0fa9966c2e24c7f9f25860b60eda5923d6",
+        "system/fvSchemes": "b136214332bc29b6539d63f1ce859e3c2239babdb799c9893bfe9eddbccbe7e3",
+        "system/fvSolution": "beb227a1516d3ae6f4e79b644367420aa27910a91afe7bc541848308a9f29613",
+        "system/blockMeshDict": "0f715926f1130c247411c0f45af4cac88b512f3657fd1e3d7dca52fcad674914",
+        "constant/transportProperties": "4fc94872e0f435cb81d0a8c74b845f3bce5b4f0e382cfe222489268209d50e00",
+        "constant/fvOptions": "faa890dbfd359a1d538ecae1f8fa8a8abee22e7bed77f4b723a142c330dac9c6",
+        "constant/polyMesh/faces": "db7638d722c6cd87c9b64d4e002922ec1e45ac25b6527404668d233799fe40c0",
+        "constant/polyMesh/boundary": "62fbd3c2a7775ed3a74e40e851ac66ff520b66f8829e4e26891cd57d2054119b",
+        "constant/polyMesh/points": "e785b807f8282a6cd16f86649c64b05479e38f76772af7ab3754090e5fbf163a",
+        "constant/polyMesh/owner": "6e5aed48ac977e8717deec679093b592e1a72fb201999122f3e7539256571735",
+        "constant/polyMesh/neighbour": "7ae797490da7640eeb9140f55e6a43488e18feac50da0f3ba4a9e24aa0d6783e",
+        "0/T": "f124c2233047b36dd4bbe60fa087566ee7b1ca9e883ca81b4c093745d6c34490"
+      }
+    }
+  ],
+  "refinement_error_ratio": 4.000000000026157,
+  "observed_two_level_order": 2.0000000000094342,
+  "equation_sign": "Native steady equation is -div(DT grad T)=Su; DT=1 and Su=-6 give DeltaT=+6",
+  "boundary": "Exact analytic T=x^2+y^2+z^2 evaluated at each planar face centre; internal initial T=0",
+  "flux_method": "Independent orthogonal cube half-cell finite-volume flux from solved T, exact face value, face area and normal distance. Not a generic nonorthogonal flux implementation.",
+  "scope": [
+    "Real native PDE solve; no manufactured discrete source",
+    "Only orthogonal independent unit cubes at 5^3 and 10^3",
+    "Source sign negative case converges numerically but is rejected against analytic target",
+    "Does not validate valve domain, nonorthogonal boundary consistency, or manufacturing release"
+  ]
+}

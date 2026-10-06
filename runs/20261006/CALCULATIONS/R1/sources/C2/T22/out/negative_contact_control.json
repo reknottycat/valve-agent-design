@@ -1,0 +1,13 @@
+{
+  "control": "remove_seat_protrusion",
+  "classification": "EXPECTED_RED",
+  "actual_planar_contact_areas_mm2": {
+    "body": 3928.426747730533,
+    "seat_ring": 9412.211590155028,
+    "stem": 1017.8760197630929
+  },
+  "gate_failures": [
+    "UNINTENDED_DISC_BODY_CONTACT"
+  ],
+  "passed_negative_control": true
+}

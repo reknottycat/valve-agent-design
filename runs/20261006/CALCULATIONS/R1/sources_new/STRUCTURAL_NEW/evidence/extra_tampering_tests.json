@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "test": "solution_cache",
+      "mode": "normal",
+      "rejected": true
+    },
+    {
+      "test": "solution_cache",
+      "mode": "optimized",
+      "rejected": true
+    },
+    {
+      "test": "cached_pass_flag",
+      "mode": "normal",
+      "rejected": true
+    },
+    {
+      "test": "cached_pass_flag",
+      "mode": "optimized",
+      "rejected": true
+    },
+    {
+      "test": "manifest_binding",
+      "mode": "normal",
+      "rejected": true
+    },
+    {
+      "test": "manifest_binding",
+      "mode": "optimized",
+      "rejected": true
+    }
+  ]
+}

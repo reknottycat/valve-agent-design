@@ -1,0 +1,16 @@
+{
+  "frozen_zip_sha256": "7de84ba1c6f7654aa79948c5c39cbc76d6e10a0a0fd1f13480c6c60577e4d5fe",
+  "frozen_zip_bytes": 3322031,
+  "frozen_zip_member_files": 183,
+  "frozen_member_bytes": 5788345,
+  "scientific_manifest_entries_verified": 182,
+  "frozen_member_bytes_unchanged": true,
+  "transported_originals": [
+    "runs/20261006/CALCULATIONS/R1/522-35.4179_R1_计算书重建检查点.zip",
+    "runs/20261006/CALCULATIONS/R1/output/522-35.4179_工程计算书_工作稿_R1_重建版.pdf",
+    "runs/20261006/CALCULATIONS/R1/output/522-35.4179_工程计算书_工作稿_R1_重建版.docx"
+  ],
+  "chunk_count": 16,
+  "clean_reconstruction": "PASS: three originals equal exact source bytes",
+  "scope": "Publication byte integrity only; no new model, solver, contact, joint, or engineering acceptance result"
+}

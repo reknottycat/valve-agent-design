@@ -1,0 +1,23 @@
+{
+  "scope": "DOCUMENT_GENERATION_ONLY",
+  "passed": true,
+  "normal_and_optimized_document_xml_identical": true,
+  "arithmetic_records_identical": true,
+  "results": [
+    {
+      "mode": "normal",
+      "arithmetic_checks": 197,
+      "native_equations": 78,
+      "tables": 48,
+      "completed": true
+    },
+    {
+      "mode": "optimized",
+      "arithmetic_checks": 197,
+      "native_equations": 78,
+      "tables": 48,
+      "completed": true
+    }
+  ],
+  "generator_sha256": "0050583d6820e97e0d72873a3471e4db45a7417d651c1e5d89badd3b3f9f32df"
+}

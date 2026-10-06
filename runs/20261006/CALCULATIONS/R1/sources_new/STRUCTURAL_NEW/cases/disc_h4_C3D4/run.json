@@ -1,0 +1,10 @@
+{
+  "fresh_run_utc": "2026-10-06T21:07:03.060268+00:00",
+  "elapsed_seconds": 3.0774316787719727,
+  "returncode": 0,
+  "solver": "CalculiX2.23 fresh rebuilt environment",
+  "solver_script_sha256": "84468f96f8c83b993a63c432539e9628428be61b686399e88ab88c632c4e8b64",
+  "solver_env_sha256": "0be53f0be3749606df05d46fe49f5927c26c3e58b6838cb560e7adea2b2f4528",
+  "input_sha256": "1073e689e4ab946f93e542cf9af603b90ff559f6d1eea6dce403acb31271a046",
+  "threads": 1
+}

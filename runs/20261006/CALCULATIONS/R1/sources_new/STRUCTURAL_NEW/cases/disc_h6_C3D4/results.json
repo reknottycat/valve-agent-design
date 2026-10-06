@@ -1,0 +1,53 @@
+{
+  "case": "disc_h6_C3D4",
+  "fresh_evaluated_utc": "2026-10-06T21:05:09.088642+00:00",
+  "passed_integrity": true,
+  "order": "C3D4",
+  "target_h_mm": 6,
+  "nodes": 5095,
+  "elements": 17759,
+  "maximum_nodal_displacement_mm": 0.028582450902533602,
+  "maximum_nodal_displacement_xyz_mm": [
+    300.0034897288865,
+    -2.780968628212408,
+    28.914319753161507
+  ],
+  "strain_energy_Nmm": 119.14437969725941,
+  "half_external_work_Nmm": 119.14437949692316,
+  "energy_relative_error": 1.6814578618351561e-09,
+  "stress_kinematics_relative_error": 3.04523937726844e-05,
+  "force_equilibrium_relative_error": 1.086215163718033e-08,
+  "free_dof_force_residual_relative": 5.961757520587474e-09,
+  "applied_force_N": [
+    5.142553050063725e-13,
+    3.5349501104064984e-13,
+    -25709.975701198702
+  ],
+  "reaction_force_N": [
+    3.229106e-11,
+    -4.28554461e-11,
+    25709.97542193294
+  ],
+  "moment_residual_Nmm": [
+    0.0565781824190168,
+    0.012030549281675462,
+    -4.335868553084765e-09
+  ],
+  "raw_von_mises_peak_MPa": 21.192928199526726,
+  "seat_node_count": 450,
+  "negative_seat_nodes": 272,
+  "negative_seat_force_N": -31424.31518716702,
+  "positive_seat_force_N": 57134.2906091,
+  "material_for_manufacturing": false,
+  "strength_pass": false,
+  "physical_contact": "BILATERAL_REFERENCE_ONLY; negative linear/midside forces require unilateral-contact HOLD",
+  "nodal_metric_warning": "Only mesh-node maxima, not rigorous quadratic interpolation extrema",
+  "raw_input_output_binding": {
+    "disc.inp": "c37ae67eeea3c661c49f955a10465c4ca5327ce7d89d6c5be67935ce54036c37",
+    "disc.dat": "c2a6cabf5af98ad47a2420831ee5a3808ea56c64e5533abfb22ff830bbd49929",
+    "mesh.npz": "9bc03bdf533c8be4c8309af2e24c1e12401ea90ceeb29d4efa06051eea193c0f",
+    "model.json": "631051a72d34ca85d3f3a96d68862d35e72d074bcfae20eeeceb361d0d16f4c3",
+    "run.json": "f17090e55f95971635c40122849e1b50fe9aa28c9318dcbfdac5a792cffdd6dd"
+  },
+  "checker_sha256": "84468f96f8c83b993a63c432539e9628428be61b686399e88ab88c632c4e8b64"
+}

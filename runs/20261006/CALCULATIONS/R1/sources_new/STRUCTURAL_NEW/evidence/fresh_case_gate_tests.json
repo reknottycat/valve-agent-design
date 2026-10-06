@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "tests": 16,
+  "results": [
+    {
+      "test": "untouched_C3D4_normal",
+      "passed": true,
+      "actual": "ACCEPT"
+    },
+    {
+      "test": "untouched_C3D4_optimized",
+      "passed": true,
+      "actual": "ACCEPT"
+    },
+    {
+      "test": "stale_DAT_C3D4_normal",
+      "passed": true,
+      "actual": "REJECT"
+    },
+    {
+      "test": "stale_DAT_C3D4_optimized",
+      "passed": true,
+      "actual": "REJECT"
+    },
+    {
+      "test": "doubled_stress_C3D4_normal",
+      "passed": true,
+      "actual": "REJECT"
+    },
+    {
+      "test": "doubled_stress_C3D4_optimized",
+      "passed": true,
+      "actual": "REJECT"
+    },
+    {
+      "test": "no_rebaseline_C3D4_normal",
+      "passed": true,
+      "actual": "REJECT"
+    },
+    {
+      "test": "no_rebaseline_C3D4_optimized",
+      "passed": true,
+      "actual": "REJECT"
+    },
+    {
+      "test": "untouched_C3D10_normal",
+      "passed": true,
+      "actual": "ACCEPT"
+    },
+    {
+      "test": "untouched_C3D10_optimized",
+      "passed": true,
+      "actual": "ACCEPT"
+    },
+    {
+      "test": "stale_DAT_C3D10_normal",
+      "passed": true,
+      "actual": "REJECT"
+    },
+    {
+      "test": "stale_DAT_C3D10_optimized",
+      "passed": true,
+      "actual": "REJECT"
+    },
+    {
+      "test": "doubled_stress_C3D10_normal",
+      "passed": true,
+      "actual": "REJECT"
+    },
+    {
+      "test": "doubled_stress_C3D10_optimized",
+      "passed": true,
+      "actual": "REJECT"
+    },
+    {
+      "test": "no_rebaseline_C3D10_normal",
+      "passed": true,
+      "actual": "REJECT"
+    },
+    {
+      "test": "no_rebaseline_C3D10_optimized",
+      "passed": true,
+      "actual": "REJECT"
+    }
+  ],
+  "old_evidence_used": false
+}

@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "old_lost_R1_reused": false,
+  "checks": [
+    {
+      "case": "disc_h8_C3D4",
+      "manifest_sha256": "4218a7c51eb59a521b3263610f02d2e5857a7fb4060ffaa7f1b106ab4a1f0c89",
+      "frozen_files_verified": 17,
+      "run_utc": "2026-10-06T21:03:32.034826+00:00",
+      "raw_DAT_sha256": "24a6e611e4d937ca72d1d189d146187c283becbcdba36c2025fce26d55f40e2e",
+      "source_and_run_hashes_match": true
+    },
+    {
+      "case": "disc_h6_C3D4",
+      "manifest_sha256": "ec6b86b53e7229ade546bf3715ba2f85d6e5493513ab24d2291bbc9e1355d444",
+      "frozen_files_verified": 17,
+      "run_utc": "2026-10-06T21:05:08.985391+00:00",
+      "raw_DAT_sha256": "c2a6cabf5af98ad47a2420831ee5a3808ea56c64e5533abfb22ff830bbd49929",
+      "source_and_run_hashes_match": true
+    },
+    {
+      "case": "disc_h4_C3D4",
+      "manifest_sha256": "08cea6a2636a66c4b77372386c86c27e8ccbe96e6ed4926f42c26f5c84c0b930",
+      "frozen_files_verified": 17,
+      "run_utc": "2026-10-06T21:07:03.060268+00:00",
+      "raw_DAT_sha256": "653ae0fee0f421d48988acca1a63fa7473cc21b53875bc627182957d0c71ae11",
+      "source_and_run_hashes_match": true
+    },
+    {
+      "case": "disc_h8_C3D10",
+      "manifest_sha256": "b72c9663dee32a512680e4255773377bebecc43442ea35c89f0f821edddb928b",
+      "frozen_files_verified": 15,
+      "run_utc": "2026-10-06T21:03:41.820363+00:00",
+      "raw_DAT_sha256": "b997153fb1577adb741291c1b4d3f64780c8e7c0ae89f59340c5d43803140dd2",
+      "source_and_run_hashes_match": true
+    },
+    {
+      "case": "disc_h6_C3D10",
+      "manifest_sha256": "3bef1ef69f4d6a338dc0a4f196457277e9277546ac04eb4f5dbb31c782d6ff86",
+      "frozen_files_verified": 15,
+      "run_utc": "2026-10-06T21:05:21.807269+00:00",
+      "raw_DAT_sha256": "bc08526a909c72a1258659866b669843fde277cc44be37fd6d582459150be926",
+      "source_and_run_hashes_match": true
+    },
+    {
+      "case": "disc_h4_C3D10",
+      "manifest_sha256": "7c8207b0479a73d80bc2ee8ded19e70a6ea58baf8827a771731e353cdce9b1ff",
+      "frozen_files_verified": 15,
+      "run_utc": "2026-10-06T21:08:18.585275+00:00",
+      "raw_DAT_sha256": "a71526548a474c3214dde029edb4372e54a2a41f2987411b5f6bdf07e208080c",
+      "source_and_run_hashes_match": true
+    },
+    {
+      "case": "pressure_patch_C3D4",
+      "manifest_sha256": "f0c9014e5ad9ce9dac234ea4926fc456e4d0e5de5b02232ab971d867c22a7c60",
+      "frozen_files_verified": 17,
+      "fresh_patch_verified": true
+    },
+    {
+      "case": "pressure_patch_C3D10",
+      "manifest_sha256": "17465dec89215af85b19703e863d0ce95e9e13d61fb9198afa1d2d46eaca97b4",
+      "frozen_files_verified": 15,
+      "fresh_patch_verified": true
+    },
+    {
+      "case": "n5_right",
+      "inputs_verified": 12,
+      "solved_T_sha256": "85eddb2db2ab3b7af368c8af32c798a077eb6b481f0ee718004fbcc36b7be361",
+      "analytic_target_match": true
+    },
+    {
+      "case": "n10_right",
+      "inputs_verified": 12,
+      "solved_T_sha256": "f0b5c02cff51dfa4ffc98f1068f751640d0b2477bd1ace8380442118ad1ac02e",
+      "analytic_target_match": true
+    },
+    {
+      "case": "n5_wrong_sign",
+      "inputs_verified": 12,
+      "solved_T_sha256": "d242b57d7d3eb0d8715db1ca077a9f8ec5ceea112d7b734a66c3ff125b49ad6e",
+      "analytic_target_match": false
+    }
+  ]
+}

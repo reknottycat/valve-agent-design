@@ -1,0 +1,90 @@
+{
+  "all_boundary_triangles_orientation_order_and_patch_membership_exact": true,
+  "exact_geometric_partition_preserved": true,
+  "internal_change_only_removal_of_group_shared_faces": true,
+  "merged_groups": [
+    {
+      "determinant": 0.11725463514279072,
+      "max_halfspace_distance_m": 1.8843884596069405e-19,
+      "new_cell": 12615,
+      "original_cells": [
+        12615,
+        31884
+      ],
+      "shell_volume_m3": 6.107188137063616e-08
+    },
+    {
+      "determinant": 0.005012101034080646,
+      "max_halfspace_distance_m": 1.7980081210216035e-19,
+      "new_cell": 30580,
+      "original_cells": [
+        30580,
+        122864
+      ],
+      "shell_volume_m3": 5.841802184202764e-09
+    },
+    {
+      "determinant": 0.016885959259502373,
+      "max_halfspace_distance_m": 4.346360389568482e-19,
+      "new_cell": 32321,
+      "original_cells": [
+        32322,
+        115280
+      ],
+      "shell_volume_m3": 6.843801697163043e-08
+    },
+    {
+      "determinant": 0.024579832336203866,
+      "max_halfspace_distance_m": 8.591394328338726e-20,
+      "new_cell": 51459,
+      "original_cells": [
+        51460,
+        122905
+      ],
+      "shell_volume_m3": 5.186927273129935e-09
+    },
+    {
+      "determinant": 0.0021942002861295024,
+      "max_halfspace_distance_m": 6.559118823590945e-19,
+      "new_cell": 102905,
+      "original_cells": [
+        102906,
+        110512
+      ],
+      "shell_volume_m3": 4.961863223596316e-08
+    },
+    {
+      "determinant": 0.002386505901927176,
+      "max_halfspace_distance_m": 2.2267175511149617e-19,
+      "new_cell": 116491,
+      "original_cells": [
+        116494,
+        122879
+      ],
+      "shell_volume_m3": 5.066536987102767e-09
+    },
+    {
+      "determinant": 0.0029780244445880566,
+      "max_halfspace_distance_m": 3.4159719207410163e-19,
+      "new_cell": 116494,
+      "original_cells": [
+        116497,
+        122911
+      ],
+      "shell_volume_m3": 4.790751841315136e-09
+    }
+  ],
+  "new_cells": 411099,
+  "old_cells": 411106,
+  "point_file_byte_identical": true,
+  "removed_internal_faces": [
+    45164,
+    103959,
+    109488,
+    162127,
+    277919,
+    314103,
+    314108
+  ],
+  "volume_statement": "Every candidate cell shell is the exact oriented boundary of the original tetrahedron union. This is stronger than equality of rounded volume sums."
+}

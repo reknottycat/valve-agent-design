@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "mesh_scope_only": true,
+  "pinned_manifest_sha256": "98976d5277a5592284cd20c9dbce095d7c7b845e036417ade65c90e5aff0bd05",
+  "frozen_inventory_files_checked": 63,
+  "package_payload_files_checked": 107,
+  "book_values_parsed_from_fresh_native_log": true,
+  "normal_and_optimized_acceptance_and_independent_review_match": true,
+  "upstream_library_file_id": "libfile_d1fe3abe4124819191187761705c99c6",
+  "upstream_archive_sha256": "aa2410a92d6aa64dc6e9f0a6253f4a82e1a5cceb9814557b3a84b4190d2f667e"
+}

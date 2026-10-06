@@ -1,0 +1,19 @@
+{
+  "cells": 411099,
+  "points": 90900,
+  "faces": 865251,
+  "native_total_volume_m3": 0.06443540618760644,
+  "maximum_nonorthogonality_degrees": 77.47148400781279,
+  "faces_over_70_degrees": 54,
+  "maximum_skewness": 1.5908053303312517,
+  "min_cell_determinant": 0.0010289095826444307,
+  "normal_and_optimized_tests": 31,
+  "source_native_conversion_note": {
+    "conversion_differing_scalars": 51,
+    "conversion_max_absolute_difference_m": 5.551115123125783e-17,
+    "conversion_max_ulp": 1
+  },
+  "manifest_sha256": "98976d5277a5592284cd20c9dbce095d7c7b845e036417ade65c90e5aff0bd05",
+  "native_log_sha256": "e77307a24437cb527d4d35bd1d21594a40aa31ec03dbb35b9716539fa7f5c9bf",
+  "scope": "MESH_GEOMETRY_AND_BINDINGS_ONLY"
+}

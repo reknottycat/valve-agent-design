@@ -1,0 +1,16 @@
+{
+  "docx": "/workspace/shared/valve-calculation-book-rebuilt-R1-20261006/output/522-35.4179_工程计算书_工作稿_R1_重建版.docx",
+  "revision": "R1_REBUILT_WORKING_DRAFT",
+  "native_equations": 78,
+  "tables": 48,
+  "arithmetic_checks": 197,
+  "base_source_files": 32,
+  "fresh_source_files": 116,
+  "source_files": 148,
+  "actual_valve_CFD": "NOT YET COMPUTED",
+  "new_disc_FEA": "SIX_FRESH_BILATERAL_ELASTIC_CASES_CONTACT_HOLD",
+  "new_Poisson": "INDEPENDENT_ORTHOGONAL_CUBES_ONLY",
+  "whole_valve_FEA": "NOT YET COMPUTED",
+  "source_alignment": "CONFIRMED_R1_BOUND_SCOPE",
+  "manufacturing_release": "HOLD"
+}

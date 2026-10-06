@@ -1,0 +1,181 @@
+{
+  "argv": [
+    "bash",
+    "-c",
+    "source \"$1\"; exec \"$2\" -case \"$3\" -allTopology -allGeometry",
+    "mesh-quality-revalidation",
+    "/workspace/shared/valve-solvers-rebuilt-20261006/env.sh",
+    "/workspace/shared/valve-solvers-rebuilt-20261006/root/usr/bin/checkMesh",
+    "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/data/final_candidate"
+  ],
+  "attempt_id": "051b9e9cbb8145eabcd7ff87e75ad196",
+  "binary": "/workspace/shared/valve-solvers-rebuilt-20261006/root/usr/bin/checkMesh",
+  "binary_sha256": "d62326097607d40e460bdd5d63df245896dd51ea16cf965199b75509308de791",
+  "changed_diagnostic_set_files": [],
+  "code_snapshot": {
+    "directories": [],
+    "files": {
+      "audit_agglomeration.py": {
+        "bytes": 4204,
+        "sha256": "8bc7cc90f9c1a88c5d223e24835b13d80244e2d6b6e64d7f0114a338afbc3920"
+      },
+      "binding.py": {
+        "bytes": 3216,
+        "sha256": "1a4cb7b1da885b256d5a01297216fbd747e0dd2ea6e67f5f73b01800dbfa0251"
+      },
+      "finalize_v2.py": {
+        "bytes": 4671,
+        "sha256": "ab62e5a14a91beff74d9fa11c678a69004356d412e467968326c00668ac8549e"
+      },
+      "repair_mesh.py": {
+        "bytes": 19936,
+        "sha256": "aee1da95149e95b1a2a2580441c0b37d5489c7091a715ac4aae271eea2d8cca4"
+      },
+      "revalidate_v2.py": {
+        "bytes": 6447,
+        "sha256": "c1ec5b61599bc81988b7c77a8638c7671c1be4b901c793f33e3b375ceeaf3d75"
+      }
+    },
+    "kind": "directory"
+  },
+  "core_inputs_unchanged": true,
+  "environment_script": "/workspace/shared/valve-solvers-rebuilt-20261006/env.sh",
+  "environment_script_sha256": "0be53f0be3749606df05d46fe49f5927c26c3e58b6838cb560e7adea2b2f4528",
+  "expectation": "mesh_ok",
+  "input_path": "/workspace/shared/valve-mesh-repair-rebuilt-20261006/revalidation_v2/data/final_candidate",
+  "inputs_after": {
+    "directories": [
+      "constant",
+      "constant/polyMesh",
+      "constant/polyMesh/sets",
+      "system"
+    ],
+    "files": {
+      "ACCEPTED.json": {
+        "bytes": 2226,
+        "sha256": "0cf9449766c47a7bfa7a4f49721cf02d188cc2aa9810b427d9cc4f1dca32234c"
+      },
+      "constant/polyMesh/boundary": {
+        "bytes": 1258,
+        "sha256": "61b7cdb70df770ee2b82654864495fcbaeabfad1257c70707d4040889ccd1af9"
+      },
+      "constant/polyMesh/cellZones": {
+        "bytes": 2767532,
+        "sha256": "8942f05e891e872dffd04ba640e6dad246a3710248eeb533185703b70b6ba644"
+      },
+      "constant/polyMesh/faceZones": {
+        "bytes": 876,
+        "sha256": "1a3fc3f2f2c7f76c597df378690ccbf4b8a8013456e58f0c87dcf4ecaca5220f"
+      },
+      "constant/polyMesh/faces": {
+        "bytes": 17970693,
+        "sha256": "8356a72c469120af9a9e4b538fa1b3c1a0fc365c817bb7df419258d6cc824039"
+      },
+      "constant/polyMesh/neighbour": {
+        "bytes": 5350896,
+        "sha256": "7d6fe2bacef50eb62715fdd48155e34e749838d2c254b6e265f357c68e6ce2b7"
+      },
+      "constant/polyMesh/owner": {
+        "bytes": 5717446,
+        "sha256": "1d8d42b66f0d6ac63c995bafe6e7a50095688506d2a16a0fc7a133c83b6e2fc0"
+      },
+      "constant/polyMesh/pointZones": {
+        "bytes": 877,
+        "sha256": "a4a6a2dcd51a046ec166f12f8fb6f70d0cc21e238dc6ae1d1db90effcf542a29"
+      },
+      "constant/polyMesh/points": {
+        "bytes": 5793380,
+        "sha256": "9cd0ddbcc19e4511f68175301cf55fcbc2272f34e85a775e9585c45b08fde8d9"
+      },
+      "constant/polyMesh/sets/nonOrthoFaces": {
+        "bytes": 1248,
+        "sha256": "c081e091cacd8a2efd0505f8d6e4b6d134333cf143e07467d99eeb0125b5206e"
+      },
+      "system/controlDict": {
+        "bytes": 274,
+        "sha256": "5e12aabc5cf504fdbe11de72691175553efd5c40a2820ccbb916508a62bdfaf5"
+      },
+      "system/fvSchemes": {
+        "bytes": 296,
+        "sha256": "42cb3daa33dce8d4606a14fd613e7d1717c4862e9a0f334524d3ad7602245915"
+      },
+      "system/fvSolution": {
+        "bytes": 86,
+        "sha256": "f5308d30634de746599a384973c749418783dec478d3e9c3456300c2a034aae8"
+      }
+    },
+    "kind": "directory"
+  },
+  "inputs_before": {
+    "directories": [
+      "constant",
+      "constant/polyMesh",
+      "constant/polyMesh/sets",
+      "system"
+    ],
+    "files": {
+      "ACCEPTED.json": {
+        "bytes": 2226,
+        "sha256": "0cf9449766c47a7bfa7a4f49721cf02d188cc2aa9810b427d9cc4f1dca32234c"
+      },
+      "constant/polyMesh/boundary": {
+        "bytes": 1258,
+        "sha256": "61b7cdb70df770ee2b82654864495fcbaeabfad1257c70707d4040889ccd1af9"
+      },
+      "constant/polyMesh/cellZones": {
+        "bytes": 2767532,
+        "sha256": "8942f05e891e872dffd04ba640e6dad246a3710248eeb533185703b70b6ba644"
+      },
+      "constant/polyMesh/faceZones": {
+        "bytes": 876,
+        "sha256": "1a3fc3f2f2c7f76c597df378690ccbf4b8a8013456e58f0c87dcf4ecaca5220f"
+      },
+      "constant/polyMesh/faces": {
+        "bytes": 17970693,
+        "sha256": "8356a72c469120af9a9e4b538fa1b3c1a0fc365c817bb7df419258d6cc824039"
+      },
+      "constant/polyMesh/neighbour": {
+        "bytes": 5350896,
+        "sha256": "7d6fe2bacef50eb62715fdd48155e34e749838d2c254b6e265f357c68e6ce2b7"
+      },
+      "constant/polyMesh/owner": {
+        "bytes": 5717446,
+        "sha256": "1d8d42b66f0d6ac63c995bafe6e7a50095688506d2a16a0fc7a133c83b6e2fc0"
+      },
+      "constant/polyMesh/pointZones": {
+        "bytes": 877,
+        "sha256": "a4a6a2dcd51a046ec166f12f8fb6f70d0cc21e238dc6ae1d1db90effcf542a29"
+      },
+      "constant/polyMesh/points": {
+        "bytes": 5793380,
+        "sha256": "9cd0ddbcc19e4511f68175301cf55fcbc2272f34e85a775e9585c45b08fde8d9"
+      },
+      "constant/polyMesh/sets/nonOrthoFaces": {
+        "bytes": 1248,
+        "sha256": "c081e091cacd8a2efd0505f8d6e4b6d134333cf143e07467d99eeb0125b5206e"
+      },
+      "system/controlDict": {
+        "bytes": 274,
+        "sha256": "5e12aabc5cf504fdbe11de72691175553efd5c40a2820ccbb916508a62bdfaf5"
+      },
+      "system/fvSchemes": {
+        "bytes": 296,
+        "sha256": "42cb3daa33dce8d4606a14fd613e7d1717c4862e9a0f334524d3ad7602245915"
+      },
+      "system/fvSolution": {
+        "bytes": 86,
+        "sha256": "f5308d30634de746599a384973c749418783dec478d3e9c3456300c2a034aae8"
+      }
+    },
+    "kind": "directory"
+  },
+  "log_relative_path": "stage_evidence/native_final.log",
+  "log_sha256": "e77307a24437cb527d4d35bd1d21594a40aa31ec03dbb35b9716539fa7f5c9bf",
+  "native_mesh_ok": true,
+  "operation": "native_final",
+  "recorded_at": "2026-10-06T21:37:00.055818+00:00",
+  "returncode": 0,
+  "run_id": "revalidation-v2-63948730eb13490098329c8b4a7bb160",
+  "schema": "valve-mesh-evidence-v2",
+  "status": "PASS"
+}
