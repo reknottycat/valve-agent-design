@@ -1,0 +1,26 @@
+test_all_pinned_sources_and_property_inputs (test_gate.GateTests.test_all_pinned_sources_and_property_inputs) ... ok
+test_changed_selected_duty_cannot_reuse_valid_source_hashes (test_gate.GateTests.test_changed_selected_duty_cannot_reuse_valid_source_hashes) ... ok
+test_nonfinite_and_blown_up_final_fields_rejected (test_gate.GateTests.test_nonfinite_and_blown_up_final_fields_rejected) ... ok
+test_original_warning_log_is_accepted_with_warning (test_gate.GateTests.test_original_warning_log_is_accepted_with_warning) ... ok
+test_quality_drift_or_old_failure_is_rejected (test_gate.GateTests.test_quality_drift_or_old_failure_is_rejected) ... ok
+test_tampered_source_cannot_be_adopted (test_gate.GateTests.test_tampered_source_cannot_be_adopted) ... ok
+test_zero_or_missing_final_solution_rejected (test_gate.GateTests.test_zero_or_missing_final_solution_rejected) ... ok
+test_density_scaling_changes_pa_but_not_dimensionless_coefficient (test_postprocess.PostprocessTests.test_density_scaling_changes_pa_but_not_dimensionless_coefficient) ... ok
+test_incomplete_log_and_too_few_samples_fail (test_postprocess.PostprocessTests.test_incomplete_log_and_too_few_samples_fail) ... ok
+test_mass_imbalance_cannot_be_hidden_by_stable_flow (test_postprocess.PostprocessTests.test_mass_imbalance_cannot_be_hidden_by_stable_flow) ... ok
+test_missing_history_replaces_previous_pass_and_clears_csv (test_postprocess.PostprocessTests.test_missing_history_replaces_previous_pass_and_clears_csv) ... ok
+test_nonfinite_history_and_residuals_are_rejected (test_postprocess.PostprocessTests.test_nonfinite_history_and_residuals_are_rejected) ... ok
+test_pass_converts_kinematic_pressure_and_uses_actual_outlet_flow (test_postprocess.PostprocessTests.test_pass_converts_kinematic_pressure_and_uses_actual_outlet_flow) ... ok
+test_pressure_corrector_cannot_hide_high_outer_residual (test_postprocess.PostprocessTests.test_pressure_corrector_cannot_hide_high_outer_residual) ... ok
+test_pressure_oscillation_and_wall_leakage_fail_independent_gates (test_postprocess.PostprocessTests.test_pressure_oscillation_and_wall_leakage_fail_independent_gates) ... ok
+test_stale_history_tail_is_rejected (test_postprocess.PostprocessTests.test_stale_history_tail_is_rejected) ... ok
+test_wrong_signs_keep_observations_but_withhold_actual_results (test_postprocess.PostprocessTests.test_wrong_signs_keep_observations_but_withhold_actual_results) ... ok
+test_geometry_probe_rejects_patch_and_normal_tampering (test_native_gate.NativeGateTests.test_geometry_probe_rejects_patch_and_normal_tampering) ... ok
+test_unit_tetra_geometry_matches_closed_form (test_native_gate.NativeGateTests.test_unit_tetra_geometry_matches_closed_form) ... ok
+test_wrong_nonconstant_mms_rejected_despite_zero_residuals (test_native_gate.NativeGateTests.test_wrong_nonconstant_mms_rejected_despite_zero_residuals) ... ok
+test_zero_source_constant_result_cannot_pass_nonzero_source_mms (test_native_gate.NativeGateTests.test_zero_source_constant_result_cannot_pass_nonzero_source_mms) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.177s
+
+OK

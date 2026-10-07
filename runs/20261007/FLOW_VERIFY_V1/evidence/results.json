@@ -1,0 +1,66 @@
+{
+  "status": "BLOCKED",
+  "started_utc": "2026-10-07T03:51:52.167133+00:00",
+  "manufacturing_authorized": false,
+  "actual_mesh_flux_m3_s": null,
+  "computed_pressure_drop_Pa": null,
+  "computed_loss_coefficient": null,
+  "source_hashes": {
+    "runs/20261006/CALCULATIONS/R1/sources_new/FLOW_PLAN_NEW/flow_study_plan.json": "0a83f513c91bb1703f6b00ed6fe59db63940e9ab9530779047b815d02d36bac6",
+    "runs/20261006/CALCULATIONS/R1/README.zh-CN.md": "eb060cd253f5a2ab9e821bf0b247be313fd7a7f801e6026a4eff26c40e5d23f5",
+    "runs/20261006/CALCULATIONS/R1/current_flow_chapter.py": "b9592e0ac945f19127b57ed0db244f78881974401aff824754fe006b9b369eb4",
+    "runs/20261006/C4/README.zh-CN.md": "266fb676d3c93297c085ddd25a854165185acd45d09e4754582d396bf2a3004c",
+    "runs/20261006/C4/T06/research_basis.json": "a30b4aceb654b2589d4d41c1cac6eeb9a7a9950322fcb8ca83397e0c91524558",
+    "runs/20261006/C4/T06/seawater_study.py": "2767f043bd35ce52305192495003f9f639d0913e4bdf299f55c2a285b6bc214c",
+    "runs/20261006/C4/T06/seawater_study_cases.json": "dd39b778058673c846109a4e5bc409147a8820a06efd4891e83b9b1938b5a0fa",
+    "runs/20261006/C2/T11/parameters.json": "c35a4064403f98e3462bfea3650eebe2695ced39a15fb928f817e465169576ba",
+    "runs/20261006/C0/T23/cfd_pipeline.py": "e4c4965701abe6282fce8a926c3fb8565f96616cf1fe63cf749e564929aae8f9",
+    "runs/20261006/CALCULATIONS/R1/sources_new/MESH_V2/revalidation_manifest.json": "98976d5277a5592284cd20c9dbce095d7c7b845e036417ade65c90e5aff0bd05",
+    "runs/20261006/CALCULATIONS/R1/sources_new/MESH_V2/stage_evidence/native_final.json": "5eaa60aacbe590d0521a7a853e09d1a6c498ac880d2ffa8e84021d15101ae0ef",
+    "runs/20261006/CALCULATIONS/R1/sources_new/MESH_V2/stage_evidence/native_final.log": "e77307a24437cb527d4d35bd1d21594a40aa31ec03dbb35b9716539fa7f5c9bf",
+    "runs/20261006/CALCULATIONS/R1/sources/C5/T03/solver_benchmark_results.json": "fdcbfc3f0452107cacf2bdb4587bacc7783b873ee528f9c787e9caa5e064035c"
+  },
+  "package_sha256": {
+    "README.zh-CN.md": "095990889500bf33609f77b961ddd2bdfc5f5288567a7588d8d5956c9cbb834a",
+    "flow_verify.py": "b065e39a5e5981e9edbfabff72b45607bc400b6a793450a92f5800db376eac49",
+    "manifest.json": "7559f772e025b4d3ec27cc31ec43b0ca02ec92713992a5b71e7dca26f0cc0a9b",
+    "native/Make/files": "10b77104aa2479a107e63ff37222a02a47963455e0cbf7663a8ad39a8b6d9a5a",
+    "native/Make/options": "0e3853fb95fcd3e7b165f157d502a4408f84e2e5b5e7b79e36fff2843d63b6fb",
+    "native/README.md": "a64d63c36c3ad07b19699cc66cdaf481f4d71df2d3e8558a887d1de9efc759ae",
+    "native/source_api_checks.json": "cb8e45e3fb6d28dcbda8cccbe55972179b5a7da4f42d74ddda55bd6c4d681643",
+    "native/valveNativeGate.C": "0c66d1169ead8a4486126321907eb5bcc76a2847df0ac9c562850b805dcfcb31",
+    "native_gate.py": "5a6be23359113c7ae1f992cc656d452d20438414b65f33821133e60345b68356",
+    "postprocess.py": "67c689d04c11ef8fd5308cf50be5c9abdf295f086c05fd70475c2991f86a5f11",
+    "test_gate.py": "9562ac9c4d449dc380e4a6adc30e338a7fb55e9f80890e11e414fb81793b1379",
+    "test_native_gate.py": "26d7a6bc80cb33766df2987d2475775e1be94248d66159a65be99e8d4058cbb4",
+    "test_postprocess.py": "7ad764e5b8bf1be9a801fb5c90d1477f6ef953dbf2620dbd7eace1a490ea032b"
+  },
+  "manifest_sha256": "7559f772e025b4d3ec27cc31ec43b0ca02ec92713992a5b71e7dca26f0cc0a9b",
+  "case_inputs_sha256": "d8ae36d292f250290c6e58d6b9c817ecd95ec78a1ae015ade0da2c9c11ea4622",
+  "environment": {
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "commands": {
+      "simpleFoam": null,
+      "checkMesh": null,
+      "wmake": null
+    },
+    "WM_PROJECT_VERSION": null,
+    "WM_OPTIONS": null,
+    "missing_commands": [
+      "simpleFoam",
+      "checkMesh",
+      "wmake"
+    ]
+  },
+  "blocker": {
+    "id": "OPENFOAM_1912_RUNTIME_UNAVAILABLE",
+    "detail": "A loaded double-precision OpenCFD 1912 development runtime is required (simpleFoam/checkMesh/wmake).",
+    "missing": [
+      "simpleFoam",
+      "checkMesh",
+      "wmake"
+    ]
+  },
+  "case_prepared": true
+}

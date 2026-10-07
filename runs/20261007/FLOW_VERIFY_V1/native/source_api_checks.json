@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-07",
+  "target": "OpenCFD/ESI OpenFOAM v1912, double precision, serial",
+  "compiled_in_preparation_environment": false,
+  "exact_version_api_verified": false,
+  "attempted_primary_sources": [
+    {
+      "url": "https://develop.openfoam.com/Development/openfoam/-/raw/OpenFOAM-v1912/applications/solvers/basic/laplacianFoam/laplacianFoam.C",
+      "retrieval": "inaccessible through browsing tool"
+    },
+    {
+      "url": "https://develop.openfoam.com/Development/openfoam/-/raw/OpenFOAM-v1912/src/finiteVolume/fvMesh/fvMeshGeometry.C",
+      "retrieval": "inaccessible through browsing tool"
+    },
+    {
+      "url": "https://develop.openfoam.com/Development/openfoam/-/raw/OpenFOAM-v1912/src/OpenFOAM/global/argList/argList.H",
+      "retrieval": "inaccessible through browsing tool"
+    },
+    {
+      "url": "https://www.openfoam.com/documentation/guides/v1912/api/classFoam_1_1fvMesh.html",
+      "retrieval": "403"
+    },
+    {
+      "url": "https://www.openfoam.com/documentation/guides/v1912/doc/guide-schemes-sngrad-corrected.html",
+      "retrieval": "403"
+    },
+    {
+      "url": "https://www.openfoam.com/documentation/guides/v1912/doc/guide-schemes-sngrad-limited.html",
+      "retrieval": "403"
+    }
+  ],
+  "newer_primary_api_search_results_not_exact_version_proof": [
+    "https://api.openfoam.com/2306/argList_8C_source.html",
+    "https://api.openfoam.com/2506/SolverPerformance_8C_source.html",
+    "https://api.openfoam.com/2306/classFoam_1_1GeometricField.html"
+  ],
+  "disposition": "Compile and run the included gate in the pinned v1912 environment; stop on failure. No native pass is asserted."
+}

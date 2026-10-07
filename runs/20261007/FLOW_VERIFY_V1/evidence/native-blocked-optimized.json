@@ -1,0 +1,62 @@
+{
+  "compiled": false,
+  "engineering_release": false,
+  "environment": {
+    "WM_OPTIONS": "",
+    "WM_PRECISION_OPTION": "",
+    "WM_PROJECT_VERSION": "",
+    "wmake": null
+  },
+  "executed": false,
+  "execution_attempted": false,
+  "limits": {
+    "MMS_Linf_divided_by_max_exact": 0.1,
+    "MMS_volume_weighted_relative_L2": 0.02,
+    "geometry_C_and_Cf_atol_m": 1e-11,
+    "geometry_C_and_Cf_rtol": 5e-10,
+    "geometry_Sf_atol_m2": 2e-14,
+    "geometry_Sf_rtol": 5e-10,
+    "geometry_V_atol_m3": 1e-22,
+    "geometry_V_rtol": 1e-09,
+    "linear_final_residual": 1e-10,
+    "max_outer_iterations": 4000,
+    "max_scaled_update": 1e-10,
+    "outer_initial_residual": 1e-08,
+    "scheme_difference_Linf_divided_by_max_exact": 0.05,
+    "scheme_difference_volume_weighted_relative_L2": 0.02
+  },
+  "manufactured_equation": "T=x^2+y^2+z^2; Laplacian(T)=6; Dirichlet T on every native face centre",
+  "mesh_convergence_claim": false,
+  "native_probe_completed": false,
+  "physical_boundary_conditions_used": false,
+  "raw_evidence_sha256": {},
+  "reason": "BLOCKED_RUNTIME: source OpenCFD/ESI OpenFOAM v1912 double-precision development environment (wmake + headers + libraries)",
+  "schema_version": 1,
+  "source_mesh_path": "/workspace/scratch/906630f10536/inputs/revalidation_v2/data/final_candidate/constant/polyMesh",
+  "source_mesh_sha256_after": {
+    "boundary": "61b7cdb70df770ee2b82654864495fcbaeabfad1257c70707d4040889ccd1af9",
+    "cellZones": "8942f05e891e872dffd04ba640e6dad246a3710248eeb533185703b70b6ba644",
+    "faceZones": "1a3fc3f2f2c7f76c597df378690ccbf4b8a8013456e58f0c87dcf4ecaca5220f",
+    "faces": "8356a72c469120af9a9e4b538fa1b3c1a0fc365c817bb7df419258d6cc824039",
+    "neighbour": "7d6fe2bacef50eb62715fdd48155e34e749838d2c254b6e265f357c68e6ce2b7",
+    "owner": "1d8d42b66f0d6ac63c995bafe6e7a50095688506d2a16a0fc7a133c83b6e2fc0",
+    "pointZones": "a4a6a2dcd51a046ec166f12f8fb6f70d0cc21e238dc6ae1d1db90effcf542a29",
+    "points": "9cd0ddbcc19e4511f68175301cf55fcbc2272f34e85a775e9585c45b08fde8d9",
+    "sets/nonOrthoFaces": "c081e091cacd8a2efd0505f8d6e4b6d134333cf143e07467d99eeb0125b5206e"
+  },
+  "source_mesh_sha256_before": {
+    "boundary": "61b7cdb70df770ee2b82654864495fcbaeabfad1257c70707d4040889ccd1af9",
+    "cellZones": "8942f05e891e872dffd04ba640e6dad246a3710248eeb533185703b70b6ba644",
+    "faceZones": "1a3fc3f2f2c7f76c597df378690ccbf4b8a8013456e58f0c87dcf4ecaca5220f",
+    "faces": "8356a72c469120af9a9e4b538fa1b3c1a0fc365c817bb7df419258d6cc824039",
+    "neighbour": "7d6fe2bacef50eb62715fdd48155e34e749838d2c254b6e265f357c68e6ce2b7",
+    "owner": "1d8d42b66f0d6ac63c995bafe6e7a50095688506d2a16a0fc7a133c83b6e2fc0",
+    "pointZones": "a4a6a2dcd51a046ec166f12f8fb6f70d0cc21e238dc6ae1d1db90effcf542a29",
+    "points": "9cd0ddbcc19e4511f68175301cf55fcbc2272f34e85a775e9585c45b08fde8d9",
+    "sets/nonOrthoFaces": "c081e091cacd8a2efd0505f8d6e4b6d134333cf143e07467d99eeb0125b5206e"
+  },
+  "source_mesh_unchanged": true,
+  "status": "BLOCKED",
+  "threshold_basis": "Prospective diagnostic gates for this package, not calibrated engineering acceptance limits",
+  "validation_scope": "Real valve mesh native geometry and nonzero-source manufactured Poisson equation only"
+}

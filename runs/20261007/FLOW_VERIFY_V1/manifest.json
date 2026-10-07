@@ -1,0 +1,197 @@
+{
+  "schema": "valve.flow-verification/1.0",
+  "status": "PREPARED_NOT_SOLVED",
+  "base_commit": "aa80b87b6ee9617754101a238f70bec99393ad9a",
+  "selected": {
+    "temperature_C": 20.0,
+    "salinity_g_kg": 35.0,
+    "pressure_MPa_absolute": 0.101325,
+    "density_kg_m3": 1024.9109328963,
+    "dynamic_viscosity_Pa_s": 0.0010766289252529323,
+    "kinematic_viscosity_m2_s": 1.0504609627009073e-06,
+    "actual_duty_or_measurement": false,
+    "pressure_correction_implemented": false,
+    "minus_2C_phase_and_property_gate": "UNRESOLVED",
+    "id": "laminar_diagnostic_Re10",
+    "status": "STUDY_ASSUMPTION_NOT_RUN",
+    "inlet_fixed_face_speed_m_s": 5.252304813504536e-05,
+    "nominal_D_Reynolds_from_face_speed": 10.0,
+    "nominal_circle_flow_m3_s": 1.650060221652016e-06,
+    "nominal_circle_flow_m3_h": 0.005940216797947258,
+    "dynamic_pressure_from_face_speed_Pa": 1.4136958216160478e-06,
+    "regime_scope": "LAMINAR_NUMERICAL_DIAGNOSTIC",
+    "actual_mesh_flux_m3_s": null,
+    "computed_pressure_drop_Pa": null,
+    "computed_loss_coefficient": null,
+    "nominal_diameter_m": 0.2,
+    "nominal_circle_area_m2": 0.031415926535897934,
+    "pose": {
+      "disc_lift_mm": 57.0,
+      "stem_retraction_mm": 57.0,
+      "scope": "Fixed fully-open research geometry, treated as restrained for this CFD study; no prediction of spontaneous lift, force equilibrium, or closing behavior"
+    },
+    "domain": {
+      "inlet_x_m": -0.6000000000000001,
+      "outlet_x_m": 1.2000000000000002,
+      "straight_extensions_each_DN": 3,
+      "scope": "Port-to-port pressure loss includes numerical straight extensions and developing/disturbed flow; not automatically the isolated-valve coefficient"
+    },
+    "pressure_interpretation": {
+      "field": "simpleFoam p has dimensions m2/s2; multiply by rho for Pa",
+      "reference_outlet_kinematic_p": 0,
+      "reference_outlet_axis_absolute_pressure_Pa": 101325.0,
+      "design_load_pressure_MPa_g": 0.63,
+      "scope": "0.63 MPa(g) is a separate structural study load, not an imposed flow pressure drop. The initial CFD property state remains the validated atmospheric reference. Explicit gravity is omitted from this constant-density flow equation; physical vertical pressure-force postprocessing needs a separately stated hydrostatic reconstruction and contact-wetting check."
+    }
+  },
+  "sources": [
+    {
+      "path": "runs/20261006/CALCULATIONS/R1/sources_new/FLOW_PLAN_NEW/flow_study_plan.json",
+      "sha256": "0a83f513c91bb1703f6b00ed6fe59db63940e9ab9530779047b815d02d36bac6",
+      "git_blob_sha1": "0ca3766e0fffb50ab46b999f894b4a7fc481754e",
+      "source_commit": "aa80b87b6ee9617754101a238f70bec99393ad9a"
+    },
+    {
+      "path": "runs/20261006/CALCULATIONS/R1/README.zh-CN.md",
+      "sha256": "eb060cd253f5a2ab9e821bf0b247be313fd7a7f801e6026a4eff26c40e5d23f5",
+      "git_blob_sha1": "7a82420ba8b34e61870fe5c7ba162769ad8857da",
+      "source_commit": "aa80b87b6ee9617754101a238f70bec99393ad9a"
+    },
+    {
+      "path": "runs/20261006/CALCULATIONS/R1/current_flow_chapter.py",
+      "sha256": "b9592e0ac945f19127b57ed0db244f78881974401aff824754fe006b9b369eb4",
+      "git_blob_sha1": "abe597c29dd0b869ec7bea2688144d0bc3607b15",
+      "source_commit": "aa80b87b6ee9617754101a238f70bec99393ad9a"
+    },
+    {
+      "path": "runs/20261006/C4/README.zh-CN.md",
+      "sha256": "266fb676d3c93297c085ddd25a854165185acd45d09e4754582d396bf2a3004c",
+      "git_blob_sha1": "bbd3b53009bbaf8efd5b8006d49d2e67794334a2",
+      "source_commit": "aa80b87b6ee9617754101a238f70bec99393ad9a"
+    },
+    {
+      "path": "runs/20261006/C4/T06/research_basis.json",
+      "sha256": "a30b4aceb654b2589d4d41c1cac6eeb9a7a9950322fcb8ca83397e0c91524558",
+      "git_blob_sha1": "aed9a9b300133502a7d9acefa25732ebcb1c39ef",
+      "source_commit": "aa80b87b6ee9617754101a238f70bec99393ad9a"
+    },
+    {
+      "path": "runs/20261006/C4/T06/seawater_study.py",
+      "sha256": "2767f043bd35ce52305192495003f9f639d0913e4bdf299f55c2a285b6bc214c",
+      "git_blob_sha1": "6f55f7c43da3314b411649d6eb75d3b5b1a9b4d8",
+      "source_commit": "aa80b87b6ee9617754101a238f70bec99393ad9a"
+    },
+    {
+      "path": "runs/20261006/C4/T06/seawater_study_cases.json",
+      "sha256": "dd39b778058673c846109a4e5bc409147a8820a06efd4891e83b9b1938b5a0fa",
+      "git_blob_sha1": "86088e0c6db1f3f6b5a1daf4d3f03f2609ef29ba",
+      "source_commit": "aa80b87b6ee9617754101a238f70bec99393ad9a"
+    },
+    {
+      "path": "runs/20261006/C2/T11/parameters.json",
+      "sha256": "c35a4064403f98e3462bfea3650eebe2695ced39a15fb928f817e465169576ba",
+      "git_blob_sha1": "ca396619adea611f1c5ba40036995d6f160e8dbc",
+      "source_commit": "aa80b87b6ee9617754101a238f70bec99393ad9a"
+    },
+    {
+      "path": "runs/20261006/C0/T23/cfd_pipeline.py",
+      "sha256": "e4c4965701abe6282fce8a926c3fb8565f96616cf1fe63cf749e564929aae8f9",
+      "git_blob_sha1": "eff17ba7b4866dd271af1cb4d47415da7fdac9bb",
+      "source_commit": "aa80b87b6ee9617754101a238f70bec99393ad9a"
+    },
+    {
+      "path": "runs/20261006/CALCULATIONS/R1/sources_new/MESH_V2/revalidation_manifest.json",
+      "sha256": "98976d5277a5592284cd20c9dbce095d7c7b845e036417ade65c90e5aff0bd05",
+      "git_blob_sha1": "7f39195d93fa8ab8847af247f29e1c81e5f52f31",
+      "source_commit": "aa80b87b6ee9617754101a238f70bec99393ad9a"
+    },
+    {
+      "path": "runs/20261006/CALCULATIONS/R1/sources_new/MESH_V2/stage_evidence/native_final.json",
+      "sha256": "5eaa60aacbe590d0521a7a853e09d1a6c498ac880d2ffa8e84021d15101ae0ef",
+      "git_blob_sha1": "25b070c330c0d98ddffcde80b5dec43d1d989d24",
+      "source_commit": "aa80b87b6ee9617754101a238f70bec99393ad9a"
+    },
+    {
+      "path": "runs/20261006/CALCULATIONS/R1/sources_new/MESH_V2/stage_evidence/native_final.log",
+      "sha256": "e77307a24437cb527d4d35bd1d21594a40aa31ec03dbb35b9716539fa7f5c9bf",
+      "git_blob_sha1": "4f2439baaeb0800abd3949eb4dfcce53e2dd2fcb",
+      "source_commit": "aa80b87b6ee9617754101a238f70bec99393ad9a"
+    },
+    {
+      "path": "runs/20261006/CALCULATIONS/R1/sources/C5/T03/solver_benchmark_results.json",
+      "sha256": "fdcbfc3f0452107cacf2bdb4587bacc7783b873ee528f9c787e9caa5e064035c",
+      "git_blob_sha1": "339538ed895666ad5051ddff39c31dcd4f0d7b38",
+      "source_commit": "aa80b87b6ee9617754101a238f70bec99393ad9a"
+    }
+  ],
+  "boundary_condition_provenance": {
+    "types": {
+      "path": "runs/20261006/C0/T23/cfd_pipeline.py",
+      "function": "write_case / blk lines 222-250",
+      "U": {
+        "inlet": "fixedValue (U_face 0 0)",
+        "outlet": "zeroGradient",
+        "wall": "noSlip"
+      },
+      "p": {
+        "inlet": "zeroGradient",
+        "outlet": "fixedValue 0",
+        "wall": "zeroGradient"
+      }
+    },
+    "values": "runs/20261006/CALCULATIONS/R1/sources_new/FLOW_PLAN_NEW/flow_study_plan.json",
+    "initial_internal_fields": "C0 write_case: U=(0 0 0), p=0; old C0 speeds/water/turbulence/pressure postprocessing are NOT inherited"
+  },
+  "mesh": {
+    "library_file_id": "libfile_d1fe3abe4124819191187761705c99c6",
+    "archive_name": "valve-mesh-repair-evidence-binding-v2-20261006.tar.gz",
+    "archive_sha256": "aa2410a92d6aa64dc6e9f0a6253f4a82e1a5cceb9814557b3a84b4190d2f667e",
+    "manifest_sha256": "98976d5277a5592284cd20c9dbce095d7c7b845e036417ade65c90e5aff0bd05",
+    "case_relative_path": "data/final_candidate",
+    "files": {
+      "boundary": "61b7cdb70df770ee2b82654864495fcbaeabfad1257c70707d4040889ccd1af9",
+      "cellZones": "8942f05e891e872dffd04ba640e6dad246a3710248eeb533185703b70b6ba644",
+      "faceZones": "1a3fc3f2f2c7f76c597df378690ccbf4b8a8013456e58f0c87dcf4ecaca5220f",
+      "faces": "8356a72c469120af9a9e4b538fa1b3c1a0fc365c817bb7df419258d6cc824039",
+      "neighbour": "7d6fe2bacef50eb62715fdd48155e34e749838d2c254b6e265f357c68e6ce2b7",
+      "owner": "1d8d42b66f0d6ac63c995bafe6e7a50095688506d2a16a0fc7a133c83b6e2fc0",
+      "pointZones": "a4a6a2dcd51a046ec166f12f8fb6f70d0cc21e238dc6ae1d1db90effcf542a29",
+      "points": "9cd0ddbcc19e4511f68175301cf55fcbc2272f34e85a775e9585c45b08fde8d9",
+      "sets/nonOrthoFaces": "c081e091cacd8a2efd0505f8d6e4b6d134333cf143e07467d99eeb0125b5206e"
+    }
+  },
+  "numerical_choices": {
+    "provenance": "NEW_DIAGNOSTIC_SETTINGS_NOT_PHYSICAL_DUTY",
+    "solver": "OpenCFD OpenFOAM 1912 simpleFoam; double precision; serial",
+    "convection": "bounded Gauss upwind; first-order diagnostic, no mesh-independent accuracy claim",
+    "laplacian": "Gauss linear corrected",
+    "nonorthogonal_correctors": 3,
+    "iterations": 5000,
+    "write_precision": 17,
+    "early_residual_stop": false,
+    "manufactured_precheck": "Native field/face probe and nonzero-source Poisson on this valve mesh with scheme sensitivity; mathematical test, not new physical valve BC"
+  },
+  "output_definition": {
+    "Q": "Qout=sum(phi_outlet); Qin outward signed negative; nominal Q is never substituted",
+    "delta_p": "rho*(areaAverage(p,inlet)-areaAverage(p,outlet)) [Pa]",
+    "zeta": "delta_p/(0.5*rho*(Qout/(pi*D^2/4))^2)",
+    "scope": "static port-to-port, including both 3D numerical extensions",
+    "total_pressure": "NOT_COMPUTED",
+    "pipe_corrected": "NOT_COMPUTED",
+    "drawing_note24_le6": "UNASSESSED"
+  },
+  "excluded": [
+    "contact",
+    "joint",
+    "manufacturing release",
+    "natural valve opening",
+    "mesh-independent hydraulic accuracy",
+    "actual rated duty",
+    "water hammer",
+    "cavitation",
+    "leakage validation",
+    "minus-2C phase validation",
+    "pressure-corrected properties"
+  ],
+  "manufacturing_authorized": false
+}

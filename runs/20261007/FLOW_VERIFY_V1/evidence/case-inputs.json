@@ -1,0 +1,18 @@
+{
+  "0/U": "fdccbf2879307b62baa823908c55eb138e1c3ad238910a1225635f70f414c1c0",
+  "0/p": "a88bdc19db30d652b0daf1218abe5ec79a157ab9d6b28dcc6cfea0d397220129",
+  "constant/polyMesh/boundary": "61b7cdb70df770ee2b82654864495fcbaeabfad1257c70707d4040889ccd1af9",
+  "constant/polyMesh/cellZones": "8942f05e891e872dffd04ba640e6dad246a3710248eeb533185703b70b6ba644",
+  "constant/polyMesh/faceZones": "1a3fc3f2f2c7f76c597df378690ccbf4b8a8013456e58f0c87dcf4ecaca5220f",
+  "constant/polyMesh/faces": "8356a72c469120af9a9e4b538fa1b3c1a0fc365c817bb7df419258d6cc824039",
+  "constant/polyMesh/neighbour": "7d6fe2bacef50eb62715fdd48155e34e749838d2c254b6e265f357c68e6ce2b7",
+  "constant/polyMesh/owner": "1d8d42b66f0d6ac63c995bafe6e7a50095688506d2a16a0fc7a133c83b6e2fc0",
+  "constant/polyMesh/pointZones": "a4a6a2dcd51a046ec166f12f8fb6f70d0cc21e238dc6ae1d1db90effcf542a29",
+  "constant/polyMesh/points": "9cd0ddbcc19e4511f68175301cf55fcbc2272f34e85a775e9585c45b08fde8d9",
+  "constant/polyMesh/sets/nonOrthoFaces": "c081e091cacd8a2efd0505f8d6e4b6d134333cf143e07467d99eeb0125b5206e",
+  "constant/transportProperties": "54f2a2fbbd9ae7c27c7eb47af4de704dc8175073a5e3713c9b6e64cf934d2a8c",
+  "constant/turbulenceProperties": "83ccd08a7cab4204a51cfd89ff8054145ad0548dbc823e3f1058ecc31ceff53a",
+  "system/controlDict": "b0637a8b6754ad4950fc4b7c22170934aad687df9deb08cd09f86344793967be",
+  "system/fvSchemes": "6fee8174f14e76768533b2b9910df3734396909d801bd2ae52371f1a07d4b729",
+  "system/fvSolution": "d93e84bb5ab5b07a1d8ad88b59cb7348c40a7f10bbe5b2f0db70f90ab283ff95"
+}

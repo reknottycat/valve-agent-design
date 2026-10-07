@@ -1,0 +1,47 @@
+{
+  "status": "PREPARED_BLOCKED_NOT_SOLVED",
+  "base_commit": "aa80b87b6ee9617754101a238f70bec99393ad9a",
+  "tests": {
+    "normal": {
+      "count": 21,
+      "status": "PASS",
+      "kind": "Python guards/parser/synthetic geometry tests, not native CFD"
+    },
+    "optimized": {
+      "count": 21,
+      "status": "PASS",
+      "kind": "Python guards/parser/synthetic geometry tests, not native CFD"
+    }
+  },
+  "mesh_seal": "PASS",
+  "native_compiled": false,
+  "native_PDE_executed": false,
+  "flow_executed": false,
+  "blocker": {
+    "id": "OPENFOAM_1912_RUNTIME_UNAVAILABLE",
+    "detail": "A loaded double-precision OpenCFD 1912 development runtime is required (simpleFoam/checkMesh/wmake).",
+    "missing": [
+      "simpleFoam",
+      "checkMesh",
+      "wmake"
+    ]
+  },
+  "actual_mesh_flux_m3_s": null,
+  "computed_pressure_drop_Pa": null,
+  "computed_loss_coefficient": null,
+  "manufacturing_authorized": false,
+  "evidence_sha256": {
+    "tests-optimized.log": "1dc0f0e3c3cfd44ffa092f8d56c613a44d89a0d961b0e9ef08c3c3ffe6b11bbd",
+    "independent-python-geometry.json": "8c37dfcbf07cd701a09e073295820c178957bf1f3c89af4ddac69bb56d31bde7",
+    "tests-normal.log": "9f52b31927f6e6ddfa147ca13a15fb4a2b957d4a2fd68a6c1e5e5408c33e41f3",
+    "preflight-attempt.log": "7cc3fdcc13ca5672507b27af43b133dae79a6b9cdf44ccbb2e3afaf7bc6bbf20",
+    "native-blocked-optimized.json": "9c4fd6b40ea4b770a7bc63714be86acec797bd314f1dd25ea3502d7b7e8c1d0a",
+    "environment.json": "cfaf4d607c8495372452c8130956031da1800ed6d75ca8ffdbab556f9630fca9",
+    "results.json": "38ef2d7329cb576464f0a2d791292c5835e80bc43fb5787b1aad7ab4afd99c54",
+    "mesh-seal.log": "ebb7e4ac2368a5fff7a0789dacaa9500d6e605abe9122884cf21943094d5fa1f",
+    "run_record.json": "38ef2d7329cb576464f0a2d791292c5835e80bc43fb5787b1aad7ab4afd99c54",
+    "case-inputs.json": "d8ae36d292f250290c6e58d6b9c817ecd95ec78a1ae015ade0da2c9c11ea4622",
+    "mesh-seal.json": "82dac74b27d392e605dcaccbbac3592ad6c6f4df0056965b9175bb6a69f9e152",
+    "native-blocked-normal.json": "2b4ef4fbce707b3072e951e1c8bffe5204dc766fbe6cea2fb21adea2c07c553e"
+  }
+}

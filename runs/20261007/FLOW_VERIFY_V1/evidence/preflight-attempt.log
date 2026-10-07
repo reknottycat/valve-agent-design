@@ -1,0 +1,13 @@
+{
+  "status": "BLOCKED",
+  "blocker": {
+    "id": "OPENFOAM_1912_RUNTIME_UNAVAILABLE",
+    "detail": "A loaded double-precision OpenCFD 1912 development runtime is required (simpleFoam/checkMesh/wmake).",
+    "missing": [
+      "simpleFoam",
+      "checkMesh",
+      "wmake"
+    ]
+  },
+  "output": "/workspace/scratch/906630f10536/flow-final-attempt-20261007"
+}

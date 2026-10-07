@@ -1,0 +1,66 @@
+{
+  "acceptance": "FROZEN_MESH_REVALIDATION_VERIFIED",
+  "attempt_id": "c098d849bde8496cbdedd507d92f1726",
+  "manifest_sha256": "98976d5277a5592284cd20c9dbce095d7c7b845e036417ade65c90e5aff0bd05",
+  "mesh_hashes": {
+    "ACCEPTED.json": {
+      "bytes": 2226,
+      "sha256": "0cf9449766c47a7bfa7a4f49721cf02d188cc2aa9810b427d9cc4f1dca32234c"
+    },
+    "constant/polyMesh/boundary": {
+      "bytes": 1258,
+      "sha256": "61b7cdb70df770ee2b82654864495fcbaeabfad1257c70707d4040889ccd1af9"
+    },
+    "constant/polyMesh/cellZones": {
+      "bytes": 2767532,
+      "sha256": "8942f05e891e872dffd04ba640e6dad246a3710248eeb533185703b70b6ba644"
+    },
+    "constant/polyMesh/faceZones": {
+      "bytes": 876,
+      "sha256": "1a3fc3f2f2c7f76c597df378690ccbf4b8a8013456e58f0c87dcf4ecaca5220f"
+    },
+    "constant/polyMesh/faces": {
+      "bytes": 17970693,
+      "sha256": "8356a72c469120af9a9e4b538fa1b3c1a0fc365c817bb7df419258d6cc824039"
+    },
+    "constant/polyMesh/neighbour": {
+      "bytes": 5350896,
+      "sha256": "7d6fe2bacef50eb62715fdd48155e34e749838d2c254b6e265f357c68e6ce2b7"
+    },
+    "constant/polyMesh/owner": {
+      "bytes": 5717446,
+      "sha256": "1d8d42b66f0d6ac63c995bafe6e7a50095688506d2a16a0fc7a133c83b6e2fc0"
+    },
+    "constant/polyMesh/pointZones": {
+      "bytes": 877,
+      "sha256": "a4a6a2dcd51a046ec166f12f8fb6f70d0cc21e238dc6ae1d1db90effcf542a29"
+    },
+    "constant/polyMesh/points": {
+      "bytes": 5793380,
+      "sha256": "9cd0ddbcc19e4511f68175301cf55fcbc2272f34e85a775e9585c45b08fde8d9"
+    },
+    "constant/polyMesh/sets/nonOrthoFaces": {
+      "bytes": 1248,
+      "sha256": "c081e091cacd8a2efd0505f8d6e4b6d134333cf143e07467d99eeb0125b5206e"
+    },
+    "system/controlDict": {
+      "bytes": 274,
+      "sha256": "5e12aabc5cf504fdbe11de72691175553efd5c40a2820ccbb916508a62bdfaf5"
+    },
+    "system/fvSchemes": {
+      "bytes": 296,
+      "sha256": "42cb3daa33dce8d4606a14fd613e7d1717c4862e9a0f334524d3ad7602245915"
+    },
+    "system/fvSolution": {
+      "bytes": 86,
+      "sha256": "f5308d30634de746599a384973c749418783dec478d3e9c3456300c2a034aae8"
+    }
+  },
+  "operation": "verify_frozen_revalidation",
+  "recorded_at": "2026-10-07T03:51:52.344681+00:00",
+  "run_id": "revalidation-v2-63948730eb13490098329c8b4a7bb160",
+  "schema": "valve-mesh-evidence-v2",
+  "scope": "Mesh checks and geometry audits only; no flow solve or manufacturing approval",
+  "status": "PASS",
+  "warning": "54 faces above 70 degrees remain; maximum 77.471484007812791 degrees. No valve-flow or manufacturing approval."
+}
