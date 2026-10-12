@@ -1,0 +1,25 @@
+{
+  "schema": "valve.git_direction_branch_plan/v1",
+  "compiled_utc": "2026-10-12T00:45:16.303486+00:00",
+  "status": "PROPOSED_ORGANIZATION_PENDING_ACTUAL_PUBLISHER_CONFIRMATION",
+  "rule": "A major model or physical discretization direction gets a branch; individual log lines, runtime retries and report formatting do not.",
+  "branches": [
+    {
+      "name": "docs/engineering-worklog-20261012",
+      "purpose": "Retrospective evidence-linked worklog, corrections and replay index; first publish this small record."
+    },
+    {
+      "name": "research/unified-contact",
+      "purpose": "Preserve the PCS coverage failure and the unified finite-master UCS replacement history; do not fabricate old commits."
+    },
+    {
+      "name": "research/carrier-discretization-20261012",
+      "purpose": "Current MCQ1/UCG3/UCS2 fixed-support carrier refinement direction."
+    },
+    {
+      "name": "research/conformal-whole-flow-20261012",
+      "purpose": "Current real conformal whole-domain prism/tet route replacing failed pyramid transitions."
+    }
+  ],
+  "R1_mutation_or_main_merge_requested_by_this_plan": false
+}

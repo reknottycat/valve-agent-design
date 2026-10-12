@@ -1,0 +1,87 @@
+{
+  "schema": "valve.git_replay_index/v1",
+  "compiled_utc": "2026-10-12T00:45:16.303486+00:00",
+  "base_commit_reported_by_publisher": "4222b3d4df248b07777315068b9f3c99273d47c4",
+  "frozen_R1_commit": "aa80b87b6ee9617754101a238f70bec99393ad9a",
+  "new_worklog_commit": null,
+  "commit_note": "Publication receipt must record the actual new commit. No historical branch or commit is invented by this retrospective index.",
+  "local_checks": [
+    "python tools/verify_engineering_traceability.py",
+    "python tools/verify_engineering_traceability.py --source-root /path/to/restored/engineering-sources"
+  ],
+  "scientific_replay_preconditions": [
+    "Restore the named Library source chain by exact archive SHA.",
+    "Restore official pinned runtime from the source recovery instructions.",
+    "Review the recorded resource scope before an explicit scientific replay.",
+    "Record git rev-parse HEAD, exact command, environment identity, input hashes, real exit status and output hashes in the new replay receipt."
+  ],
+  "executed_commands": [
+    {
+      "id": "MCQ1_REFINE_READBACK",
+      "receipt": {
+        "archive_relative_path": "valve-master-carrier-quadrature-MCQ1-20261012/readback_receipt_A02/EXECUTION_RECEIPT.json",
+        "bytes": 559,
+        "sha256": "e1fc4060d6e0d6829c0749433f557b29436c03747c79283d289e270787fd2db1"
+      },
+      "recorded_command_from_receipt": [
+        "python3",
+        "valve-master-carrier-quadrature-MCQ1-20261012/scripts/readback_carrier.py",
+        "--mode",
+        "refined",
+        "--prefix",
+        "valve-master-carrier-quadrature-MCQ1-20261012/output/refined_A01/REFINED"
+      ],
+      "exit_code": 0,
+      "state": null,
+      "pass": true,
+      "wall_seconds": 0.11548847900121473,
+      "resource_limits_are_recorded_in_receipt": true,
+      "automatic_execution_by_index": false
+    },
+    {
+      "id": "UCG3_SERIALIZED_DECK",
+      "receipt": {
+        "archive_relative_path": "valve-unified-carrier-refinement-UCG3-20261012/preparation_receipt_A01/EXECUTION_RECEIPT.json",
+        "bytes": 740,
+        "sha256": "c0daf0f81c7e83014739ad1738ee351e093cda4c6083ab5d425eb8e1003bdfe8"
+      },
+      "recorded_command_from_receipt": [
+        "python",
+        "valve-unified-carrier-refinement-UCG3-20261012/scripts/refine_fixed_carriers.py",
+        "--source-deck",
+        "valve-unified-contact-solve-UCS1-20261011/case/disc.inp",
+        "--selection",
+        "valve-master-carrier-quadrature-plan-MCQ1-20261011/output/conservative_carrier_selection_A01/CONSERVATIVE_FULL_PARENT_CARRIER_SELECTION.json",
+        "--output-dir",
+        "valve-unified-carrier-refinement-UCG3-20261012/output/prepared_A01"
+      ],
+      "exit_code": 0,
+      "state": null,
+      "pass": true,
+      "wall_seconds": 2.6234079850109993,
+      "resource_limits_are_recorded_in_receipt": true,
+      "automatic_execution_by_index": false
+    },
+    {
+      "id": "GCR1_COUNT_DIAGNOSTIC_TIMEOUT",
+      "receipt": {
+        "archive_relative_path": "valve-global-carrier-replay-GCR1-20261012/count_receipt_A01/EXECUTION_RECEIPT.json",
+        "bytes": 689,
+        "sha256": "10824c7837a477650ef0a58c43693ad951530a49a4bd3378a5e63bd7983570da"
+      },
+      "recorded_command_from_receipt": [
+        "valve-global-carrier-replay-GCR1-20261012/count_profile/build/ccx220_native_precontact_count_checkpoint",
+        "valve-global-carrier-replay-GCR1-20261012/input/prepared_A01/UCG3_STEP2_OLD_ACCEPTED_U_PRINT_CENTERS.bin",
+        "valve-global-carrier-replay-GCR1-20261012/output/count_checkpoint_A01/GCR1_COUNT",
+        "8bddea3ef6bfc9694075c736c62ec9c27f17668625e5a2f3098d87bd39a07fb8"
+      ],
+      "exit_code": null,
+      "state": "wall_timeout",
+      "pass": false,
+      "wall_seconds": 180.00647075999586,
+      "resource_limits_are_recorded_in_receipt": true,
+      "automatic_execution_by_index": false
+    }
+  ],
+  "a_successful_index_hash_check_is_not_a_scientific_validation": true
+}
