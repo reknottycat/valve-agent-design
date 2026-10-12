@@ -1,0 +1,529 @@
+{
+  "schema": "valve.engineering_worklog_local2506_migration/v1",
+  "recorded_utc": "2026-10-12T13:48:38.419950+00:00",
+  "target_branch": "research/native-2506-migration-20261012",
+  "create_branch_from": "c2fd5cced0fb3da58788580d488933902ba17b3e",
+  "base_commit": "c2fd5cced0fb3da58788580d488933902ba17b3e",
+  "data_scope": "Three log/result-metadata documents and source-root-relative evidence hashes only; no original local-user paths, code/dictionaries/OBJ/eMesh/mesh/runtime payload. Actual local2506 terminal independently reviewed; no scientific checkout replay.",
+  "direction_change": "Existing local OpenFOAM2506 native version/resource controlled comparison after cloud1912 paired allocator failures; preserves prior branch, no code/input import.",
+  "runtime_identity": {
+    "OpenFOAM": "2506 patch260127",
+    "previous_cloud_OpenFOAM": "1912 patch200626",
+    "build": "linux64GccDPInt32Opt",
+    "binary_arch": "LSB;label=32;scalar=64",
+    "Ubuntu": "24.04.1 LTS x86_64",
+    "MPI_run": false,
+    "runtime_installed_or_security_network_changed_by_this_publication": false,
+    "ABI_or_numeric_equivalence_claimed": false
+  },
+  "input_identity": {
+    "library_file_id": "libfile_520bc6ff8bc08191bfc1be0872b58ac3",
+    "version": 0,
+    "zip_bytes": 16331072,
+    "zip_sha256": "253e7e922de4f8265d98d25fc4e2b050465e6e9fb89a0dfdf05a96e4f415e437",
+    "input_files": [
+      {
+        "path": "P08_A02_input_case/system/blockMeshDict",
+        "bytes": 745,
+        "sha256": "cfd8b79a3c0273680237cf01b2aaa33a588986f3b36e3a759882610aedf7c0f7",
+        "matches": true
+      },
+      {
+        "path": "P08_A02_input_case/system/controlDict",
+        "bytes": 348,
+        "sha256": "ab9365d526613666a24cdcac38f6ef7a1019a43026f0488ed2b7de2dbd514cbe",
+        "matches": true
+      },
+      {
+        "path": "P08_A02_input_case/system/fvSchemes",
+        "bytes": 323,
+        "sha256": "9e485926239e141a0f6d47c2f225e75ae33b14d62b650189800bec4064bba233",
+        "matches": true
+      },
+      {
+        "path": "P08_A02_input_case/system/fvSolution",
+        "bytes": 86,
+        "sha256": "b903ba8ba92b96119c9be09baa3f1d3bfc0137ad1221ac219f145b24743a4673",
+        "matches": true
+      },
+      {
+        "path": "P08_A02_input_case/system/snappyHexMeshDict",
+        "bytes": 8052,
+        "sha256": "6f12f554c5416be529e39ed00e424555bae768519cf525bc5271a7ad7a4f7479",
+        "matches": true
+      },
+      {
+        "path": "P08_A02_input_case/system/surfaceFeatureExtractDict",
+        "bytes": 221,
+        "sha256": "642974cbc84e14f247cc3ca5ef8802e49c97e7800e65ac3d8985fca6e5c68d24",
+        "matches": true
+      },
+      {
+        "path": "P08_A02_input_case/constant/triSurface/FDG1_whole_feature_regions_m.obj",
+        "bytes": 46200445,
+        "sha256": "4e76fbc6c751db3edbfe3d6d1190c4840c1f11b6a60d934513a3dbf0a747f0a7",
+        "matches": true
+      },
+      {
+        "path": "P08_A02_input_case/constant/triSurface/FDG1_whole_feature_regions_m.eMesh",
+        "bytes": 1006502,
+        "sha256": "d1bdf8316872b9a05139f7fb321a4f045bf3af333b00da63a8e79ba91c1279c6",
+        "matches": true
+      }
+    ],
+    "OBJ_triangles": 851278,
+    "OBJ_vertices": 425643,
+    "source_finite_region_count": 132,
+    "critical_region_refinement_rules_unchanged": true,
+    "saved_initial_and_final_original_and_working_hash_receipts_consistent": true,
+    "target_local_payload_not_restored_or_reread_by_independent_cloud_review": true,
+    "all_eight_cloud_parent_source_bytes_independently_rehashed": true,
+    "linux_finally_checks_all_eight_originals_and_working_eMesh": true,
+    "all_eight_working_matches_also_recorded_in_terminal_summary": true
+  },
+  "actual_compatibility_then_native_semantics": {
+    "six_dictionaries_read_only_foamDictionary_disableFunctionEntries_parse_exit0": true,
+    "parse_success_not_full_constructor_semantics": true,
+    "blockMesh_merge_points_flag_actually_used": true,
+    "original_convertToMeters_0p001_retained_not_renamed_to_scale": true,
+    "native_blockMesh_log_reports_legacy_convertToMeters_then_scale_factors": [
+      0.001,
+      0.001,
+      0.001
+    ],
+    "same_eMesh_native_read_confirmed": true,
+    "eMesh_points": 31315,
+    "eMesh_edges": 31734,
+    "surfaceFeatureExtract_executed": false,
+    "inactive_addLayers_old_minMedianAxisAngle_key_not_silently_corrected": true,
+    "no_U_p_initial_fields_or_CFD_solvers_in_eight_input_bundle": true
+  },
+  "actual_native_stages": [
+    {
+      "name": "surfaceCheck",
+      "started_utc": "2026-10-12T13:18:04.892207+00:00",
+      "ended_utc": "2026-10-12T13:18:14.019196+00:00",
+      "exit_code": 0,
+      "peak_rss_bytes": 388341760,
+      "peak_virtual_bytes": 401145856,
+      "argv_normalized": [
+        "/usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/bin/surfaceCheck",
+        "-case",
+        "<source-root>/<case>",
+        "-checkSelfIntersection",
+        "-outputThreshold",
+        "0",
+        "<source-root>/<case>/constant/triSurface/FDG1_whole_feature_regions_m.obj"
+      ]
+    },
+    {
+      "name": "blockMesh",
+      "started_utc": "2026-10-12T13:19:10.099450+00:00",
+      "ended_utc": "2026-10-12T13:19:14.762556+00:00",
+      "exit_code": 0,
+      "peak_rss_bytes": 932118528,
+      "peak_virtual_bytes": 959320064,
+      "argv_normalized": [
+        "/usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/bin/blockMesh",
+        "-merge-points",
+        "-case",
+        "<source-root>/<case>"
+      ]
+    },
+    {
+      "name": "snappyHexMesh",
+      "started_utc": "2026-10-12T13:19:14.771142+00:00",
+      "ended_utc": "2026-10-12T13:25:19.083823+00:00",
+      "exit_code": -15,
+      "peak_rss_bytes": 10027438080,
+      "peak_virtual_bytes": 10761834496,
+      "argv_normalized": [
+        "/usr/lib/openfoam/openfoam2506/platforms/linux64GccDPInt32Opt/bin/snappyHexMesh",
+        "-case",
+        "<source-root>/<case>",
+        "-overwrite"
+      ]
+    }
+  ],
+  "actual_progress": {
+    "actual_background_cells": 1049664,
+    "actual_background_faces": 3188188,
+    "actual_background_points": 1089270,
+    "surfaceCheck_closed_no_illegal_triangles_no_self_intersections": true,
+    "surfaceCheck_two_original_boundary_shells_not_two_fluid_regions": true,
+    "source_surface_low_triangle_quality_approximately": 3.47e-10,
+    "last_completed_surface_iteration": 9,
+    "pre_retained_cells": 8346191,
+    "faces": 26491930,
+    "points": 9807674,
+    "next_iteration10_selected_cells": 61,
+    "next_iteration10_completed_count_not_printed": true,
+    "original_source_torus_error_limits_unchanged": true,
+    "domain_retention_completed": false,
+    "snap_completed": false,
+    "full_allGeometry_allTopology_checkMesh_executed": false,
+    "CFD_executed": false,
+    "materialized_polyMesh_only_background": true,
+    "not_saved_final_8346191_cell_mesh": true
+  },
+  "actual_budget_stop": {
+    "native_PID": 425,
+    "snappy_started_utc": "2026-10-12T13:19:14.771142+00:00",
+    "snappy_ended_utc": "2026-10-12T13:25:19.083823+00:00",
+    "snappy_elapsed_seconds": 364.312681,
+    "snappy_exit_code": -15,
+    "signal": "SIGTERM",
+    "trigger_utc": "2026-10-12T13:25:17.455257+00:00",
+    "research_host_commit_or_physical_floor_GiB": 4.5,
+    "trigger_available_commit_bytes": 4726157312,
+    "trigger_available_physical_bytes": 12572942336,
+    "trigger_snappy_RSS_bytes": 7982923776,
+    "sampled_process_peak_VmPeak_bytes": 10761834496,
+    "child_RLIMIT_AS_bytes": 13958643712,
+    "child_13GiB_AS_limit_hit": false,
+    "native_allocator_error_observed": false,
+    "native_time2400s_limit_hit": false,
+    "disk_stop_triggered": false,
+    "VmSwap_samples_zero": true,
+    "host_monitor_total_elapsed_seconds": 441.44,
+    "host_minimum_available_physical_bytes": 11812970496,
+    "host_minimum_available_commit_bytes": 4726157312,
+    "other_process_or_CAD_physical_failure_attribution_claimed": false,
+    "13GiB_sufficiency_or_necessity_established": false,
+    "kernel_VmHWM_peak_RSS_bytes": 10027438080,
+    "host_441_rows_max_sampled_VmRSS_bytes": 9709424640,
+    "host_441_rows_max_sampled_VmRSS_utc": "2026-10-12T13:24:33.404013+00:00",
+    "peak_HWM_sampled_VmRSS_and_trigger_VmRSS_are_different_measures": true,
+    "executor_research_host_reserve_target_GiB": 4,
+    "executor_early_response_margin_GiB": 0.5,
+    "4_and4p5GiB_are_executor_research_resource_targets_not_user_or_quality_limits": true,
+    "every_instant_above_4GiB_proven": false,
+    "only_task_created_process_group_SIGTERM_requested": true,
+    "native_child_wait_and_exit_minus15_recorded": true,
+    "runner_current_pid_null_recorded": true,
+    "Windows_WSL_wait_exit_code": 1,
+    "post_stop_full_process_group_enumeration_in_bundle": false,
+    "post_stop_host_memory_recovery_samples_in_bundle": false
+  },
+  "version_comparison_limit": {
+    "cloud1912_A02_surface_iteration3_cells": 5430054,
+    "local2506_surface_iteration3_cells": 5430117,
+    "same_input_does_not_prove_same_mesh_bytes": true,
+    "speedup_claimed": false,
+    "version_or_RAM_isolated_causal_benchmark_claimed": false,
+    "larger_pre_retained_progress_not_whole_quality_qualification": true
+  },
+  "recovery_source": {
+    "library_file_id": "libfile_04bfca9e4fbc81919df18a934bd88edf",
+    "version": 0,
+    "bytes": 61172,
+    "sha256": "79970431eaa5efaa8fddada5ed72ea0ae1a68522b4409671eeb0f9f5c8c3ba2c",
+    "ZIP_members": 39,
+    "original_evidence_files": 37,
+    "all37_source_SHA_size_rechecked": true,
+    "original_paths_only_in_local_recovery_evidence_not_published_payload": true,
+    "background_OBJ_eMesh_runtime_excluded": true,
+    "scientific_fresh_checkout_replay_claimed": false
+  },
+  "qualification": {
+    "whole_fluid_mesh_completed": false,
+    "whole_mesh_MeshOK_claimed": false,
+    "whole_CFD_or_flow_conservation_claimed": false,
+    "critical_passage_snap_resolution_in_final_mesh_verified": false,
+    "new_Drive_product_selected": false,
+    "manufacturing_or_performance_release": false
+  },
+  "next_scope": {
+    "local_attempt_stopped_no_automatic_retry_or_limit_increase": true,
+    "no_pagefile_WSL_network_security_change": true,
+    "next_environment_or_DGX_not_connected_by_this_task": true,
+    "new_compute_action_not_started_by_publication": true,
+    "future_runtime_input_diff_and_actual_terminal_required": true
+  },
+  "source_pins": [
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/audit/compatibility_report.zh-CN.md",
+      "bytes": 8324,
+      "sha256": "12463d570df01707102fe3987c2b5e349f07028a57616a525bc9f02e23da250c"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/audit/foamDictionary_results.json",
+      "bytes": 3466,
+      "sha256": "14baf629ed1c7319bb845b131881783fbef2e2544e9c2989b561f5aaafed164f"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/audit/geometry_format_check.json",
+      "bytes": 4613,
+      "sha256": "08f59dcd380d6f1dd78618c9ae1875134687302ef13906be93e8300b053463a6"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/audit/preserve_1912_merge_semantics.patch",
+      "bytes": 633,
+      "sha256": "0a1b6a409172f802bbcaa20f071c41065e36a506b841b404fca87ef5cc888f56"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/audit/future_commands_proposal.json",
+      "bytes": 1234,
+      "sha256": "987ab49e5a6de113e34c79fb7fd4392d20bd848bc724181de9924ed4738d70ae"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/audit/read_only_parse.sh",
+      "bytes": 690,
+      "sha256": "05b0842c3e90f30806aed907076ff742a26ffa45c3cd12ac72a75ea17ae412dd"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/audit/windows_budget.ps1",
+      "bytes": 1080,
+      "sha256": "39d7cb587f890a42eb6f48e91d785bf2abea2b06d89a515be46cfc7ae00502af"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/input_sha_verification.json",
+      "bytes": 1748,
+      "sha256": "985b32eaae9936a6e9eb5da3d363abab865eb64efe601552547c66d5d5b21d2e"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/original/INPUT_MANIFEST.json",
+      "bytes": 4917,
+      "sha256": "c18519af5adbf40b8b3c93764da1c4fd74852194caf34079e97e0ca397f39472"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/original/OFFICIAL_COMMANDS_REFERENCE.json",
+      "bytes": 1116,
+      "sha256": "22abba42a0496f03f9961933d08c6a4c251b7b0bc739bf52760fb5a8963c88cf"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/original/README_2506_COMPATIBILITY_ONLY.zh-CN.txt",
+      "bytes": 3113,
+      "sha256": "7526793d92e0e9bd97da3fec68f5f5e5b8c9f0438bc7a93be995a538ef78f7fb"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/bounded_mesh_linux.py",
+      "bytes": 7164,
+      "sha256": "694a15d2545c938d4291c6ba99441bdc47f9163b8ad9c0edb383184c5e3c4172"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/bounded_mesh_windows.py",
+      "bytes": 4696,
+      "sha256": "38789637a98fdb8902806321bc6f736ae50cbb538147ddc194630ae0ff70d321"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/audit/foamDictionary/blockMeshDict.stderr.txt",
+      "bytes": 49,
+      "sha256": "93d53102e7bd2c0b4651f5710b31a032445a434ef64737a0922a6ebd61c276f1"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/audit/foamDictionary/blockMeshDict.stdout.txt",
+      "bytes": 1405,
+      "sha256": "15e5b3be749b40274e8e10b64669383537573129b24524ddbbb423cada6bd738"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/audit/foamDictionary/controlDict.stderr.txt",
+      "bytes": 49,
+      "sha256": "93d53102e7bd2c0b4651f5710b31a032445a434ef64737a0922a6ebd61c276f1"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/audit/foamDictionary/controlDict.stdout.txt",
+      "bytes": 1251,
+      "sha256": "48c2055ac4ca19ad28d7c36cc59dd67d5f235dfa0b2d7fd49bc3cfc29282090c"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/audit/foamDictionary/fvSchemes.stderr.txt",
+      "bytes": 49,
+      "sha256": "93d53102e7bd2c0b4651f5710b31a032445a434ef64737a0922a6ebd61c276f1"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/audit/foamDictionary/fvSchemes.stdout.txt",
+      "bytes": 1250,
+      "sha256": "cc33c6ebeb6eb1746a83f2170193655c1336c978d8b0c184b0c4ea5fe73a5af5"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/audit/foamDictionary/fvSolution.stderr.txt",
+      "bytes": 49,
+      "sha256": "93d53102e7bd2c0b4651f5710b31a032445a434ef64737a0922a6ebd61c276f1"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/audit/foamDictionary/fvSolution.stdout.txt",
+      "bytes": 911,
+      "sha256": "a4282d031b398d0876192e6036a874272bf2d863dee05f6f01ef04d23c3b84f0"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/audit/foamDictionary/snappyHexMeshDict.stderr.txt",
+      "bytes": 49,
+      "sha256": "93d53102e7bd2c0b4651f5710b31a032445a434ef64737a0922a6ebd61c276f1"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/audit/foamDictionary/snappyHexMeshDict.stdout.txt",
+      "bytes": 33026,
+      "sha256": "06cbc9a0c6e0acd45559d2d12f6a02dbdb03b9f317c9bce38f4e0132b8495ca8"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/audit/foamDictionary/surfaceFeatureExtractDict.stderr.txt",
+      "bytes": 49,
+      "sha256": "93d53102e7bd2c0b4651f5710b31a032445a434ef64737a0922a6ebd61c276f1"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/audit/foamDictionary/surfaceFeatureExtractDict.stdout.txt",
+      "bytes": 1101,
+      "sha256": "e890728216551703df03a0c1a7369f3140d3109f9bacd8292aa6932bc5fcfcf8"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/bounded_run_20261012T131758Z/host_monitor.jsonl",
+      "bytes": 193772,
+      "sha256": "d3f8ee6bccc7f94987d57d7265ff6cee2f9ddb1f1a2e629932f61cb7c74aa4a1"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/bounded_run_20261012T131758Z/host_monitor_summary.json",
+      "bytes": 255,
+      "sha256": "5c175436e1f1ee8f698f1d6aa91e12dafeafa9bf80bc6bce29e9e00380daffe0"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/bounded_run_20261012T131758Z/host_start_snapshot.json",
+      "bytes": 224,
+      "sha256": "3413539c1acb922021b1b13ff5144e4b95757f0b0ed8cf2821e231ec27696edb"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/bounded_run_20261012T131758Z/RESULT.zh-CN.md",
+      "bytes": 3986,
+      "sha256": "816aca825b07a54fecff89da0d30ca90ec6ce9630d06c7b3f79e3bb75b56fbb1"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/bounded_run_20261012T131758Z/run_status.json",
+      "bytes": 3188,
+      "sha256": "1c9336815fb9cac2a3b604f1c0eaf290c390dd7b46e02b137b62d09f7bb98890"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/bounded_run_20261012T131758Z/runner_console.log",
+      "bytes": 4097,
+      "sha256": "995a0ff397481f2b3f8aebfdb2a3072d1784c14029630649f7d12afe97c5b88b"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/bounded_run_20261012T131758Z/STOP_REQUEST.json",
+      "bytes": 614,
+      "sha256": "ca80b94a9d83debb14ed9bc52d6fac9843a074cc20163771c9185665cbcd8b48"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/bounded_run_20261012T131758Z/SURFACE_APPROVED.json",
+      "bytes": 257,
+      "sha256": "c6a890f420020d7666d8b4ada95f193f6a9cd8a7c813381a191c745047a8c447"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/bounded_run_20261012T131758Z/terminal_summary.json",
+      "bytes": 6005,
+      "sha256": "42d6371aced50345f1a6a3726d6ccd8dec3e323658e582fdbbdd7c1be32662f1"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/bounded_run_20261012T131758Z/logs/blockMesh.log",
+      "bytes": 3052,
+      "sha256": "e516f6ef1e4aefb8bd111e5e2cdd733f1ce8368e56a3c1d043f123800ff95f25"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/bounded_run_20261012T131758Z/logs/snappyHexMesh.log",
+      "bytes": 22758,
+      "sha256": "cdebec7b84d8e669d3c333a7aec3fb5350757fe187396aa482b5037e50ce7a82"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/bounded_run_20261012T131758Z/logs/surfaceCheck.log",
+      "bytes": 5792,
+      "sha256": "3643d0d7eb18ecf59fb14721cbedc3de5c20cb497623df8371e4699bbab74063"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/restored/EVIDENCE_MANIFEST.json",
+      "bytes": 7262,
+      "sha256": "10681475dbe6ddb69349c475bce420ea21ac2850bd989b0c5696fd59920b6647"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/review_independent_A01/FINAL_ENTRY.json",
+      "bytes": 883,
+      "sha256": "99bf0547d327af5d8254e894db9e20dff2b9752a4b08c06ed2e93ba01d98084d"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/review_independent_A01/REVIEW_MANIFEST.json",
+      "bytes": 1440,
+      "sha256": "8c74bc785b0c3289ba4274c03b64d36abf1752faa9f4e533707ba307010a7bb2"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/review_independent_A01/CONCLUSION.zh-CN.txt",
+      "bytes": 1086,
+      "sha256": "e778d352310d8ae99f4a1432a2f82a0eda9259905ca32c0aeb10a6b7d8546284"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/review_independent_A01/INDEPENDENT_LOCAL2506_TERMINAL_REVIEW.json",
+      "bytes": 12406,
+      "sha256": "9e9375ffd78d92c5b6b1130427c53f2235e594ced6319e5ebe4a7932653e40bd"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/review_independent_A01/VERIFIED_SOURCE_HASHES.json",
+      "bytes": 7828,
+      "sha256": "fe4186b2bf51279ce9aa25898565b0a04c9f1b29be3c118b44f99255159b5495"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/review_independent_A01/audit_restored_evidence.py",
+      "bytes": 14833,
+      "sha256": "e2dde78583c32094b345c7239c0414be5531990f62e7e432c584fc2c044c6bf2"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/review_independent_A01/history/INITIAL_READBACK_FAILURE.json",
+      "bytes": 376,
+      "sha256": "4ec162b9697cc480f4e29d6373b18d910d6a3516a09b7783abeded06c37fd752"
+    },
+    {
+      "path": "valve-P08-local2506-migration-review-20261012/review_independent_A01/history/audit_restored_evidence_initial_marker_assertion.py",
+      "bytes": 14760,
+      "sha256": "1af5af98c62e942dd3f82ef00903c70307e8c398fdfd9a030be6a0d18ed70db5"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/case_native_m/system/blockMeshDict",
+      "bytes": 745,
+      "sha256": "cfd8b79a3c0273680237cf01b2aaa33a588986f3b36e3a759882610aedf7c0f7"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/case_native_m/system/controlDict",
+      "bytes": 348,
+      "sha256": "ab9365d526613666a24cdcac38f6ef7a1019a43026f0488ed2b7de2dbd514cbe"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/case_native_m/system/fvSchemes",
+      "bytes": 323,
+      "sha256": "9e485926239e141a0f6d47c2f225e75ae33b14d62b650189800bec4064bba233"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/case_native_m/system/fvSolution",
+      "bytes": 86,
+      "sha256": "b903ba8ba92b96119c9be09baa3f1d3bfc0137ad1221ac219f145b24743a4673"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/case_native_m/system/snappyHexMeshDict",
+      "bytes": 8052,
+      "sha256": "6f12f554c5416be529e39ed00e424555bae768519cf525bc5271a7ad7a4f7479"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/case_native_m/system/surfaceFeatureExtractDict",
+      "bytes": 221,
+      "sha256": "642974cbc84e14f247cc3ca5ef8802e49c97e7800e65ac3d8985fca6e5c68d24"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/case_native_m/constant/triSurface/FDG1_whole_feature_regions_m.obj",
+      "bytes": 46200445,
+      "sha256": "4e76fbc6c751db3edbfe3d6d1190c4840c1f11b6a60d934513a3dbf0a747f0a7"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/case_native_m/constant/triSurface/FDG1_whole_feature_regions_m.eMesh",
+      "bytes": 1006502,
+      "sha256": "d1bdf8316872b9a05139f7fb321a4f045bf3af333b00da63a8e79ba91c1279c6"
+    }
+  ],
+  "source22_payload_boundary_unchanged": true,
+  "main_and_R1_unchanged": true,
+  "independent_review": {
+    "final_entry_path": "valve-P08-local2506-migration-review-20261012/review_independent_A01/FINAL_ENTRY.json",
+    "status": "EVIDENCE_VERIFIED_HOST_COMMIT_PROTECTED_STOP_NO_FINAL_WHOLE_MESH",
+    "39_ZIP_members_and37_source_SHA_CRC_verified": true,
+    "all8_cloud_parent_source_bytes_rehashed": true,
+    "saved_target_initial_final_receipts_consistent": true,
+    "441_host_rows_and_native_logs_re_read": true,
+    "target_local_computer_not_accessed_by_review": true,
+    "post_stop_full_group_and_host_recovery_evidence_not_present": true,
+    "initial_review_marker_failure": "Assumed nonexistent reserve_guard variable; corrected check to actual min(physical,commit) against int(4.5*1024**3). Original native runner/source/data unchanged.",
+    "native_or_source_failure_from_review_marker": false
+  }
+}
