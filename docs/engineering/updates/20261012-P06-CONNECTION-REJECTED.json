@@ -1,0 +1,181 @@
+{
+  "schema": "valve.actual_connection_quality_rejection/v1",
+  "recorded_utc": "2026-10-12T07:42:44.812353+00:00",
+  "branch": "research/step-directed-layer-20261012",
+  "base_commit": "4dcc0c5d6399cf05bfe432469b847e8284286e0b",
+  "source_root_paths": "All listed source paths are relative to restored source-root. Only logs/hash metadata are published.",
+  "whole_reference_unchanged": {
+    "version": "R03",
+    "native_status": "Failed3",
+    "remaining_det": 14281,
+    "remaining_weight": 3881,
+    "remaining_ratio": 2,
+    "candidate_applied_to_whole": false,
+    "CFD_started": false
+  },
+  "actual_fixed_shell": {
+    "original_subset_cells": 2397,
+    "old_nonmanifold_edges": 3,
+    "old_bad_vertex_links": 11,
+    "corrected_original_cells": 2409,
+    "source_and_transition_shell_full_edge_link_audit_pass": true,
+    "old_fixed_cut_removed": 28,
+    "old_fixed_cut_retained": 453,
+    "new_fixed_cut_faces": 17,
+    "all_fixed_faces": 470,
+    "all_fixed_faces_exact_original_both_sides_verified": true
+  },
+  "actual_transition": {
+    "tet_generation_completed": true,
+    "saved_tets_before_repair": 2336,
+    "nodes": 906,
+    "original_shell_nodes_unique_crosswalk": 901,
+    "original_surface_canonical_match": true,
+    "max_MSH_text_roundoff_mm": 5.684341886080802e-14,
+    "original_zero_volume_tets": 1,
+    "zero_is_not_roundoff": true,
+    "fix": "Replace zero tet plus adjacent positive tet with three positive children using the original strictly interior face node. Exact rational total volume difference is zero; all six union boundary faces and original two wall faces preserved.",
+    "fixed_design_CAD_and_old_PWL_boundary_unchanged": true,
+    "actual_combined_cells": 2345,
+    "combined_prisms": 2,
+    "combined_pyramids": 6,
+    "combined_tets": 2337,
+    "MSH_points": 906,
+    "unused_points_only_removed_from_serialization": 56,
+    "native_mesher_warning_uninserted_points": 19
+  },
+  "actual_paired_native": {
+    "same_original_outside_cells": 373,
+    "original_fixed_interfaces_now_internal": 470,
+    "baseline_total_cells": 2782,
+    "candidate_total_cells": 2718,
+    "baseline_changed_cells": 2409,
+    "candidate_changed_cells": 2345,
+    "baseline_raw_failed_checks": 3,
+    "candidate_raw_failed_checks": 4,
+    "changed_det_before_after": [
+      377,
+      498
+    ],
+    "changed_low_weight_before_after": [
+      96,
+      133
+    ],
+    "changed_low_ratio_before_after": [
+      1,
+      14
+    ],
+    "candidate_new_high_aspect_cells": 2,
+    "candidate_max_aspect": 5930.42166464472,
+    "candidate_fixed_interface_low_weight": 2,
+    "candidate_fixed_interface_low_ratio": 1,
+    "new_poly_core_bad_det": 0,
+    "new_poly_core_low_weight_interfaces": 3,
+    "new_poly_core_low_ratio_interfaces": 0,
+    "native_cell_vertex_set_to_source_bijection_verified": true,
+    "source_scaled_coordinate_order_verified": true,
+    "scope": "Every changed-cavity cell and each original cut face is examined with its actual outside cell, not an artificial cut boundary. The outermost unchanged context still has a diagnostic cut."
+  },
+  "context_diagnostics_kept_separate": {
+    "same_exact_original_bad_det_source_cells": 229,
+    "same_exact_original_nonmanifold_point_ids": 16,
+    "not_just_equal_counts": true,
+    "these_context_artifacts_do_not_explain_changed_region_regression": true
+  },
+  "decision": "REJECT_CANDIDATE_NO_WHOLE_REPLACEMENT",
+  "reason": "Actual connected transition has worse changed-region and original-interface quality. Geometric connection success is retained but not quality acceptance.",
+  "next": "Keep original remaining R03 cells; construct one continuous original FDG36/41 wall-corner patch that actually covers wall-rank defects and test conformal interfaces plus the full original outside neighborhood. Do not rerun this whole-cavity Delaunay candidate.",
+  "source_recovery": {
+    "library_file_id": "libfile_97a450c553bc8191a51a017bfcc09b83",
+    "bytes": 2032671,
+    "sha256": "7652e5e5c0c02f05979417ed7f8c77ef289ab1356379669729fd78778b655a59",
+    "source_files": 187,
+    "fresh_byte_restore_pass": true,
+    "scientific_rebuild": false,
+    "scope": "Actual source, original and fixed transition, paired native cases/logs and existing audits. The later exact unchanged-context identity supplement is pinned separately here."
+  },
+  "independent_paired_classification_audit_pending_at_record": true,
+  "source_pins": [
+    {
+      "path": "review_flow_P06_step_sector_connection_correction_C02/SCOPE_CORRECTION_FINAL_ENTRY_A01.json",
+      "bytes": 966,
+      "sha256": "915a12b910f72713b03c838767abaee0eb326fc74a92e7c7856e6efdb19cb9aa"
+    },
+    {
+      "path": "review_flow_P06_step_corrected_shell_A04/A04_SHELL_REVIEW_FINAL_ENTRY_A01.json",
+      "bytes": 1135,
+      "sha256": "57a0db226d34fc9f882559c7ba9586716ddc1c00dbb0b8dc429c187e2157b010"
+    },
+    {
+      "path": "review_flow_P06_flat_tet_repair_A01/EXACT_FLAT_TET_FACE_SPLIT_PROOF.json",
+      "bytes": 2035,
+      "sha256": "880d2039e106f694b9896fdb8b9a9cdf419bc930c1484bfe09a1b00cb05eabf6"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_step_region_transition_P02/output/T01_A01/GENERATED_MSH_RECEIPT.json",
+      "bytes": 376,
+      "sha256": "e8acbacf738b33be71d7f8057ab8babd5f72e1ffbfbc43731d032a011dab3cd1"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_step_region_transition_P02/output/T01_A01/readback_A02/SAVED_SERIALIZATION_IDENTITY_RECEIPT.json",
+      "bytes": 2635,
+      "sha256": "7954fc49415ece3fd69863dee6e7fd6d840e595f218ba7587eb9a76bf5c04f2e"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_step_region_transition_P02/FROZEN_ACTUAL_COMBINED_A03_ENTRY.json",
+      "bytes": 1042,
+      "sha256": "922412bfaa3dd7d86bc1acd419d65edbb5393e630bc38d8a0339113e70211696"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_step_region_transition_P02/output/actual_combined_A03/ACTUAL_COMBINED_CONNECTION_RESULT.json",
+      "bytes": 1169,
+      "sha256": "247d15cfda5d4fe321434143278c8e641010010f8b1aac9aa450664fe2365683"
+    },
+    {
+      "path": "review_flow_P06_connected_neighborhood_native_N02/build_context.py",
+      "bytes": 6757,
+      "sha256": "ba4bd67dd46469a176aa7e8b423d24586fed3fc9772294db25032f6d7100e0bd"
+    },
+    {
+      "path": "review_flow_P06_connected_neighborhood_native_N02/run_native_context.py",
+      "bytes": 5957,
+      "sha256": "ff6b29f830c9c3e14c234800c710825a98ce9046e3ff83d02a4ddd76d6a092ad"
+    },
+    {
+      "path": "review_flow_P06_connected_neighborhood_native_N02/input_A01/NEIGHBORHOOD_BUILD_RESULT.json",
+      "bytes": 2450,
+      "sha256": "d859720abff7f86c51566047e9ef9d420858a9bc530730544fd68cc021305a96"
+    },
+    {
+      "path": "review_flow_P06_connected_neighborhood_native_N02/run_A01/PAIRED_ACTUAL_CONTEXT_RESULTS.json",
+      "bytes": 23124,
+      "sha256": "adec4eb26665c322b38dc7fc90a17e6d5041f64adc523dfa673c187af60255d5"
+    },
+    {
+      "path": "review_flow_P06_connected_neighborhood_native_N02/run_A01/EXACT_UNCHANGED_CONTEXT_DIAGNOSTICS.json",
+      "bytes": 8877,
+      "sha256": "f5497a1d50a6775588833317ab503a0cdfc05c675310fa1906db447f10f71551"
+    },
+    {
+      "path": "review_flow_P06_connected_neighborhood_native_N02/run_A01/baseline/evidence/check.log",
+      "bytes": 5679,
+      "sha256": "a648ae0f2d253aa58797e09077af23115002df916c64ac32235dec9dcc064a2f"
+    },
+    {
+      "path": "review_flow_P06_connected_neighborhood_native_N02/run_A01/candidate/evidence/check.log",
+      "bytes": 5853,
+      "sha256": "bf0e7982aa2464f1928287128557245f2ff90c2a48f907964e6d7ff09e9d3ae9"
+    },
+    {
+      "path": "review_flow_P06_connected_neighborhood_native_N02/run_A01/candidate/output/NATIVE_CORE_AND_ASPECT_CLASSIFICATION.json",
+      "bytes": 5226,
+      "sha256": "aada6235c20b633565bf54b7844842dd9c67c0c534157d8048976a16c553e348"
+    },
+    {
+      "path": "valve-source-increment-P06-STEP-CONNECTION-20261012/A02/LIBRARY_IDENTITY_A02.json",
+      "bytes": 440,
+      "sha256": "bbc7e9da67b96a182eb2d341093407a1494d23570c28da9f29c321afddb82a19"
+    }
+  ],
+  "whole_or_manufacturing_qualification": false
+}

@@ -90,3 +90,8 @@ C03最终原余域3D和13,360,764胞完整域已保存，紧凑转换峰3.885GiB
 ## 2026-10-12T07:14:28.692074+00:00 · P06真实台阶定向层首次实证
 
 从 01fcdf0f40e36573af2e154e0d726988745e096d 建立 research/step-directed-layer-20261012，保留旧局部方向。真实有限扇层4374 prism已原生全几何/全拓扑Mesh OK，但未接原R03；原86578单元腔体提取覆盖13519det/3697weight/2ratio。完整域仍Failed3，无CFD。Steiner失败、非流形代表切壳、空体API修复及真实穿界证据保留。详见[记录](updates/20261012-P06-STEP-LAYER.md)与[源pin和范围](updates/20261012-P06-STEP-LAYER.json)。
+
+
+## 2026-10-12T07:42:44.812353+00:00 · 真连接完成，全邻域质量回退拒收
+
+原壳补星、零tet精确三分已实际解决，2345胞混合结果保存；接373真实原外邻后det377→498、weight96→133、ratio1→14，固定接口也退步，故拒收且不换whole。保留失败路线，转连续真壁角patch并保留旧剩胞。见[记录](updates/20261012-P06-CONNECTION-REJECTED.md)与[源pin/范围](updates/20261012-P06-CONNECTION-REJECTED.json)。
