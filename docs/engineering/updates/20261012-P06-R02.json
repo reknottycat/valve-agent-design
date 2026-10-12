@@ -1,0 +1,215 @@
+{
+  "schema": "valve.worklog_P06_R02/v1",
+  "recorded_utc": "2026-10-12T05:36:18.505689+00:00",
+  "branch": "research/whole-flow-local-repair-20261012",
+  "base_commit": "0e60130bfdd19d98f02cd3c81a7b8f0f300918d3",
+  "branch_reason": "Switch from rejected C03 complete-rest remeshing to guarded local repair of better R01 baseline; retain old direction history.",
+  "source_pins": [
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_repair_R02_A02/evidence/A01_TO_A02_PARAMETER_AND_INPUT_PINS.json",
+      "bytes": 4416,
+      "sha256": "4491e630b79b4ee3fdd6169a343a7bab4bc57df9b727223d03ca0891e8a2bf1d"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_repair_R02_A02/evidence/ACTUAL_GENERATION_RECEIPT.json",
+      "bytes": 3657,
+      "sha256": "3d79bb33678f2e4f4c759e420900ff47318c478b0474a3f8aa63b92cc1b6bff3"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_repair_R02_A02/evidence/RUN_TERMINAL_RECEIPT.json",
+      "bytes": 624,
+      "sha256": "f7d2ad8ff2496ad45b94238217dd1dce7149f3031d63147986a6d9a2efaeda62"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R02_A01/R02_NATIVE_FINAL_ENTRY.json",
+      "bytes": 2459,
+      "sha256": "cb8ff8b04983ba8e9c7bce0bd6cc95261c6a01ad807aaab17c4c5eb3f387b839"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R02_A01/output/OPENFOAM_RESULTS.json",
+      "bytes": 4604,
+      "sha256": "c6eecccb24086a79c6c82c7d5270807cef4c1b44eee78a88d8f84b06a1446d3c"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R02_A01/evidence/checkMesh_allGeometry_allTopology.log",
+      "bytes": 6020,
+      "sha256": "ad438efa2a8aed4ff8ffd5929f2f8df5ecba1acded3d8fcb894e5a763a5a4686"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R02_A01/evidence/checkMesh_allGeometry_allTopology.receipt.json",
+      "bytes": 1128,
+      "sha256": "07e7bbc1d5e0fbeb6c965dd0ee455c838dc142bacb941bdc62d386fbf49acd40"
+    },
+    {
+      "path": "review_flow_P06_rank_centroid_G02/RANK_CENTROID_FINAL_ENTRY_A01.json",
+      "bytes": 1474,
+      "sha256": "bca3dcf1d7569db02f37158a3fb69c523efaa6f038eb04c922738695b60bae34"
+    },
+    {
+      "path": "review_flow_P06_rank_centroid_G02/output/ACTUAL_RANK_CENTROID_PATCH_INDEPENDENT_A01.json",
+      "bytes": 2282,
+      "sha256": "96742f4aaa63dbc0a454130ba89bd2c64d74ed2dfbbdc24f950057488ab24fe5"
+    },
+    {
+      "path": "review_flow_P06_rank_centroid_G02/output/ACTUAL_NATIVE_R02_LINEAGE_AND_BADSET_COMPARISON_A01.json",
+      "bytes": 1808,
+      "sha256": "e4d7317a8f0090a9ad1e010f4db37952b7d26f06e362ec59dc42f01b991a992a"
+    },
+    {
+      "path": "review_flow_P06_rank_centroid_G02/evidence/FIRST_ADAPTER_FAILURE_A01.json",
+      "bytes": 581,
+      "sha256": "7317dca8a502e9d565e6c736db434626329c028f380edfeec8f1e3e4ac280a0f"
+    },
+    {
+      "path": "review_flow_P06_C03_seven_badsets/SEVEN_BADSETS_FINAL_ENTRY_A01.json",
+      "bytes": 854,
+      "sha256": "9e5c58aa8c6f2821f413670f5a421306d7a1525660a830d2eb91866648d414b3"
+    },
+    {
+      "path": "review_flow_P06_compact_conversion_C03/POINT_READBACK_SUPPLEMENT_ENTRY_A01.json",
+      "bytes": 1306,
+      "sha256": "8574a137616f9affb056f2a21256f676ed67781106c11fc20b92a47e1e858d73"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_geometry_C03_A01/C03_NATIVE_FINAL_ENTRY.json",
+      "bytes": 3889,
+      "sha256": "2b9d7163dc9d19af6cacaba6a4015490a0f82c2fcf293a15d35b17ef81880ab9"
+    },
+    {
+      "path": "P06_global_topology_stream_A01/FINAL_ENTRY.json",
+      "bytes": 17723,
+      "sha256": "a716ec90bef1f7768ad356c45adb4014098b5f763a8aee411b39d2d3c3e2296d"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_ratio_local_D01/OUTLET_WALL_DIAGONAL_FLIP_PRECHECK.json",
+      "bytes": 3600,
+      "sha256": "cac11bd0645040c33ec0a0ac14499eac57746cd6b8a356ae926aacaf7e8551d3"
+    },
+    {
+      "path": "valve-source-increment-P06-C03-NATIVE-20261012/LIBRARY_IDENTITY_A01.json",
+      "bytes": 829,
+      "sha256": "b6a8c630f55a64635af647d46ecf766e7b6e4582a8835777289a246a4dc2880c"
+    },
+    {
+      "path": "valve-source-increment-P06-C03-NATIVE-20261012/FRESH_BYTE_RECOVERY_VERIFIED_A01.json",
+      "bytes": 627,
+      "sha256": "3af88d71e494c9335c74fc34a7464e57e7b9694b956c6dcb67a03165f1f76700"
+    },
+    {
+      "path": "valve-design-integration-20261011/R01_EXPECTED_REMAINDER_SOURCE_GROUPS_20261012_0514.json",
+      "bytes": 7349,
+      "sha256": "014f716d6592e7eb5eca6f0f771817b10b518b1795e60e46b1786ac35ab0253a"
+    }
+  ],
+  "actual_saved_candidate": {
+    "cells": 6939072,
+    "points": 2775067,
+    "faces": 16325000,
+    "internal_faces": 15019938,
+    "boundary_faces": 1305062,
+    "bytes": 604781370,
+    "sha256": "947d2f6cc69f7b211230f89a81029c527e5e635cc0447c4d7a08a4fc7fc975ef",
+    "selected_parents": 3978,
+    "positive_children": 15912,
+    "added_points": 3978,
+    "net_added_cells": 11934,
+    "original_nodes_moved": 0,
+    "original_external_wall_facets_and_CAD_tags_changed": 0
+  },
+  "actual_native": {
+    "allGeometry_allTopology_executed": true,
+    "process_exit_code": 0,
+    "quality_failed_checks": 3,
+    "one_connected_region": true,
+    "low_det_before": 18261,
+    "low_det_after": 14283,
+    "low_weight_before": 3887,
+    "low_weight_after": 3887,
+    "low_ratio_before": 8,
+    "low_ratio_after": 8,
+    "high_aspect_skew_face_tet_concavity_checks_pass": true,
+    "nonorthogonal_warning_faces_before": 278261,
+    "nonorthogonal_warning_faces_after": 278706,
+    "nonorthogonal_warning_face_increase": 445,
+    "max_nonorthogonality_degrees": 85.77203769437484,
+    "native_check_elapsed_seconds": 114.44736585400824,
+    "native_check_peak_RSS_bytes": 6884896768,
+    "native_check_min_MemAvailable_bytes": 1614168064
+  },
+  "independent_actual_scope": {
+    "actual_native_failed_parent_and_face_identity_pass": true,
+    "whole_native_quality_gate_pass": false,
+    "native_failed_checks": 3,
+    "actual_cells": 6939072,
+    "actual_regions": 1,
+    "R01_det_bad_parents": 18261,
+    "selected_original_R01_bad_parents_replaced": 3978,
+    "R02_det_bad_cells": 14283,
+    "actual_bad_parent_set_exactly_old_minus_selected": true,
+    "selected_native_children_verified": 15912,
+    "selected_child_native_det_failures": 0,
+    "all_affected_source_native_cell_triangles_and_outward_cycles_exact": true,
+    "sparse_native_cell_incidence_checked": 33857,
+    "sparse_native_faces_checked": 91255,
+    "sparse_native_points_checked": 29049,
+    "R02_weight_bad_faces": 3887,
+    "R02_ratio_bad_faces": 8,
+    "all_weight_and_ratio_canonical_source_face_keys_and_R01_neighbor_parent_pairs_unchanged": true,
+    "no_new_weight_or_ratio_face_keys": true,
+    "native_sparse_coordinate_error_m": 0,
+    "native_max_nonorthogonality_degrees": 85.77203769437484,
+    "native_severe_nonorthogonal_faces_over70": 278706,
+    "native_min_det": 0.0,
+    "native_min_weight": 0.002967021771558574,
+    "native_min_ratio": 0.002975851186785625,
+    "new_quality_formula_or_solver_run": false,
+    "elapsed_seconds": 6.81992427399382,
+    "max_rss_KiB": 288328,
+    "CPU_affinity": [
+      5
+    ],
+    "native_log_sha256": "ad438efa2a8aed4ff8ffd5929f2f8df5ecba1acded3d8fcb894e5a763a5a4686",
+    "native_badset_sha256": {
+      "underdeterminedCells": "818819baf3622a79139dd3360f9b506b5b673971d7191c3543c9598593388a49",
+      "lowWeightFaces": "a03eaf6221b98e82f6fa3bbfffd10c42ef7af610dd695c48a20ff45d5045bbe9",
+      "lowVolRatioFaces": "fdf9e1c82065fbc146f7ac8c01dc7891aacbc04f4a17eab9f64119ba694940f2"
+    },
+    "scope": "Actual sparse parent/facet/native incidence identity only. Failed3 remains; no CFD or physical valve failure inference."
+  },
+  "independent_patch_union": {
+    "selected_parents": 3978,
+    "positive_children": 15912,
+    "exact_binary64_rational_parent_child_volume_difference": 0,
+    "affected_internal_faces": 31823,
+    "sibling_internal_faces": 23868,
+    "selected_parent_pair_interfaces": 1,
+    "unselected_neighbor_interfaces": 7954,
+    "minimum_face_weight": 0.0501873407045705,
+    "minimum_volume_ratio": 0.05283919961837469
+  },
+  "regression_cost": "445 additional >70 degree nonorthogonality warnings, maximum angle unchanged; not hidden or waived.",
+  "audit_failure_trace": "First adapter included appended new points in a final old-point comparison block. It failed; original source/receipt retained. Corrected both slices to old point count, without changing mesh data or thresholds; actual subsequent review passed.",
+  "C03_final_scope": "All six non-det badset classes that directly touch the wall touch CAD78 -> original FDG126 z79 plane, not a direct Torus wall. C03 remains Failed7 and does not replace R01/R02. Later complete raw serialization and custom global point/edge-star checks are scoped evidence, not official allTopology or CFD acceptance.",
+  "next_priority": "The same eight low-ratio source facets and their overlapping low-weight neighbors; reuse prior failed 2-to-3 flip evidence. No free-interior-point assumption for points fixed on real wall/intersection CAD. Evaluate one bounded local alternative and all affected neighbors before whole native diagnostic.",
+  "rejected_local_wall_diagonal": {
+    "original_parent": 2728051,
+    "max_radial_chord_error_old_mm": 0.00275935093297619,
+    "max_radial_chord_error_new_mm": 0.003961786400296319,
+    "reason": "Geometric wall approximation worsens despite neighbor det passing.",
+    "candidate_integrated_or_native_run": false
+  },
+  "same_CAD_retriangulation_scope": "A proposed projected CAD midpoint/complete-edge-star alternative changes piecewise-linear boundary and volume; analytic CAD and its finite parameter domain must be verified. It is not a zero-domain-change repair; no full native result is claimed here.",
+  "research_scope": "Same defined research fluid domain and assembly/57 mm open position as pinned source; ideal packing truncation and previous modelling exclusions remain. Not manufacturing qualification.",
+  "source_recovery": {
+    "library_file_id": "libfile_b2c16b9f5dec8191be5b7b3aed5acb99",
+    "bytes": 3100705,
+    "sha256": "d488e344e9af495929e9f045b53c9ff4c4a8d82f87581bb305ba26ac590e0eec",
+    "byte_restored_files": 299,
+    "scientific_fresh_rebuild_executed": false,
+    "scope": "Pre-R02 C03 join/converter/native and history supplement; R02 is a later increment."
+  },
+  "CFD_started": false,
+  "whole_mesh_quality_qualified": false,
+  "whole_valve_qualified": false,
+  "data_scope": "Worklog and evidence hash references only; original 22-file source/input payload approval remains separate."
+}
