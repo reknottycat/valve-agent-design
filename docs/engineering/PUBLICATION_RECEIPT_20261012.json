@@ -1,0 +1,90 @@
+{
+  "schema": "valve.engineering_worklog_publication_receipt/v1",
+  "recorded_utc": "2026-10-12T00:51:39Z",
+  "repository": "reknottycat/valve-agent-design",
+  "private": true,
+  "first_worklog_commit": {
+    "sha": "e92eee225755d12861930f5157ccebcf083b76cb",
+    "tree_sha": "5fd1d7e0f23afd36e58fc29cdf46c083c20820ac",
+    "commit_utc": "2026-10-12T00:48:05Z",
+    "parent_sha": "4222b3d4df248b07777315068b9f3c99273d47c4",
+    "retrospective_record_not_backdated_commits": true
+  },
+  "published_files": [
+    {
+      "path": "docs/engineering/BRANCH_PLAN.json",
+      "bytes": 1123,
+      "sha256": "da598a4dfe2b71b6683ce4b6069f9041a26f6521a3b2f1feea3dac39caffe608",
+      "remote_blob_sha": "245d40cde801bfdcfa035dd5b6d72b944089dda6",
+      "url": "https://github.com/reknottycat/valve-agent-design/blob/e92eee225755d12861930f5157ccebcf083b76cb/docs/engineering/BRANCH_PLAN.json"
+    },
+    {
+      "path": "docs/engineering/EVIDENCE_INDEX.json",
+      "bytes": 6761,
+      "sha256": "e254c69641171e06669a554fb179bbcda2d52b25acf90c2d449f0b7a4bd0e2db",
+      "remote_blob_sha": "38333a73ac0ccc871d8b9d945088764f811e2179",
+      "url": "https://github.com/reknottycat/valve-agent-design/blob/e92eee225755d12861930f5157ccebcf083b76cb/docs/engineering/EVIDENCE_INDEX.json"
+    },
+    {
+      "path": "docs/engineering/PRODUCT_INDEX.json",
+      "bytes": 39152,
+      "sha256": "0e87c3df3fb68cffbde078dacdb863bd44663e10bc922f2c6475072e078ac14f",
+      "remote_blob_sha": "e7c5a0941aa36691b0a3f691b32e4e6aa603f306",
+      "url": "https://github.com/reknottycat/valve-agent-design/blob/e92eee225755d12861930f5157ccebcf083b76cb/docs/engineering/PRODUCT_INDEX.json"
+    },
+    {
+      "path": "docs/engineering/REPLAY_INDEX.json",
+      "bytes": 3959,
+      "sha256": "a12c69185e60a2b4294229eb9785d1ff8fd711b59aab15ad0bc6f3e571c32a9b",
+      "remote_blob_sha": "b41cb88f1bccefd5275a04314afb234b29d8fcd6",
+      "url": "https://github.com/reknottycat/valve-agent-design/blob/e92eee225755d12861930f5157ccebcf083b76cb/docs/engineering/REPLAY_INDEX.json"
+    },
+    {
+      "path": "docs/engineering/WORKLOG.md",
+      "bytes": 8061,
+      "sha256": "23dc02198fafdcf7ca52beb793d8229a871ac2fb627cee0e538eea5336e63a26",
+      "remote_blob_sha": "614393c93d0eccda9269241b37a045c2cca12325",
+      "url": "https://github.com/reknottycat/valve-agent-design/blob/e92eee225755d12861930f5157ccebcf083b76cb/docs/engineering/WORKLOG.md"
+    },
+    {
+      "path": "tools/verify_engineering_traceability.py",
+      "bytes": 2897,
+      "sha256": "9b0c6f0fdac162362476dc0f69efc3516d512df36344eeded64d0c5f88b28110",
+      "remote_blob_sha": "71f9a6335d6e58eb2179f091076395c005b73d0e",
+      "url": "https://github.com/reknottycat/valve-agent-design/blob/e92eee225755d12861930f5157ccebcf083b76cb/tools/verify_engineering_traceability.py"
+    }
+  ],
+  "remote_file_original_bytes_sha256_and_git_blob_sha_verified": true,
+  "original_base_blob_count_preserved": 109,
+  "main_ref_preserved": "4222b3d4df248b07777315068b9f3c99273d47c4",
+  "R1_cloud_validation_ref_preserved": "aa80b87b6ee9617754101a238f70bec99393ad9a",
+  "direction_branches": [
+    {
+      "name": "research/carrier-discretization-20261012",
+      "observed_initial_commit": "e92eee225755d12861930f5157ccebcf083b76cb",
+      "role": "Current direction tracking anchor initialized on 2026-10-12; selected engineering source still to be imported. Not an invented historical branch."
+    },
+    {
+      "name": "research/conformal-whole-flow-20261012",
+      "observed_initial_commit": "e92eee225755d12861930f5157ccebcf083b76cb",
+      "role": "Current direction tracking anchor initialized on 2026-10-12; selected engineering source still to be imported. Not an invented historical branch."
+    },
+    {
+      "name": "research/unified-contact",
+      "observed_initial_commit": "e92eee225755d12861930f5157ccebcf083b76cb",
+      "role": "Current direction tracking anchor initialized on 2026-10-12; selected engineering source still to be imported. Not an invented historical branch."
+    }
+  ],
+  "readback_checks": {
+    "verified_source_files": 26,
+    "product_links": 91,
+    "product_file_links": 85,
+    "product_folder_links": 6,
+    "scientific_solver_invoked": false,
+    "full_git_checkout_replayed": false,
+    "identity_and_index_check_only": true
+  },
+  "source_publication_scope": "This publication contains engineering records, hashes, ordinary product/recovery references and a read-only verifier. It does not import the separate 22-file CRM1 build-source payload or binary scientific outputs.",
+  "whole_valve_qualified": false,
+  "manufacturing_release": false
+}
