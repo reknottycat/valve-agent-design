@@ -1,0 +1,47 @@
+{
+  "schema": "valve.engineering_direction_update/v1",
+  "compiled_utc": "2026-10-12T01:26:51.590223+00:00",
+  "target_branch": "research/carrier-discretization-20261012",
+  "starting_actual_anchor": "e92eee225755d12861930f5157ccebcf083b76cb",
+  "retrospective_backdated_commit": false,
+  "source_evidence": [
+    {
+      "path": "valve-unified-carrier-sensitivity-UCS2-20261012/UCS2_NATIVE_TERMINAL_ENTRY_A01.json",
+      "bytes": 7354,
+      "sha256": "e417b948a2a90dc35faae94a01d27880a5c5629c76d1da54f8e8ea51443f9d92"
+    },
+    {
+      "path": "valve-unified-contact-response-UCR2-20261012/UCR2_FINAL_ENTRY.json",
+      "bytes": 740,
+      "sha256": "9ac2060970cdfc45aa228d5fb53e93453cba858552a702273fcf16e9aecbdfe0"
+    },
+    {
+      "path": "valve-unified-contact-nonlinear-field-audit-NFA4-20261012/NFA4_FINAL_ENTRY.json",
+      "bytes": 748,
+      "sha256": "aa0ad7db06b145928e70fda38bb3e9f2dccd883b2ffbca7b038d572015925057"
+    },
+    {
+      "path": "valve-unified-domain-audit-UDA2-20261012/UDA2_FINAL_ENTRY_A01.json",
+      "bytes": 4405,
+      "sha256": "f842dde41a20a0382f9b986edb81f5072be69ad14507925748c33c2b85b0163b"
+    },
+    {
+      "path": "valve-unified-domain-audit-UDA2-20261012/UDA2_CURRENT_FORCE_COMPARISON_A01.json",
+      "bytes": 2158,
+      "sha256": "f507225bdde8140dfb1f8701d4417ff5bccaad08837ae43940b771426ec297d5"
+    },
+    {
+      "path": "valve-unified-carrier-sensitivity-UCS2-20261012/products/UCS2_DELIVERY_MANIFEST_A01.json",
+      "bytes": 3338,
+      "sha256": "ce6025d1491c956bff742d71c48e00a6d55f127dd239c225f789a9e9dec03c0c"
+    },
+    {
+      "path": "valve-unified-carrier-sensitivity-UCS2-20261012/products/DN200_UCS2_固定座面离散全局对照_未整阀验收_20261012.pdf",
+      "bytes": 1870694,
+      "sha256": "16da200a32318cd178c4e52ca7fef1bc1f34aed8c11c6d6a4c763398cb9cabae"
+    }
+  ],
+  "source_payload_imported": false,
+  "whole_valve_qualified": false,
+  "manufacturing_release": false
+}
