@@ -1,0 +1,839 @@
+{
+  "schema": "valve.engineering_worklog_P08_native_whole/v1",
+  "recorded_utc": "2026-10-12T12:58:52.777583+00:00",
+  "branch": "research/native-snappy-control-20261012",
+  "base_commit": "27995eb4624e48a1ac2a09556810b585faddb611",
+  "data_scope": "Three engineering logs and result metadata/source-root-relative hashes only; no input/code/mesh/runtime payload. Actual two-attempt terminal and independently reviewed evidence; scientific replay not claimed.",
+  "source_geometry": {
+    "original_FDG1_STEP": "valve-fluid-domain-FDG1-20261011/products/AGR1_open_seal_omitted_proxy_main_mm.step",
+    "original_STEP_sha256": "a9aeb45996a388a3d894f69605205c70c25edd154adc6d3c71658329a730e787",
+    "geometry_healed": false,
+    "geometry_defeatured": false,
+    "original_finite_faces": 132,
+    "original_shells": 2,
+    "old_torus_finite_witness_error_mm": {
+      "FDG121": 0.20176427699359395,
+      "FDG123": 0.1839522513140617,
+      "FDG125": 0.12155611861804828
+    },
+    "old_witness_scope": "Three finite-face-qualified chord-midpoint witnesses and old labeled-set measurements, not continuous Hausdorff supremum or quantitative CFD effect."
+  },
+  "actual_same_CAD_surface_export": {
+    "failed_A01_reason": "Completed meshing then failed polygon-array API postprocessing; A02 was same-CAD/same-parameter retry, not a mesh-parameter family.",
+    "A02_actual_triangles": 851278,
+    "A02_actual_vertices": 425643,
+    "requested_absolute_deflection_mm": 0.005,
+    "requested_angle_rad": 0.05,
+    "OBJ_sha256": "4e76fbc6c751db3edbfe3d6d1190c4840c1f11b6a60d934513a3dbf0a747f0a7",
+    "original_finite_face_provenance_and_critical_paths_present": true,
+    "directed_edges_exactly_two_and_opposite": true,
+    "all_shared_CAD_edges_conformal": true,
+    "actual_weld_shift_mm": 0.0,
+    "original_two_shells_preserved": true,
+    "relative_signed_volume_difference": -2.5737970973665848e-05,
+    "actual_analytic_finite_faces_exceeding_request": [
+      {
+        "source_face_tag": 121,
+        "type": "TORUS",
+        "all_edge_midpoint_max_mm": 0.05326931786035094,
+        "all_centroid_max_mm": 0.047751111330055385,
+        "vertex_support_max_mm": 2.3349100430891667e-12
+      },
+      {
+        "source_face_tag": 123,
+        "type": "TORUS",
+        "all_edge_midpoint_max_mm": 0.04789422554348377,
+        "all_centroid_max_mm": 0.04175535170602862,
+        "vertex_support_max_mm": 2.3219204337010524e-12
+      },
+      {
+        "source_face_tag": 125,
+        "type": "TORUS",
+        "all_edge_midpoint_max_mm": 0.11540309150708661,
+        "all_centroid_max_mm": 0.09889549738557221,
+        "vertex_support_max_mm": 6.013800568638317e-13
+      }
+    ],
+    "requested_setting_is_measured_error_bound": false,
+    "continuous_all_facet_Hausdorff_bound_proven": false,
+    "B_spline_sampled_not_population_bound": true,
+    "serialized_OBJ_rows_independently_read_back_against_arrays": true
+  },
+  "actual_native_A01": {
+    "start_UTC": "2026-10-12T12:21:36.138358+00:00",
+    "terminal_UTC": "2026-10-12T12:23:42.529775+00:00",
+    "elapsed_seconds": 126.39216812400264,
+    "exit_code": -6,
+    "sampled_peak_RSS_bytes": 6698582016,
+    "observed_VmPeak_bytes": 6883069952,
+    "RSS_and_RLIMIT_AS_cap_bytes": 6979321856,
+    "wrapper_terminated_for": null,
+    "failure_classification": "Official allocator failure while running under hard RLIMIT_AS 6.5GiB. Wrapper did not terminate for RSS, MemAvailable, time, or disk. Cannot infer host OOM or CAD invalidity; requested allocation size was not printed.",
+    "actual_background_dimensions": [
+      284,
+      48,
+      77
+    ],
+    "actual_background_cells": 1049664,
+    "surfaceFeatureExtract_surfaceCheck_blockMesh_completed": true,
+    "official_surfaceCheck_closed_no_self_intersection": true,
+    "two_surface_shells_not_two_retained_fluid_regions": true,
+    "last_completed_refinement": {
+      "stage": "surface",
+      "iteration": 3,
+      "cells_before_domain_retention": 7387114,
+      "faces": 23588158,
+      "points": 8819074
+    },
+    "next_selected_cells": 357504,
+    "next_expected_cells_not_actual_saved": 9889642,
+    "all_actual_refinement_counts": [
+      {
+        "stage": "feature",
+        "iteration": 0,
+        "cells_before_domain_retention": 1073891,
+        "faces": 3278392,
+        "points": 1133334
+      },
+      {
+        "stage": "feature",
+        "iteration": 1,
+        "cells_before_domain_retention": 1167061,
+        "faces": 3612772,
+        "points": 1286625
+      },
+      {
+        "stage": "feature",
+        "iteration": 2,
+        "cells_before_domain_retention": 1167838,
+        "faces": 3615343,
+        "points": 1287625
+      },
+      {
+        "stage": "feature",
+        "iteration": 3,
+        "cells_before_domain_retention": 1167964,
+        "faces": 3615739,
+        "points": 1287763
+      },
+      {
+        "stage": "feature",
+        "iteration": 4,
+        "cells_before_domain_retention": 1168020,
+        "faces": 3615913,
+        "points": 1287821
+      },
+      {
+        "stage": "surface",
+        "iteration": 0,
+        "cells_before_domain_retention": 1853908,
+        "faces": 5851711,
+        "points": 2148784
+      },
+      {
+        "stage": "surface",
+        "iteration": 1,
+        "cells_before_domain_retention": 4039777,
+        "faces": 12956518,
+        "points": 4879118
+      },
+      {
+        "stage": "surface",
+        "iteration": 2,
+        "cells_before_domain_retention": 4839954,
+        "faces": 15505219,
+        "points": 5828127
+      },
+      {
+        "stage": "surface",
+        "iteration": 3,
+        "cells_before_domain_retention": 7387114,
+        "faces": 23588158,
+        "points": 8819074
+      }
+    ],
+    "domain_retention_completed": false,
+    "snap_started": false,
+    "whole_full_quality_check_executed": false,
+    "whole_MeshOK": false,
+    "whole_CFD_started": false,
+    "constant_polyMesh_is_background_not_final_whole_mesh": true,
+    "background_core_total_bytes": 115103127,
+    "all_children_reaped": true
+  },
+  "capacity_interpretation": {
+    "prior_3M_to_8M_scenario_not_bound_or_guarantee": true,
+    "surface_A_over_h2_not_volume_cell_count": true,
+    "P07_linear_RSS_scaling_not_guaranteed_for_multilevel_whole": true,
+    "host_OOM_proven": false,
+    "CAD_invalidity_or_physical_failure_inferred": false,
+    "actual_failed_allocation_size_printed": false
+  },
+  "qualification": {
+    "source_surface_closure_and_identity_only": true,
+    "requested_0p005_error_bound_failed": true,
+    "whole_native_fluid_mesh_completed": false,
+    "whole_valve_CFD_started": false,
+    "new_Drive_product_selected": false,
+    "NSC1_representative_results_not_upgraded_to_whole": true,
+    "manufacturing_or_performance_release": false
+  },
+  "next_bounded_action": {
+    "current_environment_heavy_retries_stopped": true,
+    "two_and_only_two_whole_native_attempts_complete_as_incomplete_failure": true,
+    "new_parameter_family_or_manual_repair_started": false,
+    "minimum_physical_RAM_not_established": true,
+    "16_to24GiB_host_with12GiB_child_cap_is_unvalidated_planning_scenario_not_measured_minimum": true,
+    "local_migration_mesh_or_CFD_result_claimed": false,
+    "new_direction_branch_not_created_by_this_increment": true,
+    "no_original_walls_or_passages_removed_to_claim_pass": true,
+    "local_2506_existing_runtime_compatibility_check_only_pending_separate_coordination": true
+  },
+  "source_pins": [
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/ACTUAL_FEATURE_REFINEMENT_AND_CAPACITY_PLAN_A01.json",
+      "bytes": 5226,
+      "sha256": "a2b13047f8c6f9a9dc3a9898a4c0525d28e94f94652880e8902107c055d2095c"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/ACTUAL_OFFICIAL_DICTIONARY_READBACK_A01.json",
+      "bytes": 1924,
+      "sha256": "439950c33dd318e5aef0664b47d9d4a3e3fe40990adda352eb50131fcca96346"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/ACTUAL_REGENERATED_SURFACE_NATIVE_REGION_RULES_A01.json",
+      "bytes": 60060,
+      "sha256": "cf4093fab9ad85838cc71561c34c63fb7dd327c97679ad17d1dfda5afdbe4b93"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/NATIVE_WHOLE_CASE_PREPARATION_A01.json",
+      "bytes": 61326,
+      "sha256": "52d17982ee50b81c8c08456c233005a39105b96c12cb4e299907f7a86abedf37"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/case_native_m/system/READBACK_blockMeshDict.txt",
+      "bytes": 202,
+      "sha256": "3ca0f569f33082448a04b3dd39f4c10c6ccdc3910ad4b939ca49d10851561ed9"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/case_native_m/system/READBACK_controlDict.txt",
+      "bytes": 318,
+      "sha256": "99d2b8168e59f094511f856b36e4fbf9576129b005de76b34554766358aac03f"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/case_native_m/system/READBACK_fvSchemes.txt",
+      "bytes": 238,
+      "sha256": "5da6418a41a049673d94b2f3f06a8d77894e7ed102df353bc06483adfea7c5a4"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/case_native_m/system/READBACK_fvSolution.txt",
+      "bytes": 147,
+      "sha256": "5530229b8c4afab80bf41c5eeb20d174a490c3fde228376ec46fdb590288bb17"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/case_native_m/system/READBACK_snappyHexMeshDict.txt",
+      "bytes": 275,
+      "sha256": "38567da65c1c2cd25bee1627f97e9a3882e0bada24573338c9b63dc70e365b3b"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/case_native_m/system/READBACK_surfaceFeatureExtractDict.txt",
+      "bytes": 172,
+      "sha256": "dd63e68b25de3c8ee51dc6023aaccc3d261155c851affc8a5a44064e8a568357"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/case_native_m/system/blockMeshDict",
+      "bytes": 745,
+      "sha256": "cfd8b79a3c0273680237cf01b2aaa33a588986f3b36e3a759882610aedf7c0f7"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/case_native_m/system/controlDict",
+      "bytes": 348,
+      "sha256": "ab9365d526613666a24cdcac38f6ef7a1019a43026f0488ed2b7de2dbd514cbe"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/case_native_m/system/fvSchemes",
+      "bytes": 323,
+      "sha256": "9e485926239e141a0f6d47c2f225e75ae33b14d62b650189800bec4064bba233"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/case_native_m/system/fvSolution",
+      "bytes": 86,
+      "sha256": "b903ba8ba92b96119c9be09baa3f1d3bfc0137ad1221ac219f145b24743a4673"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/case_native_m/system/snappyHexMeshDict",
+      "bytes": 8052,
+      "sha256": "2950bb5685e268ddd587548b9e35eee06e5d812dc3fbce52293c51d82bb9eef6"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/case_native_m/system/surfaceFeatureExtractDict",
+      "bytes": 221,
+      "sha256": "642974cbc84e14f247cc3ca5ef8802e49c97e7800e65ac3d8985fca6e5c68d24"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/evidence/NATIVE_STAGE_RECEIPTS.json",
+      "bytes": 3703,
+      "sha256": "ee38b501cdc399edc77c33aa1daa4e52df5c2a9b02a55a05e9340729fa4a2c8f"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/evidence/PIPELINE_ENTERED.json",
+      "bytes": 459,
+      "sha256": "3338f2c4c46945c7f78facf6969024fe9abd1b54987f7943b939838f8036f568"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/evidence/PIPELINE_FINAL_STATE.json",
+      "bytes": 1688,
+      "sha256": "a48b32871c24cd641d50b5f9df04e1801d5b140f9c155ea1d68efa791f839072"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/evidence/STARTED_blockMesh.json",
+      "bytes": 477,
+      "sha256": "f12605e9ae073b0d6a31977ab3f52fdee5d22afe9bf06360bd9ef3a4fd8344c1"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/evidence/STARTED_snappyHexMesh.json",
+      "bytes": 500,
+      "sha256": "15530c5967e14b7fd705893996fe08258336d33c53af73dca2150d949920308a"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/evidence/STARTED_surfaceCheck.json",
+      "bytes": 680,
+      "sha256": "2ccea315a66c5b1fa5a4d6bfb0572e8be3f7ed552b092eb9f356983d5c9e9b3d"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/evidence/STARTED_surfaceFeatureExtract.json",
+      "bytes": 489,
+      "sha256": "9af85a82f79068c73248408623cad6cff67c01e20a3959d9e8ac117f84058293"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/evidence/blockMesh.log",
+      "bytes": 2617,
+      "sha256": "d2d6251159b61ec22484864dbf356df0a1291e26b1ba6a905d820f4380ea680d"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/evidence/blockMesh.receipt.json",
+      "bytes": 1079,
+      "sha256": "1b302c3945ace45d6007d954b772b946726d5a992539a860c9a070a8b5882639"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/evidence/blockMesh.rss.jsonl",
+      "bytes": 923,
+      "sha256": "54d4284dd8b3d15396bc9c7c5af432f178ae67922c5cdca0e7508cfe19f0f93e"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/evidence/blockMesh.stderr.txt",
+      "bytes": 281,
+      "sha256": "2c4b723aa9288eab95abb9f26ec117951a77af20dcec58307785397dba0e7ae6"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/evidence/snappyHexMesh.log",
+      "bytes": 17154,
+      "sha256": "f58137a1d7ef69553c0b44033a6b16785e81aceeb62d23646fd52f540fc11f75"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/evidence/snappyHexMesh.receipt.json",
+      "bytes": 1109,
+      "sha256": "ab72570e582f69ab3a077472a40d9436c04b3dfd61188644faf0678d1e698450"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/evidence/snappyHexMesh.rss.jsonl",
+      "bytes": 42189,
+      "sha256": "23d4e936d42b649f060936c31002035553edd6737038d3f4a4222a800c863ce8"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/evidence/snappyHexMesh.stderr.txt",
+      "bytes": 207,
+      "sha256": "0640072ee265c6b3fd0d56990c34303d7cde3dc2301856ab1f513e29dd467f24"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/evidence/surfaceCheck.log",
+      "bytes": 6471,
+      "sha256": "075052ee03e86fbc3b9f90857f38ab5988b4076e992a355ff5e302597b25d63e"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/evidence/surfaceCheck.receipt.json",
+      "bytes": 1283,
+      "sha256": "a3a2368e60565aab1c6dd34bf99039c9a348f1c796eafa21fee47b2acbc154f6"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/evidence/surfaceCheck.rss.jsonl",
+      "bytes": 3451,
+      "sha256": "3fe513c2205d57bc73b88938aa405aa793873ba741d45691c8ceebdd7e606d43"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/evidence/surfaceCheck.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/evidence/surfaceFeatureExtract.log",
+      "bytes": 3028,
+      "sha256": "e6a8b5c43832ad32d2c065aaf2e4aab77dcdde3df8973235904fc2d8787e0c30"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/evidence/surfaceFeatureExtract.receipt.json",
+      "bytes": 1103,
+      "sha256": "a26d9d6e1a9aa7ffc87a04559e2b0d1e75a4b65e1f31be10ecf421596776f293"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/evidence/surfaceFeatureExtract.rss.jsonl",
+      "bytes": 998,
+      "sha256": "a0fc3ee59a2e3976296686f6ff267f45e9c5c5cb1f257982d917a6840b222df4"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/evidence/surfaceFeatureExtract.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/native_run_A01/output/ACTUAL_WHOLE_NATIVE_ALLOCATION_FAILURE_AND_SCOPE_A01.json",
+      "bytes": 5807,
+      "sha256": "54bd6581b861e406d7feb3dd0f28d3f536c327faa0970d0ac9f1db0eb980631c"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/scripts/native_stage_monitor.py",
+      "bytes": 8256,
+      "sha256": "715a938bc4bbca5ceca80b483c2fa5144ce5bc03aafddabcb08f801bf4b20a88"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/scripts/prepare_native_whole_case_A01.py",
+      "bytes": 6821,
+      "sha256": "0346c99df6fa7f749a8d8cd9bf4300112506d0660695f70b98615509fb1e1d48"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/scripts/prepare_native_whole_case_A02.py",
+      "bytes": 7087,
+      "sha256": "ca71fe94a545376dd8c82f277e2ff08660df303c32e06dc0425b507da6e1a97b"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/scripts/prepare_regenerated_surface_rules_A01.py",
+      "bytes": 6935,
+      "sha256": "01501184f31a873fde0a7d89ad303123db8d9d3f195fb603cbdf77b9f6a5562d"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/scripts/run_one_native_whole_pipeline_A01.py",
+      "bytes": 5713,
+      "sha256": "8bb2ca0c47daa52d6cc4d6982c130420e39b47e10237ef6dc17b3f44fe0e1070"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/P08_NATIVE_WHOLE_FINAL_ENTRY_A01.json",
+      "bytes": 1000,
+      "sha256": "9a9051efe5836bacb0e74522577fff157dc4f86f4f11b46c442ad5247b8c661a"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/P08_NATIVE_WHOLE_FROZEN_MANIFEST_A01.json",
+      "bytes": 21893,
+      "sha256": "bc9e2ced7bdc1ac68cc371bd77f86f0a72c23d89ab3db250d178b5f539e29032"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/geometry_regenerated_A02/SURFACE_REGENERATION_RESULT.json",
+      "bytes": 11568,
+      "sha256": "c21d0f534e2b1369dbd92797f9620ada5a46b01618408bda7f58bf1a9112b642"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/geometry_regenerated_A02/MEASURED_ERROR_ADMISSION.json",
+      "bytes": 3357,
+      "sha256": "26d2d60da1a263e42b5afb437e311f7884e7914ddbc1aa0af27966fd76a3a613"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A01/geometry_regenerated_A02/SERIALIZED_OBJ_READBACK.json",
+      "bytes": 5750,
+      "sha256": "dc1fc1af5e83ea988b0661045d3b44ca2bb84dce37ea08787e5768dbc8e5613d"
+    },
+    {
+      "path": "review_flow_P08_existing_surface_torus_A01/P08_OLD_TORUS_WITNESS_FINAL_ENTRY_A01.json",
+      "bytes": 1407,
+      "sha256": "0f735ee239875fc24c78a00b1cd8caf94d68407fbfbfa5614a75bd76681c0263"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/ACTUAL_FEATURE_REFINEMENT_AND_CAPACITY_PLAN_A01.json",
+      "bytes": 7029,
+      "sha256": "d26ede6f80ed1654e49be6f0020b835200763d531ac3ea8fe65ef87b5bfba846"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/ACTUAL_INHERITED_OFFICIAL_SOURCE_AND_FEATURE_PINS_A01.json",
+      "bytes": 904,
+      "sha256": "d4e570b72d52b2b51cdd26e6fe0f6dd0567f1e1d9da8d34e63e9ba12ceff9a4f"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/ACTUAL_OFFICIAL_DICTIONARY_READBACK_A01.json",
+      "bytes": 1546,
+      "sha256": "2fe58881e63381e20cb7cc598f6bbd2083ed6b76729b95a76f6bd23df81764b8"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/ACTUAL_REGENERATED_SURFACE_NATIVE_REGION_RULES_A01.json",
+      "bytes": 67664,
+      "sha256": "38e03813143d6a6da70bc7cbc994ba628cae3c7fc5e9305490945835fd544f84"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/ACTUAL_SINGLE_COARSE_INPUT_DIFFERENCE_A01.json",
+      "bytes": 14076,
+      "sha256": "95c7e03708cb24cb5585401619cedc7f419910191ebfab32554a257757dab4f2"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/DICT_READBACK_blockMeshDict.txt",
+      "bytes": 202,
+      "sha256": "14b92f075cbb4a5652688a3846e4d76fa2262de870fa8dc0acfea11c9d6f598d"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/DICT_READBACK_controlDict.txt",
+      "bytes": 318,
+      "sha256": "c943db77cdf95b64ab7d611f4bde6fc7b5d2d6fcac76aa8ab7a671d37ae01b80"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/DICT_READBACK_fvSchemes.txt",
+      "bytes": 238,
+      "sha256": "b7d1f6ea265a14fe92ca475c23f77afd955110321377227123d8cedf574eb2fc"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/DICT_READBACK_fvSolution.txt",
+      "bytes": 147,
+      "sha256": "9a559cdb97ab6da09ec34f27059db8895150868aba253761e859d9f6710926d0"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/DICT_READBACK_snappyHexMeshDict.txt",
+      "bytes": 275,
+      "sha256": "d4f15857112cf1d556fa7aa7b7043aced10b430def5fbee7274e24c7dae47e69"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/DICT_READBACK_surfaceFeatureExtractDict.txt",
+      "bytes": 172,
+      "sha256": "c3d6963024c8541c783f22da80e39e935ff27d0cd0ee83523aa51537e6b207e7"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/NATIVE_WHOLE_CASE_PREPARATION_A01.json",
+      "bytes": 67838,
+      "sha256": "ad87743dc20b75c2f723804e28d281e153d258d1a083b10c6e4f04a3f9e45265"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/NEXT_ENVIRONMENT_RESOURCE_GUIDANCE_A01.json",
+      "bytes": 2232,
+      "sha256": "9fc6541a5ec24adcf63dc027266b2c2c5e1e6a06be922811c7c4988325891e93"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/case_native_m/system/blockMeshDict",
+      "bytes": 745,
+      "sha256": "cfd8b79a3c0273680237cf01b2aaa33a588986f3b36e3a759882610aedf7c0f7"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/case_native_m/system/controlDict",
+      "bytes": 348,
+      "sha256": "ab9365d526613666a24cdcac38f6ef7a1019a43026f0488ed2b7de2dbd514cbe"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/case_native_m/system/fvSchemes",
+      "bytes": 323,
+      "sha256": "9e485926239e141a0f6d47c2f225e75ae33b14d62b650189800bec4064bba233"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/case_native_m/system/fvSolution",
+      "bytes": 86,
+      "sha256": "b903ba8ba92b96119c9be09baa3f1d3bfc0137ad1221ac219f145b24743a4673"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/case_native_m/system/snappyHexMeshDict",
+      "bytes": 8052,
+      "sha256": "6f12f554c5416be529e39ed00e424555bae768519cf525bc5271a7ad7a4f7479"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/case_native_m/system/surfaceFeatureExtractDict",
+      "bytes": 221,
+      "sha256": "642974cbc84e14f247cc3ca5ef8802e49c97e7800e65ac3d8985fca6e5c68d24"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/native_run_A01/evidence/NATIVE_STAGE_RECEIPTS.json",
+      "bytes": 1159,
+      "sha256": "86ebf44da9ee20b943812c55280f6c94564ad040ff4285286bad31168ac932b1"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/native_run_A01/evidence/PIPELINE_ENTERED.json",
+      "bytes": 459,
+      "sha256": "b0333172ce06b524d4a68cbfcc0ae2d6b45b346e22b68e9ab8e273035f85c6cd"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/native_run_A01/evidence/PIPELINE_FINAL_STATE.json",
+      "bytes": 1639,
+      "sha256": "a9626af43c2000de9ed306de4a793703e6418ac4a0c363421e2c07080a8a56ba"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/native_run_A01/evidence/STARTED_blockMesh.json",
+      "bytes": 477,
+      "sha256": "b85e1764337c6e3a285d118e1a4fbe774eb9ceba48f3b2c0432a49dfb7009b2c"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/native_run_A01/evidence/STARTED_snappyHexMesh.json",
+      "bytes": 500,
+      "sha256": "1b45ee13d0e0cc6efc65aa1cd7ca70c21d8fbf6e0986acd16f369f2415f53c40"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/native_run_A01/evidence/blockMesh.log",
+      "bytes": 2617,
+      "sha256": "47136e099e992c685f938d467e3f6243dbd12db54a728cbacc61db1978d1a717"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/native_run_A01/evidence/blockMesh.receipt.json",
+      "bytes": 1079,
+      "sha256": "327488c86f7512d674c1524bda902cc5dd6c1b489ce027b60efa64689d24dcc9"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/native_run_A01/evidence/blockMesh.rss.jsonl",
+      "bytes": 922,
+      "sha256": "e072eb052db798b7af30927f54682c65b45c01b961a498193c5478580e1508cd"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/native_run_A01/evidence/blockMesh.stderr.txt",
+      "bytes": 281,
+      "sha256": "990270923eced0b4381dd520ae99db69c6089d8543ead724805af4e0c84c3bd5"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/native_run_A01/evidence/snappyHexMesh.log",
+      "bytes": 17525,
+      "sha256": "d0196c59f638a5a08a2f1e4e81f04fa8aa87e9a9f69007c40a971d6d19e9e241"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/native_run_A01/evidence/snappyHexMesh.receipt.json",
+      "bytes": 1109,
+      "sha256": "c3de2245b49828c3677fabab46f64e4bec9611294adc7316e81a3d2b8e36bb5c"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/native_run_A01/evidence/snappyHexMesh.rss.jsonl",
+      "bytes": 38130,
+      "sha256": "6188078e0ad43b04a6b698a2ed67df330ad1d369699b39fc15dc90a8468750fa"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/native_run_A01/evidence/snappyHexMesh.stderr.txt",
+      "bytes": 207,
+      "sha256": "0640072ee265c6b3fd0d56990c34303d7cde3dc2301856ab1f513e29dd467f24"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/native_run_A01/output/ACTUAL_SECOND_NATIVE_FAILURE_AND_COST_COMPARISON_A01.json",
+      "bytes": 6196,
+      "sha256": "009ab755af2af046f6865d6b99f695ceeba7c420a93ecdfddaf73faf431182c8"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/scripts/native_stage_monitor.py",
+      "bytes": 8256,
+      "sha256": "715a938bc4bbca5ceca80b483c2fa5144ce5bc03aafddabcb08f801bf4b20a88"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/scripts/prepare_native_whole_case_A02.py",
+      "bytes": 7125,
+      "sha256": "da881a3722a1368c07a8e1351a12b46f56c49f889cfdd3c9215c76a7524a513a"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/scripts/run_one_native_whole_pipeline_A01.py",
+      "bytes": 5562,
+      "sha256": "5471d1ee2fa229a8861373a6e96bd8f64cd1df8b671425424c8351f73e698862"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/P08_COARSE_A02_FINAL_ENTRY_A01.json",
+      "bytes": 1163,
+      "sha256": "c7f79d415fdb2129f0cec0dc0dc5ea364293ce63acc6576f78593b286e54ef61"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P08_native_whole_coarse_A02/P08_COARSE_A02_FROZEN_MANIFEST_A01.json",
+      "bytes": 11725,
+      "sha256": "da4b8d747528b67fb9a8e6d6ae050efe19e32148ef69e6a1d86c6a13e0989231"
+    },
+    {
+      "path": "review_flow_P08_regenerated_input_A01/P08_INPUT_AND_NATIVE_FAILURE_FINAL_ENTRY_A01.json",
+      "bytes": 1243,
+      "sha256": "36e5c377b990804947a23ad624ec2a57398efd39bb4850c6ba6bb118e85ce1a2"
+    },
+    {
+      "path": "review_flow_P08_regenerated_input_A01/P08_INPUT_AND_NATIVE_FAILURE_MANIFEST_A01.json",
+      "bytes": 8466,
+      "sha256": "8c663a6c95344e012f2da3b67a4db747d7c958bb5b4d7225feffb4dd2e411c58"
+    },
+    {
+      "path": "review_flow_P08_coarse_adjustment_A02/P08_COARSE_AND_PAIR_FAILURE_FINAL_ENTRY_A02.json",
+      "bytes": 1382,
+      "sha256": "f9dc7f29cff2c588ee69d8278931dc41d606f971a9da328980e9ee90067563e4"
+    },
+    {
+      "path": "review_flow_P08_coarse_adjustment_A02/P08_COARSE_AND_PAIR_FAILURE_MANIFEST_A02.json",
+      "bytes": 4393,
+      "sha256": "395dd15fcce0f9623d9a517285b2c02dd6d061a10c44832f57e443fc5da95fbf"
+    },
+    {
+      "path": "review_flow_P08_coarse_adjustment_A02/P08_COARSE_INPUT_REVIEW_FINAL_ENTRY_A01.json",
+      "bytes": 633,
+      "sha256": "55f38857e82e4c7f1e7e35810bbf6f0fb273a940d02247d23929e377c62d7fc8"
+    },
+    {
+      "path": "review_flow_P08_coarse_adjustment_A02/output/ACTUAL_COARSE_RULE_DIFFERENCE_INDEPENDENT_REVIEW_A01.json",
+      "bytes": 7733,
+      "sha256": "7739602b15e27ef12f44951caed721c8d29819342fa05d31d08c8d8892d0f09d"
+    },
+    {
+      "path": "review_flow_P08_coarse_adjustment_A02/output/ACTUAL_COARSE_A02_NATIVE_FAILURE_INDEPENDENT_REVIEW.json",
+      "bytes": 5263,
+      "sha256": "1c43b8deb4f7eea93c0f132356f6ff1078a8d5b8a167c2ab32037cef76db39cc"
+    },
+    {
+      "path": "valve-source-increment-P08-20261012/A01/LIBRARY_IDENTITY_A01.json",
+      "bytes": 272,
+      "sha256": "44167568157899031c3ab4fc8376baf5b2e6605842265a5131fdcd1514bb3067"
+    },
+    {
+      "path": "valve-source-increment-P08-20261012/A02/LIBRARY_IDENTITY_A01.json",
+      "bytes": 270,
+      "sha256": "28c87ecd0a7e87d28c261a8df5899c804aff2ca703ccd910c3e504ec16af8e04"
+    }
+  ],
+  "source22_input_upload_boundary_unchanged": true,
+  "main_and_R1_unchanged": true,
+  "scientific_checkout_replay_performed": false,
+  "actual_single_coarse_rule_change": {
+    "changed_generic_finite_wall_count": 74,
+    "min_level_before": 2,
+    "min_level_after": 1,
+    "max_level_stays": 2,
+    "global_fallback_minimum_also_2_to_1": true,
+    "all_source_faces_belong_to132_explicit_regions": true,
+    "other_58_finite_face_rules_unchanged": true,
+    "critical_key_vent_L6_retainer_L7_guide_L4_neck_L2_step_L8_unchanged": true,
+    "source_surface_and_feature_arrays_same_SHA": true,
+    "all_other_system_files_bitwise_identical": true,
+    "same_caps_and_monitor_hash": true,
+    "nominal_levels_not_resolution_qualification": true
+  },
+  "actual_native_A02": {
+    "start_UTC": "2026-10-12T12:32:26.257401+00:00",
+    "terminal_UTC": "2026-10-12T12:34:19.464695+00:00",
+    "elapsed_seconds": 113.20836481300648,
+    "exit_code": -6,
+    "sampled_peak_RSS_bytes": 6633750528,
+    "observed_VmPeak_bytes": 6847676416,
+    "RSS_and_RLIMIT_AS_cap_bytes": 6979321856,
+    "wrapper_terminated_for": null,
+    "last_completed_refinement": {
+      "stage": "surface",
+      "iteration": 3,
+      "cells_before_domain_retention": 5430054,
+      "faces": 17223265,
+      "points": 6373064
+    },
+    "actual_refinement_counts": [
+      {
+        "stage": "feature",
+        "iteration": 0,
+        "cells_before_domain_retention": 1073891,
+        "faces": 3278392,
+        "points": 1133334
+      },
+      {
+        "stage": "feature",
+        "iteration": 1,
+        "cells_before_domain_retention": 1167061,
+        "faces": 3612772,
+        "points": 1286625
+      },
+      {
+        "stage": "feature",
+        "iteration": 2,
+        "cells_before_domain_retention": 1167838,
+        "faces": 3615343,
+        "points": 1287625
+      },
+      {
+        "stage": "feature",
+        "iteration": 3,
+        "cells_before_domain_retention": 1167964,
+        "faces": 3615739,
+        "points": 1287763
+      },
+      {
+        "stage": "feature",
+        "iteration": 4,
+        "cells_before_domain_retention": 1168020,
+        "faces": 3615913,
+        "points": 1287821
+      },
+      {
+        "stage": "surface",
+        "iteration": 0,
+        "cells_before_domain_retention": 1713404,
+        "faces": 5403004,
+        "points": 1982105
+      },
+      {
+        "stage": "surface",
+        "iteration": 1,
+        "cells_before_domain_retention": 2087309,
+        "faces": 6603958,
+        "points": 2436291
+      },
+      {
+        "stage": "surface",
+        "iteration": 2,
+        "cells_before_domain_retention": 2881718,
+        "faces": 9136156,
+        "points": 3380353
+      },
+      {
+        "stage": "surface",
+        "iteration": 3,
+        "cells_before_domain_retention": 5430054,
+        "faces": 17223265,
+        "points": 6373064
+      }
+    ],
+    "next_selected_cells": 358067,
+    "next_expected_cells_not_actual_saved": 7936523,
+    "generation_12M_cap_reached": false,
+    "domain_retention_completed": false,
+    "snap_started": false,
+    "whole_full_quality_executed": false,
+    "whole_CFD_started": false,
+    "all_children_reaped": true,
+    "constant_polyMesh_is_original_unretained_background": true,
+    "failure_classification": "Official allocator failure under 6.5GiB RLIMIT_AS; exact refused allocation size absent. No wrapper resource termination; MemAvailable remained above1GiB. Not proof of host OOM, CAD invalidity, physical valve failure, or snappy quality failure."
+  },
+  "paired_actual_cost_reduction": {
+    "A01_surface_iteration3_cells": 7387114,
+    "A02_surface_iteration3_cells": 5430054,
+    "fewer_pre_retention_cells": 1957060,
+    "relative_reduction": 0.26492890186884893,
+    "A01_level2_cells": 2339764,
+    "A02_level2_cells": 293818,
+    "A01_next_cells_if_refined": 9889642,
+    "A02_next_cells_if_refined": 7936523,
+    "same_stages_not_final_fluid_counts": true
+  },
+  "independent_reviews": {
+    "first_surface_and_input_review": "review_flow_P08_regenerated_input_A01/P08_INPUT_AND_NATIVE_FAILURE_FINAL_ENTRY_A01.json",
+    "coarse_actual_input_difference": "review_flow_P08_coarse_adjustment_A02/P08_COARSE_INPUT_REVIEW_FINAL_ENTRY_A01.json",
+    "both_actual_terminal_failures": "review_flow_P08_coarse_adjustment_A02/P08_COARSE_AND_PAIR_FAILURE_FINAL_ENTRY_A02.json",
+    "no_new_CAD_mesher_native_or_CFD_execution_by_reviewers": true,
+    "source_parsing_read_only_review_actually_executed": true,
+    "whole_quality_was_not_run_and_did_not_fail": true,
+    "future_local_version_compatibility_not_in_scope": true
+  },
+  "recovery_sources": [
+    {
+      "scope": "A01_original_source_surface_and_first_failure",
+      "library_file_id": "libfile_2e74bc8376f481919b0d4254a47f0c0c",
+      "version": 0,
+      "bytes": 56820869,
+      "sha256": "a9e2e4d45b6150763e9df4d84088bbf8f9003421a703e536552e1478c3c2ba41",
+      "local_archive_identity_rechecked": true,
+      "remote_download_rehash_claimed": false,
+      "identity_source_path": "valve-source-increment-P08-20261012/A01/LIBRARY_IDENTITY_A01.json",
+      "Library_download_rehash_claimed": false,
+      "scientific_fresh_rebuild_claimed": false
+    },
+    {
+      "scope": "A02_delta_and_paired_independent_review",
+      "library_file_id": "libfile_d85687f1cb7081919dc3214f925b56e9",
+      "version": 0,
+      "bytes": 148700,
+      "sha256": "5c960d0c93239b6303161f2a513975b031608e61bca0b0203f66ac5095750e5f",
+      "local_archive_identity_rechecked": true,
+      "remote_download_rehash_claimed": false,
+      "identity_source_path": "valve-source-increment-P08-20261012/A02/LIBRARY_IDENTITY_A01.json",
+      "Library_download_rehash_claimed": false,
+      "scientific_fresh_rebuild_claimed": false
+    }
+  ]
+}
