@@ -1,7 +1,0 @@
-{
-  "C-ad98415ba567": {
-    "status": "PROMOTED",
-    "promoted_to": "F-MAT-003",
-    "note": "ASME B31.1-2007 Table 132 GENERAL NOTES (b)(1) 碳当量公式。已复核文本层原文（djvu L15379-L15401）：阈值 CE<0.50、替代式 CE=C+(Mn+Si)/6+0.1、预热 250°F(121°C)、单道焊厚 ≤¼ in.(6mm) 均完整无退化。分数形（¼/¾/½）在文本层退化，已用括号内公制值反推重建，因 B31.1 无 PDF（archive.org 不可达）未能视觉复核，故定级 E1 + PENDING_VERIFICATION（无比拟物理数据、无仿真对照，不占 E2）。"
-  }
-}

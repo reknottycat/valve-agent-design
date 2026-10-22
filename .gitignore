@@ -38,3 +38,9 @@ desktop.ini
 #   runs/**/out/parts/*.step   参数化零件模型
 #   runs/**/out/geometry_check.json
 #   *.log.blockMesh / log.checkMesh / log.simpleFoam   求解日志
+
+# --- 独立知识库仓库（已拆出，改为独立 Git 仓库）---
+# standards_kb/  ->  https://github.com/reknottycat/standards-kb
+# 本仓库不再跟踪该目录。文件仍保留在本地磁盘，可直接在其中工作：
+#   cd standards_kb && git status
+standards_kb/
