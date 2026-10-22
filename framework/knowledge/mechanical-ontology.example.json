@@ -1,0 +1,150 @@
+{
+  "schema_version": "0.1-draft",
+  "engineering_release": false,
+  "scope": "Public fundamental mechanics ontology; no handbook ingestion or standards compliance claim",
+  "entity_types": [
+    "Component",
+    "Interface",
+    "Geometry",
+    "MaterialState",
+    "LoadCase",
+    "Quantity",
+    "FormulaModel",
+    "Applicability",
+    "Evidence",
+    "VerificationCase",
+    "StandardBinding",
+    "ReviewDecision"
+  ],
+  "relations": [
+    "hasGeometry",
+    "hasMaterialState",
+    "loadsComponent",
+    "connectsComponents",
+    "requiresQuantity",
+    "producesQuantity",
+    "assumes",
+    "isInvalidWhen",
+    "supportedBy",
+    "verifiedBy",
+    "governedBy"
+  ],
+  "standard_binding": {
+    "repository": null,
+    "commit": null,
+    "rule_id": null,
+    "edition": null,
+    "clause": null,
+    "status": "awaiting_user_repository"
+  },
+  "handbook_binding": {
+    "title": null,
+    "edition": null,
+    "page": null,
+    "formula_number": null,
+    "status": "not_provided"
+  },
+  "evidence": [
+    {
+      "id": "src-pressure",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/air-pressure/",
+      "kind": "official_educational",
+      "checked_on": "2026-10-22"
+    }
+  ],
+  "models": [
+    {
+      "id": "M01",
+      "name": "uniform_pressure_difference_force",
+      "implementation_ref": null,
+      "expression_display": "F_p = delta_p * A_eff",
+      "executable": false,
+      "inputs": [
+        {
+          "symbol": "delta_p",
+          "unit": "Pa",
+          "value": null,
+          "status": "unknown",
+          "definition": "upstream minus downstream pressure with same datum"
+        },
+        {
+          "symbol": "A_eff",
+          "unit": "m^2",
+          "value": null,
+          "status": "unknown",
+          "definition": "verified effective projected area, not nominal DN area"
+        }
+      ],
+      "output": {
+        "symbol": "F_p",
+        "unit": "N",
+        "sign_convention": "positive along declared actuation axis"
+      },
+      "assumptions": [
+        "uniform pressure difference",
+        "verified effective area",
+        "quasi-static pressure contribution only"
+      ],
+      "invalid_when": [
+        "nonuniform pressure requires integration",
+        "effective area is unknown"
+      ],
+      "evidence_ids": [
+        "src-pressure"
+      ],
+      "verification_case_ids": [
+        "test-M01"
+      ],
+      "compliance_status": "not_evaluated"
+    }
+  ],
+  "verification_cases": [
+    {
+      "id": "test-M01",
+      "purpose": "synthetic arithmetic regression, not an engineering load case",
+      "inputs": {
+        "delta_p_Pa": 2000000,
+        "A_eff_m2": 0.001
+      },
+      "expected": {
+        "F_p_N": 2000
+      },
+      "absolute_tolerance_N": 1e-09
+    }
+  ],
+  "unknowns": [
+    {
+      "id": "unknown-standard",
+      "question": "Which approved standards repository revision and rule IDs govern this task?",
+      "blocking": true,
+      "scope": "engineering_release",
+      "does_not_block": [
+        "research_organization",
+        "adapter_development",
+        "synthetic_testing"
+      ]
+    },
+    {
+      "id": "unknown-loadcase",
+      "question": "What actual pressures, temperatures, media, geometry and operating states apply?",
+      "blocking": true,
+      "scope": "engineering_release",
+      "does_not_block": [
+        "research_organization",
+        "adapter_development",
+        "synthetic_testing"
+      ]
+    }
+  ],
+  "result_contract": {
+    "raw_result_ref": null,
+    "normalized_result": null,
+    "evidence_id": null,
+    "coverage": "unknown",
+    "limitations": [
+      "No actual engineering input or approved implementation supplied"
+    ],
+    "review_status": "not_reviewed"
+  },
+  "machine_readable_scope": "M01 example only; remaining five categories are prose research notes"
+}

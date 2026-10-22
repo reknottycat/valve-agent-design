@@ -1,0 +1,120 @@
+{
+  "schema": "valve.physical_input_template/v1",
+  "status": "NON_EXECUTABLE_SOURCE_BACKED_TEMPLATE",
+  "source_ref": "aa80b87b6ee9617754101a238f70bec99393ad9a",
+  "source_path": "runs/20261006/CALCULATIONS/R1/sources_new/FLOW_PLAN_NEW/flow_study_plan.json",
+  "source_sha256": "f0659ec9bc0a0d560e36ea5df1e1e3354555477ba85996514deeb5ab83d00304",
+  "mode": "held_open_research_diagnostic_not_product_duty",
+  "known_archived_research_inputs": {
+    "property_state": {
+      "temperature_C": 20.0,
+      "salinity_g_kg": 35.0,
+      "pressure_MPa_absolute": 0.101325,
+      "density_kg_m3": 1024.9109328963,
+      "dynamic_viscosity_Pa_s": 0.0010766289252529323,
+      "kinematic_viscosity_m2_s": 1.0504609627009073e-06,
+      "actual_duty_or_measurement": false,
+      "pressure_correction_implemented": false,
+      "minus_2C_phase_and_property_gate": "UNRESOLVED"
+    },
+    "case": {
+      "id": "laminar_diagnostic_Re10",
+      "status": "STUDY_ASSUMPTION_NOT_RUN",
+      "inlet_fixed_face_speed_m_s": 5.252304813504536e-05,
+      "nominal_D_Reynolds_from_face_speed": 10.0,
+      "nominal_circle_flow_m3_s": 1.650060221652016e-06,
+      "nominal_circle_flow_m3_h": 0.005940216797947258,
+      "dynamic_pressure_from_face_speed_Pa": 1.4136958216160478e-06,
+      "regime_scope": "LAMINAR_NUMERICAL_DIAGNOSTIC",
+      "actual_mesh_flux_m3_s": null,
+      "computed_pressure_drop_Pa": null,
+      "computed_loss_coefficient": null
+    },
+    "pose": {
+      "disc_lift_mm": 57.0,
+      "stem_retraction_mm": 57.0,
+      "scope": "Fixed fully-open research geometry, treated as restrained for this CFD study; no prediction of spontaneous lift, force equilibrium, or closing behavior"
+    },
+    "pressure_interpretation": {
+      "field": "simpleFoam p has dimensions m2/s2; multiply by rho for Pa",
+      "reference_outlet_kinematic_p": 0,
+      "reference_outlet_axis_absolute_pressure_Pa": 101325.0,
+      "design_load_pressure_MPa_g": 0.63,
+      "scope": "0.63 MPa(g) is a separate structural study load, not an imposed flow pressure drop. The initial CFD property state remains the validated atmospheric reference. Explicit gravity is omitted from this constant-density flow equation; physical vertical pressure-force postprocessing needs a separately stated hydrostatic reconstruction and contact-wetting check."
+    },
+    "domain": {
+      "inlet_x_m": -0.6000000000000001,
+      "outlet_x_m": 1.2000000000000002,
+      "straight_extensions_each_DN": 3,
+      "scope": "Port-to-port pressure loss includes numerical straight extensions and developing/disturbed flow; not automatically the isolated-valve coefficient"
+    }
+  },
+  "p08_source_patch_inventory": [
+    {
+      "name": "outlet",
+      "role": "outlet",
+      "original_finite_face_fingerprint_tag": 34,
+      "CAD_area_mm2": 31415.926535897932,
+      "finite_support_bbox_xyz_minmax_mm": [
+        1200.0,
+        -100.0,
+        -100.0,
+        1200.0,
+        100.0,
+        100.0
+      ]
+    },
+    {
+      "name": "inlet",
+      "role": "inlet",
+      "original_finite_face_fingerprint_tag": 79,
+      "CAD_area_mm2": 31415.926535897932,
+      "finite_support_bbox_xyz_minmax_mm": [
+        -600.0,
+        -100.0,
+        -100.0,
+        -600.0,
+        100.0,
+        100.0
+      ]
+    },
+    {
+      "name": "packing_research_z332",
+      "role": "packing_research_boundary",
+      "original_finite_face_fingerprint_tag": 80,
+      "CAD_area_mm2": 502.65482457436735,
+      "finite_support_bbox_xyz_minmax_mm": [
+        278.0,
+        -22.0,
+        332.0,
+        322.0,
+        22.0,
+        332.0
+      ]
+    }
+  ],
+  "adaptation_unknowns": {
+    "P08_mesh_boundary_matches_source_faces": null,
+    "P08_disc_lift_matches_R1_57mm": null,
+    "inlet_vector_direction_verified_from_final_patch_normals": null,
+    "all_wall_and_packing_patch_boundary_dictionary": null,
+    "fvSchemes_fvSolution_native_version_verified": null,
+    "retained_fluid_mesh_quality_pass": null
+  },
+  "actual_product_duty_unknowns": {
+    "specified_operating_flow_m3_s_or_curve": null,
+    "actual_fluid_temperature_C": null,
+    "actual_fluid_composition_or_salinity_g_kg": null,
+    "actual_absolute_pressure_Pa": null,
+    "actual_valve_opening_or_equilibrium_condition": null,
+    "coefficient_reference_area_and_pressure_tap_standard": null
+  },
+  "not_inherited_from_NSC1": {
+    "local_inlet_speed_0p01_m_s": true,
+    "artificial_crop_slip_faces": true,
+    "representative_fluid_properties": true
+  },
+  "solver_started": false,
+  "source_case_mutated": false,
+  "explanation": "Archived research assumptions are sufficient to define a diagnostic after patch/geometry adaptation; actual product duty is not necessary to claim a limited research diagnostic, but is necessary for product performance conclusions. No unknown values silently filled."
+}
