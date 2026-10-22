@@ -1,0 +1,917 @@
+[
+  {
+    "id": "P-MAT-011",
+    "title_zh": "碳当量 CE 上限（免焊后热处理条件，B31.1）",
+    "title_en": "Maximum carbon equivalent CE for exemption from postweld heat treatment (ASME B31.1)",
+    "aliases": [
+      "0.50",
+      "CE 0.50",
+      "B31.1 碳当量",
+      "carbon equivalent limit B31.1",
+      "PWHT 豁免 CE B31.1"
+    ],
+    "param_kind": "LIMIT",
+    "symbol": "CE",
+    "value": {
+      "canonical": "< 0.50",
+      "display": "< 0.50",
+      "latex": "CE < 0.50",
+      "numeric": 0.5,
+      "relation": "<",
+      "unit_text": "CE (carbon equivalent, dimensionless)"
+    },
+    "unit": "dimensionless",
+    "domain": "MATE",
+    "tags": [
+      "焊接",
+      "焊后热处理",
+      "PWHT",
+      "碳当量",
+      "低淬硬性",
+      "ASME-B31.1",
+      "Table 132",
+      "动力管道"
+    ],
+    "source": {
+      "standard_id": "ASME B31.1-2007",
+      "clause": "Table 132 (Postweld Heat Treatment) GENERAL NOTES (b)(1)",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "(b) PWHT of low hardenability P-No. 1 materials with a nominal material thickness, as defined in para. 132.4.3, over ¾ in. (19.0 mm) but not more than 1½ in. (38 mm) is not mandatory, provided all of the following conditions are met: (1) the carbon equivalent, CE, is < 0.50, using the formula",
+      "locator": "kb/_evidence/ASME-B31.1_table132_snippet.txt (ASME B31.1-2007 Table 132 片段, djvu 第 L15386-L15391 行)",
+      "visual_verified": false,
+      "extraction_note": "★ 阈值 0.50 与关系符 'is < 0.50' 在 djvu 文本层完整无退化（L15389 逐字为 'the carbon equivalent, CE, is < 0.50, using the formula'）。★ 关键：这是严格小于，不含等号；BPVC Section I 的对应门槛是 'less than or equal to 0.45'（含等号），两者不可互换。★ 未做 PDF 渲染视觉复核：archive.org 直连不可达，B31.1 本机只有 djvu 文本层、无 PDF 可渲染。同段落的分数形已退化（¾ → '%'、½ → 'lV'），故本条状态为 PENDING_VERIFICATION 而非 VERIFIED_CLAUSE。 【证据口径】本条仅有 djvu OCR 文本层、无 PDF 渲染件，故 visual_verified=false、status=PENDING_VERIFICATION；片段原文已单独入库于 kb/_evidence/，保证 locator 在仓库内自洽可核。",
+      "cross_refs": [
+        "P-MAT-012",
+        "P-MAT-013",
+        "P-MAT-001",
+        "F-MAT-003"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "ASME B31.1 Table 132 通用注 (b)(1)：低淬硬性（low hardenability）P-No. 1 材料",
+        "公称材料厚度按 para. 132.4.3 定义，且在 19.0 mm < t ≤ 38 mm 窗口内",
+        "目标是判定能否免除强制 PWHT"
+      ],
+      "not_valid_when": [
+        "材料不属低淬硬性 P-No. 1 组",
+        "公称材料厚度 ≤ 19.0 mm（走通用注 (a)，只看预热，不看 CE）",
+        "公称材料厚度 > 38 mm（(b) 不覆盖，必须按表体做 PWHT）",
+        "套用 BPVC Section I 的 ≤ 0.45 门槛（见 P-MAT-001）"
+      ],
+      "range_limits": [
+        "CE < 0.50 为严格不等号判据，CE = 0.50 即不通过"
+      ],
+      "conservatism": "偏保守：取材料规格书化学成分上限值会使 CE 偏大，更容易判定需要 PWHT。",
+      "must_pair_with": [
+        "P-MAT-013",
+        "P-MAT-014",
+        "P-MAT-015"
+      ]
+    },
+    "usage": {
+      "where": [
+        "ASME B31.1 动力管道厚壁管接头免 PWHT 判定",
+        "低淬硬性 P-No.1 碳钢/低合金钢焊接工艺卡决策"
+      ],
+      "how": "取基材化学成分（规格上限或实测），代入 CE = C + (Mn+Si)/6 + (Cr+Mo+V)/5 + (Ni+Cu)/15，判 CE 是否严格小于 0.50。必须与 P-MAT-013（厚度窗口）、P-MAT-014（预热 250 °F/121 °C）、P-MAT-015（单道熔敷厚 ≤ 6 mm）三个并列条件同时满足才可免除强制 PWHT。后两项化学成分不可得时可按 P-MAT-012 用 0.1% 替代，但该替代偏乐观，慎用于放行。",
+      "step_order": [
+        "1. 确认材料属低淬硬性 P-No. 1 组",
+        "2. 确认公称材料厚度在 19.0 mm < t ≤ 38 mm 窗口内",
+        "3. 取基材化学成分（规格上限 或 实测）",
+        "4. 代入 F-MAT-003 的 CE 公式求值",
+        "5. 判 CE < 0.50 是否成立",
+        "6. 同时核对 P-MAT-014 预热 与 P-MAT-015 单道焊厚",
+        "7. 三者皆满足才可免除强制 PWHT"
+      ],
+      "output_used_by": [
+        "F-MAT-003"
+      ],
+      "pitfalls": [
+        "把 < 读成 ≤（CE = 0.50 即不通过）",
+        "误用 BPVC Section I 的 0.45",
+        "只看到 CE 通过就放行，漏掉预热与单道焊厚两个并列条件",
+        "把 0.50 当成可以取等号的工程裕度门槛"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "PENDING_VERIFICATION",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（djvu 文本层定位 + 逐句核对 + 算例复算自洽）",
+      "note": "阈值 0.50 与严格小于关系符在 djvu 文本层完整无退化，与同条款 CE 公式结构自洽（算例见 F-MAT-003：0.584 不通过 / 替代 0.40 通过），满足 E1「数值与公式自洽」。未做 PDF 渲染视觉复核：archive.org 直连不可达，B31.1 本机只有 djvu 文本层，故不标 VERIFIED_CLAUSE。本条无比拟物理数据、无仿真对照，按项目 E0–E3 口径不占 E2。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "ASME B31.1 为动力管道标准；本项目 522-35.4179СБ 为 DN200/PN6 青铜止回-截止阀，按 ГОСТ 1536-76 双法兰连接，不在 B31.1 适用范围内。本条为标准资产沉淀/未来复用。"
+      }
+    ],
+    "related": [
+      "F-MAT-003",
+      "P-MAT-012",
+      "P-MAT-013",
+      "P-MAT-001"
+    ]
+  },
+  {
+    "id": "P-MAT-012",
+    "title_zh": "CE 后两项缺分析值时的替代值 0.1%（B31.1）",
+    "title_en": "Substitute value 0.1% for the last two CE terms when analysis is unavailable (ASME B31.1)",
+    "aliases": [
+      "0.1%",
+      "0.1",
+      "B31.1 替代值",
+      "CE = C + (Mn+Si)/6 + 0.1",
+      "carbon equivalent substitute B31.1"
+    ],
+    "param_kind": "DEFAULT_SUBSTITUTE",
+    "symbol": null,
+    "value": {
+      "canonical": "0.1",
+      "display": "0.1%",
+      "latex": "0.1",
+      "numeric": 0.1,
+      "relation": "=",
+      "unit_text": "% (mass percent, substituted for the sum of (Cr+Mo+V)/5 and (Ni+Cu)/15)"
+    },
+    "unit": "mass-%",
+    "domain": "MATE",
+    "tags": [
+      "焊接",
+      "焊后热处理",
+      "PWHT",
+      "碳当量",
+      "ASME-B31.1",
+      "Table 132",
+      "动力管道"
+    ],
+    "source": {
+      "standard_id": "ASME B31.1-2007",
+      "clause": "Table 132 (Postweld Heat Treatment) GENERAL NOTES (b)(1), Note",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "The maximum chemical composition limit from the material specification or actual values from a chemical analysis or material test report shall be used in computing CE. If analysis for the last two terms is not available, 0.1% may be substituted for those two terms as follows: CE = C + (Mn + Si)/6 + 0.1",
+      "locator": "kb/_evidence/ASME-B31.1_table132_snippet.txt (ASME B31.1-2007 Table 132 片段, djvu 第 L15393-L15397 行)",
+      "visual_verified": false,
+      "extraction_note": "★ 替代值 '0.1%' 与简化式 'CE = C + (Mn + Si)/6 + 0.1' 在 djvu 文本层完整无退化（L15394 逐字为 '...0.1% may be substituted for those two terms'，L15397 为简化式）。★ 关键：BPVC Section I 的对应替代值是 0.15%（见 P-MAT-002），两者不可互换。★ 未做 PDF 渲染视觉复核：archive.org 直连不可达，B31.1 本机只有 djvu 文本层。 【证据口径】本条仅有 djvu OCR 文本层、无 PDF 渲染件，故 visual_verified=false、status=PENDING_VERIFICATION；片段原文已单独入库于 kb/_evidence/，保证 locator 在仓库内自洽可核。",
+      "cross_refs": [
+        "P-MAT-011",
+        "F-MAT-003",
+        "P-MAT-002"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "计算 CE 时 (Cr+Mo+V)/5 与 (Ni+Cu)/15 所需的化学分析值不可得",
+        "且确需按 B31.1 Table 132 通用注 (b) 判断能否免除 PWHT"
+      ],
+      "not_valid_when": [
+        "化学成分已知（标准用词是 'may be substituted'，是许可不是要求）",
+        "套用 BPVC Section I 的 0.15%（见 P-MAT-002）",
+        "把 0.1 分别代入 (Cr+Mo+V)/5 与 (Ni+Cu)/15 两项（替代的是这两项之和）"
+      ],
+      "range_limits": [
+        "对常见 P-No.1 碳钢（Cr≈1%、Ni≈0.3%），后两项实际值典型约 0.25，明显大于 0.1，故替代会使 CE 偏小"
+      ],
+      "conservatism": "偏乐观（不保守）：替代后 CE 变小，更容易满足 < 0.50。作为放行依据时应优先取实测成分。",
+      "must_pair_with": [
+        "P-MAT-011"
+      ]
+    },
+    "usage": {
+      "where": [
+        "材料证明书缺 Cr/Mo/V/Ni/Cu 分析值时的 CE 快速估算",
+        "询价/选材早期阶段判断是否落在 B31.1 免 PWHT 窗口内"
+      ],
+      "how": "缺 (Cr+Mo+V)/5 与 (Ni+Cu)/15 两项成分时，改用简化式 CE = C + (Mn + Si)/6 + 0.1，再判 CE < 0.50（P-MAT-011）。因该替代偏乐观，结论应标注为『按标准允许的替代值估算』，不可直接作为放行依据。",
+      "step_order": [
+        "1. 确认化学成分缺哪几项",
+        "2. 缺后两项时改用 CE = C + (Mn + Si)/6 + 0.1",
+        "3. 判 CE < 0.50",
+        "4. 在放行结论上标注使用了替代值"
+      ],
+      "output_used_by": [
+        "F-MAT-003"
+      ],
+      "pitfalls": [
+        "把 0.1% 当作带百分号参与运算（代入 CE 公式时按数值 0.1 用）",
+        "把 'may be substituted' 当成强制缺省，从而在无实测成分时给出偏乐观的放行结论",
+        "误用 BPVC Section I 的 0.15%"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "PENDING_VERIFICATION",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（djvu 文本层定位 + 逐句核对 + 算例复算自洽）",
+      "note": "替代值 0.1% 与简化式在 djvu 文本层完整无退化；替代式与同条款全式结构自洽（前两项相同、后两项被常量取代），算例复算自洽（F-MAT-003 中 0.15+0.15+0.1=0.40 < 0.50 通过，而全式 0.584 不通过，结论随替代而翻转，说明该替代非保守缺省）。未做 PDF 渲染视觉复核，故不标 VERIFIED_CLAUSE。无比拟物理数据、无仿真对照，不占 E2。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "ASME B31.1 为动力管道标准，不在本项目适用范围内。本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "P-MAT-011",
+      "F-MAT-003",
+      "P-MAT-002"
+    ]
+  },
+  {
+    "id": "P-MAT-013",
+    "title_zh": "免 PWHT 路径 (b) 的公称材料厚度窗口（B31.1）",
+    "title_en": "Nominal material thickness window for PWHT exemption path (b) (ASME B31.1 Table 132)",
+    "aliases": [
+      "19.0-38 mm",
+      "3/4 in. - 1 1/2 in.",
+      "B31.1 厚度窗口",
+      "132.4.3",
+      "Table 132 (b)"
+    ],
+    "param_kind": "RANGE",
+    "symbol": null,
+    "value": {
+      "canonical": "19.0..38",
+      "display": "> ¾ in. (19.0 mm) 且 ≤ 1½ in. (38 mm)",
+      "latex": "19.0\\,\\mathrm{mm} < t \\leq 38\\,\\mathrm{mm}",
+      "min": 19.0,
+      "max": 38,
+      "relation": "range",
+      "unit_text": "in (mm), nominal material thickness as defined in para. 132.4.3",
+      "alt_values": [
+        {
+          "canonical": "19.05",
+          "display": "¾ in.",
+          "unit_text": "in",
+          "note": "原文下限的英制分数形（文本层退化为 '%'，由公制 19.0 mm 反推）"
+        },
+        {
+          "canonical": "38.1",
+          "display": "1½ in.",
+          "unit_text": "in",
+          "note": "原文上限的英制分数形（文本层退化为 'lV'，由公制 38 mm 反推）"
+        }
+      ]
+    },
+    "unit": "in (mm)",
+    "domain": "MATE",
+    "tags": [
+      "焊接",
+      "焊后热处理",
+      "PWHT",
+      "厚度窗口",
+      "ASME-B31.1",
+      "Table 132",
+      "动力管道"
+    ],
+    "source": {
+      "standard_id": "ASME B31.1-2007",
+      "clause": "Table 132 (Postweld Heat Treatment) GENERAL NOTES (b)",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "(b) PWHT of low hardenability P-No. 1 materials with a nominal material thickness, as defined in para. 132.4.3, over ¾ in. (19.0 mm) but not more than 1½ in. (38 mm) is not mandatory, provided all of the following conditions are met:",
+      "locator": "kb/_evidence/ASME-B31.1_table132_snippet.txt (ASME B31.1-2007 Table 132 片段, djvu 第 L15381-L15387 行)",
+      "visual_verified": false,
+      "extraction_note": "★ 公制端点 19.0 mm 与 38 mm 在 djvu 文本层完整可读，可作交叉校验。★ 英制分数形在文本层退化：'¾ in.' → '% in.'、'1½ in.' → 'lV 2 in.'——snippet 中的 '¾ in.' 与 '1½ in.' 是依据括号内公制值反推重建的，不是逐字读取。关系词 'over ... but not more than' 在文本层完整，据此确定下限为严格大于、上限为含等号。未做 PDF 渲染视觉复核：archive.org 直连不可达，B31.1 本机只有 djvu 文本层。 【证据口径】本条仅有 djvu OCR 文本层、无 PDF 渲染件，故 visual_verified=false、status=PENDING_VERIFICATION；片段原文已单独入库于 kb/_evidence/，保证 locator 在仓库内自洽可核。",
+      "cross_refs": [
+        "P-MAT-011",
+        "P-MAT-014",
+        "P-MAT-015",
+        "P-MAT-003"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "采用 B31.1 Table 132 通用注 (b) 这条免强制 PWHT 路径时",
+        "公称材料厚度的定义按 para. 132.4.3（不是 para. 132.4.1）"
+      ],
+      "not_valid_when": [
+        "公称材料厚度 ≤ 19.0 mm（走通用注 (a)，判据是预热，不看 CE，见 P-MAT-016）",
+        "公称材料厚度 > 38 mm（(b) 不覆盖，必须按表体做 PWHT）",
+        "把厚度定义用成 para. 132.4.1（那是通用注 (a) 用的定义）",
+        "套用 BPVC Section I 的 (a)(2) 窗口（那里下限写 ¾ in. 且是焊缝厚度，见 P-MAT-003）"
+      ],
+      "range_limits": [
+        "两端点为原文直接给出的公制标注，不是换算值"
+      ],
+      "conservatism": "窗口本身是判据区间，不是安全裕度；落在窗口外即必须做 PWHT。",
+      "must_pair_with": [
+        "P-MAT-011",
+        "P-MAT-014",
+        "P-MAT-015"
+      ]
+    },
+    "usage": {
+      "where": [
+        "ASME B31.1 厚壁管接头免 PWHT 初筛",
+        "焊接工艺评定里判断该走 (a) 还是 (b) 路径"
+      ],
+      "how": "取公称材料厚度（按 para. 132.4.3 定义），判断是否 > 19.0 mm 且 ≤ 38 mm。落在窗口内则继续判 CE < 0.50（P-MAT-011）、预热 ≥ 250 °F (121 °C)（P-MAT-014）、单道熔敷厚 ≤ 6 mm（P-MAT-015）；落在窗口外则 (a) 路径（≤19.0 mm，仅看预热）或必须按表体做 PWHT（>38 mm）。",
+      "step_order": [
+        "1. 取公称材料厚度（注意用 para. 132.4.3 的定义）",
+        "2. 判 > 19.0 mm 且 ≤ 38 mm",
+        "3. 若成立，再判 P-MAT-011、P-MAT-014、P-MAT-015"
+      ],
+      "output_used_by": [
+        "F-MAT-003"
+      ],
+      "pitfalls": [
+        "把下限当成含等号（原文 'over'，严格大于）",
+        "把 para. 132.4.1 与 para. 132.4.3 的厚度定义混用",
+        "从文本层读分数形（已实测退化为 '%' 与 'lV'）",
+        "把 B31.1 的材料厚度窗口当成 BPVC-I 的焊缝厚度窗口"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "PENDING_VERIFICATION",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（djvu 文本层定位 + 逐句核对 + 公制端点交叉校验）",
+      "note": "公制端点 19.0/38 mm 与关系词 'over ... but not more than' 在文本层完整，端点值与同标准通用注 (a)(1) 的 '19.0 mm or less' 构成互斥二分，数值互洽，满足 E1。英制分数形由公制反推，排印形式待 PDF 视觉复核，故不标 VERIFIED_CLAUSE。无比拟物理数据、无仿真对照，不占 E2。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "ASME B31.1 为动力管道标准，不在本项目适用范围内。本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "P-MAT-011",
+      "P-MAT-014",
+      "P-MAT-015",
+      "P-MAT-003"
+    ]
+  },
+  {
+    "id": "P-MAT-014",
+    "title_zh": "免 PWHT 路径 (b)(2) 的最小预热 250 °F (121 °C)（B31.1）",
+    "title_en": "Minimum preheat 250 degF (121 degC) for PWHT exemption path (b)(2) (ASME B31.1)",
+    "aliases": [
+      "250F",
+      "121C",
+      "B31.1 预热 250",
+      "minimum preheat B31.1",
+      "Table 132 (b)(2)"
+    ],
+    "param_kind": "THRESHOLD",
+    "symbol": null,
+    "value": {
+      "canonical": "250",
+      "display": "250 °F (121 °C)",
+      "latex": "T_{preheat} \\geq 250\\,^{\\circ}\\mathrm{F}\\;(121\\,^{\\circ}\\mathrm{C})",
+      "numeric": 250,
+      "relation": ">=",
+      "unit_text": "°F (°C), minimum preheat",
+      "alt_values": [
+        {
+          "canonical": "121",
+          "display": "121 °C",
+          "unit_text": "°C",
+          "note": "同一温度的公制标注（B31.1 口径）"
+        }
+      ]
+    },
+    "unit": "degF (degC)",
+    "domain": "MATE",
+    "tags": [
+      "焊接",
+      "焊后热处理",
+      "PWHT",
+      "预热",
+      "ASME-B31.1",
+      "Table 132",
+      "动力管道"
+    ],
+    "source": {
+      "standard_id": "ASME B31.1-2007",
+      "clause": "Table 132 (Postweld Heat Treatment) GENERAL NOTES (b)(2)",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "(2) a minimum preheat of 250°F (121°C) is applied",
+      "locator": "kb/_evidence/ASME-B31.1_table132_snippet.txt (ASME B31.1-2007 Table 132 片段, djvu 第 L15399 行)",
+      "visual_verified": false,
+      "extraction_note": "★ '250°F (121°C)' 在 djvu 文本层完整无退化（L15399 逐字）。★ 关键：BPVC Section I Table PW-39 通用注 (a)(2)(b) 的对应条款是 250 °F (120 °C)（见 P-MAT-004）——公制标注差 1 °C（121 vs 120），是两个标准各自的口径，不是换算误差，不可互换。未做 PDF 渲染视觉复核：archive.org 直连不可达，B31.1 本机只有 djvu 文本层。 【证据口径】本条仅有 djvu OCR 文本层、无 PDF 渲染件，故 visual_verified=false、status=PENDING_VERIFICATION；片段原文已单独入库于 kb/_evidence/，保证 locator 在仓库内自洽可核。",
+      "cross_refs": [
+        "P-MAT-013",
+        "P-MAT-015",
+        "P-MAT-004",
+        "P-MAT-016"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "采用 B31.1 Table 132 通用注 (b) 路径免除强制 PWHT 时",
+        "焊接过程按工艺评定施加了不低于该温度的预热"
+      ],
+      "not_valid_when": [
+        "把 BPVC Section I 的 120 °C 搬过来（那是 P-MAT-004）",
+        "把通用注 (a)(2) 的 200 °F (95 °C) 混用（那是 P-MAT-016）",
+        "只凭 (b)(1) 的 CE 通过就放行——预热是并列条件，不是 CE 的替代"
+      ],
+      "range_limits": [
+        "是最低预热温度，不是目标温度；实际工艺评定通常取更高值"
+      ],
+      "conservatism": "偏安全：预热不足会导致淬硬与冷裂纹。",
+      "must_pair_with": [
+        "P-MAT-013",
+        "P-MAT-011",
+        "P-MAT-015"
+      ]
+    },
+    "usage": {
+      "where": [
+        "ASME B31.1 厚壁管接头免 PWHT 路径的工艺条件确认",
+        "焊接工艺评定（WPS/PQR）中预热温度下限设定"
+      ],
+      "how": "在 Table 132 通用注 (b) 路径下，焊接前须把母材预热到不低于 250 °F (121 °C)，并在 WPS 中写明预热温度范围。低于该值则不能走免 PWHT 路径。",
+      "step_order": [
+        "1. 确认走 (b) 路径（厚度窗口 P-MAT-013）",
+        "2. 在 WPS 中规定预热温度 ≥ 250 °F (121 °C)",
+        "3. 焊接记录实际预热温度"
+      ],
+      "output_used_by": [
+        "F-MAT-003"
+      ],
+      "pitfalls": [
+        "用 120 °C 代替 121 °C（跨标准混用）",
+        "把 °F 与 °C 当成可互换标注（121 °C ≈ 250 °F，120 °C ≈ 248 °F）",
+        "预热只做在坡口一侧"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "PENDING_VERIFICATION",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（djvu 文本层定位 + 逐句核对）",
+      "note": "'250°F (121°C)' 在 djvu 文本层完整无退化，数值与单位自洽（250 °F = 121.1 °C，原文取 121 °C 是精确换算），满足 E1。未做 PDF 渲染视觉复核，故不标 VERIFIED_CLAUSE。无比拟物理数据、无仿真对照，不占 E2。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "ASME B31.1 为动力管道标准，不在本项目适用范围内。本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "P-MAT-013",
+      "P-MAT-015",
+      "P-MAT-004",
+      "P-MAT-016"
+    ]
+  },
+  {
+    "id": "P-MAT-015",
+    "title_zh": "单道焊缝熔敷厚上限 ¼ in. (6 mm)（B31.1）",
+    "title_en": "Maximum weld deposit thickness of each weld pass 1/4 in. (6 mm) (ASME B31.1 Table 132)",
+    "aliases": [
+      "6 mm",
+      "1/4 in.",
+      "B31.1 熔敷厚",
+      "weld deposit thickness",
+      "weld pass thickness B31.1",
+      "Table 132 (b)(3)"
+    ],
+    "param_kind": "LIMIT",
+    "symbol": null,
+    "value": {
+      "canonical": "6",
+      "display": "¼ in. (6 mm)",
+      "latex": "t_{pass} \\leq 6\\,\\mathrm{mm}",
+      "numeric": 6,
+      "relation": "<=",
+      "unit_text": "in (mm), maximum weld deposit thickness of each weld pass",
+      "alt_values": [
+        {
+          "canonical": "0.25",
+          "display": "¼ in.",
+          "unit_text": "in",
+          "note": "原文英制分数形（文本层退化为 '%'，由公制 6 mm 反推）"
+        }
+      ]
+    },
+    "unit": "in (mm)",
+    "domain": "MATE",
+    "tags": [
+      "焊接",
+      "焊后热处理",
+      "PWHT",
+      "熔敷厚",
+      "ASME-B31.1",
+      "Table 132",
+      "动力管道"
+    ],
+    "source": {
+      "standard_id": "ASME B31.1-2007",
+      "clause": "Table 132 (Postweld Heat Treatment) GENERAL NOTES (b)(3)",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "(3) the maximum weld deposit thickness of each weld pass shall not exceed ¼ in. (6 mm)",
+      "locator": "kb/_evidence/ASME-B31.1_table132_snippet.txt (ASME B31.1-2007 Table 132 片段, djvu 第 L15401 行)",
+      "visual_verified": false,
+      "extraction_note": "★ 公制值 6 mm 在 djvu 文本层完整可读。★ 英制分数形在文本层退化为 '%'（djvu 逐字为 'shall not exceed % in. (6 mm)'），snippet 中的 '¼ in.' 是依据括号内公制值反推重建的，不是逐字读取。措辞 'the maximum weld deposit thickness of each weld pass shall not exceed' 与 BPVC Section I 的 'no individual weld pass thickness exceeds' 表述不同但含义一致。未做 PDF 渲染视觉复核：archive.org 直连不可达。 【证据口径】本条仅有 djvu OCR 文本层、无 PDF 渲染件，故 visual_verified=false、status=PENDING_VERIFICATION；片段原文已单独入库于 kb/_evidence/，保证 locator 在仓库内自洽可核。",
+      "cross_refs": [
+        "P-MAT-013",
+        "P-MAT-014",
+        "P-MAT-005"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "采用 B31.1 Table 132 通用注 (b) 路径免除强制 PWHT 时",
+        "焊接工艺规定单道多层焊（多道焊）"
+      ],
+      "not_valid_when": [
+        "把它当成焊缝总厚度上限（这是单道熔敷金属厚度，与总厚度窗口 P-MAT-013 是两回事）",
+        "套用 BPVC Section I 的 0.45 判据组合（那边门槛值不同，见 P-MAT-001）"
+      ],
+      "range_limits": [
+        "原文为 'the maximum weld deposit thickness of each weld pass shall not exceed'，每一道都不许超，不是累计"
+      ],
+      "conservatism": "偏安全：限制单道厚度是为控制热输入与层间温度。多道焊总厚度可以远超 6 mm。",
+      "must_pair_with": [
+        "P-MAT-013"
+      ]
+    },
+    "usage": {
+      "where": [
+        "免 PWHT 路径下的焊接工艺（层间道次设计）",
+        "多道焊 WPS 的道次厚度限制设定"
+      ],
+      "how": "在 WPS 里规定单道熔敷金属厚度 ≤ 6 mm（¼ in.）。多道焊时每道都要单独满足，不是总厚度 ≤ 6 mm。若工艺需要更厚的单道，则不能走 Table 132 通用注 (b) 的免 PWHT 路径。",
+      "step_order": [
+        "1. 确认走 (b) 路径",
+        "2. 在 WPS 中规定单道熔敷厚 ≤ 6 mm",
+        "3. 焊道记录逐道核对"
+      ],
+      "output_used_by": [
+        "F-MAT-003"
+      ],
+      "pitfalls": [
+        "误当成焊缝总厚度限制",
+        "把多道累计厚度拿来比 6 mm",
+        "从文本层读 ¼（已实测退化为 '%'）"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "PENDING_VERIFICATION",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（djvu 文本层定位 + 逐句核对 + 公制值交叉校验）",
+      "note": "公制值 6 mm 与 'shall not exceed' 关系在文本层完整，英制 ¼ in. 由公制反推（0.25 in = 6.35 mm，与原文 6 mm 一致），自洽，满足 E1。英制排印形式待 PDF 视觉复核，故不标 VERIFIED_CLAUSE。无比拟物理数据、无仿真对照，不占 E2。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "ASME B31.1 为动力管道标准，不在本项目适用范围内。本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "P-MAT-013",
+      "P-MAT-014",
+      "P-MAT-005"
+    ]
+  },
+  {
+    "id": "P-MAT-016",
+    "title_zh": "通用注 (a)(2) 的预热条件 200 °F (95 °C)（B31.1）",
+    "title_en": "Minimum preheat 200 degF (95 degC) for PWHT exemption path (a)(2) (ASME B31.1 Table 132)",
+    "aliases": [
+      "200F",
+      "95C",
+      "B31.1 预热 200",
+      "preheat 200 B31.1",
+      "Table 132 (a)(2)"
+    ],
+    "param_kind": "THRESHOLD",
+    "symbol": null,
+    "value": {
+      "canonical": "200",
+      "display": "200 °F (95 °C)",
+      "latex": "T_{preheat} \\geq 200\\,^{\\circ}\\mathrm{F}\\;(95\\,^{\\circ}\\mathrm{C})",
+      "numeric": 200,
+      "relation": ">=",
+      "unit_text": "°F (°C), minimum preheat",
+      "alt_values": [
+        {
+          "canonical": "95",
+          "display": "95 °C",
+          "unit_text": "°C",
+          "note": "同一温度的公制标注"
+        }
+      ]
+    },
+    "unit": "degF (degC)",
+    "domain": "MATE",
+    "tags": [
+      "焊接",
+      "焊后热处理",
+      "PWHT",
+      "预热",
+      "ASME-B31.1",
+      "Table 132",
+      "动力管道"
+    ],
+    "source": {
+      "standard_id": "ASME B31.1-2007",
+      "clause": "Table 132 (Postweld Heat Treatment) GENERAL NOTES (a)(2)",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "(a) PWHT of P-No. 1 materials is not mandatory, provided that all of the following conditions are met: (1) the nominal thickness, as defined in para, 132.4.1, is ¾ in. (19.0 mm) or less (2) a minimum preheat of 200°F (95°C) is applied when the nominal material thickness of either of the base metals exceeds 1 in. (25.0 mm)",
+      "locator": "kb/_evidence/ASME-B31.1_table132_snippet.txt (ASME B31.1-2007 Table 132 片段, djvu 第 L15383 行)",
+      "visual_verified": false,
+      "extraction_note": "★ '200°F (95°C)'、'1 in. (25.0 mm)'、'19.0 mm' 在 djvu 文本层完整可读。★ 英文制分数形 '¾ in.' 在文本层退化为 '%'（djvu 逐字为 'is % in. (19.0 mm) or less'），snippet 中的 '¾ in.' 依据括号内公制值 19.0 mm 反推重建。★ 结构性差异：B31.1 通用注 (a) 措辞是 'provided that all of the following conditions are met'，(1)(2) 是并列的必合条件；而 BPVC Section I 的 (a)(1)/(a)(2) 各自以 'when ...' 开头，是两条并列的替代路径（见 P-MAT-003 / P-MAT-006）。未做 PDF 渲染视觉复核：archive.org 直连不可达。 【证据口径】本条仅有 djvu OCR 文本层、无 PDF 渲染件，故 visual_verified=false、status=PENDING_VERIFICATION；片段原文已单独入库于 kb/_evidence/，保证 locator 在仓库内自洽可核。",
+      "cross_refs": [
+        "P-MAT-013",
+        "P-MAT-006",
+        "P-MAT-014"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "采用 B31.1 Table 132 通用注 (a) 路径免除 PWHT 时",
+        "且焊接接头任一侧母材的公称厚度 > 1 in. (25.0 mm)——此时该预热是附加要求"
+      ],
+      "not_valid_when": [
+        "母材两侧公称厚度均 ≤ 1 in. (25.0 mm)（此时 (a)(2) 不触发预热要求）",
+        "公称材料厚度 > 19.0 mm（那是 (b) 路径，预热要求是 250 °F (121 °C)，见 P-MAT-014）",
+        "把 (a) 与 (b) 当成必须同时满足的路径"
+      ],
+      "range_limits": [
+        "这是免 PWHT 路径下的条件，不是 B31.1 全部焊接的最低预热要求"
+      ],
+      "conservatism": "偏安全：预热不足会导致淬硬与冷裂纹。",
+      "must_pair_with": [
+        "P-MAT-013"
+      ]
+    },
+    "usage": {
+      "where": [
+        "薄壁 P-No.1 碳钢管道免 PWHT 的工艺条件确认",
+        "焊接工艺评定中判断是否需要规定预热"
+      ],
+      "how": "若公称材料厚度（按 para. 132.4.1 定义）≤ 19.0 mm，走通用注 (a)：(1) 厚度条件与 (2) 预热条件必须同时成立——当焊接接头任一侧母材公称厚度 > 25.0 mm 时，必须施加不低于 200 °F (95 °C) 的预热；两侧母材都不超过 25.0 mm 时 (a)(2) 不触发。",
+      "step_order": [
+        "1. 取公称材料厚度（按 para. 132.4.1 定义），判 ≤ 19.0 mm 则走 (a)",
+        "2. 取母材公称厚度（两侧），判是否 > 25.0 mm",
+        "3. 若 > 25.0 mm，规定预热 ≥ 200 °F (95 °C)"
+      ],
+      "output_used_by": [
+        "F-MAT-003"
+      ],
+      "pitfalls": [
+        "把 (a) 的 (1)(2) 当成可二选一（原文是 'all of the following conditions are met'，是并列必合）",
+        "忽略'母材任一侧 > 1 in. (25.0 mm)'这个触发条件",
+        "把 (a) 的 200 °F 与 (b) 的 250 °F 混用"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "PENDING_VERIFICATION",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（djvu 文本层定位 + 逐句核对 + 公制值交叉校验）",
+      "note": "'200°F (95°C)' 与触发阈值 '1 in. (25.0 mm)' 在文本层完整无退化，数值与单位自洽（200 °F = 93.3 °C，原文取 95 °C 为工程取整），且与 (a)(1) 的 '19.0 mm or less' 构成 (a) 路径的完整条件对，满足 E1。英制分数形 '¾ in.' 待视觉复核，故不标 VERIFIED_CLAUSE。无比拟物理数据、无仿真对照，不占 E2。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "ASME B31.1 为动力管道标准，不在本项目适用范围内。本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "P-MAT-013",
+      "P-MAT-006",
+      "P-MAT-014"
+    ]
+  },
+  {
+    "id": "P-MAT-017",
+    "title_zh": "P-No.1 材料的最小保温温度 1,100 °F (600 °C)（B31.1）",
+    "title_en": "Minimum holding temperature 1,100 degF (600 degC) for P-No. 1 materials (ASME B31.1 Table 132)",
+    "aliases": [
+      "1100F",
+      "600C",
+      "B31.1 保温温度",
+      "holding temperature B31.1",
+      "Table 132 table body"
+    ],
+    "param_kind": "THRESHOLD",
+    "symbol": null,
+    "value": {
+      "canonical": "1100",
+      "display": "1,100 °F (600 °C)",
+      "latex": "T_{hold} \\geq 1100\\,^{\\circ}\\mathrm{F}\\;(600\\,^{\\circ}\\mathrm{C})",
+      "numeric": 1100,
+      "relation": ">=",
+      "unit_text": "°F (°C), minimum holding temperature from Appendix A range",
+      "alt_values": [
+        {
+          "canonical": "600",
+          "display": "600 °C",
+          "unit_text": "°C",
+          "note": "同一温度的公制标注（B31.1 口径）"
+        }
+      ]
+    },
+    "unit": "degF (degC)",
+    "domain": "MATE",
+    "tags": [
+      "焊接",
+      "焊后热处理",
+      "PWHT",
+      "保温温度",
+      "P-No.1",
+      "ASME-B31.1",
+      "Table 132",
+      "动力管道"
+    ],
+    "source": {
+      "standard_id": "ASME B31.1-2007",
+      "clause": "Table 132 (Postweld Heat Treatment), table body, P-No. 1 Gr. Nos. 1, 2, 3, column 'From Appendix A Range, °F (°C)'",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "P-No. 1 Gr. Nos. 1, 2, 3 | 1,100 (600) | 1 hr/in. (25 mm), 15 min minimum | 2 hr plus 15 min for each additional inch (25 mm) over 2 in. (50 mm)",
+      "locator": "kb/_evidence/ASME-B31.1_table132_snippet.txt (ASME B31.1-2007 Table 132 片段, djvu 第 L15371-L15375 行)",
+      "visual_verified": false,
+      "extraction_note": "★ '1,100 (600)' 在 djvu 文本层完整无退化（L15371）。表体列结构由 djvu 行序还原：材料列 'P-No. 1' / 'Gr. Nos. 1, 2, 3'；温度列 '1,100 (600)'；时间列 'Up to 2 in. (50 mm)' 与 'Over 2 in. (50 mm)'。★ 关键：BPVC Section I Table PW-39 同类单元格是 1,100 (595) °F(°C)（见 P-MAT-007），B31.1 是 1,100 (600)——公制标注差 5 °C，是两个标准各自的取整口径，不是换算误差，不可互换。★ 表格结构差异：B31.1 表体只有两档厚度（≤ 2 in. / > 2 in.），BPVC-I 有三档（多一档 > 5 in.）。未做 PDF 渲染视觉复核：archive.org 直连不可达。 【证据口径】本条仅有 djvu OCR 文本层、无 PDF 渲染件，故 visual_verified=false、status=PENDING_VERIFICATION；片段原文已单独入库于 kb/_evidence/，保证 locator 在仓库内自洽可核。",
+      "cross_refs": [
+        "P-MAT-018",
+        "P-MAT-007"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "对 P-No. 1 Group No. 1, 2, 3 的材料按 B31.1 Table 132 表体做强制 PWHT 时",
+        "适用 ASME B31.1 动力管道范围"
+      ],
+      "not_valid_when": [
+        "把 600 °C 写成 595 °C（那是 BPVC-I 的口径，见 P-MAT-007）",
+        "对 P-No. 1 以外的材料组套用（表体只列了 Gr. Nos. 1, 2, 3）",
+        "把保温温度当作预热温度（预热见 P-MAT-014 / P-MAT-016）"
+      ],
+      "range_limits": [
+        "1,100 °F = 593.3 °C；BPVC-I 取 595 °C，B31.1 取 600 °C，均为标准自身的取整"
+      ],
+      "conservatism": "偏安全：保温温度不足会导致硬度不回落、残余应力偏高。",
+      "must_pair_with": [
+        "P-MAT-018"
+      ]
+    },
+    "usage": {
+      "where": [
+        "B31.1 强制 PWHT 的热处理工艺设定（热处理炉曲线）",
+        "材料采购/焊接工艺评定的 PWHT 参数确认"
+      ],
+      "how": "对 P-No. 1 Group No. 1,2,3 材料，PWHT 时把工件加热到不低于 1,100 °F (600 °C) 并保温，保温时间按 P-MAT-018 由焊缝公称厚度决定。",
+      "step_order": [
+        "1. 确认材料为 P-No. 1 Gr. Nos. 1,2,3 且适用 B31.1",
+        "2. 按 WPS 设定升温曲线至 ≥ 1,100 °F (600 °C)",
+        "3. 按焊缝厚度算保温时间（P-MAT-018）",
+        "4. 记录炉温曲线"
+      ],
+      "output_used_by": [
+        "F-MAT-003"
+      ],
+      "pitfalls": [
+        "把 600 °C 当成 595 °C 填进热处理工艺（跨标准混用）",
+        "误用通用注 (a)/(b) 的豁免路径（表体是强制要求，通用注才是豁免）",
+        "保温温度与预热温度混填"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "PENDING_VERIFICATION",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（djvu 文本层定位 + 逐句核对 + 表体列结构还原）",
+      "note": "'1,100 (600)' 在 djvu 文本层完整无退化，与同行的保温时间列并列、量纲无冲突，数值自洽（1,100 °F = 593.3 °C，原文取整到 600），满足 E1。未做 PDF 渲染视觉复核，故不标 VERIFIED_CLAUSE。无比拟物理数据、无仿真对照，不占 E2。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "ASME B31.1 为动力管道标准，不在本项目适用范围内。本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "P-MAT-018",
+      "P-MAT-007"
+    ]
+  },
+  {
+    "id": "P-MAT-018",
+    "title_zh": "PWHT 保温时间 1 hr/in. (25 mm) 与超厚增量 2 hr + 15 min/每增厚 1 in.（B31.1）",
+    "title_en": "PWHT holding time 1 hr per in. (25 mm) with increment 2 hr plus 15 min per additional inch (ASME B31.1 Table 132)",
+    "aliases": [
+      "1 hr/in",
+      "1hr/25mm",
+      "B31.1 保温时间",
+      "holding time B31.1",
+      "2 hr plus 15 min",
+      "Table 132 holding time"
+    ],
+    "param_kind": "COEFFICIENT",
+    "symbol": null,
+    "value": {
+      "canonical": "1 hr per 1 in. (25 mm)",
+      "display": "1 hr/in. (25 mm), 15 min minimum | 2 hr plus 15 min for each additional inch (25 mm) over 2 in. (50 mm)",
+      "latex": "t_{hold} = 1\\,\\mathrm{hr/in}\\;(1\\,\\mathrm{hr}/25\\,\\mathrm{mm}),\\ \\min\\ 15\\,\\mathrm{min}",
+      "numeric": 1,
+      "relation": "=",
+      "unit_text": "hr per in. of nominal weld thickness (hr per 25 mm)"
+    },
+    "unit": "hr per in (hr per 25 mm)",
+    "domain": "MATE",
+    "tags": [
+      "焊接",
+      "焊后热处理",
+      "PWHT",
+      "保温时间",
+      "ASME-B31.1",
+      "Table 132",
+      "动力管道"
+    ],
+    "source": {
+      "standard_id": "ASME B31.1-2007",
+      "clause": "Table 132 (Postweld Heat Treatment), table body, columns 'Minimum Holding Time at Normal Temperature for Weld Thickness (Nominal)' — 'Up to 2 in. (50 mm)' and 'Over 2 in. (50 mm)'",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "Minimum Holding Time at Normal Temperature for Weld Thickness (Nominal) | From Temperature Up to 2 in. Over 2 in. Appendix A Range, °F (°C) (50 mm) (50 mm) | P-No. 1 1,100 (600) 1 hr/in. (25 mm), 2 hr plus 15 min for each additional inch | Gr. Nos. 1, 2, 3 to 15 min minimum for each additional inch (25 mm) over 2 in. (50 mm)",
+      "locator": "kb/_evidence/ASME-B31.1_table132_snippet.txt (ASME B31.1-2007 Table 132 片段, djvu 第 L15371-L15375 行)",
+      "visual_verified": false,
+      "extraction_note": "★ 表体列结构由 djvu 行序还原（djvu 把表格按行读出，必须按列重排才能读对）：L15367 'From Temperature Up to 2 in. Over 2 in.'、L15369 'Appendix A Range, °F (°C) (50 mm) (50 mm)'、L15371 'P-No. 1 1,100 (600) 1 hr/in. (25 mm), 2 hr plus 15 min for each additional inch'、L15373 'Gr. Nos. 1, 2, 3 to 15 min minimum for each additional inch'、L15375 'over 2 in. (50 mm)'。据此还原出：材料列 'P-No. 1 / Gr. Nos. 1, 2, 3'；温度列 '1,100 (600)'；时间列 'Up to 2 in. (50 mm)' = '1 hr/in. (25 mm), 15 min minimum'、'Over 2 in. (50 mm)' = '2 hr plus 15 min for each additional inch (25 mm) over 2 in. (50 mm)'。★ 不确定处：文本层写 '1 hr/in. (25 mm)'，而 BPVC Section I 对应单元格写 '1 hr/in. (1 hr/25 mm)'，B31.1 是否也含 '1 hr/' 前缀无法从文本层判定（可能被 djvu 吞掉），故本条的公制对应关系待视觉复核。★ B31.1 表体只有两档厚度（≤ 2 in. / > 2 in.），无 BPVC-I 的 '> 5 in.' 档。未做 PDF 渲染视觉复核：archive.org 直连不可达。 【证据口径】本条仅有 djvu OCR 文本层、无 PDF 渲染件，故 visual_verified=false、status=PENDING_VERIFICATION；片段原文已单独入库于 kb/_evidence/，保证 locator 在仓库内自洽可核。",
+      "cross_refs": [
+        "P-MAT-017",
+        "P-MAT-008",
+        "P-MAT-009",
+        "P-MAT-010"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "按 B31.1 Table 132 表体计算 P-No. 1 Gr. Nos. 1,2,3 的强制 PWHT 保温时间时",
+        "焊缝公称厚度 ≤ 2 in. (50 mm) 走速率列，> 2 in. (50 mm) 走增量列"
+      ],
+      "not_valid_when": [
+        "套用 BPVC-I 的三档厚度规则（B31.1 没有 '> 5 in.' 档，见 P-MAT-010）",
+        "把 15 min 当成增量（B31.1 薄壁列里 15 min 是下限，与 BPVC-I 同）",
+        "把 B31.1 的 '1 hr/in. (25 mm)' 直接当作精确换算关系（公制对应形式待视觉复核）"
+      ],
+      "range_limits": [
+        "速率按英制 1 hr/in. 给，公制标注 25 mm，形式与 BPVC-I 的 '(1 hr/25 mm)' 存在文本层差异"
+      ],
+      "conservatism": "偏安全：保温时间不足会残留高硬度与残余应力。",
+      "must_pair_with": [
+        "P-MAT-017"
+      ]
+    },
+    "usage": {
+      "where": [
+        "B31.1 厚壁管强制 PWHT 保温时间计算",
+        "热处理工艺卡保温时间栏"
+      ],
+      "how": "焊缝公称厚度 ≤ 2 in. (50 mm)：t = 1 hr × (厚度 in.)，最少 15 min。焊缝公称厚度 > 2 in. (50 mm)：t = 2 hr + 15 min × 每超出的 1 in. (25 mm) 段数（基准点 2 in. / 50 mm）。保温温度取 1,100 °F (600 °C)（P-MAT-017）。",
+      "step_order": [
+        "1. 取焊缝公称厚度",
+        "2. ≤ 2 in. (50 mm) 按 1 hr/in. 算并套 15 min 下限",
+        "3. > 2 in. (50 mm) 按 2 hr + 15 min/增量段 算",
+        "4. 保温温度按 P-MAT-017"
+      ],
+      "output_used_by": [
+        "F-MAT-003"
+      ],
+      "pitfalls": [
+        "把三档（BPVC-I）规则套到两档（B31.1）的表上",
+        "把 15 min 当增量",
+        "把 '(25 mm)' 当成 '(1 hr/25 mm)' 直接换算",
+        "按 djvu 的行序读表（表格被按行打散，必须按列还原）"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "PENDING_VERIFICATION",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（djvu 文本层定位 + 表格列结构还原 + 与 BPVC-I 对照）",
+      "note": "表体两列的时间规则在 djvu 文本层完整可读（速率列 '1 hr/in. (25 mm), 15 min minimum' 与增量列 '2 hr plus 15 min for each additional inch (25 mm) over 2 in. (50 mm)'），与同表温度列 1,100 (600) 并列、量纲无冲突，数值自洽，满足 E1。不确定处有二：(1) 文本层 '1 hr/in. (25 mm)' 与 BPVC-I '(1 hr/25 mm)' 的措辞差异；(2) 表格被 djvu 按行打散，列归属系按 BPVC-I 同构表结构重排推定。两点均需 PDF 视觉复核，故不标 VERIFIED_CLAUSE。无比拟物理数据、无仿真对照，不占 E2。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "ASME B31.1 为动力管道标准，不在本项目适用范围内。本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "P-MAT-017",
+      "P-MAT-008",
+      "P-MAT-009",
+      "P-MAT-010"
+    ]
+  }
+]

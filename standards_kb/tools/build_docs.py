@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-standards_kb / build_docs.py —— 生成标准覆盖表与数据索引
+standards_kb / build_docs.py —— 生成标准覆盖表与数据/参数索引
 
 产出
 ----
   docs/STANDARD_COVERAGE.md —— 每个已登记标准：拿到什么、公式密度多少、产出什么
   docs/DATA_INDEX.md        —— 数据表条目索引（怎么查尺寸/公差/材料）
+  docs/PARAMETER_INDEX.md   —— 参数条目索引（怎么查常数/系数/限值/阈值）
 
 docs/INDEX.md 由 tools/index.py 单独生成（公式索引）。
 
@@ -24,6 +25,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import kb_entries as K  # noqa: E402
 from standard_ids import family_of, std_of  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -45,20 +47,23 @@ def load_json(p: Path):
 
 
 def load_formulas() -> list[dict]:
-    out = []
-    for f in sorted((KB / "formulas").glob("*.json")):
-        d = json.loads(f.read_text(encoding="utf-8"))
-        out.extend(d if isinstance(d, list) else [d])
-    return out
+    """公式条目。加载逻辑统一走 tools/kb_entries.py（共享模块）。
+
+    口径统一的理由：三个校验器、索引器、查询器如果各写一份加载逻辑，
+    迟早会出现「某个工具少算了几条」的口径漂移，而这种漂移会被误读成
+    「数据没问题」。
+    """
+    return K.formula_entries()
 
 
 def load_data_entries() -> list[dict]:
-    out = []
-    for f in sorted((KB / "data").glob("*.json")):
-        d = json.loads(f.read_text(encoding="utf-8"))
-        if isinstance(d, dict) and isinstance(d.get("entries"), list):
-            out.extend(d["entries"])
-    return out
+    """数据表条目。"""
+    return K.data_entries()
+
+
+def load_params() -> list[dict]:
+    """参数条目（第三类知识对象：常数/系数/限值/阈值/材料性能等标量）。"""
+    return K.param_entries()
 
 
 def load_candidates() -> list[dict]:
@@ -93,6 +98,7 @@ def build_coverage() -> str:
     reg = load_json(ROOT / "registry" / "registry.json") or {}
     formulas = load_formulas()
     data_entries = load_data_entries()
+    params = load_params()
     cands = load_candidates()
 
     # 公式按标准归集
@@ -108,6 +114,11 @@ def build_coverage() -> str:
         by_data[std_of(d.get("standard_id", ""))].append(d)
     for f in formulas:
         by_std[std_of(f["source"].get("standard_id", ""))].append(f)
+
+    # 参数条目同样按归一后的短 id 归集
+    by_param: dict[str, list[dict]] = defaultdict(list)
+    for p in params:
+        by_param[std_of(p["source"].get("standard_id", ""))].append(p)
 
     # 候选池按 source_id 归集
     cand_by_std: dict[str, int] = defaultdict(int)
@@ -133,8 +144,8 @@ def build_coverage() -> str:
 
     L.append("## 家族汇总")
     L.append("")
-    L.append("| 家族 | 登记源数 | 已持有正文 | 正式公式条目 | 候选池 | 数据表条目 |")
-    L.append("|---|---|---|---|---|---|")
+    L.append("| 家族 | 登记源数 | 已持有正文 | 正式公式条目 | 候选池 | 数据表条目 | 参数条目 |")
+    L.append("|---|---|---|---|---|---|---|")
     fam_rows = []
     for fam, fdata in (reg.get("families") or {}).items():
         srcs = fdata.get("sources", [])
@@ -144,10 +155,13 @@ def build_coverage() -> str:
                         if family_of(f["source"].get("standard_id", "")) == fam]
         fam_data = [d for d in data_entries
                     if family_of(d.get("standard_id", "")) == fam]
+        fam_param = [p for p in params
+                     if family_of(p["source"].get("standard_id", "")) == fam]
         fam_cand = sum(n for s, n in cand_by_std.items()
                        if family_of(s) == fam)
         fam_rows.append((fam, fdata.get("label", ""), len(srcs), n_body,
-                         len(fam_formulas), fam_cand, len(fam_data)))
+                         len(fam_formulas), fam_cand, len(fam_data),
+                         len(fam_param)))
 
     # 归不到任何已登记家族的内容(通用工程力学、通用机械设计等)不能悄悄消失,
     # 单列一行;再给合计行,让读者能自己复算总数。
@@ -156,28 +170,33 @@ def build_coverage() -> str:
                if family_of(f["source"].get("standard_id", "")) not in reg_fams]
     other_d = [d for d in data_entries
                if family_of(d.get("standard_id", "")) not in reg_fams]
+    other_p = [p for p in params
+               if family_of(p["source"].get("standard_id", "")) not in reg_fams]
     other_c = sum(n for s, n in cand_by_std.items()
                   if family_of(s) not in reg_fams)
 
-    for fam, label, ns, nb, nf, nc, nd in fam_rows:
-        L.append(f"| {fam} | {ns} | {nb} | {nf} | {nc} | {nd} |")
-    if other_f or other_d or other_c:
-        L.append(f"| 其他/通用 | — | — | {len(other_f)} | {other_c} | {len(other_d)} |")
+    for fam, label, ns, nb, nf, nc, nd, np_ in fam_rows:
+        L.append(f"| {fam} | {ns} | {nb} | {nf} | {nc} | {nd} | {np_} |")
+    if other_f or other_d or other_c or other_p:
+        L.append(f"| 其他/通用 | — | — | {len(other_f)} | {other_c} | "
+                 f"{len(other_d)} | {len(other_p)} |")
     tot_f = sum(r[4] for r in fam_rows) + len(other_f)
     tot_c = sum(r[5] for r in fam_rows) + other_c
     tot_d = sum(r[6] for r in fam_rows) + len(other_d)
+    tot_p = sum(r[7] for r in fam_rows) + len(other_p)
     L.append(f"| **合计** | {sum(r[2] for r in fam_rows)} | "
-             f"{sum(r[3] for r in fam_rows)} | **{tot_f}** | **{tot_c}** | **{tot_d}** |")
+             f"{sum(r[3] for r in fam_rows)} | **{tot_f}** | **{tot_c}** | "
+             f"**{tot_d}** | **{tot_p}** |")
     L.append("")
-    L.append("> 「其他/通用」= 公式或数据来自通用工程知识，"
+    L.append("> 「其他/通用」= 公式、数据或参数来自通用工程知识，"
              "不属于 GB/ASME/ГОСТ/ISO 任一已登记家族，单独列出不混进家族数。")
     L.append("")
 
     # 逐源明细
     L.append("## 逐源明细")
     L.append("")
-    L.append("| 源 ID | 家族 | 类型 | 正文状态 | 抽取方式 | 正式公式 | 数据表 | 候选 | 备注 |")
-    L.append("|---|---|---|---|---|---|---|---|---|")
+    L.append("| 源 ID | 家族 | 类型 | 正文状态 | 抽取方式 | 正式公式 | 数据表 | 参数 | 候选 | 备注 |")
+    L.append("|---|---|---|---|---|---|---|---|---|---|")
     for fam, fdata in (reg.get("families") or {}).items():
         for s in fdata.get("sources", []):
             sid = s.get("id", "")
@@ -188,11 +207,12 @@ def build_coverage() -> str:
             key = std_of(std_id) if std_id else ""
             nf = len(by_std.get(key, []))
             nd = len(by_data.get(key, []))
+            npar = len(by_param.get(key, []))
             note = (s.get("notes") or "").split("\n")[0][:56]
             L.append(
                 f"| `{sid}` | {fam} | {s.get('kind','')} | "
                 f"{s.get('body_status','')} | {s.get('extraction','')} | "
-                f"{nf} | {nd} | {nc} | {note} |")
+                f"{nf} | {nd} | {npar} | {nc} | {note} |")
     L.append("")
 
     # 公式来源分布
@@ -211,6 +231,29 @@ def build_coverage() -> str:
         names = sorted({e["source"].get("standard_id", "") for e in items})
         L.append(f"| `{std_id}` | {' / '.join(names)[:56]} | {len(items)} | "
                  f"{ver} | {pend} | {unv} |")
+    L.append("")
+
+    # 参数来源分布
+    L.append("## 参数来源分布")
+    L.append("")
+    L.append("| 标准 | 条款/出处 | 条目数 | 已核 | 待核 | 条款未核 | 视觉核验 |")
+    L.append("|---|---|---|---|---|---|---|")
+    for std_id in sorted(by_param):
+        items = by_param[std_id]
+        ver = sum(1 for e in items
+                  if e["evidence"]["status"] == "VERIFIED_CLAUSE")
+        pend = sum(1 for e in items
+                   if e["evidence"]["status"] == "PENDING_VERIFICATION")
+        unv = sum(1 for e in items
+                  if e["evidence"]["status"] == "UNVERIFIED_CLAUSE")
+        vis = sum(1 for e in items
+                  if (e.get("source") or {}).get("visual_verified") is True)
+        names = sorted({e["source"].get("standard_id", "") for e in items})
+        L.append(f"| `{std_id}` | {' / '.join(names)[:56]} | {len(items)} | "
+                 f"{ver} | {pend} | {unv} | {vis} |")
+    L.append("")
+    L.append("> 「视觉核验」= 该条目的数值在 PDF **纯位图**（剥离 OCR 文本层）上"
+             "逐字肉眼核过。只有这一层核验通过，才允许标 `VERIFIED_CLAUSE`。")
     L.append("")
 
     # 覆盖缺口（诚实列出）
@@ -318,12 +361,148 @@ def build_data_index() -> str:
     return "\n".join(L)
 
 
+def build_parameter_index() -> str:
+    """参数条目索引（第三类知识对象）。
+
+    参数是**标量**：常数、系数、限值、阈值、材料性能、单位换算因子。
+    与公式（表达式）、数据表（多行表）形状不同，索引方式也不同：
+    这里按「值 + 判据」列出来，方便直接查"这个数是多少、上限还是下限"。
+    """
+    entries = load_params()
+    L = []
+    L.append("# 参数索引")
+    L.append("")
+    L.append("> 本文件由 `tools/build_docs.py` 自动生成，请勿手工编辑。")
+    L.append("> 参数条目本体在 `kb/parameters/`，证据件在 `kb/_evidence/`。")
+    L.append("")
+
+    L.append("## 概况")
+    L.append("")
+    L.append("| 项 | 值 |")
+    L.append("|---|---|")
+    L.append(f"| 参数条目总数 | **{len(entries)}** |")
+    by_std = defaultdict(int)
+    for e in entries:
+        by_std[(e.get("source") or {}).get("standard_id", "?")] += 1
+    L.append(f"| 覆盖标准 | {len(by_std)} |")
+    vis = sum(1 for e in entries
+              if (e.get("source") or {}).get("visual_verified") is True)
+    L.append(f"| 视觉核验条目 | {vis} |")
+    L.append("")
+
+    if not entries:
+        L.append("（暂无参数条目）")
+        L.append("")
+        return "\n".join(L)
+
+    # 按种类分布
+    L.append("## 按种类分布")
+    L.append("")
+    L.append("| 种类 | 条目数 | 说明 |")
+    L.append("|---|---|---|")
+    kind_desc = {
+        "CONSTANT": "常数（SI/英制水常数等）",
+        "COEFFICIENT": "系数（修正因子、比例系数）",
+        "LIMIT": "限值（不得超过/不得低于）",
+        "THRESHOLD": "阈值（判据门槛）",
+        "RANGE": "区间（允许范围）",
+        "DEFAULT_SUBSTITUTE": "缺省替代值",
+        "UNIT_FACTOR": "单位换算因子",
+        "MATERIAL_PROPERTY": "材料性能",
+    }
+    kind_count = defaultdict(int)
+    for e in entries:
+        kind_count[e.get("param_kind", "?")] += 1
+    for k in sorted(kind_count):
+        L.append(f"| `{k}` | {kind_count[k]} | {kind_desc.get(k, '')} |")
+    L.append("")
+
+    # 按域分布
+    L.append("## 按域分布")
+    L.append("")
+    dom_count = defaultdict(int)
+    for e in entries:
+        dom_count[e.get("domain", "?")] += 1
+    L.append("| 域 | 条目数 |")
+    L.append("|---|---|")
+    for k in sorted(dom_count):
+        L.append(f"| `{k}` | {dom_count[k]} |")
+    L.append("")
+
+    # 按标准浏览
+    L.append("## 按标准浏览")
+    L.append("")
+    for std in sorted(by_std):
+        items = [e for e in entries
+                 if (e.get("source") or {}).get("standard_id") == std]
+        L.append(f"### {std} —— {len(items)} 条")
+        L.append("")
+        L.append("| ID | 名称 | 种类 | 值 | 判据 | 条款 | 状态 |")
+        L.append("|---|---|---|---|---|---|---|")
+        for e in items:
+            v = e.get("value") or {}
+            src = e.get("source") or {}
+            ev = e.get("evidence") or {}
+            val = v.get("canonical") or v.get("display") or ""
+            val = str(val).replace("|", "\\|")
+            rel = v.get("relation") or ""
+            clause = src.get("clause") or ""
+            L.append(
+                f"| `{e.get('id','')}` | {e.get('title_zh','')} | "
+                f"`{e.get('param_kind','')}` | {val} | `{rel}` | {clause} | "
+                f"{ev.get('status','')} |")
+        L.append("")
+
+    # 跨层引用
+    L.append("## 跨层引用")
+    L.append("")
+    L.append("参数条目会指向它依赖的公式条目（`F-` 前缀），公式条目也会反向指向参数。")
+    L.append("")
+    L.append("| 参数 ID | 引用公式 | 引用参数 |")
+    L.append("|---|---|---|")
+    n_rel = 0
+    for e in entries:
+        rel = e.get("related") or []
+        if not isinstance(rel, list):
+            continue
+        frefs = [r for r in rel if isinstance(r, str) and r.startswith("F-")]
+        prefs = [r for r in rel if isinstance(r, str) and r.startswith("P-")]
+        if not frefs and not prefs:
+            continue
+        n_rel += 1
+        L.append(f"| `{e.get('id','')}` | "
+                 f"{' '.join(f'`{x}`' for x in frefs) or '—'} | "
+                 f"{' '.join(f'`{x}`' for x in prefs) or '—'} |")
+    if not n_rel:
+        L.append("| — | — | — |")
+    L.append("")
+
+    L.append("---")
+    L.append("")
+    L.append("**使用提醒**：")
+    L.append("")
+    L.append("1. `evidence.status` 为 `VERIFIED_CLAUSE` 的条目，其数值已在 PDF "
+             "**纯位图**（剥离 OCR 文本层）上逐字肉眼核过，可直接引用。")
+    L.append("2. `PENDING_VERIFICATION` 表示数值已抽取但尚未逐字核过，"
+             "**不得直接作为计算依据**。")
+    L.append("3. `value.relation` 表达该数在判据里的角色："
+             "`<=` 上限 / `>=` 下限 / `=` 精确值 / `range` 区间 / `approx` 近似值。"
+             "不要用 `=` 掩盖原文的「不超过 / 不得低于 / 超过」。")
+    L.append("4. 同一物理量在不同标准里数值不同（如 CE 阈值、预热温度），"
+             "本库**按标准分条记录**，不合并、不取平均。")
+    L.append("")
+    L.append(f"生成时间：{datetime.now(CST).isoformat(timespec='seconds')}")
+    return "\n".join(L)
+
+
 def main() -> int:
     DOCS.mkdir(parents=True, exist_ok=True)
     (DOCS / "STANDARD_COVERAGE.md").write_text(build_coverage(), encoding="utf-8")
     (DOCS / "DATA_INDEX.md").write_text(build_data_index(), encoding="utf-8")
+    (DOCS / "PARAMETER_INDEX.md").write_text(build_parameter_index(), encoding="utf-8")
     print(f"已生成 -> {DOCS.relative_to(ROOT)}/STANDARD_COVERAGE.md")
     print(f"已生成 -> {DOCS.relative_to(ROOT)}/DATA_INDEX.md")
+    print(f"已生成 -> {DOCS.relative_to(ROOT)}/PARAMETER_INDEX.md")
     return 0
 
 

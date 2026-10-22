@@ -155,6 +155,39 @@ def curated_data_entries_by_standard() -> dict[str, list[str]]:
     return out
 
 
+def curated_param_entries_by_standard() -> dict[str, list[str]]:
+    """Count curated PARAMETER entries in kb/parameters/, grouped by standard id.
+
+    Parameters are the third knowledge-object layer (scalars: constants,
+    coefficients, limits, thresholds, material properties, unit factors).
+    They are a different asset from formula entries and data-table entries,
+    so the ledger must report them separately -- otherwise a standard that
+    only produced scalar parameters looks empty in the manifest.
+    """
+    out: dict[str, list[str]] = {}
+    pdir = KB / "parameters"
+    if not pdir.exists():
+        return out
+    for f in sorted(pdir.glob("*.json")):
+        try:
+            data = json.loads(f.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        if isinstance(data, list):
+            entries = data
+        elif isinstance(data, dict):
+            entries = data.get("entries") or []
+        else:
+            entries = []
+        for e in entries:
+            if not isinstance(e, dict):
+                continue
+            sid = ((e.get("source") or {}).get("standard_id")) or ""
+            if sid:
+                out.setdefault(sid, []).append(e.get("id", "?"))
+    return out
+
+
 def candidate_count(source_id: str) -> tuple[int, list[str]]:
     """统计该标准目录下已落地的候选公式文件与条目数。"""
     d = RUNS / source_id
@@ -200,6 +233,7 @@ def build(source_id: str, reg_src: dict | None) -> dict:
 
     curated = []
     curated_data = []
+    curated_param = []
     if std_key:
         for k, ids in curated_entries_by_standard().items():
             if std_of(k) == std_key:
@@ -207,6 +241,9 @@ def build(source_id: str, reg_src: dict | None) -> dict:
         for k, ids in curated_data_entries_by_standard().items():
             if std_of(k) == std_key:
                 curated_data += ids
+        for k, ids in curated_param_entries_by_standard().items():
+            if std_of(k) == std_key:
+                curated_param += ids
 
     rec = {
         "source_id": source_id,
@@ -224,6 +261,7 @@ def build(source_id: str, reg_src: dict | None) -> dict:
         "candidate_files": cand_files,
         "curated_entries": sorted(curated),
         "curated_data_entries": sorted(curated_data),
+        "curated_param_entries": sorted(curated_param),
         "rebuilt_at": datetime.now(CST).isoformat(timespec="seconds"),
     }
     return rec
@@ -242,6 +280,7 @@ def rebuild_manifest(reg: dict | None = None) -> dict:
     rsrc = registry_sources(reg)
     curated_by_std = curated_entries_by_standard()
     curated_data_by_std = curated_data_entries_by_standard()
+    curated_param_by_std = curated_param_entries_by_standard()
 
     std_dirs = []
     if RUNS.exists():
@@ -260,6 +299,7 @@ def rebuild_manifest(reg: dict | None = None) -> dict:
 
     manifest["summary"] = {
         "data_entries": sum(len(v) for v in curated_data_by_std.values()),
+        "parameter_entries": sum(len(v) for v in curated_param_by_std.values()),
         "standards_with_body": sum(1 for s in manifest["standards"] if s["has_body"]),
         "standards_total": len(manifest["standards"]),
         "files": sum(len(s["files"]) for s in manifest["standards"]),
@@ -322,8 +362,8 @@ def main() -> int:
         write_manifest(manifest)
 
     # --- 打印 ---
-    print(f"{'标准':<18}{'正文':<8}{'文件':<6}{'大小':>12}  候选  公式  数据  状态")
-    print("-" * 78)
+    print(f"{'标准':<18}{'正文':<8}{'文件':<6}{'大小':>12}  候选  公式  数据  参数  状态")
+    print("-" * 86)
     for s in manifest["standards"]:
         body = "有" if s["has_body"] else "缺"
         size = sum(f["bytes"] for f in s["files"])
@@ -331,14 +371,16 @@ def main() -> int:
         st = s["registry"].get("body_status") or "-"
         print(f"{s['source_id']:<18}{body:<8}{len(s['files']):<6}{size_s:>12}  "
               f"{s['candidates_extracted']:>4}  {len(s['curated_entries']):>4}  "
-              f"{len(s.get('curated_data_entries', [])):>4}  {st}")
+              f"{len(s.get('curated_data_entries', [])):>4}  "
+              f"{len(s.get('curated_param_entries', [])):>4}  {st}")
 
     sm = manifest["summary"]
-    print("-" * 78)
+    print("-" * 86)
     print(f"正文标准 {sm['standards_with_body']}/{sm['standards_total']} | "
           f"文件 {sm['files']} 个 / {sm['bytes']/1048576:.1f} MB | "
           f"待复核候选 {sm['candidates']} 条 | 公式条目 {sm['curated_entries']} 条 | "
-          f"数据表 {sm['data_entries']} 条")
+          f"数据表 {sm['data_entries']} 条 | "
+          f"参数表 {sm['parameter_entries']} 条")
 
     if args.verify:
         if not drift:

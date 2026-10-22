@@ -11,7 +11,7 @@ standards_kb / validate.py —— 公式条目校验器
   2. 变量表里出现的符号,表达式里必须用到;表达式里的符号,变量表必须定义
   3. evidence.status = VERIFIED_CLAUSE 时,source.snippet 和 locator 必须有
   4. body_status 必须与 registry 里的该标准一致(不能声称有正文却标 PAYWALL)
-  5. related / cross_refs 指向的 ID 必须存在
+  5. related / cross_refs 指向的 ID 必须存在(公式层与参数层合并集合)
   6. usage.where / how 不能为空
   7. 证据等级 E2/E3 必须有 project_usage 支撑
   8. 等级纪律(共享规则):等级双写同步 / 出处不可核则封顶 E1 /
@@ -38,6 +38,7 @@ REG = ROOT / "registry" / "registry.json"
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import evidence_rules  # noqa: E402
+import kb_entries  # noqa: E402
 
 if hasattr(sys.stdout, "reconfigure"):
     try:
@@ -150,9 +151,11 @@ def check_entry(e: dict, known_ids: set[str], reg: dict) -> list[str]:
         errs.append("usage.how 不能为空")
 
     # --- 引用完整性 ---
+    # known_ids 是公式层 + 参数层的合并集合:公式可以引用参数(P-xxx),
+    # 参数可以引用公式(F-xxx),这是知识库三层的正常关系。
     for rid in (e.get("related") or []) + (src.get("cross_refs") or []):
         if rid not in known_ids:
-            errs.append(f"引用的公式 ID 不存在: {rid}")
+            errs.append(f"引用的 ID 不存在(公式层或参数层): {rid}")
 
     return errs
 
@@ -169,10 +172,12 @@ def main() -> int:
         return 0
 
     entries = load_entries(files)
-    known_ids = {e.get("id") for e in entries if e.get("id")}
-    dup = [i for i in known_ids if sum(1 for e in entries if e.get("id") == i) > 1]
+    # 引用完整性用**全库合并集合**,不是本次传入文件的子集:
+    # 否则单文件校验时,指向其它文件的合法引用会被误报成"不存在"。
+    known_ids = kb_entries.known_ids()
+    dup = kb_entries.duplicates(kb_entries.formula_entries())
     if dup:
-        print(f"ID 重复: {sorted(dup)}")
+        print(f"ID 重复: {dup}")
 
     reg = {}
     if REG.exists():

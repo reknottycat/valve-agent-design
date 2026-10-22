@@ -1,0 +1,54 @@
+# ASME B31.1-2007 / Table 132 (Postweld Heat Treatment) —— 可核文本片段
+# 来源: runs/ASME-B31.1/asme_b31_1_2007_djvu.txt (archive.org djvu OCR 文本层)
+# 截取范围: 第 15357 .. 15402 行(含), 原始行号保留在每行前缀 [N |]
+# 说明: 本片段单独入库, 是为了让参数条目的 source.locator 在仓库里自洽可核
+#       (仓库 .gitignore 排除了 runs/**/*djvu.txt, 不入库则 locator 指向的文件不存在)。
+# 已知退化: 分数形 3/4 -> '%', 1/2 -> 'lV'; 公制 19.0/38/6 mm 完整, 可作交叉校验。
+# 本片段仅为 djvu OCR 文本层, 不构成 PDF 渲染视觉复核(archive.org 直连不可达, 本机无 B31.1 PDF)。
+# ---------------------------------------------------------------------------
+[15357] A5ME B31.1-2007 
+[15358] 
+[15359] 
+[15360] 
+[15361] Table 132 Postweld Heat Treatment 
+[15362] 
+[15363] 
+[15364] 
+[15365] P . Nymb er Holding Holding Time Based on Nominal Thickness 
+[15366] 
+[15367] From Temperature Up to 2 in. Over 2 in. 
+[15368] 
+[15369] Appendix A Range, °F (°C) (50 mm) (50 mm) 
+[15370] 
+[15371] P-No. 1 1,100 (600) 1 hr/in. (25 mm), 2 hr plus 15 min 
+[15372] 
+[15373] Gr. Nos. 1, 2, 3 to 15 min minimum for each additional inch 
+[15374] 
+[15375] 1,200 (650) over 2 in. (50 mm) 
+[15376] 
+[15377] GENERAL NOTES: 
+[15378] 
+[15379] (a) PWHT of P-No. 1 materials is not mandatory, provided that all of the following conditions are met: 
+[15380] 
+[15381] (1) the nominal thickness, as defined in para, 132.4.1, is % in. (19.0 mm) or less 
+[15382] 
+[15383] (2) a minimum preheat of 200°F (95°C) is applied when the nominal material thickness of either of the base metals exceeds 1 in. 
+[15384] (25.0 mm) 
+[15385] 
+[15386] (b) PWHT of low hardenability P-No. 1 materials with a nominal material thickness, as defined in para. 132.4.3, over % in. (19.0 mm) but 
+[15387] not more than lV 2 in. (38 mm) is not mandatory, provided all of the following conditions are met: 
+[15388] 
+[15389] (1) the carbon equivalent, CE, is < 0.50, using the formula 
+[15390] 
+[15391] CE = C + (Mn + Si)/6 + (Cr + Mo + V)/5 + (Ni + Cu)/15 
+[15392] 
+[15393] The maximum chemical composition limit from the material specification or actual values from a chemical analysis or material test 
+[15394] report shall be used in computing CE. If analysis for the last two terms is not available, 0.1% may be substituted for those two terms 
+[15395] as follows: 
+[15396] 
+[15397] CE = C + (Mn + Si)/6 + 0.1 
+[15398] 
+[15399] (2) a minimum preheat of 250°F (121°C) is applied 
+[15400] 
+[15401] (3) the maximum weld deposit thickness of each weld pass shall not exceed % in. (6 mm) 
+[15402] 

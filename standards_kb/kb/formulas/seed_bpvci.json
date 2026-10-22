@@ -3,7 +3,14 @@
     "id": "F-MAT-002",
     "title_zh": "碳当量 CE（焊接接头可免焊后热处理判据）",
     "title_en": "Carbon Equivalent CE",
-    "aliases": ["碳当量", "carbon equivalent", "CE", "PWHT 免除", "焊后热处理豁免", "CE 0.45"],
+    "aliases": [
+      "碳当量",
+      "carbon equivalent",
+      "CE",
+      "PWHT 免除",
+      "焊后热处理豁免",
+      "CE 0.45"
+    ],
     "expression": {
       "canonical": "CE = C + (Mn + Si)/6 + (Cr + Mo + V)/5 + (Ni + Cu)/15",
       "display": "CE = C + (Mn + Si)/6 + (Cr + Mo + V)/5 + (Ni + Cu)/15",
@@ -15,27 +22,91 @@
       "solved_for": "CE"
     },
     "variables": [
-      {"symbol": "CE", "name_zh": "碳当量", "name_en": "carbon equivalent", "unit": "dimensionless", "typical_range": "≤ 0.45 为本条判据阈值", "source_of_value": "DERIVED"},
-      {"symbol": "C", "name_zh": "碳含量", "name_en": "carbon content", "unit": "mass %", "source_of_value": "STANDARD 材料规格上限或化学分析实测值"},
-      {"symbol": "Mn", "name_zh": "锰含量", "name_en": "manganese content", "unit": "mass %", "source_of_value": "STANDARD 材料规格上限或化学分析实测值"},
-      {"symbol": "Si", "name_zh": "硅含量", "name_en": "silicon content", "unit": "mass %", "source_of_value": "STANDARD 材料规格上限或化学分析实测值"},
-      {"symbol": "Cr", "name_zh": "铬含量", "name_en": "chromium content", "unit": "mass %", "source_of_value": "STANDARD 材料规格上限或化学分析实测值"},
-      {"symbol": "Mo", "name_zh": "钼含量", "name_en": "molybdenum content", "unit": "mass %", "source_of_value": "STANDARD 材料规格上限或化学分析实测值"},
-      {"symbol": "V", "name_zh": "钒含量", "name_en": "vanadium content", "unit": "mass %", "source_of_value": "STANDARD 材料规格上限或化学分析实测值"},
-      {"symbol": "Ni", "name_zh": "镍含量", "name_en": "nickel content", "unit": "mass %", "source_of_value": "STANDARD 材料规格上限或化学分析实测值"},
-      {"symbol": "Cu", "name_zh": "铜含量", "name_en": "copper content", "unit": "mass %", "source_of_value": "STANDARD 材料规格上限或化学分析实测值"}
+      {
+        "symbol": "CE",
+        "name_zh": "碳当量",
+        "name_en": "carbon equivalent",
+        "unit": "dimensionless",
+        "typical_range": "≤ 0.45 为本条判据阈值",
+        "source_of_value": "DERIVED"
+      },
+      {
+        "symbol": "C",
+        "name_zh": "碳含量",
+        "name_en": "carbon content",
+        "unit": "mass %",
+        "source_of_value": "STANDARD 材料规格上限或化学分析实测值"
+      },
+      {
+        "symbol": "Mn",
+        "name_zh": "锰含量",
+        "name_en": "manganese content",
+        "unit": "mass %",
+        "source_of_value": "STANDARD 材料规格上限或化学分析实测值"
+      },
+      {
+        "symbol": "Si",
+        "name_zh": "硅含量",
+        "name_en": "silicon content",
+        "unit": "mass %",
+        "source_of_value": "STANDARD 材料规格上限或化学分析实测值"
+      },
+      {
+        "symbol": "Cr",
+        "name_zh": "铬含量",
+        "name_en": "chromium content",
+        "unit": "mass %",
+        "source_of_value": "STANDARD 材料规格上限或化学分析实测值"
+      },
+      {
+        "symbol": "Mo",
+        "name_zh": "钼含量",
+        "name_en": "molybdenum content",
+        "unit": "mass %",
+        "source_of_value": "STANDARD 材料规格上限或化学分析实测值"
+      },
+      {
+        "symbol": "V",
+        "name_zh": "钒含量",
+        "name_en": "vanadium content",
+        "unit": "mass %",
+        "source_of_value": "STANDARD 材料规格上限或化学分析实测值"
+      },
+      {
+        "symbol": "Ni",
+        "name_zh": "镍含量",
+        "name_en": "nickel content",
+        "unit": "mass %",
+        "source_of_value": "STANDARD 材料规格上限或化学分析实测值"
+      },
+      {
+        "symbol": "Cu",
+        "name_zh": "铜含量",
+        "name_en": "copper content",
+        "unit": "mass %",
+        "source_of_value": "STANDARD 材料规格上限或化学分析实测值"
+      }
     ],
     "domain": "MATE",
-    "tags": ["碳当量", "焊接", "PWHT", "材料", "BPVC-I", "PW-39"],
+    "tags": [
+      "碳当量",
+      "焊接",
+      "PWHT",
+      "材料",
+      "BPVC-I",
+      "PW-39"
+    ],
     "source": {
       "standard_id": "ASME BPVC Section I-2010",
       "clause": "Table PW-39（焊接接头）通用注 (a)(2)(a)",
       "body_status": "FULL_TEXT_MIRROR",
       "evidence_grade": "E1",
       "snippet": "the calculated carbon equivalent, CE, of any of the base metals in the weld joint is less than or equal to 0.45, using the formula CE = C + (Mn + Si)/6 + (Cr + Mo + V)/5 + (Ni + Cu)/15. Note: The maximum chemical composition limit from the material specification or the actual values from a chemical analysis or material test report shall be used in computing CE. If the chemistry values required for the last two terms are not available, 0.15% shall be substituted for those two terms as follows: CE = C + (Mn + Si)/6 + 0.15",
-      "locator": "runs/ASME-BPVC-I/bpvc_i_djvu.txt L33737-L33744; 图像核读 runs/probe/bpvc_p145_ce2.png (500dpi, PDF p.145)",
-      "extraction_note": "PDF 文本层把 Si 误识为 'SO'，djvu 文本层同样退化为 'SO'；本条 snippet 已按 500dpi 渲染图逐字校正（p145 裁切须用 pg.search_for('carbon equivalent') 定位到右栏 y≈240，第一次裁到了左栏 PW-39 预热条款）。原文 '/5' 与 '/15' 已由图像确认（文本层曾退化为 '/S' 与 '/IS'）。0.15 是后两项（Cr+Mo+V 与 Ni+Cu）合并后的替代值，不是任一单项。",
-      "cross_refs": ["F-MAT-001"]
+      "locator": "kb/_evidence/ASME-BPVC-I_p145_raster.png (PDF p.145 TABLE PW-39 纯扫描位图); 文本层 runs/ASME-BPVC-I/bpvc_i_djvu.txt L33737-L33744",
+      "extraction_note": "PDF 文本层把 Si 误识为 'SO'，djvu 文本层同样退化为 'SO'；本条 snippet 已按 500dpi 渲染图逐字校正（p145 裁切须用 pg.search_for('carbon equivalent') 定位到右栏 y≈240，第一次裁到了左栏 PW-39 预热条款）。原文 '/5' 与 '/15' 已由图像确认（文本层曾退化为 '/S' 与 '/IS'）。0.15 是后两项（Cr+Mo+V 与 Ni+Cu）合并后的替代值，不是任一单项。 【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "F-MAT-001"
+      ]
     },
     "applicability": {
       "valid_when": [
@@ -50,7 +121,10 @@
         "角焊缝（(a)(3)/(a)(4) 走焊缝厚度判据，不看 CE）",
         "把 CE≤0.45 当作可以免除预热的理由 —— 那是两回事"
       ],
-      "range_limits": ["CE ≤ 0.45 为 (a)(2)(a) 的判定阈值", "CE > 0.45 即不满足免除 PWHT 的条件"],
+      "range_limits": [
+        "CE ≤ 0.45 为 (a)(2)(a) 的判定阈值",
+        "CE > 0.45 即不满足免除 PWHT 的条件"
+      ],
       "conservatism": "取化学成分上限值会使 CE 偏大，即偏保守（更容易判定需要焊后热处理）。",
       "must_pair_with": []
     },
@@ -70,7 +144,16 @@
       ],
       "output_used_by": [],
       "sample": {
-        "inputs": {"C": 0.15, "Mn": 0.60, "Si": 0.30, "Cr": 1.00, "Mo": 0.20, "V": 0.02, "Ni": 0.30, "Cu": 0.30},
+        "inputs": {
+          "C": 0.15,
+          "Mn": 0.6,
+          "Si": 0.3,
+          "Cr": 1.0,
+          "Mo": 0.2,
+          "V": 0.02,
+          "Ni": 0.3,
+          "Cu": 0.3
+        },
         "result": "CE = 0.15 + 0.90/6 + 1.22/5 + 0.60/15 = 0.584（> 0.45，不满足免除条件）。若后两项成分不可得：CE = 0.15 + 0.15 + 0.15 = 0.45（刚好卡在阈值）",
         "source_of_inputs": "合成示例化学成分，非本项目材料；本项目为青铜阀，不适用本式"
       },
@@ -84,21 +167,33 @@
     "evidence": {
       "grade": "E1",
       "status": "VERIFIED_CLAUSE",
-      "verified_on": "2026-10-25",
+      "verified_on": "2026-10-22",
       "verified_by": "standards_kb（djvu 文本层定位 + 500dpi 图像核读）",
       "note": "公式与 Note 文字已按渲染图逐字核对，算例复算自洽（0.584）。无实物材料数据，故不到 E2。"
     },
     "project_usage": [
-      {"task": "N/A", "status": "不适用", "note": "BPVC Section I 面向钢/合金锅炉压力容器；本项目 522-35.4179СБ 为青铜止回-截止阀，非压力容器。本条为标准资产沉淀/未来复用。"}
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "BPVC Section I 面向钢/合金锅炉压力容器；本项目 522-35.4179СБ 为青铜止回-截止阀，非压力容器。本条为标准资产沉淀/未来复用。"
+      }
     ],
-    "related": ["F-MAT-001"]
+    "related": [
+      "F-MAT-001"
+    ]
   },
-
   {
     "id": "F-TEST-001",
     "title_zh": "安全阀理论流量 W_T（水试验）",
     "title_en": "Theoretical Flow of Pressure Relief Valves (Water Test)",
-    "aliases": ["理论流量", "W_T", "安全阀流量", "relief valve capacity", "PG-69.2.3", "排放量计算"],
+    "aliases": [
+      "理论流量",
+      "W_T",
+      "安全阀流量",
+      "relief valve capacity",
+      "PG-69.2.3",
+      "排放量计算"
+    ],
     "expression": {
       "canonical": "W_T = 2407 * pi * D * L * 0.707 * sqrt((P - P_d) * w)",
       "display": "W_T = 2,407 πDL (0.707)√((P − P_d)w)   [45° 座, US]\nW_T = 5.092 πDL (0.707)√((P − P_d)w)   [45° 座, SI]\nW_T = 2,407 πDL √((P − P_d)w) / 5.092 πDL √((P − P_d)w)   [平座]\nW_T = 2,407 A √((P − P_d)w) / 5.092 A √((P − P_d)w)   [喷嘴]",
@@ -106,31 +201,85 @@
       "rearranged_forms": [
         "W_T = 2407 * pi * D * L * sqrt((P - P_d) * w)",
         "W_T = 2407 * A * sqrt((P - P_d) * w)",
-        "W_T = 5092 * pi * D * L * 0.707 * sqrt((P - P_d) * w)",
-        "W_T = 5092 * A * sqrt((P - P_d) * w)"
+        "W_T = 5.092 * pi * D * L * sqrt((P - P_d) * w)",
+        "W_T = 5.092 * pi * D * L * 0.707 * sqrt((P - P_d) * w)",
+        "W_T = 5.092 * A * sqrt((P - P_d) * w)"
       ],
       "solved_for": "W_T"
     },
     "variables": [
-      {"symbol": "W_T", "name_zh": "理论流量", "name_en": "theoretical flow", "unit": "lb/hr (kg/hr)", "source_of_value": "DERIVED"},
-      {"symbol": "A", "name_zh": "喷嘴喉部面积", "name_en": "nozzle throat area", "unit": "in^2 (mm^2)", "source_of_value": "DRAWING 或 STANDARD 孔口表"},
-      {"symbol": "D", "name_zh": "阀座直径", "name_en": "seat diameter", "unit": "in. (mm)", "source_of_value": "DRAWING"},
-      {"symbol": "L", "name_zh": "压力 P 下的升程", "name_en": "lift at pressure P", "unit": "in. (mm)", "source_of_value": "STANDARD 额定升程"},
-      {"symbol": "P", "name_zh": "计算用入口压力", "name_en": "pressure for capacity calculation", "unit": "psia (MPa)", "source_of_value": "DERIVED", "note": "US: (1.03 × 整定压力 + 14.7) 或 (整定压力 + 2 + 14.7) 取大；SI: (1.03 × 整定压力 + 0.101) 或 (整定压力 + 0.014 + 0.101) 取大"},
-      {"symbol": "P_d", "name_zh": "阀排放压力", "name_en": "pressure at discharge of the valve", "unit": "psia (MPa)", "source_of_value": "DERIVED"},
-      {"symbol": "w", "name_zh": "入口条件下水的重度", "name_en": "specific weight of water at inlet conditions", "unit": "lb/ft^3 (kg/m^3)", "source_of_value": "DERIVED 由水温查得"}
+      {
+        "symbol": "W_T",
+        "name_zh": "理论流量",
+        "name_en": "theoretical flow",
+        "unit": "lb/hr (kg/hr)",
+        "source_of_value": "DERIVED"
+      },
+      {
+        "symbol": "A",
+        "name_zh": "喷嘴喉部面积",
+        "name_en": "nozzle throat area",
+        "unit": "in^2 (mm^2)",
+        "source_of_value": "DRAWING 或 STANDARD 孔口表"
+      },
+      {
+        "symbol": "D",
+        "name_zh": "阀座直径",
+        "name_en": "seat diameter",
+        "unit": "in. (mm)",
+        "source_of_value": "DRAWING"
+      },
+      {
+        "symbol": "L",
+        "name_zh": "压力 P 下的升程",
+        "name_en": "lift at pressure P",
+        "unit": "in. (mm)",
+        "source_of_value": "STANDARD 额定升程"
+      },
+      {
+        "symbol": "P",
+        "name_zh": "计算用入口压力",
+        "name_en": "pressure for capacity calculation",
+        "unit": "psia (MPa)",
+        "source_of_value": "DERIVED",
+        "note": "US: (1.03 × 整定压力 + 14.7) 或 (整定压力 + 2 + 14.7) 取大；SI: (1.03 × 整定压力 + 0.101) 或 (整定压力 + 0.014 + 0.101) 取大"
+      },
+      {
+        "symbol": "P_d",
+        "name_zh": "阀排放压力",
+        "name_en": "pressure at discharge of the valve",
+        "unit": "psia (MPa)",
+        "source_of_value": "DERIVED"
+      },
+      {
+        "symbol": "w",
+        "name_zh": "入口条件下水的重度",
+        "name_en": "specific weight of water at inlet conditions",
+        "unit": "lb/ft^3 (kg/m^3)",
+        "source_of_value": "DERIVED 由水温查得"
+      }
     ],
     "domain": "TEST",
-    "tags": ["安全阀", "理论流量", "排放量", "PG-69.2.3", "BPVC-I", "水试验"],
+    "tags": [
+      "安全阀",
+      "理论流量",
+      "排放量",
+      "PG-69.2.3",
+      "BPVC-I",
+      "水试验"
+    ],
     "source": {
       "standard_id": "ASME BPVC Section I-2010",
       "clause": "PG-69.2.3 Coefficient of Discharge Method",
       "body_status": "FULL_TEXT_MIRROR",
       "evidence_grade": "E1",
       "snippet": "For tests with water. For 45 deg seat (U.S. Customary Units) W_T = 2,407 πDL (0.707)√((P − P_d)w); (SI Units) W_T = 5.092 πDL (0.707)√((P − P_d)w). For flat seat (U.S. Customary Units) W_T = 2,407 πDL√((P − P_d)w); (SI Units) W_T = 5.092 πDL√((P − P_d)w). For nozzle (U.S. Customary Units) W_T = 2,407 A√((P − P_d)w); (SI Units) W_T = 5.092 A√((P − P_d)w). where A = nozzle throat area, in.^2 (mm^2); D = seat diameter, in. (mm); L = lift at pressure P, in. (mm); P = (1.03 × set pressure + 14.7), psia, or = (set pressure + 2 + 14.7), psia, whichever is greater; = (1.03 × set pressure + 0.101), MPa, or = (set pressure + 0.014 + 0.101), MPa, whichever is greater; P_d = pressure at discharge of the valve, psia (MPa); W_T = theoretical flow, lb/hr (kg/hr); w = specific weight of water at inlet conditions, lb/ft^3 (kg/m^3)",
-      "locator": "runs/probe/bpvc_p104_wt.png (600dpi, PDF p.104); 文本层 runs/ASME-BPVC-I/bpvc_i_djvu.txt L22696-L22720; 常数专项核读 runs/probe/bpvc_p104_5092.png",
-      "extraction_note": "★ 关键退化：SI 水试验常数在 PDF 文本层与图像上都是 '5 092'（无小数点，span 文本为 '5092 '），若照抄即得 5092，比正确值大 1000 倍。由单位换算闭合反解：SI 系数必为 C_SI = C_US × 0.45359 / (645.16 × √(0.0068948 × 16.0185)) = C_US × 0.0021155，代入 C_US = 2407 得 C_SI = 5.092，与印刷形式（5.25 for steam）自洽。蒸汽 SI 常数 '5.25' 的小数点在文本层保留，水试验 SI 的丢了。根号在文本层退化为 'j'/'7'/'u'，sqrt 由图像确认。转置：lb/hr → gal/min 乘 1/500；kg/hr → liter/min 乘 1/60。",
-      "cross_refs": ["F-TEST-002", "F-TEST-003"]
+      "locator": "kb/_evidence/ASME-BPVC-I_p104_raster.png (PDF p.104 纯扫描位图); 文本层 runs/ASME-BPVC-I/bpvc_i_djvu.txt L22696-L22720",
+      "extraction_note": "★ 最易读错的一个数，三重独立证据链定案为 5.092。\n(1) 印刷原貌：本条 PDF 为 Xerox WorkCentre 4250 扫描 + Adobe Acrobat Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点，不能当印刷原貌证据。用 tools/raster_crop.py 直接抽取扫描位图后，2400dpi 裁切 + 列直方图显示 '5' 与 '092' 之间是 14 个像素列的纯空白，无任何墨迹——原页此处是一个空格，既不是小数点也不是逗号。\n(2) ASME 的 SI 排印风格：同一份标准的 SI 版超临界修正因子印作 '(27.6P − 1 000)/(33.2P − 1 061)'、超临界容量式印作 '1 135.8 (0.95/5.25)'，而 US 对应式印作 '1,135.8'、'(0.1906P − 1,000)/(0.2292P − 1,061)'。同一个数 1135.8 在 SI 版用空格、US 版用逗号，小数点两边都保留（'5.25'、'0.707'、'1 135.8'）。因此 ASME 不会把小数点排成空格，'5 092' 不是风格而是缺陷。\n(3) 量纲唯一解：按同页自述单位（A in mm²、D/L in mm、P in MPa、w in kg/m³、W_T in kg/hr），理想孔口质量流量 C·A·√(P·w) 反解得 C_SI = 1e-6 × √(2×1e6) × 3600 = 5.09117（相对误差 0.02%）。若取 5092，则同式给出的流量是正确值的 1000 倍，与 ASME 自己写的 'W_T = theoretical flow, lb/hr (kg/hr)' 直接冲突。旁证：同页 SI 蒸汽常数 5.25 与该推导值同量级（+3.1%），而 5092 与 5.25 相差 970 倍。\n结论：原页排印 '5 092' 判定为 ASME 该处漏排小数点，正确值 5.092。本条 display 与 rearranged_forms 均给可用值 5.092；参数层 P-TEST-002 的 value.alt_values 保留原页排印 '5 092' 供回溯。\n【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "F-TEST-002",
+        "F-TEST-003"
+      ]
     },
     "applicability": {
       "valid_when": [
@@ -145,9 +294,13 @@
         "P 的定义直接套用 PG-69.2.2 坡度法的口径（PG-69.2.2 的 SI 式写 0.015 MPa，PG-69.2.3 变量定义写 0.014 MPa，两处不同，勿混用）",
         "把 W_T 直接当作阀门实际排放能力 —— W_T 是理论值，实际能力受流量系数 K 折减"
       ],
-      "range_limits": ["排放压力 P_d 与整定压力同量纲，必须用绝对压力 psia(MPa)"],
+      "range_limits": [
+        "排放压力 P_d 与整定压力同量纲，必须用绝对压力 psia(MPa)"
+      ],
       "conservatism": "W_T 是不含流动系数的理论值，偏乐观；真实能力 = W_T × K（见 F-TEST-003）。",
-      "must_pair_with": ["F-TEST-003"]
+      "must_pair_with": [
+        "F-TEST-003"
+      ]
     },
     "usage": {
       "where": [
@@ -163,9 +316,17 @@
         "4. 按阀座结构选式：45° 座带 0.707，平座不带，喷嘴用 A",
         "5. 代入得 W_T，再乘流量系数得实际能力"
       ],
-      "output_used_by": ["F-TEST-003"],
+      "output_used_by": [
+        "F-TEST-003"
+      ],
       "sample": {
-        "inputs": {"D_in": 1.000, "L_in": 0.125, "P_psia": 114.7, "P_d_psia": 104.7, "w_lb_ft3": 62.4},
+        "inputs": {
+          "D_in": 1.0,
+          "L_in": 0.125,
+          "P_psia": 114.7,
+          "P_d_psia": 104.7,
+          "w_lb_ft3": 62.4
+        },
         "result": "45° 座 US: W_T = 2,407 × π × 1.000 × 0.125 × 0.707 × √((114.7−104.7) × 62.4) = 16,966 lb/hr（≈ 7,696 kg/hr）",
         "source_of_inputs": "合成示例数据（合成数据，非本项目阀门）；P 取 (1.03×100+14.7)=117.7 与 (100+2+14.7)=116.7 的较大者已按示例取 114.7 演示，实际须按定义重算"
       },
@@ -180,21 +341,34 @@
     "evidence": {
       "grade": "E1",
       "status": "VERIFIED_CLAUSE",
-      "verified_on": "2026-10-25",
-      "verified_by": "standards_kb（djvu 文本层 + 600dpi 图像 + span 字号/单位换算三重互证）",
-      "note": "6 个式子（3 结构 × 2 单位制）与全部变量定义已按图像逐字核对；SI 常数经单位换算闭合验证。算例复算自洽。无实物试验数据，故不到 E2。"
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（纯扫描位图 2400dpi 列直方图 + 同页 US/SI 排印对照 + 理想孔口量纲反解，三路互证）",
+      "note": "SI 水试验常数取值 5.092 由三条互相独立的证据确定：(1) 剥离 OCR 文本层后的纯扫描位图上，原页排印确为 '5 092'（5 与 092 之间空白，无墨迹）；(2) 同页 ASME SI 版排印惯例为'空格作千分位、小数点保留'（1 135.8 / 1 000 / 1 061 为证），故 '5 092' 不是风格；(3) 按 ASME 自述单位反解 C_SI = 5.09117，取 5092 与 kg/hr 矛盾。等级 E1（数值与公式自洽，误差 0.02%）。"
     },
     "project_usage": [
-      {"task": "N/A", "status": "不适用", "note": "本项目 522-35.4179СБ 为 PN6 青铜止回-截止阀，无安全阀排放量设计；且 BPVC-I 面向钢/合金锅炉压力容器。本条为标准资产沉淀/未来复用（若后续涉及安全阀选型可复用）。"}
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目 522-35.4179СБ 为 PN6 青铜止回-截止阀，无安全阀排放量设计；且 BPVC-I 面向钢/合金锅炉压力容器。本条为标准资产沉淀/未来复用（若后续涉及安全阀选型可复用）。"
+      }
     ],
-    "related": ["F-TEST-002", "F-TEST-003"]
+    "related": [
+      "F-TEST-002",
+      "F-TEST-003"
+    ]
   },
-
   {
     "id": "F-TEST-002",
     "title_zh": "安全阀理论流量 W_T（干饱和蒸汽）",
     "title_en": "Theoretical Flow of Pressure Relief Valves (Dry Saturated Steam Test)",
-    "aliases": ["蒸汽排放量", "蒸汽理论流量", "steam relief capacity", "PG-69.2.3", "51.5", "5.25"],
+    "aliases": [
+      "蒸汽排放量",
+      "蒸汽理论流量",
+      "steam relief capacity",
+      "PG-69.2.3",
+      "51.5",
+      "5.25"
+    ],
     "expression": {
       "canonical": "W_T = 51.5 * pi * D * L * P * 0.707",
       "display": "W_T = 51.5 × πDLP × 0.707   [45° 座, US]\nW_T = 5.25 × πDLP × 0.707   [45° 座, SI]\nW_T = 51.5 × πDLP / 5.25 × πDLP   [平座]\nW_T = 51.5 AP / 5.25 AP   [喷嘴]",
@@ -202,29 +376,71 @@
       "rearranged_forms": [
         "W_T = 51.5 * pi * D * L * P",
         "W_T = 51.5 * A * P",
+        "W_T = 5.25 * pi * D * L * P",
         "W_T = 5.25 * pi * D * L * P * 0.707",
         "W_T = 5.25 * A * P"
       ],
       "solved_for": "W_T"
     },
     "variables": [
-      {"symbol": "W_T", "name_zh": "理论流量", "name_en": "theoretical flow", "unit": "lb/hr (kg/hr)", "source_of_value": "DERIVED"},
-      {"symbol": "A", "name_zh": "喷嘴喉部面积", "name_en": "nozzle throat area", "unit": "in^2 (mm^2)", "source_of_value": "DRAWING 或 STANDARD 孔口表"},
-      {"symbol": "D", "name_zh": "阀座直径", "name_en": "seat diameter", "unit": "in. (mm)", "source_of_value": "DRAWING"},
-      {"symbol": "L", "name_zh": "压力 P 下的升程", "name_en": "lift at pressure P", "unit": "in. (mm)", "source_of_value": "STANDARD 额定升程"},
-      {"symbol": "P", "name_zh": "计算用入口压力", "name_en": "pressure for capacity calculation", "unit": "psia (MPa)", "source_of_value": "DERIVED", "note": "US: (1.03 × 整定压力 + 14.7) 或 (整定压力 + 2 + 14.7) 取大；SI: (1.03 × 整定压力 + 0.101) 或 (整定压力 + 0.014 + 0.101) 取大"}
+      {
+        "symbol": "W_T",
+        "name_zh": "理论流量",
+        "name_en": "theoretical flow",
+        "unit": "lb/hr (kg/hr)",
+        "source_of_value": "DERIVED"
+      },
+      {
+        "symbol": "A",
+        "name_zh": "喷嘴喉部面积",
+        "name_en": "nozzle throat area",
+        "unit": "in^2 (mm^2)",
+        "source_of_value": "DRAWING 或 STANDARD 孔口表"
+      },
+      {
+        "symbol": "D",
+        "name_zh": "阀座直径",
+        "name_en": "seat diameter",
+        "unit": "in. (mm)",
+        "source_of_value": "DRAWING"
+      },
+      {
+        "symbol": "L",
+        "name_zh": "压力 P 下的升程",
+        "name_en": "lift at pressure P",
+        "unit": "in. (mm)",
+        "source_of_value": "STANDARD 额定升程"
+      },
+      {
+        "symbol": "P",
+        "name_zh": "计算用入口压力",
+        "name_en": "pressure for capacity calculation",
+        "unit": "psia (MPa)",
+        "source_of_value": "DERIVED",
+        "note": "US: (1.03 × 整定压力 + 14.7) 或 (整定压力 + 2 + 14.7) 取大；SI: (1.03 × 整定压力 + 0.101) 或 (整定压力 + 0.014 + 0.101) 取大"
+      }
     ],
     "domain": "TEST",
-    "tags": ["安全阀", "蒸汽", "理论流量", "排放量", "PG-69.2.3", "BPVC-I"],
+    "tags": [
+      "安全阀",
+      "蒸汽",
+      "理论流量",
+      "排放量",
+      "PG-69.2.3",
+      "BPVC-I"
+    ],
     "source": {
       "standard_id": "ASME BPVC Section I-2010",
       "clause": "PG-69.2.3 Coefficient of Discharge Method",
       "body_status": "FULL_TEXT_MIRROR",
       "evidence_grade": "E1",
       "snippet": "For tests with dry saturated steam. For 45 deg seat (U.S. Customary Units) W_T = 51.5 × πDLP × 0.707; (SI Units) W_T = 5.25 × πDLP × 0.707. For flat seat (U.S. Customary Units) W_T = 51.5 × πDLP; (SI Units) W_T = 5.25 × πDLP. For nozzle (U.S. Customary Units) W_T = 51.5 AP; (SI Units) W_T = 5.25 AP.",
-      "locator": "runs/probe/bpvc_p104_wt.png (600dpi, PDF p.104); 文本层 runs/ASME-BPVC-I/bpvc_i_djvu.txt L22650-L22672",
-      "extraction_note": "文本层把 π 识为 'tt'、W_T 识为 'W r'、× 识为 'X'：'W r = 51.5 X ttDLP X 0.707'。蒸汽 SI 常数 5.25 的小数点在文本层保留（span 文本 '5.25 '，Times-Roman），与水试验 SI 常数 '5092 ' 丢点形成对照——后者经单位换算闭合反解为 5.092。原文 45° 座写作 πDLP（P 在 D、L 之后，与水试验式的 πDL√(...) 形式不同，勿混排）。",
-      "cross_refs": ["F-TEST-001", "F-TEST-003"]
+      "locator": "kb/_evidence/ASME-BPVC-I_p104_raster.png (PDF p.104 纯扫描位图); 文本层 runs/ASME-BPVC-I/bpvc_i_djvu.txt L22650-L22672",
+      "extraction_note": "文本层把 π 识为 'tt'、W_T 识为 'W r'、× 识为 'X'：'W r = 51.5 X ttDLP X 0.707'。蒸汽 SI 常数 5.25 的小数点在文本层保留（span 文本 '5.25 '，Times-Roman），与水试验 SI 常数 '5092 ' 丢点形成对照——后者经单位换算闭合反解为 5.092。原文 45° 座写作 πDLP（P 在 D、L 之后，与水试验式的 πDL√(...) 形式不同，勿混排）。 【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "F-TEST-001",
+        "F-TEST-003"
+      ]
     },
     "applicability": {
       "valid_when": [
@@ -238,9 +454,13 @@
         "水介质 —— 必须改用 F-TEST-001",
         "气体介质"
       ],
-      "range_limits": ["P 必须用绝对压力 psia(MPa)"],
+      "range_limits": [
+        "P 必须用绝对压力 psia(MPa)"
+      ],
       "conservatism": "W_T 为理论值，不含流量系数；实际能力 = W_T × K。",
-      "must_pair_with": ["F-TEST-003"]
+      "must_pair_with": [
+        "F-TEST-003"
+      ]
     },
     "usage": {
       "where": [
@@ -256,9 +476,15 @@
         "4. 代入得 W_T",
         "5. 乘流量系数得实际能力"
       ],
-      "output_used_by": ["F-TEST-003"],
+      "output_used_by": [
+        "F-TEST-003"
+      ],
       "sample": {
-        "inputs": {"D_in": 1.000, "L_in": 0.125, "P_psia": 114.7},
+        "inputs": {
+          "D_in": 1.0,
+          "L_in": 0.125,
+          "P_psia": 114.7
+        },
         "result": "45° 座 US: W_T = 51.5 × π × 1.000 × 0.125 × 114.7 × 0.707 = 1,640 lb/hr（≈ 744 kg/hr）",
         "source_of_inputs": "合成示例数据（合成数据，非本项目阀门）"
       },
@@ -272,21 +498,35 @@
     "evidence": {
       "grade": "E1",
       "status": "VERIFIED_CLAUSE",
-      "verified_on": "2026-10-25",
+      "verified_on": "2026-10-22",
       "verified_by": "standards_kb（djvu 文本层 + 600dpi 图像 + span 字号三重互证）",
       "note": "6 个式子（3 结构 × 2 单位制）已按图像逐字核对，SI 常数 5.25 与 US 51.5 经单位换算闭合自洽。算例复算自洽。无实物试验数据，故不到 E2。"
     },
     "project_usage": [
-      {"task": "N/A", "status": "不适用", "note": "本项目为 PN6 青铜止回-截止阀，无蒸汽安全阀排放量设计。本条为标准资产沉淀/未来复用。"}
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目为 PN6 青铜止回-截止阀，无蒸汽安全阀排放量设计。本条为标准资产沉淀/未来复用。"
+      }
     ],
-    "related": ["F-TEST-001", "F-TEST-003"]
+    "related": [
+      "F-TEST-001",
+      "F-TEST-003"
+    ]
   },
-
   {
     "id": "F-TEST-003",
     "title_zh": "流量系数 K_D 与设计系数 K",
     "title_en": "Individual and Design Coefficient of Discharge",
-    "aliases": ["流量系数", "coefficient of discharge", "K_D", "K", "PG-69.2.3", "0.878", "beta ratio"],
+    "aliases": [
+      "流量系数",
+      "coefficient of discharge",
+      "K_D",
+      "K",
+      "PG-69.2.3",
+      "0.878",
+      "beta ratio"
+    ],
     "expression": {
       "canonical": "K_D = Q_actual / Q_theoretical",
       "display": "K_D = 实际流量 / 理论流量\nK = 0.90 × (九次试验 K_D 的平均值)",
@@ -299,23 +539,66 @@
       "solved_for": "K_D"
     },
     "variables": [
-      {"symbol": "K_D", "name_zh": "单阀流量系数", "name_en": "individual coefficient of discharge", "unit": "dimensionless", "typical_range": "0.75 ~ 1.0", "source_of_value": "DERIVED 由实测流量与理论流量之比"},
-      {"symbol": "Q_actual", "name_zh": "实际流量", "name_en": "actual flow", "unit": "lb/hr (kg/hr)", "source_of_value": "TEST 实测"},
-      {"symbol": "Q_theoretical", "name_en": "theoretical flow", "name_en": "theoretical flow", "name_zh": "理论流量", "unit": "lb/hr (kg/hr)", "source_of_value": "DERIVED 由 F-TEST-001 / F-TEST-002"},
-      {"symbol": "avg_K_D", "name_zh": "九次试验 K_D 的平均值", "name_en": "average of the nine K_D values", "unit": "dimensionless", "source_of_value": "DERIVED"},
-      {"symbol": "K", "name_zh": "设计流量系数", "name_en": "coefficient of discharge for the design", "unit": "dimensionless", "typical_range": "≤ 0.878", "source_of_value": "DERIVED"}
+      {
+        "symbol": "K_D",
+        "name_zh": "单阀流量系数",
+        "name_en": "individual coefficient of discharge",
+        "unit": "dimensionless",
+        "typical_range": "0.75 ~ 1.0",
+        "source_of_value": "DERIVED 由实测流量与理论流量之比"
+      },
+      {
+        "symbol": "Q_actual",
+        "name_zh": "实际流量",
+        "name_en": "actual flow",
+        "unit": "lb/hr (kg/hr)",
+        "source_of_value": "TEST 实测"
+      },
+      {
+        "symbol": "Q_theoretical",
+        "name_en": "theoretical flow",
+        "name_zh": "理论流量",
+        "unit": "lb/hr (kg/hr)",
+        "source_of_value": "DERIVED 由 F-TEST-001 / F-TEST-002"
+      },
+      {
+        "symbol": "avg_K_D",
+        "name_zh": "九次试验 K_D 的平均值",
+        "name_en": "average of the nine K_D values",
+        "unit": "dimensionless",
+        "source_of_value": "DERIVED"
+      },
+      {
+        "symbol": "K",
+        "name_zh": "设计流量系数",
+        "name_en": "coefficient of discharge for the design",
+        "unit": "dimensionless",
+        "typical_range": "≤ 0.878",
+        "source_of_value": "DERIVED"
+      }
     ],
     "domain": "TEST",
-    "tags": ["流量系数", "K", "K_D", "安全阀", "PG-69.2.3", "认证", "beta ratio"],
+    "tags": [
+      "流量系数",
+      "K",
+      "K_D",
+      "安全阀",
+      "PG-69.2.3",
+      "认证",
+      "beta ratio"
+    ],
     "source": {
       "standard_id": "ASME BPVC Section I-2010",
       "clause": "PG-69.2.3 Coefficient of Discharge Method",
       "body_status": "FULL_TEXT_MIRROR",
       "evidence_grade": "E1",
       "snippet": "K_D = actual flow / theoretical flow = individual coefficient of discharge. The average of the coefficients K_D of the nine tests required shall be multiplied by 0.90, and this product shall be taken as the coefficient K of that design. All individual coefficients of discharge, K_D, shall fall within a range of ±5% of the average coefficient found. If a valve fails to meet this requirement, the Authorized Observer shall require two additional valves to be tested as replacements for each valve having an individual coefficient, K_D, outside the ±5% range, with a limit of four additional valves. The coefficient of discharge for the design shall be not greater than 0.878 (the product of 0.9 x 0.975). The coefficient shall not be applied to valves whose beta ratio (ratio of valve throat to inlet diameter) lies outside the range of 0.15 to 0.75, unless tests have demonstrated that the individual coefficient of discharge, K_D, for valves at the extreme ends of a larger range, is within ±5% of the average coefficient, K_D.",
-      "locator": "runs/probe/bpvc_p104_wt.png (600dpi, PDF p.104); 文本层 runs/ASME-BPVC-I/bpvc_i_djvu.txt L22622-L22641 与 L22720-L22800",
-      "extraction_note": "K_D 的分数式在文本层被拆成三行（'K D =' / 'actual flow' / 'theoretical flow'），比值方向须由图像确认（分子为实际流量）。'±5%' 在文本层退化为 '+5%'。0.878 上限与 beta ratio 0.15~0.75 限制的原文段落位于 djvu L22770-L22800（该段属 PG-70 区域，条款归属待进一步界定）。",
-      "cross_refs": ["F-TEST-001", "F-TEST-002"]
+      "locator": "kb/_evidence/ASME-BPVC-I_p104_raster.png + kb/_evidence/ASME-BPVC-I_p105_raster.png (PDF p.104/p.105 纯扫描位图); 文本层 runs/ASME-BPVC-I/bpvc_i_djvu.txt L22622-L22641 与 L22720-L22800",
+      "extraction_note": "K_D 的分数式在文本层被拆成三行（'K D =' / 'actual flow' / 'theoretical flow'），比值方向须由图像确认（分子为实际流量）。'±5%' 在文本层退化为 '+5%'。0.878 上限与 beta ratio 0.15~0.75 限制的原文段落位于 djvu L22770-L22800（该段属 PG-70 区域，条款归属待进一步界定）。 【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "F-TEST-001",
+        "F-TEST-002"
+      ]
     },
     "applicability": {
       "valid_when": [
@@ -334,7 +617,10 @@
         "beta ratio 0.15 ~ 0.75"
       ],
       "conservatism": "K = 0.90 × 平均值 本身已含标准折扣；再乘 0.975 得 0.878 上限。",
-      "must_pair_with": ["F-TEST-001", "F-TEST-002"]
+      "must_pair_with": [
+        "F-TEST-001",
+        "F-TEST-002"
+      ]
     },
     "usage": {
       "where": [
@@ -354,7 +640,19 @@
       ],
       "output_used_by": [],
       "sample": {
-        "inputs": {"K_D_values": [0.92, 0.94, 0.91, 0.93, 0.90, 0.95, 0.92, 0.91, 0.93]},
+        "inputs": {
+          "K_D_values": [
+            0.92,
+            0.94,
+            0.91,
+            0.93,
+            0.9,
+            0.95,
+            0.92,
+            0.91,
+            0.93
+          ]
+        },
         "result": "平均 K_D = 0.9233；K = 0.90 × 0.9233 = 0.831（≤ 0.878 ✓）；各 K_D 与平均值最大偏差 3.4%，在 ±5% 内 ✓",
         "source_of_inputs": "合成示例试验数据（合成数据，非本项目阀门）"
       },
@@ -368,21 +666,506 @@
     "evidence": {
       "grade": "E1",
       "status": "VERIFIED_CLAUSE",
-      "verified_on": "2026-10-25",
+      "verified_on": "2026-10-22",
       "verified_by": "standards_kb（djvu 文本层 + 600dpi 图像互证）",
       "note": "K_D 定义式、K = 0.90×平均、±5% 一致性判据、0.878 上限、beta ratio 区间均已按原文逐字核对；算例复算自洽。无实物试验数据，故不到 E2。"
     },
     "project_usage": [
-      {"task": "N/A", "status": "不适用", "note": "本项目无安全阀认证需求。本条为标准资产沉淀/未来复用。"}
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀认证需求。本条为标准资产沉淀/未来复用。"
+      }
     ],
-    "related": ["F-TEST-001", "F-TEST-002"]
+    "related": [
+      "F-TEST-001",
+      "F-TEST-002"
+    ]
   },
-
+  {
+    "id": "F-TEST-004",
+    "title_zh": "超临界压力修正因子（1,500-3,200 psig 区）",
+    "title_en": "Supercritical Correction Factor (1,500 to 3,200 psig Range)",
+    "aliases": [
+      "超临界修正因子",
+      "supercritical correction factor",
+      "0.1906P",
+      "0.2292P",
+      "27.6P",
+      "33.2P",
+      "PG-69.2.3"
+    ],
+    "expression": {
+      "canonical": "W = W_base * (0.1906 * P - 1000) / (0.2292 * P - 1061)",
+      "display": "W = W_base × (0.1906P − 1,000) / (0.2292P − 1,061)   (U.S. Customary Units)\nW = W_base × (27.6P − 1 000) / (33.2P − 1 061)   (SI Units)",
+      "latex": "W = W_{base} \\frac{0.1906\\,P - 1000}{0.2292\\,P - 1061}\\qquadW = W_{base} \\frac{27.6\\,P - 1000}{33.2\\,P - 1061}",
+      "rearranged_forms": [
+        "W = W_base * (27.6 * P - 1000) / (33.2 * P - 1061)",
+        "CF = (0.1906 * P - 1000) / (0.2292 * P - 1061)",
+        "CF = (27.6 * P - 1000) / (33.2 * P - 1061)",
+        "W_base = W * (0.2292 * P - 1061) / (0.1906 * P - 1000)"
+      ],
+      "solved_for": "W"
+    },
+    "variables": [
+      {
+        "symbol": "W",
+        "name_zh": "修正后的泄放能力",
+        "name_en": "corrected capacity",
+        "unit": "lb of steam/hr (kg/hr)",
+        "source_of_value": "DERIVED 由 W_base × 修正因子得到"
+      },
+      {
+        "symbol": "W_base",
+        "name_zh": "未修正的泄放能力",
+        "name_en": "uncorrected capacity",
+        "unit": "lb of steam/hr (kg/hr)",
+        "source_of_value": "TEST 实测容量，或由理论流量式 F-TEST-001/002 算出"
+      },
+      {
+        "symbol": "P",
+        "name_zh": "绝对入口压力",
+        "name_en": "absolute inlet pressure",
+        "unit": "psia (MPa)",
+        "source_of_value": "DERIVED 见 F-TEST-006"
+      },
+      {
+        "symbol": "CF",
+        "name_zh": "超临界修正因子",
+        "name_en": "supercritical correction factor",
+        "unit": "dimensionless",
+        "source_of_value": "STANDARD 公式给定"
+      }
+    ],
+    "domain": "TEST",
+    "tags": [
+      "超临界",
+      "修正因子",
+      "安全阀",
+      "泄放能力",
+      "PG-69.2.3",
+      "蓝形图"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 (p.105 超临界修正因子句与公式)",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "For pressures over 1,500 psig (10.3 MPa) and up to 3,200 psig (22.1 MPa), the value of W shall be multiplied by the correction factor (U.S. Customary Units) (0.1906P − 1,000) / (0.2292P − 1,061) (SI Units) (27.6P − 1 000) / (33.2P − 1 061)",
+      "locator": "kb/_evidence/ASME-BPVC-I_p105_raster.png (PDF p.105 左右两栏修正因子公式区)",
+      "extraction_note": "【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。 US 版千分位用逗号（1,000 / 1,061），SI 版千分位用空格（1 000 / 1 061）——两者是同一组数的不同排印风格，不是不同数值。",
+      "cross_refs": [
+        "F-TEST-001",
+        "F-TEST-002",
+        "F-TEST-003",
+        "F-TEST-005",
+        "F-TEST-006",
+        "P-TEST-012",
+        "P-TEST-013",
+        "P-TEST-021",
+        "P-TEST-022",
+        "P-TEST-023",
+        "P-TEST-024",
+        "P-TEST-025",
+        "P-TEST-026"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "入口绝对压力超过 1,500 psig (10.3 MPa) 且不超过 3,200 psig (22.1 MPa)",
+        "已知 W_base（实测容量或理论流量式算出）"
+      ],
+      "not_valid_when": [
+        "压力超过 3,200 psig (22.1 MPa)——必须改用 F-TEST-005 超临界外推式",
+        "压力低于 1,500 psig (10.3 MPa)——不需修正",
+        "仅因为设计余量而主动叠加该因子"
+      ],
+      "range_limits": [
+        "1,500 psig (10.3 MPa) < P ≤ 3,200 psig (22.1 MPa)"
+      ],
+      "conservatism": "修正因子在 P ≈ 1,580 psia 处等于 1.00，低于该压力时小于 1、高于该压力时大于 1。即在 1,500~3,200 psig 区间内，这个修正是【放大】泄放能力而不是打折。向高压力侧套用会偏乐观，不得再自行打折。",
+      "must_pair_with": [
+        "F-TEST-005",
+        "F-TEST-006"
+      ]
+    },
+    "usage": {
+      "where": [
+        "安全阀/泄压阀在中崚临界压力区的容量计算",
+        "检查已发嬃的泄放能力是否已作超临界修正"
+      ],
+      "how": "1. 由 set pressure 按 F-TEST-006 算出绝对入口压力 P；2. 确认 1,500 psig < P ≤ 3,200 psig，否则切换到 F-TEST-005；3. 安装使用中英制选对应版本的常数（US 0.1906/0.2292，SI 27.6/33.2）；4. 算 CF 并乘到 W_base 上得最终泄放能力。",
+      "step_order": [
+        "1. 由 set pressure 算 P（F-TEST-006）",
+        "2. 判定压力区间",
+        "3. 选 US 或 SI 常数组",
+        "4. 算 CF = 分子/分母",
+        "5. W = W_base × CF"
+      ],
+      "output_used_by": [
+        "F-TEST-003"
+      ],
+      "sample": {
+        "inputs": {
+          "set_pressure_psia": 1800.0,
+          "W_base_lb_hr": 5000.0
+        },
+        "result": "P = max(1.03×1800 + 14.7, 1800 + 2 + 14.7) = 1868.7 psia，落在 1,500~3,200 psig 区间；CF = (0.1906×1868.7 − 1000)/(0.2292×1868.7 − 1061) = (−643.83)/(−632.69) = 1.0176；W = 5000 × 1.0176 = 5088 lb/hr",
+        "source_of_inputs": "合成示例数据（合成数据，非本项目阀门）"
+      },
+      "pitfalls": [
+        "US 与 SI 常数组混用（US 的 0.1906/0.2292 不能与 SI 的 27.6/33.2 交换）",
+        "压力超过 3,200 psig 后仍套用本修正因子（应改用 F-TEST-005）",
+        "把 P 的绝对压力与表压相混（P 是 psia 绝对压力）"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（纯扫描位图逐字核对 + djvu 文本层交叉比对）",
+      "note": "修正因子公式与区间语句均已按纯位图逐字核对；US/SI 两版为同一公式的不同单位表达，已分别记录。无实物试验数据，故不到 E2。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀认证需求。本条为标准资产沉淀/未来复用。"
+      }
+    ],
+    "related": [
+      "F-TEST-001",
+      "F-TEST-002",
+      "F-TEST-003",
+      "F-TEST-005",
+      "F-TEST-006",
+      "P-TEST-012",
+      "P-TEST-013"
+    ]
+  },
+  {
+    "id": "F-TEST-005",
+    "title_zh": "超临界容量外推式（>3,200 psig）",
+    "title_en": "Supercritical Capacity Extrapolation (over 3,200 psig)",
+    "aliases": [
+      "超临界外推",
+      "supercritical extrapolation",
+      "1,135.8",
+      "1 135.8",
+      "dW/dP",
+      "特性比容积",
+      "PG-69.2.3"
+    ],
+    "expression": {
+      "canonical": "W = 1135.8 * (0.90 / 51.45) * dW_dP * sqrt(P / v)",
+      "display": "W = 1,135.8 × (0.90 / 51.45) × (dW/dP) √(P / ν)   (U.S. Customary Units)\nW = 1 135.8 × (0.95 / 5.25) × (dW/dP) √(P / ν)   (SI Units)",
+      "latex": "W = 1135.8 \\frac{0.90}{51.45} \\frac{dW}{dP} \\sqrt{\\frac{P}{\\nu}}\\qquadW = 1135.8 \\frac{0.95}{5.25} \\frac{dW}{dP} \\sqrt{\\frac{P}{\\nu}}",
+      "rearranged_forms": [
+        "W = 1135.8 * (0.95 / 5.25) * dW_dP * sqrt(P / v)",
+        "dW_dP = W / (1135.8 * (0.90 / 51.45) * sqrt(P / v))",
+        "nu = P / (W / (1135.8 * (0.90 / 51.45) * dW_dP))^2"
+      ],
+      "solved_for": "W"
+    },
+    "variables": [
+      {
+        "symbol": "W",
+        "name_zh": "容量",
+        "name_en": "capacity",
+        "unit": "lb of steam/hr (kg/hr)",
+        "source_of_value": "DERIVED 由容量数据点拟合得到"
+      },
+      {
+        "symbol": "dW_dP",
+        "name_zh": "容量对绝对压力的变化率",
+        "name_en": "rate of change of measured capacity with respect to absolute pressure",
+        "unit": "lb of steam/hr per psia (kg/hr per MPa)",
+        "source_of_value": "TEST 由实测容量-压力曲线斜率得到"
+      },
+      {
+        "symbol": "P",
+        "name_zh": "绝对入口压力",
+        "name_en": "absolute inlet pressure",
+        "unit": "psia (MPa)",
+        "source_of_value": "DERIVED 见 F-TEST-006"
+      },
+      {
+        "symbol": "v",
+        "name_zh": "入口特定比体积",
+        "name_en": "inlet specific volume",
+        "unit": "ft3/lb (m3/kg)",
+        "source_of_value": "THERM 由入口状态的流体属性核算"
+      },
+      {
+        "symbol": "gamma",
+        "name_zh": "绝大比热比",
+        "name_en": "specific heat ratio",
+        "unit": "dimensionless",
+        "source_of_value": "STANDARD NOTE 给定 1.30（仅在 800°F (430°C) 以上成立）"
+      }
+    ],
+    "domain": "TEST",
+    "tags": [
+      "超临界",
+      "外推",
+      "特性比容积",
+      "安全阀",
+      "PG-69.2.3",
+      "蓝形图"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 (p.105 超临界外推式与 NOTE)",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "For pressures over 3,200 psig (22.1 MPa), the value of W shall be multiplied by the appropriate supercritical correction. (U.S. Customary Units) W = 1,135.8 (0.90/51.45) × (dW/dP) √(P/v) (SI Units) W = 1 135.8 (0.95/5.25) × (dW/dP) √(P/v) where dW/dP = rate of change of measured capacity with respect to absolute pressure; P = absolute inlet pressure, psia (MPa); v = inlet specific volume, ft3/lb (m3/kg); W = capacity, lb of steam/hr (kg/hr). NOTE: The constant 1,135.8 is based on a γ factor of 1.30, which is accurate for superheated steam at temperature above approximately 800°F (430°C). In interest of accuracy, other methods of capacity computations must be used at temperatures below 800°F (430°C) at supercritical pressures.",
+      "locator": "kb/_evidence/ASME-BPVC-I_p105_raster.png (PDF p.105 右栏外推式、where 变量定义与 NOTE 区)",
+      "extraction_note": "【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。 SI 版常数写作「1 135.8」（空格千分位，小数点保留），US 版写作「1,135.8」（逗号千分位）——同一个数。此同页排印风格也是判定 p.104 的「5 092」为漏排小数点（实为 5.092）的依据之一：空格千分位处小数点一律保留。",
+      "cross_refs": [
+        "F-TEST-003",
+        "F-TEST-004",
+        "F-TEST-006",
+        "P-TEST-013",
+        "P-TEST-015",
+        "P-TEST-016",
+        "P-TEST-017",
+        "P-TEST-018",
+        "P-TEST-019"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "入口绝对压力超过 3,200 psig (22.1 MPa)",
+        "流体为过热蒸汽，且温度高于约 800°F (430°C)",
+        "已有容量-绝对压力的实测数据（以提供 dW/dP）"
+      ],
+      "not_valid_when": [
+        "温度低于约 800°F (430°C) 的超临界工况——原文明确要求改用其他容量计算方法",
+        "压力在 1,500~3,200 psig 区间——那里用 F-TEST-004 修正因子",
+        "没有实测容量-压力曲线时直接使用（dW/dP 无来源）"
+      ],
+      "range_limits": [
+        "P > 3,200 psig (22.1 MPa)",
+        "温度 > 约 800°F (430°C)"
+      ],
+      "conservatism": "1,135.8 常数依赖 γ = 1.30，只对 800°F (430°C) 以上的过热蒸汽成立；低温下直接套用会高估或错误。",
+      "must_pair_with": [
+        "F-TEST-006"
+      ]
+    },
+    "usage": {
+      "where": [
+        "超临界压力下的安全阀容量确定",
+        "已有实测容量数据时向更高压力外推"
+      ],
+      "how": "1. 由 set pressure 按 F-TEST-006 算出 P，确认 P > 3,200 psig；2. 由实测容量-绝对压力曲线得到 dW/dP；3. 取入口特定比体积 ν；4. 选 US 或 SI 常数组（US 0.90/51.45，SI 0.95/5.25）；5. 算 W；6. 回查温度是否高于 800°F (430°C)。",
+      "step_order": [
+        "1. 算 P（F-TEST-006）并判定超临界区间",
+        "2. 由实测数据求 dW/dP",
+        "3. 取入口特定比体积",
+        "4. 选定单位组常数",
+        "5. 算 W",
+        "6. 温度适用性回查"
+      ],
+      "output_used_by": [],
+      "sample": {
+        "inputs": {
+          "set_pressure_psi": 4000.0,
+          "dW_dP_lb_hr_per_psi": 2.0,
+          "nu_ft3_per_lb": 0.35
+        },
+        "result": "P = max(1.03×4000 + 14.7, 4000 + 2 + 14.7) = 4134.7 psia > 3,200 psig，超临界区间；W = 1135.8 × (0.90/51.45) × 2.0 × √(4134.7/0.35) = 1135.8 × 0.017493 × 2.0 × 108.69 = 4320 lb/hr",
+        "source_of_inputs": "合成示例数据（合成数据，非本项目阀门）"
+      },
+      "pitfalls": [
+        "在低于 800°F (430°C) 的超临界工况直接套用",
+        "US/SI 常数组混用（US 0.90/51.45，SI 0.95/5.25，两者不是单位换算）",
+        "dW/dP 拟合区间选错（应在区间内拟合，不在区间外外推）",
+        "把 1,135.8 当成可调的经验常数（它依赖 γ = 1.30）"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（纯扫描位图逐字核对 + djvu 文本层交叉比对）",
+      "note": "US/SI 两版外推式、四个变量定义、NOTE 全文均已按纯位图逐字核对；算例复算自洽。无实物试验数据，故不到 E2。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀认证需求。本条为标准资产沉淀/未来复用。"
+      }
+    ],
+    "related": [
+      "F-TEST-003",
+      "F-TEST-004",
+      "F-TEST-006",
+      "P-TEST-013",
+      "P-TEST-015",
+      "P-TEST-016",
+      "P-TEST-017",
+      "P-TEST-018",
+      "P-TEST-019"
+    ]
+  },
+  {
+    "id": "F-TEST-006",
+    "title_zh": "理论流量计算中 P 的定义式（绝对入口压力）",
+    "title_en": "Definition of P (Absolute Inlet Pressure) for Theoretical Flow",
+    "aliases": [
+      "P 的定义",
+      "1.03 × set pressure",
+      "whichever is greater",
+      "14.7 psia",
+      "0.101 MPa",
+      "0.014 MPa",
+      "PG-69.2.3"
+    ],
+    "expression": {
+      "canonical": "P = max(1.03 * set_pressure + 14.7, set_pressure + 2 + 14.7)",
+      "display": "P = (1.03 × set pressure + 14.7), psia, or = (set pressure + 2 + 14.7), psia, whichever is greater\nP = (1.03 × set pressure + 0.101), MPa, or = (set pressure + 0.014 + 0.101), MPa, whichever is greater",
+      "latex": "P = \\max\\left(1.03\\,p_{set} + 14.7,\\; p_{set} + 2 + 14.7\\right)\\ \\text{psia}\\qquadP = \\max\\left(1.03\\,p_{set} + 0.101,\\; p_{set} + 0.014 + 0.101\\right)\\ \\text{MPa}",
+      "rearranged_forms": [
+        "P = max(1.03 * set_pressure + 0.101, set_pressure + 0.014 + 0.101)",
+        "P = 1.03 * set_pressure + 14.7",
+        "P = set_pressure + 2 + 14.7",
+        "set_pressure = (P - 14.7) / 1.03"
+      ],
+      "solved_for": "P"
+    },
+    "variables": [
+      {
+        "symbol": "P",
+        "name_zh": "论理流量计算用的绝对入口压力",
+        "name_en": "absolute inlet pressure",
+        "unit": "psia (MPa)",
+        "source_of_value": "DERIVED 由 set pressure 换算（本式）"
+      },
+      {
+        "symbol": "set_pressure",
+        "name_zh": "设定压力（整定压力）",
+        "name_en": "set pressure",
+        "unit": "psig (MPa)",
+        "source_of_value": "DRAWING 整定压力标注"
+      }
+    ],
+    "domain": "TEST",
+    "tags": [
+      "P 定义",
+      "绝对压力",
+      "set pressure",
+      "安全阀",
+      "PG-69.2.3",
+      "蓝形图"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 where（P 的定义）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "P = (1.03 × set pressure + 14.7), psia, or = (set pressure + 2 + 14.7), psia, whichever is greater; = (1.03 × set pressure + 0.101), MPa, or = (set pressure + 0.014 + 0.101), MPa, whichever is greater",
+      "locator": "kb/_evidence/ASME-BPVC-I_p104_raster.png (PDF p.104 右栏 where 变量定义段)",
+      "extraction_note": "【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。 ★ ASME 原文自身的不一致：PG-69.2.3 的 P 定义用 2 psi / 0.014 MPa，而同页 PG-69.2.2 的 rated slope 用 set pressure + 0.015 MPa + 0.101。2 psi = 0.01379 MPa（PG-69.2.3 的 0.014 是进位），0.015 MPa = 2.16 psi，与 2 psi 并不等价。本条按原文照录，不自行修正；用使时必须明确用哪个口径。",
+      "cross_refs": [
+        "F-TEST-001",
+        "F-TEST-002",
+        "F-TEST-003",
+        "F-TEST-004",
+        "F-TEST-005",
+        "P-TEST-027",
+        "P-TEST-028",
+        "P-TEST-029"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "按 PG-69.2.3 流量系数法计算论理流量 W_T 时取 P",
+        "需要把 set pressure（表压）换算成绝对压力时"
+      ],
+      "not_valid_when": [
+        "PG-69.2.2 额定泄放能力斜率口径——那里用 set pressure + 0.015 MPa + 0.101（与本条的 0.014 MPa 不一致）",
+        "把 psig 当绝对压力直接代入",
+        "以为 0.014 MPa 与 2 psi 严格等价（实为 0.01379 MPa）"
+      ],
+      "range_limits": [
+        "P 取两个式子中的较大者"
+      ],
+      "conservatism": "1.03 倍整定压力再加大气压加容量进度，是标准的安全侧保守取值；两个式子取大者保证不会因为采用口径不同而低估泄放能力。",
+      "must_pair_with": [
+        "F-TEST-001",
+        "F-TEST-002"
+      ]
+    },
+    "usage": {
+      "where": [
+        "PG-69.2.3 计算理论流量 W_T 时的压力代入",
+        "超临界修正因子与外推式的 P 取值"
+      ],
+      "how": "1. 取 set pressure（表压）；2. 算两个候选值：1.03×set_pressure + 14.7 与 set_pressure + 2 + 14.7；3. 取大者得 P（psia）；SI 口径把 14.7 换 0.101、2 换 0.014）；4. 把 P 代入 F-TEST-001/002（理论流量）、F-TEST-004（修正因子）或 F-TEST-005（外推式）。",
+      "step_order": [
+        "1. 取 set pressure",
+        "2. 算两个候选 P 值",
+        "3. 取大者",
+        "4. 代入对应公式"
+      ],
+      "output_used_by": [
+        "F-TEST-001",
+        "F-TEST-002",
+        "F-TEST-004",
+        "F-TEST-005"
+      ],
+      "sample": {
+        "inputs": {
+          "set_pressure_psig": 150.0
+        },
+        "result": "候选 1 = 1.03×150 + 14.7 = 169.2 psia；候选 2 = 150 + 2 + 14.7 = 166.7 psia；P = max(169.2, 166.7) = 169.2 psia",
+        "source_of_inputs": "合成示例数据（合成数据，非本项目阀门）"
+      },
+      "pitfalls": [
+        "混用 PG-69.2.2 的 0.015 MPa 与 PG-69.2.3 的 0.014 MPa",
+        "将 set pressure 的表压与绝对压力混淆",
+        "只取其中一个式子而不取大者"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（纯扫描位图逐字核对 + djvu 文本层交叉比对）",
+      "note": "P 定义式的 US/SI 两版已按纯位图逐字核对；与 PG-69.2.2 的 0.015 MPa 不一致已就是原文事实，已在 extraction_note 中标注。算例复算自洽。无实物试验数据，故不到 E2。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀认证需求。本条为标准资产沉淀/未来复用。"
+      }
+    ],
+    "related": [
+      "F-TEST-001",
+      "F-TEST-002",
+      "F-TEST-003",
+      "F-TEST-004",
+      "F-TEST-005",
+      "P-TEST-027",
+      "P-TEST-028",
+      "P-TEST-029"
+    ]
+  },
   {
     "id": "F-STR-004",
     "title_zh": "厚壁圆筒所需壁厚（A-125）",
     "title_en": "Required Thickness of Thick Shells for Internal Pressure (A-125)",
-    "aliases": ["厚壁", "A-125", "Z1", "厚壁容器壁厚", "thick shell", "t 大于半内半径"],
+    "aliases": [
+      "厚壁",
+      "A-125",
+      "Z1",
+      "厚壁容器壁厚",
+      "thick shell",
+      "t 大于半内半径"
+    ],
     "expression": {
       "canonical": "t = (sqrt(Z_1) - 1) * R",
       "display": "t = (√Z₁ − 1)·R = ((√Z₁ − 1)/√Z₁)·R₀",
@@ -395,26 +1178,87 @@
       "solved_for": "t"
     },
     "variables": [
-      {"symbol": "t", "name_zh": "最弱圈节壳板最小厚度", "name_en": "minimum thickness of shell plates in weakest course", "unit": "in. (mm)", "source_of_value": "DERIVED"},
-      {"symbol": "Z_1", "name_zh": "厚壁几何系数（压力侧）", "name_en": "thick-shell geometric factor", "unit": "dimensionless", "source_of_value": "DERIVED 由 F-STR-005 配套式"},
-      {"symbol": "R", "name_zh": "最弱圈节内半径", "name_en": "inside radius of the weakest course of the shell", "unit": "in. (mm)", "source_of_value": "DRAWING"},
-      {"symbol": "R_0", "name_zh": "最弱圈节外半径", "name_en": "outside radius of the weakest course of the shell", "unit": "in. (mm)", "source_of_value": "DERIVED = R + t"},
-      {"symbol": "S", "name_zh": "最大许用工作应力", "name_en": "maximum allowable working unit stress", "unit": "psi (MPa)", "source_of_value": "STANDARD Section II Part D Table IA"},
-      {"symbol": "E", "name_zh": "接头效率", "name_en": "joint efficiency", "unit": "dimensionless", "source_of_value": "STANDARD", "note": "无缝无韧带开孔 E=1.0；有韧带取 PG-52/PG-53 韧带效率；纵焊缝取 PG-26 焊缝强度折减系数 w"},
-      {"symbol": "P", "name_zh": "最大许用工作压力", "name_en": "maximum allowable working pressure", "unit": "psi (MPa)", "source_of_value": "DRAWING 或 STANDARD"},
-      {"symbol": "w", "name_zh": "焊缝强度折减系数", "name_en": "weld joint strength reduction factor", "unit": "dimensionless", "source_of_value": "STANDARD PG-26"}
+      {
+        "symbol": "t",
+        "name_zh": "最弱圈节壳板最小厚度",
+        "name_en": "minimum thickness of shell plates in weakest course",
+        "unit": "in. (mm)",
+        "source_of_value": "DERIVED"
+      },
+      {
+        "symbol": "Z_1",
+        "name_zh": "厚壁几何系数（压力侧）",
+        "name_en": "thick-shell geometric factor",
+        "unit": "dimensionless",
+        "source_of_value": "DERIVED 由 F-STR-005 配套式"
+      },
+      {
+        "symbol": "R",
+        "name_zh": "最弱圈节内半径",
+        "name_en": "inside radius of the weakest course of the shell",
+        "unit": "in. (mm)",
+        "source_of_value": "DRAWING"
+      },
+      {
+        "symbol": "R_0",
+        "name_zh": "最弱圈节外半径",
+        "name_en": "outside radius of the weakest course of the shell",
+        "unit": "in. (mm)",
+        "source_of_value": "DERIVED = R + t"
+      },
+      {
+        "symbol": "S",
+        "name_zh": "最大许用工作应力",
+        "name_en": "maximum allowable working unit stress",
+        "unit": "psi (MPa)",
+        "source_of_value": "STANDARD Section II Part D Table IA"
+      },
+      {
+        "symbol": "E",
+        "name_zh": "接头效率",
+        "name_en": "joint efficiency",
+        "unit": "dimensionless",
+        "source_of_value": "STANDARD",
+        "note": "无缝无韧带开孔 E=1.0；有韧带取 PG-52/PG-53 韧带效率；纵焊缝取 PG-26 焊缝强度折减系数 w"
+      },
+      {
+        "symbol": "P",
+        "name_zh": "最大许用工作压力",
+        "name_en": "maximum allowable working pressure",
+        "unit": "psi (MPa)",
+        "source_of_value": "DRAWING 或 STANDARD"
+      },
+      {
+        "symbol": "w",
+        "name_zh": "焊缝强度折减系数",
+        "name_en": "weld joint strength reduction factor",
+        "unit": "dimensionless",
+        "source_of_value": "STANDARD PG-26"
+      }
     ],
     "domain": "STRUCT",
-    "tags": ["厚壁", "A-125", "壁厚", "Z1", "Z2", "锅炉", "BPVC-I"],
+    "tags": [
+      "厚壁",
+      "A-125",
+      "壁厚",
+      "Z1",
+      "Z2",
+      "锅炉",
+      "BPVC-I"
+    ],
     "source": {
       "standard_id": "ASME BPVC Section I-2010",
       "clause": "A-125 (Maximum Allowable Working Pressures — Thick Shells for Internal Pressure)，经 PG-27.2.3 引用",
       "body_status": "FULL_TEXT_MIRROR",
       "evidence_grade": "E1",
       "snippet": "When the thickness of the shell exceeds one-half of the inside radius, the required thickness and maximum allowable working pressure on the cylindrical shell of a boiler or drum shall be determined by the following equations: t = (√Z₁ − 1) R = ((√Z₁ − 1)/√Z₁) R₀ or P = SE (Z₂ − 1)/(Z₂ + 1)",
-      "locator": "runs/probe/bpvc_p241_t_eq.png (300dpi, PDF p.241) 与 bpvc_p241_thickshells.png (260dpi); 段落标题 runs/ASME-BPVC-I/bpvc_i_djvu.txt L49419-L49421; 符号表 L49490-L49493; PG-27.2.3 引用 L10454",
-      "extraction_note": "★ 条款号在 PDF 文本层完全失效：djvu 中 Z1/Z2 只剩噪声 '<ZZZZZZZZZ2'，条款号 'A-125' 是从 djvu L49419-L49421 的标题行 'MAXIMUM ALLOWABLE WORKING PRESSURES — THICK SHELLS FOR INTERNAL PRESSURE' 与其后的 'A-125' 定位，再由 p241 渲染图确认。djvu 文本层的公式退化为 't = (>/Z, \\)R'、'P = 5£ | 2 Z 9 + 1'、'Z, = (SE + P) I (SE -P)'、'Z 2 = [(R + t)!R] 2 = (R !Kf'，本条 snippet 已按 300dpi 图像逐字校正。PG-27.2.2 的限制同样适用于本段（NOTE 原文见 p241 图像）。",
-      "cross_refs": ["F-STR-005", "F-STR-003", "F-MAT-001"]
+      "locator": "kb/_evidence/ASME-BPVC-I_p241_raster.png (PDF p.241 纯扫描位图); 段落标题 runs/ASME-BPVC-I/bpvc_i_djvu.txt L49419-L49421; 符号表 L49490-L49493",
+      "extraction_note": "★ 条款号在 PDF 文本层完全失效：djvu 中 Z1/Z2 只剩噪声 '<ZZZZZZZZZ2'，条款号 'A-125' 是从 djvu L49419-L49421 的标题行 'MAXIMUM ALLOWABLE WORKING PRESSURES — THICK SHELLS FOR INTERNAL PRESSURE' 与其后的 'A-125' 定位，再由 p241 渲染图确认。djvu 文本层的公式退化为 't = (>/Z, \\)R'、'P = 5£ | 2 Z 9 + 1'、'Z, = (SE + P) I (SE -P)'、'Z 2 = [(R + t)!R] 2 = (R !Kf'，本条 snippet 已按 300dpi 图像逐字校正。PG-27.2.2 的限制同样适用于本段（NOTE 原文见 p241 图像）。 【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "F-STR-005",
+        "F-STR-003",
+        "F-MAT-001"
+      ]
     },
     "applicability": {
       "valid_when": [
@@ -428,9 +1272,14 @@
         "非圆筒形受压件",
         "把 A-125 直接套到 Section VIII-1（变量名与限值体系不同）"
       ],
-      "range_limits": ["启用条件 t > R/2", "设计温度 ≤ 374.1°C（PG-27.2.3）"],
+      "range_limits": [
+        "启用条件 t > R/2",
+        "设计温度 ≤ 374.1°C（PG-27.2.3）"
+      ],
       "conservatism": "Lame 弹性解本身不含应力集中与制造偏差；E 的取值已把焊缝/韧带效率折减进去。",
-      "must_pair_with": ["F-STR-005"]
+      "must_pair_with": [
+        "F-STR-005"
+      ]
     },
     "usage": {
       "where": [
@@ -446,9 +1295,16 @@
         "4. t = (√Z₁ − 1)·R（或由 t 反求 R₀）",
         "5. 校核 P 与 t 是否自洽（见 F-STR-005）"
       ],
-      "output_used_by": ["F-STR-005"],
+      "output_used_by": [
+        "F-STR-005"
+      ],
       "sample": {
-        "inputs": {"S_psi": 17500, "E": 1.0, "P_psi": 10000, "R_in": 12.0},
+        "inputs": {
+          "S_psi": 17500,
+          "E": 1.0,
+          "P_psi": 10000,
+          "R_in": 12.0
+        },
         "result": "Z₁ = (17500×1 + 10000)/(17500×1 − 10000) = 3.6667；t = (√3.6667 − 1)×12 = 10.978 in；R₀ = 22.978 in；t/R = 0.915 > 0.5，确属厚壁，A-125 适用",
         "source_of_inputs": "合成示例（S、E、P 为演示值，非本项目材料/工况）"
       },
@@ -462,21 +1318,35 @@
     "evidence": {
       "grade": "E1",
       "status": "VERIFIED_CLAUSE",
-      "verified_on": "2026-10-25",
+      "verified_on": "2026-10-22",
       "verified_by": "standards_kb（djvu 标题行定位 + 300dpi 图像核读 + 算例复算自洽）",
       "note": "公式形式与符号表已按渲染图逐字核对；算例自洽（Z₂ = Z₁ 时 P 反算回 10,000 psi ✓）。无实物压力试验数据，故不到 E2。"
     },
     "project_usage": [
-      {"task": "N/A", "status": "不适用", "note": "本项目为青铜止回-截止阀（PN6 / DN200），壁厚远未达 t > R/2，且非锅炉汽包。本条为标准资产沉淀/未来复用。"}
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目为青铜止回-截止阀（PN6 / DN200），壁厚远未达 t > R/2，且非锅炉汽包。本条为标准资产沉淀/未来复用。"
+      }
     ],
-    "related": ["F-STR-005", "F-STR-003", "F-MAT-001"]
+    "related": [
+      "F-STR-005",
+      "F-STR-003",
+      "F-MAT-001"
+    ]
   },
-
   {
     "id": "F-STR-005",
     "title_zh": "厚壁圆筒许用内压（A-125）",
     "title_en": "Maximum Allowable Internal Pressure of Thick Shells (A-125)",
-    "aliases": ["许用内压", "A-125", "Z2", "厚壁容器压力", "MAWP 厚壁", "P = SE(Z2-1)/(Z2+1)"],
+    "aliases": [
+      "许用内压",
+      "A-125",
+      "Z2",
+      "厚壁容器压力",
+      "MAWP 厚壁",
+      "P = SE(Z2-1)/(Z2+1)"
+    ],
     "expression": {
       "canonical": "P = S*E*(Z_2 - 1) / (Z_2 + 1)",
       "display": "P = S·E·(Z₂ − 1)/(Z₂ + 1)",
@@ -489,26 +1359,87 @@
       "solved_for": "P"
     },
     "variables": [
-      {"symbol": "P", "name_zh": "最大许用工作压力", "name_en": "maximum allowable working pressure", "unit": "psi (MPa)", "source_of_value": "DERIVED"},
-      {"symbol": "S", "name_zh": "最大许用工作应力", "name_en": "maximum allowable working unit stress", "unit": "psi (MPa)", "source_of_value": "STANDARD Section II Part D Table IA"},
-      {"symbol": "E", "name_zh": "接头效率", "name_en": "joint efficiency", "unit": "dimensionless", "source_of_value": "STANDARD", "note": "无缝无韧带开孔 E=1.0；韧带按 PG-52/PG-53；纵焊缝按 PG-26 取 w；纵焊缝被韧带开孔穿透时取 w × 韧带效率"},
-      {"symbol": "Z_2", "name_zh": "厚壁几何系数（外半径）", "name_en": "thick-shell geometric factor (outside)", "unit": "dimensionless", "source_of_value": "DERIVED 由 R、R₀、t 导出"},
-      {"symbol": "Z_1", "name_zh": "厚壁几何系数（内半径）", "name_en": "thick-shell geometric factor (inside)", "unit": "dimensionless", "source_of_value": "DERIVED"},
-      {"symbol": "R", "name_zh": "最弱圈节内半径", "name_en": "inside radius of the weakest course of the shell", "unit": "in. (mm)", "source_of_value": "DRAWING"},
-      {"symbol": "R_0", "name_zh": "最弱圈节外半径", "name_en": "outside radius of the weakest course of the shell", "unit": "in. (mm)", "source_of_value": "DRAWING 或 DERIVED = R + t"},
-      {"symbol": "t", "name_zh": "最弱圈节壳板最小厚度", "name_en": "minimum thickness of shell plates in weakest course", "unit": "in. (mm)", "source_of_value": "DRAWING"}
+      {
+        "symbol": "P",
+        "name_zh": "最大许用工作压力",
+        "name_en": "maximum allowable working pressure",
+        "unit": "psi (MPa)",
+        "source_of_value": "DERIVED"
+      },
+      {
+        "symbol": "S",
+        "name_zh": "最大许用工作应力",
+        "name_en": "maximum allowable working unit stress",
+        "unit": "psi (MPa)",
+        "source_of_value": "STANDARD Section II Part D Table IA"
+      },
+      {
+        "symbol": "E",
+        "name_zh": "接头效率",
+        "name_en": "joint efficiency",
+        "unit": "dimensionless",
+        "source_of_value": "STANDARD",
+        "note": "无缝无韧带开孔 E=1.0；韧带按 PG-52/PG-53；纵焊缝按 PG-26 取 w；纵焊缝被韧带开孔穿透时取 w × 韧带效率"
+      },
+      {
+        "symbol": "Z_2",
+        "name_zh": "厚壁几何系数（外半径）",
+        "name_en": "thick-shell geometric factor (outside)",
+        "unit": "dimensionless",
+        "source_of_value": "DERIVED 由 R、R₀、t 导出"
+      },
+      {
+        "symbol": "Z_1",
+        "name_zh": "厚壁几何系数（内半径）",
+        "name_en": "thick-shell geometric factor (inside)",
+        "unit": "dimensionless",
+        "source_of_value": "DERIVED"
+      },
+      {
+        "symbol": "R",
+        "name_zh": "最弱圈节内半径",
+        "name_en": "inside radius of the weakest course of the shell",
+        "unit": "in. (mm)",
+        "source_of_value": "DRAWING"
+      },
+      {
+        "symbol": "R_0",
+        "name_zh": "最弱圈节外半径",
+        "name_en": "outside radius of the weakest course of the shell",
+        "unit": "in. (mm)",
+        "source_of_value": "DRAWING 或 DERIVED = R + t"
+      },
+      {
+        "symbol": "t",
+        "name_zh": "最弱圈节壳板最小厚度",
+        "name_en": "minimum thickness of shell plates in weakest course",
+        "unit": "in. (mm)",
+        "source_of_value": "DRAWING"
+      }
     ],
     "domain": "STRUCT",
-    "tags": ["厚壁", "A-125", "许用压力", "Z2", "MAWP", "锅炉", "BPVC-I"],
+    "tags": [
+      "厚壁",
+      "A-125",
+      "许用压力",
+      "Z2",
+      "MAWP",
+      "锅炉",
+      "BPVC-I"
+    ],
     "source": {
       "standard_id": "ASME BPVC Section I-2010",
       "clause": "A-125 (Maximum Allowable Working Pressures — Thick Shells for Internal Pressure)，经 PG-27.2.3 引用",
       "body_status": "FULL_TEXT_MIRROR",
       "evidence_grade": "E1",
       "snippet": "P = SE (Z₂ − 1)/(Z₂ + 1) where Z₁ = (SE + P)/(SE − P); Z₂ = [(R + t)/R]² = (R₀/R)². NOTE: Restrictions of PG-27.2.2 also apply to this paragraph.",
-      "locator": "runs/probe/bpvc_p241_thickshells.png (260dpi) 与 bpvc_p241_z1z2.png (PDF p.241); 符号表 runs/ASME-BPVC-I/bpvc_i_djvu.txt L49440-L49493; PG-27.2.2 见 djvu L10412",
-      "extraction_note": "djvu 文本层公式完全退化：'P = 5£ | 2 Z 9 + 1'、'Z, = (SE + P) I (SE -P)'、'Z 2 = [(R + t)!R] 2 = (R !Kf'；变量定义中两个半径都印作 R（内/外靠上标区分），文本层无法区分 R 与 R₀，本条按 p241 图像（bpvc_p241_z1z2.png 明确印出 R₀）判定为 R₀。E 的三种取值在 djvu L49440-L49460 有完整文字。",
-      "cross_refs": ["F-STR-004", "F-STR-003", "F-MAT-001"]
+      "locator": "kb/_evidence/ASME-BPVC-I_p241_raster.png (PDF p.241 纯扫描位图); 符号表 runs/ASME-BPVC-I/bpvc_i_djvu.txt L49440-L49493",
+      "extraction_note": "djvu 文本层公式完全退化：'P = 5£ | 2 Z 9 + 1'、'Z, = (SE + P) I (SE -P)'、'Z 2 = [(R + t)!R] 2 = (R !Kf'；变量定义中两个半径都印作 R（内/外靠上标区分），文本层无法区分 R 与 R₀，本条按 p241 图像（bpvc_p241_z1z2.png 明确印出 R₀）判定为 R₀。E 的三种取值在 djvu L49440-L49460 有完整文字。 【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "F-STR-004",
+        "F-STR-003",
+        "F-MAT-001"
+      ]
     },
     "applicability": {
       "valid_when": [
@@ -522,9 +1453,15 @@
         "把 A-125 的变量体系搬到 Section VIII-1",
         "忽略 PG-27.2.2 的限制（该限制同时适用于 A-125 段，原文 NOTE 明示）"
       ],
-      "range_limits": ["启用条件 t > R/2", "设计温度 ≤ 374.1°C", "E ≤ 1.0"],
+      "range_limits": [
+        "启用条件 t > R/2",
+        "设计温度 ≤ 374.1°C",
+        "E ≤ 1.0"
+      ],
       "conservatism": "E 已折减焊缝与韧带效率；P 为许用工作压力而非设计压力，设计时还要按设计压力/许用压力的比值另加裕量。",
-      "must_pair_with": ["F-STR-004"]
+      "must_pair_with": [
+        "F-STR-004"
+      ]
     },
     "usage": {
       "where": [
@@ -540,9 +1477,16 @@
         "4. P = S·E·(Z₂−1)/(Z₂+1)",
         "5. 与 F-STR-004 联立校核壁厚是否满足"
       ],
-      "output_used_by": ["F-STR-004"],
+      "output_used_by": [
+        "F-STR-004"
+      ],
       "sample": {
-        "inputs": {"S_psi": 17500, "E": 1.0, "R_in": 12.0, "t_in": 10.978},
+        "inputs": {
+          "S_psi": 17500,
+          "E": 1.0,
+          "R_in": 12.0,
+          "t_in": 10.978
+        },
         "result": "R₀ = 22.978 in；Z₂ = (22.978/12)² = 3.6667；P = 17500×1×(3.6667−1)/(3.6667+1) = 10,000 psi（与给定的 P 自洽 ✓）",
         "source_of_inputs": "合成示例（S、E、R、t 为演示值，非本项目材料/工况）"
       },
@@ -556,21 +1500,37 @@
     "evidence": {
       "grade": "E1",
       "status": "VERIFIED_CLAUSE",
-      "verified_on": "2026-10-25",
+      "verified_on": "2026-10-22",
       "verified_by": "standards_kb（djvu 文本层 + 260dpi/300dpi 图像核读 + 算例闭合自洽）",
       "note": "公式、符号表、E 的三种取值、NOTE 均已按原文逐字核对；算例与 F-STR-004 互为逆运算且闭合自洽。无实物压力试验数据，故不到 E2。"
     },
     "project_usage": [
-      {"task": "N/A", "status": "不适用", "note": "本项目为青铜止回-截止阀（PN6 / DN200），非锅炉压力容器，壁厚不满足 t > R/2。本条为标准资产沉淀/未来复用。"}
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目为青铜止回-截止阀（PN6 / DN200），非锅炉压力容器，壁厚不满足 t > R/2。本条为标准资产沉淀/未来复用。"
+      }
     ],
-    "related": ["F-STR-004", "F-STR-003", "F-MAT-001"]
+    "related": [
+      "F-STR-004",
+      "F-STR-003",
+      "F-MAT-001"
+    ]
   },
-
   {
     "id": "F-STR-006",
     "title_zh": "开孔间净截面积要求（PG-38.4 / Fig. PG-38）",
     "title_en": "Net Cross-Sectional Area Between Openings (PG-38.4)",
-    "aliases": ["开孔间距", "净截面积", "PG-38.4", "nar", "nav", "nan", "多开孔校核", "Fig PG-38"],
+    "aliases": [
+      "开孔间距",
+      "净截面积",
+      "PG-38.4",
+      "nar",
+      "nav",
+      "nan",
+      "多开孔校核",
+      "Fig PG-38"
+    ],
     "expression": {
       "canonical": "nar = 0.7 * F * t * D",
       "display": "nar = 0.7·F·t·D   （所需净截面积）\nnav = [D − 0.5(dl₁ + dl₂)]·t   （壳体提供的净截面积）\nnan = t_n1·W_d1 + t_n1·W_d2 + t_n2·W_d3 + t_n2·W_d4   （接管壁提供的净截面积）\n判据：nav + nan ≥ nar",
@@ -583,32 +1543,128 @@
       "solved_for": "nar"
     },
     "variables": [
-      {"symbol": "nar", "name_zh": "两开孔之间所需净截面积", "name_en": "net area required between openings", "unit": "in^2 (mm^2)", "source_of_value": "DERIVED"},
-      {"symbol": "nav", "name_zh": "壳体壁提供的净截面积", "name_en": "net area provided in vessel wall", "unit": "in^2 (mm^2)", "source_of_value": "DERIVED"},
-      {"symbol": "nan", "name_zh": "熔合到壳体的接管壁提供的净截面积", "name_en": "net area provided in nozzle wall fused to vessel wall", "unit": "in^2 (mm^2)", "source_of_value": "DERIVED"},
-      {"symbol": "F", "name_zh": "平面方向系数（Fig. PG-33.3）", "name_en": "plane factor per Fig. PG-33.3", "unit": "dimensionless", "typical_range": "纵向平面 1.0；周向平面 0.5~0.88", "source_of_value": "STANDARD Fig. PG-33.3"},
-      {"symbol": "t", "name_zh": "无缝壳体所需厚度", "name_en": "required thickness of a seamless shell", "unit": "in. (mm)", "source_of_value": "STANDARD 壁厚计算"},
-      {"symbol": "D", "name_zh": "开孔中心距", "name_en": "center-to-center distance of the openings", "unit": "in. (mm)", "source_of_value": "DRAWING"},
-      {"symbol": "dl_1", "name_zh": "开孔 1 直径", "name_en": "diameter of opening 1", "unit": "in. (mm)", "source_of_value": "DRAWING"},
-      {"symbol": "dl_2", "name_zh": "开孔 2 直径", "name_en": "diameter of opening 2", "unit": "in. (mm)", "source_of_value": "DRAWING"},
-      {"symbol": "t_n1", "name_zh": "接管 1 壁厚", "name_en": "nozzle 1 wall thickness", "unit": "in. (mm)", "source_of_value": "DRAWING"},
-      {"symbol": "t_n2", "name_zh": "接管 2 壁厚", "name_en": "nozzle 2 wall thickness", "unit": "in. (mm)", "source_of_value": "DRAWING"},
-      {"symbol": "W_d1", "name_zh": "接管 1 焊缝尺寸", "name_en": "nozzle 1 weld size", "unit": "in. (mm)", "source_of_value": "DRAWING"},
-      {"symbol": "W_d2", "name_zh": "接管 2 焊缝尺寸", "name_en": "nozzle 2 weld size", "unit": "in. (mm)", "source_of_value": "DRAWING"},
-      {"symbol": "W_d3", "name_zh": "接管 3 焊缝尺寸", "name_en": "nozzle 3 weld size", "unit": "in. (mm)", "source_of_value": "DRAWING"},
-      {"symbol": "W_d4", "name_zh": "接管 4 焊缝尺寸", "name_en": "nozzle 4 weld size", "unit": "in. (mm)", "source_of_value": "DRAWING"}
+      {
+        "symbol": "nar",
+        "name_zh": "两开孔之间所需净截面积",
+        "name_en": "net area required between openings",
+        "unit": "in^2 (mm^2)",
+        "source_of_value": "DERIVED"
+      },
+      {
+        "symbol": "nav",
+        "name_zh": "壳体壁提供的净截面积",
+        "name_en": "net area provided in vessel wall",
+        "unit": "in^2 (mm^2)",
+        "source_of_value": "DERIVED"
+      },
+      {
+        "symbol": "nan",
+        "name_zh": "熔合到壳体的接管壁提供的净截面积",
+        "name_en": "net area provided in nozzle wall fused to vessel wall",
+        "unit": "in^2 (mm^2)",
+        "source_of_value": "DERIVED"
+      },
+      {
+        "symbol": "F",
+        "name_zh": "平面方向系数（Fig. PG-33.3）",
+        "name_en": "plane factor per Fig. PG-33.3",
+        "unit": "dimensionless",
+        "typical_range": "纵向平面 1.0；周向平面 0.5~0.88",
+        "source_of_value": "STANDARD Fig. PG-33.3"
+      },
+      {
+        "symbol": "t",
+        "name_zh": "无缝壳体所需厚度",
+        "name_en": "required thickness of a seamless shell",
+        "unit": "in. (mm)",
+        "source_of_value": "STANDARD 壁厚计算"
+      },
+      {
+        "symbol": "D",
+        "name_zh": "开孔中心距",
+        "name_en": "center-to-center distance of the openings",
+        "unit": "in. (mm)",
+        "source_of_value": "DRAWING"
+      },
+      {
+        "symbol": "dl_1",
+        "name_zh": "开孔 1 直径",
+        "name_en": "diameter of opening 1",
+        "unit": "in. (mm)",
+        "source_of_value": "DRAWING"
+      },
+      {
+        "symbol": "dl_2",
+        "name_zh": "开孔 2 直径",
+        "name_en": "diameter of opening 2",
+        "unit": "in. (mm)",
+        "source_of_value": "DRAWING"
+      },
+      {
+        "symbol": "t_n1",
+        "name_zh": "接管 1 壁厚",
+        "name_en": "nozzle 1 wall thickness",
+        "unit": "in. (mm)",
+        "source_of_value": "DRAWING"
+      },
+      {
+        "symbol": "t_n2",
+        "name_zh": "接管 2 壁厚",
+        "name_en": "nozzle 2 wall thickness",
+        "unit": "in. (mm)",
+        "source_of_value": "DRAWING"
+      },
+      {
+        "symbol": "W_d1",
+        "name_zh": "接管 1 焊缝尺寸",
+        "name_en": "nozzle 1 weld size",
+        "unit": "in. (mm)",
+        "source_of_value": "DRAWING"
+      },
+      {
+        "symbol": "W_d2",
+        "name_zh": "接管 2 焊缝尺寸",
+        "name_en": "nozzle 2 weld size",
+        "unit": "in. (mm)",
+        "source_of_value": "DRAWING"
+      },
+      {
+        "symbol": "W_d3",
+        "name_zh": "接管 3 焊缝尺寸",
+        "name_en": "nozzle 3 weld size",
+        "unit": "in. (mm)",
+        "source_of_value": "DRAWING"
+      },
+      {
+        "symbol": "W_d4",
+        "name_zh": "接管 4 焊缝尺寸",
+        "name_en": "nozzle 4 weld size",
+        "unit": "in. (mm)",
+        "source_of_value": "DRAWING"
+      }
     ],
     "domain": "STRUCT",
-    "tags": ["开孔", "补强", "多开孔", "PG-38.4", "Fig PG-38", "锅炉", "BPVC-I"],
+    "tags": [
+      "开孔",
+      "补强",
+      "多开孔",
+      "PG-38.4",
+      "Fig PG-38",
+      "锅炉",
+      "BPVC-I"
+    ],
     "source": {
       "standard_id": "ASME BPVC Section I-2010",
       "clause": "PG-38.4 + Fig. PG-38",
       "body_status": "FULL_TEXT_MIRROR",
       "evidence_grade": "E1",
       "snippet": "PG-38.4 When a shell or drum has a series of holes in a definite pattern, the net cross-sectional area between any two finished openings within the limits of the actual shell wall, excluding the portion of the compensation not fused to the shell wall, shall equal at least 0.7F of the cross-sectional area obtained by multiplying the center-to-center distance of the openings by the required thickness of a seamless shell, where the factor F is taken from Fig. PG-33.3 for the plane under consideration (see Fig. PG-38).",
-      "locator": "runs/ASME-BPVC-I/bpvc_i_djvu.txt L13341-L13349 (PG-38.4 原文); 图像核读 runs/probe/bpvc_p235_nar.png (300dpi) 与 bpvc_p235_nar_1200.png (1200dpi), PDF p.235",
-      "extraction_note": "★ 关键判读：nar 式中 '0.7 F t D' 的 F 与 t 是两个并列的基线因子（t = 无缝壳体所需厚度 = 2.711 in，图中 F 之后的斜体 t 位于基线，非下标）——已由 1200dpi 渲染图 bpvc_p235_nar_1200.png 逐字确认（对比 D₁ 的下标 1 明显下沉）。文本层把 'F t' 合并成 'Fir'（djvu L13341 段同源），把 'nar' 误识为 'nor'（'nor = 0.7 FIr D2' 实为周向 nozzles 2&3 的 nar 式），把下标 n1/n2 误识为 '1,,1'/'t,,2'，把 'dl' 误识为 '(dl l'，把 W = (A−A_l)S_y 的 'A_l' 误识为 'AI'、'S_y' 误识为 'S..'。",
-      "cross_refs": ["F-STR-003", "F-STR-007"]
+      "locator": "kb/_evidence/ASME-BPVC-I_p235_raster.png (PDF p.235 纯扫描位图); 文本层 runs/ASME-BPVC-I/bpvc_i_djvu.txt L13341-L13349 (PG-38.4 原文)",
+      "extraction_note": "★ 关键判读：nar 式中 '0.7 F t D' 的 F 与 t 是两个并列的基线因子（t = 无缝壳体所需厚度 = 2.711 in，图中 F 之后的斜体 t 位于基线，非下标）——已由 1200dpi 渲染图 bpvc_p235_nar_1200.png 逐字确认（对比 D₁ 的下标 1 明显下沉）。文本层把 'F t' 合并成 'Fir'（djvu L13341 段同源），把 'nar' 误识为 'nor'（'nor = 0.7 FIr D2' 实为周向 nozzles 2&3 的 nar 式），把下标 n1/n2 误识为 '1,,1'/'t,,2'，把 'dl' 误识为 '(dl l'，把 W = (A−A_l)S_y 的 'A_l' 误识为 'AI'、'S_y' 误识为 'S..'。 【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "F-STR-003",
+        "F-STR-007"
+      ]
     },
     "applicability": {
       "valid_when": [
@@ -621,9 +1677,13 @@
         "开孔不在壳体壁上（如管板上、封头过渡区）",
         "把 nar 当成单开孔的削弱面积"
       ],
-      "range_limits": ["F 取值域由 Fig. PG-33.3 决定（周向平面 0.5~0.88 等）"],
+      "range_limits": [
+        "F 取值域由 Fig. PG-33.3 决定（周向平面 0.5~0.88 等）"
+      ],
       "conservatism": "0.7F 是标准给定的折减，本身已含保守度；判据是 ≥ 关系（不满足即不合规）。",
-      "must_pair_with": ["F-STR-003"]
+      "must_pair_with": [
+        "F-STR-003"
+      ]
     },
     "usage": {
       "where": [
@@ -640,9 +1700,24 @@
         "5. nan = Σ t_n·W_d（按熔合到壳体的接管逐段计）",
         "6. 判 nav + nan ≥ nar，不满足则加大间距或加强接管"
       ],
-      "output_used_by": ["F-STR-007"],
+      "output_used_by": [
+        "F-STR-007"
+      ],
       "sample": {
-        "inputs": {"F": 1.0, "t_in": 2.711, "D_in": 9.0, "t_shell_in": 3.25, "dl_1_in": 4.5, "dl_2_in": 5.0, "t_n1_in": 0.875, "t_n2_in": 1.0, "W_d1_in": 1.0, "W_d2_in": 1.0, "W_d3_in": 1.25, "W_d4_in": 1.25},
+        "inputs": {
+          "F": 1.0,
+          "t_in": 2.711,
+          "D_in": 9.0,
+          "t_shell_in": 3.25,
+          "dl_1_in": 4.5,
+          "dl_2_in": 5.0,
+          "t_n1_in": 0.875,
+          "t_n2_in": 1.0,
+          "W_d1_in": 1.0,
+          "W_d2_in": 1.0,
+          "W_d3_in": 1.25,
+          "W_d4_in": 1.25
+        },
         "result": "纵向平面 nozzles 1&2：nar = 0.7×1.0×2.711×9 = 17.078 in²；nav = [9−0.5×(4.5+5)]×3.25 = 13.812 in²；nan = 0.875×1.0+0.875×1.0+1.0×1.25+1.0×1.25 = 4.25 in²；nav+nan = 18.0625 in² ≥ 17.078 ✓（BPVC 原文算例，全部数值复算一致）",
         "source_of_inputs": "BPVC Section I Fig. PG-38 原文算例（非本项目数据）"
       },
@@ -656,21 +1731,35 @@
     "evidence": {
       "grade": "E1",
       "status": "VERIFIED_CLAUSE",
-      "verified_on": "2026-10-25",
+      "verified_on": "2026-10-22",
       "verified_by": "standards_kb（PG-38.4 原文 + 300dpi/1200dpi 图像 + 算例逐项复算）",
       "note": "条款原文逐字取得；nar/nav/nan 三个式子与 F、t 的因子结构经 1200dpi 图像确认；BPVC 原文算例六个数值全部复算一致。属自洽验证，无实物数据故不到 E2。"
     },
     "project_usage": [
-      {"task": "N/A", "status": "不适用", "note": "本项目阀体上的阀杆孔为单开孔（走 PG-27 单孔补强，见 F-STR-003），不构成『成串开孔』工况；且材质与规范体系不同。本条为标准资产沉淀/未来复用。"}
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目阀体上的阀杆孔为单开孔（走 PG-27 单孔补强，见 F-STR-003），不构成『成串开孔』工况；且材质与规范体系不同。本条为标准资产沉淀/未来复用。"
+      }
     ],
-    "related": ["F-STR-003", "F-STR-007"]
+    "related": [
+      "F-STR-003",
+      "F-STR-007"
+    ]
   },
-
   {
     "id": "F-STR-007",
     "title_zh": "载荷路径所需最小强度 W = (A − A_l)·S_y",
     "title_en": "Required Minimum Strength of Load-Carrying Path (PG-37 / PW-15)",
-    "aliases": ["载荷路径", "load carrying path", "PG-37", "PW-15", "开孔强度", "A 削弱面积", "A_l 净截面积"],
+    "aliases": [
+      "载荷路径",
+      "load carrying path",
+      "PG-37",
+      "PW-15",
+      "开孔强度",
+      "A 削弱面积",
+      "A_l 净截面积"
+    ],
     "expression": {
       "canonical": "W = (A - A_l) * S_y",
       "display": "W = (A − A_l)·S_y",
@@ -682,22 +1771,58 @@
       "solved_for": "W"
     },
     "variables": [
-      {"symbol": "W", "name_zh": "载荷路径所需最小强度", "name_en": "required minimum strength of the load-carrying path", "unit": "lb (N)", "source_of_value": "DERIVED"},
-      {"symbol": "A", "name_zh": "总截面积（削弱前）", "name_en": "total cross-sectional area", "unit": "in^2 (mm^2)", "source_of_value": "STANDARD 公式", "note": "确切定义未在图注中逐字取得，按原文算例数值反推，待与 PG-27 / Fig. PG-38 图注原文核对"},
-      {"symbol": "A_l", "name_zh": "扣除开孔削弱后的净截面积", "name_en": "net cross-sectional area after deducting opening", "unit": "in^2 (mm^2)", "source_of_value": "STANDARD 公式", "note": "确切定义未在图注中逐字取得，按原文算例数值反推，待与 PG-27 / Fig. PG-38 图注原文核对"},
-      {"symbol": "S_y", "name_zh": "屈服强度", "name_en": "yield strength", "unit": "psi (MPa)", "source_of_value": "STANDARD 材料规格"}
+      {
+        "symbol": "W",
+        "name_zh": "载荷路径所需最小强度",
+        "name_en": "required minimum strength of the load-carrying path",
+        "unit": "lb (N)",
+        "source_of_value": "DERIVED"
+      },
+      {
+        "symbol": "A",
+        "name_zh": "总截面积（削弱前）",
+        "name_en": "total cross-sectional area",
+        "unit": "in^2 (mm^2)",
+        "source_of_value": "STANDARD 公式",
+        "note": "确切定义未在图注中逐字取得，按原文算例数值反推，待与 PG-27 / Fig. PG-38 图注原文核对"
+      },
+      {
+        "symbol": "A_l",
+        "name_zh": "扣除开孔削弱后的净截面积",
+        "name_en": "net cross-sectional area after deducting opening",
+        "unit": "in^2 (mm^2)",
+        "source_of_value": "STANDARD 公式",
+        "note": "确切定义未在图注中逐字取得，按原文算例数值反推，待与 PG-27 / Fig. PG-38 图注原文核对"
+      },
+      {
+        "symbol": "S_y",
+        "name_zh": "屈服强度",
+        "name_en": "yield strength",
+        "unit": "psi (MPa)",
+        "source_of_value": "STANDARD 材料规格"
+      }
     ],
     "domain": "STRUCT",
-    "tags": ["载荷路径", "开孔强度", "PG-37", "PW-15", "Fig PG-38", "BPVC-I"],
+    "tags": [
+      "载荷路径",
+      "开孔强度",
+      "PG-37",
+      "PW-15",
+      "Fig PG-38",
+      "BPVC-I"
+    ],
     "source": {
       "standard_id": "ASME BPVC Section I-2010",
       "clause": "Fig. PG-38 (引用 PG-37 与 PW-15)",
       "body_status": "FULL_TEXT_MIRROR",
       "evidence_grade": "E1",
       "snippet": "Nozzles 1 and 4 — The required minimum strength to be provided by the combined load-carrying elements through each load-carrying path (see PG-37 and PW-15) W = (A − A_l) S_y = (12.199 − 2.860) × 17,500 = 163,431 lb",
-      "locator": "runs/probe/bpvc_p235_nar.png (300dpi, PDF p.235 右栏下); 文本层 runs/ASME-BPVC-I/bpvc_i_djvu.txt 附近 'W = (A -AI)S ..'",
-      "extraction_note": "★ 状态定为 PENDING_VERIFICATION 的原因：公式本身已按 300dpi 图像逐字核读（W = (A − A_l)S_y，算例 (12.199 − 2.860) × 17,500 = 163,431 lb 复算一致 163,432），但 A 与 A_l 的确切定义在 p235 图注中没有逐字给出，只能由算例数值反推（12.199 / 2.860 与截面尺寸 13.544 / 2.368 的关系）。文本层另把 'A_l' 误识为 'AI'、下标 'y' 误识为 '..'。定稿前须回查 PG-27 与 Fig. PG-38 图注原文补上 A、A_l 的逐字定义。",
-      "cross_refs": ["F-STR-006", "F-STR-003"]
+      "locator": "kb/_evidence/ASME-BPVC-I_p235_raster.png (PDF p.235 纯扫描位图); 文本层 runs/ASME-BPVC-I/bpvc_i_djvu.txt 附近 'W = (A -AI)S ..'",
+      "extraction_note": "★ 状态定为 PENDING_VERIFICATION 的原因：公式本身已按 300dpi 图像逐字核读（W = (A − A_l)S_y，算例 (12.199 − 2.860) × 17,500 = 163,431 lb 复算一致 163,432），但 A 与 A_l 的确切定义在 p235 图注中没有逐字给出，只能由算例数值反推（12.199 / 2.860 与截面尺寸 13.544 / 2.368 的关系）。文本层另把 'A_l' 误识为 'AI'、下标 'y' 误识为 '..'。定稿前须回查 PG-27 与 Fig. PG-38 图注原文补上 A、A_l 的逐字定义。 【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "F-STR-006",
+        "F-STR-003"
+      ]
     },
     "applicability": {
       "valid_when": [
@@ -710,9 +1835,14 @@
         "以 S_y 代替标准规定的许用应力做最终合格判定（还须经 F-MAT-001 的利用率判据）",
         "把 163,431 lb 这类算例值直接当结论"
       ],
-      "range_limits": ["本条仅覆盖 Fig. PG-38 给出的开孔载荷路径场景"],
+      "range_limits": [
+        "本条仅覆盖 Fig. PG-38 给出的开孔载荷路径场景"
+      ],
       "conservatism": "用屈服强度而非抗拉强度，偏保守；标准通常另设 1.5 倍安全系数的判据。",
-      "must_pair_with": ["F-STR-003", "F-MAT-001"]
+      "must_pair_with": [
+        "F-STR-003",
+        "F-MAT-001"
+      ]
     },
     "usage": {
       "where": [
@@ -729,7 +1859,11 @@
       ],
       "output_used_by": [],
       "sample": {
-        "inputs": {"A_in2": 12.199, "A_l_in2": 2.860, "S_y_psi": 17500},
+        "inputs": {
+          "A_in2": 12.199,
+          "A_l_in2": 2.86,
+          "S_y_psi": 17500
+        },
         "result": "W = (12.199 − 2.860) × 17,500 = 163,432 lb（原文印 163,431 lb，差异来自中间值舍入）",
         "source_of_inputs": "BPVC Section I Fig. PG-38 原文算例（nozzles 1 and 4 载荷路径），非本项目数据"
       },
@@ -742,13 +1876,20 @@
     "evidence": {
       "grade": "E1",
       "status": "PENDING_VERIFICATION",
-      "verified_on": "2026-10-25",
+      "verified_on": "2026-10-22",
       "verified_by": "standards_kb（300dpi 图像核读 + 算例复算）",
       "note": "公式形式与算例已核（复算 163,432 vs 原文 163,431，差在舍入）；但 A 与 A_l 的逐字定义尚未从 PG-27 / Fig. PG-38 图注原文取得，故不升为 VERIFIED_CLAUSE。"
     },
     "project_usage": [
-      {"task": "N/A", "status": "不适用", "note": "本项目阀体为单开孔（阀杆孔）且材质为青铜，非 BPVC-I 适用的钢制锅炉压力容器。本条为标准资产沉淀/未来复用。"}
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目阀体为单开孔（阀杆孔）且材质为青铜，非 BPVC-I 适用的钢制锅炉压力容器。本条为标准资产沉淀/未来复用。"
+      }
     ],
-    "related": ["F-STR-006", "F-STR-003"]
+    "related": [
+      "F-STR-006",
+      "F-STR-003"
+    ]
   }
 ]

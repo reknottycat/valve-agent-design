@@ -3,7 +3,14 @@
     "id": "F-MAT-001",
     "title_zh": "许用应力与强度利用率",
     "title_en": "Allowable Stress and Strength Utilization",
-    "aliases": ["许用应力", "allowable stress", "强度利用率", "utilization", "安全系数", "许用占用率"],
+    "aliases": [
+      "许用应力",
+      "allowable stress",
+      "强度利用率",
+      "utilization",
+      "安全系数",
+      "许用占用率"
+    ],
     "expression": {
       "canonical": "utilization = sigma_max / sigma_allow",
       "display": "利用率 = σ_max / [σ]",
@@ -15,12 +22,37 @@
       "solved_for": "utilization"
     },
     "variables": [
-      {"symbol": "utilization", "name_zh": "强度利用率", "name_en": "strength utilization", "unit": "dimensionless", "typical_range": "0 ~ 1", "source_of_value": "DERIVED"},
-      {"symbol": "sigma_max", "name_zh": "最大工作应力", "name_en": "maximum working stress", "unit": "MPa", "source_of_value": "DERIVED 由 F-STR-001/002 等导出"},
-      {"symbol": "sigma_allow", "name_zh": "许用应力", "name_en": "allowable stress", "unit": "MPa", "source_of_value": "STANDARD 材料许用值表", "note": "必须取标准表值，不能用抗拉强度除以固定安全系数"}
+      {
+        "symbol": "utilization",
+        "name_zh": "强度利用率",
+        "name_en": "strength utilization",
+        "unit": "dimensionless",
+        "typical_range": "0 ~ 1",
+        "source_of_value": "DERIVED"
+      },
+      {
+        "symbol": "sigma_max",
+        "name_zh": "最大工作应力",
+        "name_en": "maximum working stress",
+        "unit": "MPa",
+        "source_of_value": "DERIVED 由 F-STR-001/002 等导出"
+      },
+      {
+        "symbol": "sigma_allow",
+        "name_zh": "许用应力",
+        "name_en": "allowable stress",
+        "unit": "MPa",
+        "source_of_value": "STANDARD 材料许用值表",
+        "note": "必须取标准表值，不能用抗拉强度除以固定安全系数"
+      }
     ],
     "domain": "MATE",
-    "tags": ["许用应力", "材料", "利用率", "合格判据"],
+    "tags": [
+      "许用应力",
+      "材料",
+      "利用率",
+      "合格判据"
+    ],
     "source": {
       "standard_id": "ASME BPVC Section II Part D (材料许用应力表)",
       "clause": "Part D 表 (按材料与温度分档)",
@@ -29,7 +61,10 @@
       "snippet": "",
       "locator": "",
       "extraction_note": "BPVC Section II 的材料许用值表是权威来源；本机无 Section II 正文（archive.org 的 ASME 集合含 Section I/IV/V/VI/VII/IX，无 Section II），故 body_status 记 PAYWALL。本项目青铜牌号未定，故目前取值仍为 ASSUMED，是阻塞项 B1 的直接后果。",
-      "cross_refs": ["F-STR-001", "F-STR-002"]
+      "cross_refs": [
+        "F-STR-001",
+        "F-STR-002"
+      ]
     },
     "applicability": {
       "valid_when": [
@@ -41,7 +76,9 @@
         "材料处于低温脆性区（许用应力够高也不代表可用）",
         "疲劳、蠕变、腐蚀等其他失效模式主导"
       ],
-      "range_limits": ["利用率 > 1 即不可用；0.4~0.6 之间须检查其他失效模式"],
+      "range_limits": [
+        "利用率 > 1 即不可用；0.4~0.6 之间须检查其他失效模式"
+      ],
       "conservatism": "本身是判据不是余量；真正的余量在许用值表的定义里。",
       "must_pair_with": []
     },
@@ -60,7 +97,10 @@
       ],
       "output_used_by": [],
       "sample": {
-        "inputs": {"sigma_max": 5.60, "sigma_allow": 80.0},
+        "inputs": {
+          "sigma_max": 5.6,
+          "sigma_allow": 80.0
+        },
         "result": "利用率 = 0.070（7%）",
         "source_of_inputs": "σ_max 来自 F-STR-001；[σ]=80 MPa 为 ASSUMED（青铜牌号未定）"
       },
@@ -78,16 +118,28 @@
       "note": "判据形式为 E1；BPVC Section II 正文本机不可得（body_status 记 PAYWALL），[σ] 的具体取值受阻塞项 B1（青铜牌号未知）制约，当前为 ASSUMED。"
     },
     "project_usage": [
-      {"task": "T15", "status": "已用于 522-35.4179СБ", "note": "占用率 7%，据此判定内压不是壁厚控制项"}
+      {
+        "task": "T15",
+        "status": "已用于 522-35.4179СБ",
+        "note": "占用率 7%，据此判定内压不是壁厚控制项"
+      }
     ],
-    "related": ["F-STR-001", "F-STR-002"]
+    "related": [
+      "F-STR-001",
+      "F-STR-002"
+    ]
   },
-
   {
     "id": "F-SEAL-002",
     "title_zh": "密封接触压强",
     "title_en": "Seal Contact Pressure",
-    "aliases": ["接触压强", "contact pressure", "座面压强", "密封线宽", "线接触"],
+    "aliases": [
+      "接触压强",
+      "contact pressure",
+      "座面压强",
+      "密封线宽",
+      "线接触"
+    ],
     "expression": {
       "canonical": "q_contact = N_seat / A_line",
       "display": "q = N / A_line",
@@ -99,14 +151,49 @@
       "solved_for": "q_contact"
     },
     "variables": [
-      {"symbol": "q_contact", "name_zh": "接触压强", "name_en": "contact pressure", "unit": "MPa", "source_of_value": "DERIVED"},
-      {"symbol": "N_seat", "name_zh": "座面法向力", "name_en": "seat normal force", "unit": "N", "source_of_value": "DERIVED 由 F-SEAL-001"},
-      {"symbol": "A_line", "name_zh": "密封接触线面积", "name_en": "seal contact line area", "unit": "mm^2", "source_of_value": "DERIVED = π·D_seat·w_seal"},
-      {"symbol": "D_seat", "name_zh": "阀座密封直径", "name_en": "seat sealing diameter", "unit": "mm", "source_of_value": "DRAWING 或 DERIVED"},
-      {"symbol": "w_seat", "name_zh": "密封接触线宽", "name_en": "seal contact width", "unit": "mm", "source_of_value": "DERIVED 设计变量"}
+      {
+        "symbol": "q_contact",
+        "name_zh": "接触压强",
+        "name_en": "contact pressure",
+        "unit": "MPa",
+        "source_of_value": "DERIVED"
+      },
+      {
+        "symbol": "N_seat",
+        "name_zh": "座面法向力",
+        "name_en": "seat normal force",
+        "unit": "N",
+        "source_of_value": "DERIVED 由 F-SEAL-001"
+      },
+      {
+        "symbol": "A_line",
+        "name_zh": "密封接触线面积",
+        "name_en": "seal contact line area",
+        "unit": "mm^2",
+        "source_of_value": "DERIVED = π·D_seat·w_seal"
+      },
+      {
+        "symbol": "D_seat",
+        "name_zh": "阀座密封直径",
+        "name_en": "seat sealing diameter",
+        "unit": "mm",
+        "source_of_value": "DRAWING 或 DERIVED"
+      },
+      {
+        "symbol": "w_seat",
+        "name_zh": "密封接触线宽",
+        "name_en": "seal contact width",
+        "unit": "mm",
+        "source_of_value": "DERIVED 设计变量"
+      }
     ],
     "domain": "SEAL",
-    "tags": ["密封", "接触压强", "金属密封", "线宽"],
+    "tags": [
+      "密封",
+      "接触压强",
+      "金属密封",
+      "线宽"
+    ],
     "source": {
       "standard_id": "ISO 5208:2015 (密封等级) / 通用密封力学",
       "clause": "ISO 5208 泄漏等级（需正文）；压强计算为通用力学",
@@ -115,7 +202,9 @@
       "snippet": "",
       "locator": "",
       "extraction_note": "接触压强是力学量，标准只给等级判据不给计算式。ISO 5208 正文付费，本条只入计算式部分。",
-      "cross_refs": ["F-SEAL-001"]
+      "cross_refs": [
+        "F-SEAL-001"
+      ]
     },
     "applicability": {
       "valid_when": [
@@ -128,9 +217,13 @@
         "接触压强超过材料屈服（需接触力学/弹塑性分析）",
         "软密封（弹性体变形主导，模型不同）"
       ],
-      "range_limits": ["青铜对青铜金属密封典型量级 10~30 MPa"],
+      "range_limits": [
+        "青铜对青铜金属密封典型量级 10~30 MPa"
+      ],
       "conservatism": "不含余量；w_seat 的假设直接决定结果。",
-      "must_pair_with": ["F-SEAL-001"]
+      "must_pair_with": [
+        "F-SEAL-001"
+      ]
     },
     "usage": {
       "where": [
@@ -147,7 +240,11 @@
       ],
       "output_used_by": [],
       "sample": {
-        "inputs": {"N_seat_N": 26141.0, "D_seat_mm": 200.0, "w_seal_mm": 4.0},
+        "inputs": {
+          "N_seat_N": 26141.0,
+          "D_seat_mm": 200.0,
+          "w_seal_mm": 4.0
+        },
         "result": "A_line = 2513.3 mm²，q = 10.4 MPa",
         "source_of_inputs": "D 取公称通径；w=4mm 为 ASSUMED"
       },
@@ -165,16 +262,28 @@
       "note": "计算式为通用力学并已复算；泄漏等级部分因 ISO 5208 正文未取得，明确不给结论。"
     },
     "project_usage": [
-      {"task": "T16", "status": "已用于 522-35.4179СБ", "note": "10.4 MPa，判为青铜对青铜金属密封可行量级"}
+      {
+        "task": "T16",
+        "status": "已用于 522-35.4179СБ",
+        "note": "10.4 MPa，判为青铜对青铜金属密封可行量级"
+      }
     ],
-    "related": ["F-SEAL-001", "F-MAT-001"]
+    "related": [
+      "F-SEAL-001",
+      "F-MAT-001"
+    ]
   },
-
   {
     "id": "F-STR-003",
     "title_zh": "开孔补强面积（ASME 锅炉容器公式）",
     "title_en": "Reinforcement Area for Openings (ASME BPVC)",
-    "aliases": ["开孔补强", "reinforcement area", "WM", "接管补强", "开孔加强"],
+    "aliases": [
+      "开孔补强",
+      "reinforcement area",
+      "WM",
+      "接管补强",
+      "开孔加强"
+    ],
     "expression": {
       "canonical": "WM = A - (d + 2 * t_n) * t_r * F",
       "display": "W_M = A − (d + 2t_n)·t_r·F",
@@ -185,24 +294,70 @@
       "solved_for": "WM"
     },
     "variables": [
-      {"symbol": "WM", "name_zh": "所需补强面积", "name_en": "required reinforcement area", "unit": "mm^2", "source_of_value": "DERIVED"},
-      {"symbol": "A", "name_zh": "开孔削弱面积", "name_en": "area required by code", "unit": "mm^2", "source_of_value": "STANDARD 公式"},
-      {"symbol": "d", "name_zh": "接管直径", "name_en": "nozzle diameter", "unit": "mm", "source_of_value": "DRAWING"},
-      {"symbol": "t_n", "name_zh": "接管名义壁厚", "name_en": "nozzle nominal thickness", "unit": "mm", "source_of_value": "STANDARD 壁厚表"},
-      {"symbol": "t_r", "name_zh": "需补强厚度", "name_en": "required reinforcement thickness", "unit": "mm", "source_of_value": "DERIVED"},
-      {"symbol": "F", "name_zh": "铸造质量系数", "name_en": "casting quality factor", "unit": "dimensionless", "typical_range": "0.9 ~ 1.0", "source_of_value": "STANDARD"}
+      {
+        "symbol": "WM",
+        "name_zh": "所需补强面积",
+        "name_en": "required reinforcement area",
+        "unit": "mm^2",
+        "source_of_value": "DERIVED"
+      },
+      {
+        "symbol": "A",
+        "name_zh": "开孔削弱面积",
+        "name_en": "area required by code",
+        "unit": "mm^2",
+        "source_of_value": "STANDARD 公式"
+      },
+      {
+        "symbol": "d",
+        "name_zh": "接管直径",
+        "name_en": "nozzle diameter",
+        "unit": "mm",
+        "source_of_value": "DRAWING"
+      },
+      {
+        "symbol": "t_n",
+        "name_zh": "接管名义壁厚",
+        "name_en": "nozzle nominal thickness",
+        "unit": "mm",
+        "source_of_value": "STANDARD 壁厚表"
+      },
+      {
+        "symbol": "t_r",
+        "name_zh": "需补强厚度",
+        "name_en": "required reinforcement thickness",
+        "unit": "mm",
+        "source_of_value": "DERIVED"
+      },
+      {
+        "symbol": "F",
+        "name_zh": "铸造质量系数",
+        "name_en": "casting quality factor",
+        "unit": "dimensionless",
+        "typical_range": "0.9 ~ 1.0",
+        "source_of_value": "STANDARD"
+      }
     ],
     "domain": "STRUCT",
-    "tags": ["开孔", "补强", "接管", "阀体", "BPVC"],
+    "tags": [
+      "开孔",
+      "补强",
+      "接管",
+      "阀体",
+      "BPVC"
+    ],
     "source": {
       "standard_id": "ASME BPVC Section I (PG-27)",
       "clause": "PG-27 (开孔与补强)",
       "body_status": "FULL_TEXT_MIRROR",
       "evidence_grade": "E1",
       "snippet": "WM = A - ( d + 2t n ) t r F",
-      "locator": "runs/ASME-BPVC-I/bpvc_i_djvu.txt L12617 (pdf p.104)",
-      "extraction_note": "由 PDF 版面抽取器抓出，OCR 下标已退化（t n→t_n、t r→t_r）。符号表在同文件 L2142 附近。该式为 BPVC Section I 原文形式，Section VIII-1 的 UG-37 形式略有差异（变量名不同、限值不同），迁移时须核对。",
-      "cross_refs": ["F-STR-001", "F-STR-002"]
+      "locator": "kb/_evidence/ASME-BPVC-I_p104_raster.png (PDF p.104 纯扫描位图); 文本层 runs/ASME-BPVC-I/bpvc_i_djvu.txt L12617",
+      "extraction_note": "由 PDF 版面抽取器抓出，OCR 下标已退化（t n→t_n、t r→t_r）。符号表在同文件 L2142 附近。该式为 BPVC Section I 原文形式，Section VIII-1 的 UG-37 形式略有差异（变量名不同、限值不同），迁移时须核对。 【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "F-STR-001",
+        "F-STR-002"
+      ]
     },
     "applicability": {
       "valid_when": [
@@ -216,7 +371,9 @@
         "超出标准允许的开孔径比上限",
         "应力开孔以外的其他失效模式主导"
       ],
-      "range_limits": ["开孔径比 d/D 不得超过标准上限"],
+      "range_limits": [
+        "开孔径比 d/D 不得超过标准上限"
+      ],
       "conservatism": "标准公式本身含铸造系数 F 与限值，偏保守。",
       "must_pair_with": []
     },
@@ -235,7 +392,13 @@
       ],
       "output_used_by": [],
       "sample": {
-        "inputs": {"A": 0, "d": 0, "t_n": 0, "t_r": 0, "F": 1.0},
+        "inputs": {
+          "A": 0,
+          "d": 0,
+          "t_n": 0,
+          "t_r": 0,
+          "F": 1.0
+        },
         "result": "未取本项目数值（本阀阀杆孔补强尚未计算）",
         "source_of_inputs": "N/A"
       },
@@ -253,16 +416,27 @@
       "note": "原文形式已由版面抽取器抓出并附定位，但 OCR 下标退化，且尚未逐条核对上下文段落。标 PENDING_VERIFICATION 而非 VERIFIED_CLAUSE。"
     },
     "project_usage": [
-      {"task": "T21", "status": "待用于 522-35.4179СБ 阀杆孔补强", "note": "本项目阀杆 Tr36×6，阀体开孔补强尚未计算"}
+      {
+        "task": "T21",
+        "status": "待用于 522-35.4179СБ 阀杆孔补强",
+        "note": "本项目阀杆 Tr36×6，阀体开孔补强尚未计算"
+      }
     ],
-    "related": ["F-STR-001", "F-STR-002"]
+    "related": [
+      "F-STR-001",
+      "F-STR-002"
+    ]
   },
-
   {
     "id": "F-FLW-002",
     "title_zh": "流量系数单位换算 Kv ↔ Cv",
     "title_en": "Flow Coefficient Unit Conversion Kv to Cv",
-    "aliases": ["Cv", "Kv换算", "US单位", "流量系数换算"],
+    "aliases": [
+      "Cv",
+      "Kv换算",
+      "US单位",
+      "流量系数换算"
+    ],
     "expression": {
       "canonical": "Cv_US = 1.156 * Kv",
       "display": "Cv(US) = 1.156 · Kv",
@@ -273,11 +447,28 @@
       "solved_for": "Cv_US"
     },
     "variables": [
-      {"symbol": "Cv_US", "name_zh": "美制流量系数", "name_en": "US flow coefficient", "unit": "US gpm", "source_of_value": "DERIVED"},
-      {"symbol": "Kv", "name_zh": "公制流量系数", "name_en": "metric flow coefficient", "unit": "m^3/h", "source_of_value": "DERIVED 由 F-FLW-001"}
+      {
+        "symbol": "Cv_US",
+        "name_zh": "美制流量系数",
+        "name_en": "US flow coefficient",
+        "unit": "US gpm",
+        "source_of_value": "DERIVED"
+      },
+      {
+        "symbol": "Kv",
+        "name_zh": "公制流量系数",
+        "name_en": "metric flow coefficient",
+        "unit": "m^3/h",
+        "source_of_value": "DERIVED 由 F-FLW-001"
+      }
     ],
     "domain": "FLOW",
-    "tags": ["Kv", "Cv", "换算", "单位"],
+    "tags": [
+      "Kv",
+      "Cv",
+      "换算",
+      "单位"
+    ],
     "source": {
       "standard_id": "IEC 60534-2-1:2011",
       "clause": "流量系数定义与单位换算",
@@ -286,14 +477,22 @@
       "snippet": "",
       "locator": "",
       "extraction_note": "固定换算关系，属定义性常数。正文未取得故保持 UNVERIFIED_CLAUSE。",
-      "cross_refs": ["F-FLW-001"]
+      "cross_refs": [
+        "F-FLW-001"
+      ]
     },
     "applicability": {
-      "valid_when": ["两个系数均按各自标准的标准状态定义"],
-      "not_valid_when": ["任一侧系数由非标准口径测得（如不同取压截面）"],
+      "valid_when": [
+        "两个系数均按各自标准的标准状态定义"
+      ],
+      "not_valid_when": [
+        "任一侧系数由非标准口径测得（如不同取压截面）"
+      ],
       "range_limits": [],
       "conservatism": "不适用（是定义关系）。",
-      "must_pair_with": ["F-FLW-001"]
+      "must_pair_with": [
+        "F-FLW-001"
+      ]
     },
     "usage": {
       "where": [
@@ -301,14 +500,21 @@
         "进口阀门规格书换算"
       ],
       "how": "Kv × 1.156 = Cv(US)。注意换算的前提是两边口径一致，否则数值可比性不成立。",
-      "step_order": ["1. Kv × 1.156", "2. 记录口径来源"],
+      "step_order": [
+        "1. Kv × 1.156",
+        "2. 记录口径来源"
+      ],
       "output_used_by": [],
       "sample": {
-        "inputs": {"Kv": 653.0},
+        "inputs": {
+          "Kv": 653.0
+        },
         "result": "Cv = 755",
         "source_of_inputs": "Kv 来自 F-FLW-001"
       },
-      "pitfalls": ["用换算掩盖口径差异（数值对了但不可比）"]
+      "pitfalls": [
+        "用换算掩盖口径差异（数值对了但不可比）"
+      ]
     },
     "evidence": {
       "grade": "E1",
@@ -318,16 +524,27 @@
       "note": "定义性换算，正文未取得。"
     },
     "project_usage": [
-      {"task": "T08", "status": "已用于 522-35.4179СБ", "note": "Kv 653 → Cv 755，供国际样本比较"}
+      {
+        "task": "T08",
+        "status": "已用于 522-35.4179СБ",
+        "note": "Kv 653 → Cv 755，供国际样本比较"
+      }
     ],
-    "related": ["F-FLW-001"]
+    "related": [
+      "F-FLW-001"
+    ]
   },
-
   {
     "id": "F-DRV-002",
     "title_zh": "杠杆比与操作力换算",
     "title_en": "Lever Ratio and Operator Force",
-    "aliases": ["杠杆比", "手轮力", "操作力", "lever ratio", "力矩换算"],
+    "aliases": [
+      "杠杆比",
+      "手轮力",
+      "操作力",
+      "lever ratio",
+      "力矩换算"
+    ],
     "expression": {
       "canonical": "F_hand = T_drive / L_arm",
       "display": "F手 = T / L臂",
@@ -339,13 +556,42 @@
       "solved_for": "F_hand"
     },
     "variables": [
-      {"symbol": "F_hand", "name_zh": "手轮操作力", "name_en": "handwheel operating force", "unit": "N", "source_of_value": "DERIVED"},
-      {"symbol": "T_drive", "name_zh": "驱动轴力矩", "name_en": "drive shaft torque", "unit": "N*m", "source_of_value": "DERIVED 由 F-DRV-001"},
-      {"symbol": "L_arm", "name_zh": "手轮到阀杆轴的有效力臂", "name_en": "effective lever arm", "unit": "mm", "source_of_value": "DRAWING 或 ASSUMED"},
-      {"symbol": "lever_ratio", "name_zh": "杠杆比", "name_en": "lever ratio", "unit": "dimensionless", "source_of_value": "DERIVED"}
+      {
+        "symbol": "F_hand",
+        "name_zh": "手轮操作力",
+        "name_en": "handwheel operating force",
+        "unit": "N",
+        "source_of_value": "DERIVED"
+      },
+      {
+        "symbol": "T_drive",
+        "name_zh": "驱动轴力矩",
+        "name_en": "drive shaft torque",
+        "unit": "N*m",
+        "source_of_value": "DERIVED 由 F-DRV-001"
+      },
+      {
+        "symbol": "L_arm",
+        "name_zh": "手轮到阀杆轴的有效力臂",
+        "name_en": "effective lever arm",
+        "unit": "mm",
+        "source_of_value": "DRAWING 或 ASSUMED"
+      },
+      {
+        "symbol": "lever_ratio",
+        "name_zh": "杠杆比",
+        "name_en": "lever ratio",
+        "unit": "dimensionless",
+        "source_of_value": "DERIVED"
+      }
     ],
     "domain": "DRIVE",
-    "tags": ["手轮", "杠杆", "操作力", "人机工程"],
+    "tags": [
+      "手轮",
+      "杠杆",
+      "操作力",
+      "人机工程"
+    ],
     "source": {
       "standard_id": "通用机械（杠杆原理）",
       "clause": "N/A — 通用力学，非标准条款",
@@ -354,7 +600,9 @@
       "snippet": "",
       "locator": "",
       "extraction_note": "杠杆原理；手轮操作力的上限判据来自驱动选型或标准，非本式本身。",
-      "cross_refs": ["F-DRV-001"]
+      "cross_refs": [
+        "F-DRV-001"
+      ]
     },
     "applicability": {
       "valid_when": [
@@ -366,9 +614,13 @@
         "自锁状态下的开启操作",
         "有显著摩擦或效率损失未计入"
       ],
-      "range_limits": ["人力手轮操作力通常在几十 kgf 量级；超过需评估人机工程"],
+      "range_limits": [
+        "人力手轮操作力通常在几十 kgf 量级；超过需评估人机工程"
+      ],
       "conservatism": "不含传动效率损失，偏不安全；宜另乘效率系数。",
-      "must_pair_with": ["F-DRV-001"]
+      "must_pair_with": [
+        "F-DRV-001"
+      ]
     },
     "usage": {
       "where": [
@@ -384,7 +636,10 @@
       ],
       "output_used_by": [],
       "sample": {
-        "inputs": {"T_Nm": 78.0, "L_arm_mm": 150.0},
+        "inputs": {
+          "T_Nm": 78.0,
+          "L_arm_mm": 150.0
+        },
         "result": "F_hand = 520 N = 53.0 kgf，杠杆比 8.3:1",
         "source_of_inputs": "T 来自 F-DRV-001；L_arm=150mm 为 ASSUMED"
       },
@@ -402,16 +657,26 @@
       "note": "通用力学；力臂为 ASSUMED 假设值。"
     },
     "project_usage": [
-      {"task": "T17", "status": "已用于 522-35.4179СБ", "note": "得 52.8 kgf，判为人力手动的常见量级，未构成矛盾"}
+      {
+        "task": "T17",
+        "status": "已用于 522-35.4179СБ",
+        "note": "得 52.8 kgf，判为人力手动的常见量级，未构成矛盾"
+      }
     ],
-    "related": ["F-DRV-001"]
+    "related": [
+      "F-DRV-001"
+    ]
   },
-
   {
     "id": "F-BOLT-001",
     "title_zh": "螺栓组轴向应力",
     "title_en": "Bolt Group Axial Stress",
-    "aliases": ["螺栓组", "bolt group", "螺栓应力", "法兰推力"],
+    "aliases": [
+      "螺栓组",
+      "bolt group",
+      "螺栓应力",
+      "法兰推力"
+    ],
     "expression": {
       "canonical": "sigma_bolt = p * A_bore / (n * As)",
       "display": "σ_b = p·A_bore / (n·A_s)",
@@ -422,14 +687,49 @@
       "solved_for": "sigma_bolt"
     },
     "variables": [
-      {"symbol": "sigma_bolt", "name_zh": "螺栓轴向应力", "name_en": "bolt axial stress", "unit": "MPa", "source_of_value": "DERIVED"},
-      {"symbol": "p", "name_zh": "内压", "name_en": "internal pressure", "unit": "MPa", "source_of_value": "DRAWING 或 STANDARD"},
-      {"symbol": "A_bore", "name_zh": "通流截面积", "name_en": "bore area", "unit": "mm^2", "source_of_value": "DERIVED = π/4·D²"},
-      {"symbol": "n", "name_zh": "螺栓数量", "name_en": "number of bolts", "unit": "pcs", "source_of_value": "DRAWING"},
-      {"symbol": "As", "name_zh": "单个螺栓应力截面积", "name_en": "bolt stress area", "unit": "mm^2", "source_of_value": "STANDARD 螺纹应力截面积表"}
+      {
+        "symbol": "sigma_bolt",
+        "name_zh": "螺栓轴向应力",
+        "name_en": "bolt axial stress",
+        "unit": "MPa",
+        "source_of_value": "DERIVED"
+      },
+      {
+        "symbol": "p",
+        "name_zh": "内压",
+        "name_en": "internal pressure",
+        "unit": "MPa",
+        "source_of_value": "DRAWING 或 STANDARD"
+      },
+      {
+        "symbol": "A_bore",
+        "name_zh": "通流截面积",
+        "name_en": "bore area",
+        "unit": "mm^2",
+        "source_of_value": "DERIVED = π/4·D²"
+      },
+      {
+        "symbol": "n",
+        "name_zh": "螺栓数量",
+        "name_en": "number of bolts",
+        "unit": "pcs",
+        "source_of_value": "DRAWING"
+      },
+      {
+        "symbol": "As",
+        "name_zh": "单个螺栓应力截面积",
+        "name_en": "bolt stress area",
+        "unit": "mm^2",
+        "source_of_value": "STANDARD 螺纹应力截面积表"
+      }
     ],
     "domain": "BOLT",
-    "tags": ["螺栓", "法兰", "紧固", "应力"],
+    "tags": [
+      "螺栓",
+      "法兰",
+      "紧固",
+      "应力"
+    ],
     "source": {
       "standard_id": "GB/T 3098.1 (紧固件机械性能) / ASME B16.5 (法兰)",
       "clause": "螺栓规格与应力截面积表 / 法兰螺栓表",
@@ -438,7 +738,9 @@
       "snippet": "",
       "locator": "",
       "extraction_note": "本式为通用力学；螺栓规格与 As 取值须回 GB/T 19621 或 ASME B16.5 表。本项目螺栓规格是推定值（按 ф15 孔推 M14），实际规格来自 ГОСТ 1536-76（未取得）。",
-      "cross_refs": ["F-STR-001"]
+      "cross_refs": [
+        "F-STR-001"
+      ]
     },
     "applicability": {
       "valid_when": [
@@ -469,7 +771,12 @@
       ],
       "output_used_by": [],
       "sample": {
-        "inputs": {"p": 0.5884, "D": 200.0, "n": 12, "As": 147.0},
+        "inputs": {
+          "p": 0.5884,
+          "D": 200.0,
+          "n": 12,
+          "As": 147.0
+        },
         "result": "σ_bolt = 10.5 MPa",
         "source_of_inputs": "n=12 与 ф15 孔来自图纸；As 按推定 M14（实际规格未取得）"
       },
@@ -487,8 +794,14 @@
       "note": "螺栓规格为推定值（阻塞项 B5 相关），实际须回 ГОСТ 1536-76 取。"
     },
     "project_usage": [
-      {"task": "T15", "status": "已用于 522-35.4179СБ", "note": "10.5 MPa，量级远低于螺栓许用"}
+      {
+        "task": "T15",
+        "status": "已用于 522-35.4179СБ",
+        "note": "10.5 MPa，量级远低于螺栓许用"
+      }
     ],
-    "related": ["F-STR-001"]
+    "related": [
+      "F-STR-001"
+    ]
   }
 ]

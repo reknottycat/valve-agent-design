@@ -20,6 +20,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import validate as V
+import kb_entries as K
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -39,7 +40,9 @@ def load_all():
 
 
 ALL = load_all()
-KNOWN = {e.get("id") for e in ALL if e.get("id")}
+# 引用完整性用全库合并集合(公式 + 参数),与 validate.py 的 main() 保持一致
+KNOWN = {e.get("id") for e in ALL if e.get("id")} | K.param_ids()
+PARAM_IDS = sorted(K.param_ids())
 # F-MAT-002: E1/VERIFIED_CLAUSE,带 snippet + 真实存在的 locator,适合当基准
 BASE = next(e for e in ALL if e["id"] == "F-MAT-002")
 
@@ -67,6 +70,12 @@ case("usage.how 为空", lambda e: e["usage"].__setitem__("how", ""))
 case("related 指向不存在的 ID", lambda e: e.__setitem__("related", ["F-NOPE-999"]))
 case("cross_refs 指向不存在的 ID",
      lambda e: e["source"].__setitem__("cross_refs", ["F-NOPE-999"]))
+# --- 跨层引用(公式 <-> 参数)---
+case("related 指向不存在的参数 ID",
+     lambda e: e.__setitem__("related", ["P-NOPE-999"]))
+case("related 指向真实存在的参数 ID(应通过)",
+     lambda e: e.__setitem__("related", [PARAM_IDS[0]] if PARAM_IDS else ["P-NONE"]),
+     should_fail=False)
 case("变量缺 unit", lambda e: e["variables"][0].__setitem__("unit", ""))
 
 # --- 纪律缺陷 ---

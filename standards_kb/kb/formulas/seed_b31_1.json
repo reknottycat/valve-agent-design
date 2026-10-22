@@ -105,8 +105,8 @@
       "body_status": "FULL_TEXT_MIRROR",
       "evidence_grade": "E1",
       "snippet": "(b) PWHT of low hardenability P-No. 1 materials with a nominal material thickness, as defined in para. 132.4.3, over ¾ in. (19.0 mm) but not more than 1½ in. (38 mm) is not mandatory, provided all of the following conditions are met: (1) the carbon equivalent, CE, is < 0.50, using the formula CE = C + (Mn + Si)/6 + (Cr + Mo + V)/5 + (Ni + Cu)/15. The maximum chemical composition limit from the material specification or actual values from a chemical analysis or material test report shall be used in computing CE. If analysis for the last two terms is not available, 0.1% may be substituted for those two terms as follows: CE = C + (Mn + Si)/6 + 0.1. (2) a minimum preheat of 250°F (121°C) is applied. (3) the maximum weld deposit thickness of each weld pass shall not exceed ¼ in. (6 mm).",
-      "locator": "runs/ASME-B31.1/asme_b31_1_2007_djvu.txt L15379-L15401（Table 132 GENERAL NOTES (a)(b) 全文）；候选池条目 C-ad98415ba567（line_no 15391）",
-      "extraction_note": "本条依据 B31.1-2007 的 djvu 文本层定位并逐句核对，未做 PDF 渲染图视觉复核（archive.org 当前直连不可达，B31.1 只有 djvu 文本层，无 PDF 可渲染）。文本层已知退化：分数形 ¼ 与 ¾ 均被 OCR 成 '%'、½ 被识成 'lV'，故 snippet 中的 '¾ in. (19.0 mm)'、'1½ in. (38 mm)'、'¼ in. (6 mm)' 是依据原文括号内公制值反推重建的（19.0/38/6 mm 三个公制值在文本层完整无损，可作交叉校验）。公式本体、阈值 0.50、替代值 0.1%、预热 250°F(121°C) 在文本层均完整，未退化。因此本条定级 E1 + PENDING_VERIFICATION：公式本体、阈值 0.50、替代值 0.1%、预热与焊厚条件在文本层完整无退化，算例复算自洽（满足 E1「数值与公式自洽」），但分数形排印待 PDF 视觉复核，故未标 VERIFIED_CLAUSE。本条无比拟物理数据、无仿真对照，按项目 E0–E3 口径不占 E2。",
+      "locator": "kb/_evidence/ASME-B31.1_table132_snippet.txt (Table 132 GENERAL NOTES (b) 全文, djvu 第 L15379-L15401 行); 候选池条目 C-ad98415ba567 (line_no 15391)",
+      "extraction_note": "本条依据 B31.1-2007 的 djvu 文本层定位并逐句核对，未做 PDF 渲染图视觉复核（archive.org 当前直连不可达，B31.1 只有 djvu 文本层，无 PDF 可渲染）。文本层已知退化：分数形 ¼ 与 ¾ 均被 OCR 成 '%'、½ 被识成 'lV'，故 snippet 中的 '¾ in. (19.0 mm)'、'1½ in. (38 mm)'、'¼ in. (6 mm)' 是依据原文括号内公制值反推重建的（19.0/38/6 mm 三个公制值在文本层完整无损，可作交叉校验）。公式本体、阈值 0.50、替代值 0.1%、预热 250°F(121°C) 在文本层均完整，未退化。因此本条定级 E1 + PENDING_VERIFICATION：公式本体、阈值 0.50、替代值 0.1%、预热与焊厚条件在文本层完整无退化，算例复算自洽（满足 E1「数值与公式自洽」），但分数形排印待 PDF 视觉复核，故未标 VERIFIED_CLAUSE。本条无比拟物理数据、无仿真对照，按项目 E0–E3 口径不占 E2。 【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
       "cross_refs": [
         "F-MAT-002"
       ]
@@ -180,7 +180,7 @@
     "evidence": {
       "grade": "E1",
       "status": "PENDING_VERIFICATION",
-      "verified_on": "2026-10-25",
+      "verified_on": "2026-10-22",
       "verified_by": "standards_kb（djvu 文本层定位 + 逐句核对 + 算例复算自洽）",
       "note": "条款号、阈值 0.50、替代值 0.1%、预热与焊厚条件、公式本体均在文本层完整无退化，算例复算自洽（0.584 / 替代 0.40）。未能做 PDF 渲染视觉复核：archive.org 直连不可达，B31.1 无 PDF，仅有 djvu 文本层。文本层的分数形退化（¼、¾ → '%'，½ → 'lV'）已用括号内公制值反推重建，但排印形式待视觉复核，故定级 E1、不标 VERIFIED_CLAUSE。本条无比拟物理数据、无仿真对照，按项目 E0–E3 口径不占 E2。"
     },

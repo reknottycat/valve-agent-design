@@ -1,0 +1,3017 @@
+[
+  {
+    "id": "P-TEST-001",
+    "title_zh": "水试验理论流量常数（英制）",
+    "title_en": "Theoretical capacity constant for tests with water (U.S. Customary Units)",
+    "aliases": [
+      "2407",
+      "2,407",
+      "水试验常数",
+      "water capacity constant",
+      "W_T 2407"
+    ],
+    "param_kind": "CONSTANT",
+    "symbol": null,
+    "value": {
+      "canonical": "2407",
+      "display": "2,407",
+      "latex": "2407",
+      "numeric": 2407,
+      "relation": "=",
+      "unit_text": "W_T, lb/hr (kg/hr)",
+      "alt_values": [
+        {
+          "canonical": "5.092",
+          "display": "5 092",
+          "unit_text": "W_T, kg/hr",
+          "note": "同一常数的 SI 取值，另立条目 P-TEST-002"
+        }
+      ]
+    },
+    "unit": "lb/hr per (in^2 * sqrt(psia * lb/ft3))",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数试验",
+      "容量试验",
+      "水试验",
+      "ASME-BPVC-I",
+      "PG-69.2.3"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 Coefficient of Discharge Method — For tests with water, For 45 deg seat (U.S. Customary Units)",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "For tests with water. For 45 deg seat (U.S. Customary Units) W_T = 2,407 πDL (0.707)√((P − P_d)w); (SI Units) W_T = 5 092 πDL (0.707)√((P − P_d)w).",
+      "locator": "kb/_evidence/ASME-BPVC-I_p104_raster.png (PDF p.104 右栏 'For tests with water' 段)",
+      "visual_verified": true,
+      "extraction_note": "★ 数值 2,407 已在 PDF 第 104 页 320dpi 渲染图上逐字确认（逗号为千分位）。同一张图确认 PI 符号、根号 √ 与 (0.707) 因子均在位；PDF 文本层该行读作 'WI = 2,407 7TDL (0.707)j(P - Pd)w'（π→7T，√→j）。该常数与 SI 值 5.092 构成单位闭合对，见 P-TEST-002 的换算校核。 【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "F-TEST-001",
+        "P-TEST-002",
+        "P-TEST-005"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "PG-69.2.3 排放系数容量试验，介质为水",
+        "45° 阀座（座带因子 0.707 参与，见 P-TEST-005）",
+        "压力与流量取英制单位：P/P_d 用 psia，w 用 lb/ft³，D/L 用 in"
+      ],
+      "not_valid_when": [
+        "介质为蒸汽（那是 P-TEST-003 / P-TEST-004，常数不同且压力项不是根号）",
+        "平座（flat seat）：公式不带 0.707，常数形式相同但结果不同",
+        "喷嘴型（nozzle）：用喉部面积 A 代替 πDL",
+        "把 2,407 当成带千分位逗号的字符串去解析"
+      ],
+      "range_limits": [
+        "仅在 PG-69.2.3 的理论流量式内使用，不是任何通用流量系数"
+      ],
+      "conservatism": "不适用：这是标准给定的理论流量常数，不是可调参数。"
+    },
+    "usage": {
+      "where": [
+        "ASME Section I 安全阀/泄压阀排放系数（K_D）容量试验的理论流量计算",
+        "由实测流量反算 K_D 时作为分母"
+      ],
+      "how": "把 D（座径 in）、L（压力 P 下的开启高度 in）、(P − P_d)（psia）、w（进口工况水的重度 lb/ft³）代入 W_T = 2407 × πDL × 0.707 × √((P − P_d)w)，得理论流量 lb/hr。再由 K_D = 实测流量 / 理论流量 得单阀排放系数。切勿与 SI 值 5.092 混用；单位一旦混用，量级会差约 473 倍。",
+      "step_order": [
+        "1. 确认介质是水、座型是 45° 座",
+        "2. 取 D、L、P、P_d、w 的英制值",
+        "3. 代入本常数 2407 求 W_T",
+        "4. K_D = 实测 / W_T"
+      ],
+      "output_used_by": [
+        "F-TEST-001",
+        "F-TEST-003"
+      ],
+      "pitfalls": [
+        "把 2,407 误读成 2.407（小数点位置差 1000 倍）",
+        "单位制混用（SI 值 5.092 与英制值 2407 不可互换）",
+        "平座与 45° 座套用同一个 0.707 因子"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（PDF 第 104 页 320dpi 渲染图逐字核读 + 单位换算闭合复算）",
+      "note": "数值在页图上确认，状态 VERIFIED_CLAUSE。等级 E1：已用英制↔SI 单位闭合复算（2407 × 0.45359 / (645.16 × √(0.0068948 × 16.0185)) = 5.0918，与印刷的 SI 值 5.092 一致），数值与公式自洽；本条无比拟物理数据、无仿真对照，按项目 E0–E3 口径不占 E2。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目 522-35.4179СБ 为 DN200/PN6 青铜止回-截止阀，无安全阀/泄压阀，不做排放系数容量试验。本条为标准资产沉淀，供未来做泄压阀类设计时直接复用。"
+      }
+    ],
+    "related": [
+      "F-TEST-001",
+      "P-TEST-002",
+      "P-TEST-005"
+    ]
+  },
+  {
+    "id": "P-TEST-002",
+    "title_zh": "水试验理论流量常数（SI）",
+    "title_en": "Theoretical capacity constant for tests with water (SI Units)",
+    "aliases": [
+      "5.092",
+      "5 092",
+      "水试验常数 SI",
+      "water capacity constant SI"
+    ],
+    "param_kind": "CONSTANT",
+    "symbol": null,
+    "value": {
+      "canonical": "5.092",
+      "display": "5.092",
+      "latex": "5.092",
+      "numeric": 5.092,
+      "relation": "=",
+      "unit_text": "W_T, kg/hr",
+      "alt_values": [
+        {
+          "canonical": "2407",
+          "display": "2,407",
+          "unit_text": "W_T, lb/hr",
+          "note": "同一常数的英制取值，另立条目 P-TEST-001"
+        },
+        {
+          "canonical": "5 092",
+          "display": "5 092",
+          "unit_text": "W_T, kg/hr",
+          "note": "ASME 原页排印：'5' 与 '092' 之间为空白（2400dpi 位图列直方图确认该 14 个像素列无任何墨迹，既非小数点也非逗号）。三处 SI 水公式一致如此。判定为 ASME 该处漏排小数点的排印缺陷，正确值 5.092；此条保留原页排印供回溯，详见 source.extraction_note"
+        }
+      ]
+    },
+    "unit": "kg/hr per (mm^2 * sqrt(MPa * kg/m3))",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数试验",
+      "容量试验",
+      "水试验",
+      "ASME-BPVC-I",
+      "PG-69.2.3"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 Coefficient of Discharge Method — For tests with water, For 45 deg seat (SI Units)",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "(SI Units) W_T = 5 092 πDL (0.707)√((P − P_d)w).",
+      "locator": "kb/_evidence/ASME-BPVC-I_p104_raster.png (PDF p.104 右栏 'For tests with water' 段)",
+      "visual_verified": true,
+      "extraction_note": "★ 最易读错的一个数，三重独立证据链定案为 5.092。\n(1) 印刷原貌：本条 PDF 为 Xerox WorkCentre 4250 扫描 + Adobe Acrobat Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点，不能当印刷原貌证据。用 tools/raster_crop.py 直接抽取扫描位图后，2400dpi 裁切 + 列直方图显示 '5' 与 '092' 之间是 14 个像素列的纯空白，无任何墨迹——原页此处是一个空格，既不是小数点也不是逗号。\n(2) ASME 的 SI 排印风格：同一份标准的 SI 版超临界修正因子印作 '(27.6P − 1 000)/(33.2P − 1 061)'、超临界容量式印作 '1 135.8 (0.95/5.25)'，而 US 对应式印作 '1,135.8'、'(0.1906P − 1,000)/(0.2292P − 1,061)'。同一个数 1135.8 在 SI 版用空格、US 版用逗号，小数点两边都保留（'5.25'、'0.707'、'1 135.8'）。因此 ASME 不会把小数点排成空格，'5 092' 不是风格而是缺陷。\n(3) 量纲唯一解：按同页自述单位（A in mm²、D/L in mm、P in MPa、w in kg/m³、W_T in kg/hr），理想孔口质量流量 C·A·√(P·w) 反解得 C_SI = 1e-6 × √(2×1e6) × 3600 = 5.09117（相对误差 0.02%）。若取 5092，则同式给出的流量是正确值的 1000 倍，与 ASME 自己写的 'W_T = theoretical flow, lb/hr (kg/hr)' 直接冲突。旁证：同页 SI 蒸汽常数 5.25 与该推导值同量级（+3.1%），而 5092 与 5.25 相差 970 倍。\n结论：原页排印 '5 092' 判定为 ASME 该处漏排小数点，正确值 5.092。本条 display 直接给可用值 5.092，value.alt_values 保留原页排印 '5 092' 供回溯。\n【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "F-TEST-001",
+        "P-TEST-001",
+        "P-TEST-005"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "PG-69.2.3 排放系数容量试验，介质为水",
+        "45° 阀座（座带因子 0.707 参与）",
+        "压力与流量取 SI 单位：P/P_d 用 MPa，w 用 kg/m³，D/L 用 mm"
+      ],
+      "not_valid_when": [
+        "介质为蒸汽（那是 P-TEST-004，常数 5.25 且压力项不是根号）",
+        "英制单位下使用本值（差 473 倍）",
+        "把原页排印 '5 092' 直接当数值读入（即取 5092，比正确值大 1000 倍）"
+      ],
+      "range_limits": [
+        "仅在 PG-69.2.3 的理论流量式内使用"
+      ],
+      "conservatism": "不适用：标准给定的常数。"
+    },
+    "usage": {
+      "where": [
+        "ASME Section I 安全阀排放系数容量试验（SI 计算）",
+        "由实测流量反算 K_D 时作为分母"
+      ],
+      "how": "把 D（座径 mm）、L（开启高度 mm）、(P − P_d)（MPa）、w（进口工况水的重度 kg/m³）代入 W_T = 5.092 × πDL × 0.707 × √((P − P_d)w)，得理论流量 kg/hr。",
+      "step_order": [
+        "1. 确认介质是水、座型是 45° 座",
+        "2. 取 D、L、P、P_d、w 的 SI 值",
+        "3. 代入本常数 5.092 求 W_T",
+        "4. K_D = 实测 / W_T"
+      ],
+      "output_used_by": [
+        "F-TEST-001",
+        "F-TEST-003"
+      ],
+      "pitfalls": [
+        "把 '5 092' 读作 5092（差 1000 倍）——本条最容易踩的坑",
+        "误以为 ASME 的 SI 版把小数点排成空格：同页 '1 135.8' 的空格是千分位，小数点是保留的",
+        "英制/SI 常数混用"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（纯扫描位图 2400dpi 列直方图 + 同页 US/SI 排印对照 + 理想孔口量纲反解，三路互证）",
+      "note": "取值 5.092 由三条互相独立的证据确定：(1) 剥离 OCR 文本层后的纯扫描位图上，原页排印确为 '5 092'（5 与 092 之间空白，无墨迹）；(2) 同页 ASME SI 版排印惯例为'空格作千分位、小数点保留'（1 135.8 / 1 000 / 1 061 为证），故 '5 092' 不是风格；(3) 按 ASME 自述单位反解 C_SI = 5.09117，取 5092 与 kg/hr 矛盾。等级 E1（数值与公式自洽，误差 0.02%）。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀/泄压阀，不做排放系数容量试验。本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-001",
+      "P-TEST-001",
+      "P-TEST-005"
+    ]
+  },
+  {
+    "id": "P-TEST-003",
+    "title_zh": "干饱和蒸汽理论流量常数（英制）",
+    "title_en": "Theoretical capacity constant for tests with dry saturated steam (U.S. Customary Units)",
+    "aliases": [
+      "51.5",
+      "steam constant",
+      "干饱和蒸汽常数",
+      "W_T 51.5"
+    ],
+    "param_kind": "CONSTANT",
+    "symbol": null,
+    "value": {
+      "canonical": "51.5",
+      "display": "51.5",
+      "latex": "51.5",
+      "numeric": 51.5,
+      "relation": "=",
+      "unit_text": "W_T, lb/hr",
+      "alt_values": [
+        {
+          "canonical": "5.25",
+          "display": "5.25",
+          "unit_text": "W_T, kg/hr",
+          "note": "同一常数的 SI 取值，另立条目 P-TEST-004"
+        }
+      ]
+    },
+    "unit": "lb/hr per (in^2 * psia)",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数试验",
+      "容量试验",
+      "干饱和蒸汽",
+      "ASME-BPVC-I",
+      "PG-69.2.3"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 Coefficient of Discharge Method — For tests with dry saturated steam, For 45 deg seat (U.S. Customary Units)",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "For tests with dry saturated steam. For 45 deg seat (U.S. Customary Units) W_T = 51.5 × πDLP × 0.707; (SI Units) W_T = 5.25 × πDLP × 0.707. For flat seat (U.S. Customary Units) W_T = 51.5 × πDLP; (SI Units) W_T = 5.25 × πDLP. For nozzle (U.S. Customary Units) W_T = 51.5 AP; (SI Units) W_T = 5.25 AP.",
+      "locator": "kb/_evidence/ASME-BPVC-I_p104_raster.png (PDF p.104 右栏 'For tests with dry saturated steam' 段)",
+      "visual_verified": true,
+      "extraction_note": "★ 关键结构判读：蒸汽式是 W_T = C × πDLP（压力项线性，不是根号），与水试验式 W_T = C × πDL(0.707)√((P − P_d)w) 结构不同，勿混排。页图上 45° 座式带 '× 0.707'，平座式 'W_T = 51.5 × πDLP' 不带 0.707，喷嘴式 'W_T = 51.5 AP' 用喉部面积 A，三式在 PDF 文本层分别为 'W r = 51.5 X ttDLP X 0.707'（π→tt，×→X）。该线性结构由英制↔SI 单位闭合反解确认，见 P-TEST-004。 【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "F-TEST-002",
+        "P-TEST-004",
+        "P-TEST-005"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "PG-69.2.3 排放系数容量试验，介质为干饱和蒸汽",
+        "45° 阀座（带 0.707 因子）",
+        "P 用 psia；D/L 用 in；W_T 用 lb/hr"
+      ],
+      "not_valid_when": [
+        "介质为水（用 P-TEST-001）",
+        "把压力项写成根号 √P（本式是线性 P）",
+        "平座（无 0.707）、喷嘴（用 A）时照抄 45° 座式"
+      ],
+      "range_limits": [
+        "压力超过 1,500 psig (10.3 MPa) 起需乘压力修正因子，见 P-TEST-012"
+      ],
+      "conservatism": "不适用：标准给定的常数。"
+    },
+    "usage": {
+      "where": [
+        "ASME Section I 安全阀蒸汽工况排放系数容量试验的理论流量计算",
+        "蒸汽泄放能力校核"
+      ],
+      "how": "把 D（座径 in）、L（开启高度 in）、P（psia）代入 W_T = 51.5 × πDLP × 0.707（45° 座）或 W_T = 51.5 × πDLP（平座）或 W_T = 51.5AP（喷嘴），得理论流量 lb/hr。",
+      "step_order": [
+        "1. 确认介质是干饱和蒸汽",
+        "2. 按座型选式（45° 座 / 平座 / 喷嘴）",
+        "3. 代入本常数 51.5 求 W_T",
+        "4. K_D = 实测 / W_T"
+      ],
+      "output_used_by": [
+        "F-TEST-002",
+        "F-TEST-003"
+      ],
+      "pitfalls": [
+        "把压力项当成根号（线性 P 与 √P 结果差很多）",
+        "给平座式加上 0.707",
+        "英制/SI 常数混用"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（PDF 第 104 页 340dpi 渲染图核读 + 英制↔SI 单位闭合复算）",
+      "note": "51.5 在页图上确认。等级 E1：由 SI 值 5.25 经单位闭合反解得 C_US = 5.25 × 2.20462 / (645.16 × 0.00689476) = 51.52，与印刷 51.5 一致；该闭合只在'压力项线性'的假设下成立，反过来证实了蒸汽式是 C·A·P 而非 C·A·√P。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀/泄压阀。本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-002",
+      "P-TEST-004",
+      "P-TEST-005"
+    ]
+  },
+  {
+    "id": "P-TEST-004",
+    "title_zh": "干饱和蒸汽理论流量常数（SI）",
+    "title_en": "Theoretical capacity constant for tests with dry saturated steam (SI Units)",
+    "aliases": [
+      "5.25",
+      "干饱和蒸汽常数 SI",
+      "steam constant SI"
+    ],
+    "param_kind": "CONSTANT",
+    "symbol": null,
+    "value": {
+      "canonical": "5.25",
+      "display": "5.25",
+      "latex": "5.25",
+      "numeric": 5.25,
+      "relation": "=",
+      "unit_text": "W_T, kg/hr",
+      "alt_values": [
+        {
+          "canonical": "51.5",
+          "display": "51.5",
+          "unit_text": "W_T, lb/hr",
+          "note": "同一常数的英制取值，另立条目 P-TEST-003"
+        }
+      ]
+    },
+    "unit": "kg/hr per (mm^2 * MPa)",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数试验",
+      "容量试验",
+      "干饱和蒸汽",
+      "ASME-BPVC-I",
+      "PG-69.2.3"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 Coefficient of Discharge Method — For tests with dry saturated steam, For 45 deg seat (SI Units)",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "(SI Units) W_T = 5.25 × πDLP × 0.707.",
+      "locator": "kb/_evidence/ASME-BPVC-I_p104_raster.png (PDF p.104 右栏 'For tests with dry saturated steam' 段)",
+      "visual_verified": true,
+      "extraction_note": "★ 5.25 与同页水试验 SI 值 '5 092' 形成对照：水试验那个是空格千分位（= 5.092），这个是真小数点 5.25。两者的 OCR 文本层形态不同，必须靠页图区分，不能凭'看起来像小数点'下判断。单位闭合反解 C_US = 5.25 × 2.20462 / (645.16 × 0.00689476) = 51.52，与印刷 51.5 一致。 【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "F-TEST-002",
+        "P-TEST-003",
+        "P-TEST-005"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "PG-69.2.3 排放系数容量试验，介质为干饱和蒸汽",
+        "45° 阀座（带 0.707 因子）",
+        "P 用 MPa；D/L 用 mm；W_T 用 kg/hr"
+      ],
+      "not_valid_when": [
+        "介质为水（用 P-TEST-002）",
+        "把压力项写成根号 √P",
+        "英制单位下使用本值"
+      ],
+      "range_limits": [
+        "压力超过 10.3 MPa 起需乘压力修正因子，见 P-TEST-012"
+      ],
+      "conservatism": "不适用：标准给定的常数。"
+    },
+    "usage": {
+      "where": [
+        "ASME Section I 安全阀蒸汽工况排放系数容量试验（SI 计算）"
+      ],
+      "how": "把 D（座径 mm）、L（开启高度 mm）、P（MPa）代入 W_T = 5.25 × πDLP × 0.707（45° 座），得理论流量 kg/hr。",
+      "step_order": [
+        "1. 确认介质是干饱和蒸汽",
+        "2. 按座型选式",
+        "3. 代入本常数 5.25 求 W_T"
+      ],
+      "output_used_by": [
+        "F-TEST-002",
+        "F-TEST-003"
+      ],
+      "pitfalls": [
+        "把压力项当成根号",
+        "英制/SI 常数混用",
+        "与水试验的 '5 092' 混淆"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（PDF 第 104 页渲染图核读 + 英制↔SI 单位闭合复算）",
+      "note": "5.25 在页图上确认（喷嘴式 SI 行与 45° 座式 SI 行）。等级 E1：单位闭合反解与英制 51.5 一致。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀/泄压阀。本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-002",
+      "P-TEST-003",
+      "P-TEST-005"
+    ]
+  },
+  {
+    "id": "P-TEST-005",
+    "title_zh": "45° 阀座面积因子",
+    "title_en": "45 degree seat area factor",
+    "aliases": [
+      "0.707",
+      "座带因子",
+      "45度座系数",
+      "seat factor 0.707"
+    ],
+    "param_kind": "COEFFICIENT",
+    "symbol": null,
+    "value": {
+      "canonical": "0.707",
+      "display": "0.707",
+      "latex": "0.707",
+      "numeric": 0.707,
+      "relation": "=",
+      "unit_text": "dimensionless"
+    },
+    "unit": "dimensionless",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "阀座",
+      "排放系数试验",
+      "ASME-BPVC-I",
+      "PG-69.2.3"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 Coefficient of Discharge Method — For 45 deg seat",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "For 45 deg seat (U.S. Customary Units) W_T = 2,407 πDL (0.707)√((P − P_d)w); (SI Units) W_T = 5 092 πDL (0.707)√((P − P_d)w). For flat seat (U.S. Customary Units) W_T = 2,407 πDL√((P − P_d)w); (SI Units) W_T = 5 092 πDL√((P − P_d)w). For nozzle (U.S. Customary Units) W_T = 2,407 A√((P − P_d)w); (SI Units) W_T = 5 092 A√((P − P_d)w).",
+      "locator": "kb/_evidence/ASME-BPVC-I_p104_raster.png (PDF p.104 右栏 'For tests with dry saturated steam' 段)",
+      "visual_verified": true,
+      "extraction_note": "0.707 在 45° 座式两行（水试验与蒸汽试验）的页图上均确认在位；平座式与喷嘴式两行页图/PDF 文本层确认不带该因子（'W T = 2,407 7rDLj(P - P d )w' 与 'W T = 2,407 Aj(P - P d )w'）。注意 djvu 文本层在 L19018~L22250 区间有大量 0.707 命中，那是表格噪声，不是本因子。 【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "F-TEST-001",
+        "F-TEST-002",
+        "P-TEST-001",
+        "P-TEST-003"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "PG-69.2.3 理论流量式中座型为 45° 座",
+        "阀座为标准 45° 型（锥面角 45°）"
+      ],
+      "not_valid_when": [
+        "平座（flat seat）——公式不带该因子",
+        "喷嘴型（nozzle）——用喉部面积 A，公式不带该因子",
+        "非 ASME Section I 的场合（0.707 是该标准对 45° 座的几何/流量系数，不是通用常数）"
+      ],
+      "range_limits": [
+        "无量纲乘性因子，只改变流量不改变 K_D 的定义"
+      ],
+      "conservatism": "偏保守：该因子缩小理论流量，从而使 K_D = 实测/理论 偏大（排放能力判定偏宽松）。是否可接受取决于认证口径。"
+    },
+    "usage": {
+      "where": [
+        "ASME Section I 安全阀 45° 座理论流量计算",
+        "阀座形式选型时的流量影响评估"
+      ],
+      "how": "在 45° 座的理论流量式中乘 0.707；平座与喷嘴式不要乘。用它做座型对比时：同样 D、L 下 45° 座的理论流量比平座小 29.3%。",
+      "step_order": [
+        "1. 确认座型",
+        "2. 45° 座乘 0.707，平座/喷嘴不乘"
+      ],
+      "output_used_by": [
+        "F-TEST-001",
+        "F-TEST-002"
+      ],
+      "pitfalls": [
+        "给平座式也乘 0.707（理论流量偏小 29.3%，K_D 偏大）",
+        "把 0.707 当成别的标准的座系数套用"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（PDF 第 104 页 320dpi 渲染图逐字核读，四种座型逐一比对）",
+      "note": "0.707 在页图上确认，且已用同页四行的对比确认它只属于 45° 座式。等级 E1（数值自洽：0.707 = 1/√2，与 45° 几何一致；本条无比拟物理数据，不占 E2）。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目阀座为闸板式对夹结构，非 ASME Section I 45° 座安全阀，不做排放系数试验。本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-001",
+      "F-TEST-002",
+      "P-TEST-001",
+      "P-TEST-003"
+    ]
+  },
+  {
+    "id": "P-TEST-006",
+    "title_zh": "设计排放系数 K 的上限",
+    "title_en": "Maximum allowable coefficient of discharge for the design",
+    "aliases": [
+      "0.878",
+      "K 上限",
+      "排放系数上限",
+      "max coefficient of discharge"
+    ],
+    "param_kind": "LIMIT",
+    "symbol": "K",
+    "value": {
+      "canonical": "0.878",
+      "display": "0.878",
+      "latex": "0.878",
+      "numeric": 0.878,
+      "relation": "<=",
+      "unit_text": "dimensionless"
+    },
+    "unit": "dimensionless",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数",
+      "上限",
+      "ASME-BPVC-I",
+      "PG-69.2.3"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 Coefficient of Discharge Method（0.878 上限条款）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "The coefficient of discharge for the design shall be not greater than 0.878 (the product of 0.9 x 0.975). The coefficient shall not be applied to valves whose beta ratio (ratio of valve throat to inlet diameter) lies outside the range of 0.15 to 0.75, unless tests have demonstrated that the individual coefficient of discharge, K_D, for valves at the extreme ends of a larger range, is within ±5% of the average coefficient, K_D.",
+      "locator": "kb/_evidence/ASME-BPVC-I_p105_raster.png (PDF p.105 左栏 'The coefficient of discharge ... shall be not greater than 0.878' 段)",
+      "visual_verified": true,
+      "extraction_note": "★ 340dpi 页图逐字确认：'shall be not greater than 0.878 (the product of 0.9 × 0.975)'。PDF 文本层该处把 '5' 误映射为 'S'（读作 '0.9 x 0.97S'），必须靠页图判 0.975。分解式 0.9 × 0.975 = 0.8775，标准取 0.878。 【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "F-TEST-003",
+        "P-TEST-007",
+        "P-TEST-009"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "按 PG-69.2.3 建立的阀门设计的排放系数 K"
+      ],
+      "not_valid_when": [
+        "K 超过 0.878 时不能通过该条认证（须重做试验或改设计）",
+        "beta ratio 超出 0.15~0.75 的阀，直接套用该系数不成立（见 P-TEST-009）"
+      ],
+      "range_limits": [
+        "K ≤ 0.878"
+      ],
+      "conservatism": "上限本身是保守侧约束：K 取大意味着宣称排放能力大，因此被卡上限。"
+    },
+    "usage": {
+      "where": [
+        "ASME Section I 安全阀排放系数的认证判定",
+        "由九次试验求 K 时作为验收门槛"
+      ],
+      "how": "K = 0.90 × (九次试验 K_D 的平均值) 后，还必须满足 K ≤ 0.878。若超限，系数不得用于该设计。",
+      "step_order": [
+        "1. 由九次试验求 K_D 平均值",
+        "2. 乘 0.90 得 K（见 P-TEST-007）",
+        "3. 校核 K ≤ 0.878"
+      ],
+      "output_used_by": [
+        "F-TEST-003"
+      ],
+      "pitfalls": [
+        "把上限写成 0.9（漏掉 0.975 折减）",
+        "只测一次就用单阀 K_D 当设计 K",
+        "忽略 beta ratio 限制（P-TEST-009）"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（PDF 第 105 页 340dpi 渲染图逐字核读 + 分解式复算）",
+      "note": "0.878 与分解式 0.9 × 0.975 均在页图上确认，复算 0.8775 与 0.878 一致。等级 E1。条款归属说明：djvu 文本层把该段落在 L22770~L22800（紧邻 PG-69.3 起始），本条按 PDF 第 105 页版面（与 PG-69.2.3 的 K 定义同栏连续）归入 PG-69.2.3，此归属待与条款序号一并复核。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀。本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-003",
+      "P-TEST-007",
+      "P-TEST-009"
+    ]
+  },
+  {
+    "id": "P-TEST-007",
+    "title_zh": "单阀排放系数平均值折减系数",
+    "title_en": "Factor applied to the average of the individual coefficients of discharge",
+    "aliases": [
+      "0.90",
+      "0.9",
+      "K_D 平均折减",
+      "average coefficient factor"
+    ],
+    "param_kind": "COEFFICIENT",
+    "symbol": null,
+    "value": {
+      "canonical": "0.90",
+      "display": "0.90",
+      "latex": "0.90",
+      "numeric": 0.9,
+      "relation": "=",
+      "unit_text": "dimensionless"
+    },
+    "unit": "dimensionless",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数",
+      "ASME-BPVC-I",
+      "PG-69.2.3"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 Coefficient of Discharge Method",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "The average of the coefficients K_D of the nine tests required shall be multiplied by 0.90, and this product shall be taken as the coefficient K of that design.",
+      "locator": "kb/_evidence/ASME-BPVC-I_p104_raster.png (PDF p.104 右栏末尾 K_D 折减与 ±5% 段)",
+      "visual_verified": true,
+      "extraction_note": "0.90 在 340dpi 页图上确认（'shall be multiplied by 0.90, and this product shall be taken as the coefficient K of that design'）。注意本条与 P-TEST-006 的 0.9 是同一个数，但 P-TEST-006 里它是 0.9 × 0.975 的第一因子，语境不同。 【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "F-TEST-003",
+        "P-TEST-006",
+        "P-TEST-008"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "由九次规定试验的 K_D 平均值求设计排放系数 K 时"
+      ],
+      "not_valid_when": [
+        "只有单次试验时直接取 K = K_D（会高估排放能力）",
+        "把它当作 0.975 那个第二因子（见 P-TEST-006 的分解式）"
+      ],
+      "range_limits": [
+        "适用于九次试验的平均值"
+      ],
+      "conservatism": "偏保守：折减 10%，使申报排放能力低于实测平均。"
+    },
+    "usage": {
+      "where": [
+        "ASME Section I 安全阀设计排放系数 K 的确定"
+      ],
+      "how": "K = 0.90 × 平均(K_D)。随后还要校核 K ≤ 0.878。",
+      "step_order": [
+        "1. 取九次试验的 K_D 平均值",
+        "2. 乘 0.90 得 K",
+        "3. 校核 K ≤ 0.878（P-TEST-006）"
+      ],
+      "output_used_by": [
+        "F-TEST-003"
+      ],
+      "pitfalls": [
+        "漏乘 0.90",
+        "把 0.90 与 0.878 混为一谈"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（PDF 第 104 页 340dpi 渲染图核读）",
+      "note": "0.90 在页图上确认。等级 E1。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀。本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-003",
+      "P-TEST-006",
+      "P-TEST-008"
+    ]
+  },
+  {
+    "id": "P-TEST-008",
+    "title_zh": "单阀排放系数相对平均值的允许分散带",
+    "title_en": "Permissible spread of individual coefficients of discharge about the average",
+    "aliases": [
+      "±5%",
+      "plus minus 5%",
+      "K_D 分散度",
+      "coefficient spread"
+    ],
+    "param_kind": "LIMIT",
+    "symbol": null,
+    "value": {
+      "canonical": "5",
+      "display": "±5%",
+      "latex": "\\pm 5\\%",
+      "numeric": 5,
+      "relation": "±",
+      "unit_text": "% of the average coefficient found"
+    },
+    "unit": "%",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数",
+      "离散性",
+      "ASME-BPVC-I",
+      "PG-69.2.3"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 Coefficient of Discharge Method（±5% 条款）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "All individual coefficients of discharge, K_D, shall fall within a range of ±5% of the average coefficient found. If a valve fails to meet this requirement, the Authorized Observer shall require two additional valves to be tested as replacements for each valve having an individual coefficient, K_D, outside the ±5% range, with a limit of four additional valves.",
+      "locator": "kb/_evidence/ASME-BPVC-I_p104_raster.png (PDF p.104 右栏末尾 K_D 折减与 ±5% 段)",
+      "visual_verified": true,
+      "extraction_note": "±5% 在 PDF 文本层与 djvu 文本层均完整（djvu 把 '±' 退化为 '+'，'±5%' 读作 '+5%'）。PDF 文本层该行逐字为 'cients of discharge, KD , shall fall within a range of ±5%'，符号未退化。超出该带的处理规则：每超限一只阀补测两只，最多补四只。 【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "F-TEST-003",
+        "P-TEST-007"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "九次（或补测后）试验中各单阀 K_D 的一致性判定"
+      ],
+      "not_valid_when": [
+        "把 ±5% 理解为允许 K_D 偏离 5 个百分点（相对量 vs 绝对量混淆）",
+        "只取平均值而不管各只阀的分散度"
+      ],
+      "range_limits": [
+        "各 K_D ∈ 平均值 × (1 ± 0.05)"
+      ],
+      "conservatism": "偏保守：限制分散度意味着要求制造一致性，避免用少数高 K_D 阀拉高设计 K。"
+    },
+    "usage": {
+      "where": [
+        "安全阀试验一致性判定与认证",
+        "批次制造能力评估"
+      ],
+      "how": "算出九只阀 K_D 的平均值后，逐只检查是否落在平均值 ±5% 内。超限的每只阀用两只新阀替换重测，最多补四只；若补测后仍超限（不含被替换的阀），该设计拒绝认证。",
+      "step_order": [
+        "1. 求 K_D 平均值",
+        "2. 逐只检查 ±5% 带",
+        "3. 超限则补测替换"
+      ],
+      "output_used_by": [
+        "F-TEST-003"
+      ],
+      "pitfalls": [
+        "把 ±5% 当绝对百分点",
+        "补测次数上限（4 只）忘记"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（PDF 文本层 + djvu 文本层双层比对，数值无退化）",
+      "note": "±5% 在两个文本层均完整无退化，且 PDF 文本层为版面层文本（与页图同源）。等级 E1。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀。本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-003",
+      "P-TEST-007"
+    ]
+  },
+  {
+    "id": "P-TEST-009",
+    "title_zh": "排放系数适用区间（beta ratio）",
+    "title_en": "Applicable beta ratio range for the coefficient of discharge",
+    "aliases": [
+      "beta ratio",
+      "0.15",
+      "0.75",
+      "阀喉径比",
+      "throat to inlet diameter ratio"
+    ],
+    "param_kind": "RANGE",
+    "symbol": null,
+    "value": {
+      "canonical": "0.15..0.75",
+      "display": "0.15 to 0.75",
+      "latex": "0.15 \\le \\beta \\le 0.75",
+      "numeric": 0.75,
+      "min": 0.15,
+      "max": 0.75,
+      "relation": "range",
+      "unit_text": "dimensionless (ratio of valve throat to inlet diameter)"
+    },
+    "unit": "dimensionless",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数",
+      "beta 比",
+      "几何比",
+      "ASME-BPVC-I",
+      "PG-69.2.3"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 Coefficient of Discharge Method（beta ratio 条款）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "The coefficient shall not be applied to valves whose beta ratio (ratio of valve throat to inlet diameter) lies outside the range of 0.15 to 0.75, unless tests have demonstrated that the individual coefficient of discharge, K_D, for valves at the extreme ends of a larger range, is within ±5% of the average coefficient, K_D.",
+      "locator": "kb/_evidence/ASME-BPVC-I_p105_raster.png (PDF p.105 左栏 'The coefficient of discharge ... shall be not greater than 0.878' 段)",
+      "visual_verified": true,
+      "extraction_note": "340dpi 页图逐字确认 'lies outside the range of 0.15 to 0.75'，并确认括号内定义 '(ratio of valve throat to inlet diameter)'。区间是闭区间（含端点），'outside' 指区间外才不得套用。 【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "F-TEST-003",
+        "P-TEST-006",
+        "P-TEST-008"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "beta = 阀喉径 / 入口管内径 落在 0.15~0.75 之间时，试验得到的排放系数可直接用于该设计"
+      ],
+      "not_valid_when": [
+        "beta 落在 0.15~0.75 之外时直接套用该系数（标准明文禁止）",
+        "把 beta 比成阀座直径与入口管径之比（原文定义是阀喉径）"
+      ],
+      "range_limits": [
+        "0.15 ≤ beta ≤ 0.75"
+      ],
+      "conservatism": "越界即失效，不是保守侧约束——是适用性边界。"
+    },
+    "usage": {
+      "where": [
+        "安全阀排放系数证书的适用范围标注",
+        "入口管径与阀喉径选型匹配"
+      ],
+      "how": "beta = 阀喉径 / 入口管内径。落在 0.15~0.75 内则证书系数有效；超出时除非在更宽区间两端做试验并证明 K_D 仍在平均值 ±5% 内，否则不得应用。",
+      "step_order": [
+        "1. 求阀喉径与入口管内径之比",
+        "2. 判定是否落在 0.15~0.75"
+      ],
+      "output_used_by": [
+        "F-TEST-003"
+      ],
+      "pitfalls": [
+        "用阀座直径代替阀喉径",
+        "把区间读成开区间"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（PDF 第 105 页 340dpi 渲染图逐字核读）",
+      "note": "0.15 与 0.75 及 beta 的定义均在页图上确认。等级 E1。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀。本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-003",
+      "P-TEST-006",
+      "P-TEST-008"
+    ]
+  },
+  {
+    "id": "P-TEST-010",
+    "title_zh": "水流量单位换算因子（lb/hr → gal/min）",
+    "title_en": "Water capacity conversion factor (lb/hr to gal/min)",
+    "aliases": [
+      "1/500",
+      "500",
+      "gal/min",
+      "水流量换算",
+      "lb/hr to gal/min"
+    ],
+    "param_kind": "UNIT_FACTOR",
+    "symbol": null,
+    "value": {
+      "canonical": "1/500",
+      "display": "1/500",
+      "latex": "\\frac{1}{500}",
+      "numeric": 0.002,
+      "relation": "=",
+      "unit_text": "dimensionless"
+    },
+    "unit": "dimensionless",
+    "domain": "TEST",
+    "tags": [
+      "单位换算",
+      "水试验",
+      "安全阀",
+      "ASME-BPVC-I",
+      "PG-69.2.3"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 Coefficient of Discharge Method（单位换算注）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "To convert lb/hr of water to gal/min of water, multiply the capacity in lb/hr by 1/500.",
+      "locator": "kb/_evidence/ASME-BPVC-I_p104_raster.png (PDF p.104 右栏末尾 单位换算段)",
+      "visual_verified": true,
+      "extraction_note": "340dpi 页图确认 'multiply the capacity in lb/hr by 1/500'，分数字形 1/500 在图上完整（djvu 文本层退化为 'V500'，PDF 文本层为 '1/500'）。顺带核出该换算的物理量级：1 gal = 3.785 L，1 lb 水 ≈ 0.4536 kg ≈ 0.4536 L，故 1 lb/hr ≈ 0.4536/60 L/min，而 gal/min 与 L/min 的换算是 3.785，合并后 lb/hr → gal/min 的因子为 0.4536/(60×3.785) = 1/499.9，与标准给的 1/500 一致（自洽）。 【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "F-TEST-001",
+        "P-TEST-011"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "把水试验容量从 lb/hr 换算成 gal/min"
+      ],
+      "not_valid_when": [
+        "把 1/500 当成 '除以 500 后再乘别的因子'（直接乘即可）",
+        "对蒸汽容量用本因子（原文明确限定 of water）"
+      ],
+      "range_limits": [
+        "仅适用于水"
+      ],
+      "conservatism": "不适用：单位换算，无保守性。"
+    },
+    "usage": {
+      "where": [
+        "安全阀水试验容量单位换算",
+        "试验报告英制 → 公制整理"
+      ],
+      "how": "容量(lb/hr) × 1/500 = 容量(gal/min)。",
+      "step_order": [
+        "1. 取 lb/hr 容量",
+        "2. 乘 1/500"
+      ],
+      "output_used_by": [
+        "F-TEST-001"
+      ],
+      "pitfalls": [
+        "对蒸汽用本因子",
+        "把 1/500 写成 1/5000（多一个 0）"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（PDF 第 104 页 340dpi 渲染图核读 + 独立量纲复算）",
+      "note": "1/500 在页图上确认，并用水密度与加仑容积独立复算得 1/499.9，自洽。等级 E1。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀容量试验。本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-001",
+      "P-TEST-011"
+    ]
+  },
+  {
+    "id": "P-TEST-011",
+    "title_zh": "水流量单位换算因子（kg/hr → L/min）",
+    "title_en": "Water capacity conversion factor (kg/hr to liter/min)",
+    "aliases": [
+      "1/60",
+      "60",
+      "liter/min",
+      "水流量换算 SI",
+      "kg/hr to L/min"
+    ],
+    "param_kind": "UNIT_FACTOR",
+    "symbol": null,
+    "value": {
+      "canonical": "1/60",
+      "display": "1/60",
+      "latex": "\\frac{1}{60}",
+      "numeric": 0.016666666666666666,
+      "relation": "=",
+      "unit_text": "dimensionless"
+    },
+    "unit": "dimensionless",
+    "domain": "TEST",
+    "tags": [
+      "单位换算",
+      "水试验",
+      "安全阀",
+      "ASME-BPVC-I",
+      "PG-69.2.3"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 Coefficient of Discharge Method（单位换算注）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "To convert kg/hr of water to liter/min of water, multiply the capacity in liter/min by 1/60.",
+      "locator": "kb/_evidence/ASME-BPVC-I_p104_raster.png (PDF p.104 右栏末尾 单位换算段)",
+      "visual_verified": true,
+      "extraction_note": "340dpi 页图确认 'multiply the capacity in liter/min by 1/60'（djvu 文本层退化为 'V 60'）。★ 原文措辞有笔误：它写的是 'multiply the capacity in liter/min by 1/60'，被乘的量应当是 kg/hr 的容量（原文 'in liter/min' 是印错的单位）。本条按物理含义记录为 kg/hr → L/min，并在 pitfalls 中标注该原文笔误，不要照字面执行成 liter/min × 1/60。 【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "F-TEST-001",
+        "P-TEST-010"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "把水试验容量从 kg/hr 换算成 L/min"
+      ],
+      "not_valid_when": [
+        "照原文笔误把 liter/min 的容量再乘 1/60",
+        "对蒸汽容量用本因子（原文限定 of water）"
+      ],
+      "range_limits": [
+        "仅适用于水"
+      ],
+      "conservatism": "不适用：单位换算，无保守性。"
+    },
+    "usage": {
+      "where": [
+        "安全阀水试验容量单位换算（SI）"
+      ],
+      "how": "容量(kg/hr) × 1/60 = 容量(L/min)。注意这是把每小时换成每分钟，与 US 侧的 1/500 不同（后者还含 lb→gal 与水的密度）。",
+      "step_order": [
+        "1. 取 kg/hr 容量",
+        "2. 乘 1/60"
+      ],
+      "output_used_by": [
+        "F-TEST-001"
+      ],
+      "pitfalls": [
+        "原文笔误导致重复换算",
+        "与 US 侧的 1/500 混用"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（PDF 第 104 页 340dpi 渲染图核读）",
+      "note": "1/60 在页图上确认。原文单位笔误已如实记录在 extraction_note 与 pitfalls，未做静默修正。等级 E1。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀容量试验。本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-001",
+      "P-TEST-010"
+    ]
+  },
+  {
+    "id": "P-TEST-012",
+    "title_zh": "压力修正因子的适用压力下限",
+    "title_en": "Lower pressure limit above which the pressure correction factor applies",
+    "aliases": [
+      "1500 psig",
+      "10.3 MPa",
+      "压力修正因子",
+      "correction factor lower limit"
+    ],
+    "param_kind": "LIMIT",
+    "symbol": null,
+    "value": {
+      "canonical": "1500 psig (10.3 MPa)",
+      "display": "1,500 psig (10.3 MPa)",
+      "latex": "1500\\ \\mathrm{psig}\\ (10.3\\ \\mathrm{MPa})",
+      "numeric": 1500,
+      "min": 1500,
+      "relation": ">",
+      "unit_text": "psig (MPa)",
+      "alt_values": [
+        {
+          "canonical": "10.3 MPa",
+          "display": "10.3 MPa",
+          "unit_text": "MPa",
+          "note": "同一阈值的 SI 表示"
+        }
+      ]
+    },
+    "unit": "psig (MPa)",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "超临界",
+      "压力修正",
+      "ASME-BPVC-I",
+      "PG-69.2.3"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 Coefficient of Discharge Method（超临界压力修正因子条款）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "For pressures over 1,500 psig (10.3 MPa) and up to 3,200 psig (22.1 MPa), the value of W shall be multiplied by the correction factor",
+      "locator": "kb/_evidence/ASME-BPVC-I_p105_raster.png (PDF p.105 左下 'For pressures over 1,500 psig' 与超临界修正因子段)",
+      "visual_verified": true,
+      "extraction_note": "340dpi 页图逐字确认 'For pressures over 1,500 psig (10.3 MPa) and up to 3,200 psig (22.1 MPa)'。PDF 文本层该行把数字映射坏（读作 'I,SOO psig'，1→I、5→S、0→O），必须靠页图判读。阈值是 1,500 psig（表压）不是 psia。 【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "F-TEST-002",
+        "P-TEST-013"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "整定压力/试验压力超过 1,500 psig (10.3 MPa) 时，理论流量需乘压力修正因子"
+      ],
+      "not_valid_when": [
+        "压力在 1,500 psig 以下仍去乘修正因子"
+      ],
+      "range_limits": [
+        "1,500 psig < P ≤ 3,200 psig (22.1 MPa) 用一般压力修正因子",
+        "P > 3,200 psig (22.1 MPa) 用超临界修正因子 K_sc（见 P-TEST-013 与 Table PG-69.2.3）"
+      ],
+      "conservatism": "不适用：分段边界。"
+    },
+    "usage": {
+      "where": [
+        "高压安全阀容量计算的分段判别"
+      ],
+      "how": "压力超过 1,500 psig (10.3 MPa) 时，W 要乘压力修正因子；再超过 3,200 psig (22.1 MPa) 则改用 Table PG-69.2.3 的 K_sc。",
+      "step_order": [
+        "1. 比较压力与 1,500 psig (10.3 MPa)",
+        "2. 在区间内则乘压力修正因子",
+        "3. 再判是否超过 3,200 psig (22.1 MPa)"
+      ],
+      "output_used_by": [
+        "F-TEST-002"
+      ],
+      "pitfalls": [
+        "把 psig 当 psia",
+        "PDF 文本层把 1,500 读成 'I,SOO' 时照抄"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（PDF 第 105 页 340dpi 渲染图逐字核读）",
+      "note": "1,500 psig (10.3 MPa) 在页图上确认。等级 E1。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目工作压力 0.588 MPa，远低于该阈值。本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-002",
+      "P-TEST-013"
+    ]
+  },
+  {
+    "id": "P-TEST-013",
+    "title_zh": "超临界修正因子的适用压力下限",
+    "title_en": "Lower pressure limit above which the supercritical correction factor applies",
+    "aliases": [
+      "3200 psig",
+      "22.1 MPa",
+      "K_sc",
+      "超临界修正因子",
+      "supercritical correction factor"
+    ],
+    "param_kind": "LIMIT",
+    "symbol": null,
+    "value": {
+      "canonical": "3200 psig (22.1 MPa)",
+      "display": "3,200 psig (22.1 MPa)",
+      "latex": "3200\\ \\mathrm{psig}\\ (22.1\\ \\mathrm{MPa})",
+      "numeric": 3200,
+      "min": 3200,
+      "relation": ">",
+      "unit_text": "psig (MPa)",
+      "alt_values": [
+        {
+          "canonical": "22.1 MPa",
+          "display": "22.1 MPa",
+          "unit_text": "MPa",
+          "note": "同一阈值的 SI 表示"
+        }
+      ]
+    },
+    "unit": "psig (MPa)",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "超临界",
+      "K_sc",
+      "ASME-BPVC-I",
+      "PG-69.2.3"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 Coefficient of Discharge Method（超临界修正因子条款）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "For pressures over 3,200 psig (22.1 MPa), the value of W shall be multiplied by the appropriate supercritical correction factor, K_sc, from Table PG-69.2.3.",
+      "locator": "kb/_evidence/ASME-BPVC-I_p105_raster.png (PDF p.105 左下 'For pressures over 1,500 psig' 与超临界修正因子段)",
+      "visual_verified": true,
+      "extraction_note": "3,200 psig (22.1 MPa) 在同页同段落的前一行（340dpi 图 bpvc_p105_supercrit.png 已确认该区段为 '1,500 psig (10.3 MPa) ... up to 3,200 psig (22.1 MPa)'），本行文字在 PDF 文本层逐字完整（'For pressures over 3,200 psig (22.1 MPa), the value of W shall be multiplied by the appropriate supercritical'），两处互证。K_sc 的具体数值在 Table PG-69.2.3 表内，本条只登记阈值，不登记表内数据（表格数据属于数据表层）。 【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "F-TEST-002",
+        "P-TEST-012"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "压力超过 3,200 psig (22.1 MPa) 时，W 要乘 Table PG-69.2.3 的 K_sc"
+      ],
+      "not_valid_when": [
+        "在 1,500~3,200 psig 区间用 K_sc（该区间用一般压力修正因子）"
+      ],
+      "range_limits": [
+        "P > 3,200 psig (22.1 MPa)"
+      ],
+      "conservatism": "不适用：分段边界。"
+    },
+    "usage": {
+      "where": [
+        "超高压安全阀容量计算的分段判别"
+      ],
+      "how": "压力超过 3,200 psig (22.1 MPa) 时，查 Table PG-69.2.3 取 K_sc 并乘到 W 上。",
+      "step_order": [
+        "1. 判压力是否超过 3,200 psig (22.1 MPa)",
+        "2. 是则查 Table PG-69.2.3 取 K_sc 并乘入"
+      ],
+      "output_used_by": [
+        "F-TEST-002"
+      ],
+      "pitfalls": [
+        "把两个压力分段搞混"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（PDF 第 105 页文本层逐字核对 + 同页 340dpi 渲染图互证）",
+      "note": "3,200 psig (22.1 MPa) 确认。等级 E1。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目工作压力 0.588 MPa，远低于该阈值。本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-002",
+      "P-TEST-012"
+    ]
+  },
+  {
+    "id": "P-TEST-014",
+    "title_zh": "K 上限 0.878 的构成因子 0.975",
+    "title_en": "Factor 0.975 in the K upper limit 0.878",
+    "aliases": [
+      "0.975",
+      "0.975"
+    ],
+    "param_kind": "COEFFICIENT",
+    "symbol": null,
+    "value": {
+      "canonical": "0.975",
+      "display": "0.975",
+      "latex": "0.975",
+      "numeric": 0.975,
+      "min": null,
+      "max": null,
+      "relation": "=",
+      "unit_text": "dimensionless",
+      "alt_values": []
+    },
+    "unit": "dimensionless",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数试验",
+      "容量试验",
+      "ASME-BPVC-I",
+      "PG-69.2.3"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 Coefficient of Discharge Method — K 上限构成",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "The coefficient of discharge for the design shall be not greater than 0.878 (the product of 0.9 × 0.975).",
+      "locator": "kb/_evidence/ASME-BPVC-I_p105_raster.png (PDF p.105 左栏 'The coefficient of discharge ... shall be not greater than 0.878' 段)",
+      "visual_verified": true,
+      "extraction_note": "【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。 0.9 × 0.975 = 0.8775，原文印作 0.878（进位取整）。",
+      "cross_refs": [
+        "P-TEST-006",
+        "P-TEST-007",
+        "F-TEST-003"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "判定设计 K 是否超限（0.878 ≤ 0.9 × 0.975）时，用于复现 ASME 的构成"
+      ],
+      "not_valid_when": [
+        "把 0.975 当成 K 的直接上限——0.878 才是上限，0.975 只是构成因子",
+        "只用 0.9 折减而漏掉 0.975，会把 K 的允许上限错当成 0.9"
+      ],
+      "range_limits": [
+        "0.975 与 0.9 相乘才得到 0.878；两者单独使用都无意义"
+      ],
+      "conservatism": "不适用：标准给定的限值/常数。"
+    },
+    "usage": {
+      "where": [
+        "PG-69.2.3 排放系数试验的设计 K 合格判定"
+      ],
+      "how": "K = 0.9 × 平均 K_D；若需复现 ASME 的 0.878 上限，按 0.9 × 0.975 构造等效上限再比较。",
+      "step_order": [
+        "1. 由九次试验得各 K_D",
+        "2. 平均并乘 0.90 得设计 K",
+        "3. 与 0.878 比较（等价于与 0.9 × 0.975 比较）"
+      ],
+      "output_used_by": [
+        "P-TEST-006",
+        "P-TEST-007",
+        "F-TEST-003"
+      ],
+      "pitfalls": [
+        "误把 0.975 单独当上限",
+        "误以为 0.878 是直接给定的、没有构成关系"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（纯扫描位图逐字核读 + 同页 US/SI 排印对照 + 量纲自洽复算）",
+      "note": "数值经剥离 OCR 文本层的纯扫描位图逐字核对，并在同页 US/SI 对照下确认读法；满足 E1「数值与公式自洽」。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀/泄压阀，不涉及本参数；本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "P-TEST-006",
+      "P-TEST-007",
+      "F-TEST-003"
+    ]
+  },
+  {
+    "id": "P-TEST-015",
+    "title_zh": "超临界区容量外推常数 1,135.8",
+    "title_en": "Supercritical capacity extrapolation constant 1,135.8",
+    "aliases": [
+      "1,135.8",
+      "1135.8"
+    ],
+    "param_kind": "CONSTANT",
+    "symbol": null,
+    "value": {
+      "canonical": "1135.8",
+      "display": "1,135.8",
+      "latex": "1,135.8",
+      "numeric": 1135.8,
+      "min": null,
+      "max": null,
+      "relation": "=",
+      "unit_text": "见 F-TEST-005 的量纲说明",
+      "alt_values": []
+    },
+    "unit": "见 F-TEST-005",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数试验",
+      "容量试验",
+      "ASME-BPVC-I",
+      "PG-69.3",
+      "超临界"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.3（超临界区容量外推）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "W = 1,135.8 (0.90/51.45) × (dW/dP)√(P/ν)  (U.S. Customary Units); W = 1 135.8 (0.95/5.25) × (dW/dP)√(P/ν)  (SI Units)",
+      "locator": "kb/_evidence/ASME-BPVC-I_p105_raster.png (PDF p.105 右上 超临界容量外推式与 NOTE 段)",
+      "visual_verified": true,
+      "extraction_note": "【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。 ★ US 版印作 '1,135.8'（逗号千分位），SI 版印作 '1 135.8'（空格千分位）——同一个数 1135.8 的两种排法，是判定 ASME SI 版空格语义的直接证据（见 P-TEST-002）。",
+      "cross_refs": [
+        "F-TEST-005",
+        "P-TEST-016",
+        "P-TEST-017",
+        "P-TEST-018"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "PG-69.3 动力操作式泄压阀在超临界区的额定泄放能力外推"
+      ],
+      "not_valid_when": [
+        "超临界压力（>3,200 psig / 22.1 MPa）但介质温度低于 800°F (430°C)——此时必须改用其他容量算法，不得用本式",
+        "把 '1 135.8'（SI 排印）当成 11358"
+      ],
+      "range_limits": [
+        "γ = 1.30 的适用温度界限见 P-TEST-018 / P-TEST-019"
+      ],
+      "conservatism": "不适用：标准给定的限值/常数。"
+    },
+    "usage": {
+      "where": [
+        "PG-69.3 四个压力点试验数据拟合后向超临界区外推额定泄放能力"
+      ],
+      "how": "由实测容量对绝对压力的斜率 dW/dP，结合 P 与比容 ν，按 F-TEST-005 的 US/SI 式外推。",
+      "step_order": [
+        "1. 取四个压力点的实测容量，线性拟合得 dW/dP",
+        "2. 取入口绝对压力 P 与介质比容 ν",
+        "3. 代入 F-TEST-005（常数 1,135.8）"
+      ],
+      "output_used_by": [
+        "F-TEST-005",
+        "P-TEST-016",
+        "P-TEST-017"
+      ],
+      "pitfalls": [
+        "超临界区温度低于 800°F (430°C) 时误用本式",
+        "SI 版常数 '1 135.8' 的空格是千分位，不是小数点"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（纯扫描位图逐字核读 + 同页 US/SI 排印对照 + 量纲自洽复算）",
+      "note": "数值经剥离 OCR 文本层的纯扫描位图逐字核对，并在同页 US/SI 对照下确认读法；满足 E1「数值与公式自洽」。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀/泄压阀，不涉及本参数；本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-005",
+      "P-TEST-016",
+      "P-TEST-017",
+      "P-TEST-018"
+    ]
+  },
+  {
+    "id": "P-TEST-016",
+    "title_zh": "超临界外推式 US 比值项 0.90/51.45",
+    "title_en": "Supercritical extrapolation ratio term (US) 0.90/51.45",
+    "aliases": [
+      "0.90/51.45",
+      "0.90/51.45"
+    ],
+    "param_kind": "COEFFICIENT",
+    "symbol": null,
+    "value": {
+      "canonical": "0.90/51.45",
+      "display": "0.90/51.45",
+      "latex": "0.90/51.45",
+      "numeric": 0.01749271137026239,
+      "min": null,
+      "max": null,
+      "relation": "=",
+      "unit_text": "dimensionless",
+      "alt_values": []
+    },
+    "unit": "dimensionless",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数试验",
+      "容量试验",
+      "ASME-BPVC-I",
+      "PG-69.3",
+      "超临界"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.3（超临界区容量外推，U.S. Customary Units）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "W = 1,135.8 (0.90/51.45) × (dW/dP)√(P/ν)",
+      "locator": "kb/_evidence/ASME-BPVC-I_p105_raster.png (PDF p.105 右上 超临界容量外推式与 NOTE 段)",
+      "visual_verified": true,
+      "extraction_note": "【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。 0.90/51.45 = 0.0174927；SI 对应项 0.95/5.25 = 0.180952。",
+      "cross_refs": [
+        "F-TEST-005",
+        "P-TEST-015",
+        "P-TEST-017"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "PG-69.3 超临界外推的英制计算"
+      ],
+      "not_valid_when": [
+        "SI 计算——SI 版对应项是 0.95/5.25（P-TEST-017）",
+        "把 51.45 当成英制蒸汽常数直接代入 F-TEST-002 的平座式（那里是 51.5）"
+      ],
+      "range_limits": [
+        "分母 51.45 与蒸汽平座式常数 51.5 不是同一个量，不可互换"
+      ],
+      "conservatism": "不适用：标准给定的限值/常数。"
+    },
+    "usage": {
+      "where": [
+        "PG-69.3 超临界容量外推的英制计算"
+      ],
+      "how": "把 0.90/51.45 作为无量纲比值项乘在 1,135.8 与 (dW/dP)√(P/ν) 之间。",
+      "step_order": [
+        "1. 按 F-TEST-005 备好 dW/dP、P、ν 的英制值",
+        "2. 乘入本比值项"
+      ],
+      "output_used_by": [
+        "F-TEST-005",
+        "P-TEST-015",
+        "P-TEST-017"
+      ],
+      "pitfalls": [
+        "51.45 与 51.5 混用",
+        "英制与 SI 比值项混用"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（纯扫描位图逐字核读 + 同页 US/SI 排印对照 + 量纲自洽复算）",
+      "note": "数值经剥离 OCR 文本层的纯扫描位图逐字核对，并在同页 US/SI 对照下确认读法；满足 E1「数值与公式自洽」。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀/泄压阀，不涉及本参数；本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-005",
+      "P-TEST-015",
+      "P-TEST-017"
+    ]
+  },
+  {
+    "id": "P-TEST-017",
+    "title_zh": "超临界外推式 SI 比值项 0.95/5.25",
+    "title_en": "Supercritical extrapolation ratio term (SI) 0.95/5.25",
+    "aliases": [
+      "0.95/5.25",
+      "0.95/5.25"
+    ],
+    "param_kind": "COEFFICIENT",
+    "symbol": null,
+    "value": {
+      "canonical": "0.95/5.25",
+      "display": "0.95/5.25",
+      "latex": "0.95/5.25",
+      "numeric": 0.18095238095238095,
+      "min": null,
+      "max": null,
+      "relation": "=",
+      "unit_text": "dimensionless",
+      "alt_values": []
+    },
+    "unit": "dimensionless",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数试验",
+      "容量试验",
+      "ASME-BPVC-I",
+      "PG-69.3",
+      "超临界"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.3（超临界区容量外推，SI Units）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "W = 1 135.8 (0.95/5.25) × (dW/dP)√(P/ν)",
+      "locator": "kb/_evidence/ASME-BPVC-I_p105_raster.png (PDF p.105 右上 超临界容量外推式与 NOTE 段)",
+      "visual_verified": true,
+      "extraction_note": "【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。 0.95/5.25 = 0.180952。",
+      "cross_refs": [
+        "F-TEST-005",
+        "P-TEST-015",
+        "P-TEST-016"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "PG-69.3 超临界外推的 SI 计算"
+      ],
+      "not_valid_when": [
+        "英制计算——US 版对应项是 0.90/51.45（P-TEST-016）"
+      ],
+      "range_limits": [
+        "分母 5.25 与 SI 蒸汽平座式常数 5.25 数值相同但来源不同，不可视为同一参数"
+      ],
+      "conservatism": "不适用：标准给定的限值/常数。"
+    },
+    "usage": {
+      "where": [
+        "PG-69.3 超临界容量外推的 SI 计算"
+      ],
+      "how": "把 0.95/5.25 作为无量纲比值项乘在 1,135.8 与 (dW/dP)√(P/ν) 之间。",
+      "step_order": [
+        "1. 按 F-TEST-005 备好 dW/dP、P、ν 的 SI 值",
+        "2. 乘入本比值项"
+      ],
+      "output_used_by": [
+        "F-TEST-005",
+        "P-TEST-015",
+        "P-TEST-016"
+      ],
+      "pitfalls": [
+        "把 5.25 当成 P-TEST-004 的蒸汽容量常数直接用",
+        "英制与 SI 比值项混用"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（纯扫描位图逐字核读 + 同页 US/SI 排印对照 + 量纲自洽复算）",
+      "note": "数值经剥离 OCR 文本层的纯扫描位图逐字核对，并在同页 US/SI 对照下确认读法；满足 E1「数值与公式自洽」。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀/泄压阀，不涉及本参数；本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-005",
+      "P-TEST-015",
+      "P-TEST-016"
+    ]
+  },
+  {
+    "id": "P-TEST-018",
+    "title_zh": "1,135.8 常数所依据的 γ 因子 1.30",
+    "title_en": "Gamma factor 1.30 underlying the 1,135.8 constant",
+    "aliases": [
+      "1.30",
+      "1.30"
+    ],
+    "param_kind": "CONSTANT",
+    "symbol": null,
+    "value": {
+      "canonical": "1.30",
+      "display": "1.30",
+      "latex": "1.30",
+      "numeric": 1.3,
+      "min": null,
+      "max": null,
+      "relation": "=",
+      "unit_text": "dimensionless",
+      "alt_values": []
+    },
+    "unit": "dimensionless",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数试验",
+      "容量试验",
+      "ASME-BPVC-I",
+      "PG-69.3",
+      "超临界"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.3 NOTE（1,135.8 常数的依据）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "NOTE: The constant 1,135.8 is based on a γ factor of 1.30, which is accurate for superheated steam at temperature above approximately 800°F (430°C).",
+      "locator": "kb/_evidence/ASME-BPVC-I_p105_raster.png (PDF p.105 右上 超临界容量外推式与 NOTE 段)",
+      "visual_verified": true,
+      "extraction_note": "【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "P-TEST-015",
+        "P-TEST-019",
+        "F-TEST-005"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "引用 1,135.8 常数并说明其理论依据时"
+      ],
+      "not_valid_when": [
+        "超临界压力下但温度低于 800°F (430°C)——此时 γ = 1.30 的准确性不再成立",
+        "把 γ 当成可自由调整的拟合系数——它是超热水蒸气的物性因子"
+      ],
+      "range_limits": [
+        "温度界限见 P-TEST-019"
+      ],
+      "conservatism": "不适用：标准给定的限值/常数。"
+    },
+    "usage": {
+      "where": [
+        "超临界容量外推结果的可追溯性说明（计算书引用）"
+      ],
+      "how": "在计算书中注明 1,135.8 的依据是 γ = 1.30，并声明适用温度是否高于 800°F (430°C)。",
+      "step_order": [
+        "1. 查介质温度",
+        "2. 低于界限则改用其他容量算法并记录理由"
+      ],
+      "output_used_by": [
+        "P-TEST-015",
+        "P-TEST-019"
+      ],
+      "pitfalls": [
+        "只写 1,135.8 不写 γ 依据，丧失可追溯性",
+        "超临界低压低温区仍套用 1,135.8"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（纯扫描位图逐字核读 + 同页 US/SI 排印对照 + 量纲自洽复算）",
+      "note": "数值经剥离 OCR 文本层的纯扫描位图逐字核对，并在同页 US/SI 对照下确认读法；满足 E1「数值与公式自洽」。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀/泄压阀，不涉及本参数；本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "P-TEST-015",
+      "P-TEST-019",
+      "F-TEST-005"
+    ]
+  },
+  {
+    "id": "P-TEST-019",
+    "title_zh": "超临界外推的温度界限 800 °F (430 °C)",
+    "title_en": "Supercritical extrapolation temperature limit 800 °F (430 °C)",
+    "aliases": [
+      "800 °F (430 °C)",
+      "800 °F (430 °C)"
+    ],
+    "param_kind": "THRESHOLD",
+    "symbol": null,
+    "value": {
+      "canonical": "800 °F (430 °C)",
+      "display": "800 °F (430 °C)",
+      "latex": "800 °F (430 °C)",
+      "numeric": 800,
+      "min": null,
+      "max": null,
+      "relation": "=",
+      "unit_text": "°F (°C)",
+      "alt_values": [
+        {
+          "canonical": "430",
+          "display": "430 °C",
+          "unit_text": "°C",
+          "note": "原文并列给出的摄氏值"
+        }
+      ]
+    },
+    "unit": "degF (degC)",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数试验",
+      "容量试验",
+      "ASME-BPVC-I",
+      "PG-69.3",
+      "超临界"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.3 NOTE（超临界温度界限）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "…accurate for superheated steam at temperature above approximately 800°F (430°C). In interest of accuracy, other methods of capacity computations must be used at temperatures below 800°F (430°C) at supercritical pressures.",
+      "locator": "kb/_evidence/ASME-BPVC-I_p105_raster.png (PDF p.105 右上 超临界容量外推式与 NOTE 段)",
+      "visual_verified": true,
+      "extraction_note": "【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。 原文为 'approximately 800°F (430°C)'。",
+      "cross_refs": [
+        "P-TEST-015",
+        "P-TEST-018"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "判定能否使用 1,135.8 超临界外推式时"
+      ],
+      "not_valid_when": [
+        "温度低于 800°F (430°C) 且压力超临界——必须改用其他容量计算方法"
+      ],
+      "range_limits": [
+        "'approximately' 是原文用词，界限不是精确值"
+      ],
+      "conservatism": "不适用：标准给定的限值/常数。"
+    },
+    "usage": {
+      "where": [
+        "超临界区额定泄放能力算法选型"
+      ],
+      "how": "比较介质温度与 800°F (430°C)：高于界限可用 1,135.8 外推式，低于界限须另选算法。",
+      "step_order": [
+        "1. 取介质温度",
+        "2. 与界限比较",
+        "3. 选择算法并记录"
+      ],
+      "output_used_by": [
+        "P-TEST-015",
+        "P-TEST-018"
+      ],
+      "pitfalls": [
+        "只看压力超临界就套用外推式",
+        "把 'approximately 800' 当成硬阈值"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（纯扫描位图逐字核读 + 同页 US/SI 排印对照 + 量纲自洽复算）",
+      "note": "数值经剥离 OCR 文本层的纯扫描位图逐字核对，并在同页 US/SI 对照下确认读法；满足 E1「数值与公式自洽」。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀/泄压阀，不涉及本参数；本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "P-TEST-015",
+      "P-TEST-018"
+    ]
+  },
+  {
+    "id": "P-TEST-020",
+    "title_zh": "动力操作式泄压阀标记余量 3%",
+    "title_en": "3% marking margin for power-actuated pressure relief valves",
+    "aliases": [
+      "3%",
+      "3"
+    ],
+    "param_kind": "THRESHOLD",
+    "symbol": null,
+    "value": {
+      "canonical": "3",
+      "display": "3%",
+      "latex": "3%",
+      "numeric": 3,
+      "min": null,
+      "max": null,
+      "relation": "=",
+      "unit_text": "% of the full load operating pressure and temperature conditions",
+      "alt_values": [
+        {
+          "canonical": "3",
+          "display": "3%",
+          "unit_text": "%"
+        }
+      ]
+    },
+    "unit": "%",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数试验",
+      "容量试验",
+      "ASME-BPVC-I",
+      "PG-69.4",
+      "标记"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.4 Power-actuated pressure relieving valves（标记要求）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "…shall be marked as required by PG-110 with the computed capacity, corresponding to 3% above the full load operating pressure and temperature conditions at the valve inlet when the valve is operated by the controller.",
+      "locator": "kb/_evidence/ASME-BPVC-I_p105_raster.png (PDF p.105 右上 超临界容量外推式与 NOTE 段)",
+      "visual_verified": true,
+      "extraction_note": "【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "F-TEST-005",
+        "P-TEST-012"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "PG-69.4 动力操作式泄压阀的铭牌容量标记"
+      ],
+      "not_valid_when": [
+        "普通（弹簧）安全阀——PG-69.4 是动力操作式专用条款",
+        "把 3% 加在压力上而不是加在容量上"
+      ],
+      "range_limits": [
+        "3% 是相对满载工况的余量，具体叠加对象见原文上下文"
+      ],
+      "conservatism": "不适用：标准给定的限值/常数。"
+    },
+    "usage": {
+      "where": [
+        "动力操作式泄压阀铭牌容量计算与 PG-110 标记"
+      ],
+      "how": "按 PG-110 标记时，计算容量取对应满载运行压力/温度工况并留 3% 余量。",
+      "step_order": [
+        "1. 取满载工况的入口压力与温度",
+        "2. 算额定容量",
+        "3. 加 3% 余量后标记"
+      ],
+      "output_used_by": [
+        "F-TEST-005",
+        "P-TEST-012"
+      ],
+      "pitfalls": [
+        "误加在压力上",
+        "误用于弹簧式安全阀"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（纯扫描位图逐字核读 + 同页 US/SI 排印对照 + 量纲自洽复算）",
+      "note": "数值经剥离 OCR 文本层的纯扫描位图逐字核对，并在同页 US/SI 对照下确认读法；满足 E1「数值与公式自洽」。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀/泄压阀，不涉及本参数；本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-005",
+      "P-TEST-012"
+    ]
+  },
+  {
+    "id": "P-TEST-021",
+    "title_zh": "US 超临界压力修正因子分子系数 0.1906",
+    "title_en": "Supercritical pressure correction factor numerator coefficient (US) 0.1906",
+    "aliases": [
+      "0.1906",
+      "0.1906"
+    ],
+    "param_kind": "CONSTANT",
+    "symbol": null,
+    "value": {
+      "canonical": "0.1906",
+      "display": "0.1906",
+      "latex": "0.1906",
+      "numeric": 0.1906,
+      "min": null,
+      "max": null,
+      "relation": "=",
+      "unit_text": "见 F-TEST-004",
+      "alt_values": []
+    },
+    "unit": "见 F-TEST-004",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数试验",
+      "容量试验",
+      "ASME-BPVC-I",
+      "PG-69.2.3",
+      "超临界"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 超临界压力修正因子（U.S. Customary 版）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "(0.1906P − 1,000) / (0.2292P − 1,061)  (U.S. Customary Units)",
+      "locator": "kb/_evidence/ASME-BPVC-I_p105_raster.png (PDF p.105 左下 'For pressures over 1,500 psig' 与超临界修正因子段)",
+      "visual_verified": true,
+      "extraction_note": "【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。 ★ 排印对照：US 版用逗号千分位（1,000 / 1,061），SI 版用空格千分位（1 000 / 1 061），两者数值相同、书写不同——这是判定 ASME SI 版空格语义的直接证据（见 P-TEST-002）。",
+      "cross_refs": [
+        "F-TEST-004",
+        "P-TEST-012",
+        "P-TEST-013"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "PG-69.2.3 超临界压力修正因子的 英制 计算"
+      ],
+      "not_valid_when": [
+        "另一单位制——本条只对应 英制 版排印"
+      ],
+      "range_limits": [
+        "本条是 F-TEST-004 公式的一个系数，单独引用没有意义"
+      ],
+      "conservatism": "不适用：标准给定的限值/常数。"
+    },
+    "usage": {
+      "where": [
+        "超临界压力修正因子的手工复算（无计算器时核对）"
+      ],
+      "how": "把本常数代入 F-TEST-004 的对应版本分子或分母。",
+      "step_order": [
+        "1. 确认单位制版本",
+        "2. 取 P",
+        "3. 代入 F-TEST-004"
+      ],
+      "output_used_by": [
+        "F-TEST-004",
+        "P-TEST-012",
+        "P-TEST-013"
+      ],
+      "pitfalls": [
+        "US/SI 版本混用",
+        "把 SI 版 '1 000'、'1 061' 的空格当小数点"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（纯扫描位图逐字核读 + 同页 US/SI 排印对照 + 量纲自洽复算）",
+      "note": "数值经剥离 OCR 文本层的纯扫描位图逐字核对，并在同页 US/SI 对照下确认读法；满足 E1「数值与公式自洽」。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀/泄压阀，不涉及本参数；本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-004",
+      "P-TEST-012",
+      "P-TEST-013"
+    ]
+  },
+  {
+    "id": "P-TEST-022",
+    "title_zh": "US 超临界压力修正因子分母系数 0.2292",
+    "title_en": "Supercritical pressure correction factor denominator coefficient (US) 0.2292",
+    "aliases": [
+      "0.2292",
+      "0.2292"
+    ],
+    "param_kind": "CONSTANT",
+    "symbol": null,
+    "value": {
+      "canonical": "0.2292",
+      "display": "0.2292",
+      "latex": "0.2292",
+      "numeric": 0.2292,
+      "min": null,
+      "max": null,
+      "relation": "=",
+      "unit_text": "见 F-TEST-004",
+      "alt_values": []
+    },
+    "unit": "见 F-TEST-004",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数试验",
+      "容量试验",
+      "ASME-BPVC-I",
+      "PG-69.2.3",
+      "超临界"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 超临界压力修正因子（U.S. Customary 版）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "(0.1906P − 1,000) / (0.2292P − 1,061)  (U.S. Customary Units)",
+      "locator": "kb/_evidence/ASME-BPVC-I_p105_raster.png (PDF p.105 左下 'For pressures over 1,500 psig' 与超临界修正因子段)",
+      "visual_verified": true,
+      "extraction_note": "【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。 ★ 排印对照：US 版用逗号千分位（1,000 / 1,061），SI 版用空格千分位（1 000 / 1 061），两者数值相同、书写不同——这是判定 ASME SI 版空格语义的直接证据（见 P-TEST-002）。",
+      "cross_refs": [
+        "F-TEST-004",
+        "P-TEST-012",
+        "P-TEST-013"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "PG-69.2.3 超临界压力修正因子的 英制 计算"
+      ],
+      "not_valid_when": [
+        "另一单位制——本条只对应 英制 版排印"
+      ],
+      "range_limits": [
+        "本条是 F-TEST-004 公式的一个系数，单独引用没有意义"
+      ],
+      "conservatism": "不适用：标准给定的限值/常数。"
+    },
+    "usage": {
+      "where": [
+        "超临界压力修正因子的手工复算（无计算器时核对）"
+      ],
+      "how": "把本常数代入 F-TEST-004 的对应版本分子或分母。",
+      "step_order": [
+        "1. 确认单位制版本",
+        "2. 取 P",
+        "3. 代入 F-TEST-004"
+      ],
+      "output_used_by": [
+        "F-TEST-004",
+        "P-TEST-012",
+        "P-TEST-013"
+      ],
+      "pitfalls": [
+        "US/SI 版本混用",
+        "把 SI 版 '1 000'、'1 061' 的空格当小数点"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（纯扫描位图逐字核读 + 同页 US/SI 排印对照 + 量纲自洽复算）",
+      "note": "数值经剥离 OCR 文本层的纯扫描位图逐字核对，并在同页 US/SI 对照下确认读法；满足 E1「数值与公式自洽」。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀/泄压阀，不涉及本参数；本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-004",
+      "P-TEST-012",
+      "P-TEST-013"
+    ]
+  },
+  {
+    "id": "P-TEST-023",
+    "title_zh": "SI 超临界压力修正因子分子系数 27.6",
+    "title_en": "Supercritical pressure correction factor numerator coefficient (SI) 27.6",
+    "aliases": [
+      "27.6",
+      "27.6"
+    ],
+    "param_kind": "CONSTANT",
+    "symbol": null,
+    "value": {
+      "canonical": "27.6",
+      "display": "27.6",
+      "latex": "27.6",
+      "numeric": 27.6,
+      "min": null,
+      "max": null,
+      "relation": "=",
+      "unit_text": "见 F-TEST-004",
+      "alt_values": []
+    },
+    "unit": "见 F-TEST-004",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数试验",
+      "容量试验",
+      "ASME-BPVC-I",
+      "PG-69.2.3",
+      "超临界"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 超临界压力修正因子（SI 版）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "(27.6P − 1 000) / (33.2P − 1 061)  (SI Units)",
+      "locator": "kb/_evidence/ASME-BPVC-I_p105_raster.png (PDF p.105 左下 'For pressures over 1,500 psig' 与超临界修正因子段)",
+      "visual_verified": true,
+      "extraction_note": "【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。 ★ 排印对照：US 版用逗号千分位（1,000 / 1,061），SI 版用空格千分位（1 000 / 1 061），两者数值相同、书写不同——这是判定 ASME SI 版空格语义的直接证据（见 P-TEST-002）。",
+      "cross_refs": [
+        "F-TEST-004",
+        "P-TEST-012",
+        "P-TEST-013"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "PG-69.2.3 超临界压力修正因子的 SI 计算"
+      ],
+      "not_valid_when": [
+        "另一单位制——本条只对应 SI 版排印"
+      ],
+      "range_limits": [
+        "本条是 F-TEST-004 公式的一个系数，单独引用没有意义"
+      ],
+      "conservatism": "不适用：标准给定的限值/常数。"
+    },
+    "usage": {
+      "where": [
+        "超临界压力修正因子的手工复算（无计算器时核对）"
+      ],
+      "how": "把本常数代入 F-TEST-004 的对应版本分子或分母。",
+      "step_order": [
+        "1. 确认单位制版本",
+        "2. 取 P",
+        "3. 代入 F-TEST-004"
+      ],
+      "output_used_by": [
+        "F-TEST-004",
+        "P-TEST-012",
+        "P-TEST-013"
+      ],
+      "pitfalls": [
+        "US/SI 版本混用",
+        "把 SI 版 '1 000'、'1 061' 的空格当小数点"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（纯扫描位图逐字核读 + 同页 US/SI 排印对照 + 量纲自洽复算）",
+      "note": "数值经剥离 OCR 文本层的纯扫描位图逐字核对，并在同页 US/SI 对照下确认读法；满足 E1「数值与公式自洽」。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀/泄压阀，不涉及本参数；本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-004",
+      "P-TEST-012",
+      "P-TEST-013"
+    ]
+  },
+  {
+    "id": "P-TEST-024",
+    "title_zh": "SI 超临界压力修正因子分母系数 33.2",
+    "title_en": "Supercritical pressure correction factor denominator coefficient (SI) 33.2",
+    "aliases": [
+      "33.2",
+      "33.2"
+    ],
+    "param_kind": "CONSTANT",
+    "symbol": null,
+    "value": {
+      "canonical": "33.2",
+      "display": "33.2",
+      "latex": "33.2",
+      "numeric": 33.2,
+      "min": null,
+      "max": null,
+      "relation": "=",
+      "unit_text": "见 F-TEST-004",
+      "alt_values": []
+    },
+    "unit": "见 F-TEST-004",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数试验",
+      "容量试验",
+      "ASME-BPVC-I",
+      "PG-69.2.3",
+      "超临界"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 超临界压力修正因子（SI 版）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "(27.6P − 1 000) / (33.2P − 1 061)  (SI Units)",
+      "locator": "kb/_evidence/ASME-BPVC-I_p105_raster.png (PDF p.105 左下 'For pressures over 1,500 psig' 与超临界修正因子段)",
+      "visual_verified": true,
+      "extraction_note": "【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。 ★ 排印对照：US 版用逗号千分位（1,000 / 1,061），SI 版用空格千分位（1 000 / 1 061），两者数值相同、书写不同——这是判定 ASME SI 版空格语义的直接证据（见 P-TEST-002）。",
+      "cross_refs": [
+        "F-TEST-004",
+        "P-TEST-012",
+        "P-TEST-013"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "PG-69.2.3 超临界压力修正因子的 SI 计算"
+      ],
+      "not_valid_when": [
+        "另一单位制——本条只对应 SI 版排印"
+      ],
+      "range_limits": [
+        "本条是 F-TEST-004 公式的一个系数，单独引用没有意义"
+      ],
+      "conservatism": "不适用：标准给定的限值/常数。"
+    },
+    "usage": {
+      "where": [
+        "超临界压力修正因子的手工复算（无计算器时核对）"
+      ],
+      "how": "把本常数代入 F-TEST-004 的对应版本分子或分母。",
+      "step_order": [
+        "1. 确认单位制版本",
+        "2. 取 P",
+        "3. 代入 F-TEST-004"
+      ],
+      "output_used_by": [
+        "F-TEST-004",
+        "P-TEST-012",
+        "P-TEST-013"
+      ],
+      "pitfalls": [
+        "US/SI 版本混用",
+        "把 SI 版 '1 000'、'1 061' 的空格当小数点"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（纯扫描位图逐字核读 + 同页 US/SI 排印对照 + 量纲自洽复算）",
+      "note": "数值经剥离 OCR 文本层的纯扫描位图逐字核对，并在同页 US/SI 对照下确认读法；满足 E1「数值与公式自洽」。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀/泄压阀，不涉及本参数；本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-004",
+      "P-TEST-012",
+      "P-TEST-013"
+    ]
+  },
+  {
+    "id": "P-TEST-025",
+    "title_zh": "超临界压力修正因子常数 1,000",
+    "title_en": "Supercritical pressure correction factor constant 1,000",
+    "aliases": [
+      "1,000",
+      "1000"
+    ],
+    "param_kind": "CONSTANT",
+    "symbol": null,
+    "value": {
+      "canonical": "1000",
+      "display": "1,000",
+      "latex": "1,000",
+      "numeric": 1000.0,
+      "min": null,
+      "max": null,
+      "relation": "=",
+      "unit_text": "见 F-TEST-004",
+      "alt_values": []
+    },
+    "unit": "见 F-TEST-004",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数试验",
+      "容量试验",
+      "ASME-BPVC-I",
+      "PG-69.2.3",
+      "超临界"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 超临界压力修正因子（SI 版）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "(0.1906P − 1,000) / (0.2292P − 1,061)  (US); (27.6P − 1 000) / (33.2P − 1 061)  (SI)",
+      "locator": "kb/_evidence/ASME-BPVC-I_p105_raster.png (PDF p.105 左下 'For pressures over 1,500 psig' 与超临界修正因子段)",
+      "visual_verified": true,
+      "extraction_note": "【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。 ★ 排印对照：US 版用逗号千分位（1,000 / 1,061），SI 版用空格千分位（1 000 / 1 061），两者数值相同、书写不同——这是判定 ASME SI 版空格语义的直接证据（见 P-TEST-002）。",
+      "cross_refs": [
+        "F-TEST-004",
+        "P-TEST-012",
+        "P-TEST-013"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "PG-69.2.3 超临界压力修正因子的 SI 计算"
+      ],
+      "not_valid_when": [
+        "另一单位制——本条只对应 SI 版排印"
+      ],
+      "range_limits": [
+        "本条是 F-TEST-004 公式的一个系数，单独引用没有意义"
+      ],
+      "conservatism": "不适用：标准给定的限值/常数。"
+    },
+    "usage": {
+      "where": [
+        "超临界压力修正因子的手工复算（无计算器时核对）"
+      ],
+      "how": "把本常数代入 F-TEST-004 的对应版本分子或分母。",
+      "step_order": [
+        "1. 确认单位制版本",
+        "2. 取 P",
+        "3. 代入 F-TEST-004"
+      ],
+      "output_used_by": [
+        "F-TEST-004",
+        "P-TEST-012",
+        "P-TEST-013"
+      ],
+      "pitfalls": [
+        "US/SI 版本混用",
+        "把 SI 版 '1 000'、'1 061' 的空格当小数点"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（纯扫描位图逐字核读 + 同页 US/SI 排印对照 + 量纲自洽复算）",
+      "note": "数值经剥离 OCR 文本层的纯扫描位图逐字核对，并在同页 US/SI 对照下确认读法；满足 E1「数值与公式自洽」。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀/泄压阀，不涉及本参数；本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-004",
+      "P-TEST-012",
+      "P-TEST-013"
+    ]
+  },
+  {
+    "id": "P-TEST-026",
+    "title_zh": "超临界压力修正因子常数 1,061",
+    "title_en": "Supercritical pressure correction factor constant 1,061",
+    "aliases": [
+      "1,061",
+      "1061"
+    ],
+    "param_kind": "CONSTANT",
+    "symbol": null,
+    "value": {
+      "canonical": "1061",
+      "display": "1,061",
+      "latex": "1,061",
+      "numeric": 1061.0,
+      "min": null,
+      "max": null,
+      "relation": "=",
+      "unit_text": "见 F-TEST-004",
+      "alt_values": []
+    },
+    "unit": "见 F-TEST-004",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数试验",
+      "容量试验",
+      "ASME-BPVC-I",
+      "PG-69.2.3",
+      "超临界"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 超临界压力修正因子（SI 版）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "(0.1906P − 1,000) / (0.2292P − 1,061)  (US); (27.6P − 1 000) / (33.2P − 1 061)  (SI)",
+      "locator": "kb/_evidence/ASME-BPVC-I_p105_raster.png (PDF p.105 左下 'For pressures over 1,500 psig' 与超临界修正因子段)",
+      "visual_verified": true,
+      "extraction_note": "【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。 ★ 排印对照：US 版用逗号千分位（1,000 / 1,061），SI 版用空格千分位（1 000 / 1 061），两者数值相同、书写不同——这是判定 ASME SI 版空格语义的直接证据（见 P-TEST-002）。",
+      "cross_refs": [
+        "F-TEST-004",
+        "P-TEST-012",
+        "P-TEST-013"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "PG-69.2.3 超临界压力修正因子的 SI 计算"
+      ],
+      "not_valid_when": [
+        "另一单位制——本条只对应 SI 版排印"
+      ],
+      "range_limits": [
+        "本条是 F-TEST-004 公式的一个系数，单独引用没有意义"
+      ],
+      "conservatism": "不适用：标准给定的限值/常数。"
+    },
+    "usage": {
+      "where": [
+        "超临界压力修正因子的手工复算（无计算器时核对）"
+      ],
+      "how": "把本常数代入 F-TEST-004 的对应版本分子或分母。",
+      "step_order": [
+        "1. 确认单位制版本",
+        "2. 取 P",
+        "3. 代入 F-TEST-004"
+      ],
+      "output_used_by": [
+        "F-TEST-004",
+        "P-TEST-012",
+        "P-TEST-013"
+      ],
+      "pitfalls": [
+        "US/SI 版本混用",
+        "把 SI 版 '1 000'、'1 061' 的空格当小数点"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（纯扫描位图逐字核读 + 同页 US/SI 排印对照 + 量纲自洽复算）",
+      "note": "数值经剥离 OCR 文本层的纯扫描位图逐字核对，并在同页 US/SI 对照下确认读法；满足 E1「数值与公式自洽」。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀/泄压阀，不涉及本参数；本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-004",
+      "P-TEST-012",
+      "P-TEST-013"
+    ]
+  },
+  {
+    "id": "P-TEST-027",
+    "title_zh": "P 定义中的 set pressure 系数 1.03",
+    "title_en": "Set pressure multiplier 1.03 in the definition of P",
+    "aliases": [
+      "1.03",
+      "1.03"
+    ],
+    "param_kind": "COEFFICIENT",
+    "symbol": null,
+    "value": {
+      "canonical": "1.03",
+      "display": "1.03",
+      "latex": "1.03",
+      "numeric": 1.03,
+      "min": null,
+      "max": null,
+      "relation": "=",
+      "unit_text": "dimensionless",
+      "alt_values": []
+    },
+    "unit": "dimensionless",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数试验",
+      "容量试验",
+      "ASME-BPVC-I",
+      "PG-69.2.3"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 where（P 的定义）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "P = (1.03 × set pressure + 14.7), psia, or = (set pressure + 2 + 14.7), psia, whichever is greater = (1.03 × set pressure + 0.101), MPa, or = (set pressure + 0.014 + 0.101), MPa, whichever is greater",
+      "locator": "kb/_evidence/ASME-BPVC-I_p104_raster.png (PDF p.104 右栏 'where' 变量定义段)",
+      "visual_verified": true,
+      "extraction_note": "【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。 US 与 SI 版都是 1.03 × set pressure，系数与单位制无关。",
+      "cross_refs": [
+        "F-TEST-001",
+        "F-TEST-002",
+        "P-TEST-028",
+        "P-TEST-029"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "PG-69.2.3 计算理论流量 W_T 时的 P 取值"
+      ],
+      "not_valid_when": [
+        "PG-69.2.2 额定泄放能力斜率口径——那里用的是 set pressure + 0.015 MPa + 0.101（见 P-TEST-029）"
+      ],
+      "range_limits": [
+        "P 取两个式子中的较大者"
+      ],
+      "conservatism": "不适用：标准给定的限值/常数。"
+    },
+    "usage": {
+      "where": [
+        "理论流量 W_T 的压力代入"
+      ],
+      "how": "P = max(1.03 × set pressure + 14.7, set pressure + 2 + 14.7) psia（SI 同构）。",
+      "step_order": [
+        "1. 取 set pressure",
+        "2. 两个候选式各算一遍",
+        "3. 取大者"
+      ],
+      "output_used_by": [
+        "F-TEST-001",
+        "F-TEST-002",
+        "P-TEST-028",
+        "P-TEST-029"
+      ],
+      "pitfalls": [
+        "只算一个式子不取大者",
+        "与 rated slope 的 0.015 MPa 口径混用"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（纯扫描位图逐字核读 + 同页 US/SI 排印对照 + 量纲自洽复算）",
+      "note": "数值经剥离 OCR 文本层的纯扫描位图逐字核对，并在同页 US/SI 对照下确认读法；满足 E1「数值与公式自洽」。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀/泄压阀，不涉及本参数；本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-001",
+      "F-TEST-002",
+      "P-TEST-028",
+      "P-TEST-029"
+    ]
+  },
+  {
+    "id": "P-TEST-028",
+    "title_zh": "P 定义中的大气压项 14.7 psia (0.101 MPa)",
+    "title_en": "Atmospheric term 14.7 psia (0.101 MPa) in the definition of P",
+    "aliases": [
+      "14.7 psia (0.101 MPa)",
+      "14.7 psia (0.101 MPa)"
+    ],
+    "param_kind": "CONSTANT",
+    "symbol": null,
+    "value": {
+      "canonical": "14.7 psia (0.101 MPa)",
+      "display": "14.7 psia (0.101 MPa)",
+      "latex": "14.7 psia (0.101 MPa)",
+      "numeric": 14.7,
+      "min": null,
+      "max": null,
+      "relation": "=",
+      "unit_text": "psia (MPa)",
+      "alt_values": [
+        {
+          "canonical": "0.101",
+          "display": "0.101 MPa",
+          "unit_text": "MPa",
+          "note": "SI 版并列值；14.7 psia × 0.0689476 = 1.0135 MPa，原文取 0.101 MPa"
+        }
+      ]
+    },
+    "unit": "psia (MPa)",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数试验",
+      "容量试验",
+      "ASME-BPVC-I",
+      "PG-69.2.3"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 where（P 的定义）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "P = (1.03 × set pressure + 14.7), psia, … = (1.03 × set pressure + 0.101), MPa, …",
+      "locator": "kb/_evidence/ASME-BPVC-I_p104_raster.png (PDF p.104 右栏 'where' 变量定义段)",
+      "visual_verified": true,
+      "extraction_note": "【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。 原文 SI 版写 '0.101'（三位有效数字），换算精确值为 0.10135 MPa。",
+      "cross_refs": [
+        "F-TEST-001",
+        "P-TEST-027",
+        "P-TEST-029"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "PG-69.2.3 计算 W_T 时的 P 取值"
+      ],
+      "not_valid_when": [
+        "需要严格绝压而非表压的场景——本项已是绝压换算的一部分"
+      ],
+      "range_limits": [
+        "14.7 psia = 0.1013 MPa，原文取 0.101"
+      ],
+      "conservatism": "不适用：标准给定的限值/常数。"
+    },
+    "usage": {
+      "where": [
+        "set pressure → 绝对试验压力 P 的换算"
+      ],
+      "how": "P = 1.03 × set pressure + 14.7 psia（SI：+ 0.101 MPa）。",
+      "step_order": [
+        "1. 取 set pressure",
+        "2. 乘 1.03",
+        "3. 加 14.7 psia"
+      ],
+      "output_used_by": [
+        "F-TEST-001",
+        "P-TEST-027"
+      ],
+      "pitfalls": [
+        "用 14.7 psig 而非 psia",
+        "SI 侧用 0.101 而误换成 1.013"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（纯扫描位图逐字核读 + 同页 US/SI 排印对照 + 量纲自洽复算）",
+      "note": "数值经剥离 OCR 文本层的纯扫描位图逐字核对，并在同页 US/SI 对照下确认读法；满足 E1「数值与公式自洽」。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀/泄压阀，不涉及本参数；本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-001",
+      "P-TEST-027",
+      "P-TEST-029"
+    ]
+  },
+  {
+    "id": "P-TEST-029",
+    "title_zh": "P 定义中的附加项 2 psi (0.014 MPa) —— 与 rated slope 的 0.015 MPa 不一致",
+    "title_en": "Offset term 2 psi (0.014 MPa) in the definition of P — inconsistent with rated slope 0.015 MPa",
+    "aliases": [
+      "2 psi (0.014 MPa)",
+      "2 psi (0.014 MPa)"
+    ],
+    "param_kind": "CONSTANT",
+    "symbol": null,
+    "value": {
+      "canonical": "2 psi (0.014 MPa)",
+      "display": "2 psi (0.014 MPa)",
+      "latex": "2 psi (0.014 MPa)",
+      "numeric": 2,
+      "min": null,
+      "max": null,
+      "relation": "=",
+      "unit_text": "psi (MPa)",
+      "alt_values": [
+        {
+          "canonical": "0.014",
+          "display": "0.014 MPa",
+          "unit_text": "MPa",
+          "note": "PG-69.2.3（计算 W_T 用）"
+        },
+        {
+          "canonical": "0.015",
+          "display": "0.015 MPa",
+          "unit_text": "MPa",
+          "note": "★ PG-69.2.2（rated slope 用）——同页相邻条款，与 0.014 不一致，勿互换"
+        }
+      ]
+    },
+    "unit": "psi (MPa)",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数试验",
+      "容量试验",
+      "ASME-BPVC-I",
+      "PG-69.2.3",
+      "PG-69.2.2"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3 where（P 的定义）对照 PG-69.2.2（rated slope 定义）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "PG-69.2.3: = (set pressure + 2 + 14.7), psia, … = (set pressure + 0.014 + 0.101), MPa, …；PG-69.2.2: stamped capacity ≤ rated slope (1.03 × set pressure + 0.101) or (set pressure + 0.015 MPa + 0.101), whichever is greater",
+      "locator": "kb/_evidence/ASME-BPVC-I_p104_raster.png (PDF p.104 右栏 'where' 变量定义段)",
+      "visual_verified": true,
+      "extraction_note": "【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。 ★ ASME 原文自身的不一致：PG-69.2.3 用 2 psi / 0.014 MPa，PG-69.2.2 用 0.015 MPa。2 psi = 0.01379 MPa，PG-69.2.3 的 0.014 是进位；0.015 MPa = 2.16 psi，与 2 psi 并不等价。",
+      "cross_refs": [
+        "F-TEST-001",
+        "P-TEST-027",
+        "P-TEST-028"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "PG-69.2.3 的 P 定义（附加项取 2 psi / 0.014 MPa）"
+      ],
+      "not_valid_when": [
+        "PG-69.2.2 的 rated slope 口径（附加项取 0.015 MPa）——同一份标准里的两个条款给出不同值",
+        "把两处数值互换"
+      ],
+      "range_limits": [
+        "2 psi = 0.01379 MPa，原文取 0.014 MPa（进位）",
+        "0.015 MPa = 2.16 psi，与 PG-69.2.3 的 2 psi 不等价，差约 8%"
+      ],
+      "conservatism": "不适用：标准给定的限值/常数。"
+    },
+    "usage": {
+      "where": [
+        "对照 ASME 两条相邻条款的 P / rated slope 取值口径"
+      ],
+      "how": "PG-69.2.3 的 W_T 计算用 +2 psi（+0.014 MPa）；PG-69.2.2 的 rated slope 用 +0.015 MPa。计算书须注明采用哪一条，不要混用。",
+      "step_order": [
+        "1. 确认所算对象是 W_T（PG-69.2.3）还是 rated slope（PG-69.2.2）",
+        "2. 取对应附加项",
+        "3. 在计算书中标注条款号"
+      ],
+      "output_used_by": [
+        "F-TEST-001",
+        "P-TEST-027",
+        "P-TEST-028"
+      ],
+      "pitfalls": [
+        "★ 误以为 ASME 全文一致而把 0.014 与 0.015 互换",
+        "把 2 psi 直接当 0.015 MPa 换算"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（纯扫描位图逐字核读 + 同页 US/SI 排印对照 + 量纲自洽复算）",
+      "note": "数值经剥离 OCR 文本层的纯扫描位图逐字核对，并在同页 US/SI 对照下确认读法；满足 E1「数值与公式自洽」。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀/泄压阀，不涉及本参数；本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "F-TEST-001",
+      "P-TEST-027",
+      "P-TEST-028"
+    ]
+  },
+  {
+    "id": "P-TEST-030",
+    "title_zh": "K_D 超出 ±5% 时的替换试验数量上限 4",
+    "title_en": "Maximum of 4 replacement valves when individual K_D is outside ±5%",
+    "aliases": [
+      "4",
+      "4"
+    ],
+    "param_kind": "LIMIT",
+    "symbol": null,
+    "value": {
+      "canonical": "4",
+      "display": "4",
+      "latex": "4",
+      "numeric": 4,
+      "min": null,
+      "max": null,
+      "relation": "=",
+      "unit_text": "valves",
+      "alt_values": []
+    },
+    "unit": "count",
+    "domain": "TEST",
+    "tags": [
+      "安全阀",
+      "排放系数试验",
+      "容量试验",
+      "ASME-BPVC-I",
+      "PG-69.2.3"
+    ],
+    "source": {
+      "standard_id": "ASME BPVC Section I-2010",
+      "clause": "PG-69.2.3（K_D 分散带超差时的替换试验规定）",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "…the Authorized Observer shall require two additional valves to be tested as replacements for each valve having an individual coefficient, K_D, outside the ±5% range, with a limit of four additional valves.",
+      "locator": "kb/_evidence/ASME-BPVC-I_p105_raster.png (PDF p.105 左栏 'The coefficient of discharge ... shall be not greater than 0.878' 段)",
+      "visual_verified": true,
+      "extraction_note": "【证据口径】本条数值经【剥离 OCR 文本层的纯扫描位图】逐字复核，非整页渲染图——该 PDF 为 Xerox 扫描 + Adobe Paper Capture OCR 产物，整页渲染是扫描位图与重排 OCR 文本层的叠加层，OCR 会吞空格、吃掉小数点。复核工具 tools/raster_crop.py，证据件已入库于 kb/_evidence/。",
+      "cross_refs": [
+        "P-TEST-008",
+        "F-TEST-003"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "单只阀的 K_D 超出 ±5% 带宽时的补测安排"
+      ],
+      "not_valid_when": [
+        "试验尚未开始——这是试验后的处置规定"
+      ],
+      "range_limits": [
+        "每只超差阀换 2 只，上限 4 只"
+      ],
+      "conservatism": "不适用：标准给定的限值/常数。"
+    },
+    "usage": {
+      "where": [
+        "排放系数试验不合格后的补测计划"
+      ],
+      "how": "按 2:1 的替换比安排补测，最多 4 只；再不合格则该设计拒绝认证。",
+      "step_order": [
+        "1. 统计 K_D 超出 ±5% 的阀门数",
+        "2. 每只安排 2 只替代阀",
+        "3. 累计不超过 4 只"
+      ],
+      "output_used_by": [
+        "P-TEST-008",
+        "F-TEST-003"
+      ],
+      "pitfalls": [
+        "把 4 当成总试验数",
+        "忽略替换阀也要重新做 K_D 统计"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "VERIFIED_CLAUSE",
+      "verified_on": "2026-10-22",
+      "verified_by": "standards_kb（纯扫描位图逐字核读 + 同页 US/SI 排印对照 + 量纲自洽复算）",
+      "note": "数值经剥离 OCR 文本层的纯扫描位图逐字核对，并在同页 US/SI 对照下确认读法；满足 E1「数值与公式自洽」。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "本项目无安全阀/泄压阀，不涉及本参数；本条为标准资产沉淀。"
+      }
+    ],
+    "related": [
+      "P-TEST-008",
+      "F-TEST-003"
+    ]
+  }
+]
