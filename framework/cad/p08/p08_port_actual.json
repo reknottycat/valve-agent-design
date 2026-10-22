@@ -1,0 +1,64 @@
+{
+  "input_sha256": "a9aeb45996a388a3d894f69605205c70c25edd154adc6d3c71658329a730e787",
+  "input_name": "AGR1_open_seal_omitted_proxy_main_mm.step",
+  "cadquery_version": "2.7.0",
+  "ocp_version": "7.8.1.1",
+  "step_length_unit_declarations": [
+    ".MILLI.,.METRE."
+  ],
+  "volume_mm3": 64142426.14375954,
+  "bbox_lengths_mm": [
+    1800.0,
+    290.0000002,
+    477.00000009999997
+  ],
+  "valid": true,
+  "solids": 1,
+  "shells": 2,
+  "faces": 132,
+  "port_candidates": [
+    {
+      "import_face_index_1based": 34,
+      "area_mm2": 31415.926535897932,
+      "center_mm": [
+        1200.0,
+        1.4210854715202004e-14,
+        5.82076609134674e-15
+      ],
+      "cad_oriented_normal": [
+        1.0,
+        0.0,
+        -0.0
+      ],
+      "normal_plus_0_1mm_inside_solid": false,
+      "normal_minus_0_1mm_inside_solid": true,
+      "geometry_type": "PLANE",
+      "x_min_mm": 1200.0,
+      "x_max_mm": 1200.0
+    },
+    {
+      "import_face_index_1based": 79,
+      "area_mm2": 31415.926535897932,
+      "center_mm": [
+        -600.0,
+        1.4210854715202004e-14,
+        5.82076609134674e-15
+      ],
+      "cad_oriented_normal": [
+        -1.0,
+        -0.0,
+        0.0
+      ],
+      "normal_plus_0_1mm_inside_solid": false,
+      "normal_minus_0_1mm_inside_solid": true,
+      "geometry_type": "PLANE",
+      "x_min_mm": -600.0,
+      "x_max_mm": -600.0
+    }
+  ],
+  "face_index_mapping_to_original_FDG1_proven": false,
+  "mapping_to_final_mesh_patches_proven": false,
+  "disc_lift_57mm_proven": false,
+  "input_unchanged": true,
+  "no_geometry_mutation_or_meshing": true
+}

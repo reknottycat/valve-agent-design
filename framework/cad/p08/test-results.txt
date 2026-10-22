@@ -1,0 +1,10 @@
+Cannot create cache home directory: '/home/agent/.cache/ezdxf', cache files will not be saved.
+See also issue https://github.com/mozman/ezdxf/issues/923.
+test_saved_actual_port_facts (test_check_ports.Test.test_saved_actual_port_facts) ... ok
+test_saved_scope_not_overclaimed (test_check_ports.Test.test_saved_scope_not_overclaimed) ... ok
+test_wrong_input_hash_rejected (test_check_ports.Test.test_wrong_input_hash_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
