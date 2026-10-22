@@ -1,0 +1,25 @@
+{
+  "schema": "valve.readiness/v1",
+  "requested_action": "solve",
+  "domain_scope": "whole_valve",
+  "preflight_pass": false,
+  "errors": [
+    "BOUNDARY_CONDITIONS_UNVERIFIED",
+    "NO_CONFIRMED_RETAINED_FLUID_MESH",
+    "MESH_QUALITY_NOT_PASSED",
+    "MISSING_FILE:0/U",
+    "MISSING_FILE:0/p",
+    "MISSING_PHYSICAL_PROPERTIES",
+    "EMPTY_SOLVERS",
+    "MISSING_MESH_FILE:points",
+    "MISSING_MESH_FILE:faces",
+    "MISSING_MESH_FILE:owner",
+    "MISSING_MESH_FILE:neighbour",
+    "MISSING_MESH_FILE:boundary"
+  ],
+  "notes": [
+    "Pass means listed preflight checks only; no boundary parsing, topology verification or engineering approval is implied."
+  ],
+  "mutated_case": false,
+  "solver_started": false
+}

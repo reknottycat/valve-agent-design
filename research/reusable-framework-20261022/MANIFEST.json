@@ -1,0 +1,114 @@
+{
+  "schema": "valve-reuse-handoff/1",
+  "test_scope": "8 synthetic contract methods + 3 original arithmetic methods (12 historical rows); no new CAD/FEA/CFD solve",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6699,
+      "sha256": "95b94a09f9357d0f3f1e4967372155bc741ee8a5b3bbbea7b48832e129287c08",
+      "identity_note": "local artifact; PDF extracted text is not PDF source bytes"
+    },
+    {
+      "path": "framework/ARCHITECTURE.md",
+      "bytes": 5578,
+      "sha256": "df85c66dce668e8f1742eb06ca8870d1d0cfe3cee864a84c2e514da388dec6d6",
+      "identity_note": "local artifact; PDF extracted text is not PDF source bytes"
+    },
+    {
+      "path": "framework/evidence_contract.py",
+      "bytes": 1592,
+      "sha256": "bb93adeb11004c3b55d6f31895b2e55abfc3730bb02966b6a6fadd8f8b6bf58b",
+      "identity_note": "local artifact; PDF extracted text is not PDF source bytes"
+    },
+    {
+      "path": "original/PROVENANCE.md",
+      "bytes": 925,
+      "sha256": "b334abd7cdfa540e50edf15e5481a222a2288556958fece1b2725daa9d770a18",
+      "identity_note": "local artifact; PDF extracted text is not PDF source bytes"
+    },
+    {
+      "path": "original/R1/C4/T06/basis_gate.py",
+      "bytes": 5168,
+      "sha256": "fd0b012508f1d9ff1fb5b38079ec5f259acf42f5d68107321717661b38286b42",
+      "identity_note": "local artifact; PDF extracted text is not PDF source bytes"
+    },
+    {
+      "path": "original/R1/C4/T15/calculate_loads.py",
+      "bytes": 13677,
+      "sha256": "4638752c2ef793f139e75ddd7a2d707c2df6b1200269150008e14951ee52051e",
+      "identity_note": "local artifact; PDF extracted text is not PDF source bytes"
+    },
+    {
+      "path": "original/R1/C4/T15/load_study.json",
+      "bytes": 30399,
+      "sha256": "22e2849a8a486e96c0cb4df7981fb95b40217879edf5495175f65baae563e23c",
+      "identity_note": "local artifact; PDF extracted text is not PDF source bytes"
+    },
+    {
+      "path": "sources/AGR1.txt",
+      "bytes": 6589,
+      "sha256": "28ec977db4b8db083771d2900644045d9586a238b359f77902763b3e2925df30",
+      "identity_note": "local artifact; PDF extracted text is not PDF source bytes"
+    },
+    {
+      "path": "sources/CRM1.txt",
+      "bytes": 6546,
+      "sha256": "bd749f2cda934510fc3ac80d55d3e045543c47fe9235ba21244c9f047bf4e133",
+      "identity_note": "local artifact; PDF extracted text is not PDF source bytes"
+    },
+    {
+      "path": "sources/DRS1.txt",
+      "bytes": 4224,
+      "sha256": "b62d284f3871d6acf35e7eeb29c494b57a7c012ed7017b0d59062f5896f481dc",
+      "identity_note": "local artifact; PDF extracted text is not PDF source bytes"
+    },
+    {
+      "path": "sources/bom.txt",
+      "bytes": 581,
+      "sha256": "ee03b976f75f5a31d65912c5dda2afa18eb366bbfaa9acc7a75b22316f47abbd",
+      "identity_note": "local artifact; PDF extracted text is not PDF source bytes"
+    },
+    {
+      "path": "sources/sources_C2_T15_calc_results.json.txt",
+      "bytes": 2769,
+      "sha256": "86d6f34436dee70b714cddc0d8f8dea05da2ef40e146565dacb5c56b03ad165c",
+      "identity_note": "local artifact; PDF extracted text is not PDF source bytes"
+    },
+    {
+      "path": "sources/sources_C4_T15_calculate_loads.py.txt",
+      "bytes": 13678,
+      "sha256": "154731ca64ef44ffdf950891be8c2a8e36cf33750ec75748c2f0fe444af8f68d",
+      "identity_note": "local artifact; PDF extracted text is not PDF source bytes"
+    },
+    {
+      "path": "sources/sources_C4_T15_load_study.json.txt",
+      "bytes": 30400,
+      "sha256": "1dac3019385d40e0f561238b3cae0c09dadc42aa0793a76dacbd63038ba4affa",
+      "identity_note": "local artifact; PDF extracted text is not PDF source bytes"
+    },
+    {
+      "path": "sources/sources_C5_T05_material_cards.json.txt",
+      "bytes": 11339,
+      "sha256": "f59e2682d7730b69c5fb6aa8669b834743b9ce93ec76e11380ee865145d91a0b",
+      "identity_note": "local artifact; PDF extracted text is not PDF source bytes"
+    },
+    {
+      "path": "test-results.txt",
+      "bytes": 1266,
+      "sha256": "310b7aa329559eb98147d739be67b33b14cc9ab7d9fc9017d5bd4678fa0f13d8",
+      "identity_note": "local artifact; PDF extracted text is not PDF source bytes"
+    },
+    {
+      "path": "tests/test_evidence_contract.py",
+      "bytes": 1589,
+      "sha256": "4dde3b20a52b7f8de540588ccdc13122fe62205150f064f4ca11f5a71c62d8b9",
+      "identity_note": "local artifact; PDF extracted text is not PDF source bytes"
+    },
+    {
+      "path": "tests/test_original_arithmetic.py",
+      "bytes": 1401,
+      "sha256": "4cffb2f2038d98be4b6fa88965effdde69910e9a056dcdafabeae485a87bd0be",
+      "identity_note": "local artifact; PDF extracted text is not PDF source bytes"
+    }
+  ]
+}

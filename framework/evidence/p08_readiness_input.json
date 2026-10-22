@@ -1,0 +1,13 @@
+{
+  "domain_scope": "whole_valve",
+  "requested_action": "solve",
+  "execution_budget": {
+    "scope": "whole_valve",
+    "cells": 12000000,
+    "meaning": "generation_cap"
+  },
+  "mesh_stage": "unretained_background",
+  "mesh_quality_pass": false,
+  "boundary_conditions_verified": false,
+  "source_note": "A02 source supplement has only mesh setup; missing inputs here do not prove missing from all archives."
+}

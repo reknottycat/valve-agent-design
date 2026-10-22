@@ -1,0 +1,140 @@
+{
+  "schema": "valve.material_evidence/1.0",
+  "date_utc": "2026-10-06",
+  "target": "522-35.4179 base unsuffixed engineering study",
+  "status": "CANDIDATE_AND_REFERENCE_DATA_NOT_CERTIFIED_VALVE_MATERIALS",
+  "universal_rules": [
+    "No strength value is a design allowable stress",
+    "Casting, extruded bar, hot-rolled bar and forging properties cannot be interchanged",
+    "A temperature-dependent data point does not expand valve service temperature",
+    "Candidate chemistry is not an as-supplied heat certificate",
+    "Missing or conflicting properties remain null in adopted study inputs"
+  ],
+  "cards": [
+    {
+      "id": "RUS_BODY_BrO8Ts4",
+      "designation": "БрО8Ц4",
+      "role": "Catalog candidate body material",
+      "source_link_to_target": "LPA catalog printed p53; analogous product, not original drawing BOM",
+      "form": "Tin-bronze castings",
+      "standard": "ГОСТ 613-79",
+      "source_version": "Manufacturer-hosted facsimile of official 2000 compilation; Rosstandart says active",
+      "chemistry_mass_percent": {
+        "Sn": [7.0, 9.0], "Zn": [4.0, 6.0], "Cu": "remainder",
+        "default_maxima": {"Pb": 0.5, "Al": 0.02, "Fe": 0.3, "Si": 0.02, "P": 0.05, "Sb": 0.3, "total_impurities": 1.0},
+        "pressure_casting_constraint": "Combined Al+Si not above 0.02%; do not use the relaxed non-pressure-casting option",
+        "qualification": "Read the standard's composition notes for optional Ni/Pb and welded-construction restrictions; no complete purchase chemistry is frozen"
+      },
+      "reference_mechanics": {
+        "appendix_status": "Appendix 1 informative/reference; not product-specific acceptance guarantee",
+        "heat_treatment": "Thermally untreated bronze per clause 3",
+        "casting_methods": ["permanent metal mold (к)", "sand mold (п)"],
+        "tensile_strength_MPa": 196,
+        "elongation_percent": 10,
+        "hardness_original": "Brinell 735 MPa (75 kgf/mm2) historical notation",
+        "value_type": "Appendix table says not less than; normative technical documentation still defines tensile/elongation acceptance",
+        "test_temperature_C": null,
+        "temperature_note": "No test temperature explicitly shown in appendix; method references GOST 1497-84"
+      },
+      "seawater_evidence": "Same informative appendix lists valve/piping fittings and pumps working in seawater",
+      "adopted_study_inputs": {"young_modulus_MPa": null, "poisson_ratio": null, "density_kg_m3": null, "yield_strength_MPa": null, "allowable_stress_MPa": null, "thermal_expansion_per_K": null},
+      "permitted_use": "Candidate identity/composition and informative tensile comparison only; no plastic constitutive curve or pass/fail stress limit",
+      "sources": ["https://mzocm.com/613-79.pdf", "https://protect.gost.ru/gost/details/986384b4-a6f9-4785-8e31-4fcba2cc631f"]
+    },
+    {
+      "id": "RUS_COVER_DISC_BrAZhNMts9441",
+      "designation": "БрАЖНМц9-4-4-1",
+      "role": "Catalog candidate cover/disc material",
+      "form": "Pressure-worked/wrought tin-free bronze system; specific valve stock form unknown",
+      "standard": "ГОСТ 18175-78 chemistry",
+      "source_version": "Manufacturer-hosted official-edition copy printed 2007 includes amendments 1 and 2; amendment 3 effective 2027-02-01 is not yet applicable",
+      "chemistry_mass_percent": {
+        "Al": [8.8, 10.0], "Fe": [4.0, 5.0], "Mn": [0.5, 1.2], "Ni": [4.0, 5.0], "Cu": "remainder",
+        "default_maxima": {"Sn": 0.1, "Si": 0.1, "Pb": 0.02, "P": 0.01, "Zn": 0.5, "total_impurities": 0.7}
+      },
+      "manufacturer_supply_lead": {
+        "manufacturer": "Мценский завод по обработке цветных металлов",
+        "form": "Extruded round bar",
+        "diameter_range_mm": [16, 160],
+        "specifications": ["ТУ 48-21-249-2006", "ТУ 184670-006-25976819-2017"],
+        "strength_requirements_obtained": false,
+        "qualification": "Manufacturer separately lists cast ingot feedstock; ingot availability is not qualification of finished valve castings"
+      },
+      "reference_mechanics": {"tensile_strength_MPa": null, "yield_strength_MPa": null, "elongation_percent": null, "heat_treatment": null},
+      "adopted_study_inputs": {"young_modulus_MPa": null, "poisson_ratio": null, "density_kg_m3": null, "yield_strength_MPa": null, "allowable_stress_MPa": null, "thermal_expansion_per_K": null},
+      "do_not_adopt": "Repeated internet 650 MPa / 15% bar values lack verified primary product-condition evidence; do not substitute casting grade БрА9Ж4Н4Мц1",
+      "permitted_use": "Chemistry and product-route screening; valve-level seawater duty from catalog, not a universal corrosion-rate or temperature-strength curve",
+      "sources": ["https://mzocm.com/18175-78.pdf", "https://mzocm.com/produkciya/", "https://protect.gost.ru/gost/details/5184c82d-37fc-4d70-af9a-33908fb3158d", "https://protect.gost.ru/gost/changesdetails/50f1a713-7f40-4ec3-824f-cb013ac1a907"]
+    },
+    {
+      "id": "RUS_SEAT_STEM_3M",
+      "designation": "Сплав 3М",
+      "role": "Catalog seat/spindle label",
+      "identity_status": "Strong evidence for alpha Ti-Al marine-alloy family; exact valve specification and edition unverified",
+      "catalog_internal_link": "Other LPA products cite Сплав 3М ОСТ 1-92077-78; target valve p53 does not cite that standard",
+      "chemistry_mass_percent": null,
+      "specific_valve_form": null,
+      "specific_valve_heat_treatment": null,
+      "specific_valve_surface_treatment": null,
+      "primary_reference_mechanics": {
+        "source": "Prometey developer's guaranteed-standard-characteristics summary",
+        "tensile_strength_MPa": 491,
+        "proof_strength_Rp0_2_MPa": 442,
+        "elongation_percent": 8,
+        "reduction_of_area_percent": 15,
+        "KCU_kJ_m2": 589,
+        "elevated_temperature_point": {"temperature_C": 350, "proof_strength_Rp0_2_MPa": 216},
+        "baseline_test_temperature_C": null,
+        "product_form": null,
+        "heat_treatment": null,
+        "limitation": "The primary summary omits product form, section size and baseline temperature; not this valve's guaranteed supplied values"
+      },
+      "adopted_study_inputs": {"young_modulus_MPa": null, "poisson_ratio": null, "density_kg_m3": null, "yield_strength_MPa": null, "allowable_stress_MPa": null, "thermal_expansion_per_K": null},
+      "permitted_use": "Identity hypothesis and grade-level comparison; no ASTM-grade mapping, no transfer of PT-3V constants, no 350-degree valve rating",
+      "sources": ["https://www.crism-prometey.ru/science-and-education/research-and-development/titanovye-splavy/titanovye-splavy-dlya-sudostroeniya-i-morskoy-tekhniki/", "https://www.crism-prometey.ru/upload/medialibrary/803/xf4ipfjnj8m0tj34n4vta98j1cktmqrc/Mekhanicheskie-svoystva-morskikh-titanovykh-splavov.pdf", "https://oldjournal.gumrf.ru/files/articles/40/120-129.pdf"],
+      "secondary_leads_only": "Mirror-hosted GOST R59115.3 recommended appendix and CKBA informative table give different form-dependent strengths; not imported into this primary-source study card"
+    },
+    {
+      "id": "ALT_C95800_CONTINUOUS_CAST",
+      "designation": "UNS C95800",
+      "role": "Separate nickel-aluminum-bronze alternative research candidate, not equivalent to a Russian grade",
+      "form": "Continuous cast stock, as cast or temper annealed",
+      "product_standard": "Manufacturer cites ASTM B505/B505M-23",
+      "manufacturer": "Wieland Concast",
+      "reference_mechanics": {"tensile_strength_min_MPa": 586, "yield_strength_0_5_percent_extension_under_load_min_MPa": 241, "elongation_50mm_min_percent": 18, "Brinell_3000kg_typical": 159},
+      "adopted_study_inputs": {"young_modulus_MPa": 114000, "poisson_ratio": 0.32, "density_kg_m3": 7640, "yield_strength_MPa": null, "allowable_stress_MPa": null, "thermal_expansion_per_K": null},
+      "input_status": "Reference-property elastic sensitivity only for explicitly named alternative; E/nu temperature not repeated in manufacturer table, density explicitly 20C",
+      "chemistry_screening": {"Cu_min_percent": 79, "Al_percent": [8.5, 9.5], "Fe_percent": [3.5, 4.5], "Ni_percent": [4.0, 5.0], "Fe_must_not_exceed_Ni": true, "Mn_percent": null},
+      "conflicts": ["Manufacturer PDF Mn lower bound0.08% versus CDA0.8%; supplier/standard resolution required", "Thermal-expansion pair9e-6/F versus15.5e-6/C is not exact; arithmetic gives16.2e-6/K; rounding provenance unknown"],
+      "seawater_evidence": "Manufacturer and CDA explicitly list valves contacting seawater; no rate, fluid-chemistry or pressure-temperature guarantee provided",
+      "permitted_use": "Separate constant-property linear-elastic/mass study. Do not transfer continuous-cast minima to sand casting, convert0.5%EUL yield toRp0.2, or generate design allowables",
+      "sources": ["https://www.concast.com/files/C95800.pdf", "https://alloys.copper.org/alloy/C95800"]
+    },
+    {
+      "id": "ALT_C90300_CONTINUOUS_CAST",
+      "designation": "UNS C90300",
+      "role": "Separate tin-bronze alternative candidate, not equivalent to БрО8Ц4",
+      "form": "Continuous cast stock",
+      "product_standard": "Manufacturer cites ASTM B505/B505M-23",
+      "manufacturer": "Wieland Concast",
+      "chemistry_screening": {"Cu_percent": [86, 89], "Sn_percent": [7.5, 9], "Zn_percent": [3, 5], "P_max_percent": null},
+      "reference_mechanics": {"tensile_strength_min_MPa": 303, "yield_strength_0_5_percent_extension_under_load_min_MPa": 152, "elongation_50mm_min_percent": 18, "Brinell_500kg_typical": 70},
+      "adopted_study_inputs": {"young_modulus_MPa": 96527, "poisson_ratio": null, "density_kg_m3": 8800, "yield_strength_MPa": null, "allowable_stress_MPa": null, "thermal_expansion_per_K": null},
+      "input_status": "Partial elastic/mass reference only; nu absent. Density explicitly20C; modulus temperature not repeated in table",
+      "conflicts": ["Manufacturer HTML Pmax0.05% versus PDF1.50%; do not freeze complete chemistry", "Thermal-expansion pair10e-6/F versus17.3e-6/C is not exact; arithmetic gives18e-6/K; rounding provenance unknown"],
+      "permitted_use": "Alternative-family screening and partial sensitivity. Different chemistry and continuous-cast route prohibit importing these values as Russian sand/permanent-mold bronze data",
+      "sources": ["https://www.concast.com/c90300.php", "https://www.concast.com/files/C90300.pdf"]
+    },
+    {
+      "id": "ALT_C63000_WROUGHT",
+      "designation": "UNS C63000",
+      "role": "Wrought nickel-aluminum-bronze alternative search candidate, not equivalent to БрАЖНМц9-4-4-1",
+      "form": "Hot-extruded or drawn/stress-relieved rod/bar; exact procurement state not selected",
+      "chemistry_screening": {"Al_percent": [9, 11], "Fe_percent": [2, 4], "Ni_percent": [4, 5.5], "Cu": "remainder"},
+      "adopted_study_inputs": {"young_modulus_MPa": null, "poisson_ratio": null, "density_kg_m3": null, "yield_strength_MPa": null, "allowable_stress_MPa": null, "thermal_expansion_per_K": null},
+      "permitted_use": "Searchable wrought procurement alternative; CDA lists multiple size/temper-dependent typical rows, so no single strength row selected",
+      "source": "https://alloys.copper.org/alloy/C63000"
+    }
+  ]
+}
+

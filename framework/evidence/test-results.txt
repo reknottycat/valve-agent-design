@@ -1,0 +1,27 @@
+test_bad_background (test_valve_candidate.TestCandidate.test_bad_background) ... ok
+test_bad_target (test_valve_candidate.TestCandidate.test_bad_target) ... ok
+test_blank_rationale (test_valve_candidate.TestCandidate.test_blank_rationale) ... ok
+test_exact_noop_preserves (test_valve_candidate.TestCandidate.test_exact_noop_preserves) ... ok
+test_extreme_ratio (test_valve_candidate.TestCandidate.test_extreme_ratio) ... ok
+test_minmax_only (test_valve_candidate.TestCandidate.test_minmax_only) ... ok
+test_missing_source_level (test_valve_candidate.TestCandidate.test_missing_source_level) ... ok
+test_no_blind_coarsening (test_valve_candidate.TestCandidate.test_no_blind_coarsening) ... ok
+test_size_not_level_copied (test_valve_candidate.TestCandidate.test_size_not_level_copied) ... ok
+test_unknown_name (test_valve_candidate.TestCandidate.test_unknown_name) ... ok
+test_budget_scope (test_valve_readiness.TestReadiness.test_budget_scope) ... ok
+test_completed_not_repeated (test_valve_readiness.TestReadiness.test_completed_not_repeated) ... ok
+test_domain_required (test_valve_readiness.TestReadiness.test_domain_required) ... ok
+test_empty_case (test_valve_readiness.TestReadiness.test_empty_case) ... ok
+test_inspect_not_solver_gate (test_valve_readiness.TestReadiness.test_inspect_not_solver_gate) ... ok
+test_large_cap_not_required (test_valve_readiness.TestReadiness.test_large_cap_not_required) ... ok
+test_new_objective_not_forbidden (test_valve_readiness.TestReadiness.test_new_objective_not_forbidden) ... ok
+test_presence_positive_is_not_physics (test_valve_readiness.TestReadiness.test_presence_positive_is_not_physics) ... ok
+test_pressure_not_guessed (test_valve_readiness.TestReadiness.test_pressure_not_guessed) ... ok
+test_quality_not_waived (test_valve_readiness.TestReadiness.test_quality_not_waived) ... ok
+test_string_false_not_verification (test_valve_readiness.TestReadiness.test_string_false_not_verification) ... ok
+test_unknown_action (test_valve_readiness.TestReadiness.test_unknown_action) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.002s
+
+OK
