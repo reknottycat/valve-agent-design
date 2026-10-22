@@ -1,0 +1,931 @@
+PDF: bpvc_i.pdf  总页数 341
+
+==============================================================================
+PDF PAGE 103   (行数 98)
+==============================================================================
+  0 | 2010 SECTION I
+  1 | TABLE PG-68.7M
+  2 | SUPERHEAT CORRECTION FACTOR, Ksh (CONT'D)
+  3 | Flowing   Superheat Correction Factor, /(,,, Total Temperature, DC, of Superheated Steam
+  4 | Pressure
+  5 | (MPa)   205   225   250   275   300   325   350   375   400   425   450   475   500   525   550   575   600   625
+  6 | · .   .. .   ...   .. .   ...
+  7 | 17.00   0.944   0.9   0.856   0.823   0.796   0.773   0.752   0.734   0.717   0.702   0.688
+  8 | .. .   .. .   .. .
+  9 | 17.25   ...   0.944   0.9   0.855   0.822   0.794   0.771   0.75   0.732   0.715   0.7   0.686
+ 10 | ...   .. .   · ..   .. .   · ..
+ 11 | 17.50   .. .   . ..   0.944   0.9   0.854   0.82   0.792   0.769   0.748   0.73   0.713   0.698   0.684
+ 12 | ...   ...   ...
+ 13 | 17.75   ...   ...   · ..   . ..   0.944   0.9   0.853   0.819   0.791   0.767   0.746   0.728   0.711   0.696   0.681
+ 14 | .. .   ...   ...   ...   ...   ...
+ 15 | 18.00   0.944   0.901   0.852   0.817   0.789   0.765   0.744   0.725   0.709   0.694   0.679
+ 16 | '"
+ 17 | .. .   . ..   .. .   ...
+ 18 | 18.25   . ..   ...   0.945   0.901   0.851   0.815   0.787   0.763   0.742   0.723   0.706   0.691   0.677
+ 19 | .. .   · .   .. .   .. .   · ..
+ 20 | 18.50   . ..   0.945   0.901   0.85   0.814   0.785   0.761   0.739   0.72   0.704   0.689   0.674
+ 21 | ...   .. .   ..
+ 22 | 18.75   ...   . "   · ..   · ..   0.945   0.901   0.849   0.812   0.783   0.758   0.737   0.718   0.70]   0.686   0.671
+ 23 | ..   ...   ...
+ 24 | 19.00   ...   . .   ...   0.946   0.901   0.847   0.81   0.781   0.756   0.734   0.715   0.698   0.683   0.669
+ 25 | .. .   '"   .. .   ...
+ 26 | 19.25   · .   . ..   . ..   0.948   0.901   0.846   0.808   0.778   0.753   0.732   0.713   0.696   0.681   0.666
+ 27 | .. .   .. .   .. .   .. .   ...
+ 28 | 19.50   0.95   0.9   0.844   0.806   0.776   0.75   0.729   0.71   0.693   0.677   0.663
+ 29 | ...   . .   .. .   . ..   · ..
+ 30 | 19.75   ...   0.952   0.899   0.842   0.803   0.773   0.748   0.726   0.707   0.69   0.674   0.66
+ 31 | ...   ...
+ 32 | 20.00   ...   ...   ...   · "   0.899   0.84   0.801   0.77   0.745   0.723   0.704   0.687   0.671   0.657
+ 33 | .. .   '"   ...   ...
+ 34 | 20.25   ...   . ..   . ..   · "   0.899   0.839   0.798   0.767   0.742   0.72   0.701   0.683   0.668   0.654
+ 35 | ..   · ..   .. .   · ..   ...
+ 36 | 20.50   . ..   0.899   0.837   0.795   0.764   0.738   0.717   0.697   0.68   0.665   0.651
+ 37 | '"
+ 38 | .. .   .. .   . ..   .. .
+ 39 | 20.75   · .   ...   0.898   0.834   0.792   0.761   0.735   0.713   0.694   0.677   0.661   0.647
+ 40 | .. .   . ..   '"
+ 41 | 21.00   ...   ...   . ..   · "   0.896   0.832   0.79   0.758   0.732   0.71   0.691   0.673   0.658   0.043
+ 42 | ...   ...   · ..
+ 43 | 21.25   ...   ...   . ..   0.894   0.829   0.786   0.754   0.728   0.706   0.686   0.669   0.654   0.64
+ 44 | '"   ...
+ 45 | 21.50   ..   · ..   ...   ...   ...   0.892   0.826   0.783   0.75   0.724   0.702   0.682   0.665   0.65   0.636
+ 46 | · ..   .. .   '"   ...   ...   '"
+ 47 | 21.75   . ..   ...   0.891   0.823   0.779   0.746   0.72   0.698   0.679   0.661   0.646   0.631
+ 48 | '"
+ 49 | ..   · ..   .. .   . ..   · ..   ...
+ 50 | 22.00   ...   0.887   0.82   0.776   0.743   0.716   0.694   0.674   0.657   0.641   0.627
+ 51 | '"
+ 52 | PG-69.2 Relieving capacities shall be determined using   For water
+ 53 | one of the following methods.
+ 54 | W   measured capacity
+ 55 | slope = -p = r==-=========:c=~====
+ 56 | PG-69.2.1 Three Valve Method. A capacity certifi-
+ 57 | J (now rating pressure) - (discharge pressure)
+ 58 | cation test is required on a set of three pressure relief val ves
+ 59 | for each combination of size, design, and pressure setting.   All values derived from the testing must fall within ±S%
+ 60 | The capacity of each valve of the set shall fall within a   of the average value
+ 61 | range of ±S% of the average capacity. If one of the three
+ 62 | minimum slope = 0.95 x average slope
+ 63 | pressure relief valves tested falls outside this range, it shall
+ 64 | be replaced by two valves, and a new average shall be
+ 65 | maximum slope = 1.05 x average slope
+ 66 | calculated based on all four valves, excluding the replaced
+ 67 | valve. Failure of any of the four capacities to fall within   If the values derived from the testing do not fall between
+ 68 | a range of ±S% of the new average shall be cause to refuse   the minimum and maximum slope values, the Authorized
+ 69 | certification of that particular valve design.   Observer shall require that additional valves be tested at
+ 70 | The rated relieving capacity for each combination of   the rate of two for each valve beyond the maximum and
+ 71 | design, size, and test pressure shall be 90% of the average   minimum values with a limit of four additional valves.
+ 72 | capacity.   For steam applications the relieving capacity to be
+ 73 | stamped on the valve shall not exceed 90% of the average
+ 74 | PG-69.2.2 Slope Method. If a Manufacturer wishes
+ 75 | slope times the absolute accumulation pressure
+ 76 | to apply the Code Symbol to a design of pressure relief
+ 77 | valves, four valves of each combination of pipe size and
+ 78 | rated slope = 0.90 x average slope
+ 79 | orifice size shall be tested. These four valves shall be set
+ 80 | at pressures that cover the approximate range of pressures   For water applications the relieving capacity shall not
+ 81 | for which the valve will be used or covering the range
+ 82 | exceed 90% of the average slope multiplied by the square
+ 83 | available at the certified test facility that shall conduct the
+ 84 | root of the difference between the flow rating pressure and
+ 85 | tests. The capacities based on these four tests shall be as   the valve discharge pressure.
+ 86 | follows:
+ 87 | (a) The slope WIP of the actual measured capacity ver-   rated slope = 0.9 x average slope
+ 88 | sus the flow pressure for each test point shall be calculated
+ 89 | x Jt10w rating pressure - discharge pressure
+ 90 | and averaged
+ 91 | (u.s. Customary Units)
+ 92 | For steam
+ 93 | w   stamped capacity::; rated slope (1.03 X set pressure + 14.7)
+ 94 | measured capacity
+ 95 | slope
+ 96 | p   absolute flow rating pressure   or (set pressure + 2 psi + 14.7), whichever is greater
+ 97 | 61
+
+==============================================================================
+PDF PAGE 104   (行数 73)
+==============================================================================
+  0 | 2010 SECTION I
+  1 | (SI Units)   For nozzle
+  2 | stamped capacity ::; rated slope (1.03 X set pressure +
+  3 | (US. Customary Units)
+  4 | 0.10 I) or (set pressure + 0.015 MPa + 0.10 I), whichever
+  5 | WT = 51.5 AP
+  6 | is greater
+  7 | (10)   PG-69.2.3 Coefficient of Discharge Method. A   (Sf Units)
+  8 | coefficient of discharge for the design, K, may be estab-   WT == 5.25 AP
+  9 | lished for a specific valve design according to the following
+ 10 | For tests with water
+ 11 | procedure:
+ 12 | (a) For each design, the pressure relief valve manufac-
+ 13 | For 45 deg seat
+ 14 | turer shall submit for test at least three valves for each of
+ 15 | three different sizes (a total of nine valves). Each valve of   (US. Customary Units)
+ 16 | a given size shall be set at a different pressure, covering
+ 17 | WI = 2,407 7TDL (0.707)j(P - Pd)w
+ 18 | the range of pressures for which the valve will be used
+ 19 | or the range available at the facility where the tests are
+ 20 | (SI Units)
+ 21 | conducted.
+ 22 | For each valve design where the coefficient of discharge   WT = 5092 7TDL (0.707)j(P - Pd)w
+ 23 | has been determined that is intended to be restricted in lift,
+ 24 | For flat seat
+ 25 | the Manufacturer shall have capacity tests conducted on
+ 26 | three valves of different sizes. Each size valve shall be   (US. Customary Units)
+ 27 | tested for capacity at the minimum lift for which certifica-
+ 28 | WT = 2,407 7TDLj(P - Pd)w
+ 29 | tion is required, and at two intermediate lift points between
+ 30 | the full rated lift and minimum lift certification points.
+ 31 | (SI Units)
+ 32 | Each of the three test valves shall be set at a different
+ 33 | pressure.
+ 34 | For each valve tested, it shall be verified that actual
+ 35 | For nozzle
+ 36 | measured capacity at restricted lift will equal or exceed
+ 37 | the rated capacity at full rated lift multiplied by the ratio   (US. Customary Units)
+ 38 | of measured restricted lift to full rated lift.
+ 39 | WT = 2,407 Aj(P - Pd)w
+ 40 | (b) Tests shall be made on each pressure relief valve
+ 41 | to determine its lift at capacity, popping, and blowdown
+ 42 | (Sf Units)
+ 43 | pressures, and actual relieving capacity. An indi vidual
+ 44 | coefficient, K[), shall be established for each valve as
+ 45 | follows:
+ 46 | where
+ 47 | actual flow   nozzle throat area, in.2 (mm2)
+ 48 | Kj) = theoretical flow = individual coefficient of discharge   A
+ 49 | D   seat diameter, in. (mm)
+ 50 | L   lift at pressure P, in. (mm)
+ 51 | Where actual flow is determined by test and theoretical
+ 52 | P   (1.03 X set pressure + 14.7), psia, or
+ 53 | flow, WT is calculated by one of the following equations:
+ 54 | (set pressure + 2 + 14.7), psia, whichever is greater
+ 55 | For tests with dry saturated steam   (1.03 X set pressure + 0.101), MPa, or
+ 56 | (set pressure + 0.014 + 0.101), MPa, whichever
+ 57 | For 45 deg seat
+ 58 | is greater
+ 59 | (US. Customary Units)   Pd = pressure at discharge of the valve, psia (MPa)
+ 60 | WT = 51.5 x 7TDLP x 0.707   WT = theoretical flow, Iblhr (kglhr)
+ 61 | w = specific weight of water at inlet conditions, Ib/ft3
+ 62 | (SI Units)   (kg/m3)
+ 63 | WT == 5.25 X 1TDLP X 0.707
+ 64 | To convert lblhr of water to gal/min of water, multiply the
+ 65 | For flat seat   capacity in Ib/hr by 1/500. To convert kg/hr of water to
+ 66 | liter/min of water, multiply the capacity in liter/min by 1/60,
+ 67 | (US. Customary Units)
+ 68 | WI = 51.5 x 7TDLP   The average of the coefficients KD of the nine tests required
+ 69 | shall be multiplied by 0.90, and this product shall be taken
+ 70 | (SI Units)   as the coefficient K of that design. All individual coeffi-
+ 71 | WT == 5.25 X 1TDLP   cients of discharge, KD , shall fall within a range of ±5%
+ 72 | 62
+
+==============================================================================
+PDF PAGE 105   (行数 83)
+==============================================================================
+  0 | 2010 SECTION I
+  1 | of the average coefficient found. If a valve fails to meet   drawn through these four test points. All points must lie
+  2 | this requirement, the Authorized Observer shall require   within ±S% in capacity value of the plotted line and must
+  3 | two additional valves to be tested as replacements for each   pass through 0-0. From the plotted line, the slope of the line
+  4 | dWldP shall be determined and a factor of (0.90/SI.4S) x
+  5 | valve having an individual coefficient, KD, outside the ±S%
+  6 | range, with a limit of four additional valves. Failure of a   (dW IdP) shall be applied to capacity computations in the
+  7 | coefficient, Kf), to fall within ±S% of the new average   supercritical region at elevated pressures by means of the
+  8 | value, excluding the replaced valve(s), shall be cause to   isentropic flow equation.
+  9 | refuse certification of that particular valve design.
+ 10 | (u.s. Customary Units)
+ 11 | The rated relieving capacity of all sizes and set pressures
+ 12 | of a given design, for which K has been established under   dW r;,
+ 13 | the provision of this paragraph, shall be determined by the   0.90
+ 14 | W = 1,135.8 51.45 x dP './ -;;-
+ 15 | following equation:
+ 16 | WSWrXK   (SI Units)
+ 17 | dW !p
+ 18 | W = I 13S.8 5.25 x dP V -;;-   0.9S
+ 19 | where
+ 20 | K = coefficient of discharge for the design
+ 21 | W = rated relieving capacity, Ib/hr (kg/hr)   where
+ 22 | Wr = theoretical flow, defined by the same equation
+ 23 | dWldP   rate of change of measured capacity with
+ 24 | used to determine Kf), Ib/hr (kg/hr)
+ 25 | respect to absolute pressure
+ 26 | The coefficient of discharge for the design shall be not
+ 27 | P = absolute inlet pressure, psia (MPa)
+ 28 | greater than 0.878 (the product of 0.9 x 0.97S). The coeffi-
+ 29 | v = inlet specific volume, nJ /lb (mJ/kg)
+ 30 | cient shall not be applied to valves whose beta ratio (ratio
+ 31 | W = capacity, lb of steam /hr (kg/hr)
+ 32 | of valve throat to inlet diameter) lies outside the range
+ 33 | of O.IS to 0.7S, unless tests have demonstrated that the
+ 34 | NOTE: The constant 1,135.8 is based on a y ractor of 1.30, which is
+ 35 | individual coefficient of discharge, Kf), for valves at the   accurate for superheated steam at temperature above approximately SOoop
+ 36 | extreme ends of a larger range, is within ±S% of the average   (430°C). In interest of accuracy, other methous or capacity computations
+ 37 | 0 P (430"C) at supcrcritical pres-
+ 38 | coefficient, Kf).   must be used at temperatures below 800
+ 39 | sures.
+ 40 | For designs where the lift is used to determine the flow
+ 41 | area, all valves shall have the same nominal lift to seat
+ 42 | PG-69.4 Power-actuated pressure relieving valves,
+ 43 | diameter ratio (LID).
+ 44 | having capacities certified in accordance with the provision
+ 45 | For pressures over I,SOO psig (10.3 MPa) and up to
+ 46 | of PG-69.3 and computed in accordance with the formula
+ 47 | 3,200 psig (22.1 MPa), the value of W shall be multiplied
+ 48 | contained therein, shall be marked as required by PG-II 0
+ 49 | by the correction factor
+ 50 | with the computed capacity, corresponding to 3% above
+ 51 | the full load operating pressure and temperature conditions
+ 52 | (U.S. Customary Units)
+ 53 | at the valve inlet when the valve is operated by the control-
+ 54 | 0.1906P -   1,000
+ 55 | ler, and they shall also be stamped with the set pressure
+ 56 | 0.2292P - 1,061
+ 57 | of the controller. When the valve is marked as required
+ 58 | (Sf Units)   by this paragraph, it shall be the guarantee by the manufac-
+ 59 | turer that the valve also conforms to the details of construc-
+ 60 | 27.6P - 1000
+ 61 | tion herein specified.
+ 62 | 33.2P -   1061
+ 63 | PG-69.6 When changes are made in the design of a
+ 64 | For pressures over 3,200 psig (22.1 MPa), the value
+ 65 | pressure relief valve or power-actuated pressure relieving
+ 66 | of W shall be multiplied by the appropriate supercritical
+ 67 | valve in such a manner as to affect the flow path, lift,
+ 68 | correction factor, K,·n from Table PG-69.2.3.
+ 69 | or performance characteristics of the valve, new tests in
+ 70 | PG-69.3 If a manufacturer wishes to apply the Code
+ 71 | accordance with this Section shall be performed.
+ 72 | symbol to a power-actuated pressure relieving valve under
+ 73 | PG-67 A.I, one val ve of each combination of inlet pipe
+ 74 | size and orifice size to be used with that inlet pipe size
+ 75 | PG-70   CAPACITY OF PRESSURE RELIEF
+ 76 | shall be tested. The valve shall be capacity tested at four
+ 77 | VALVES
+ 78 | different pressures approximately covering the range of
+ 79 | the certified test facility on which the tests are conducted.   PG-70.1 Subject to the minimum number required by
+ 80 | The capacities, as determined by these four tests, shall be   PG-67.1, the number of pressure relief valves required
+ 81 | plotted against the absolute flow test pressure and a line   shall be determined on the basis of the maximum designed
+ 82 | 63
+
+==============================================================================
+PDF PAGE 144   (行数 80)
+==============================================================================
+  0 | 2010 SECTION I
+  1 | and in the notes within Table PW-39, all welded pressure   welds, the nominal thickness is the throat thickness, and for
+  2 | parts of power boilers shall be given a postweld heat treat-   partial penetration and material repair welds, the nominal
+  3 | ment at a temperature not less than that specified in Table   thickness is the depth of the weld groove or preparation.
+  4 | PW-39. The materials in Table PW-39 are listed in accor-   For combination groove and fillet welds, nominal thickness
+  5 | dance with the materials P-Number grouping of QW-420   is the total combined thickness of the deposited weld,
+  6 | of Section IX.   groove depth plus fillet weld throat. The total depth of a
+  7 | weld repair shall be taken as the sum of the depths for
+  8 | PW-39.2 When pressure parts of two different P-Num-
+  9 | repairs made from both sides of a weld at a given location.
+ 10 | ber groups are joined by welding, the postweld heat treat-
+ 11 | The holding time at temperature as specified in Table
+ 12 | ment shall be that specified in Table PW-39 and applicable
+ 13 | PW -39 need not be continuous. It may be an accumulation
+ 14 | notes for the material requiring the higher postweJd heat
+ 15 | of time of multiple postweld heat treat cycles.
+ 16 | treatment temperature, except as noted in PW-39.2.1. When
+ 17 | non pressure parts are welded to pressure parts, the postweld   PW -39.4 The weldments shall be postweld heat treated
+ 18 | heat treatment temperature of the pressure parts shall   by any of the following methods.
+ 19 | control.
+ 20 | PW-39.4.1 Heating the complete assembly as a unit.
+ 21 | Pressure part welds and attachment welds using ferritic
+ 22 | PW -39.4.2 Heating sections of assemblies.
+ 23 | filler metals that have a specified chromium content of
+ 24 | more than 3% shall receive a postweld heat treatment. The   PW-39.4.3   in cases where the vessel is postweld
+ 25 | postweld heat treatment ti me and temperature used shall   heat treated in sections, the heat treatment of the final joints
+ 26 | be not less than that shown in Table PW-39 for a base   may be perfonned by one of the following methods.
+ 27 | metal of equivalent analysis.
+ 28 | PW -39.4.3.1 By uniformly heating a circumferen-
+ 29 | PW-39.2.1   Fillet welds, partial penetration welds,   tial band around the vessel, to the temperature and for the
+ 30 | and full penetration welds through the tube or pipe thick-   time specified in Table PW -39 for postweld heat treatment.
+ 31 | ness, attaching P-No. SA tubes and pipe to headers of lower
+ 32 | PW-39.4.3.2 Alternatively, the post weld heat
+ 33 | P-Number material, may be postweld heat treated at the
+ 34 | treatment of the final joints may be performed by heating
+ 35 | temperature specified in Table PW -39 for the lower P-
+ 36 | in the furnace, provided the overlap of the heated sections
+ 37 | Number material provided the tubes or pipe comply with
+ 38 | of the vessel is at least S ft (J.S m). When this procedure
+ 39 | all the following conditions:
+ 40 | is used, the portion outside of the furnace shall be thermally
+ 41 | (a) a maximum specified chromium content of 3.0%
+ 42 | shielded (using blankets, brick, etc.) so that the temperature
+ 43 | (b) a maximum size of NPS 4 (ON 100)   gradient is not harmful.
+ 44 | (c) a maximum thickness of ~ in. (13 mm)
+ 45 | PW-39.4.3.2.1 Where the cross section of the
+ 46 | (d) a maximum specified carbon content of not more
+ 47 | vessel that projects from the furnace contains a nozzle,
+ 48 | than O.IS%
+ 49 | consideration shall be given to controlling the temperature
+ 50 | PW -39.3 in the procedures that follow, the volume of   in the nozzle, so that the temperature gradient is not
+ 51 | metal required to be heated, to meet or exceed the minimum   harmful.
+ 52 | post weld heat treatment temperatures listed in Table PW-
+ 53 | PW-39.S Nozzles or other welded attachments for
+ 54 | 39, is defined as the soak band. As a minimum, the soak
+ 55 | which postweld heat treatment is required may be locally
+ 56 | band shall contain the weld and a portion of the base metal
+ 57 | postweld heat treated by one of the following methods.
+ 58 | on each side of the weld being heat treated, including the
+ 59 | PW -39.S.1 By heating a circumferential band around
+ 60 | weld heat affected zones. The width of each portion of
+ 61 | the entire vessel with the welded connection located at the
+ 62 | base metal to be included in the soak band shall be equal
+ 63 | middle of the band. Except as modified below, the soak
+ 64 | to the lesser of the vessel or shell thickness, or 2 in.
+ 65 | band shall extend around the entire vessel, and shall include
+ 66 | (SO mm). A greater amount of base material, on either
+ 67 | the nozzle of welded attachment.
+ 68 | or both sides of the weld, may also be heated to permit
+ 69 | temperature gradient control.   PW-39.S.1.1   By heating a circumferential band
+ 70 | The weldment shall be heated slowly to the temperature   around the entire vessel with the welded connection located
+ 71 | specified in Table PW-39 and held for the specified time,   at the middle of the band. Provided the required soak band
+ 72 | and shall be allowed to cool slowly in a still atmosphere   around the nozzle or attachment weld, as defined in PW-
+ 73 | to a temperature not exceeding 800°F (42S°C). Several   39.3, is heated to the required temperature and held for
+ 74 | weldments of varied thickness may be postweld heat   the required time, as specified in Table PW-39, the remain-
+ 75 | treated in the same furnace at the same time.   der of the circumferentially-heated band may be varied in
+ 76 | The term nominal thickness in Table PW -39 is the thick-   width around the circumference of the vessel. The tempera-
+ 77 | ness of the weld, pressure retaining material, or the thinner   ture within the heated band shall be controlled to prevent
+ 78 | of the sections being joined, whichever is least. For fillet   harmful gradients.
+ 79 | 102
+
+==============================================================================
+PDF PAGE 145   (行数 80)
+==============================================================================
+  0 | 2010 SECTION I
+  1 | TABLE PW-39   (10)
+  2 | MANDATORY REQUIREMENTS FOR POSTWELD HEAT TREATMENT OF PRESSURE PARTS AND ATTACHMENTS
+  3 | Minimum Holding Time at Normal Temperature for Weld Thickness (Nominal)
+  4 | Minimum Holding
+  5 | Temperature, of   Upt02in.   Over 2 in. (50 mm) to 5   Over 5 in.
+  6 | (OC)   (50 mm)   in. (125 mm)   (125 mm)
+  7 | Material
+  8 | P-No. 1   1,100 (595)   1 hr/in. Cl hr/25 mm),   2 hr plus 15 min for each   2 hr plus 15 min for
+  9 | Group No. 1,2,3   15 min minimum   additional inch (25 mm)   each additional
+ 10 | over 2 in. (50 mm)   inch (25 mm) over
+ 11 | 2 in. (50 mm)
+ 12 | GENERAL NOTES:
+ 13 | (a) Postweld heat treatment is not mandatory for P-No. 1 materials under the following conditions:
+ 14 | (1) when the nominal thickness of a groove weld or combination groove and fillet weld does not exceed 3;" in. Cl9 mm), and a minimum
+ 15 | preheat of 200°F (95°C) is applied when the nominal material thickness of any of the base metals in the weld joint exceeds 1 in. (25 mml.
+ 16 | (2) when the nominal thickness of a groove weld, or combination groove and fillet weld is greater than % in. (19 mm) but does not exceed
+ 17 | 1'l;, in. U8 mm), and:
+ 18 | (a) the calculated carbon equivalent, C E, of any of the base metals in the weld joint is less than or equal to 0.45, using the formula
+ 19 | CE = C + (Mn + Si)/6 + (Cr + Mo + V)/S + (Ni + Cu)/IS
+ 20 | Note: The maximum chemical composition limit from the material specification or the actual values from a chemical analysis or material
+ 21 | test report shall be used in computing CEo If the chemistry values required for the last two terms are not available, O.IS% shall be substituted
+ 22 | for those two terms as follows:
+ 23 | CE = C+(Mn+Si)/6+0.15
+ 24 | (b) a minimum preheat of 2S0°F (120°C) is applied
+ 25 | (c) no individual weld pass thickness exceeds ~ in. (6 mm)
+ 26 | (3) for fillet welds used on slip-on and socket welding flanges and fittings conforming to the rules of PW-41, when the following conditions
+ 27 | are met:
+ 28 | (a) a fillet weld throat thickness of 'l;, in. (13 mm) or less, regardless of base metal thickness
+ 29 | (b) a minimum preheat of 200°F (9S0C) when the thickness of a pressure part at the weld exceeds % in. (19 mm)
+ 30 | (4) for fillet welds attaching nonpressure parts to pressure parts that have a throat thickness of 'l;, in. (13 mm) or less, provided preheat to
+ 31 | a minimum temperature of 200°F (9S°C) is applied when the thickness of the pressure part exceeds % in. (19 mm)
+ 32 | (5) for welds used to attach extended heat absorbing surface to tubes and insulation attachment pins to pressure parts
+ 33 | (6) for tubes or pressure retaining handhole and inspection plugs or fittings that are secured by physical means (rolling, shoulder construction,
+ 34 | machine threads, etc.) and seal welded, provided the seal weld has a throat thickness of % in. 00 mm) or less, and preheat to a minimum
+ 35 | temperature of 200°F (95°C) is applied when the thickness of either part exceeds % in. 09 mm)
+ 36 | (7) for studs welded to pressure parts for purposes not included in (4) above, provided preheat to a minimum temperature of 200°F (9S0C)
+ 37 | is applied when the thickness of the pressure part exceeds 3;" in. 09 mm)
+ 38 | (8) for tube-to-tubesheet welded attachment of P-No. I, Group Nos. 1 and 2 material in firetube boilers in accordance with Fig. PFT-12.1
+ 39 | sketches (f) and (g), if the depth of the weld groove or preparation does not exceed % in. (10 mm), provided a minimum preheat of
+ 40 | 200°F (9S0C) is applied when the tubesheet thickness exceeds 3;" in. (19 mm)
+ 41 | (9) for fillet welds attaching connections to a vessel, provided that all of the following conditions are met:
+ 42 | (a) the diameter of the finished opening (diameter din Figs. PG-33.1, PG-33.2, and PW-lS) does not exceed that allowed in PG-32.1.2
+ 43 | or 2 in. (50 mm), whichever is less
+ 44 | (b) the throat thickness does not exceed 3/8 in. ClO mm)
+ 45 | (c) preheat to a minimum temperature of 200°F (9S0C) is applied when the thickness of either part exceeds % in. (19 mm)
+ 46 | (d) the connections are not placed in the vessel such as to form ligaments, the efficiency of which would affect the vessel thickness
+ 47 | (10) for combination groove and fillet welds attaching nonpressure parts to pressure parts, with a weld thickness of II, in. (13 mm) or less,
+ 48 | provided preheat to a minimum of 200°F (9S0C) is applied when the thickness of the pressure part exceeds 3;" in. (19 mm)
+ 49 | (11) for corrosion-resistant weld metal overlay cladding of pipe or tube materials, provided that all of the following conditions are met:
+ 50 | (a) the thickness of the overlay cladding is ~ in. (6 mm) or less
+ 51 | (b) preheat to a minimum temperature of 200°F (9S0C) is applied when the thickness of the pressure part exceeds 3/4 in. (19 mm)
+ 52 | (c) the pipe or tube material
+ 53 | (1) does not exceed N PS 5 (ON 12S) outside diameter
+ 54 | (2) is not used as a drum or shell
+ 55 | (12) for combination groove and fillet welds attaching connections to a vessel as depicted in Fig. PW-16.l(z), provided all of the following
+ 56 | conditions are met:
+ 57 | (a) both the tube and vessel are P-No. I, Group NO.1 or 2 material
+ 58 | (b) the diameter of the finished opening does not exceed that allowed in PG-32.1.2 or 2 in. (50 mm), whichever is less
+ 59 | (c) the nominal thickness of the weld does not exceed % in. (10 mm)
+ 60 | (d) the connections are not placed in the vessel such as to form ligaments, the efficiency of which would affect the vessel thickness
+ 61 | (e) a minimum preheat of 200°F (95°C) is applied when the thickness of either part exceeds % in. (19 mm)
+ 62 | (13) for butt welds and corner joints in fireboxes and waterlegs meeting the requirements of PFT-21, with or without the addition of fillet
+ 63 | welds, when the nominal thickness does not exceed % in. (19 mm)
+ 64 | (14) for welds attaching nonload-carrying studs not exceeding 1/2 in. (13 mm) in diameter when using an automatic arc stud welding or
+ 65 | automatic resistance stud welding process
+ 66 | (15) for attaching bare wire thermocouples by capacitor discharge welding or electric resistance welding, provided the following requirements
+ 67 | are met:
+ 68 | (a) the requirements of PW-39.8
+ 69 | (b) the minimum wall thickness shall be 0.200 in. (S.O mm) or greater
+ 70 | (b) When it is impractical to postweld heat treat at the temperature specified in this Table, it is permissible to carry out the postweld heat treatment
+ 71 | at lower temperatures for longer periods of time in accordance with Table PW-39.1.
+ 72 | (c) For all P-No. 1 Group No.1 materials, and for P-No. 1 Group No.2 materials having a maximum actual carbon content of 0.30%, the
+ 73 | postweld heat treatment requirement of PWT 11.2 for tubes welded to tubular manifolds or headers is not mandatory when all of the following
+ 74 | conditions are met:
+ 75 | (1) the tubes do not exceed 2 in. (50 mm) O.D.
+ 76 | (2) the header does not exceed N PS 8 (ON 200)
+ 77 | (3) the header thickness does not exceed II;> in. (13 mm)
+ 78 | (4) a minimum preheat of 200°F (9S0C) is applied
+ 79 | 103
+
+==============================================================================
+PDF PAGE 146   (行数 62)
+==============================================================================
+  0 | 2ltlO SECTION I
+  1 | TABLE PW-39
+  2 | (10)
+  3 | MANDATORY REQUIREMENTS FOR POSTWELD HEAT TREATMENT
+  4 | OF PRESSURE PARTS AND ATTACHMENTS (CONT'D)
+  5 | Minimum Holding Time at Normal Temperature
+  6 | for Weld Thickness (Nominal)
+  7 | Minimum Holding
+  8 | Temperature, of   Up to 2 in.   Over 2 in. (50 mm) to 5   Over 5 in.
+  9 | Material   (OC)   (50 mm)   in. (125 mm)   (125 mm)
+ 10 | P-No. 3   1,100 (595)   1 hr/in. (l hr/25 mm),   2 hr plus 15 min for each   2 hr plus 15 min for
+ 11 | Group No. 1,Z,3   15 min minimum   additional inch (25 mm)   each additional
+ 12 | over 2 in. (50 mm)   inch (25 mm) over
+ 13 | 2 in. (50 mm)
+ 14 | GENERAL NOTES:
+ 15 | (a) Except for P-No. 3 Group No.3, postweld heat treatment of P-No. 3 materials is not mandatory under the following conditions (postweld
+ 16 | heat treatment is mandatory for P-No. 3 Group No.3 materials for all thicknesses):
+ 17 | (1) fOl' circumferential butt welds in pressure parts with both a nominal wall thickness of % in. (16 mm) or less, and a specified maximum
+ 18 | carbon content (SA material specification carbon content, except when further limited by the Purchaser to a value within the specification
+ 19 | limits) of not more than 0.25%
+ 20 | (2) for fillet welds used on socket welding fittings conforming to the rules of PW-41, when the following conditions are met:
+ 21 | (a) a fillet weld throat thickness of );, in. (13 mm) or less, regardless of base metal thickness
+ 22 | (b) a maximum specified carbon content (SA material specification carbon content, except when further limited by the Purchaser to a
+ 23 | value within the specification limits) of not more than 0.25%
+ 24 | (c) a minimum preheat of 200°F (95°C) when the thickness of a pressure part at the weld exceeds % in. (16 mm)
+ 25 | (3) for fillet welds with a throat thickness of );, in. (13 mm) or less and combination groove and fillet welds with a weld thickness of );, in.
+ 26 | (13 mm) or less attaching nonpressure parts having a specified maximum carbon content (SA material specification carbon content,
+ 27 | except when further limited by the Purchaser to a value within the specification limits) of not more than 0.25% provided preheat to a
+ 28 | minimum temperature of 200°F (95°C) is applied when the pressure part exceeds % in. (16 mm)
+ 29 | (4) for welds used to attach extended heat-absorbing surface to tubes and insulation attachment pins to pressure parts
+ 30 | (5) for tubes or pressure retaining handhole and inspection plugs or fittings that are secured by physical means (rolling, shoulder construction,
+ 31 | machine threads, etc.) and seal welded, provided the seal weld has a throat thickness of % in. no mm) or less, and preheat to a minimum
+ 32 | temperature of 200°F (95°Cl is applied when the thickness of either part exceeds % in. (16 mm)
+ 33 | (6) postweld heat treatment is not mandatory for studs welded to pressure parts for purposes not included in (4) above and which have a
+ 34 | specified maximum carbon content of not more than 0.25% (SA material specification carbon content, except when further limited by
+ 35 | Purchaser to a value within the speCification limits), provided a preheat to a m'lnimum temperature of 200°F (95°C) is applied when
+ 36 | the thickness of the pressure part exceeds % in. (16 mm)
+ 37 | (7) for fillet welds attaching connections to a vessel, provided that all of the following conditions are met:
+ 38 | (a) the diameter of the finished opening (diameter din Figs. PG-33.1, PG-33.2, and PW-15) does not exceed that allowed in PG-32.l.Z
+ 39 | or Z in. (50 mm), whichever is less
+ 40 | (b) the throat thickness does not exceed % in. (10 mm)
+ 41 | (c) preheat to a minimum temperature of ZOO'F (95°Cl is applied when the thickness of either part exceeds % in. (16 mm)
+ 42 | (d) the connections are not placed in the vessel such as to form ligaments, the efficiency of which would affect the vessel thickness
+ 43 | (e) a maximum specified carbon content (SA material specification carbon content, except when further limited by the Purchaser to a
+ 44 | value within the specification limits) of not more than 0.Z5%
+ 45 | (S) for corrosion-resistant weld metal overlay cladding of pipe or tube materials, provided that all of the following conditions are met:
+ 46 | (a) the thickness of the overlay cladding is 1/4 in. (6 mm) or less
+ 47 | (b) preheat to a minimum tell1perature of 200°F (95°C) is applied when the thickness of the pressure part exceeds % in. (16 mm)
+ 48 | (c) the pipe or tube material
+ 49 | (1) does not exceed N PS 5 (ON 125) outside diameter
+ 50 | (Z) is not used as a drum or shell
+ 51 | (9) for welds attaching non load-carrying studs not exceeding liz in. (13 mm) in diameter when using an automatic arc stud welding or
+ 52 | automatic resistance stud welding process
+ 53 | nO) for attaching bare wire thermocouples by capacitor discharge welding or electric resistance welding, provided the following requirements
+ 54 | are met:
+ 55 | (a) the requirements of PW-39.S
+ 56 | (b) the minimum wall thickness shall be O.ZOO (5.0 mm) or greater
+ 57 | (b) When it is impractical to postweld heat treat at the temperature specified in this table, it is permissible to carry out the postweld heat treatment
+ 58 | at lower temperatures for longer periods of time in accordance with Table PW-39.1.
+ 59 | (c) General Note (a) does not apply to welds using the inertia and continuous drive friction welding processes. Postweld heat treatment is mandatory
+ 60 | for all thicknesses of materials welded using inertia and continuous drive friction welding.
+ 61 | 104
+
+==============================================================================
+PDF PAGE 234   (行数 50)
+==============================================================================
+  0 | 2010 SECTION I
+  1 | Since nozzle 2 has its limits of reinforcement restricted on
+  2 | = 1.8125 in.2
+  3 | both sides by nozzle I, the reduced limit of D, [d2/(d, + d2)]
+  4 | is applicable to both sides.   Total area of available reinforcement provided by nozzle
+  5 | A I = {2 X DI Id2/(d l + dl )] - dl2} (t - FI,)   2 or 3 in the circumferential plane
+  6 | = {2 x 9 [3.0/(2.75 + 3.0)] - 5.0}
+  7 | as required for demonstration of compliance with PG-33.
+  8 | Area of reinforcement provided by nozzle 3 in the diago-
+  9 | x (3.25 - 1.0 x 2.711)
+ 10 | nal plane
+ 11 | = 2.368 in?
+ 12 | Although nozzle I does not lie exactly in the same plane
+ 13 | as nozzles 3 and 4 and is slightly farther away, for simplic-
+ 14 | ity the limit on both sides of nozzle 3 are restricted to the
+ 15 | = 2 (1.0 - 0.136) X 2.5 X 1.0
+ 16 | reduced limit between nozzles 3 and 4.
+ 17 | = 4.322 in?   AI = {2 X D3 X [di(d3 + d4)]- d13} (I - FIr)
+ 18 | = {2 X 8.25 X [3.0/(3.0 + 2.75)] - 5.0}
+ 19 | = 2 x 1.0 X 4.0
+ 20 | = 8.0 in 2   X (3.25 - 0.88 X 2.711)
+ 21 | = 3.120 in.2
+ 22 | 1.252 + 0.5 2
+ 23 | = 2 (1.0 - 0.136) X 2.5 X 1.0
+ 24 | 1.812 in 2
+ 25 | = 4.322 in.2
+ 26 | Total area of available reinforcement provided by nozzle
+ 27 | 2 in the longitudinal plane
+ 28 | = 2 X 1.0 X 4.0
+ 29 | AI + A2 + A3 + A4 = 16.502 in.2 :2: AI2
+ 30 | = 8.0 in."
+ 31 | as required for demonstration of compliance with PG-33.
+ 32 | Area of reinforcement provided in nozzle 2 or 3 in the
+ 33 | circumferential plane   = 1.812 in.2
+ 34 | AI = {I + D2 [d2/(d2 + d3)] -   Total area of available reinforcement provided by nozzle
+ 35 | ~2} (t - FIr)
+ 36 | 3 in the diagonal plane
+ 37 | = {3.25 + 6.5 [3.0/(3.0 + 3.0)] _ 5~0}
+ 38 | as required for demonstration of compliance with PG-33.
+ 39 | x (3.25 - 0.5 X 2.711)
+ 40 | = 7.578 in?   Area of reinforcement provided in nozzle 4 in the diago-
+ 41 | nal plane
+ 42 | = 2 (1.0 - 0.13554) x 2.5 X 1.0
+ 43 | = 4.3223 in?
+ 44 | = 3.25 + 8.25 X [2.75/(2.75 + 3.0)1-:2   4.5}
+ 45 | {
+ 46 | = 2 x 1.0 X 4.0   X (3.25-0.88 x 2.711)
+ 47 | = 8.0 in.2   = 4.275 in 2
+ 48 | = 1.252 + 0.5 2   = 2 (0.875 - 0.124) X 2.5 x 0.875
+ 49 | 192
+
+==============================================================================
+PDF PAGE 235   (行数 60)
+==============================================================================
+  0 | 2010 SECTION I
+  1 | = 3.285 in. 2
+  2 | = [6.5 - 0.5 X (5 + 5)] X 3.25
+  3 | = 4.875 in.2
+  4 | = 2 x 0.875 x 4.0
+  5 | Net area provided in the nozzle wall fused to the vessel wall
+  6 | = 7.0 in.2
+  7 | A4 = WL/ + WL42   nan = TI,,2 Wd3 + 1,,2 Wd4 + I,d Wel3 + 1,,3 Wd4
+  8 | = 1.0 X 1.25 + 1.0 X 1.25 + 1.0 X 1.25 + 1.0 X 1.25
+  9 | 1.252 + 0.52   = 5 in?
+ 10 | 1.516 in 2
+ 11 | Total area of available reinforcement provided by nozzle   Total net area provided in the circumferential plane
+ 12 | 4 in the diagonal plane   between nozzles 2 and 3
+ 13 | nav + nan = 9.875 in. 2 ;::: nar as required for demonstra-
+ 14 | tion of compliance with PG-38.4
+ 15 | as required for demonstration of compliance with PG-33.
+ 16 | Net area required in the diagonal plane between nozzles
+ 17 | The rule of PG-38.4 for the minimum required net cross-
+ 18 | 3 and 4
+ 19 | sectional area between any two finished openings shall
+ 20 | nar = 0.7 Fir D3
+ 21 | apply as follows:
+ 22 | = 0.7 X 0.88 X 2.711 X 8.25
+ 23 | Net area required in longitudinal plane between nozzles 1
+ 24 | and 2   = 13.776 in 2
+ 25 | nar = 0.7 Fir DI
+ 26 | Net area provided in vessel wall
+ 27 | = 0.7 X 1.0 X 2.711 X 9
+ 28 | = 17.078 in.2
+ 29 | [825 - 0.5 X (5 + 4.5)1 X 3.25
+ 30 | Net area provided in vessel wall   11.375 in.2
+ 31 | nav = [DI - 0.5 (dl l + d12) 11
+ 32 | Net area provided in the nozzle wall fused to the vessel wall
+ 33 | [9 - 0.5 X (4.5 + 5)] x 3.25
+ 34 | nan = ///3 Wd3 + 1//3 Wd4 + t//4 Wdl + 1,,4 Wd2
+ 35 | 13.812 in.2   = 1.0 X 1.25 + 1.0 X 1.25 + 0.875 X 1.0
+ 36 | + 0.875 X 1.0
+ 37 | Net area provided in nozzle wall fused to vessel wall   = 4.25 in.2
+ 38 | nan = t"l Wdl + 1,,1 Wd2 + 1,,2Wd3 + t,,2Wd4   Total net area provided in the diagonal plane between
+ 39 | = 0.875 X 1.0 + 0.875 X 1.0 + 1.0 X 1.25 + 1.0 X 1.25   nozzles 3 and 4
+ 40 | = 4.25 in2
+ 41 | nav + nan = 15.625 in 2 ::c: nar as required for demon-
+ 42 | Total net area provided in the longitudinal plane between   stration of compliance with PG-38.4
+ 43 | nozzles I and 2
+ 44 | Nozzles I and 4 -   The required minimum strength to be
+ 45 | nav + Ilan = 18.0625 in.2 ;::: nar as required for demonstration
+ 46 | provided by the combined load-carrying elements through
+ 47 | of compliance with PG-38.4   each load-carrying path (see PG-37 and PW-15)
+ 48 | W = (A -AI)S ..
+ 49 | Net area required in the circumferential plane between
+ 50 | = (12.199 - 2.860) X 17.500
+ 51 | nozzles 2 and 3
+ 52 | = 163,431 Ib
+ 53 | nor = 0.7 FIr D2
+ 54 | Strength of the welds
+ 55 | = 0.7 X 0.5 X 2.711 X 6.5
+ 56 | Fillet welds in shear
+ 57 | = 6.167 in 2
+ 58 | Net area provided in vessel wall   =%11T X (WLI + WL2) dl l (factor in PW-15.2) S
+ 59 | 193
+
+==============================================================================
+PDF PAGE 236   (行数 48)
+==============================================================================
+  0 | 201 0 SECTION I
+  1 | =0.5 x 3.142 x (1.125 +0.5) x 4.5 x 0.49 x 17,500   = 0.5 x 0.7071
+  2 | =98,495Ib   = 0.354 in.
+  3 | tlllin = 0.75 in. (based on PW -16.2)
+  4 | Groove welds in tension
+  5 | =~ 1T(Wdl + Wd2)dl l (factor in PW-15.2)5
+  6 | =0.5 x 3.142 x (1.0 + 1.0) X 4.5 X 0.74 X 17,500   = 1.125 x 0.707
+  7 | = 183,076 Ib   = 0.795 in.
+  8 | The combined strength equals 281 ,S71lb ~ Was required
+  9 | for demonstration of compliance with PG-37 and PW -IS.   = 1.0 + 1.0
+ 10 | = 2 in.
+ 11 | Nozzles 2 and 3 -   The required minimum strength of
+ 12 | the welds (see PG-37 and PW -IS)   Verification
+ 13 | W = (A -AI) 5,.
+ 14 | (tl + f2 = 2.795) ;:: (1.25tlllin = 0.937)
+ 15 | = (13.544 - 2.368) X 17,500
+ 16 | = 195,7661b   (te = 0.354) ;:: 0.25
+ 17 | (II = 0.795) ;:: 0.25
+ 18 | Strength of the welds
+ 19 | Fillet welds in shear   (12 = 2) ;:: 0.25
+ 20 | Nozzles 2 and 3 -   Verification of minimum weld sizing
+ 21 | =12 1T(WL3 + WL4)dI2(factor in PW-15.2)5
+ 22 | as required by PW-16.1 and Fig. PW-16.l, illustration (f)
+ 23 | = 0.5 X 3.142 X (1.25 + 0.5) X 5 X 0.49 X 17,500
+ 24 | Required per Fig. PW-16.1, illustration (f)
+ 25 | = 117,859 Ib
+ 26 | Groove welds in tension
+ 27 | =0.5 X 3.142 X (1.25 + 1.25) X 5 X 0.74 x 17,500   fl ;:: 0.25
+ 28 | =254,273 Ib
+ 29 | Actual per Fig. A-69
+ 30 | The combined strength of path number 3 equals 372,132
+ 31 | Ib 2 Was required for demonstration of compliance with
+ 32 | PG-37 and PW-IS.
+ 33 | = 0.5 x 0.707
+ 34 | Nozzles I and 4 -   Verit'ication of minimum weld sizing
+ 35 | = 0.354
+ 36 | as required by PW -16.1 and Fig. PW -16.1, illustration (f)
+ 37 | tlllin = 0.75 in. (based on PW-16.2)
+ 38 | Required per Fig. PW-16.1, illustration (f)
+ 39 | = 1.25 x 0.7071
+ 40 | fc ;:: 0.25
+ 41 | = 0.884 in.
+ 42 | fl ;:: 0.25
+ 43 | f2 ;:: 0.25
+ 44 | Actual per Fig. A-69
+ 45 | = 1.25 + 1.25
+ 46 | = 2.5 in.
+ 47 | 194
+
+==============================================================================
+PDF PAGE 240   (行数 76)
+==============================================================================
+  0 | 2010 SECTION I
+  1 | The actual loading does not exceed values of allowable   From Table PW-43.1, K = 1.16
+  2 | loading.
+  3 | From Fig. PW-43.1, PW-43.2.1, or PW-43.2.2
+  4 | A-73.2 To determine the maximum allowable loading
+  5 | on structural attachments to tubes, a test may be con-   x = Dlt" = 22.2
+  6 | ducted on a full-size section of tube with attachment. The
+  7 | Compression Lf = 0.0664
+  8 | test may be considered as meeting the Code requirements
+  9 | Tension Lj = 0.0948
+ 10 | provided
+ 11 | For bend
+ 12 | A-73.2.1 The loading applied to the test specimen
+ 13 | is at least equivalent to the design loading, and at the   x = (Bend dia)/L" = 6/0.3" = 66.6
+ 14 | same time the tube is subjected to a hydrostatic pressure
+ 15 | From Fig. PW-43.1 or eqs. PW-43.2.1 or PW-43.2.2
+ 16 | corresponding to design conditions.
+ 17 | Compression Lt = 0.0215
+ 18 | A-73.2.2 The test is conducted in accordance with
+ 19 | Tension Lr = 0.0257
+ 20 | the requirements of A-22 with the exception that the
+ 21 | hydrostatic pressure shall be held at expected design pres-
+ 22 | sure, and the loading on the support shall be increased
+ 23 | Compression L" = (1.16)(0.0664 + 0.(215)( 15,(00)
+ 24 | until permanent set occurs.
+ 25 | = 1,529 Iblin.
+ 26 | A-73.2.3 The maximum load P, allowed on the
+ 27 | Tension L" = (1.16)(0.0948 + 0.(257)(15,000)
+ 28 | attachment at or below the pressure corresponding to the
+ 29 | = 2,096 Iblin.
+ 30 | hydrostatic pressure, is given by the following equation:
+ 31 | Actual unit load
+ 32 | HS
+ 33 | P =-   750   6 X 1,200 X 0.75
+ 34 | E   P   -+-------
+ 35 | 2.5 -   2.52
+ 36 | where   300 ± 864 = 1,164 Ib/in. compression; 564
+ 37 | E = average proportional limit of the tube mate-   Ib/in. tension
+ 38 | rial, psi   The actual applied load is less than the values allowed
+ 39 | H = test load at the proportional limit of the struc-   by the chart in Fig. PW-43.1.
+ 40 | ture,lb
+ 41 | P   maximum allowable load on attachment, Ib
+ 42 | S   working stress permitted in Table lA of Section
+ 43 | PREHEATING
+ 44 | n, Part D, for the tube material at the design
+ 45 | temperature that in no case shall be taken at less   A-IOO
+ 46 | than 700°F, psi
+ 47 | A-100.1 Preheating may be employed during welding
+ 48 | to assist in completion of the welded joint. The need for
+ 49 | and the temperature of preheat are dependent on a number
+ 50 | A-74
+ 51 | oft'actors such as chemical analysis, degree ofrestraint of
+ 52 | A superheater section is supported by welded attach-   the parts being joined, elevated temperature mechanical
+ 53 | ment to the short-radius return bend section as shown in   properties, and material thicknesses. Mandatory rules for
+ 54 | Fig. A-74. This example illustrates a condition where a   preheating are, therefore, not given in this Section except
+ 55 | direct and eccentric load is applied to a bent tube section.   as required in Table PW-39. As a general guide, some
+ 56 | The allowable lug loading is calculated for the follow-   minimum temperatures for preheating are given in
+ 57 | ing conditions:   A-IOOA. It is cautioned that the preheating temperatures
+ 58 | listed in A-IOOA do not necessarily ensure satisfactory
+ 59 | D   2.0 in.
+ 60 | completion of the welded joint. Requirements for individ-
+ 61 | material   SA-213-T22
+ 62 | ual materials within the P-Number listing may have pre-
+ 63 | MAWP   5,087 psi
+ 64 | heating requirements more or less restrictive than this
+ 65 | T   700°F
+ 66 | general guide. The Welding Procedure Specification for
+ 67 | 0.30 in.
+ 68 | the material being welded shall specify the minimum
+ 69 | 1/4 in. thick lug
+ 70 | preheating requirements described in the welding proce-
+ 71 | 15 deg attachment angle   dure qualification requirements of Section IX.
+ 72 | S   15,000 psi   A-I00.2 The heat of welding may assist in main-
+ 73 | 15,000 psi   taining preheat temperatures after the start of welding
+ 74 | 2.0 Sa - S = 15,000 psi   and, for inspection purposes, temperature measurements
+ 75 | ]98
+
+==============================================================================
+PDF PAGE 241   (行数 71)
+==============================================================================
+  0 | 2010 SECTION I
+  1 | may be made near the weld. The method or extent of   MAXIMUM ALLOWABLE WORKING
+  2 | application of preheat is not, therefore, specifically given.   PRESSURES -   THICK SHELLS
+  3 | Normally, when materials of two different P-Number   A-12S   SHELLS FOR INTERNAL
+  4 | groups are joined by welding, the preheat used will be   PRESSURE
+  5 | that of the material with the higher preheat specified on
+  6 | When the thickness of the shell exceeds one-half of
+  7 | the Welding Procedure Specification.
+  8 | the inside radius, the required thickness and maximum
+  9 | allowable working pressure on the cylindrical shell of
+ 10 | A-IOO.3 Thicknesses refeHed to are nominal at the
+ 11 | a boiler or drum shall be determined by the following
+ 12 | weld for the parts to be joined.
+ 13 | equations:
+ 14 | A-IOO.4 Minimum Temperatures for Preheating
+ 15 | A-IOO.4.1 P-No. 1, Group No.1, 2, 3. l7soF
+ 16 | (80°C) for material that has both a specified maximum
+ 17 | or
+ 18 | carbon content in excess of 0.30% and a thickness at the
+ 19 | joint in excess of I in. (2S mm); SO°F (1 O°C) for all other
+ 20 | materials in this grouping.
+ 21 | where
+ 22 | A-IOO.4.2 P-No. 3, Group No. I, 2, 3. 17S0F
+ 23 | E   1.0 for seamless cylinders without openings
+ 24 | (80°C) for material that has either a specified minimum
+ 25 | spaced to form ligaments
+ 26 | tensile strength in excess of 70,000 psi (480 MPa) or a
+ 27 | thickness at the joint in excess of % in. (16 mm); SO°F   ligament efficiency per PO-S2 Of PO-S3 for
+ 28 | seamless cylinders with ligaments
+ 29 | (l0°C) for all other materials in this grouping.
+ 30 | = w, the weld joint strength reduction factor per
+ 31 | A-100.4.3 P-No. 4, Group No.1, 2. 2S0°F (120°C)   PO-26 for longitudinally welded cylinders with-
+ 32 | for material that has either a specified minimum tensile   out ligaments
+ 33 | strength in excess of 60,000 psi (410 MPa) Of a thickness   For longitudinally welded cylinders with liga-
+ 34 | at the joint in excess of l'2 in. (13 mm); SO°F (lO°C) for   ments located such that no part of the longitudi-
+ 35 | all other materials in this grouping.   nal weld seam is penetrated by the openings
+ 36 | forming the ligament, E shall be taken as the
+ 37 | A-IOO.4.4 P-No. SA, Group No.1 and P-No. SR,   lesser of w or the ligament efficiency from PO-
+ 38 | Group No. I. 400°F (20S°C) for material that has either a   S20rPO-S3. Hany part of the longitudinal seam
+ 39 | specified minimum tensile strength in excess of 60,000 psi   weld is penetrated by the openings that form the
+ 40 | (4 IO MPa) or has both a specified minimum chromium   ligaments, E shall be taken as the product of w
+ 41 | content above 6.0% and a thickness at the joint in excess   times the ligament efficiency.
+ 42 | of l'2 in. (13 mm); 300°F (lSO°C) for all other materials
+ 43 | P   maximum allowable working pressure
+ 44 | in this grouping.   inside radius of the weakest course of the shell
+ 45 | R
+ 46 | R" = outside radius of the weakest course of the shell
+ 47 | A-100.4.S P-No. 6, Group No.1, 2, 3. 400°F
+ 48 | S   maximum allowable working unit stress, taken
+ 49 | (20S°C).
+ 50 | from Table I A of Section II, Part D
+ 51 | t = minimum thickness of shell plates in weakest
+ 52 | A-I00.4.6 P-No. 7, Group No.1, 2. None.
+ 53 | course
+ 54 | A-I00.4.7 P-No. 8, Group No.1, 2. None.   w = weld joint strength reduction factor per PO-26
+ 55 | ZI = (SE + P) / (SE -P)
+ 56 | A-IOO.4.10 P-No. lOA, Group No. 1. 175°F   Z2 = [(R + t) / Rf = (Ro / R/
+ 57 | (80°C).
+ 58 | NOTE: Restrictions of PG-27.2.2 also apply to this paragraph.
+ 59 | A-I00.4.11 P-No. 101, Group No.1. 300°F
+ 60 | OSO°C) with interpass maintained between 3S0°F and
+ 61 | ROUNDED INDICA nON CHARTS
+ 62 | 4S0°F (17S0C and 230°C).
+ 63 | A-2S0   ACCEPTANCE STANDARD FOR
+ 64 | A-100.4.12 P-No. ISE, Group No.1. 400°F   RADIOGRAPHICALLY
+ 65 | (20SOC) for material that has either a specified minimum   DETERMINED ROUNDED
+ 66 | tensile strength in excess of 60,000 psi (410 MPa) or has   INDICATIONS IN WELDS
+ 67 | both a specified minimum chromium content above 6.0%   A-2S0.1 Applicability of These Standards. These
+ 68 | and a thickness at the joint in excess of 1/2 in. (13 mm);   standards are applicable to ferritic, austenitic, and nonfer-
+ 69 | 300°F OSO°C) for all other materials in this grouping.   rous materials.
+ 70 | 199
+
+==============================================================================
+PDF PAGE 242   (行数 101)
+==============================================================================
+  0 | 2010 SECTION I
+  1 | A-2S0.2 Terminology   TABLE A-2S0.3.2
+  2 | MAXIMUM PERMISSIBLE SIZE OF
+  3 | A-2S0.2.1 Rounded Indications. Indications with
+  4 | ROUNDED INDICATION
+  5 | a maximum length of three times the width or less on
+  6 | (Examples Only)
+  7 | the radiograph are defined as rounded indications. These
+  8 | indications may be circular, elliptical, conical, or irregular   U.S. Customary Units
+  9 | in shape and may have tails. When evaluating the size
+ 10 | Maximum Size of
+ 11 | of an indication, the tail shall be included. The indication   Maximum Size
+ 12 | Acceptable Rounded
+ 13 | of Nonrevelant
+ 14 | may be from any imperfection in the weld, such as poros-
+ 15 | Indication, in.
+ 16 | Thickness   Indication,
+ 17 | ity, slag, or tungsten.
+ 18 | t, in.   Random   Isolated   in.
+ 19 | A-2S0.2.2 Aligned Indications. A sequence oHour
+ 20 | Less than 'is   ';4t   ';"t
+ 21 | '!jot
+ 22 | or more rounded indications shall be considered to be   'Is
+ 23 | 0.031   0.042   0.015
+ 24 | aligned when they touch a line parallel to the length of the   3!j6   0.047   0.063   0.015
+ 25 | weld drawn through the center of the two outer rounded   '/4   0.063   0.083   0.015
+ 26 | 5/,6   0.078   0.104   0.031
+ 27 | indications.
+ 28 | %
+ 29 | 0.091   0.125   0.031
+ 30 | A-2S0.2.3 Thickness t. t is the thickness of the   /,6   0.109   0.146
+ 31 | 0.031
+ 32 | 'Iz
+ 33 | weld, of the pressure-retaining material, or of the thinner   0.125   0.168   0.031
+ 34 | ';;,6   0.142   0.188   0.031
+ 35 | of the sections being joined, whichever is least. If a full
+ 36 | %
+ 37 | 0.156   0.210   0.031
+ 38 | penetration weld includes a fillet weld, the thickness of
+ 39 | 11;'6   0.156   0.230   0.031
+ 40 | the fillet weld throat shall be included in t.   3;4 to 2 incl.
+ 41 | 0.156   0.250   0.031
+ 42 | Over 2   0.156   0.375   0.063
+ 43 | A-2S0.3 Acceptance Criteria
+ 44 | SI Units
+ 45 | A-2S0.3.1 Image Density. Density within the
+ 46 | image of the indication may vary and is not a criterion   Maximum Size of
+ 47 | Maximum Size
+ 48 | for acceptance or rejection.   Acceptable Rounded
+ 49 | of Nonrevelant
+ 50 | Indication, mm
+ 51 | Thickness   Indication,
+ 52 | A-2S0.3.2 Relevant Indications (See Table A-
+ 53 | t, mm   Random   Isolated   mm
+ 54 | 2S0.3.2 for Examples). Only those rounded indications
+ 55 | which exceed the following dimensions shall be consid-   ';4t   J;"t
+ 56 | Less than   3   1;'0t
+ 57 | ered relevant:   3   0.79   1.07   0.38
+ 58 | 5   1.19   1.60   0.38
+ 59 | (a) ~o t for t less than X; in. (3 mm)
+ 60 | 6   1.60   2.11   0.38
+ 61 | (b) Yc>4 in. (0.4 mm) for t X; in. to ~ in. (6 mm), inclusive
+ 62 | 8   1.98   2.64   0.79
+ 63 | (c) ~2 in. (0.8 mm) for t %i in. (6 mm) to 2 in. (50 mm),   10   2.31   3.18   0.79
+ 64 | inclusive   11   2.77   3.71   0.79
+ 65 | 13   3.18   4.27   0.79
+ 66 | (d) ~6 in. (1.6 mm) for t greater than 2 in. (50 mm)
+ 67 | 14   3.61   4.78   0.79
+ 68 | A-2S0.3.3 Maximum Size of Rounded Indication   16   3.96   5.33   0.79
+ 69 | 17   3.96   5.84   0.79
+ 70 | (See Table A-2S0.3.2 for Examples). The maximum
+ 71 | 19 to 50 incl.   3.96   6.35   0.79
+ 72 | permissible size of any indication shall be ~t, or ?j2 in.
+ 73 | Over 50   3.96   9.53   1.60
+ 74 | (4 mm), whichever is smaller; except that an isolated
+ 75 | indication separated from an adjacent indication by 1 in.
+ 76 | (25 mm) or more may be ~t, or %i in. (6 mm), whichever
+ 77 | A-2S0.3.6 Rounded Indication Charts. The
+ 78 | is less. For t greater than 2 in. (50 mm) the maximum
+ 79 | rounded indications characterized as imperfections shall
+ 80 | permissible size of an isolated indication shall be
+ 81 | not exceed that shown in the charts.
+ 82 | increased to ~ in. (10 mm).
+ 83 | The charts in Figs. A-250.3.6-l through A-250.3.6-6
+ 84 | A-2S0.3.4 Aligned Rounded Indications. Aligned
+ 85 | illustrate various types of assorted, randomly dispersed,
+ 86 | rounded indications are acceptable when the summation
+ 87 | and clustered rounded indications for different weld thick-
+ 88 | of the diameters of the indications is less than t in a length
+ 89 | nesses greater than Ys in. (3 mm). These charts represent
+ 90 | of 121 (see Fig. A-250.3.4-!). The length of groups of
+ 91 | the maximum acceptable concentration limits for rounded
+ 92 | aligned rounded indications and the spacing between the
+ 93 | indications.
+ 94 | groups shall meet the requirements of Fig. A-250-3.4-2.
+ 95 | The chart for each thickness range represents full-scale
+ 96 | A-2S0.3.S Spacing. The distance between adjacent   6 in. (150 mm) radiographs, and shall not be enlarged or
+ 97 | rounded indications is not a factor in determining accept-   reduced. The distributions shown are not necessarily the
+ 98 | ance or rejection, except as required for isolated inddca-   patterns that may appear on the radiograph, but are typical
+ 99 | tions or groups of aligned indications.   of the concentration and size of indications permitted.
+100 | 200

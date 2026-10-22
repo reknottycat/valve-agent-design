@@ -1,0 +1,21 @@
+{
+  "schema": "standards_kb.candidates/1.0",
+  "source_id": "ASME-B31.9",
+  "file": "runs\\ASME-B31.9\\b31_9_djvu.txt",
+  "generated_at": "2026-10-22T08:58:29+08:00",
+  "text_chars": 265165,
+  "candidate_count": 1,
+  "note": "全部为 CANDIDATE,confidence=LOW。抽取器不判定正确性,须人工/Agent 复核后转成公式条目。",
+  "candidates": [
+    {
+      "expr": "ksi = kips ( 1000 lb ) per sq in. ( MPa )",
+      "lhs": "ksi",
+      "rhs": "kips (1000 lb) per sq in. (MPa)",
+      "line_no": 2181,
+      "context": "1 = moment of inertia, in. 4 (mm 4 ) \nksi = kips (1000 lb) per sq in. (MPa) \n\nL = developed length of pipe axis between",
+      "domain": "DRIVE",
+      "ocr_degraded": false,
+      "confidence": "LOW"
+    }
+  ]
+}

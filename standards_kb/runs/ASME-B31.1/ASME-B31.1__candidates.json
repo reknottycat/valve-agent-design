@@ -1,0 +1,326 @@
+{
+  "schema": "standards_kb.candidates/1.0",
+  "source_id": "ASME-B31.1",
+  "file": "runs\\ASME-B31.1\\asme_b31_1_2007_djvu.txt",
+  "generated_at": "2026-10-22T10:02:54+08:00",
+  "text_chars": 1154321,
+  "candidate_count": 21,
+  "note": "全部为 CANDIDATE,confidence=LOW。抽取器不判定正确性,须人工/Agent 复核后转成公式条目。",
+  "candidates": [
+    {
+      "expr": "Ti = Si / S E",
+      "lhs": "Ti",
+      "rhs": "Si/S E",
+      "line_no": 3426,
+      "line_span": [
+        3426,
+        3426
+      ],
+      "context": "stress range, S/ \n\nTi = Si/S E \n\nSj = any computed stress range other than the refer-",
+      "domain": "GEOM",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "single_line"
+    },
+    {
+      "expr": "Sj = any computed stress range other than the refer -",
+      "lhs": "Sj",
+      "rhs": "any computed stress range other than the refer-",
+      "line_no": 3428,
+      "line_span": [
+        3428,
+        3428
+      ],
+      "context": "Ti = Si/S E \n\nSj = any computed stress range other than the refer- \nence displacement stress range, psi (kPa)",
+      "domain": "GEOM",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "single_line"
+    },
+    {
+      "expr": "Mj = ( M ^ + M / + M»; 2 ) 1 / 2",
+      "lhs": "Mj",
+      "rhs": "(M^ + M/ + M»; 2 ) 1/2",
+      "line_no": 6253,
+      "line_span": [
+        6253,
+        6253
+      ],
+      "context": "Mj = (M^ + M/ + M»; 2 ) 1/2",
+      "domain": "GEOM",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "single_line"
+    },
+    {
+      "expr": "CE = C + ( Mn + Si )/ 6 + ( Cr + Mo + V )/ 5 + ( Ni + Cu )/ 15",
+      "lhs": "CE",
+      "rhs": "C + (Mn + Si)/6 + (Cr + Mo + V)/5 + (Ni + Cu)/15",
+      "line_no": 15391,
+      "line_span": [
+        15391,
+        15391
+      ],
+      "context": "(1) the carbon equivalent, CE, is < 0.50, using the formula \n\nCE = C + (Mn + Si)/6 + (Cr + Mo + V)/5 + (Ni + Cu)/15 \n\nThe maximum chemical composition limit from the material specification or actual values from a chemical analysis or material test",
+      "domain": "MATE",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "single_line"
+    },
+    {
+      "expr": "CE = C + ( Mn + Si )/ 6 + 0.1",
+      "lhs": "CE",
+      "rhs": "C + (Mn + Si)/6 + 0.1",
+      "line_no": 15397,
+      "line_span": [
+        15397,
+        15397
+      ],
+      "context": "as follows: \n\nCE = C + (Mn + Si)/6 + 0.1 \n\n(2) a minimum preheat of 250°F (121°C) is applied",
+      "domain": "GEOM",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "single_line"
+    },
+    {
+      "expr": "DLF = dynamic load factor ( see para. II - 3.5.1.3 )",
+      "lhs": "DLF",
+      "rhs": "dynamic load factor (see para. II-3.5.1.3)",
+      "line_no": 130864,
+      "line_span": [
+        130864,
+        130864
+      ],
+      "context": "D = nominal O.D. of inlet pipe \n\nDLF = dynamic load factor (see para. II-3.5.1.3) \n\nF x = force calculated per para. II-2.3.1.1",
+      "domain": "GEOM",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "single_line"
+    },
+    {
+      "expr": "Pu = Pi ( P / P *) = 194 psia",
+      "lhs": "Pu",
+      "rhs": "Pi (P/P*) = 194 psia",
+      "line_no": 131973,
+      "line_span": [
+        131973,
+        131973
+      ],
+      "context": "From Chart II- 1, P/P* = 1.647. \n\nPu = Pi (P/P*) = 194 psia \n\n11-7-1.3 Reaction Force at Discharge Elbow Exit.",
+      "domain": "FLOW",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "single_line"
+    },
+    {
+      "expr": "Vi = 2,116 ft / sec",
+      "lhs": "Vi",
+      "rhs": "2,116 ft/sec",
+      "line_no": 131989,
+      "line_span": [
+        131989,
+        131989
+      ],
+      "context": "W = 116.38 lbm/sec \n\nVi = 2,116 ft/sec \n\n& = 32.2 lbm-ft/lbf-sec 2",
+      "domain": "GEOM",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "single_line"
+    },
+    {
+      "expr": "Pi = 118 psia",
+      "lhs": "Pi",
+      "rhs": "118 psia",
+      "line_no": 131993,
+      "line_span": [
+        131993,
+        131993
+      ],
+      "context": "& = 32.2 lbm-ft/lbf-sec 2 \n\nPi = 118 psia \n\nP a = 15 psia",
+      "domain": "GEOM",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "single_line"
+    },
+    {
+      "expr": "Dj = 6 in.",
+      "lhs": "Dj",
+      "rhs": "6 in.",
+      "line_no": 132221,
+      "line_span": [
+        132221,
+        132221
+      ],
+      "context": "D - 8.75 in. \n\nDj = 6 in. \nZ (2) = 51.1 in. 3",
+      "domain": "GEOM",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "single_line"
+    },
+    {
+      "expr": "j_3 = [Jt /( 4£7 ) ] 1 / 4 in. _1",
+      "lhs": "j3",
+      "rhs": "[Jt/(4£7)] 1/4 in. _1",
+      "line_no": 139771,
+      "line_span": [
+        139771,
+        139771
+      ],
+      "context": "VII-3.2.4 Pipe/Soil System Characteristic [2] \n\nj3 = [Jt/(4£7)] 1/4 in. _1",
+      "domain": "GEOM",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "single_line"
+    },
+    {
+      "expr": "Ann = 0.3 [ ( 6.01 )( 40.05 ) + 8.211",
+      "lhs": "Ann",
+      "rhs": "0.3 [(6.01)(40.05) + 8.211",
+      "line_no": 140525,
+      "line_span": [
+        140525,
+        140525
+      ],
+      "context": "Minimum value of friction force per unit length, / min : \n\nAnn = 0.3 [(6.01)(40.05) + 8.211 \n- 74.7 lb/in.",
+      "domain": "GEOM",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "single_line"
+    },
+    {
+      "expr": "N = total number of equivalent reference displace - ment stress range cycles expected during the",
+      "lhs": "N",
+      "rhs": "total number of equivalent reference displace- ment stress range cycles expected during the",
+      "line_no": 3344,
+      "line_span": [
+        3344,
+        3345
+      ],
+      "context": "N = total number of equivalent reference displace- \nment stress range cycles expected during the \nservice life of the piping. A minimum value for",
+      "domain": "GEOM",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "Sj = any computed stress range other than the refer - ence displacement stress range, psi ( kPa )",
+      "lhs": "Sj",
+      "rhs": "any computed stress range other than the refer- ence displacement stress range, psi (kPa)",
+      "line_no": 3428,
+      "line_span": [
+        3428,
+        3429
+      ],
+      "context": "Ti = Si/S E \n\nSj = any computed stress range other than the refer- \nence displacement stress range, psi (kPa) \n\n102.3.3 Limits of Calculated Stresses Due to Occa- \nsional Loads",
+      "domain": "GEOM",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "K = 1.00 For d / D greater than 0.15 and not exceeding 0.60,",
+      "lhs": "K",
+      "rhs": "1.00 For d/D greater than 0.15 and not exceeding 0.60,",
+      "line_no": 5476,
+      "line_span": [
+        5476,
+        5477
+      ],
+      "context": "For d/D greater than 0.60, \n\nK = 1.00 \nFor d/D greater than 0.15 and not exceeding 0.60, \n\nK = 0.6 + % d/D \nFor d/D equal to or less than 0.15,",
+      "domain": "GEOM",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "K = 0.6 + % d / D For d / D equal to or less than 0.15,",
+      "lhs": "K",
+      "rhs": "0.6 + % d/D For d/D equal to or less than 0.15,",
+      "line_no": 5479,
+      "line_span": [
+        5479,
+        5480
+      ],
+      "context": "For d/D greater than 0.15 and not exceeding 0.60, \n\nK = 0.6 + % d/D \nFor d/D equal to or less than 0.15, \n\nK - 0.70",
+      "domain": "GEOM",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "a = reducer cone angle, deg d - mismatch, in. ( mm )",
+      "lhs": "a",
+      "rhs": "reducer cone angle, deg d - mismatch, in. (mm)",
+      "line_no": 126821,
+      "line_span": [
+        126821,
+        126822
+      ],
+      "context": "t n = nominal wall thickness of pipe, in. (mm) (matching pipe for tees) \nt r = reinforcement pad or saddle thickness, in. (mm) \na = reducer cone angle, deg \nd - mismatch, in. (mm) \n$ - one-half angle between adjacent miter axes, deg \n\n(2) The flexibility factors k and stress intensification factors / in Table D-l apply to bending in any plane for fittings and shall in no case",
+      "domain": "STRUCT",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "E = Young's modulus of inlet pipe at design tem - perature",
+      "lhs": "E",
+      "rhs": "Young's modulus of inlet pipe at design tem- perature",
+      "line_no": 132030,
+      "line_span": [
+        132030,
+        132031
+      ],
+      "context": "where \n\nE = Young's modulus of inlet pipe at design tem- \nperature \n= 23 x 10 6 psi \nh = distance from run pipe to centerline of outlet \npiping",
+      "domain": "GEOM",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "c = the sum of the mechanical allowances ( thread or groove depth ) , plus erosion and / or corrosion",
+      "lhs": "c",
+      "rhs": "the sum of the mechanical allowances (thread or groove depth), plus erosion and /or corrosion",
+      "line_no": 133286,
+      "line_span": [
+        133286,
+        133287
+      ],
+      "context": "where \n\nc = the sum of the mechanical allowances (thread \nor groove depth), plus erosion and /or corrosion \nallowance, and the manufacturer's minus toler- \nance for product wall thickness, in. For threaded \ncomponents, the nominal thread depth shall",
+      "domain": "STRUCT",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "t = pressure design thickness, in., as calculated in para. III - 2.2.2 for internal pressure, or in accor -",
+      "lhs": "t",
+      "rhs": "pressure design thickness, in., as calculated in para. III-2.2.2 for internal pressure, or in accor-",
+      "line_no": 133295,
+      "line_span": [
+        133295,
+        133296
+      ],
+      "context": "be assumed to be 0.02 in., in addition to the \nspecified depth of the thread or groove. \nt = pressure design thickness, in., as calculated in \npara. III-2.2.2 for internal pressure, or in accor- \ndance with para. III-2.2.3 for external pressure \ni m = minimum required thickness, in.",
+      "domain": "STRUCT",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "Sf = allowable stress for flange material from para. III - 4.2",
+      "lhs": "Sf",
+      "rhs": "allowable stress for flange material from para. III-4.2",
+      "line_no": 133515,
+      "line_span": [
+        133515,
+        133516
+      ],
+      "context": "design stresses shall not exceed those in Appen- \ndix A.) \nSf = allowable stress for flange material from para. \nIII-4.2 \n\n(A3) The flange design rules in (A.2) above are not \napplicable for designs employing full-face gaskets that",
+      "domain": "SEAL",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    }
+  ]
+}

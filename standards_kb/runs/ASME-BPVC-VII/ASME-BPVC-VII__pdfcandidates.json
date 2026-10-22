@@ -1,0 +1,11 @@
+{
+  "schema": "standards_kb.candidates/1.0",
+  "method": "pdf_layout_row",
+  "source_id": "ASME-BPVC-VII",
+  "pdf": "..\\runs\\ASME-BPVC-VII\\asme_bpvc_vii_2010.pdf",
+  "pages_scanned": 164,
+  "generated_at": "2026-10-22T10:02:58+08:00",
+  "candidate_count": 0,
+  "note": "基于 PDF 版面坐标重建行。仍为 CANDIDATE/LOW,须复核。",
+  "candidates": []
+}

@@ -1,0 +1,50 @@
+{
+  "source_id": "GOST-LOCAL",
+  "standard_id": "GOST-1536-76",
+  "registry": {
+    "family": "GOST",
+    "kind": "DIMENSION",
+    "body_status": "LOCAL_FILE",
+    "title": "项目内已有正文 — ГОСТ 1536-76",
+    "url": "file://F:/设计探索/gost1536/gost1536.htm"
+  },
+  "has_body": true,
+  "files": [
+    {
+      "filename": "gost_1536_76.htm",
+      "kind": "htm",
+      "bytes": 195541,
+      "sha256": "ee8cca3e9849333b8a11591df9bf473066e1863d085664062ccc73b6059f0d64",
+      "file_mtime": "2026-10-06T18:24:37+08:00"
+    },
+    {
+      "filename": "gost_1536_76.txt",
+      "kind": "text",
+      "bytes": 45069,
+      "sha256": "48c6ab68cf6a12a0c6fbe4b34f3c4a26af89e7af5c33ce7f505c33246cc8c9bd",
+      "file_mtime": "2026-10-06T18:25:03+08:00",
+      "chars": 36153,
+      "lines": 167
+    },
+    {
+      "filename": "gost_1536_76_clean.md",
+      "kind": "md",
+      "bytes": 8355,
+      "sha256": "ec084cda7b5208a0a5a636d970a0bb16e3ba67ecf9d01de175f0876c9802a3a8",
+      "file_mtime": "2026-10-22T10:11:12+08:00"
+    }
+  ],
+  "candidates_extracted": 0,
+  "candidate_files": [],
+  "curated_entries": [],
+  "curated_data_entries": [
+    "D-GOST1536-PN025",
+    "D-GOST1536-PN063",
+    "D-GOST1536-PN10",
+    "D-GOST1536-PN16",
+    "D-GOST1536-PN25",
+    "D-GOST1536-PN40",
+    "D-GOST1536-PN63"
+  ],
+  "rebuilt_at": "2026-10-22T12:56:12+08:00"
+}

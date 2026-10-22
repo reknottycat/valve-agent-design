@@ -1,0 +1,39 @@
+{
+  "source_id": "ASME-B31.1",
+  "standard_id": "ASME-B31.1",
+  "registry": {
+    "family": "ASME",
+    "kind": "MECHANICS",
+    "body_status": "FULL_TEXT_MIRROR",
+    "title": "ASME B31.1-2007 — Power Piping",
+    "url": null
+  },
+  "has_body": true,
+  "files": [
+    {
+      "filename": "ASME-B31.1__candidates.json",
+      "kind": "json",
+      "bytes": 11626,
+      "sha256": "2fcfcae4d013f31b2c2ff5783958a6dd9264ead92fbabe48c6d30ac52c2d675e",
+      "file_mtime": "2026-10-22T10:02:54+08:00"
+    },
+    {
+      "filename": "asme_b31_1_2007_djvu.txt",
+      "kind": "text",
+      "bytes": 1155673,
+      "sha256": "42a65ff06ab1107608337f9f7980032373fed26f2eb55797d90d1a4a9db66aea",
+      "file_mtime": "2026-10-22T09:39:30+08:00",
+      "chars": 1154321,
+      "lines": 144827
+    }
+  ],
+  "candidates_extracted": 21,
+  "candidate_files": [
+    "ASME-B31.1__candidates.json (21 条)"
+  ],
+  "curated_entries": [
+    "F-MAT-003"
+  ],
+  "curated_data_entries": [],
+  "rebuilt_at": "2026-10-22T12:56:12+08:00"
+}

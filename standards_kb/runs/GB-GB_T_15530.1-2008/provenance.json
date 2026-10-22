@@ -1,0 +1,173 @@
+{
+  "source_id": "GB-GB_T_15530.1-2008",
+  "standard_id": "GB/T 15530.1-2008",
+  "registry": {
+    "family": "GB",
+    "kind": "DIMENSION",
+    "body_status": "FULL_TEXT_MIRROR",
+    "title": "GB/T 15530.1-2008 — 铜合金整体铸造法兰",
+    "url": null
+  },
+  "has_body": true,
+  "files": [
+    {
+      "filename": "fetch_meta.json",
+      "kind": "json",
+      "bytes": 4601,
+      "sha256": "c4589de69b8250f2914e9fcee6d537be7dcaac967136ea1d083454f0d151b5b3",
+      "file_mtime": "2026-10-22T11:55:21+08:00"
+    },
+    {
+      "filename": "pages/p0000.png",
+      "kind": "png",
+      "bytes": 419918,
+      "sha256": "5e570001de9d6bae41e58dd2659134d14d83ab1686fb4d1ecf3f265dc70d7cf8",
+      "file_mtime": "2026-10-22T11:55:15+08:00"
+    },
+    {
+      "filename": "pages/p0001.png",
+      "kind": "png",
+      "bytes": 886673,
+      "sha256": "d62f2ac0ce58ad5f82b56cc0239bf00a3902541a443d682b38ac319279dc670e",
+      "file_mtime": "2026-10-22T11:55:15+08:00"
+    },
+    {
+      "filename": "pages/p0002.png",
+      "kind": "png",
+      "bytes": 1001643,
+      "sha256": "757c803b2fc856e26be9e72742d80d6a3c38f170e892acf10f2608210d619ea9",
+      "file_mtime": "2026-10-22T11:55:15+08:00"
+    },
+    {
+      "filename": "pages/p0003.png",
+      "kind": "png",
+      "bytes": 394786,
+      "sha256": "c16adca1cd915f3f990702b40ba4ca8bfc2ae714a3dc39cb5f0249c37ce9f09a",
+      "file_mtime": "2026-10-22T11:55:15+08:00"
+    },
+    {
+      "filename": "pages/p0004.png",
+      "kind": "png",
+      "bytes": 672154,
+      "sha256": "947c626c1f90d53df10b5c4d7b5af903e01cd3c2016639ad9071bf303a305124",
+      "file_mtime": "2026-10-22T11:55:15+08:00"
+    },
+    {
+      "filename": "pages/p0005.png",
+      "kind": "png",
+      "bytes": 406453,
+      "sha256": "f1590dfb21a55fe9d65a32cfd791d3358119e59d42228f24320d00039b44bcd0",
+      "file_mtime": "2026-10-22T11:55:17+08:00"
+    },
+    {
+      "filename": "pages/p0006.png",
+      "kind": "png",
+      "bytes": 488454,
+      "sha256": "92d5fb9fefd6d6914a693b005cd693e6b18a95b377978d4339effbce99120eda",
+      "file_mtime": "2026-10-22T11:55:17+08:00"
+    },
+    {
+      "filename": "pages/p0007.png",
+      "kind": "png",
+      "bytes": 590082,
+      "sha256": "44fbf0efdb4902104ff50cef51135dd1f624b9258014fc950120be4ca125fb1e",
+      "file_mtime": "2026-10-22T11:55:17+08:00"
+    },
+    {
+      "filename": "pages/p0008.png",
+      "kind": "png",
+      "bytes": 563189,
+      "sha256": "855ca12c6d1723383456ea755774002c5943ccad51416b4b5712110464fc6b36",
+      "file_mtime": "2026-10-22T11:55:17+08:00"
+    },
+    {
+      "filename": "pages/p0009.png",
+      "kind": "png",
+      "bytes": 585398,
+      "sha256": "b9ead0d03416bdf1cf78b6629d25795a8aab863a205a2eb9f0d193ece781a253",
+      "file_mtime": "2026-10-22T11:55:19+08:00"
+    },
+    {
+      "filename": "pages/p0010.png",
+      "kind": "png",
+      "bytes": 639933,
+      "sha256": "a5090c20788d45785b21d4f9f3f8054fc0598f41de261578619b1c6c5ed63ec9",
+      "file_mtime": "2026-10-22T11:55:19+08:00"
+    },
+    {
+      "filename": "pages/p0011.png",
+      "kind": "png",
+      "bytes": 776277,
+      "sha256": "9e3f4a1b1c1b040e6ad7811e4d1f6f4c3c764e9113462dd211591b512a794103",
+      "file_mtime": "2026-10-22T11:55:19+08:00"
+    },
+    {
+      "filename": "pages/p0012.png",
+      "kind": "png",
+      "bytes": 506458,
+      "sha256": "1b58487b49eb09bca60c50002d5f444a2678c65fe05a17120ee20e6db1235504",
+      "file_mtime": "2026-10-22T11:55:20+08:00"
+    },
+    {
+      "filename": "pages/p0013.png",
+      "kind": "png",
+      "bytes": 700361,
+      "sha256": "a7690055f00781f82438c8ecfffb1dca220d38c1b5548e3bb03717c346ecdd65",
+      "file_mtime": "2026-10-22T11:55:21+08:00"
+    },
+    {
+      "filename": "pages/p0014.png",
+      "kind": "png",
+      "bytes": 754988,
+      "sha256": "4bc4eb3ba3d4bdd2a49301df65de40d58a6c9e2b5bd06640bf04e9216bd2250e",
+      "file_mtime": "2026-10-22T11:55:21+08:00"
+    },
+    {
+      "filename": "showgb.html",
+      "kind": "html",
+      "bytes": 143279,
+      "sha256": "ad87136889fe71e2d6d57a4360ce50270b47e5fe6eab9ce4f6d2c947966a8d78",
+      "file_mtime": "2026-10-22T11:55:12+08:00"
+    },
+    {
+      "filename": "sprites/18c3c7f582a16dd6.webp",
+      "kind": "webp",
+      "bytes": 672634,
+      "sha256": "6618306a29171b632a116d71f2562c03ec58298c2ba231c87965ee563f6517c7",
+      "file_mtime": "2026-10-22T11:55:19+08:00"
+    },
+    {
+      "filename": "sprites/4cfcc15760e22700.webp",
+      "kind": "webp",
+      "bytes": 556538,
+      "sha256": "7dae724fc6746fec4ad0ac90795c80d67a063d9d69c740701dfaca4f8d33e6ca",
+      "file_mtime": "2026-10-22T11:55:16+08:00"
+    },
+    {
+      "filename": "sprites/a43a8a51f6d65887.webp",
+      "kind": "webp",
+      "bytes": 932856,
+      "sha256": "8e88eeb882be752fd1675de083574d1cba0658527d24df123bf0af2131508805",
+      "file_mtime": "2026-10-22T11:55:14+08:00"
+    },
+    {
+      "filename": "sprites/a9c9bc64ca780785.webp",
+      "kind": "webp",
+      "bytes": 393776,
+      "sha256": "c6d35b67720fb9df139cd799d56c44f647e082131ae21492f87c300e7f2d666d",
+      "file_mtime": "2026-10-22T11:55:20+08:00"
+    }
+  ],
+  "candidates_extracted": 0,
+  "candidate_files": [],
+  "curated_entries": [],
+  "curated_data_entries": [
+    "D-GBT15530-PN10-RF",
+    "D-GBT15530-PN16-RF",
+    "D-GBT15530-PN25-RF",
+    "D-GBT15530-PN6-RF",
+    "D-GBT15530-PT-CLASS",
+    "D-GBT15530-PT-PN"
+  ],
+  "rebuilt_at": "2026-10-22T12:56:12+08:00"
+}

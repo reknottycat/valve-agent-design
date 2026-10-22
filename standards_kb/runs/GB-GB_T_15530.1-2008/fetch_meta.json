@@ -1,0 +1,153 @@
+{
+  "standard": "GB/T 15530.1-2008",
+  "standard_id": "GB_T_15530.1-2008",
+  "hcno": "FA956785E4D87F6DCC91629CA9238510",
+  "title": "铜合金整体铸造法兰",
+  "catalog_status": "现行",
+  "publish_date": "2008-08-25",
+  "source": "GB-PUB",
+  "url": "https://openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=FA956785E4D87F6DCC91629CA9238510",
+  "page_count": 15,
+  "fetched_at": "2026-10-22T11:55:21+08:00",
+  "body_status": "FULL_TEXT_MIRROR",
+  "extraction": "OCR_TEXT",
+  "notes": "GB/T 正文为栅格图，无文字层；本层只取图不识别，OCR 由后续工具处理。",
+  "sprite_groups": 4,
+  "pages": [
+    {
+      "page_id": 0,
+      "status": "OK",
+      "file": "pages/p0000.png",
+      "sha256": "5e570001de9d6bae41e58dd2659134d14d83ab1686fb4d1ecf3f265dc70d7cf8",
+      "bytes": 419918,
+      "tiles": 48,
+      "sprite": "a43a8a51f6d65887.webp"
+    },
+    {
+      "page_id": 1,
+      "status": "OK",
+      "file": "pages/p0001.png",
+      "sha256": "d62f2ac0ce58ad5f82b56cc0239bf00a3902541a443d682b38ac319279dc670e",
+      "bytes": 886673,
+      "tiles": 45,
+      "sprite": "a43a8a51f6d65887.webp"
+    },
+    {
+      "page_id": 2,
+      "status": "OK",
+      "file": "pages/p0002.png",
+      "sha256": "757c803b2fc856e26be9e72742d80d6a3c38f170e892acf10f2608210d619ea9",
+      "bytes": 1001643,
+      "tiles": 67,
+      "sprite": "a43a8a51f6d65887.webp"
+    },
+    {
+      "page_id": 3,
+      "status": "OK",
+      "file": "pages/p0003.png",
+      "sha256": "c16adca1cd915f3f990702b40ba4ca8bfc2ae714a3dc39cb5f0249c37ce9f09a",
+      "bytes": 394786,
+      "tiles": 41,
+      "sprite": "a43a8a51f6d65887.webp"
+    },
+    {
+      "page_id": 4,
+      "status": "OK",
+      "file": "pages/p0004.png",
+      "sha256": "947c626c1f90d53df10b5c4d7b5af903e01cd3c2016639ad9071bf303a305124",
+      "bytes": 672154,
+      "tiles": 67,
+      "sprite": "a43a8a51f6d65887.webp"
+    },
+    {
+      "page_id": 5,
+      "status": "OK",
+      "file": "pages/p0005.png",
+      "sha256": "f1590dfb21a55fe9d65a32cfd791d3358119e59d42228f24320d00039b44bcd0",
+      "bytes": 406453,
+      "tiles": 64,
+      "sprite": "4cfcc15760e22700.webp"
+    },
+    {
+      "page_id": 6,
+      "status": "OK",
+      "file": "pages/p0006.png",
+      "sha256": "92d5fb9fefd6d6914a693b005cd693e6b18a95b377978d4339effbce99120eda",
+      "bytes": 488454,
+      "tiles": 64,
+      "sprite": "4cfcc15760e22700.webp"
+    },
+    {
+      "page_id": 7,
+      "status": "OK",
+      "file": "pages/p0007.png",
+      "sha256": "44fbf0efdb4902104ff50cef51135dd1f624b9258014fc950120be4ca125fb1e",
+      "bytes": 590082,
+      "tiles": 67,
+      "sprite": "4cfcc15760e22700.webp"
+    },
+    {
+      "page_id": 8,
+      "status": "OK",
+      "file": "pages/p0008.png",
+      "sha256": "855ca12c6d1723383456ea755774002c5943ccad51416b4b5712110464fc6b36",
+      "bytes": 563189,
+      "tiles": 57,
+      "sprite": "4cfcc15760e22700.webp"
+    },
+    {
+      "page_id": 9,
+      "status": "OK",
+      "file": "pages/p0009.png",
+      "sha256": "b9ead0d03416bdf1cf78b6629d25795a8aab863a205a2eb9f0d193ece781a253",
+      "bytes": 585398,
+      "tiles": 69,
+      "sprite": "18c3c7f582a16dd6.webp"
+    },
+    {
+      "page_id": 10,
+      "status": "OK",
+      "file": "pages/p0010.png",
+      "sha256": "a5090c20788d45785b21d4f9f3f8054fc0598f41de261578619b1c6c5ed63ec9",
+      "bytes": 639933,
+      "tiles": 65,
+      "sprite": "18c3c7f582a16dd6.webp"
+    },
+    {
+      "page_id": 11,
+      "status": "OK",
+      "file": "pages/p0011.png",
+      "sha256": "9e3f4a1b1c1b040e6ad7811e4d1f6f4c3c764e9113462dd211591b512a794103",
+      "bytes": 776277,
+      "tiles": 67,
+      "sprite": "18c3c7f582a16dd6.webp"
+    },
+    {
+      "page_id": 12,
+      "status": "OK",
+      "file": "pages/p0012.png",
+      "sha256": "1b58487b49eb09bca60c50002d5f444a2678c65fe05a17120ee20e6db1235504",
+      "bytes": 506458,
+      "tiles": 59,
+      "sprite": "18c3c7f582a16dd6.webp"
+    },
+    {
+      "page_id": 13,
+      "status": "OK",
+      "file": "pages/p0013.png",
+      "sha256": "a7690055f00781f82438c8ecfffb1dca220d38c1b5548e3bb03717c346ecdd65",
+      "bytes": 700361,
+      "tiles": 67,
+      "sprite": "a9c9bc64ca780785.webp"
+    },
+    {
+      "page_id": 14,
+      "status": "OK",
+      "file": "pages/p0014.png",
+      "sha256": "4bc4eb3ba3d4bdd2a49301df65de40d58a6c9e2b5bd06640bf04e9216bd2250e",
+      "bytes": 754988,
+      "tiles": 67,
+      "sprite": "a9c9bc64ca780785.webp"
+    }
+  ]
+}

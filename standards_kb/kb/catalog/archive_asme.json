@@ -1,0 +1,1560 @@
+{
+  "schema": "standards_kb.catalog/1.0",
+  "source": "archive.org advancedsearch identifier:gov.law.asme.*",
+  "note": "每个 item 的 files 列出可直接下载的 PDF 与 OCR 文本层。同名 item 的 PDF 是扫描件(常无文本层),抽公式优先用 _djvu.txt,要版面坐标再取 PDF。",
+  "generated_at": "2026-10-22T09:37:08+08:00",
+  "count": 47,
+  "items": [
+    {
+      "item_id": "gov.law.asme.a17.1.1971",
+      "code": "asme.a17.1.1971",
+      "title": "ASME A17.1 (1971): Safety Code for Elevators and Escalators",
+      "files": [
+        {
+          "name": "asme.a17.1.1971.pdf",
+          "bytes": 14227444,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.a17.1.1971/asme.a17.1.1971.pdf"
+        },
+        {
+          "name": "asme.a17.1.1971.pdf_meta.txt",
+          "bytes": 1669,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.1.1971/asme.a17.1.1971.pdf_meta.txt"
+        },
+        {
+          "name": "asme.a17.1.1971_djvu.txt",
+          "bytes": 956053,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.1.1971/asme.a17.1.1971_djvu.txt"
+        },
+        {
+          "name": "asme.a17.1.1971_scandata.xml_meta.txt",
+          "bytes": 1680,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.1.1971/asme.a17.1.1971_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.a17.1.2004",
+      "code": "asme.a17.1.2004",
+      "title": "ASME A17.1 (2004): Safety Code for Elevators and Escalators",
+      "files": [
+        {
+          "name": "asme.a17.1.2004.pdf",
+          "bytes": 32673382,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.a17.1.2004/asme.a17.1.2004.pdf"
+        },
+        {
+          "name": "asme.a17.1.2004.pdf_meta.txt",
+          "bytes": 1669,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.1.2004/asme.a17.1.2004.pdf_meta.txt"
+        },
+        {
+          "name": "asme.a17.1.2004_djvu.txt",
+          "bytes": 1719574,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.1.2004/asme.a17.1.2004_djvu.txt"
+        },
+        {
+          "name": "asme.a17.1.2004_scandata.xml_meta.txt",
+          "bytes": 1680,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.1.2004/asme.a17.1.2004_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.a17.1a.2005",
+      "code": "asme.a17.1a.2005",
+      "title": "ASME A17.1 (2004): Addenda to the 2004 Edition",
+      "files": [
+        {
+          "name": "asme.a17.1a.2005.pdf",
+          "bytes": 15860634,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.a17.1a.2005/asme.a17.1a.2005.pdf"
+        },
+        {
+          "name": "asme.a17.1a.2005.pdf_meta.txt",
+          "bytes": 1643,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.1a.2005/asme.a17.1a.2005.pdf_meta.txt"
+        },
+        {
+          "name": "asme.a17.1a.2005_djvu.txt",
+          "bytes": 821512,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.1a.2005/asme.a17.1a.2005_djvu.txt"
+        },
+        {
+          "name": "asme.a17.1a.2005_scandata.xml_meta.txt",
+          "bytes": 1653,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.1a.2005/asme.a17.1a.2005_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.a17.1a.2008",
+      "code": "asme.a17.1a.2008",
+      "title": "ASME A17.1 (2007): Addenda to the 2007 Edition",
+      "files": [
+        {
+          "name": "asme.a17.1a.2008.pdf",
+          "bytes": 18946132,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.a17.1a.2008/asme.a17.1a.2008.pdf"
+        },
+        {
+          "name": "asme.a17.1a.2008.pdf_meta.txt",
+          "bytes": 1643,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.1a.2008/asme.a17.1a.2008.pdf_meta.txt"
+        },
+        {
+          "name": "asme.a17.1a.2008_djvu.txt",
+          "bytes": 1004662,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.1a.2008/asme.a17.1a.2008_djvu.txt"
+        },
+        {
+          "name": "asme.a17.1a.2008_scandata.xml_meta.txt",
+          "bytes": 1653,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.1a.2008/asme.a17.1a.2008_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.a17.1b.2009",
+      "code": "asme.a17.1b.2009",
+      "title": "ASME A17.1 (2007): Addenda to the 2007 Edition",
+      "files": [
+        {
+          "name": "asme.a17.1b.2009.pdf",
+          "bytes": 14239678,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.a17.1b.2009/asme.a17.1b.2009.pdf"
+        },
+        {
+          "name": "asme.a17.1b.2009.pdf_meta.txt",
+          "bytes": 1643,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.1b.2009/asme.a17.1b.2009.pdf_meta.txt"
+        },
+        {
+          "name": "asme.a17.1b.2009_djvu.txt",
+          "bytes": 730658,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.1b.2009/asme.a17.1b.2009_djvu.txt"
+        },
+        {
+          "name": "asme.a17.1b.2009_scandata.xml_meta.txt",
+          "bytes": 1653,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.1b.2009/asme.a17.1b.2009_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.a17.1s.2005",
+      "code": "asme.a17.1s.2005",
+      "title": "ASME A17.1 (2004): Addenda to the 2004 Edition",
+      "files": [
+        {
+          "name": "asme.a17.1s.2005.pdf",
+          "bytes": 11921150,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.a17.1s.2005/asme.a17.1s.2005.pdf"
+        },
+        {
+          "name": "asme.a17.1s.2005.pdf_meta.txt",
+          "bytes": 1643,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.1s.2005/asme.a17.1s.2005.pdf_meta.txt"
+        },
+        {
+          "name": "asme.a17.1s.2005_djvu.txt",
+          "bytes": 557153,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.1s.2005/asme.a17.1s.2005_djvu.txt"
+        },
+        {
+          "name": "asme.a17.1s.2005_scandata.xml_meta.txt",
+          "bytes": 1653,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.1s.2005/asme.a17.1s.2005_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.a17.2.2007",
+      "code": "asme.a17.2.2007",
+      "title": "ASME A17.2 (2007): Guide for Inspection of Elevators, Escalators, and Moving Walks",
+      "files": [
+        {
+          "name": "asme.a17.2.2007.pdf",
+          "bytes": 18477867,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.a17.2.2007/asme.a17.2.2007.pdf"
+        },
+        {
+          "name": "asme.a17.2.2007.pdf_meta.txt",
+          "bytes": 1715,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.2.2007/asme.a17.2.2007.pdf_meta.txt"
+        },
+        {
+          "name": "asme.a17.2.2007_djvu.txt",
+          "bytes": 679934,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.2.2007/asme.a17.2.2007_djvu.txt"
+        },
+        {
+          "name": "asme.a17.2.2007_scandata.xml_meta.txt",
+          "bytes": 1725,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.2.2007/asme.a17.2.2007_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.a17.2.2010",
+      "code": "asme.a17.2.2010",
+      "title": "ASME A17.2 (2010): Guide for Inspection of Elevators, Escalators, and Moving Walks",
+      "files": [
+        {
+          "name": "asme.a17.2.2010.pdf",
+          "bytes": 18208562,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.a17.2.2010/asme.a17.2.2010.pdf"
+        },
+        {
+          "name": "asme.a17.2.2010.pdf_meta.txt",
+          "bytes": 1715,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.2.2010/asme.a17.2.2010.pdf_meta.txt"
+        },
+        {
+          "name": "asme.a17.2.2010_djvu.txt",
+          "bytes": 926002,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.2.2010/asme.a17.2.2010_djvu.txt"
+        },
+        {
+          "name": "asme.a17.2.2010_scandata.xml_meta.txt",
+          "bytes": 1725,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.2.2010/asme.a17.2.2010_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.a17.3.2002",
+      "code": "asme.a17.3.2002",
+      "title": "ASME A17.3 (2002): Safety Code for Existing Elevators and Escalators (Includes Requirements for Electric and Hydraulic Elevators and Escalators)",
+      "files": [
+        {
+          "name": "asme.a17.3.2002.pdf",
+          "bytes": 11787428,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.a17.3.2002/asme.a17.3.2002.pdf"
+        },
+        {
+          "name": "asme.a17.3.2002.pdf_meta.txt",
+          "bytes": 1839,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.3.2002/asme.a17.3.2002.pdf_meta.txt"
+        },
+        {
+          "name": "asme.a17.3.2002_djvu.txt",
+          "bytes": 384292,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.3.2002/asme.a17.3.2002_djvu.txt"
+        },
+        {
+          "name": "asme.a17.3.2002_scandata.xml_meta.txt",
+          "bytes": 1849,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.3.2002/asme.a17.3.2002_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.a17.3.2008",
+      "code": "asme.a17.3.2008",
+      "title": "ASME A17.3 (2008): Safety Code for Existing Elevators and Escalators (Includes Requirements for Electric and Hydraulic Elevators and Escalators)",
+      "files": [
+        {
+          "name": "asme.a17.3.2008.pdf",
+          "bytes": 12460774,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.a17.3.2008/asme.a17.3.2008.pdf"
+        },
+        {
+          "name": "asme.a17.3.2008.pdf_meta.txt",
+          "bytes": 1839,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.3.2008/asme.a17.3.2008.pdf_meta.txt"
+        },
+        {
+          "name": "asme.a17.3.2008_djvu.txt",
+          "bytes": 408914,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.3.2008/asme.a17.3.2008_djvu.txt"
+        },
+        {
+          "name": "asme.a17.3.2008_scandata.xml_meta.txt",
+          "bytes": 1849,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.3.2008/asme.a17.3.2008_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.a17.4.1999",
+      "code": "asme.a17.4.1999",
+      "title": "ASME A17.4 (1999): Guide for Emergency Personnel",
+      "files": [
+        {
+          "name": "asme.a17.4.1999.pdf",
+          "bytes": 3136807,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.a17.4.1999/asme.a17.4.1999.pdf"
+        },
+        {
+          "name": "asme.a17.4.1999.pdf_meta.txt",
+          "bytes": 1647,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.4.1999/asme.a17.4.1999.pdf_meta.txt"
+        },
+        {
+          "name": "asme.a17.4.1999_djvu.txt",
+          "bytes": 58258,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.4.1999/asme.a17.4.1999_djvu.txt"
+        },
+        {
+          "name": "asme.a17.4.1999_scandata.xml_meta.txt",
+          "bytes": 1658,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.4.1999/asme.a17.4.1999_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.a17.5.2004",
+      "code": "asme.a17.5.2004",
+      "title": "ASME A17.5 (2004): Elevator and Escalator Electrical Equipment",
+      "files": [
+        {
+          "name": "asme.a17.5.2004.pdf",
+          "bytes": 5362469,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.a17.5.2004/asme.a17.5.2004.pdf"
+        },
+        {
+          "name": "asme.a17.5.2004.pdf_meta.txt",
+          "bytes": 1675,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.5.2004/asme.a17.5.2004.pdf_meta.txt"
+        },
+        {
+          "name": "asme.a17.5.2004_djvu.txt",
+          "bytes": 199108,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.5.2004/asme.a17.5.2004_djvu.txt"
+        },
+        {
+          "name": "asme.a17.5.2004_scandata.xml_meta.txt",
+          "bytes": 1686,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.5.2004/asme.a17.5.2004_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.a17.6.2010",
+      "code": "asme.a17.6.2010",
+      "title": "ASME A17.6 (2010): Standard for Elevator Suspension, Compensation, and Governor Systems",
+      "files": [
+        {
+          "name": "asme.a17.6.2010.pdf",
+          "bytes": 4301168,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.a17.6.2010/asme.a17.6.2010.pdf"
+        },
+        {
+          "name": "asme.a17.6.2010.pdf_meta.txt",
+          "bytes": 1724,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.6.2010/asme.a17.6.2010.pdf_meta.txt"
+        },
+        {
+          "name": "asme.a17.6.2010_djvu.txt",
+          "bytes": 145408,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.6.2010/asme.a17.6.2010_djvu.txt"
+        },
+        {
+          "name": "asme.a17.6.2010_scandata.xml_meta.txt",
+          "bytes": 1735,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.6.2010/asme.a17.6.2010_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.a17.7.2007",
+      "code": "asme.a17.7.2007",
+      "title": "ASME A17.7 (2007): Performance-Based Safety Code for Elevators and Escalators",
+      "files": [
+        {
+          "name": "asme.a17.7.2007.pdf",
+          "bytes": 8370790,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.a17.7.2007/asme.a17.7.2007.pdf"
+        },
+        {
+          "name": "asme.a17.7.2007.pdf_meta.txt",
+          "bytes": 1705,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.7.2007/asme.a17.7.2007.pdf_meta.txt"
+        },
+        {
+          "name": "asme.a17.7.2007_djvu.txt",
+          "bytes": 325382,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.7.2007/asme.a17.7.2007_djvu.txt"
+        },
+        {
+          "name": "asme.a17.7.2007_scandata.xml_meta.txt",
+          "bytes": 1716,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a17.7.2007/asme.a17.7.2007_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.a18.1.2005",
+      "code": "asme.a18.1.2005",
+      "title": "ASME A18.1 (2005): Safety Standard for Platform Lifts and Stairway Chairlifts",
+      "files": [
+        {
+          "name": "asme.a18.1.2005.pdf",
+          "bytes": 7237182,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.a18.1.2005/asme.a18.1.2005.pdf"
+        },
+        {
+          "name": "asme.a18.1.2005.pdf_meta.txt",
+          "bytes": 1704,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a18.1.2005/asme.a18.1.2005.pdf_meta.txt"
+        },
+        {
+          "name": "asme.a18.1.2005_djvu.txt",
+          "bytes": 362371,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a18.1.2005/asme.a18.1.2005_djvu.txt"
+        },
+        {
+          "name": "asme.a18.1.2005_scandata.xml_meta.txt",
+          "bytes": 1715,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a18.1.2005/asme.a18.1.2005_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.a18.1.2008",
+      "code": "asme.a18.1.2008",
+      "title": "ASME A18.1 (2008): Safety Standard for Platform Lifts and Stairway Chairlifts",
+      "files": [
+        {
+          "name": "asme.a18.1.2008.pdf",
+          "bytes": 7878143,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.a18.1.2008/asme.a18.1.2008.pdf"
+        },
+        {
+          "name": "asme.a18.1.2008.pdf_meta.txt",
+          "bytes": 1704,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a18.1.2008/asme.a18.1.2008.pdf_meta.txt"
+        },
+        {
+          "name": "asme.a18.1.2008_djvu.txt",
+          "bytes": 325753,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a18.1.2008/asme.a18.1.2008_djvu.txt"
+        },
+        {
+          "name": "asme.a18.1.2008_scandata.xml_meta.txt",
+          "bytes": 1715,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a18.1.2008/asme.a18.1.2008_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.a90.1.2003",
+      "code": "asme.a90.1.2003",
+      "title": "ASME A90.1 (2003): Safety Standard for Belt Manlifts",
+      "files": [
+        {
+          "name": "asme.a90.1.2003.pdf",
+          "bytes": 3851090,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.a90.1.2003/asme.a90.1.2003.pdf"
+        },
+        {
+          "name": "asme.a90.1.2003.pdf_meta.txt",
+          "bytes": 1654,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a90.1.2003/asme.a90.1.2003.pdf_meta.txt"
+        },
+        {
+          "name": "asme.a90.1.2003_djvu.txt",
+          "bytes": 67901,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a90.1.2003/asme.a90.1.2003_djvu.txt"
+        },
+        {
+          "name": "asme.a90.1.2003_scandata.xml_meta.txt",
+          "bytes": 1665,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.a90.1.2003/asme.a90.1.2003_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.b16.9.2003",
+      "code": "asme.b16.9.2003",
+      "title": "ASME B16.9: Factory Made Wrought Steel Buttwelding Fittings",
+      "files": [
+        {
+          "name": "asme.b16.9.2003.pdf",
+          "bytes": 3760049,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.b16.9.2003/asme.b16.9.2003.pdf"
+        },
+        {
+          "name": "asme.b16.9.2003.pdf_meta.txt",
+          "bytes": 1630,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b16.9.2003/asme.b16.9.2003.pdf_meta.txt"
+        },
+        {
+          "name": "asme.b16.9.2003_djvu.txt",
+          "bytes": 113450,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b16.9.2003/asme.b16.9.2003_djvu.txt"
+        },
+        {
+          "name": "asme.b16.9.2003_scandata.xml_meta.txt",
+          "bytes": 1641,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b16.9.2003/asme.b16.9.2003_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.b30.14.2004",
+      "code": "asme.b30.14.2004",
+      "title": "ASME B30.14: Safety Requirements for Side Boom Tractors",
+      "files": [
+        {
+          "name": "asme.b30.14.2004.pdf",
+          "bytes": 4244590,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.b30.14.2004/asme.b30.14.2004.pdf"
+        },
+        {
+          "name": "asme.b30.14.2004.pdf_meta.txt",
+          "bytes": 1616,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b30.14.2004/asme.b30.14.2004.pdf_meta.txt"
+        },
+        {
+          "name": "asme.b30.14.2004_djvu.txt",
+          "bytes": 81116,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b30.14.2004/asme.b30.14.2004_djvu.txt"
+        },
+        {
+          "name": "asme.b30.14.2004_scandata.xml_meta.txt",
+          "bytes": 1623,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b30.14.2004/asme.b30.14.2004_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.b30.2.2005",
+      "code": "asme.b30.2.2005",
+      "title": "ASME B30.2: Safety Requirements for Overhead and Gantry Cranes",
+      "files": [
+        {
+          "name": "asme.b30.2.2005.pdf",
+          "bytes": 5063922,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.b30.2.2005/asme.b30.2.2005.pdf"
+        },
+        {
+          "name": "asme.b30.2.2005.pdf_meta.txt",
+          "bytes": 1630,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b30.2.2005/asme.b30.2.2005.pdf_meta.txt"
+        },
+        {
+          "name": "asme.b30.2.2005_djvu.txt",
+          "bytes": 147146,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b30.2.2005/asme.b30.2.2005_djvu.txt"
+        },
+        {
+          "name": "asme.b30.2.2005_scandata.xml_meta.txt",
+          "bytes": 1637,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b30.2.2005/asme.b30.2.2005_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.b30.5.2004",
+      "code": "asme.b30.5.2004",
+      "title": "ASME B30.5: Safety Requirements for Mobile and Locomotive Cranes",
+      "files": [
+        {
+          "name": "asme.b30.5.2004.pdf",
+          "bytes": 5727569,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.b30.5.2004/asme.b30.5.2004.pdf"
+        },
+        {
+          "name": "asme.b30.5.2004.pdf_meta.txt",
+          "bytes": 1634,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b30.5.2004/asme.b30.5.2004.pdf_meta.txt"
+        },
+        {
+          "name": "asme.b30.5.2004_djvu.txt",
+          "bytes": 186003,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b30.5.2004/asme.b30.5.2004_djvu.txt"
+        },
+        {
+          "name": "asme.b30.5.2004_scandata.xml_meta.txt",
+          "bytes": 1641,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b30.5.2004/asme.b30.5.2004_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.b30.7.2001",
+      "code": "asme.b30.7.2001",
+      "title": "ASME B30.7: Safety Requirements for Base-Mounted Drum Hoists",
+      "files": [
+        {
+          "name": "asme.b30.7.2001.pdf",
+          "bytes": 4134431,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.b30.7.2001/asme.b30.7.2001.pdf"
+        },
+        {
+          "name": "asme.b30.7.2001.pdf_meta.txt",
+          "bytes": 1626,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b30.7.2001/asme.b30.7.2001.pdf_meta.txt"
+        },
+        {
+          "name": "asme.b30.7.2001_djvu.txt",
+          "bytes": 83122,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b30.7.2001/asme.b30.7.2001_djvu.txt"
+        },
+        {
+          "name": "asme.b30.7.2001_scandata.xml_meta.txt",
+          "bytes": 1633,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b30.7.2001/asme.b30.7.2001_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.b31.1.2007",
+      "code": "asme.b31.1.2007",
+      "title": "ASME B31.1 (2007): Code for Pressure Piping, Power Piping",
+      "files": [
+        {
+          "name": "asme.b31.1.2007.pdf",
+          "bytes": 25899443,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.b31.1.2007/asme.b31.1.2007.pdf"
+        },
+        {
+          "name": "asme.b31.1.2007.pdf_meta.txt",
+          "bytes": 1665,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.1.2007/asme.b31.1.2007.pdf_meta.txt"
+        },
+        {
+          "name": "asme.b31.1.2007_djvu.txt",
+          "bytes": 1155673,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.1.2007/asme.b31.1.2007_djvu.txt"
+        },
+        {
+          "name": "asme.b31.1.2007_scandata.xml_meta.txt",
+          "bytes": 1676,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.1.2007/asme.b31.1.2007_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.b31.1a.2008",
+      "code": "asme.b31.1a.2008",
+      "title": "ASME B31.1 (2007): 2008 Addendum to the 2007 Edition",
+      "files": [
+        {
+          "name": "asme.b31.1a.2008.pdf",
+          "bytes": 9681307,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.b31.1a.2008/asme.b31.1a.2008.pdf"
+        },
+        {
+          "name": "asme.b31.1a.2008.pdf_meta.txt",
+          "bytes": 1654,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.1a.2008/asme.b31.1a.2008.pdf_meta.txt"
+        },
+        {
+          "name": "asme.b31.1a.2008_djvu.txt",
+          "bytes": 437338,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.1a.2008/asme.b31.1a.2008_djvu.txt"
+        },
+        {
+          "name": "asme.b31.1a.2008_scandata.xml_meta.txt",
+          "bytes": 1665,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.1a.2008/asme.b31.1a.2008_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.b31.1b.2009",
+      "code": "asme.b31.1b.2009",
+      "title": "ASME B31.1 (2007): 2009 Addendum to the 2007 Edition",
+      "files": [
+        {
+          "name": "asme.b31.1b.2009.pdf",
+          "bytes": 10055748,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.b31.1b.2009/asme.b31.1b.2009.pdf"
+        },
+        {
+          "name": "asme.b31.1b.2009.pdf_meta.txt",
+          "bytes": 1655,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.1b.2009/asme.b31.1b.2009.pdf_meta.txt"
+        },
+        {
+          "name": "asme.b31.1b.2009_djvu.txt",
+          "bytes": 475639,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.1b.2009/asme.b31.1b.2009_djvu.txt"
+        },
+        {
+          "name": "asme.b31.1b.2009_scandata.xml_meta.txt",
+          "bytes": 1665,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.1b.2009/asme.b31.1b.2009_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.b31.4.2002",
+      "code": "asme.b31.4.2002",
+      "title": "ASME B31.4: Pipeline Transportation Systems for Liquid Hydrocarbons and Other Liquids",
+      "files": [
+        {
+          "name": "asme.b31.4.2002.pdf",
+          "bytes": 11205372,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.b31.4.2002/asme.b31.4.2002.pdf"
+        },
+        {
+          "name": "asme.b31.4.2002.pdf_meta.txt",
+          "bytes": 1683,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.4.2002/asme.b31.4.2002.pdf_meta.txt"
+        },
+        {
+          "name": "asme.b31.4.2002_djvu.txt",
+          "bytes": 417225,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.4.2002/asme.b31.4.2002_djvu.txt"
+        },
+        {
+          "name": "asme.b31.4.2002_scandata.xml_meta.txt",
+          "bytes": 1693,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.4.2002/asme.b31.4.2002_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.b31.5.2001",
+      "code": "asme.b31.5.2001",
+      "title": "ASME B31.5 (2001): Code for Pressure Piping, Refrigeration Piping and Heat Transfer Components",
+      "files": [
+        {
+          "name": "asme.b31.5.2001.pdf",
+          "bytes": 9685164,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.b31.5.2001/asme.b31.5.2001.pdf"
+        },
+        {
+          "name": "asme.b31.5.2001.pdf_meta.txt",
+          "bytes": 1738,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.5.2001/asme.b31.5.2001.pdf_meta.txt"
+        },
+        {
+          "name": "asme.b31.5.2001_djvu.txt",
+          "bytes": 298114,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.5.2001/asme.b31.5.2001_djvu.txt"
+        },
+        {
+          "name": "asme.b31.5.2001_scandata.xml_meta.txt",
+          "bytes": 1749,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.5.2001/asme.b31.5.2001_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.b31.5a.2004",
+      "code": "asme.b31.5a.2004",
+      "title": "ASME B31.5 (2001): 2004 Addendum to the 2001 Edition",
+      "files": [
+        {
+          "name": "asme.b31.5a.2004.pdf",
+          "bytes": 3863770,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.b31.5a.2004/asme.b31.5a.2004.pdf"
+        },
+        {
+          "name": "asme.b31.5a.2004.pdf_meta.txt",
+          "bytes": 1654,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.5a.2004/asme.b31.5a.2004.pdf_meta.txt"
+        },
+        {
+          "name": "asme.b31.5a.2004_djvu.txt",
+          "bytes": 114407,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.5a.2004/asme.b31.5a.2004_djvu.txt"
+        },
+        {
+          "name": "asme.b31.5a.2004_scandata.xml_meta.txt",
+          "bytes": 1665,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.5a.2004/asme.b31.5a.2004_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.b31.8.2003",
+      "code": "asme.b31.8.2003",
+      "title": "ASME B31.8: Gas Transmission and Distribution Piping Systems",
+      "files": [
+        {
+          "name": "asme.b31.8.2003.pdf",
+          "bytes": 18409108,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.b31.8.2003/asme.b31.8.2003.pdf"
+        },
+        {
+          "name": "asme.b31.8.2003.pdf_meta.txt",
+          "bytes": 1639,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.8.2003/asme.b31.8.2003.pdf_meta.txt"
+        },
+        {
+          "name": "asme.b31.8.2003_djvu.txt",
+          "bytes": 723514,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.8.2003/asme.b31.8.2003_djvu.txt"
+        },
+        {
+          "name": "asme.b31.8.2003_scandata.xml_meta.txt",
+          "bytes": 1649,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.8.2003/asme.b31.8.2003_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.b31.8s.2004",
+      "code": "asme.b31.8s.2004",
+      "title": "ASME B318S: Managing System Integrity of Gas Pipelines",
+      "files": [
+        {
+          "name": "asme.b31.8s.2004.pdf",
+          "bytes": 8427423,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.b31.8s.2004/asme.b31.8s.2004.pdf"
+        },
+        {
+          "name": "asme.b31.8s.2004.pdf_meta.txt",
+          "bytes": 1622,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.8s.2004/asme.b31.8s.2004.pdf_meta.txt"
+        },
+        {
+          "name": "asme.b31.8s.2004_djvu.txt",
+          "bytes": 271628,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.8s.2004/asme.b31.8s.2004_djvu.txt"
+        },
+        {
+          "name": "asme.b31.8s.2004_scandata.xml_meta.txt",
+          "bytes": 1633,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.8s.2004/asme.b31.8s.2004_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.b31.9.2008",
+      "code": "asme.b31.9.2008",
+      "title": "ASME B31.9 (2008): Building Services Piping",
+      "files": [
+        {
+          "name": "asme.b31.9.2008.pdf",
+          "bytes": 7898038,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.b31.9.2008/asme.b31.9.2008.pdf"
+        },
+        {
+          "name": "asme.b31.9.2008.pdf_meta.txt",
+          "bytes": 1636,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.9.2008/asme.b31.9.2008.pdf_meta.txt"
+        },
+        {
+          "name": "asme.b31.9.2008_djvu.txt",
+          "bytes": 265499,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.9.2008/asme.b31.9.2008_djvu.txt"
+        },
+        {
+          "name": "asme.b31.9.2008_scandata.xml_meta.txt",
+          "bytes": 1647,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31.9.2008/asme.b31.9.2008_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.b31g.1991",
+      "code": "asme.b31g.1991",
+      "title": "ASME B31G: Manual for Determining the Remaining Strength of Corroded Pipelines",
+      "files": [
+        {
+          "name": "asme.b31g.1991.pdf",
+          "bytes": 5804029,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.b31g.1991/asme.b31g.1991.pdf"
+        },
+        {
+          "name": "asme.b31g.1991.pdf_meta.txt",
+          "bytes": 1670,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31g.1991/asme.b31g.1991.pdf_meta.txt"
+        },
+        {
+          "name": "asme.b31g.1991_djvu.txt",
+          "bytes": 139052,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31g.1991/asme.b31g.1991_djvu.txt"
+        },
+        {
+          "name": "asme.b31g.1991_scandata.xml_meta.txt",
+          "bytes": 1681,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.b31g.1991/asme.b31g.1991_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.bpvc.i.2010",
+      "code": "asme.bpvc.i.2010",
+      "title": "ASME BPVC I (2010): Boiler and Pressure Vessel Code, Part I, Rules for the Construction of Power Boilers",
+      "files": [
+        {
+          "name": "asme.bpvc.i.2010.pdf",
+          "bytes": 18248482,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.i.2010/asme.bpvc.i.2010.pdf"
+        },
+        {
+          "name": "asme.bpvc.i.2010.pdf_meta.txt",
+          "bytes": 1759,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.i.2010/asme.bpvc.i.2010.pdf_meta.txt"
+        },
+        {
+          "name": "asme.bpvc.i.2010_djvu.txt",
+          "bytes": 1121675,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.i.2010/asme.bpvc.i.2010_djvu.txt"
+        },
+        {
+          "name": "asme.bpvc.i.2010_scandata.xml_meta.txt",
+          "bytes": 1770,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.i.2010/asme.bpvc.i.2010_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.bpvc.i.a.2011",
+      "code": "asme.bpvc.i.a.2011",
+      "title": "ASME BPVC I (2010): 2011 Addendum to the 2010 Edition",
+      "files": [
+        {
+          "name": "asme.bpvc.i.a.2011.pdf",
+          "bytes": 24364882,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.i.a.2011/asme.bpvc.i.a.2011.pdf"
+        },
+        {
+          "name": "asme.bpvc.i.a.2011.pdf_meta.txt",
+          "bytes": 1657,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.i.a.2011/asme.bpvc.i.a.2011.pdf_meta.txt"
+        },
+        {
+          "name": "asme.bpvc.i.a.2011_djvu.txt",
+          "bytes": 1123812,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.i.a.2011/asme.bpvc.i.a.2011_djvu.txt"
+        },
+        {
+          "name": "asme.bpvc.i.a.2011_scandata.xml_meta.txt",
+          "bytes": 1668,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.i.a.2011/asme.bpvc.i.a.2011_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.bpvc.iv.2007",
+      "code": "asme.bpvc.iv.2007",
+      "title": "ASME BPVC IV (2007): Boiler and Pressure Vessel Code, Part IV, Rules for Construction of Heating Boilers",
+      "files": [
+        {
+          "name": "asme.bpvc.iv.2007.pdf",
+          "bytes": 17881571,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.iv.2007/asme.bpvc.iv.2007.pdf"
+        },
+        {
+          "name": "asme.bpvc.iv.2007.pdf_meta.txt",
+          "bytes": 1759,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.iv.2007/asme.bpvc.iv.2007.pdf_meta.txt"
+        },
+        {
+          "name": "asme.bpvc.iv.2007_djvu.txt",
+          "bytes": 880214,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.iv.2007/asme.bpvc.iv.2007_djvu.txt"
+        },
+        {
+          "name": "asme.bpvc.iv.2007_scandata.xml_meta.txt",
+          "bytes": 1769,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.iv.2007/asme.bpvc.iv.2007_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.bpvc.iv.a.2008",
+      "code": "asme.bpvc.iv.a.2008",
+      "title": "ASME BPVC IV (2007): 2008 Addendum to the 2007 Edition",
+      "files": [
+        {
+          "name": "asme.bpvc.iv.a.2008.pdf",
+          "bytes": 4897231,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.iv.a.2008/asme.bpvc.iv.a.2008.pdf"
+        },
+        {
+          "name": "asme.bpvc.iv.a.2008.pdf_meta.txt",
+          "bytes": 1658,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.iv.a.2008/asme.bpvc.iv.a.2008.pdf_meta.txt"
+        },
+        {
+          "name": "asme.bpvc.iv.a.2008_djvu.txt",
+          "bytes": 223933,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.iv.a.2008/asme.bpvc.iv.a.2008_djvu.txt"
+        },
+        {
+          "name": "asme.bpvc.iv.a.2008_scandata.xml_meta.txt",
+          "bytes": 1669,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.iv.a.2008/asme.bpvc.iv.a.2008_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.bpvc.ix.2010",
+      "code": "asme.bpvc.ix.2010",
+      "title": "ASME BPVC IX (2010): Boiler and Pressure Vessel Code, Part IX, Welding and Brazing Qualifications",
+      "files": [
+        {
+          "name": "asme.bpvc.ix.2010.pdf",
+          "bytes": 14851259,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.ix.2010/asme.bpvc.ix.2010.pdf"
+        },
+        {
+          "name": "asme.bpvc.ix.2010.pdf_meta.txt",
+          "bytes": 1745,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.ix.2010/asme.bpvc.ix.2010.pdf_meta.txt"
+        },
+        {
+          "name": "asme.bpvc.ix.2010_djvu.txt",
+          "bytes": 961138,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.ix.2010/asme.bpvc.ix.2010_djvu.txt"
+        },
+        {
+          "name": "asme.bpvc.ix.2010_scandata.xml_meta.txt",
+          "bytes": 1756,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.ix.2010/asme.bpvc.ix.2010_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.bpvc.ix.a.2011",
+      "code": "asme.bpvc.ix.a.2011",
+      "title": "ASME BPVC IX (2010): 2011 Addendum to the 2010 Edition",
+      "files": [
+        {
+          "name": "asme.bpvc.ix.a.2011.pdf",
+          "bytes": 20211619,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.ix.a.2011/asme.bpvc.ix.a.2011.pdf"
+        },
+        {
+          "name": "asme.bpvc.ix.a.2011.pdf_meta.txt",
+          "bytes": 1659,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.ix.a.2011/asme.bpvc.ix.a.2011.pdf_meta.txt"
+        },
+        {
+          "name": "asme.bpvc.ix.a.2011_djvu.txt",
+          "bytes": 981123,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.ix.a.2011/asme.bpvc.ix.a.2011_djvu.txt"
+        },
+        {
+          "name": "asme.bpvc.ix.a.2011_scandata.xml_meta.txt",
+          "bytes": 1670,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.ix.a.2011/asme.bpvc.ix.a.2011_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.bpvc.v.2010",
+      "code": "asme.bpvc.v.2010",
+      "title": "ASME BPVC V (2010): Boiler and Pressure Vessel Code, Part V, Nondestructive Examination",
+      "files": [
+        {
+          "name": "asme.bpvc.v.2010.pdf",
+          "bytes": 66030424,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.v.2010/asme.bpvc.v.2010.pdf"
+        },
+        {
+          "name": "asme.bpvc.v.2010.pdf_meta.txt",
+          "bytes": 1725,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.v.2010/asme.bpvc.v.2010.pdf_meta.txt"
+        },
+        {
+          "name": "asme.bpvc.v.2010_djvu.txt",
+          "bytes": 2329855,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.v.2010/asme.bpvc.v.2010_djvu.txt"
+        },
+        {
+          "name": "asme.bpvc.v.2010_scandata.xml_meta.txt",
+          "bytes": 1736,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.v.2010/asme.bpvc.v.2010_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.bpvc.vi.2007",
+      "code": "asme.bpvc.vi.2007",
+      "title": "ASME BPVC VI (2007): Boiler and Pressure Vessel Code, Part VI, Recommended Rules for the Care and Operation of Heating Boilers",
+      "files": [
+        {
+          "name": "asme.bpvc.vi.2007.pdf",
+          "bytes": 9220511,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.vi.2007/asme.bpvc.vi.2007.pdf"
+        },
+        {
+          "name": "asme.bpvc.vi.2007.pdf_meta.txt",
+          "bytes": 1802,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.vi.2007/asme.bpvc.vi.2007.pdf_meta.txt"
+        },
+        {
+          "name": "asme.bpvc.vi.2007_djvu.txt",
+          "bytes": 377419,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.vi.2007/asme.bpvc.vi.2007_djvu.txt"
+        },
+        {
+          "name": "asme.bpvc.vi.2007_scandata.xml_meta.txt",
+          "bytes": 1813,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.vi.2007/asme.bpvc.vi.2007_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.bpvc.vi.2010",
+      "code": "asme.bpvc.vi.2010",
+      "title": "ASME BPVC VI (2010): Boiler and Pressure Vessel Code, Part VI, Recommended Rules for the Care and Operation of Heating Boilers",
+      "files": [
+        {
+          "name": "asme.bpvc.vi.2010.pdf",
+          "bytes": 11414948,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.vi.2010/asme.bpvc.vi.2010.pdf"
+        },
+        {
+          "name": "asme.bpvc.vi.2010.pdf_meta.txt",
+          "bytes": 1803,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.vi.2010/asme.bpvc.vi.2010.pdf_meta.txt"
+        },
+        {
+          "name": "asme.bpvc.vi.2010_djvu.txt",
+          "bytes": 437187,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.vi.2010/asme.bpvc.vi.2010_djvu.txt"
+        },
+        {
+          "name": "asme.bpvc.vi.2010_scandata.xml_meta.txt",
+          "bytes": 1813,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.vi.2010/asme.bpvc.vi.2010_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.bpvc.vi.a.2008",
+      "code": "asme.bpvc.vi.a.2008",
+      "title": "ASME BPVC VI (2007): 2008 Addendum to the 2007 Edition",
+      "files": [
+        {
+          "name": "asme.bpvc.vi.a.2008.pdf",
+          "bytes": 1935179,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.vi.a.2008/asme.bpvc.vi.a.2008.pdf"
+        },
+        {
+          "name": "asme.bpvc.vi.a.2008.pdf_meta.txt",
+          "bytes": 1658,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.vi.a.2008/asme.bpvc.vi.a.2008.pdf_meta.txt"
+        },
+        {
+          "name": "asme.bpvc.vi.a.2008_djvu.txt",
+          "bytes": 52067,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.vi.a.2008/asme.bpvc.vi.a.2008_djvu.txt"
+        },
+        {
+          "name": "asme.bpvc.vi.a.2008_scandata.xml_meta.txt",
+          "bytes": 1668,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.vi.a.2008/asme.bpvc.vi.a.2008_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.bpvc.vii.2010",
+      "code": "asme.bpvc.vii.2010",
+      "title": "ASME BPVC VII (2010): Boiler and Pressure Vessel Code, Part VII, Recommended Guidelines for the Care of Power Boilers",
+      "files": [
+        {
+          "name": "asme.bpvc.vii.2010.pdf",
+          "bytes": 15279505,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.vii.2010/asme.bpvc.vii.2010.pdf"
+        },
+        {
+          "name": "asme.bpvc.vii.2010.pdf_meta.txt",
+          "bytes": 1785,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.vii.2010/asme.bpvc.vii.2010.pdf_meta.txt"
+        },
+        {
+          "name": "asme.bpvc.vii.2010_djvu.txt",
+          "bytes": 521280,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.vii.2010/asme.bpvc.vii.2010_djvu.txt"
+        },
+        {
+          "name": "asme.bpvc.vii.2010_scandata.xml_meta.txt",
+          "bytes": 1795,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.bpvc.vii.2010/asme.bpvc.vii.2010_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.csd-1.2009",
+      "code": "asme.csd-1.2009",
+      "title": "ASME CSD-1 (2009): Controls and Safety Devices for Automatically Fired Boilers",
+      "files": [
+        {
+          "name": "asme.csd-1.2009.pdf",
+          "bytes": 5372516,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.csd-1.2009/asme.csd-1.2009.pdf"
+        },
+        {
+          "name": "asme.csd-1.2009.pdf_meta.txt",
+          "bytes": 1706,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.csd-1.2009/asme.csd-1.2009.pdf_meta.txt"
+        },
+        {
+          "name": "asme.csd-1.2009_djvu.txt",
+          "bytes": 191788,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.csd-1.2009/asme.csd-1.2009_djvu.txt"
+        },
+        {
+          "name": "asme.csd-1.2009_scandata.xml_meta.txt",
+          "bytes": 1717,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.csd-1.2009/asme.csd-1.2009_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.pvho-1.2007",
+      "code": "asme.pvho-1.2007",
+      "title": "ASME PHVO-1 (2007): Safety Standard for Pressure Vessels for Human Occupancy",
+      "files": [
+        {
+          "name": "asme.pvho-1.2007.pdf",
+          "bytes": 12409576,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.pvho-1.2007/asme.pvho-1.2007.pdf"
+        },
+        {
+          "name": "asme.pvho-1.2007.pdf_meta.txt",
+          "bytes": 1703,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.pvho-1.2007/asme.pvho-1.2007.pdf_meta.txt"
+        },
+        {
+          "name": "asme.pvho-1.2007_djvu.txt",
+          "bytes": 483159,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.pvho-1.2007/asme.pvho-1.2007_djvu.txt"
+        },
+        {
+          "name": "asme.pvho-1.2007_scandata.xml_meta.txt",
+          "bytes": 1713,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.pvho-1.2007/asme.pvho-1.2007_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.qei-1.2007",
+      "code": "asme.qei-1.2007",
+      "title": "ASME QEI-1 (2007): Standard for the Qualification of Elevator Inspectors",
+      "files": [
+        {
+          "name": "asme.qei-1.2007.pdf",
+          "bytes": 4721942,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.qei-1.2007/asme.qei-1.2007.pdf"
+        },
+        {
+          "name": "asme.qei-1.2007.pdf_meta.txt",
+          "bytes": 1695,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.qei-1.2007/asme.qei-1.2007.pdf_meta.txt"
+        },
+        {
+          "name": "asme.qei-1.2007_djvu.txt",
+          "bytes": 97783,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.qei-1.2007/asme.qei-1.2007_djvu.txt"
+        },
+        {
+          "name": "asme.qei-1.2007_scandata.xml_meta.txt",
+          "bytes": 1706,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.qei-1.2007/asme.qei-1.2007_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    },
+    {
+      "item_id": "gov.law.asme.upv.1943",
+      "code": "asme.upv.1943",
+      "title": "ASME UPV: Code for Unfired Pressure Vessels",
+      "files": [
+        {
+          "name": "asme.upv.1943.pdf",
+          "bytes": 20959242,
+          "kind": "pdf",
+          "url": "https://archive.org/download/gov.law.asme.upv.1943/asme.upv.1943.pdf"
+        },
+        {
+          "name": "asme.upv.1943.pdf_meta.txt",
+          "bytes": 1603,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.upv.1943/asme.upv.1943.pdf_meta.txt"
+        },
+        {
+          "name": "asme.upv.1943_djvu.txt",
+          "bytes": 634073,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.upv.1943/asme.upv.1943_djvu.txt"
+        },
+        {
+          "name": "asme.upv.1943_scandata.xml_meta.txt",
+          "bytes": 1613,
+          "kind": "text",
+          "url": "https://archive.org/download/gov.law.asme.upv.1943/asme.upv.1943_scandata.xml_meta.txt"
+        }
+      ],
+      "has_pdf": true,
+      "has_text": true
+    }
+  ]
+}

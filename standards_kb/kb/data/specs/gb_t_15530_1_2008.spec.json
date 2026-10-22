@@ -1,0 +1,533 @@
+{
+  "schema": "standards_kb.data_spec/1.0",
+  "standard_id": "GB/T 15530.1-2008",
+  "standard_title_orig": "铜合金整体铸造法兰",
+  "body_status": "RENDERED_JS",
+  "extraction_method": "MANUAL",
+  "upstream": "国家标准全文公开系统 openstd.samr.gov.cn 官方在线阅读版(openstd.samr.gov.cn/bzgk/std/showGb?type=online&hcno=FA956785E4D87F6DCC91629CA9238510)",
+  "raw_tables": "kb/data/raw/gb_t_15530_1_2008_tables.json",
+  "source_file": "runs/GB-GB_T_15530.1-2008/pages",
+  "evidence": {
+    "grade": "E1",
+    "status": "VERIFIED_CLAUSE",
+    "note": "来源为国家标准全文公开系统的官方在线阅读页面图像(非第三方镜像,非转载)。页面图像 2320x3280 分辨率下逐格读数,已完成两轮独立视觉读数且结果一致。列名、单位、跨表引用关系由人工按标准语义指认,非机器猜读。局限:属视觉转录而非机器文本提取,且未与出版印刷件逐字核对,用于最终设计定案前建议与印本复核一次。"
+  },
+  "usage": {
+    "where": [],
+    "how": "",
+    "pitfalls": []
+  },
+  "column_sets": {
+    "pn_rating": [
+      {
+        "key": "type",
+        "name_zh": "类型",
+        "name_orig": "类型",
+        "unit": "text"
+      },
+      {
+        "key": "pn",
+        "name_zh": "公称压力",
+        "name_orig": "PN",
+        "unit": "dimensionless"
+      },
+      {
+        "key": "p_120",
+        "name_zh": "最大工作压力(120 ℃)",
+        "name_orig": "最大工作压力",
+        "unit": "MPa"
+      },
+      {
+        "key": "p_200",
+        "name_zh": "最大工作压力(200 ℃)",
+        "name_orig": "最大工作压力",
+        "unit": "MPa"
+      },
+      {
+        "key": "p_250",
+        "name_zh": "最大工作压力(250 ℃)",
+        "name_orig": "最大工作压力",
+        "unit": "MPa"
+      },
+      {
+        "key": "dn_rf",
+        "name_zh": "公称尺寸范围(RF 突面型)",
+        "name_orig": "公称尺寸 DN(RF 型)",
+        "unit": "text"
+      },
+      {
+        "key": "dn_tg",
+        "name_zh": "公称尺寸范围(TG 榫槽面型)",
+        "name_orig": "公称尺寸 DN(TG 型)",
+        "unit": "text"
+      },
+      {
+        "key": "dn_ff",
+        "name_zh": "公称尺寸范围(FF 全平面型)",
+        "name_orig": "公称尺寸 DN(FF 型)",
+        "unit": "text"
+      }
+    ],
+    "class_rating": [
+      {
+        "key": "type",
+        "name_zh": "类型",
+        "name_orig": "类型",
+        "unit": "text"
+      },
+      {
+        "key": "pn",
+        "name_zh": "公称压力",
+        "name_orig": "PN",
+        "unit": "dimensionless"
+      },
+      {
+        "key": "p_m10_65",
+        "name_zh": "最大无冲击工作压力(-10~65 ℃)",
+        "name_orig": "最大无冲击工作压力",
+        "unit": "MPa"
+      },
+      {
+        "key": "p_100",
+        "name_zh": "最大无冲击工作压力(100 ℃)",
+        "name_orig": "最大无冲击工作压力",
+        "unit": "MPa"
+      },
+      {
+        "key": "p_120",
+        "name_zh": "最大无冲击工作压力(120 ℃)",
+        "name_orig": "最大无冲击工作压力",
+        "unit": "MPa"
+      },
+      {
+        "key": "p_150",
+        "name_zh": "最大无冲击工作压力(150 ℃)",
+        "name_orig": "最大无冲击工作压力",
+        "unit": "MPa"
+      },
+      {
+        "key": "p_180",
+        "name_zh": "最大无冲击工作压力(180 ℃)",
+        "name_orig": "最大无冲击工作压力",
+        "unit": "MPa"
+      },
+      {
+        "key": "p_200",
+        "name_zh": "最大无冲击工作压力(200 ℃)",
+        "name_orig": "最大无冲击工作压力",
+        "unit": "MPa"
+      },
+      {
+        "key": "p_220",
+        "name_zh": "最大无冲击工作压力(220 ℃)",
+        "name_orig": "最大无冲击工作压力",
+        "unit": "MPa"
+      },
+      {
+        "key": "p_250",
+        "name_zh": "最大无冲击工作压力(250 ℃)",
+        "name_orig": "最大无冲击工作压力",
+        "unit": "MPa"
+      },
+      {
+        "key": "p_260",
+        "name_zh": "最大无冲击工作压力(260 ℃)",
+        "name_orig": "最大无冲击工作压力",
+        "unit": "MPa"
+      },
+      {
+        "key": "dn_range",
+        "name_zh": "公称尺寸范围",
+        "name_orig": "公称尺寸 DN",
+        "unit": "text"
+      }
+    ],
+    "flange_dim": [
+      {
+        "key": "Dn",
+        "name_zh": "公称尺寸",
+        "name_orig": "公称尺寸 DN",
+        "unit": "mm"
+      },
+      {
+        "key": "D",
+        "name_zh": "法兰外径",
+        "name_orig": "D",
+        "unit": "mm"
+      },
+      {
+        "key": "K",
+        "name_zh": "螺栓孔中心圆直径",
+        "name_orig": "K",
+        "unit": "mm"
+      },
+      {
+        "key": "L",
+        "name_zh": "螺栓孔径",
+        "name_orig": "L",
+        "unit": "mm"
+      },
+      {
+        "key": "n",
+        "name_zh": "螺栓数量",
+        "name_orig": "数量 n",
+        "unit": "dimensionless"
+      },
+      {
+        "key": "bolt_thread",
+        "name_zh": "螺栓螺纹规格",
+        "name_orig": "螺纹规格",
+        "unit": "thread"
+      },
+      {
+        "key": "d",
+        "name_zh": "密封面直径",
+        "name_orig": "d",
+        "unit": "mm"
+      },
+      {
+        "key": "f",
+        "name_zh": "密封面凸起高度",
+        "name_orig": "f",
+        "unit": "mm"
+      },
+      {
+        "key": "C",
+        "name_zh": "法兰厚度",
+        "name_orig": "C",
+        "unit": "mm"
+      },
+      {
+        "key": "N",
+        "name_zh": "法兰颈长度",
+        "name_orig": "N",
+        "unit": "mm"
+      },
+      {
+        "key": "R",
+        "name_zh": "法兰颈过渡圆角半径",
+        "name_orig": "R",
+        "unit": "mm"
+      }
+    ]
+  },
+  "tables": [
+    {
+      "index": 1,
+      "id": "D-GBT15530-PT-PN",
+      "clause": "表 1",
+      "chart_ref": "表 1 PN6~PN40 法兰压力-温度等级",
+      "title_zh": "PN 系列法兰压力-温度等级(PN6~PN40)",
+      "column_set": "pn_rating",
+      "key_column": 1,
+      "table_kind": "STRESS_TABLE",
+      "design_domain": "THERM",
+      "extraction_note": "人工逐格视觉转录: runs/GB-GB_T_15530.1-2008/pages/p0002.png(官方在线阅读页图像,2320x3280)。PN 列为行定位键(第 1 列,0 基)。注 a 保留在 usage.pitfalls。",
+      "usage": {
+        "where": [
+          "校核设计工作温度下铜合金法兰的最大允许工作压力是否覆盖设计压力",
+          "确定 PN 压力档位(PN6/10/16/25/40)与密封面型式(RF/TG/FF)的组合可行性",
+          "铜合金件与钢件法兰混装时的压力校核"
+        ],
+        "how": "先按介质最高工作温度选列(120/200/250 ℃),再按 PN 选行,读出最大工作压力,与设计压力比较。本项目设计压力 0.588 MPa、工作温度不超 120 ℃: PN6 突面型最大工作压力 0.6 MPa ≥ 0.588 MPa,满足。",
+        "pitfalls": [
+          "本表只给 120/200/250 三个温度点,中间温度无直接数据,需按 GB/T 15530.8 技术条件内插或取最不利(邻近更低温度档)值",
+          "注 a: 公称尺寸 DN250 以上的 PN6、PN10、PN16、PN25、PN40 的 TG 型、FF 型法兰最高使用温度不高于 120 ℃",
+          "标的是「最大工作压力」,不等于「设计压力」,也不等于 ASME 的 design pressure 概念,两者不可直接换算",
+          "铜合金法兰的许用压力远低于同 PN 的钢法兰,不可套用钢件的 PN 习惯值",
+          "表内 DN 范围是「该 PN 与该密封面型式下的公称尺寸适用区间」,超出区间无表可查"
+        ]
+      },
+      "project_usage": [
+        {
+          "task": "522-35.4179СБ DN200/PN6 青铜法兰压力校核",
+          "status": "APPLICABLE",
+          "note": "PN6 突面型 @120 ℃ 最大工作压力 0.6 MPa ≥ 设计压力 0.588 MPa,余量约 2%。余量很小,需在设计输入确认工作温度上限(见 B2 阻塞项:设计/试验压力未给)。"
+        }
+      ],
+      "related": [
+        "D-GBT15530-PN6-RF",
+        "D-GBT15530-PT-CLASS"
+      ],
+      "source_page": "p0002.png"
+    },
+    {
+      "index": 2,
+      "id": "D-GBT15530-PT-CLASS",
+      "clause": "表 2",
+      "chart_ref": "表 2 Class150、Class300 的法兰压力-温度等级",
+      "title_zh": "Class 系列法兰压力-温度等级(Class150 / Class300,全平面型)",
+      "column_set": "class_rating",
+      "key_column": 1,
+      "table_kind": "STRESS_TABLE",
+      "design_domain": "THERM",
+      "extraction_note": "人工逐格视觉转录: runs/GB-GB_T_15530.1-2008/pages/p0003.png(官方在线阅读页图像)。PN 列为行定位键(第 1 列,0 基)。",
+      "usage": {
+        "where": [
+          "产品按 ASME 体系(美标 Class150/Class300)对接时的压力-温度校核",
+          "国标件与美标件混装连接的压力一致性核对"
+        ],
+        "how": "全平面法兰,PN20 对应 Class150、PN50 对应 Class300。按工作温度选列读最大无冲击工作压力。",
+        "pitfalls": [
+          "本表仅覆盖全平面(FF)法兰,突面(RF)与榫槽面(TG)型不适用",
+          "标的是「最大无冲击工作压力」,与 ASME 的 rating 概念接近但取值基准不同,不可直接等同",
+          "DN 范围限制:PN20 覆盖 DN10~300,PN50 覆盖 DN10~200,大口径超出即无表可查"
+        ]
+      },
+      "project_usage": [],
+      "related": [
+        "D-GBT15530-PT-PN"
+      ],
+      "source_page": "p0003.png"
+    },
+    {
+      "index": 3,
+      "id": "D-GBT15530-PN6-RF",
+      "clause": "表 3",
+      "chart_ref": "表 3 PN6 突面铜合金整体铸造法兰尺寸;图 1 突面(RF 型)铜合金整体铸造法兰",
+      "title_zh": "PN6 突面(RF 型)铜合金整体铸造法兰尺寸",
+      "column_set": "flange_dim",
+      "table_kind": "DIMENSION_TABLE",
+      "design_domain": "GEOM",
+      "extraction_note": "人工逐格视觉转录: runs/GB-GB_T_15530.1-2008/pages/p0004.png(官方在线阅读页图像)。列语义依图 1 标注核对: D 法兰外径、K 螺栓孔中心圆直径、L 螺栓孔径、n×L 螺栓、d 密封面直径、C 法兰厚度、N 法兰颈长度、R 颈过渡圆角、f 密封面凸起高度。原文 DN225 带括号(不推荐)。",
+      "usage": {
+        "where": [
+          "本项目 DN200/PN6 铜合金法兰的连接几何确定(D/K/L/n/螺纹/d/f/C/N/R)",
+          "螺栓预紧力与法兰密封面接触计算的几何输入",
+          "与管道法兰的对中与孔位匹配检查"
+        ],
+        "how": "按 DN 查行。本项目 DN200/PN6 突面型: D=320、K=280、L=18、n=8、M16、d=258、f=3、C=22、N=234、R=6。",
+        "pitfalls": [
+          "与 ГОСТ 1536-76 的连接尺寸完全不同(ГОСТ DN200: D=295、D1=264、D2=241、螺栓 12×M14),国标与俄标铜合金法兰不可直接互换",
+          "DN225 在原文中带括号,标准注明不推荐使用",
+          "f 是密封面凸起高度(据图 1 判读),不是法兰厚度;厚度是 C",
+          "n×L 是螺栓孔布局,螺栓强度计算需用 n 与螺栓公称截面积,与 K 一起决定预紧力矩",
+          "本表为 PN6 突面型;PN10/PN16/PN25 的突面型尺寸见各自表,不可套用"
+        ]
+      },
+      "project_usage": [
+        {
+          "task": "522-35.4179СБ DN200 铜合金法兰几何输入",
+          "status": "APPLICABLE_WITH_CAVEAT",
+          "note": "若本项目改按 GB/T 15530.1-2008 制造: DN200/PN6 突面法兰 D=320、K=280、8×M16、d=258、C=22、N=234。与项目既有 ГОСТ 1536-76 路线(D=295,12×M14)是两套不同连接尺寸,选型不可混用。"
+        }
+      ],
+      "related": [
+        "D-GBT15530-PN10-RF",
+        "D-GBT15530-PN16-RF",
+        "D-GBT15530-PN25-RF",
+        "D-GOST1536-PN063"
+      ],
+      "source_page": "p0004.png"
+    },
+    {
+      "index": 4,
+      "id": "D-GBT15530-PN10-RF",
+      "clause": "表 4",
+      "chart_ref": "表 4 PN10 突面铜合金整体铸造法兰尺寸",
+      "title_zh": "PN10 突面(RF 型)铜合金整体铸造法兰尺寸",
+      "column_set": "flange_dim",
+      "table_kind": "DIMENSION_TABLE",
+      "design_domain": "GEOM",
+      "extraction_note": "人工逐格视觉转录: runs/GB-GB_T_15530.1-2008/pages/p0005.png(官方在线阅读页图像)。本表含跨表引用合并单元格: DN10~50 合并单元格写「使用 PN25 的 RF 型法兰尺寸」(指向本标准表 6),DN65~175 合并单元格写「使用 PN16 的 RF 型法兰尺寸」(指向本标准表 5)。引用行数值列留空,引用关系记入 row_keys 的 ref_table/ref_note,不可当作 0。",
+      "usage": {
+        "where": [
+          "PN10 突面铜合金法兰的连接几何确定",
+          "PN6 方案需要提压到 PN10 时的法兰选型"
+        ],
+        "how": "DN≥200 查本表数值;DN<200 按 row_keys 的 ref_table 跳转:DN10~50 查表 6(PN25),DN65~175 查表 5(PN16)。DN200/PN10: D=340、K=295、L=22、n=8、M20、d=268、f=3、C=26、N=240、R=8。",
+        "pitfalls": [
+          "小口径行是跨表引用,不是本表自己的数据,直接取空值会得到缺失几何",
+          "DN225 带括号,不推荐使用",
+          "PN10 与 PN16 的 DN200 除螺栓数(8 与 12)外其余尺寸完全相同(D=340/K=295/d=268/C=26/N=240),不能据此认为两表等价,螺栓数差异直接改变预紧力与密封面压紧分布"
+        ]
+      },
+      "project_usage": [],
+      "related": [
+        "D-GBT15530-PN6-RF",
+        "D-GBT15530-PN16-RF",
+        "D-GBT15530-PN25-RF"
+      ],
+      "source_page": "p0005.png"
+    },
+    {
+      "index": 5,
+      "id": "D-GBT15530-PN16-RF",
+      "clause": "表 5",
+      "chart_ref": "表 5 PN16 突面铜合金整体铸造法兰尺寸",
+      "title_zh": "PN16 突面(RF 型)铜合金整体铸造法兰尺寸",
+      "column_set": "flange_dim",
+      "table_kind": "DIMENSION_TABLE",
+      "design_domain": "GEOM",
+      "extraction_note": "人工逐格视觉转录: runs/GB-GB_T_15530.1-2008/pages/p0006.png(官方在线阅读页图像)。跨表引用合并单元格: DN10~50 写「使用 PN25 的 RF 型法兰尺寸」(指向本标准表 6),数值列留空,引用关系记入 row_keys 的 ref_table/ref_note。",
+      "usage": {
+        "where": [
+          "PN16 突面铜合金法兰的连接几何确定"
+        ],
+        "how": "DN≥65 查本表;DN10~50 按 row_keys.ref_table 跳表 6(PN25)。DN200/PN16: D=340、K=295、L=22、n=12、M20、d=268、f=3、C=26、N=240、R=8。",
+        "pitfalls": [
+          "小口径行是跨表引用,不可当作 0 或缺省",
+          "DN225 带括号,不推荐使用"
+        ]
+      },
+      "project_usage": [],
+      "related": [
+        "D-GBT15530-PN6-RF",
+        "D-GBT15530-PN10-RF",
+        "D-GBT15530-PN25-RF"
+      ],
+      "source_page": "p0006.png"
+    },
+    {
+      "index": 6,
+      "id": "D-GBT15530-PN25-RF",
+      "clause": "表 6",
+      "chart_ref": "表 6 PN25 突面铜合金整体铸造法兰尺寸",
+      "title_zh": "PN25 突面(RF 型)铜合金整体铸造法兰尺寸",
+      "column_set": "flange_dim",
+      "table_kind": "DIMENSION_TABLE",
+      "design_domain": "GEOM",
+      "extraction_note": "人工逐格视觉转录: runs/GB-GB_T_15530.1-2008/pages/p0007.png(官方在线阅读页图像)。本表无跨表引用,DN10~500 全部为独立数值,且是表 4、表 5 小口径行的引用目标。",
+      "usage": {
+        "where": [
+          "PN25 突面铜合金法兰的连接几何确定",
+          "作为表 4(PN10)与表 5(PN16)小口径行的引用目标表"
+        ],
+        "how": "直接按 DN 查行。DN200/PN25: D=360、K=310、L=26、n=12、M24、d=278、f=3、C=30、N=246、R=8。",
+        "pitfalls": [
+          "DN225 带括号,不推荐使用",
+          "本表被表 4、表 5 引用,改动或误读本表会同时污染 PN10/PN16 的小口径尺寸"
+        ]
+      },
+      "project_usage": [],
+      "related": [
+        "D-GBT15530-PN6-RF",
+        "D-GBT15530-PN10-RF",
+        "D-GBT15530-PN16-RF"
+      ],
+      "source_page": "p0007.png"
+    }
+  ],
+  "row_notes": {
+    "3": {
+      "225": {
+        "dn_note": "带括号尺寸，不推荐使用"
+      }
+    },
+    "4": {
+      "10": {
+        "ref_table": "表 6",
+        "ref_note": "使用 PN25 的 RF 型法兰尺寸",
+        "ref_standard_clause": "GB/T 15530.1-2008 表 4"
+      },
+      "15": {
+        "ref_table": "表 6",
+        "ref_note": "使用 PN25 的 RF 型法兰尺寸",
+        "ref_standard_clause": "GB/T 15530.1-2008 表 4"
+      },
+      "20": {
+        "ref_table": "表 6",
+        "ref_note": "使用 PN25 的 RF 型法兰尺寸",
+        "ref_standard_clause": "GB/T 15530.1-2008 表 4"
+      },
+      "25": {
+        "ref_table": "表 6",
+        "ref_note": "使用 PN25 的 RF 型法兰尺寸",
+        "ref_standard_clause": "GB/T 15530.1-2008 表 4"
+      },
+      "32": {
+        "ref_table": "表 6",
+        "ref_note": "使用 PN25 的 RF 型法兰尺寸",
+        "ref_standard_clause": "GB/T 15530.1-2008 表 4"
+      },
+      "40": {
+        "ref_table": "表 6",
+        "ref_note": "使用 PN25 的 RF 型法兰尺寸",
+        "ref_standard_clause": "GB/T 15530.1-2008 表 4"
+      },
+      "50": {
+        "ref_table": "表 6",
+        "ref_note": "使用 PN25 的 RF 型法兰尺寸",
+        "ref_standard_clause": "GB/T 15530.1-2008 表 4"
+      },
+      "65": {
+        "ref_table": "表 5",
+        "ref_note": "使用 PN16 的 RF 型法兰尺寸",
+        "ref_standard_clause": "GB/T 15530.1-2008 表 4"
+      },
+      "80": {
+        "ref_table": "表 5",
+        "ref_note": "使用 PN16 的 RF 型法兰尺寸",
+        "ref_standard_clause": "GB/T 15530.1-2008 表 4"
+      },
+      "100": {
+        "ref_table": "表 5",
+        "ref_note": "使用 PN16 的 RF 型法兰尺寸",
+        "ref_standard_clause": "GB/T 15530.1-2008 表 4"
+      },
+      "125": {
+        "ref_table": "表 5",
+        "ref_note": "使用 PN16 的 RF 型法兰尺寸",
+        "ref_standard_clause": "GB/T 15530.1-2008 表 4"
+      },
+      "150": {
+        "ref_table": "表 5",
+        "ref_note": "使用 PN16 的 RF 型法兰尺寸",
+        "ref_standard_clause": "GB/T 15530.1-2008 表 4"
+      },
+      "175": {
+        "ref_table": "表 5",
+        "ref_note": "使用 PN16 的 RF 型法兰尺寸",
+        "ref_standard_clause": "GB/T 15530.1-2008 表 4"
+      },
+      "225": {
+        "dn_note": "带括号尺寸，不推荐使用"
+      }
+    },
+    "5": {
+      "10": {
+        "ref_table": "表 6",
+        "ref_note": "使用 PN25 的 RF 型法兰尺寸",
+        "ref_standard_clause": "GB/T 15530.1-2008 表 5"
+      },
+      "15": {
+        "ref_table": "表 6",
+        "ref_note": "使用 PN25 的 RF 型法兰尺寸",
+        "ref_standard_clause": "GB/T 15530.1-2008 表 5"
+      },
+      "20": {
+        "ref_table": "表 6",
+        "ref_note": "使用 PN25 的 RF 型法兰尺寸",
+        "ref_standard_clause": "GB/T 15530.1-2008 表 5"
+      },
+      "25": {
+        "ref_table": "表 6",
+        "ref_note": "使用 PN25 的 RF 型法兰尺寸",
+        "ref_standard_clause": "GB/T 15530.1-2008 表 5"
+      },
+      "32": {
+        "ref_table": "表 6",
+        "ref_note": "使用 PN25 的 RF 型法兰尺寸",
+        "ref_standard_clause": "GB/T 15530.1-2008 表 5"
+      },
+      "40": {
+        "ref_table": "表 6",
+        "ref_note": "使用 PN25 的 RF 型法兰尺寸",
+        "ref_standard_clause": "GB/T 15530.1-2008 表 5"
+      },
+      "50": {
+        "ref_table": "表 6",
+        "ref_note": "使用 PN25 的 RF 型法兰尺寸",
+        "ref_standard_clause": "GB/T 15530.1-2008 表 5"
+      },
+      "225": {
+        "dn_note": "带括号尺寸，不推荐使用"
+      }
+    },
+    "6": {
+      "225": {
+        "dn_note": "带括号尺寸，不推荐使用"
+      }
+    }
+  }
+}

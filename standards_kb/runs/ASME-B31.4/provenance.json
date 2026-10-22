@@ -1,0 +1,53 @@
+{
+  "source_id": "ASME-B31.4",
+  "standard_id": "ASME-B31.4",
+  "registry": {
+    "family": "ASME",
+    "kind": "MECHANICS",
+    "body_status": "FULL_TEXT_MIRROR",
+    "title": "ASME B31.4-2002 — Pipeline Valves",
+    "url": "https://archive.org/download/gov.law.asme.b31.4.2002/asme.b31.4.2002_djvu.txt"
+  },
+  "has_body": true,
+  "files": [
+    {
+      "filename": "ASME-B31.4__candidates.json",
+      "kind": "json",
+      "bytes": 4969,
+      "sha256": "116fed413843e43b503b1dc6a3e97889ef64fdfe99e36a34e14c62c7c40266be",
+      "file_mtime": "2026-10-22T10:02:54+08:00"
+    },
+    {
+      "filename": "ASME-B31.4__pdfcandidates.json",
+      "kind": "json",
+      "bytes": 3502,
+      "sha256": "bffec861f26c2b2a5e7973e1c42f1a7d115559b8666e5aab38a1ffda58fbf0b6",
+      "file_mtime": "2026-10-22T10:02:56+08:00"
+    },
+    {
+      "filename": "asme_b31_4_2002.pdf",
+      "kind": "pdf",
+      "bytes": 11205372,
+      "sha256": "677e4cbd54d03c8cda84ac0ee911967725dea042ec3af13fbac038df10cc569d",
+      "file_mtime": "2026-10-22T09:39:29+08:00",
+      "pages": 127
+    },
+    {
+      "filename": "asme_b31_4_2002_djvu.txt",
+      "kind": "text",
+      "bytes": 417225,
+      "sha256": "cb1132fcc9e693db226f19513d8787db37ca5e16d662fe899c87bf587275ad2d",
+      "file_mtime": "2026-10-22T09:41:23+08:00",
+      "chars": 415400,
+      "lines": 18158
+    }
+  ],
+  "candidates_extracted": 13,
+  "candidate_files": [
+    "ASME-B31.4__candidates.json (7 条)",
+    "ASME-B31.4__pdfcandidates.json (6 条)"
+  ],
+  "curated_entries": [],
+  "curated_data_entries": [],
+  "rebuilt_at": "2026-10-22T12:56:12+08:00"
+}

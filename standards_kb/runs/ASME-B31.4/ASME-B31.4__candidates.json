@@ -1,0 +1,116 @@
+{
+  "schema": "standards_kb.candidates/1.0",
+  "source_id": "ASME-B31.4",
+  "file": "runs\\ASME-B31.4\\asme_b31_4_2002_djvu.txt",
+  "generated_at": "2026-10-22T10:02:54+08:00",
+  "text_chars": 415400,
+  "candidate_count": 7,
+  "note": "全部为 CANDIDATE,confidence=LOW。抽取器不判定正确性,须人工/Agent 复核后转成公式条目。",
+  "candidates": [
+    {
+      "expr": "Mi = in - plane bending moment, in. - lb ( N - m )",
+      "lhs": "Mi",
+      "rhs": "in-plane bending moment, in.-lb (N-m)",
+      "line_no": 13668,
+      "line_span": [
+        13668,
+        13668
+      ],
+      "context": "= ± A /(i / M,) 2 + (/ a M,) 2 /Z \nMi = in-plane bending moment, in.-lb (N-m) \nM = out-of-plane bending moment, in.-lb (N-m) \nii — in-plane stress intensification factor from",
+      "domain": "DRIVE",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "single_line"
+    },
+    {
+      "expr": "d = outside diameter of branch pipe d c - internal diameter of branch pipe",
+      "lhs": "d",
+      "rhs": "outside diameter of branch pipe d c - internal diameter of branch pipe",
+      "line_no": 4517,
+      "line_span": [
+        4517,
+        4518
+      ],
+      "context": "(mm). \n\nd = outside diameter of branch pipe \nd c - internal diameter of branch pipe \nD = outside diameter of header \nD c = internal diameter of header \nD — internal diameter of extruded outlet measured",
+      "domain": "GEOM",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "r = radius of curvature of external contoured portion of outlet measured in the plane con -",
+      "lhs": "r",
+      "rhs": "radius of curvature of external contoured portion of outlet measured in the plane con-",
+      "line_no": 4654,
+      "line_span": [
+        4654,
+        4655
+      ],
+      "context": "surface of the header \nr x = half- width of reinforcement zone (equal to D a ) \nr = radius of curvature of external contoured \nportion of outlet measured in the plane con- \ntaining the axes of the header and branch. \nThis is subject to the following limitations.",
+      "domain": "GEOM",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "N = 1 / 16 in. ( 1.5 mm ) ( min. ) , 1 / 8 in. ( 3 mm ) ( max. ) unless back welded or backing strip is used",
+      "lhs": "N",
+      "rhs": "1/16 in. (1.5 mm) (min. ), 1/8 in. (3 mm) (max.) unless back welded or backing strip is used",
+      "line_no": 5066,
+      "line_span": [
+        5066,
+        5067
+      ],
+      "context": "^(min.) = the smaller of T h , T b or 3/8 in. (10 mm) \n\nN = 1/16 in. (1.5 mm) (min. ), 1/8 in. (3 mm) (max.) \nunless back welded or backing strip is used \n\nFIG. 404.3.1(c)(3) WELDING DETAILS FOR OPENINGS WITHOUT REINFORCEMENT OTHER THAN",
+      "domain": "GEOM",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "E = modulus of elasticity of steel, psi ( MPa ) a — linear coefficient of thermal expansion, in. / in. /",
+      "lhs": "E",
+      "rhs": "modulus of elasticity of steel, psi (MPa) a — linear coefficient of thermal expansion, in./in./",
+      "line_no": 6350,
+      "line_span": [
+        6350,
+        6351
+      ],
+      "context": "o F ( o C) \n\nE = modulus of elasticity of steel, psi (MPa) \na — linear coefficient of thermal expansion, in./in./ \n\n°F (mm/mm/°C) \nv = Poisson's ratio = 0.30 for steel",
+      "domain": "FLOW",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "M = out - of - plane bending moment, in. - lb ( N - m ) ii — in - plane stress intensification factor from",
+      "lhs": "M",
+      "rhs": "out-of-plane bending moment, in.-lb (N-m) ii — in-plane stress intensification factor from",
+      "line_no": 13669,
+      "line_span": [
+        13669,
+        13670
+      ],
+      "context": "= ± A /(i / M,) 2 + (/ a M,) 2 /Z \nMi = in-plane bending moment, in.-lb (N-m) \nM = out-of-plane bending moment, in.-lb (N-m) \nii — in-plane stress intensification factor from \n\nFig. 419.6.4(c) \ni = out-of-plane stress intensification factor from",
+      "domain": "DRIVE",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "i = out - of - plane stress intensification factor from Fig. 419.6.4 ( c )",
+      "lhs": "i",
+      "rhs": "out-of-plane stress intensification factor from Fig. 419.6.4(c)",
+      "line_no": 13673,
+      "line_span": [
+        13673,
+        13674
+      ],
+      "context": "Fig. 419.6.4(c) \ni = out-of-plane stress intensification factor from \nFig. 419.6.4(c)",
+      "domain": "GEOM",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    }
+  ]
+}

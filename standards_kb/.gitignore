@@ -1,0 +1,43 @@
+# ============================================================
+# standards_kb — 大体积原始正文与中间产物不入库
+# ------------------------------------------------------------
+# 理由：这些文件全部可由 tools/ 管线重新生成，且 runs/fetch_manifest.json
+#       已记录 URL + SHA256 + 时间戳，可追溯性不受影响。
+# 入库的是可复用资产：
+#   kb/       结构化公式条目 / 数据表条目 / 候选池 / 标准目录
+#   registry/ 标准登记表（4 族 24 源）
+#   docs/     索引与覆盖报告
+#   tools/    挖掘管线
+# ============================================================
+
+# --- 原始 PDF 正文 ---
+runs/**/*.pdf
+
+# --- GB 精灵图 webp / 重组页 PNG ---
+runs/**/*.webp
+runs/**/*.png
+runs/**/*.jpg
+runs/**/*.jpeg
+
+# --- 抓取过程 HTML / JS 中间产物（GB 目录页、showGb 页面等）---
+runs/**/*.html
+runs/**/*.htm
+runs/**/*.js
+
+# --- djvu 文本层（可由 PDF + tools/extract_pdf.py 重新抽取）---
+runs/**/*djvu.txt
+
+# --- 例外：GOST 正文是项目自带的本地标准件，不是下载物，保留以便复核 ---
+!runs/GOST-LOCAL/*.htm
+!runs/GOST-LOCAL/*.html
+
+# --- Python 缓存 ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# --- 临时产物 ---
+*.tmp
+*.log

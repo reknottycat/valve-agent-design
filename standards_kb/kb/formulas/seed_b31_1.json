@@ -1,0 +1,198 @@
+[
+  {
+    "id": "F-MAT-003",
+    "title_zh": "碳当量 CE（低淬硬性 P-No.1 厚壁管接头免焊后热处理判据，B31.1）",
+    "title_en": "Carbon Equivalent CE for exemption of PWHT (ASME B31.1 Table 132, Note (b)(1))",
+    "aliases": [
+      "碳当量",
+      "carbon equivalent",
+      "CE",
+      "B31.1 碳当量",
+      "PWHT 免除",
+      "焊后热处理豁免",
+      "CE 0.50"
+    ],
+    "expression": {
+      "canonical": "CE = C + (Mn + Si)/6 + (Cr + Mo + V)/5 + (Ni + Cu)/15",
+      "display": "CE = C + (Mn + Si)/6 + (Cr + Mo + V)/5 + (Ni + Cu)/15",
+      "latex": "CE = C + \\frac{Mn + Si}{6} + \\frac{Cr + Mo + V}{5} + \\frac{Ni + Cu}{15}",
+      "rearranged_forms": [
+        "CE = C + (Mn + Si)/6 + 0.1"
+      ],
+      "solved_for": "CE"
+    },
+    "variables": [
+      {
+        "symbol": "CE",
+        "name_zh": "碳当量",
+        "name_en": "carbon equivalent",
+        "unit": "dimensionless",
+        "typical_range": "< 0.50 为本条判据阈值（严格小于）",
+        "source_of_value": "DERIVED"
+      },
+      {
+        "symbol": "C",
+        "name_zh": "碳含量",
+        "name_en": "carbon content",
+        "unit": "mass %",
+        "source_of_value": "STANDARD 材料规格书化学成分上限 或 化学分析/材料试验报告实测值"
+      },
+      {
+        "symbol": "Mn",
+        "name_zh": "锰含量",
+        "name_en": "manganese content",
+        "unit": "mass %",
+        "source_of_value": "STANDARD 材料规格书化学成分上限 或 化学分析/材料试验报告实测值"
+      },
+      {
+        "symbol": "Si",
+        "name_zh": "硅含量",
+        "name_en": "silicon content",
+        "unit": "mass %",
+        "source_of_value": "STANDARD 材料规格书化学成分上限 或 化学分析/材料试验报告实测值"
+      },
+      {
+        "symbol": "Cr",
+        "name_zh": "铬含量",
+        "name_en": "chromium content",
+        "unit": "mass %",
+        "source_of_value": "STANDARD 材料规格书化学成分上限 或 化学分析/材料试验报告实测值"
+      },
+      {
+        "symbol": "Mo",
+        "name_zh": "钼含量",
+        "name_en": "molybdenum content",
+        "unit": "mass %",
+        "source_of_value": "STANDARD 材料规格书化学成分上限 或 化学分析/材料试验报告实测值"
+      },
+      {
+        "symbol": "V",
+        "name_zh": "钒含量",
+        "name_en": "vanadium content",
+        "unit": "mass %",
+        "source_of_value": "STANDARD 材料规格书化学成分上限 或 化学分析/材料试验报告实测值"
+      },
+      {
+        "symbol": "Ni",
+        "name_zh": "镍含量",
+        "name_en": "nickel content",
+        "unit": "mass %",
+        "source_of_value": "STANDARD 材料规格书化学成分上限 或 化学分析/材料试验报告实测值"
+      },
+      {
+        "symbol": "Cu",
+        "name_zh": "铜含量",
+        "name_en": "copper content",
+        "unit": "mass %",
+        "source_of_value": "STANDARD 材料规格书化学成分上限 或 化学分析/材料试验报告实测值"
+      }
+    ],
+    "domain": "MATE",
+    "tags": [
+      "碳当量",
+      "焊接",
+      "PWHT",
+      "焊后热处理",
+      "材料",
+      "ASME-B31.1",
+      "B31.1",
+      "Table 132",
+      "动力管道"
+    ],
+    "source": {
+      "standard_id": "ASME B31.1-2007",
+      "clause": "Table 132 (Postweld Heat Treatment) GENERAL NOTES (b)(1)",
+      "body_status": "FULL_TEXT_MIRROR",
+      "evidence_grade": "E1",
+      "snippet": "(b) PWHT of low hardenability P-No. 1 materials with a nominal material thickness, as defined in para. 132.4.3, over ¾ in. (19.0 mm) but not more than 1½ in. (38 mm) is not mandatory, provided all of the following conditions are met: (1) the carbon equivalent, CE, is < 0.50, using the formula CE = C + (Mn + Si)/6 + (Cr + Mo + V)/5 + (Ni + Cu)/15. The maximum chemical composition limit from the material specification or actual values from a chemical analysis or material test report shall be used in computing CE. If analysis for the last two terms is not available, 0.1% may be substituted for those two terms as follows: CE = C + (Mn + Si)/6 + 0.1. (2) a minimum preheat of 250°F (121°C) is applied. (3) the maximum weld deposit thickness of each weld pass shall not exceed ¼ in. (6 mm).",
+      "locator": "runs/ASME-B31.1/asme_b31_1_2007_djvu.txt L15379-L15401（Table 132 GENERAL NOTES (a)(b) 全文）；候选池条目 C-ad98415ba567（line_no 15391）",
+      "extraction_note": "本条依据 B31.1-2007 的 djvu 文本层定位并逐句核对，未做 PDF 渲染图视觉复核（archive.org 当前直连不可达，B31.1 只有 djvu 文本层，无 PDF 可渲染）。文本层已知退化：分数形 ¼ 与 ¾ 均被 OCR 成 '%'、½ 被识成 'lV'，故 snippet 中的 '¾ in. (19.0 mm)'、'1½ in. (38 mm)'、'¼ in. (6 mm)' 是依据原文括号内公制值反推重建的（19.0/38/6 mm 三个公制值在文本层完整无损，可作交叉校验）。公式本体、阈值 0.50、替代值 0.1%、预热 250°F(121°C) 在文本层均完整，未退化。因此本条定级 E1 + PENDING_VERIFICATION：公式本体、阈值 0.50、替代值 0.1%、预热与焊厚条件在文本层完整无退化，算例复算自洽（满足 E1「数值与公式自洽」），但分数形排印待 PDF 视觉复核，故未标 VERIFIED_CLAUSE。本条无比拟物理数据、无仿真对照，按项目 E0–E3 口径不占 E2。",
+      "cross_refs": [
+        "F-MAT-002"
+      ]
+    },
+    "applicability": {
+      "valid_when": [
+        "材料属低淬硬性（low hardenability）P-No. 1 组（碳钢、低合金钢）",
+        "公称材料厚度（按 para. 132.4.3 定义）大于 ¾ in. (19.0 mm) 且不超过 1½ in. (38 mm)",
+        "目标是判定该接头能否免除强制焊后热处理（PWHT）",
+        "化学成分取材料规格书上限值，或化学分析/材料试验报告的实测值"
+      ],
+      "not_valid_when": [
+        "公称材料厚度 ≤ ¾ in. (19.0 mm) —— 走 GENERAL NOTES (a)：该情形下 PWHT 本就非强制，判据是预热温度（基材任一侧名义厚度超过 1 in. / 25.0 mm 时最小预热 200°F / 95°C），不看 CE",
+        "公称材料厚度 > 1½ in. (38 mm) —— 本条 (b) 不覆盖，必须按 Table 132 主体做 PWHT",
+        "材料不属低淬硬性 P-No. 1 组 —— 不得套用本式与 0.50 阈值",
+        "把 CE<0.50 当作可以免除预热的理由 —— 预热与单道焊厚是并列条件",
+        "B31.1 的 CE 阈值与 BPVC Section I 的 CE 阈值不可互换（0.50 与 0.45，替代值 0.1 与 0.15）"
+      ],
+      "range_limits": [
+        "CE < 0.50 为 (b)(1) 的判定阈值（严格小于，非 ≤）",
+        "CE ≥ 0.50 即不满足免除 PWHT 的条件",
+        "适用厚度窗口：19.0 mm < t ≤ 38 mm"
+      ],
+      "conservatism": "取材料规格书化学成分上限值会使 CE 偏大，即偏保守（更容易判定需要焊后热处理）。但「后两项用 0.1% 替代」这一步的保守性取决于实际成分：对常见 P-No.1 碳钢（Cr≈1%、Ni≈0.3%），后两项实际值一般远大于 0.1（典型约 0.25），替代会使 CE 偏小、判定更容易通过，属偏乐观。作为放行依据时应优先取实测成分；标准用词是 'may'（允许）而非要求。",
+      "must_pair_with": [
+        "B31.1 Table 132 GENERAL NOTES (b)(2)：最小预热 250°F (121°C)",
+        "B31.1 Table 132 GENERAL NOTES (b)(3)：每道焊缝的熔敷金属厚度不超过 ¼ in. (6 mm)"
+      ]
+    },
+    "usage": {
+      "where": [
+        "ASME B31.1 动力管道厚壁管接头免焊后热处理判定",
+        "P-No.1 低淬硬性材料焊接工艺卡的预热/热处理决策",
+        "材料可焊性评估（高 CE 钢需更严的预热与层间温度控制）"
+      ],
+      "how": "取基材各元素含量代入求 CE。CE<0.50 只是 GENERAL NOTES (b) 三个并列条件之一，还须同时满足 (b)(2) 最小预热 250°F(121°C) 与 (b)(3) 每道焊缝熔敷厚度 ≤¼ in.(6mm)，三者同时成立才可免除强制 PWHT。若后两项化学分析不可得，可用 0.1% 代入得简化式 CE = C + (Mn+Si)/6 + 0.1，但该替代偏乐观，慎用于放行。",
+      "step_order": [
+        "1. 确认材料属低淬硬性 P-No. 1 组",
+        "2. 确认公称材料厚度在 19.0 mm < t ≤ 38 mm 窗口内（否则本条不适用）",
+        "3. 取基材化学成分（规格上限 或 实测）",
+        "4. 代入求 CE（后两项成分不可得时可按标准用 0.1 代入，但记录为偏乐观）",
+        "5. 判 CE < 0.50 是否成立",
+        "6. 同时核对 (b)(2) 预热 ≥250°F(121°C) 与 (b)(3) 单道焊厚 ≤6mm",
+        "7. 三者皆满足才可免除强制 PWHT"
+      ],
+      "output_used_by": [],
+      "sample": {
+        "inputs": {
+          "C": 0.15,
+          "Mn": 0.6,
+          "Si": 0.3,
+          "Cr": 1.0,
+          "Mo": 0.2,
+          "V": 0.02,
+          "Ni": 0.3,
+          "Cu": 0.3
+        },
+        "result": "CE = 0.15 + 0.90/6 + 1.22/5 + 0.60/15 = 0.15 + 0.15 + 0.244 + 0.04 = 0.584（≥ 0.50，不满足免除条件）。若后两项成分不可得而按标准替代：CE = 0.15 + 0.15 + 0.1 = 0.40（< 0.50，变为满足）—— 同一材料因替代而结论翻转，说明替代值不能当作保守缺省。",
+        "source_of_inputs": "合成示例化学成分，非本项目材料；本项目为青铜阀，不适用本式"
+      },
+      "pitfalls": [
+        "把 0.1 当成某个单一元素的替代值（它是后两整项 (Cr+Mo+V)/5 与 (Ni+Cu)/15 的替代）",
+        "用平均成分而非上限值计算，得到偏乐观的 CE",
+        "只看到 CE<0.50 就放行，漏掉预热与单道焊厚两个并列条件",
+        "把 P-No.1 的 0.50 阈值或 B31.1 的 0.1 替代值套到 BPVC Section I（那里是 ≤0.45 与 0.15）",
+        "把厚度窗口外的管子硬套本条：≤19.0 mm 走 (a) 判预热，>38 mm 必须按 Table 132 做",
+        "把 'may be substituted' 当成强制缺省，从而在无实测成分时给出偏乐观的放行结论",
+        "严格不等号：判据是 CE < 0.50，CE = 0.50 即不通过"
+      ]
+    },
+    "evidence": {
+      "grade": "E1",
+      "status": "PENDING_VERIFICATION",
+      "verified_on": "2026-10-25",
+      "verified_by": "standards_kb（djvu 文本层定位 + 逐句核对 + 算例复算自洽）",
+      "note": "条款号、阈值 0.50、替代值 0.1%、预热与焊厚条件、公式本体均在文本层完整无退化，算例复算自洽（0.584 / 替代 0.40）。未能做 PDF 渲染视觉复核：archive.org 直连不可达，B31.1 无 PDF，仅有 djvu 文本层。文本层的分数形退化（¼、¾ → '%'，½ → 'lV'）已用括号内公制值反推重建，但排印形式待视觉复核，故定级 E1、不标 VERIFIED_CLAUSE。本条无比拟物理数据、无仿真对照，按项目 E0–E3 口径不占 E2。"
+    },
+    "project_usage": [
+      {
+        "task": "N/A",
+        "status": "不适用",
+        "note": "ASME B31.1 为动力管道（power piping）标准，面向锅炉管道及工业管道承压边界；本项目 522-35.4179СБ 为 DN200/PN6 青铜止回-截止阀，按 ГОСТ 1536-76 双法兰连接，不在 B31.1 适用范围内。本条为标准资产沉淀/未来复用。"
+      }
+    ],
+    "related": [
+      "F-MAT-002"
+    ]
+  }
+]

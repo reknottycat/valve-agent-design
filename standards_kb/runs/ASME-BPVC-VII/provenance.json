@@ -1,0 +1,53 @@
+{
+  "source_id": "ASME-BPVC-VII",
+  "standard_id": "ASME-BPVC-VII",
+  "registry": {
+    "family": "ASME",
+    "kind": "MECHANICS",
+    "body_status": "FULL_TEXT_MIRROR",
+    "title": "ASME BPVC Section VII-2010 — Power Boilers",
+    "url": null
+  },
+  "has_body": true,
+  "files": [
+    {
+      "filename": "ASME-BPVC-VII__candidates.json",
+      "kind": "json",
+      "bytes": 388,
+      "sha256": "2083c0c1667bd80456e4fcdf59c5d0e22551cb2fd9b6fc30924c3ca3a4868992",
+      "file_mtime": "2026-10-22T10:02:55+08:00"
+    },
+    {
+      "filename": "ASME-BPVC-VII__pdfcandidates.json",
+      "kind": "json",
+      "bytes": 374,
+      "sha256": "483b22ce22180cf6068d2fb1887cc4d581861d0b71754ab96a93103922d57c8c",
+      "file_mtime": "2026-10-22T10:02:58+08:00"
+    },
+    {
+      "filename": "asme_bpvc_vii_2010.pdf",
+      "kind": "pdf",
+      "bytes": 15279505,
+      "sha256": "e8e94000341be6fd78cc9f6b5ed79f05d4b9013569ad3270a990e08c9e82acb4",
+      "file_mtime": "2026-10-22T09:41:25+08:00",
+      "pages": 164
+    },
+    {
+      "filename": "asme_bpvc_vii_2010_djvu.txt",
+      "kind": "text",
+      "bytes": 521280,
+      "sha256": "3d3cc897aea46a39524880facd09844147a74bfb3ddd2cda725e07bf7d1effeb",
+      "file_mtime": "2026-10-22T09:39:30+08:00",
+      "chars": 520908,
+      "lines": 22111
+    }
+  ],
+  "candidates_extracted": 0,
+  "candidate_files": [
+    "ASME-BPVC-VII__candidates.json (0 条)",
+    "ASME-BPVC-VII__pdfcandidates.json (0 条)"
+  ],
+  "curated_entries": [],
+  "curated_data_entries": [],
+  "rebuilt_at": "2026-10-22T12:56:12+08:00"
+}

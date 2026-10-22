@@ -1,0 +1,446 @@
+{
+  "schema": "standards_kb.candidates/1.0",
+  "source_id": "ASME-BPVC-IV",
+  "file": "runs\\ASME-BPVC-IV\\asme_bpvc_iv_2007_djvu.txt",
+  "generated_at": "2026-10-22T10:02:55+08:00",
+  "text_chars": 879158,
+  "candidate_count": 29,
+  "note": "全部为 CANDIDATE,confidence=LOW。抽取器不判定正确性,须人工/Agent 复核后转成公式条目。",
+  "candidates": [
+    {
+      "expr": "Ax = area in excess thickness in the boiler shell avail -",
+      "lhs": "Ax",
+      "rhs": "area in excess thickness in the boiler shell avail-",
+      "line_no": 13375,
+      "line_span": [
+        13375,
+        13375
+      ],
+      "context": "defined as follows: \n\nAx = area in excess thickness in the boiler shell avail- \nable for reinforcement",
+      "domain": "GEOM",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "single_line"
+    },
+    {
+      "expr": "frl = S n / S v",
+      "lhs": "frl",
+      "rhs": "S n /S v",
+      "line_no": 13407,
+      "line_span": [
+        13407,
+        13407
+      ],
+      "context": "and (a-3)] \n\nfrl = S n /S v \n\nfa = (lesser of S n or S p )/S v",
+      "domain": "GEOM",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "single_line"
+    },
+    {
+      "expr": "fa = ( lesser of S n or S p )/ S v",
+      "lhs": "fa",
+      "rhs": "(lesser of S n or S p )/S v",
+      "line_no": 13409,
+      "line_span": [
+        13409,
+        13409
+      ],
+      "context": "frl = S n /S v \n\nfa = (lesser of S n or S p )/S v \n\nJrA = \"p/iS v",
+      "domain": "GEOM",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "single_line"
+    },
+    {
+      "expr": "JrA = \"p / iS v",
+      "lhs": "JrA",
+      "rhs": "\"p/iS v",
+      "line_no": 13411,
+      "line_span": [
+        13411,
+        13411
+      ],
+      "context": "fa = (lesser of S n or S p )/S v \n\nJrA = \"p/iS v \n\nh = distance nozzle projects beyond the inner surface",
+      "domain": "GEOM",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "single_line"
+    },
+    {
+      "expr": "slope = W / P =",
+      "lhs": "slope",
+      "rhs": "W/P =",
+      "line_no": 16460,
+      "line_span": [
+        16460,
+        16460
+      ],
+      "context": "slope = W/P =",
+      "domain": "GEOM",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "single_line"
+    },
+    {
+      "expr": "rg = lesi pressure per ni ^-^ uz ^",
+      "lhs": "rg",
+      "rhs": "lesi pressure per ni^-^uz^",
+      "line_no": 33558,
+      "line_span": [
+        33558,
+        33558
+      ],
+      "context": "rg = lesi pressure per ni^-^uz^ \nP R = design pressure, psi (kPa)",
+      "domain": "GEOM",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "single_line"
+    },
+    {
+      "expr": "Pr = - = - x",
+      "lhs": "Pr",
+      "rhs": "-=- x",
+      "line_no": 34354,
+      "line_span": [
+        34354,
+        34354
+      ],
+      "context": "Pr = -=- x",
+      "domain": "GEOM",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "single_line"
+    },
+    {
+      "expr": "tc = fmin x 0.7",
+      "lhs": "tc",
+      "rhs": "fmin x 0.7",
+      "line_no": 42343,
+      "line_span": [
+        42343,
+        42343
+      ],
+      "context": "(d) Size Weld Required (See HW-731) \n\ntc = fmin x 0.7 \n\n= 0.337 x 0.7 = 0.236 in.",
+      "domain": "GEOM",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "single_line"
+    },
+    {
+      "expr": "σ = maximum allowable stress value as given in Tables HF - 300.1 and HF - 300.2",
+      "lhs": "S",
+      "rhs": "maximum allowable stress value as given in Tables HF-300.1 and HF-300.2",
+      "line_no": 6604,
+      "line_span": [
+        6604,
+        6605
+      ],
+      "context": "P = design pressure [but not less than 30 psi (200 kPa)] \n\nS = maximum allowable stress value as given in \nTables HF-300.1 and HF-300.2 \n\nt = required wall thickness after forming",
+      "domain": "STRUCT",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "r = inside corner radius on the head formed by flang - ing or forging",
+      "lhs": "r",
+      "rhs": "inside corner radius on the head formed by flang- ing or forging",
+      "line_no": 6816,
+      "line_span": [
+        6816,
+        6817
+      ],
+      "context": "P = design pressure \n\nr = inside corner radius on the head formed by flang- \ning or forging \nS =■ maximum allowable stress value using values \n\ngiven in Tables HF-300.1 and HF-300.2",
+      "domain": "MATE",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "M = the total moment determined as in Section VIII, Division 1 , Appendix 2, 2 - 6, except that for heads",
+      "lhs": "M",
+      "rhs": "the total moment determined as in Section VIII, Division 1 , Appendix 2, 2-6, except that for heads",
+      "line_no": 7453,
+      "line_span": [
+        7453,
+        7454
+      ],
+      "context": "C = bolt circle diameter \nL = inside spherical or crown radius \nM = the total moment determined as in Section VIII, \nDivision 1 , Appendix 2, 2-6, except that for heads \nof the type shown in Fig. HG-309, sketch (d), a \nmoment H r h r (which may add or subtract) shall be \nincluded in addition to the moment H D h D where",
+      "domain": "BOLT",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "T = F + y F 2 + J where",
+      "lhs": "T",
+      "rhs": "F+ y F 2 + J where",
+      "line_no": 7812,
+      "line_span": [
+        7812,
+        7813
+      ],
+      "context": "(2) Range thickness \n\nT = F+ y F 2 + J \nwhere \n\nPB y 4L 2 - B 2",
+      "domain": "GEOM",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "B = factor determined from the applicable material chart in Subpart 3 of Section II, Part D for maxi -",
+      "lhs": "B",
+      "rhs": "factor determined from the applicable material chart in Subpart 3 of Section II, Part D for maxi-",
+      "line_no": 7875,
+      "line_span": [
+        7875,
+        7876
+      ],
+      "context": "material chart in Subpart 3 of Section II, Part D \n\nB = factor determined from the applicable material \nchart in Subpart 3 of Section II, Part D for maxi- \nmum design, metal temperature [see \nHG-312. 1(b)] \nD — outside diameter of furnace",
+      "domain": "MATE",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "d = the diameter in the given plane of the finished opening ( as depicted in Fig. HG - 326.1 )",
+      "lhs": "d",
+      "rhs": "the diameter in the given plane of the finished opening (as depicted in Fig. HG-326.1)",
+      "line_no": 8573,
+      "line_span": [
+        8573,
+        8574
+      ],
+      "context": "d = the diameter in the given plane of the finished \nopening (as depicted in Fig. HG-326.1) \n\nF = a correction factor that compensates for the varia- \ntion in pressure stresses on different planes with",
+      "domain": "GEOM",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "F = a correction factor that compensates for the varia - tion in pressure stresses on different planes with",
+      "lhs": "F",
+      "rhs": "a correction factor that compensates for the varia- tion in pressure stresses on different planes with",
+      "line_no": 8576,
+      "line_span": [
+        8576,
+        8577
+      ],
+      "context": "opening (as depicted in Fig. HG-326.1) \n\nF = a correction factor that compensates for the varia- \ntion in pressure stresses on different planes with \nrespect to the axis of a vessel. A value of 1.00 \nshall be used for all configurations except that \nFig. HG-321 may be used for integrally reinforced",
+      "domain": "GEOM",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "Ax = area in excess thickness in the boiler shell avail - able for reinforcement",
+      "lhs": "Ax",
+      "rhs": "area in excess thickness in the boiler shell avail- able for reinforcement",
+      "line_no": 13375,
+      "line_span": [
+        13375,
+        13376
+      ],
+      "context": "defined as follows: \n\nAx = area in excess thickness in the boiler shell avail- \nable for reinforcement \n\nA 2 = area in excess thickness in the nozzle wall avail- \nable for reinforcement",
+      "domain": "GEOM",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "d = diameter in the plane under consideration of the finished opening ( see HG - 321. 2 and",
+      "lhs": "d",
+      "rhs": "diameter in the plane under consideration of the finished opening (see HG-321. 2 and",
+      "line_no": 13389,
+      "line_span": [
+        13389,
+        13390
+      ],
+      "context": "HG-326; however, credit cannot be taken for any \nmaterial outside these limits) \nd = diameter in the plane under consideration of the \nfinished opening (see HG-321. 2 and \nFig. HG-326.1) \nEi = when an opening is in the solid plate or when the \nopening passes through a circumferential joint in",
+      "domain": "MATE",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "σ = maximum allowable stress value taken from Table HF - 300",
+      "lhs": "S",
+      "rhs": "maximum allowable stress value taken from Table HF-300",
+      "line_no": 13423,
+      "line_span": [
+        13423,
+        13424
+      ],
+      "context": "R n = inside radius of the nozzle under consideration \nS = maximum allowable stress value taken from \nTable HF-300 \n\nS n = allowable stress in nozzle (see S above)",
+      "domain": "MATE",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "C = 2.7 for stays welded to plates or for stays screwed through plates not over 7{ 6 in. ( 11 mm ) in thick -",
+      "lhs": "C",
+      "rhs": "2.7 for stays welded to plates or for stays screwed through plates not over 7{ 6 in. (11 mm) in thick-",
+      "line_no": 13888,
+      "line_span": [
+        13888,
+        13889
+      ],
+      "context": "C = 2.7 for stays welded to plates or for stays screwed \nthrough plates not over 7{ 6 in. (11 mm) in thick- \nness, with ends riveted over \n\nC = 2.8 for stays welded to plates or for stays screwed",
+      "domain": "GEOM",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "σ = maximum allowable stress value given in Tables HF - 300.1 and HF - 300.2",
+      "lhs": "S",
+      "rhs": "maximum allowable stress value given in Tables HF-300.1 and HF-300.2",
+      "line_no": 13977,
+      "line_span": [
+        13977,
+        13978
+      ],
+      "context": "r = radius of firebox corner \n\nS = maximum allowable stress value given in Tables \nHF-300.1 and HF-300.2 \n\nt = required thickness of plate",
+      "domain": "MATE",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "p = maximum pitch measured between the centers of tubes in different rows, which lines may be hori -",
+      "lhs": "p",
+      "rhs": "maximum pitch measured between the centers of tubes in different rows, which lines may be hori-",
+      "line_no": 14993,
+      "line_span": [
+        14993,
+        14994
+      ],
+      "context": "P = design pressure \n\np = maximum pitch measured between the centers of \ntubes in different rows, which lines may be hori- \nzontal, vertical, or inclined \n\nS = maximum allowable stress value given in",
+      "domain": "MATE",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "P = ( 1.10 x set pressure + 14.7 ) psia or ( 1.10 x set pressure + 0.101 ) MPa, for hot water applica -",
+      "lhs": "P",
+      "rhs": "(1.10 x set pressure + 14.7) psia or (1.10 x set pressure + 0.101) MPa, for hot water applica-",
+      "line_no": 16423,
+      "line_span": [
+        16423,
+        16424
+      ],
+      "context": "P = (1.10 x set pressure + 14.7) psia or (1.10 x set \npressure + 0.101) MPa, for hot water applica- \ntions or \n= (5.0 psi + 15 psi set + 14.7) psia or (0.035 MPa \n+ 0.100 MPa set + 0.101) MPa, for steam boilers",
+      "domain": "GEOM",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "H = hydrostatic test pressure coincident with the pro - portional limit of the weakest element of the com -",
+      "lhs": "H",
+      "rhs": "hydrostatic test pressure coincident with the pro- portional limit of the weakest element of the com-",
+      "line_no": 17004,
+      "line_span": [
+        17004,
+        17005
+      ],
+      "context": "H = hydrostatic test pressure coincident with the pro- \nportional limit of the weakest element of the com- \nponent part tested \n\nS = specified minimum tensile strength",
+      "domain": "MATE",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "M = the total moment determined as in Section VIII, Division 1, Appendix 2, 2 - 6, except that for heads",
+      "lhs": "M",
+      "rhs": "the total moment determined as in Section VIII, Division 1, Appendix 2, 2-6, except that for heads",
+      "line_no": 33144,
+      "line_span": [
+        33144,
+        33145
+      ],
+      "context": "M = the total moment determined as in Section VIII, \nDivision 1, Appendix 2, 2-6, except that for heads \nof the type shown in Fig. HC-311, sketch (c), a \nmoment H r h r (which may add or subtract) shall \nbe included in addition to the moment H D h D",
+      "domain": "DRIVE",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "T = F + J F 2 + J where",
+      "lhs": "T",
+      "rhs": "F+ J F 2 + J where",
+      "line_no": 33389,
+      "line_span": [
+        33389,
+        33390
+      ],
+      "context": "(2) Range thickness \n\nT = F+ J F 2 + J \nwhere \n\nPB^JAL 2 -B 2",
+      "domain": "GEOM",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "E = lowest efficiency of any joint in the head; use the efficiency specified in HLW - 402. For seamless",
+      "lhs": "E",
+      "rhs": "lowest efficiency of any joint in the head; use the efficiency specified in HLW-402. For seamless",
+      "line_no": 37351,
+      "line_span": [
+        37351,
+        37352
+      ],
+      "context": "nal axis, in. (mm) \n\nE = lowest efficiency of any joint in the head; use the \nefficiency specified in HLW-402. For seamless \nheads, use E = 1. \n\nL = inside spherical or crown radius, in. (mm)",
+      "domain": "GEOM",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "σ = maximum allowable stress value from Tables HLW - 300, HF - 300.1, and HF - 300.2, psi ( MPa )",
+      "lhs": "S",
+      "rhs": "maximum allowable stress value from Tables HLW-300, HF-300.1, and HF-300.2, psi (MPa)",
+      "line_no": 37370,
+      "line_span": [
+        37370,
+        37371
+      ],
+      "context": "S = maximum allowable stress value from Tables \nHLW-300, HF-300.1, and HF-300.2, psi (MPa) \n\nt = required wall thickness, exclusive of liner, in. \n(mm)",
+      "domain": "STRUCT",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "W = weight of steam generated / hr, lb The sum of the safety valve capacities marked on the",
+      "lhs": "W",
+      "rhs": "weight of steam generated/hr, lb The sum of the safety valve capacities marked on the",
+      "line_no": 41550,
+      "line_span": [
+        41550,
+        41551
+      ],
+      "context": "B-102) \nW = weight of steam generated/hr, lb \nThe sum of the safety valve capacities marked on the \nvalves shall be equal to or greater than W.",
+      "domain": "MASS",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    },
+    {
+      "expr": "L = center - to - center distance between two adjacent stiffening rings, in.",
+      "lhs": "L",
+      "rhs": "center-to-center distance between two adjacent stiffening rings, in.",
+      "line_no": 41713,
+      "line_span": [
+        41713,
+        41714
+      ],
+      "context": "H r = height of stiffening ring, in. \n\nL = center-to-center distance between two adjacent \nstiffening rings, in. \n\nP = design pressure, psi (30 psi min.) (per HG-300)",
+      "domain": "GEOM",
+      "ocr_degraded": true,
+      "confidence": "LOW",
+      "form": "multiline"
+    }
+  ]
+}

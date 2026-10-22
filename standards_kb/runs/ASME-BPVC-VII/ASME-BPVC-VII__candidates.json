@@ -1,0 +1,10 @@
+{
+  "schema": "standards_kb.candidates/1.0",
+  "source_id": "ASME-BPVC-VII",
+  "file": "runs\\ASME-BPVC-VII\\asme_bpvc_vii_2010_djvu.txt",
+  "generated_at": "2026-10-22T10:02:55+08:00",
+  "text_chars": 520908,
+  "candidate_count": 0,
+  "note": "全部为 CANDIDATE,confidence=LOW。抽取器不判定正确性,须人工/Agent 复核后转成公式条目。",
+  "candidates": []
+}

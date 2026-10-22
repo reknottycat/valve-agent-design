@@ -1,0 +1,53 @@
+{
+  "source_id": "ASME-B31.9",
+  "standard_id": "ASME-B31.9",
+  "registry": {
+    "family": "ASME",
+    "kind": "MECHANICS",
+    "body_status": "FULL_TEXT_MIRROR",
+    "title": "ASME B31.9-2008 — Metal Piping",
+    "url": null
+  },
+  "has_body": true,
+  "files": [
+    {
+      "filename": "ASME-B31.9__candidates.json",
+      "kind": "json",
+      "bytes": 768,
+      "sha256": "f727c38b0cc0bc5c22499fab78c30874797f4ab7fa21c7514d0b687f1adba533",
+      "file_mtime": "2026-10-22T08:58:29+08:00"
+    },
+    {
+      "filename": "ASME-B31.9__pdfcandidates.json",
+      "kind": "json",
+      "bytes": 2774,
+      "sha256": "2b186df4c271d8cc37b653ac8fe1418e03307352f1ffce37fffa144e8b638d19",
+      "file_mtime": "2026-10-22T10:02:57+08:00"
+    },
+    {
+      "filename": "asme_b31_9_2008.pdf",
+      "kind": "pdf",
+      "bytes": 7898038,
+      "sha256": "e52b523ffa1c71fece11ce2b4f2dde2b14c8bba9ffb876fbaf40f7ea7e5fa93d",
+      "file_mtime": "2026-10-22T09:41:25+08:00",
+      "pages": 94
+    },
+    {
+      "filename": "b31_9_djvu.txt",
+      "kind": "text",
+      "bytes": 265499,
+      "sha256": "9a684f42dce1fe1fca463506b51417b4ccc4cc12201cd0d37cb23aee8123c81e",
+      "file_mtime": "2026-10-22T08:54:35+08:00",
+      "chars": 265165,
+      "lines": 19250
+    }
+  ],
+  "candidates_extracted": 5,
+  "candidate_files": [
+    "ASME-B31.9__candidates.json (1 条)",
+    "ASME-B31.9__pdfcandidates.json (4 条)"
+  ],
+  "curated_entries": [],
+  "curated_data_entries": [],
+  "rebuilt_at": "2026-10-22T12:56:12+08:00"
+}

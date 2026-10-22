@@ -1,0 +1,125 @@
+{
+  "schema": "standards_kb.data_spec/1.0",
+  "standard_id": "ГОСТ 1536-76",
+  "standard_title_zh": "船用管路系统法兰 —— 连接尺寸与密封面",
+  "standard_title_orig": "Фланцы судовых трубопроводов. Присоединительные размеры и уплотнительные поверхности",
+  "body_status": "LOCAL_FILE",
+  "raw_tables": "kb/data/raw/gost_1536_76_tables.json",
+  "source_file": "runs/GOST-LOCAL/gost_1536_76.txt",
+  "upstream": "allgosts.ru 镜像 -> 项目内缓存 gost1536/gost1536.htm -> 本库 runs/GOST-LOCAL/",
+  "extraction_method": "HTML_TABLE",
+  "evidence": {
+    "grade": "E1",
+    "status": "UNVERIFIED_CLAUSE",
+    "note": "表头与数据列数自洽、数值合理,但正文来自第三方镜像而非官方出版物,未与印本逐字核对。需要定案时应以官方版为准。"
+  },
+  "column_sets": {
+    "basic": [
+      { "key": "Dn", "name_zh": "条件通径", "name_orig": "Проход условный, Dy", "unit": "mm" },
+      { "key": "D", "name_zh": "法兰外径", "name_orig": "D", "unit": "mm" },
+      { "key": "D1", "name_zh": "密封面外径(对接面外径)", "name_orig": "D1", "unit": "mm" },
+      { "key": "D2", "name_zh": "密封面内径(凸面密封直径)", "name_orig": "D2", "unit": "mm" },
+      { "key": "q", "name_zh": "密封槽深度", "name_orig": "q", "unit": "mm" },
+      { "key": "groove_count", "name_zh": "密封槽数量", "name_orig": "Уплотнительные канавки — Количество", "unit": "dimensionless" },
+      { "key": "bolt_count", "name_zh": "螺栓数量", "name_orig": "Болты — Количество", "unit": "dimensionless" },
+      { "key": "bolt_thread", "name_zh": "螺栓螺纹规格", "name_orig": "Болты — Резьба", "unit": "thread" }
+    ],
+    "high_p": [
+      { "key": "Dn", "name_zh": "条件通径", "name_orig": "Проход условный, Dy", "unit": "mm" },
+      { "key": "D", "name_zh": "法兰外径", "name_orig": "D", "unit": "mm" },
+      { "key": "D1", "name_zh": "密封面外径(对接面外径)", "name_orig": "D1", "unit": "mm" },
+      { "key": "D2", "name_zh": "密封面内径", "name_orig": "D2", "unit": "mm" },
+      { "key": "D3", "name_zh": "密封台阶外径", "name_orig": "D3", "unit": "mm" },
+      { "key": "D4", "name_zh": "密封台阶内径", "name_orig": "D4", "unit": "mm" },
+      { "key": "D5", "name_zh": "凹面密封外径", "name_orig": "D5", "unit": "mm" },
+      { "key": "D6", "name_zh": "凹面密封内径", "name_orig": "D6", "unit": "mm" },
+      { "key": "f", "name_zh": "密封台阶高度", "name_orig": "f", "unit": "mm" },
+      { "key": "bolt_count", "name_zh": "螺栓/双头螺柱数量", "name_orig": "Болты(Шпильки) — Количество", "unit": "dimensionless" },
+      { "key": "bolt_thread", "name_zh": "螺栓/双头螺柱螺纹规格", "name_orig": "Болты(Шпильки) — Резьба", "unit": "thread" }
+    ]
+  },
+  "tables": [
+    {
+      "index": 1,
+      "id": "D-GOST1536-PN025",
+      "title_zh": "法兰连接尺寸(公称压力 ≤ 0.25 МПа / 2.5 кгс/см²)",
+      "clause": "Таблица 1",
+      "chart_ref": "Черт. 1",
+      "pressure_mpa": 0.25,
+      "column_set": "basic"
+    },
+    {
+      "index": 2,
+      "id": "D-GOST1536-PN063",
+      "title_zh": "法兰连接尺寸(公称压力 ≤ 0.63 МПа / 6.3 кгс/см²)",
+      "clause": "Таблица 2",
+      "chart_ref": "Черт. 2",
+      "pressure_mpa": 0.63,
+      "column_set": "basic",
+      "project_usage": [
+        {
+          "task": "T15 / 设计输入基线",
+          "status": "已核对",
+          "note": "522-35.4179СБ 为 DN200、PN6(设计压力 0.588 МПа),落在 Ру ≤ 0.63 МПа 档。查得 D=295、D1=264、D2=247、密封槽 q=1mm×2 道、螺栓 12×М14。螺栓规格由此从「按 ф15 孔推定 M14」升级为「标准表可查」。"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "id": "D-GOST1536-PN10",
+      "title_zh": "法兰连接尺寸(公称压力 ≤ 1.0 МПа / 10 кгс/см²)",
+      "clause": "Таблица 3",
+      "pressure_mpa": 1.0,
+      "column_set": "basic"
+    },
+    {
+      "index": 4,
+      "id": "D-GOST1536-PN16",
+      "title_zh": "法兰连接尺寸(公称压力 ≤ 1.6 МПа / 16 кгс/см²)",
+      "clause": "Таблица 4",
+      "pressure_mpa": 1.6,
+      "column_set": "basic"
+    },
+    {
+      "index": 5,
+      "id": "D-GOST1536-PN25",
+      "title_zh": "法兰连接尺寸(公称压力 ≤ 2.5 МПа / 25 кгс/см²)",
+      "clause": "Таблица 5",
+      "pressure_mpa": 2.5,
+      "column_set": "basic"
+    },
+    {
+      "index": 6,
+      "id": "D-GOST1536-PN40",
+      "title_zh": "法兰连接尺寸(公称压力 ≤ 4.0 МПа / 40 кгс/см²)",
+      "clause": "Таблица 6",
+      "chart_ref": "Черт. 3",
+      "pressure_mpa": 4.0,
+      "column_set": "high_p"
+    },
+    {
+      "index": 7,
+      "id": "D-GOST1536-PN63",
+      "title_zh": "法兰连接尺寸(公称压力 ≤ 6.3 МПа / 63 кгс/см²,双头螺柱连接)",
+      "clause": "Таблица 7",
+      "chart_ref": "Черт. 3",
+      "pressure_mpa": 6.3,
+      "column_set": "high_p"
+    }
+  ],
+  "usage": {
+    "where": [
+      "阀门法兰接口尺寸确定(D、D1、D2)",
+      "配套管法兰选型与对中检查",
+      "螺栓规格与数量确定(连接件规格不是猜的)",
+      "密封槽形式与深度确定(决定垫片形式)"
+    ],
+    "how": "先按设计压力选定对应公称压力表(Ру ≤ 设计压力的那一档),再按条件通径 Dn 查行。DN200 且设计压力 0.588 МПа 查 Таблица 2:D=295、D1=264、D2=247、密封槽 q=1mm×2 道、螺栓 12×М14。",
+    "pitfalls": [
+      "本表只覆盖 Ру ≤ 0.25 / 0.63 / 1.0 / 1.6 / 2.5 / 4.0 / 6.3 МПа 七档,超出范围无表可查",
+      "D2(密封面内径)随压力等级变化,不可跨表套用",
+      "密封槽是按标准形状加工的,现场自行车制槽会破坏密封面配合",
+      "该标准允许按 ГОСТ 12815 的连接尺寸替代(第 1 条),替代件需单独核对"
+    ]
+  }
+}

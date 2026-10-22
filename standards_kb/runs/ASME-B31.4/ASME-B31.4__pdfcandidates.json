@@ -1,0 +1,84 @@
+{
+  "schema": "standards_kb.candidates/1.0",
+  "method": "pdf_layout_row",
+  "source_id": "ASME-B31.4",
+  "pdf": "..\\runs\\ASME-B31.4\\asme_b31_4_2002.pdf",
+  "pages_scanned": 127,
+  "generated_at": "2026-10-22T10:02:56+08:00",
+  "candidate_count": 6,
+  "note": "基于 PDF 版面坐标重建行。仍为 CANDIDATE/LOW,须复核。",
+  "candidates": [
+    {
+      "expr": "tn = t + A",
+      "lhs": "tn",
+      "rhs": "t + A",
+      "page": 33,
+      "line_no": 37,
+      "context": "or dimensional standards included in this Code by   determined in accordance with the following equation.\nreference in Appendix A.\ntn = t + A\n402.5 Fracture Propagation in Carbon Dioxide\n(b) The notations described below are used in the",
+      "domain": "GEOM",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "pdf_layout_row"
+    },
+    {
+      "expr": "Aj = Do ( Th - th )",
+      "lhs": "Aj",
+      "rhs": "Do (Th - th)",
+      "page": 37,
+      "line_no": 57,
+      "context": "branch connection shall not exceed the outside diameter\nof the branch connection by more than 1/4 in. (6 mm).\nAj = Do (Th - th)\n(3) Reinforcement for branch connections with\n(b) Area A2. The area lying within the reinforce-   hole cut NPS 2 or smaller is not required [see Fig.",
+      "domain": "GEOM",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "pdf_layout_row"
+    },
+    {
+      "expr": "A_2 = 2L ( TiJ - t{ ))",
+      "lhs": "A2",
+      "rhs": "2L (TiJ -   t{))",
+      "page": 37,
+      "line_no": 64,
+      "context": "and other external forces to which these small branch\nconnections are frequently subjected.\nA2 = 2L (TiJ -   t{))\n(4) Reinforcement of opening is not mandatory;\n(c) Area A3• The area lying within the reinforce-   however, reinforcement may be required for cases in-",
+      "domain": "GEOM",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "pdf_layout_row"
+    },
+    {
+      "expr": "Al = ( Th - thl d",
+      "lhs": "Al",
+      "rhs": "(Th -   thl d",
+      "page": 42,
+      "line_no": 11,
+      "context": "Reinforcement area required AR = dth\nArea available as reinforcement = Al +Az + A3\nAl = (Th -   thl d\nA2 = 2 (Tb -   tbl L\nA3 = summation of area of all added reinforcement, including",
+      "domain": "GEOM",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "pdf_layout_row"
+    },
+    {
+      "expr": "A_2 = 2 ( Tb - tbl L",
+      "lhs": "A2",
+      "rhs": "2 (Tb -   tbl L",
+      "page": 42,
+      "line_no": 12,
+      "context": "Area available as reinforcement = Al +Az + A3\nAl = (Th -   thl d\nA2 = 2 (Tb -   tbl L\nA3 = summation of area of all added reinforcement, including\nweld areas that lie within the \"area of reinforcement\"",
+      "domain": "GEOM",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "pdf_layout_row"
+    },
+    {
+      "expr": "ro = see Note ( 11 )",
+      "lhs": "ro",
+      "rhs": "see Note (11)",
+      "page": 51,
+      "line_no": 35,
+      "context": "d = outside diameter of branch\nr = mean radius of matching pipe, in. (mm)\nro = see Note (11)\n5 = miter spacing at center line\nt = nominal wall thickness of: part itself, for elbows and curved or mited bends; matching pipe, for welding tees; run or headel', for",
+      "domain": "STRUCT",
+      "ocr_degraded": false,
+      "confidence": "LOW",
+      "form": "pdf_layout_row"
+    }
+  ]
+}

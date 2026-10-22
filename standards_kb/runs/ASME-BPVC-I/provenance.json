@@ -1,0 +1,63 @@
+{
+  "source_id": "ASME-BPVC-I",
+  "standard_id": "ASME-BPVC-I",
+  "registry": {
+    "family": "ASME",
+    "kind": "MECHANICS",
+    "body_status": "FULL_TEXT_MIRROR",
+    "title": "ASME BPVC Section I-2010 — Boilers and Pressure Vessels",
+    "url": null
+  },
+  "has_body": true,
+  "files": [
+    {
+      "filename": "ASME-BPvc-I__candidates.json",
+      "kind": "json",
+      "bytes": 29445,
+      "sha256": "feb5d097baab8487e6cb4e3fa34e0404d0b213313706d7ee9c1dff2bf5c6f958",
+      "file_mtime": "2026-10-22T08:59:42+08:00"
+    },
+    {
+      "filename": "ASME-BPvc-I__pdfcandidates.json",
+      "kind": "json",
+      "bytes": 29574,
+      "sha256": "d2c1a18313734d7daf264e7a38a976d4c08e985033fe954da7a7ac83dc41865b",
+      "file_mtime": "2026-10-22T09:01:06+08:00"
+    },
+    {
+      "filename": "bpvc_i.pdf",
+      "kind": "pdf",
+      "bytes": 18248482,
+      "sha256": "c695d2fdf48964d393255ac872e159e90b6dd04bdc5c66d2dce15a5282a305a9",
+      "file_mtime": "2026-10-22T09:00:27+08:00",
+      "pages": 341
+    },
+    {
+      "filename": "bpvc_i_djvu.txt",
+      "kind": "text",
+      "bytes": 1121675,
+      "sha256": "959a74aafb1705215a15c03c674ba13f6760fc0c847cc93ba45ebaa638c44eae",
+      "file_mtime": "2026-10-22T08:58:51+08:00",
+      "chars": 1119329,
+      "lines": 82536
+    }
+  ],
+  "candidates_extracted": 116,
+  "candidate_files": [
+    "ASME-BPvc-I__candidates.json (55 条)",
+    "ASME-BPvc-I__pdfcandidates.json (61 条)"
+  ],
+  "curated_entries": [
+    "F-MAT-002",
+    "F-STR-003",
+    "F-STR-004",
+    "F-STR-005",
+    "F-STR-006",
+    "F-STR-007",
+    "F-TEST-001",
+    "F-TEST-002",
+    "F-TEST-003"
+  ],
+  "curated_data_entries": [],
+  "rebuilt_at": "2026-10-22T12:56:12+08:00"
+}
