@@ -1,0 +1,228 @@
+{
+  "scope": "Readback of identified historical records, not exhaustive search of all remote archives or new mesh execution",
+  "sources": [
+    {
+      "path": "/workspace/shared/nsc1-960-audit/20261012-P08-LOCAL2506.json",
+      "sha256": "3f03da8aa8979fbfc515de2aef2a29ad648a8b9eb9471782a2ff3dab58f7e273"
+    },
+    {
+      "path": "/workspace/shared/nsc1-960-audit/20261012-P06-FULLSTAR-R04.json",
+      "sha256": "0a64e96464a724fed490f7e82265fc41c215a3b81e9f10bf286836b34cca83d0"
+    },
+    {
+      "path": "/workspace/shared/valve-mesh-baseline-20261022/source/valve-source-increment-P08-20261012/A02/LATEST_RECOVERY_INDEX.json",
+      "sha256": "86c736738a376e3736961bf3dabdfd11b946eed30dfac8c4835beb821a95c508"
+    }
+  ],
+  "P08_latest_identified_report_utc": "2026-10-12T13:48:38.419950+00:00",
+  "P08_progress": {
+    "actual_background_cells": 1049664,
+    "actual_background_faces": 3188188,
+    "actual_background_points": 1089270,
+    "surfaceCheck_closed_no_illegal_triangles_no_self_intersections": true,
+    "surfaceCheck_two_original_boundary_shells_not_two_fluid_regions": true,
+    "source_surface_low_triangle_quality_approximately": 3.47e-10,
+    "last_completed_surface_iteration": 9,
+    "pre_retained_cells": 8346191,
+    "faces": 26491930,
+    "points": 9807674,
+    "next_iteration10_selected_cells": 61,
+    "next_iteration10_completed_count_not_printed": true,
+    "original_source_torus_error_limits_unchanged": true,
+    "domain_retention_completed": false,
+    "snap_completed": false,
+    "full_allGeometry_allTopology_checkMesh_executed": false,
+    "CFD_executed": false,
+    "materialized_polyMesh_only_background": true,
+    "not_saved_final_8346191_cell_mesh": true
+  },
+  "P08_stop": {
+    "native_PID": 425,
+    "snappy_started_utc": "2026-10-12T13:19:14.771142+00:00",
+    "snappy_ended_utc": "2026-10-12T13:25:19.083823+00:00",
+    "snappy_elapsed_seconds": 364.312681,
+    "snappy_exit_code": -15,
+    "signal": "SIGTERM",
+    "trigger_utc": "2026-10-12T13:25:17.455257+00:00",
+    "research_host_commit_or_physical_floor_GiB": 4.5,
+    "trigger_available_commit_bytes": 4726157312,
+    "trigger_available_physical_bytes": 12572942336,
+    "trigger_snappy_RSS_bytes": 7982923776,
+    "sampled_process_peak_VmPeak_bytes": 10761834496,
+    "child_RLIMIT_AS_bytes": 13958643712,
+    "child_13GiB_AS_limit_hit": false,
+    "native_allocator_error_observed": false,
+    "native_time2400s_limit_hit": false,
+    "disk_stop_triggered": false,
+    "VmSwap_samples_zero": true,
+    "host_monitor_total_elapsed_seconds": 441.44,
+    "host_minimum_available_physical_bytes": 11812970496,
+    "host_minimum_available_commit_bytes": 4726157312,
+    "other_process_or_CAD_physical_failure_attribution_claimed": false,
+    "13GiB_sufficiency_or_necessity_established": false,
+    "kernel_VmHWM_peak_RSS_bytes": 10027438080,
+    "host_441_rows_max_sampled_VmRSS_bytes": 9709424640,
+    "host_441_rows_max_sampled_VmRSS_utc": "2026-10-12T13:24:33.404013+00:00",
+    "peak_HWM_sampled_VmRSS_and_trigger_VmRSS_are_different_measures": true,
+    "executor_research_host_reserve_target_GiB": 4,
+    "executor_early_response_margin_GiB": 0.5,
+    "4_and4p5GiB_are_executor_research_resource_targets_not_user_or_quality_limits": true,
+    "every_instant_above_4GiB_proven": false,
+    "only_task_created_process_group_SIGTERM_requested": true,
+    "native_child_wait_and_exit_minus15_recorded": true,
+    "runner_current_pid_null_recorded": true,
+    "Windows_WSL_wait_exit_code": 1,
+    "post_stop_full_process_group_enumeration_in_bundle": false,
+    "post_stop_host_memory_recovery_samples_in_bundle": false
+  },
+  "P08_recovery_metadata": {
+    "library_file_id": "libfile_04bfca9e4fbc81919df18a934bd88edf",
+    "version": 0,
+    "bytes": 61172,
+    "sha256": "79970431eaa5efaa8fddada5ed72ea0ae1a68522b4409671eeb0f9f5c8c3ba2c",
+    "ZIP_members": 39,
+    "original_evidence_files": 37,
+    "all37_source_SHA_size_rechecked": true,
+    "original_paths_only_in_local_recovery_evidence_not_published_payload": true,
+    "background_OBJ_eMesh_runtime_excluded": true,
+    "scientific_fresh_checkout_replay_claimed": false
+  },
+  "R04_saved_whole": {
+    "version": "R04",
+    "cells": 6939161,
+    "points": 2775097,
+    "boundary_faces": 1305074,
+    "MSH_bytes": 604788485,
+    "MSH_sha256": "a6718c48f564a794d5f18831897f687d6170457f3745fd4c0ed4c2dd6f4c055a",
+    "baseline_R03_MSH_sha256": "c8591f58c4e7824f63be8ba944bb9bcea1a47020cec7fefd5fd1efc3510b4aed",
+    "unused_original_points_removed_after_complete_scan": 11,
+    "new_points": 40,
+    "fixed_inner_prefix_cells": 4032528,
+    "fixed_inner_source_row_tails_byte_identical": true,
+    "new_body_tags": [
+      6,
+      2
+    ],
+    "new_true_wall_physical_tag": 1,
+    "new_true_wall_CAD_tags": [
+      9,
+      19
+    ],
+    "new_true_wall_triangles": 29,
+    "new_true_wall_quads": 6,
+    "local_diagnostic_tags_not_emitted": true,
+    "all13_cut_faces_internal": true,
+    "original_analytic_CAD_unchanged": true,
+    "R03_to_R04_PWL_volume_change_mm3": 2.96560949691e-10,
+    "R03_prior_PWL_volume_change_mm3": 0.000840777382040404,
+    "R32_shared_boundary_unchanged": true,
+    "other_packing_boundaries_unchanged": true
+  },
+  "R04_native_quality": {
+    "actual_terminal_utc": "2026-10-12T09:02:07.402364+00:00",
+    "official_allGeometry_allTopology": true,
+    "one_region": true,
+    "failed_checks": 3,
+    "det_before_after": [
+      14281,
+      14277
+    ],
+    "weight_before_after": [
+      3881,
+      3881
+    ],
+    "ratio_before_after": [
+      2,
+      2
+    ],
+    "over70_nonorth_faces_before_after": [
+      278706,
+      278718
+    ],
+    "max_nonorth_degrees": 85.77203769437484,
+    "max_aspect": 82.51534448689115,
+    "max_skewness": 3.6257266704554225,
+    "single_mm_to_m_scale": 0.001,
+    "CFD_started": false,
+    "stage_execution": [
+      {
+        "stage": "gmshToFoam_actual_layer",
+        "elapsed_seconds": 52.42909788401448,
+        "sampled_peak_RSS_bytes": 5749268480,
+        "MemAvailable_minimum_bytes": 2702344192,
+        "exit_code": 0,
+        "terminated_for": null
+      },
+      {
+        "stage": "transformPoints_mm_to_m",
+        "elapsed_seconds": 4.4281045839888975,
+        "sampled_peak_RSS_bytes": 129314816,
+        "MemAvailable_minimum_bytes": 8344309760,
+        "exit_code": 0,
+        "terminated_for": null
+      },
+      {
+        "stage": "checkMesh_allGeometry_allTopology",
+        "elapsed_seconds": 121.02075375799905,
+        "sampled_peak_RSS_bytes": 6884163584,
+        "MemAvailable_minimum_bytes": 1628114944,
+        "exit_code": 0,
+        "terminated_for": null
+      }
+    ]
+  },
+  "historical_mesh_archives": [
+    {
+      "library_file_id": "libfile_5e47e4f6dc3481918ae3b5fbdb9f50b8",
+      "version": 0,
+      "archive": "valve-recoverable-cache-release-20261012/R04_WHOLE_GENERATED_MSH_A01.zip",
+      "bytes": 199194004,
+      "sha256": "86574cbf6cb8f853ee96c3160c239e09cf9b707e355f95c7552273ac59d64f32",
+      "verification": "R04_WHOLE_GENERATED_MSH_A01_ARCHIVE_VERIFIED.json"
+    },
+    {
+      "library_file_id": "libfile_c79e46f02a2c819187c3bbe8ee4652d5",
+      "version": 0,
+      "archive": "valve-recoverable-cache-release-20261012/R04_NATIVE_GENERATED_POLYMESH_A01.zip",
+      "bytes": 304170210,
+      "sha256": "58acfe950dad11a7074779f06ce26be846087ee9451acf315eca8942aefb7241",
+      "verification": "R04_NATIVE_GENERATED_POLYMESH_A01_ARCHIVE_VERIFIED.json"
+    },
+    {
+      "library_file_id": "libfile_01e388d202c88191844e87d508197789",
+      "version": 0,
+      "archive": "valve-recoverable-cache-release-20261012/P06_W01_GENERATED_FACE_ARRAYS_A01.zip",
+      "bytes": 495247709,
+      "sha256": "4cbf4d0d53c8ddf0bb61f2a80cae7f0fe8437c1acf9a221e7b933f32c5c968d6",
+      "verification": "P06_W01_GENERATED_FACE_ARRAYS_A01_ARCHIVE_VERIFIED.json"
+    },
+    {
+      "library_file_id": "libfile_9bfa962b6dd48191a838efdc670fedc7",
+      "version": 0,
+      "archive": "valve-recoverable-cache-release-20261012/R03_WHOLE_GENERATED_MSH_A01.zip",
+      "bytes": 199194486,
+      "sha256": "80bf9c76244c342ef57315b5befb8bad9c4425c59b9050225c04449d65fc2fb6",
+      "verification": "R03_WHOLE_GENERATED_MSH_A01_ARCHIVE_VERIFIED.json"
+    },
+    {
+      "library_file_id": "libfile_b73b5f708cf081918a9df8ccfda00108",
+      "version": 0,
+      "archive": "valve-recoverable-cache-release-20261012/R03_NATIVE_GENERATED_POLYMESH_A01.zip",
+      "bytes": 304166405,
+      "sha256": "345231f97656016f05d71d99b2e54ef4d36ab4fa8a730cec4348d31ad9c5b72e",
+      "verification": "R03_NATIVE_GENERATED_POLYMESH_A01_ARCHIVE_VERIFIED.json"
+    }
+  ],
+  "P08_final_mesh_available_from_these_records": false,
+  "R04_generated_mesh_recoverable_by_index": true,
+  "R04_quality_passed": false,
+  "P08_counter_is_checkpoint": false,
+  "new_computation_executed": false,
+  "missing_P08_final_artifacts": [
+    "retained/snapped constant/polyMesh/{points,faces,owner,neighbour,boundary}, or identified final time-directory equivalent, with hashes",
+    "matching final checkMesh -allGeometry -allTopology log AND interpreted failed-check counts; exit code alone is insufficient",
+    "retained inlet/outlet/wall boundary area/orientation/source-surface correspondence and micro-passage connectivity evidence"
+  ],
+  "next_bounded_action": "Read existing local2506 61,172-byte evidence archive runner/guard/receipt and current runtime resource inventory; prepare an explicit changed-resource or changed-retention-stage small trial proposal. Do not restart identical failed run or treat pre-retention count as resume checkpoint.",
+  "stop_condition": "Evidence distinction and exact recoverable identities established; no large archive download, mesh generation or CFD"
+}
