@@ -1,0 +1,11 @@
+test_actual_scope_and_integrity (test_probe_step.Test.test_actual_scope_and_integrity) ... ok
+test_bbox_adapter (test_probe_step.Test.test_bbox_adapter) ... ok
+test_multiline_unit (test_probe_step.Test.test_multiline_unit) ... ok
+test_no_cross_entity_leak (test_probe_step.Test.test_no_cross_entity_leak) ... ok
+test_no_unit_not_assumed (test_probe_step.Test.test_no_unit_not_assumed) ... ok
+test_units (test_probe_step.Test.test_units) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.000s
+
+OK

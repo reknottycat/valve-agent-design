@@ -1,0 +1,11 @@
+# Real read-only CAD provider probe — 2026-10-22
+
+Current cloud supports Python CadQuery 2.7.0 and OCP 7.8.1.1. Absence of a `FreeCAD` executable on PATH does **not** establish absence of CAD capability.
+
+Source: [AGR1 closed assembly](https://drive.google.com/file/d/1p-jIXdsgX9-I2pPdB0KpcXoexSlqiebu/view). One 1,274,477-byte original STEP was downloaded, SHA256 `4720192e2fb9d4c26b9a4b2be521d29508667eda67bd9301a9273df11c570fff`. The source remains in cloud attachments, not in this source deliverable or GitHub binary payload.
+
+Actual read-only import: valid Compound, 12 solids, 12 shells, 317 faces. STEP explicitly declares millimetre length units. Imported bbox approximately 600 × 360 × 774 mm. Sum of individual solid volumes 24,427,734.026772566 mm³. **This is not a fused union volume.** No intersection, interference/contact, assembly-fit, dimensional drawing conformance, manufacturing qualification, healing, boolean, meshing, CFD or output CAD generation was performed. Kernel `isValid()` is only topology/geometry validity of the imported representation, not engineering/manufacturing acceptance.
+
+Scope: this is the **closed AGR1 assembly**, not the P08 open fluid domain. No inference of P08's 57 mm lift or final patch outward normals is made. Exact next evidence is the P08 original open-fluid STEP pinned SHA `a9aeb45996a388a3d894f69605205c70c25edd154adc6d3c71658329a730e787`, or its oriented source triangles plus CAD face identities and disc/seat closed/open datum correspondence. The current source supplement references these but does not include their geometry bytes. Two Library searches for FDG1/AGR1 returned no matches; this is not proof the archive lacks them. No 56 MB P08 source package or full mesh was downloaded this probe.
+
+Reproduce: `python3 probe_step.py /path/to/AGR1_closed_assembly.step --scope 'AGR1 closed assembly; NOT P08 open fluid domain'`. Do not run against a different STEP and retain this scope label. Output includes input hash, kernel versions, per-solid measurements and original-file integrity check. `python3 -m unittest -v`: 6 tests passed, including sanity assertions on the saved actual result (unit tests do not re-import CAD). The source import completed in seconds and emitted a nonfatal ezdxf cache-directory warning; no cache permission escalation was attempted.
