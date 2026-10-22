@@ -5,6 +5,15 @@
 
 覆盖三族：**GB/T（国标）· ASME（美标）· ГОСТ（俄标）**。
 
+> **本仓库是独立知识库**，从 [`reknottycat/valve-agent-design`](https://github.com/reknottycat/valve-agent-design)
+> （AI 阀门自主设计项目）拆出。阀门项目大量参考 REA 一类项目的数据源形态 —— 把标准里的
+> 计算方式、厚度构建方式、系数与限值沉淀成**可复用的数据源**，而不是每次重新翻标准。
+> 本库负责沉淀**标准侧**的公式 / 数据 / 参数 / 本体，供项目直接调用。
+>
+> **📊 当前状态：已搞定 4 层架构（93 条条目）+ 135 项负向注入自测；
+> 未搞定项、外部阻塞、以及「没有标准的超低温/超高压场景怎么办」的完整设计，
+> 见 [`STATUS.md`](STATUS.md)。**
+
 **版本**：`v1.2.0+20261022` —— 版本号规则 = **semver + 内容落库日期**（`+YYYYMMDD`）。
 语义化版本按**资产内容**递增（新增标准族/新增数据表族/**新增知识对象层**/**新增本体映射层** → minor；修正正文数值或证据等级 → patch），
 `+` 后是该次落库日期，便于把版本和 `runs/fetch_manifest.json` 的 `updated_at` 对齐。
@@ -153,6 +162,7 @@ standards_kb/
 │  ├─ sources.yaml           标准源登记表（4 族 24 源，手写，人读）
 │  └─ registry.json          由 tools/registry_dump.py 生成（机器读）
 ├─ tools/                    挖掘管线（fetch → parse → extract → validate → index）
+│  └─ probes/                历史一次性探测脚本（GB 三步链路/精灵图/IBR 的探索过程，**非管线**）
 ├─ runs/                     已抓取的正文（不进 git，大文件）
 │  ├─ ASME-B16.9/ ASME-B31.1/ ASME-B31.4/ ASME-B31.8/ ASME-B31.9/
 │  ├─ ASME-BPVC-I/ ASME-BPVC-IV/ ASME-BPVC-VII/ ASME-BPVC-IX/
@@ -165,6 +175,8 @@ standards_kb/
    ├─ DATA_INDEX.md          数据表索引 + 字段字典
    ├─ PARAMETER_INDEX.md     参数索引（值 + 判据 + 跨层引用）
    └─ ONTOLOGY_INDEX.md      本体索引（跨标准对齐 + 物理量 + 碰撞 + 易混对）
+├─ STATUS.md                 当前状态全景（搞定 / 没搞定 / 阻塞 / 下一步）
+└─ .gitignore
 ```
 
 ---
@@ -396,6 +408,9 @@ python tools/raster_crop.py <pdf> <page> --probe x0 x1 y0 y1            # 只探
 
 ## 当前状态
 
+> 完整的「搞定了什么 / 没搞定什么 / 卡在哪 / 下一步建什么」见 **[`STATUS.md`](STATUS.md)**。
+> 下表只是资产计数快照。
+
 | 项 | 数 |
 |---|---|
 | 公式条目 | **23 条**（已核 10 / 待核 3 / 条款未核 10） |
@@ -495,6 +510,15 @@ python tools/provenance.py --report   # 打印人类可读台账
 
 ## 相关文档
 
-- `F:\设计探索\README.md` —— 项目总纲与 E0–E3 证据分级（本库继承此口径）
-- `F:\设计探索\图纸\AI阀门自主设计_边界与Agent执行方案_v1.0.md` —— 设计输入边界
-- `F:\设计探索\runs\20261006\C0\10_handoff\设计输入基线报告_522-35-4179.md` —— 阻塞项 B1–B6
+- [`STATUS.md`](STATUS.md) —— **当前状态全景**：搞定了什么 / 没搞定什么 / 卡在哪 / 下一步建什么
+- [`docs/ONTOLOGY_INDEX.md`](docs/ONTOLOGY_INDEX.md) —— 本体索引（跨标准对齐对照 + 物理量 + 碰撞 + 易混对）
+
+**上游项目**（本库从其中拆出，路径指向上游仓库）：
+
+- `valve-agent-design` 仓库根 `README.md` —— 项目总纲与 E0–E3 证据分级（本库继承此口径）
+- `valve-agent-design` 仓库 `图纸/AI阀门自主设计_边界与Agent执行方案_v1.0.md` —— 设计输入边界
+- `valve-agent-design` 仓库 `runs/20261006/C0/10_handoff/设计输入基线报告_522-35-4179.md` —— 阻塞项 B1–B6
+
+> 本库内 `runs/GOST-LOCAL/provenance.json` 与 `registry/sources.yaml` 里的
+> `file://F:/设计探索/gost1536/gost1536.htm` 是**本地正文件的溯源记录**，按实际情况照录，
+> 指向本机上游项目的文件位置。

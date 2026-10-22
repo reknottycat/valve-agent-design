@@ -1,6 +1,6 @@
 {
   "schema": "standards_kb.fetch_manifest/1.0",
-  "updated_at": "2026-10-23T00:25:18+08:00",
+  "updated_at": "2026-10-23T00:30:52+08:00",
   "note": "登记本地已落地的标准正文。只证明「这份正文在这儿、哈希是多少」，不证明条款级结论正确 —— 结论见 kb/formulas/ 每条的 evidence 字段。",
   "standards": [
     {
@@ -39,7 +39,7 @@
       "curated_data_entries": [],
       "curated_param_entries": [],
       "curated_ontology_entries": [],
-      "rebuilt_at": "2026-10-23T00:25:18+08:00"
+      "rebuilt_at": "2026-10-23T00:30:52+08:00"
     },
     {
       "source_id": "ASME-B31.1",
@@ -99,7 +99,7 @@
         "P-MAT-017",
         "P-MAT-018"
       ],
-      "rebuilt_at": "2026-10-23T00:25:18+08:00"
+      "rebuilt_at": "2026-10-23T00:30:52+08:00"
     },
     {
       "source_id": "ASME-B31.4",
@@ -154,7 +154,7 @@
       "curated_data_entries": [],
       "curated_param_entries": [],
       "curated_ontology_entries": [],
-      "rebuilt_at": "2026-10-23T00:25:19+08:00"
+      "rebuilt_at": "2026-10-23T00:30:52+08:00"
     },
     {
       "source_id": "ASME-B31.9",
@@ -209,7 +209,7 @@
       "curated_data_entries": [],
       "curated_param_entries": [],
       "curated_ontology_entries": [],
-      "rebuilt_at": "2026-10-23T00:25:19+08:00"
+      "rebuilt_at": "2026-10-23T00:30:52+08:00"
     },
     {
       "source_id": "ASME-BPVC-I",
@@ -389,7 +389,7 @@
         "P-TEST-029",
         "P-TEST-030"
       ],
-      "rebuilt_at": "2026-10-23T00:25:19+08:00"
+      "rebuilt_at": "2026-10-23T00:30:52+08:00"
     },
     {
       "source_id": "ASME-BPVC-IV",
@@ -428,7 +428,7 @@
       "curated_data_entries": [],
       "curated_param_entries": [],
       "curated_ontology_entries": [],
-      "rebuilt_at": "2026-10-23T00:25:19+08:00"
+      "rebuilt_at": "2026-10-23T00:30:52+08:00"
     },
     {
       "source_id": "ASME-BPVC-IX",
@@ -467,7 +467,7 @@
       "curated_data_entries": [],
       "curated_param_entries": [],
       "curated_ontology_entries": [],
-      "rebuilt_at": "2026-10-23T00:25:19+08:00"
+      "rebuilt_at": "2026-10-23T00:30:52+08:00"
     },
     {
       "source_id": "ASME-BPVC-VII",
@@ -522,7 +522,7 @@
       "curated_data_entries": [],
       "curated_param_entries": [],
       "curated_ontology_entries": [],
-      "rebuilt_at": "2026-10-23T00:25:19+08:00"
+      "rebuilt_at": "2026-10-23T00:30:52+08:00"
     },
     {
       "source_id": "GB-GB_T_15530.1-2008",
@@ -704,7 +704,7 @@
         "D-GBT15530-PT-CLASS",
         "D-GBT15530-PT-PN"
       ],
-      "rebuilt_at": "2026-10-23T00:25:19+08:00"
+      "rebuilt_at": "2026-10-23T00:30:52+08:00"
     },
     {
       "source_id": "GOST-LOCAL",
@@ -764,7 +764,7 @@
         "D-GOST1536-PN40",
         "D-GOST1536-PN63"
       ],
-      "rebuilt_at": "2026-10-23T00:25:19+08:00"
+      "rebuilt_at": "2026-10-23T00:30:52+08:00"
     }
   ],
   "summary": {
