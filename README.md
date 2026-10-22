@@ -9,6 +9,10 @@ CFD/FEA → 计算与验证 → 交接包。所有结论都标注来源与状态
 > **[reknottycat/standards-kb](https://github.com/reknottycat/standards-kb)**（private）。
 > 93 条已核条目，覆盖 GB/T · ASME · ГОСТ 三族，每条可回溯到条款出处、证据等级与核验状态。
 > 本仓库的阻塞项 **B5（螺栓 M14）** 即由该库解答（ГОСТ 1536-76 表 2，As=147）。
+>
+> 其方法论与纪律层已封装成可分发的 Agent skill ——
+> **[reknottycat/standards-kb-builder](https://github.com/reknottycat/standards-kb-builder)**（private，
+> 克隆即装），用于按自己的行业重建同构的知识库。
 
 ---
 
@@ -47,6 +51,7 @@ runs/20261006/C0/         本轮全部工作产物
 ├─ T40/  GA 包络 CAD
 └─ 10_handoff/  交付报告
 standards_kb/               已拆为独立仓库 reknottycat/standards-kb（本地仍保留，可直接进入工作）
+standards-kb-builder/       skill 分发仓库 reknottycat/standards-kb-builder（由 standards_kb/skill/ 派生）
 ```
 
 ---

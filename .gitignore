@@ -44,3 +44,8 @@ desktop.ini
 # 本仓库不再跟踪该目录。文件仍保留在本地磁盘，可直接在其中工作：
 #   cd standards_kb && git status
 standards_kb/
+
+# --- skill 分发仓库（已拆出，改为独立 Git 仓库）---
+# standards-kb-builder/  ->  https://github.com/reknottycat/standards-kb-builder
+# 内容由 standards_kb/skill/ 经 git subtree split 派生，不要直接在这里改 SKILL.md。
+standards-kb-builder/
