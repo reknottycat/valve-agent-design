@@ -70,33 +70,33 @@ def load_dir(directory: Path) -> list[dict]:
     return out
 
 
-def formula_entries() -> list[dict]:
-    return load_dir(FORM_DIR)
+def formula_entries(root: Path | None = None) -> list[dict]:
+    return load_dir((root or ROOT) / "kb" / "formulas")
 
 
-def param_entries() -> list[dict]:
-    return load_dir(PARAM_DIR)
+def param_entries(root: Path | None = None) -> list[dict]:
+    return load_dir((root or ROOT) / "kb" / "parameters")
 
 
-def data_entries() -> list[dict]:
-    return load_dir(DATA_DIR)
+def data_entries(root: Path | None = None) -> list[dict]:
+    return load_dir((root or ROOT) / "kb" / "data")
 
 
 def _ids(entries: list[dict]) -> set[str]:
     return {e.get("id") for e in entries if isinstance(e.get("id"), str)}
 
 
-def formula_ids() -> set[str]:
-    return _ids(formula_entries())
+def formula_ids(root: Path | None = None) -> set[str]:
+    return _ids(formula_entries(root))
 
 
-def param_ids() -> set[str]:
-    return _ids(param_entries())
+def param_ids(root: Path | None = None) -> set[str]:
+    return _ids(param_entries(root))
 
 
-def known_ids() -> set[str]:
+def known_ids(root: Path | None = None) -> set[str]:
     """公式层 + 参数层的合并 ID 集合(引用完整性用这个)。"""
-    return formula_ids() | param_ids()
+    return formula_ids(root) | param_ids(root)
 
 
 def duplicates(entries: list[dict]) -> list[str]:

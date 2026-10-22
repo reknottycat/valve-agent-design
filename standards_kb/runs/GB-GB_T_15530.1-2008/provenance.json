@@ -170,5 +170,13 @@
     "D-GBT15530-PT-PN"
   ],
   "curated_param_entries": [],
-  "rebuilt_at": "2026-10-22T15:11:46+08:00"
+  "curated_ontology_entries": [
+    "D-GBT15530-PN10-RF",
+    "D-GBT15530-PN16-RF",
+    "D-GBT15530-PN25-RF",
+    "D-GBT15530-PN6-RF",
+    "D-GBT15530-PT-CLASS",
+    "D-GBT15530-PT-PN"
+  ],
+  "rebuilt_at": "2026-10-23T00:25:19+08:00"
 }

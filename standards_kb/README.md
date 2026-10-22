@@ -1,14 +1,19 @@
-# standards_kb —— 标准 → 公式 + 数据 + 参数 知识库
+# standards_kb —— 标准 → 公式 + 数据 + 参数 + 本体 知识库
 
-把**标准正文**变成**可复用的公式条目、数据表条目与参数条目**，供阀门自主设计直接调用，
-而不是每次重新翻标准。
+把**标准正文**变成**可复用的公式条目、数据表条目与参数条目**，并用**本体（ontology）**把这三类
+对象对齐成一张可跨标准查询的网，供阀门自主设计直接调用，而不是每次重新翻标准。
 
 覆盖三族：**GB/T（国标）· ASME（美标）· ГОСТ（俄标）**。
 
-**版本**：`v1.1.0+20261022` —— 版本号规则 = **semver + 内容落库日期**（`+YYYYMMDD`）。
-语义化版本按**资产内容**递增（新增标准族/新增数据表族/**新增知识对象层** → minor；修正正文数值或证据等级 → patch），
+**版本**：`v1.2.0+20261022` —— 版本号规则 = **semver + 内容落库日期**（`+YYYYMMDD`）。
+语义化版本按**资产内容**递增（新增标准族/新增数据表族/**新增知识对象层**/**新增本体映射层** → minor；修正正文数值或证据等级 → patch），
 `+` 后是该次落库日期，便于把版本和 `runs/fetch_manifest.json` 的 `updated_at` 对齐。
 
+> v1.2.0 的变化：新增**第四层 —— 本体映射层**（`kb/ontology/`）。它**不产生新事实**，
+> 只声明「这些条目说的是不是同一个东西」：物理量 140、上下文 18、等价集 14、出现 80、
+> 判据 57、变量绑定 127、表列 126，映射覆盖全部 93 条条目。
+> v1.1.0 的三类知识对象（公式 + 数据表 + 参数）结构未变。
+>
 > v1.1.0 的变化：新增**第三类知识对象 —— 参数条目**（常数/系数/限值/阈值/材料性能等标量），
 > 独立 schema、独立目录、独立校验器与查询器。v1.0.0 的两类（公式 + 数据表）结构未变。
 
@@ -26,19 +31,24 @@
 | 标准是"看过了但没留下" | 正文带 SHA256 台账 + 目录落盘成 JSON，**不用重下** |
 | 尺寸/公差要翻表 | `kb/data/` 结构化数据表 + 字段字典 |
 | **常数/限值/系数记不清，或记混是哪本标准的** | `kb/parameters/` 参数条目 + `value.relation` 判据方向 + `source.snippet` 原文 |
+| **不同标准用同一个字母表示不同的东西** | 本体层 `VariableBinding` 把符号绑到全局 qid，13 组符号碰撞全部消歧 |
+| **容易混的标准条款靠脑子记** | 本体层 `EquivalenceSet(CONFUSABLE)` 显式登记 9 组易混对，每组带 `verdict` 判定 |
+| **US / SI 两套数值要人工配对** | 本体层 `EquivalenceSet(UNIT_CONVERSION)` 4 组，带**可复算**的表达式比值 |
 | 引用了没核对过的条款 | 证据等级 E0–E3 + `VERIFIED_CLAUSE` / `PENDING_VERIFICATION` / `UNVERIFIED_CLAUSE` |
 
 ---
 
-## 三类知识对象
+## 四层架构：三类知识对象 + 一个本体映射层
 
-标准里的东西不止公式。三类对象按**形状**分，各有独立 schema、独立目录、独立校验器：
+标准里的东西不止公式。**前三层是知识对象**——按**形状**分，各有独立 schema、独立目录、独立校验器；
+**第四层是本体映射层**——不产生新事实，只声明「这些条目说的是不是同一个东西」。
 
 | 层 | 目录 | ID | 形状 | 典型内容 | 条数 |
 |---|---|---|---|---|---|
 | 公式 | `kb/formulas/` | `F-XXX-NNN` | **表达式** + 变量定义 + 适用条件 | 应力、流量、力矩、碳当量 | 23 |
 | 数据表 | `kb/data/` | `D-XXX-NNN` | **多行表** + 列定义 + 行定位键 | 尺寸、公差、压力-温度等级、法兰面 | 13 |
 | 参数 | `kb/parameters/` | `P-XXX-NNN` | **一个数** + 它在判据里的角色 | 常数、系数、限值、阈值、材料性能 | 57 |
+| **本体映射** | `kb/ontology/` | `Q:` `X:` `S:` `B:` `TC:` `O:` `C:` | **关系**（不新增事实） | 物理量、上下文、等价集、变量绑定、表列投影 | 映射 **93** 条 |
 
 每条都回答三个问题：**这个数/式是什么、在哪一条、怎么用**：
 
@@ -53,6 +63,43 @@
 **参数层与数据表层不重叠**：尺寸表、公差表、压力等级表是**多行表**，留在数据表层；
 参数层只收**标量**。判据方向（上限还是下限）写在 `value.relation` 里，
 **不用 `=` 掩盖原文的「不超过 / 不得低于 / 超过」**。
+
+### 本体层：是什么、不是什么
+
+**是**：一张把三类对象对齐的网。核心中枢类是 `Quantity`（物理量，qid 形如
+`Q:GEOM:BOLT_HOLE_DIA`）——公式变量、参数取值、数据表列值全部通过 qid 挂到同一个物理量上。
+
+**不是**：不是新知识。本体**不产生新事实**，只声明关系。任何本体里的数值都必须能回溯到
+已核验条目 —— 校验器 INV-10 机器强制：US/SI 换算比值必须能**复算**出来，
+易混对的取值必须能在成员条目里找到。
+
+七类对象：
+
+| 类 | 作用 |
+|---|---|
+| `Quantity` | 物理量，全库中枢；`canonical_unit` 必填 |
+| `Context` | 上下文（标准 / 条款 / 材料 / 工况）；条目不得越界引用 |
+| `Occurrence` | 物理量在某条条目里的**具体取值**，分型 `VALUE`(参数) / `RESULT`(公式) / `NONE`(数据) |
+| `Criterion` | 判据（occurrence 的派生视图），cid = `C:<entry_id>`；**方向不可弱化** |
+| `VariableBinding` | 公式变量符号 → 全局 qid，**符号碰撞的唯一解法** |
+| `EquivalenceSet` | 等价集，三种 kind：`UNIT_CONVERSION` / `CONFUSABLE` / `COLUMN_CORRESPONDENCE` |
+| `TableColumn` | 数据表列 → 物理量投影，TC id = `TC:<entry_id>:<column_key>` |
+
+十一条不变量（INV-01~INV-11）由 `tools/validate_ontology.py` **机器执行**；
+本体校验器与另三个校验器共用 `tools/evidence_rules.py` 的口径，同样**只查结构与纪律**。
+
+**本体层解决的是三个被实测数据坐实的痛点**（不是"理论上应该有个本体"）：
+
+| 痛点 | 实测证据 | 本体的解法 |
+|---|---|---|
+| 符号碰撞 | 公式里 `P`×7、`A`×5、`D`×4、`W`×3、`t`×3、`F`×3、`p`×3 | `VariableBinding` 把符号绑到 qid，图模型实测 **13 组碰撞全部消歧** |
+| 跨命名空间同名 | 公式 `L`=升程 vs 法兰表 `L`=螺栓孔径；GB `f` vs ГОСТ `f`（密封面高 vs 密封台阶高） | 局部符号允许重名，但**必须绑定到全局 qid** 才能消歧 |
+| 易混对靠人脑记 | BPVC-I CE ≤0.45 vs B31.1 <0.50；预热 250 °F(120 °C) vs 250 °F(121 °C)；保温 1,100 °F(595 °C) vs 1,100 °F(600 °C) | `EquivalenceSet(CONFUSABLE)` 显式登记 **9 组**，每组带 `verdict` 判定 |
+
+本体**不引入新 domain 值**（FLOW/STRUCT/SEAL/BOLT/MATE/TEST/GEOM/THERM/MASS/DRIVE/TOL/PIPE
+与公式层、参数层共享同一枚举）；**同名不同 qid 必须合并或显式登记**（INV-11）。
+疑似同族但未确认的量进 `vocabulary.yaml` 的 `open_questions` 段（当前 OQ-01 许用应力族、
+OQ-02 最小壁厚族共 2 组）——**不确定就登记，不静默合并**。
 
 ---
 
@@ -82,6 +129,14 @@ standards_kb/
 │  │  ├─ ASME-BPVC-I_p235_raster.png
 │  │  ├─ ASME-BPVC-I_p241_raster.png
 │  │  └─ ASME-B31.1_table132_snippet.txt
+│  ├─ ontology/              本体映射层（第四层，不产生新事实）
+│  │  ├─ ontology.yaml          规范：7 类 / 7 关系 / 5 受控词表 / INV-01~11
+│  │  ├─ vocabulary.yaml        词表：Context 18 + Quantity 140 + open_questions 2
+│  │  ├─ relations.yaml         14 组等价集（4 UNIT_CONVERSION + 9 CONFUSABLE + 1 COLUMN_CORRESPONDENCE）
+│  │  └─ mappings/              三层映射（覆盖全部 93 条条目）
+│  │     ├─ parameters.json        57 条 → Occurrence(VALUE) + Criterion
+│  │     ├─ formulas.json          23 条 → Occurrence(RESULT) + VariableBinding
+│  │     └─ data.json              13 条 → TableColumn 投影
 │  ├─ candidates/            待复核候选池（188 条，稳定 hash ID）
 │  │  ├─ pool.json                 汇总池
 │  │  ├─ reviewed.json             复核结论（已采纳 1 条）
@@ -106,9 +161,10 @@ standards_kb/
 │  └─ probe/                 核读用的渲染图与版面快照（临时，不入库）
 └─ docs/
    ├─ INDEX.md               公式使用索引（按"我要算什么"组织）
-   ├─ STANDARD_COVERAGE.md   标准覆盖表 + 已知缺口
+   ├─ STANDARD_COVERAGE.md   标准覆盖表 + 已知缺口 + 本体层概览
    ├─ DATA_INDEX.md          数据表索引 + 字段字典
-   └─ PARAMETER_INDEX.md     参数索引（值 + 判据 + 跨层引用）
+   ├─ PARAMETER_INDEX.md     参数索引（值 + 判据 + 跨层引用）
+   └─ ONTOLOGY_INDEX.md      本体索引（跨标准对齐 + 物理量 + 碰撞 + 易混对）
 ```
 
 ---
@@ -152,6 +208,29 @@ python tools/param_query.py --graph             # 跨层关系图（参数 ↔ �
 同一物理量在不同标准里数值不同（CE 阈值 ≤0.45 vs <0.50；预热 250 °F(120 °C) vs 250 °F(121 °C)；
 保温 1,100 °F(595 °C) vs 1,100 °F(600 °C)），本库**按标准分条记录，不合并、不取平均**。
 
+### 查本体（跨标准聚合）
+
+```bash
+python tools/ontology_query.py stats                  # 本体图统计（量/上下文/等价集/出现/判据/绑定/表列）
+python tools/ontology_query.py qid Q:GEOM:BOLT_HOLE_DIA  # 按物理量查：出现在哪些条目、什么值、什么判据
+python tools/ontology_query.py standard GB_T_15530.1   # 按标准查：涉及哪些物理量
+python tools/ontology_query.py domain GEOM             # 按域查
+python tools/ontology_query.py symbol A                # 按符号查：这是最容易踩坑的一项
+python tools/ontology_query.py confusable              # 9 组易混对及其判定
+python tools/ontology_query.py entry F-TEST-002        # 按条目查它在本体里的位置
+python tools/ontology_query.py collisions              # 13 组符号碰撞与消歧
+python tools/ontology_query.py stats --json            # 机器读
+```
+
+`symbol` 模式是本体层价值的直观体现 —— 例如查 `A`：
+命中 11 处、涉及 **5 个不同物理量**（`Q:STRUCT:OPENING_DEDUCTION_AREA` /
+`Q:STRUCT:GROSS_AREA` / `Q:FLOW:FLOW_AREA` / `Q:TEST:NOZZLE_THROAT_AREA` /
+`Q:STRUCT:INNER_RADIUS`）。**在公式层，这些 `A` 完全无法区分**；本体层靠 qid 一次性拆开。
+
+`docs/ONTOLOGY_INDEX.md`（由 `tools/build_ontology_index.py` 生成）的**核心表是「跨标准对齐对照表」**
+—— 7 个在 ≥2 个标准里都有判据的物理量，把 GB/T、ASME、ГОСТ 的对应条目并排列出。
+这是本体层区别于公式索引/参数索引的真正价值。
+
 ### 取新标准的正文
 
 ```bash
@@ -180,9 +259,11 @@ python tools/fetch.py --source ASME-IA --url <url> --file <name>
 python tools/validate.py        # 校验公式条目（只查结构与纪律，跨层引用完整性）
 python tools/validate_data.py   # 校验数据表条目
 python tools/validate_params.py # 校验参数条目（12 类必查项）
+python tools/validate_ontology.py # 校验本体映射层（INV-01~11 + 枚举/引用/单位一致性）
 python tools/registry_dump.py   # sources.yaml -> registry.json
 python tools/index.py           # 生成 docs/INDEX.md
 python tools/build_docs.py      # 生成 STANDARD_COVERAGE.md / DATA_INDEX.md / PARAMETER_INDEX.md
+python tools/build_ontology_index.py # 生成 docs/ONTOLOGY_INDEX.md
 python tools/pool.py --stats    # 候选池统计
 ```
 
@@ -192,12 +273,17 @@ python tools/pool.py --stats    # 候选池统计
 python tools/selftest_formula_validator.py   # 25 项负向注入
 python tools/selftest_data_validator.py      # 23 项负向注入
 python tools/selftest_param_validator.py     # 60 项负向注入
+python tools/selftest_ontology_validator.py  # 27 项负向注入
 python tools/scan_homoglyphs.py              # 西里尔/拉丁同形字扫描
 ```
 
 自测会**故意注入坏数据**（等级虚标、占位 project_usage、locator 指向不存在的文件、
 `row_keys` 与 `rows` 错位、canonical 与 numeric 不自洽、relation 与原文判据方向不符、
 视觉核验状态未升级……），确认校验器真的报错，而不是恒过。
+
+本体侧的 27 项负向注入针对 **INV-01~INV-11**：映射缺条目、判据方向被弱化（`>=` 改成 `>`）、
+阈值不可回溯、单位配对不闭合、符号碰撞未消歧、易混对未登记、同名不同 qid 未合并、
+本体凭空造出数值（换算比值无法复算）…… 详见下方「已知技术陷阱」最后两条。
 
 ---
 
@@ -283,7 +369,7 @@ python tools/raster_crop.py <pdf> <page> --probe x0 x1 y0 y1            # 只探
 
 ### 校验器护栏
 
-三个校验器（公式 / 数据表 / 参数）共用 `tools/evidence_rules.py` 里的规则模块，避免口径漂移：
+四个校验器（公式 / 数据表 / 参数 / 本体）共用 `tools/evidence_rules.py` 里的规则模块，避免口径漂移：
 
 | 护栏 | 行为 |
 |---|---|
@@ -293,6 +379,7 @@ python tools/raster_crop.py <pdf> <page> --probe x0 x1 y0 y1            # 只探
 | 声称 `FULL_TEXT_MIRROR` 必须能落到磁盘 | `source.locator` 指向的文件必须**真实存在** |
 | `row_keys` 必须与 `rows` 逐列对齐 | 数据侧专用，见 `kb/data.schema.json#x-row-key-alignment` |
 | **视觉核验门槛（双向）** | 参数侧专用：`VERIFIED_CLAUSE` ⇒ `source.visual_verified=true`；反之 `visual_verified=true` 却仍挂待核/未核 ⇒ 报「状态未升级」 |
+| **本体不产生新事实** | 本体侧专用：换算比值必须可**复算**、易混对取值必须能在成员条目找到、映射必须 1:1 覆盖全部条目 |
 
 参数侧另有 12 类必查项（`tools/validate_params.py`）：ID 格式、枚举合法性、
 **数值自洽**（`value.numeric` 必须能从 `value.canonical` 解析出来）、RANGE 的 min≤max、
@@ -314,6 +401,7 @@ python tools/raster_crop.py <pdf> <page> --probe x0 x1 y0 y1            # 只探
 | 公式条目 | **23 条**（已核 10 / 待核 3 / 条款未核 10） |
 | 数据表条目 | **13 条**（已核 6 / 条款未核 7） |
 | **参数条目** | **57 条**（已核 49 / 待核 8；**视觉核验 49 条**） |
+| **本体映射** | 覆盖 **93 条**（公式 23 + 参数 57 + 数据 13）；物理量 140 / 上下文 18 / 等价集 14 / 出现 80 / 判据 57 / 变量绑定 127 / 表列 126 / 符号碰撞 13 / 未决问题 2 |
 | 候选池 | **188 条**（已采纳 1 → F-MAT-003；待复核 187，全部 `confidence: LOW`） |
 | 目录资产 | GB 1197 + 可得性 1003（63/940/0）+ ASME 47 + IBR 120 |
 | registry | 4 族 / 24 源 |
@@ -359,6 +447,8 @@ BPVC-I 是钢/合金规范，其 11 条公式条目与 49 条参数条目的 `us
 | **死代理伪装成"数据源挂了"** | 脚本注入 `HTTP_PROXY=127.0.0.1:7890`，而 FlClash 处于 DNS-only 状态 → `connection refused` | `tools/net_env.py` 先探端口再决定设不设代理；不通就**主动清掉** env 残留 |
 | **扫描件整页渲染 ≠ 印刷原貌** | 渲染图 = 位图 + OCR 文本层叠画，数字被 OCR 值盖住 | 必须用 `tools/raster_crop.py` 抽纯位图再核 |
 | **千分位被 OCR 吞掉 / 小数点丢失** | SI 水常数印作「5 092」，OCR 读成 `5092`（**差 1000 倍**） | 见下方「5 092 定案」：位图像素 + 排印风格 + 量纲反解，三重独立证据 |
+| **自测里层名 ≠ 目录名** | 本体自测按 `kb/formula/…` 找文件，实际目录是 `kb/formulas/` → 公式层变异全部 KeyError → **27 项里只有 25 项真跑** | 自测里维护 `LAYER_DIR = {"formula":"formulas","parameter":"parameters","data":"data"}` 映射 |
+| **变异必须是真变异** | 从首个 CONFUSABLE 集合删一个**不在该集合里**的成员 → 空变异 → INV-06 恒过 → **假阴性** | 变异器要通用：找出「删掉后不被同 quantity 其他集合覆盖」的成员再删 |
 
 ### 「5 092」定案 —— 数值三重独立证据链
 
@@ -389,7 +479,9 @@ python tools/provenance.py --report   # 打印人类可读台账
 **递归哈希正文子目录**（GB 的页图与精灵图同样进台账）。
 **未来任何人都能确认"手上这份正文跟当初抓到的是同一份"。**
 
-全局台账在 `runs/fetch_manifest.json`，同时统计**公式条目、数据表条目、参数条目**三类资产。
+全局台账在 `runs/fetch_manifest.json`，同时统计**公式条目、数据表条目、参数条目**三类资产，
+以及**本体映射条目数**（93 条）与本体资产统计（物理量 / 上下文 / 等价集 / 出现 / 判据 / 绑定 / 表列 / 碰撞 / 未决）。
+本体层缺失时台账只记 `error` 字段，**不让整张台账挂掉**。
 
 ### 网络现状（记录于本次交付）
 

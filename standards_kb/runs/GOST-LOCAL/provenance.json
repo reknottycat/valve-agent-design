@@ -47,5 +47,14 @@
     "D-GOST1536-PN63"
   ],
   "curated_param_entries": [],
-  "rebuilt_at": "2026-10-22T15:11:46+08:00"
+  "curated_ontology_entries": [
+    "D-GOST1536-PN025",
+    "D-GOST1536-PN063",
+    "D-GOST1536-PN10",
+    "D-GOST1536-PN16",
+    "D-GOST1536-PN25",
+    "D-GOST1536-PN40",
+    "D-GOST1536-PN63"
+  ],
+  "rebuilt_at": "2026-10-23T00:25:19+08:00"
 }

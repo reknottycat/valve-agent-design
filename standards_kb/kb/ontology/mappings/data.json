@@ -1,0 +1,238 @@
+{
+  "schema": "standards_kb.ontology.mapping/1.0",
+  "layer": "data",
+  "version": "1.0.0+20261022",
+  "note": "数据表条目 → 本体投影。每列绑定到全局物理量（quantity_or_text 为 qid）或显式标 text。列的单位以条目 columns[].unit 为准，本文件只登记身份；跨标准的列对应关系登记在 kb/ontology/relations.yaml 的 COLUMN_CORRESPONDENCE 等价集里。",
+  "mappings": {
+
+    "D-GBT15530-PT-PN": {
+      "standard_id": "GB/T 15530.1-2008",
+      "clause": "表 1",
+      "columns": {
+        "type": {"quantity_or_text": "text", "unit": "text"},
+        "pn": {"quantity_or_text": "Q:GEOM:NOMINAL_PRESSURE_RATING", "unit": "dimensionless"},
+        "p_120": {"quantity_or_text": "Q:THERM:MAX_WORKING_PRESSURE_AT_TEMP", "unit": "MPa"},
+        "p_200": {"quantity_or_text": "Q:THERM:MAX_WORKING_PRESSURE_AT_TEMP", "unit": "MPa"},
+        "p_250": {"quantity_or_text": "Q:THERM:MAX_WORKING_PRESSURE_AT_TEMP", "unit": "MPa"},
+        "dn_rf": {"quantity_or_text": "text", "unit": "text"},
+        "dn_tg": {"quantity_or_text": "text", "unit": "text"},
+        "dn_ff": {"quantity_or_text": "text", "unit": "text"}
+      },
+      "note": "pn 列是 PN 等级代号（无量纲整数），不是压力值。p_120 / p_200 / p_250 是**同一物理量在三个温度下的三个取值**：温度只编码在列键里，表内没有独立的温度列，故三个列绑到同一 qid。dn_rf / dn_tg / dn_ff 是公称尺寸的**范围**（如 10~1000），是区间文本不是单值，故标 text 不强行绑物理量。"
+    },
+
+    "D-GBT15530-PT-CLASS": {
+      "standard_id": "GB/T 15530.1-2008",
+      "clause": "表 2",
+      "columns": {
+        "type": {"quantity_or_text": "text", "unit": "text"},
+        "pn": {"quantity_or_text": "Q:GEOM:NOMINAL_PRESSURE_RATING", "unit": "dimensionless"},
+        "p_m10_65": {"quantity_or_text": "Q:THERM:MAX_WORKING_PRESSURE_AT_TEMP", "unit": "MPa"},
+        "p_100": {"quantity_or_text": "Q:THERM:MAX_WORKING_PRESSURE_AT_TEMP", "unit": "MPa"},
+        "p_120": {"quantity_or_text": "Q:THERM:MAX_WORKING_PRESSURE_AT_TEMP", "unit": "MPa"},
+        "p_150": {"quantity_or_text": "Q:THERM:MAX_WORKING_PRESSURE_AT_TEMP", "unit": "MPa"},
+        "p_180": {"quantity_or_text": "Q:THERM:MAX_WORKING_PRESSURE_AT_TEMP", "unit": "MPa"},
+        "p_200": {"quantity_or_text": "Q:THERM:MAX_WORKING_PRESSURE_AT_TEMP", "unit": "MPa"},
+        "p_220": {"quantity_or_text": "Q:THERM:MAX_WORKING_PRESSURE_AT_TEMP", "unit": "MPa"},
+        "p_250": {"quantity_or_text": "Q:THERM:MAX_WORKING_PRESSURE_AT_TEMP", "unit": "MPa"},
+        "p_260": {"quantity_or_text": "Q:THERM:MAX_WORKING_PRESSURE_AT_TEMP", "unit": "MPa"},
+        "dn_range": {"quantity_or_text": "text", "unit": "text"}
+      },
+      "note": "本表是「无冲击工作压力」系列，与表 1 的「最大工作压力」是不同判据体系，故仍绑同一 qid（Q:THERM:MAX_WORKING_PRESSURE_AT_TEMP）但在 note 中区分来源列语义 —— 判据角色（无冲击 / 非无冲击）属于条目层，不属于本体层。"
+    },
+
+    "D-GBT15530-PN6-RF": {
+      "standard_id": "GB/T 15530.1-2008",
+      "clause": "表 3",
+      "columns": {
+        "Dn": {"quantity_or_text": "Q:GEOM:NOMINAL_SIZE", "unit": "mm"},
+        "D": {"quantity_or_text": "Q:GEOM:FLANGE_OUTER_DIA", "unit": "mm"},
+        "K": {"quantity_or_text": "Q:GEOM:BOLT_CIRCLE_DIA", "unit": "mm"},
+        "L": {"quantity_or_text": "Q:GEOM:BOLT_HOLE_DIA", "unit": "mm"},
+        "n": {"quantity_or_text": "Q:GEOM:BOLT_COUNT", "unit": "dimensionless"},
+        "bolt_thread": {"quantity_or_text": "Q:GEOM:BOLT_THREAD", "unit": "thread"},
+        "d": {"quantity_or_text": "Q:GEOM:SEAL_FACE_DIA", "unit": "mm"},
+        "f": {"quantity_or_text": "Q:GEOM:SEAL_FACE_HEIGHT", "unit": "mm"},
+        "C": {"quantity_or_text": "Q:GEOM:FLANGE_THICKNESS", "unit": "mm"},
+        "N": {"quantity_or_text": "Q:GEOM:NECK_LENGTH", "unit": "mm"},
+        "R": {"quantity_or_text": "Q:GEOM:NECK_FILLET_RADIUS", "unit": "mm"}
+      },
+      "note": "RF = 突面（raised face）型。d（密封面直径）与 ГОСТ 的 D1（密封面外径）**不是同一个 qid**：本表只给突面密封面直径，ГОСТ 表 1~5 的 D1 属对接面/凸面密封外径、且适用面型不同，故意不合并，见 relations.yaml 的 S:GEOM:FLANGE_GEOMETRY_CROSS_STANDARD。"
+    },
+
+    "D-GBT15530-PN10-RF": {
+      "standard_id": "GB/T 15530.1-2008",
+      "clause": "表 4",
+      "columns": {
+        "Dn": {"quantity_or_text": "Q:GEOM:NOMINAL_SIZE", "unit": "mm"},
+        "D": {"quantity_or_text": "Q:GEOM:FLANGE_OUTER_DIA", "unit": "mm"},
+        "K": {"quantity_or_text": "Q:GEOM:BOLT_CIRCLE_DIA", "unit": "mm"},
+        "L": {"quantity_or_text": "Q:GEOM:BOLT_HOLE_DIA", "unit": "mm"},
+        "n": {"quantity_or_text": "Q:GEOM:BOLT_COUNT", "unit": "dimensionless"},
+        "bolt_thread": {"quantity_or_text": "Q:GEOM:BOLT_THREAD", "unit": "thread"},
+        "d": {"quantity_or_text": "Q:GEOM:SEAL_FACE_DIA", "unit": "mm"},
+        "f": {"quantity_or_text": "Q:GEOM:SEAL_FACE_HEIGHT", "unit": "mm"},
+        "C": {"quantity_or_text": "Q:GEOM:FLANGE_THICKNESS", "unit": "mm"},
+        "N": {"quantity_or_text": "Q:GEOM:NECK_LENGTH", "unit": "mm"},
+        "R": {"quantity_or_text": "Q:GEOM:NECK_FILLET_RADIUS", "unit": "mm"}
+      },
+      "note": "列语义与表 3 完全一致。部分行（如 DN10~DN40）在本表中为空值并以 ref_table 指向表 6，属跨表引用，不是漏抽。"
+    },
+
+    "D-GBT15530-PN16-RF": {
+      "standard_id": "GB/T 15530.1-2008",
+      "clause": "表 5",
+      "columns": {
+        "Dn": {"quantity_or_text": "Q:GEOM:NOMINAL_SIZE", "unit": "mm"},
+        "D": {"quantity_or_text": "Q:GEOM:FLANGE_OUTER_DIA", "unit": "mm"},
+        "K": {"quantity_or_text": "Q:GEOM:BOLT_CIRCLE_DIA", "unit": "mm"},
+        "L": {"quantity_or_text": "Q:GEOM:BOLT_HOLE_DIA", "unit": "mm"},
+        "n": {"quantity_or_text": "Q:GEOM:BOLT_COUNT", "unit": "dimensionless"},
+        "bolt_thread": {"quantity_or_text": "Q:GEOM:BOLT_THREAD", "unit": "thread"},
+        "d": {"quantity_or_text": "Q:GEOM:SEAL_FACE_DIA", "unit": "mm"},
+        "f": {"quantity_or_text": "Q:GEOM:SEAL_FACE_HEIGHT", "unit": "mm"},
+        "C": {"quantity_or_text": "Q:GEOM:FLANGE_THICKNESS", "unit": "mm"},
+        "N": {"quantity_or_text": "Q:GEOM:NECK_LENGTH", "unit": "mm"},
+        "R": {"quantity_or_text": "Q:GEOM:NECK_FILLET_RADIUS", "unit": "mm"}
+      },
+      "note": "列语义与表 3 完全一致。"
+    },
+
+    "D-GBT15530-PN25-RF": {
+      "standard_id": "GB/T 15530.1-2008",
+      "clause": "表 6",
+      "columns": {
+        "Dn": {"quantity_or_text": "Q:GEOM:NOMINAL_SIZE", "unit": "mm"},
+        "D": {"quantity_or_text": "Q:GEOM:FLANGE_OUTER_DIA", "unit": "mm"},
+        "K": {"quantity_or_text": "Q:GEOM:BOLT_CIRCLE_DIA", "unit": "mm"},
+        "L": {"quantity_or_text": "Q:GEOM:BOLT_HOLE_DIA", "unit": "mm"},
+        "n": {"quantity_or_text": "Q:GEOM:BOLT_COUNT", "unit": "dimensionless"},
+        "bolt_thread": {"quantity_or_text": "Q:GEOM:BOLT_THREAD", "unit": "thread"},
+        "d": {"quantity_or_text": "Q:GEOM:SEAL_FACE_DIA", "unit": "mm"},
+        "f": {"quantity_or_text": "Q:GEOM:SEAL_FACE_HEIGHT", "unit": "mm"},
+        "C": {"quantity_or_text": "Q:GEOM:FLANGE_THICKNESS", "unit": "mm"},
+        "N": {"quantity_or_text": "Q:GEOM:NECK_LENGTH", "unit": "mm"},
+        "R": {"quantity_or_text": "Q:GEOM:NECK_FILLET_RADIUS", "unit": "mm"}
+      },
+      "note": "列语义与表 3 完全一致。表 4 / 表 5 中空缺的行以 ref_table 指向本表。"
+    },
+
+    "D-GOST1536-PN025": {
+      "standard_id": "\u0413\u041e\u0421\u0422 1536-76",
+      "clause": "\u0422\u0430\u0431\u043b\u0438\u0446\u0430 1",
+      "columns": {
+        "Dn": {"quantity_or_text": "Q:GEOM:NOMINAL_SIZE", "unit": "mm"},
+        "D": {"quantity_or_text": "Q:GEOM:FLANGE_OUTER_DIA", "unit": "mm"},
+        "D1": {"quantity_or_text": "Q:GEOM:SEALING_FACE_OUTER_DIA", "unit": "mm"},
+        "D2": {"quantity_or_text": "Q:GEOM:SEALING_FACE_INNER_DIA", "unit": "mm"},
+        "q": {"quantity_or_text": "Q:GEOM:GROOVE_DEPTH", "unit": "mm"},
+        "groove_count": {"quantity_or_text": "Q:GEOM:GROOVE_COUNT", "unit": "dimensionless"},
+        "bolt_count": {"quantity_or_text": "Q:GEOM:BOLT_COUNT", "unit": "dimensionless"},
+        "bolt_thread": {"quantity_or_text": "Q:GEOM:BOLT_THREAD", "unit": "thread"}
+      },
+      "note": "q 为密封槽深度（配合 groove_count 使用）。D1/D2 是对接面/凸面密封外径与内径，与 GB 突面型的 d/f 不是同一组量。"
+    },
+
+    "D-GOST1536-PN063": {
+      "standard_id": "\u0413\u041e\u0421\u0422 1536-76",
+      "clause": "\u0422\u0430\u0431\u043b\u0438\u0446\u0430 2",
+      "columns": {
+        "Dn": {"quantity_or_text": "Q:GEOM:NOMINAL_SIZE", "unit": "mm"},
+        "D": {"quantity_or_text": "Q:GEOM:FLANGE_OUTER_DIA", "unit": "mm"},
+        "D1": {"quantity_or_text": "Q:GEOM:SEALING_FACE_OUTER_DIA", "unit": "mm"},
+        "D2": {"quantity_or_text": "Q:GEOM:SEALING_FACE_INNER_DIA", "unit": "mm"},
+        "q": {"quantity_or_text": "Q:GEOM:GROOVE_DEPTH", "unit": "mm"},
+        "groove_count": {"quantity_or_text": "Q:GEOM:GROOVE_COUNT", "unit": "dimensionless"},
+        "bolt_count": {"quantity_or_text": "Q:GEOM:BOLT_COUNT", "unit": "dimensionless"},
+        "bolt_thread": {"quantity_or_text": "Q:GEOM:BOLT_THREAD", "unit": "thread"}
+      },
+      "note": "列语义与表 1 一致。"
+    },
+
+    "D-GOST1536-PN10": {
+      "standard_id": "\u0413\u041e\u0421\u0422 1536-76",
+      "clause": "\u0422\u0430\u0431\u043b\u0438\u0446\u0430 3",
+      "columns": {
+        "Dn": {"quantity_or_text": "Q:GEOM:NOMINAL_SIZE", "unit": "mm"},
+        "D": {"quantity_or_text": "Q:GEOM:FLANGE_OUTER_DIA", "unit": "mm"},
+        "D1": {"quantity_or_text": "Q:GEOM:SEALING_FACE_OUTER_DIA", "unit": "mm"},
+        "D2": {"quantity_or_text": "Q:GEOM:SEALING_FACE_INNER_DIA", "unit": "mm"},
+        "q": {"quantity_or_text": "Q:GEOM:GROOVE_DEPTH", "unit": "mm"},
+        "groove_count": {"quantity_or_text": "Q:GEOM:GROOVE_COUNT", "unit": "dimensionless"},
+        "bolt_count": {"quantity_or_text": "Q:GEOM:BOLT_COUNT", "unit": "dimensionless"},
+        "bolt_thread": {"quantity_or_text": "Q:GEOM:BOLT_THREAD", "unit": "thread"}
+      },
+      "note": "列语义与表 1 一致。"
+    },
+
+    "D-GOST1536-PN16": {
+      "standard_id": "\u0413\u041e\u0421\u0422 1536-76",
+      "clause": "\u0422\u0430\u0431\u043b\u0438\u0446\u0430 4",
+      "columns": {
+        "Dn": {"quantity_or_text": "Q:GEOM:NOMINAL_SIZE", "unit": "mm"},
+        "D": {"quantity_or_text": "Q:GEOM:FLANGE_OUTER_DIA", "unit": "mm"},
+        "D1": {"quantity_or_text": "Q:GEOM:SEALING_FACE_OUTER_DIA", "unit": "mm"},
+        "D2": {"quantity_or_text": "Q:GEOM:SEALING_FACE_INNER_DIA", "unit": "mm"},
+        "q": {"quantity_or_text": "Q:GEOM:GROOVE_DEPTH", "unit": "mm"},
+        "groove_count": {"quantity_or_text": "Q:GEOM:GROOVE_COUNT", "unit": "dimensionless"},
+        "bolt_count": {"quantity_or_text": "Q:GEOM:BOLT_COUNT", "unit": "dimensionless"},
+        "bolt_thread": {"quantity_or_text": "Q:GEOM:BOLT_THREAD", "unit": "thread"}
+      },
+      "note": "列语义与表 1 一致。"
+    },
+
+    "D-GOST1536-PN25": {
+      "standard_id": "\u0413\u041e\u0421\u0422 1536-76",
+      "clause": "\u0422\u0430\u0431\u043b\u0438\u0446\u0430 5",
+      "columns": {
+        "Dn": {"quantity_or_text": "Q:GEOM:NOMINAL_SIZE", "unit": "mm"},
+        "D": {"quantity_or_text": "Q:GEOM:FLANGE_OUTER_DIA", "unit": "mm"},
+        "D1": {"quantity_or_text": "Q:GEOM:SEALING_FACE_OUTER_DIA", "unit": "mm"},
+        "D2": {"quantity_or_text": "Q:GEOM:SEALING_FACE_INNER_DIA", "unit": "mm"},
+        "q": {"quantity_or_text": "Q:GEOM:GROOVE_DEPTH", "unit": "mm"},
+        "groove_count": {"quantity_or_text": "Q:GEOM:GROOVE_COUNT", "unit": "dimensionless"},
+        "bolt_count": {"quantity_or_text": "Q:GEOM:BOLT_COUNT", "unit": "dimensionless"},
+        "bolt_thread": {"quantity_or_text": "Q:GEOM:BOLT_THREAD", "unit": "thread"}
+      },
+      "note": "列语义与表 1 一致。"
+    },
+
+    "D-GOST1536-PN40": {
+      "standard_id": "\u0413\u041e\u0421\u0422 1536-76",
+      "clause": "\u0422\u0430\u0431\u043b\u0438\u0446\u0430 6",
+      "columns": {
+        "Dn": {"quantity_or_text": "Q:GEOM:NOMINAL_SIZE", "unit": "mm"},
+        "D": {"quantity_or_text": "Q:GEOM:FLANGE_OUTER_DIA", "unit": "mm"},
+        "D1": {"quantity_or_text": "Q:GEOM:SEALING_FACE_OUTER_DIA", "unit": "mm"},
+        "D2": {"quantity_or_text": "Q:GEOM:SEALING_FACE_INNER_DIA", "unit": "mm"},
+        "D3": {"quantity_or_text": "Q:GEOM:SEAL_STEP_OUTER_DIA", "unit": "mm"},
+        "D4": {"quantity_or_text": "Q:GEOM:SEAL_STEP_INNER_DIA", "unit": "mm"},
+        "D5": {"quantity_or_text": "Q:GEOM:CONCAVE_SEAL_OUTER_DIA", "unit": "mm"},
+        "D6": {"quantity_or_text": "Q:GEOM:CONCAVE_SEAL_INNER_DIA", "unit": "mm"},
+        "f": {"quantity_or_text": "Q:GEOM:SEAL_STEP_HEIGHT", "unit": "mm"},
+        "bolt_count": {"quantity_or_text": "Q:GEOM:BOLT_COUNT", "unit": "dimensionless"},
+        "bolt_thread": {"quantity_or_text": "Q:GEOM:BOLT_THREAD", "unit": "thread"}
+      },
+      "note": "本表起密封面改为台阶/凹面结构（D3/D4 台阶、D5/D6 凹面），f 在此表示**密封台阶高度**，与表 1~5 的 q（密封槽深度）和 GB 表 3~6 的 f（突面凸起高度）都不同，故三个 qid 分别为 Q:GEOM:SEAL_STEP_HEIGHT / Q:GEOM:GROOVE_DEPTH / Q:GEOM:SEAL_FACE_HEIGHT。"
+    },
+
+    "D-GOST1536-PN63": {
+      "standard_id": "\u0413\u041e\u0421\u0422 1536-76",
+      "clause": "\u0422\u0430\u0431\u043b\u0438\u0446\u0430 7",
+      "columns": {
+        "Dn": {"quantity_or_text": "Q:GEOM:NOMINAL_SIZE", "unit": "mm"},
+        "D": {"quantity_or_text": "Q:GEOM:FLANGE_OUTER_DIA", "unit": "mm"},
+        "D1": {"quantity_or_text": "Q:GEOM:SEALING_FACE_OUTER_DIA", "unit": "mm"},
+        "D2": {"quantity_or_text": "Q:GEOM:SEALING_FACE_INNER_DIA", "unit": "mm"},
+        "D3": {"quantity_or_text": "Q:GEOM:SEAL_STEP_OUTER_DIA", "unit": "mm"},
+        "D4": {"quantity_or_text": "Q:GEOM:SEAL_STEP_INNER_DIA", "unit": "mm"},
+        "D5": {"quantity_or_text": "Q:GEOM:CONCAVE_SEAL_OUTER_DIA", "unit": "mm"},
+        "D6": {"quantity_or_text": "Q:GEOM:CONCAVE_SEAL_INNER_DIA", "unit": "mm"},
+        "f": {"quantity_or_text": "Q:GEOM:SEAL_STEP_HEIGHT", "unit": "mm"},
+        "bolt_count": {"quantity_or_text": "Q:GEOM:BOLT_COUNT", "unit": "dimensionless"},
+        "bolt_thread": {"quantity_or_text": "Q:GEOM:BOLT_THREAD", "unit": "thread"}
+      },
+      "note": "列语义与表 6 一致（本表为双头螺柱连接，螺栓数含螺柱）。"
+    }
+  }
+}

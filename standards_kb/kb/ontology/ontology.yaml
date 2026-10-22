@@ -1,0 +1,419 @@
+# =============================================================================
+# standards_kb / 本体规范（Ontology）
+# -----------------------------------------------------------------------------
+# 目的：把「标准 → 公式 / 数据表 / 参数」三层条目，挂到一组**全局实体**上。
+#       解决三个当前的结构性痛点：
+#         1) 符号碰撞 —— 'P' 在 7 条公式里含义各不相同，符号只是局部名
+#         2) 易混对   —— 同一判据在不同标准下阈值不同（CE 0.45 vs 0.50），
+#                        现在散成独立条目，靠人脑记
+#         3) 单位制配对 —— US/SI 两条取值靠人工维护，漏配即量级错误
+#
+# 定位声明
+# -----------------------------------------------------------------------------
+# 本体**不替代**抓取与核验。抓取、核验、证据链是「获取」层，本体是「组织」层。
+# 本体不产生新事实；它只声明「这些条目说的是不是同一个东西」。
+# 本体里的每一条断言都必须能追到已核验条目，反之亦然。
+#
+# 版本：semver + 落库日期，与 README 规则一致
+# =============================================================================
+
+meta:
+  schema: standards_kb.ontology/1.0
+  version: "1.0.0+20261022"
+  created: "2026-10-22"
+  layers: [formula, parameter, data]
+  disclaimer: >-
+    本体只声明「条目之间的身份与关系」，不声明任何工程正确性。
+    本体的可信度上限 = 其所引用条目的证据等级上限。
+
+# -----------------------------------------------------------------------------
+# 命名空间
+# -----------------------------------------------------------------------------
+namespace:
+  quantity: "Q:"      # 物理量 / 被测量（全局实体，跨标准唯一）
+  context: "X:"       # 适用上下文（材料组、座型、介质、单位制、标准、分支路径）
+  set: "S:"           # 等价集（把若干 occurrence 归为一组：US/SI 配对、易混对）
+  binding: "B:"       # 公式变量 → 物理量 的绑定
+
+id_patterns:
+  quantity: "^Q:[A-Z]{2,6}:[A-Z0-9_]{2,64}$"
+  context: "^X:[A-Z]{2,6}:[A-Z0-9_]{2,64}$"
+  set: "^S:[A-Z]{2,6}:[A-Z0-9_]{2,64}$"
+
+# -----------------------------------------------------------------------------
+# 类（Class）
+# -----------------------------------------------------------------------------
+# quantity 是全库的**中枢类**。公式变量、参数取值、表列值，
+# 全部通过它对齐到同一个物理量。
+# -----------------------------------------------------------------------------
+classes:
+
+  - name: Quantity
+    zh: 物理量（被测量）
+    id_prefix: "Q:"
+    required: [qid, name_zh, dimension, canonical_unit]
+    optional: [name_en, aliases, symbol_candidates, notes]
+    definition: >-
+      一个与标准无关的物理量。**跨标准唯一**：BPVC-I 的碳当量、
+      B31.1 的碳当量，是同一个 Quantity 的两个 Occurrence，不是两个 Quantity。
+    cardinality_note: >-
+      同一 quantity 可有 N 个 occurrence（不同标准 / 条款 / 单位制 / 分支路径），
+      但每个 occurrence 只能属于 1 个 quantity。
+
+  - name: Context
+    zh: 适用上下文
+    id_prefix: "X:"
+    required: [xid, kind, name_zh]
+    optional: [name_en, notes]
+    definition: >-
+      限定取值成立的环境。取值不是「无条件成立」的，几乎每个 occurrence
+      都需要挂上下文（材料组、介质、座型、单位制、条款分支）。
+    examples:
+      - "X:MATERIAL_GROUP:P_NO_1_GR_1_2_3"
+      - "X:UNIT_SYSTEM:US"
+      - "X:SEAT_TYPE:CONICAL_45"
+      - "X:PWHT_PATH:BPVC_NOTE_A2"
+
+  - name: Occurrence
+    zh: 取值出现
+    id_prefix: "O:"
+    required: [oid, entry_id, entry_layer, quantity, standard_id, clause]
+    optional: [value, relation, role, unit_system, contexts, note]
+    definition: >-
+      「某标准某条款下，某物理量的一个取值」。**参数条目的本体投影**。
+    occurrence_kinds:
+      - kind: VALUE
+        layers: [parameter]
+        description: >-
+          取值型 occurrence。一个参数条目 = 某物理量在某标准某条款下的一个取值，
+          带判据方向（relation）、角色（role）、单位制（unit_system）、上下文。
+      - kind: RESULT
+        layers: [formula]
+        description: >-
+          结果型 occurrence。公式不是判据，故 relation / role / unit_system 为空；
+          它声明的是「该公式算出哪个物理量」，用于跨标准对齐同一物理量的算法。
+      - kind: NONE
+        layers: [data]
+        description: >-
+          数据表条目**不产生** occurrence —— 一张表不是单个物理量的取值。
+          表列的投影由独立的 TableColumn 类承担。
+    amendment: >-
+      【2026-10-22 第二轮修订】初版定义写「公式里的常量、数据表里的列值，
+      也投影成 occurrence」，与实现不一致（实测 occurrence 只有 57 条 = 仅参数层，
+      而条目共 93 条）。修订为显式分型：参数=VALUE、公式=RESULT、数据=NONE。
+      公式投影为 RESULT 是为了支持「同一物理量在不同标准下由哪几条公式计算」
+      这一跨标准对齐查询；数据表不投影为 occurrence 是因为一表多量，
+      强行取一个 quantity 会丢信息。修订理由已如实记录，不做静默改动。
+    note: >-
+      oid 由 entry_id 派生（O:<entry_id>），保证 1:1 且可回溯。
+
+  - name: Criterion
+    zh: 判据
+    id_prefix: "C:"
+    required: [cid, quantity, relation]
+    optional: [threshold, contexts, note]
+    definition: >-
+      对某 quantity 的判定规则 = relation（方向）+ threshold（阈值）+ contexts（适用条件）。
+      判据的**方向不可省略** —— 原文写「不超过」就不能记成等号。
+    note: >-
+      跨标准的同一 quantity 常常有**不同判据**（CE ≤ 0.45 vs CE < 0.50），
+      这两个 Criterion 必须各自独立存在，且被登记为易混关系。
+    derivation: >-
+      **Criterion 不单独存储**，由 occurrence 派生：cid = "C:" + entry_id。
+      取 relation 非空的 occurrence 即得一条判据。
+    derivation_note: >-
+      【2026-10-22 新增】若把判据单独存一份映射，就会出现"两处阈值"，
+      其中一处可能与条目不一致 —— 这等于本体自己造了新事实，直接违反 INV-10。
+      派生式保证「判据方向与阈值」只有一个出处：条目本身。
+      校验器因此能直接比对 occurrence.relation 与条目 value.relation（INV-03）。
+
+  - name: VariableBinding
+    zh: 公式变量绑定
+    id_prefix: "B:"
+    required: [bid, formula_id, local_symbol, quantity]
+    optional: [note]
+    definition: >-
+      把公式里的**局部符号**绑到**全局物理量**。
+      这是解决符号碰撞的唯一手段：F-TEST-001 的 P 与 F-STR-001 的 p
+      局部符号长得像，但绑定到不同 quantity 后，机器即可区分。
+    note: >-
+      local_symbol 不要求全局唯一 —— 碰撞是允许的，绑定消歧才是目的。
+
+  - name: EquivalenceSet
+    zh: 等价集
+    id_prefix: "S:"
+    required: [sid, kind, members]
+    optional: [note, cross_standard]
+    definition: >-
+      把若干 occurrence / criterion 归为一组，说明它们之间是什么关系。
+      三种 kind：
+        UNIT_CONVERSION       —— 同一量的不同单位制取值（US ↔ SI），换算因子可核
+        CONFUSABLE           —— 同一量在不同标准下的判据，取值不同、易被混用
+        COLUMN_CORRESPONDENCE —— 数据表列 ↔ 数据表列的跨标准对应关系。
+                               除"确实同量"的对齐外，还要显式登记
+                               **看起来同量但故意没合并**的近似对
+                               （如 GB 的 d 密封面直径 vs ГОСТ 的 D1 密封面外径）。
+    amend_note: >-
+      2026-10-22 初版只有两种 kind。建数据层映射时发现：GB/T 15530.1 与
+      ГОСТ 1536-76 的法兰尺寸表列几乎一一对应，但有两列是"近似同量、故意不合并"
+      （GB 的 d 是突面密封面直径，ГОСТ 的 D1 是密封面外径）。
+      跨标准列对应关系是数据层的核心产出，塞进 CONFUSABLE 会污染其语义
+      （CONFUSABLE 专指"同量不同判据"），故单列第三种 kind。
+    note: >-
+      CONFUSABLE 不是「错误」，是「必须一起看」。它的价值在于：一旦标准升级
+      或新增同类标准，机器能立刻告诉你哪些判据需要重新比对。
+
+  - name: TableColumn
+    zh: 表列
+    id_prefix: "TC:"
+    required: [tcid, entry_id, column_key, quantity_or_text]
+    optional: [unit, note]
+    definition: >-
+      数据表的一列 → 物理量的绑定。text 型的列（如「类型」「连接形式」）
+      显式标 text，不强行绑物理量。
+
+# -----------------------------------------------------------------------------
+# 关系（Relation）
+# -----------------------------------------------------------------------------
+relations:
+
+  - name: has_occurrence
+    domain: Quantity
+    range: Occurrence
+    cardinality: "1..*"
+    inverse: occurrence_of
+    description: 物理量在标准中的每次出现。
+
+  - name: occurrence_of
+    domain: Occurrence
+    range: Quantity
+    cardinality: "1..1"
+    inverse: has_occurrence
+
+  - name: valid_in
+    domain: Occurrence
+    range: Context
+    cardinality: "0..*"
+    description: 取值成立的上下文。
+
+  - name: evaluated_by
+    domain: Occurrence
+    range: Criterion
+    cardinality: "0..1"
+    description: 该 occurrence 若是某个判据的阈值，则指向它。
+
+  - name: bound_to
+    domain: VariableBinding
+    range: Quantity
+    cardinality: "1..1"
+    description: 公式变量 → 物理量。
+
+  - name: in_set
+    domain: [Occurrence, Criterion]
+    range: EquivalenceSet
+    cardinality: "0..*"
+    description: 归入某个等价集。
+
+  - name: column_of
+    domain: TableColumn
+    range: Quantity
+    cardinality: "0..1"
+    description: 表列 → 物理量（text 列为空）。
+
+# -----------------------------------------------------------------------------
+# 受控词表
+# -----------------------------------------------------------------------------
+controlled_vocabulary:
+
+  # 物理量维度（不是 domain —— domain 是知识域，dimension 是量纲）
+  dimension:
+    - DIMENSIONLESS      # 无量纲比值
+    - TEMPERATURE
+    - LENGTH
+    - AREA
+    - ANGLE
+    - PRESSURE
+    - FORCE
+    - STRESS
+    - TORQUE
+    - TIME
+    - MASS_FRACTION
+    - VOLUME_FLOW
+    - MASS_FLOW
+    - DENSITY
+    - SPECIFIC_VOLUME
+    - COUNT
+    - FREQUENCY
+    - POWER
+    - TEXT              # 枚举型取值
+
+  # 上下文类别（Context.kind）
+  context_kind:
+    - MATERIAL_GROUP   # 材料组（如 P-No.1 Group 1,2,3）
+    - MEDIUM          # 介质（饱和蒸汽 / 水 / 空气）
+    - NOZZLE_TYPE     # 喷嘴类型
+    - PWHT_PATH       # 焊后热处理分支路径
+    - REGION          # 法规/地区
+    - SEAT_TYPE       # 座型（锥形 45° / 平板 / 截止 / 闸阀）
+    - STANDARD        # 标准本身
+    - TEST_TYPE       # 试验类型
+    - UNIT_SYSTEM     # 单位制
+
+  # 单位制
+  unit_system:
+    - SI                # 公制
+    - US                # 英制
+    - MIXED             # 原文同时给出两制（如 250 °F (120 °C)）
+
+  # occurrence 的角色：这个数在判据里干什么
+  role:
+    - CONSTANT          # 公式里的常数
+    - COEFFICIENT       # 系数 / 因子
+    - LIMIT             # 限值（不得超过 / 不得低于）
+    - THRESHOLD         # 阈值（判据门槛）
+    - RANGE             # 允许区间
+    - DEFAULT_SUBSTITUTE # 缺省替代值
+    - UNIT_FACTOR       # 单位换算因子
+    - CONVERSION        # 单位制换算对
+    - SUBSTITUTE        # 计算式里的合并替代项
+    - DEFINITION        # 定义式取值（如 P 的定义中 1.03、14.7）
+
+  # role 与条目 param_kind 的关系（两层是两个维度，不许混为一谈）
+  role_vs_param_kind: >-
+    role 是**本体侧**的语义标签，param_kind 是**条目侧**的分类，二者不是同一个维度。
+    规则：
+      (a) role 的值域 = 参数层 param_kind 的值域 ∪ {CONVERSION, SUBSTITUTE, DEFINITION}；
+      (b) 当 role 落在 param_kind 值域内时，role 必须等于条目的 param_kind ——
+          本体不允许重新分类条目；
+      (c) 当 role 取扩展值 CONVERSION / SUBSTITUTE / DEFINITION 时，允许比 param_kind 细一层，
+          但必须在该条映射的 note 里写明为什么细了一层。
+  role_vs_param_kind_rationale: >-
+    【2026-10-22 新增】初版校验器直接要求 role == param_kind，结果把 3 条 P 定义项
+    （P-TEST-027 系数 1.03、P-TEST-028 大气压 14.7 psia、P-TEST-029 附加项 2 psi）
+    判成违规。核对原文后确认：它们的 param_kind 是 COEFFICIENT / CONSTANT，
+    但在本体里承担的是"判据公式里的定义项"这一不同角色 —— 例如 1.03 是
+    P = (1.03 x set pressure + 14.7) 的定义项，与 14.7 的大气压基准同属定义项。
+    判成违规是校验器把两个维度混为一谈，不是本体错了。改为上面的 (a)(b)(c)。
+
+  # 判据方向（与参数层 relation 一致，不得弱化原文）
+  relation:
+    - "="
+    - "<"
+    - "<="
+    - ">"
+    - ">="
+    - "±"
+    - "range"
+    - "approx"
+
+# -----------------------------------------------------------------------------
+# 不变量（校验器强制）
+# -----------------------------------------------------------------------------
+invariants:
+
+  - id: INV-01
+    title: 条目映射完整性
+    rule: >-
+      公式 / 参数 / 数据三类中的每一条条目，都必须在 mappings/ 下有且仅有一条映射。
+      不允许漏映射，也不允许一条条目映射两次。
+
+  - id: INV-02
+    title: occurrence 唯一归属
+    rule: >-
+      每个 occurrence 恰好属于 1 个 quantity（不允许一个取值挂多个物理量）；
+      每个 quantity 至少被 1 个 occurrence **或 1 个变量绑定**引用，
+      即词表里不允许留下"谁都没用"的悬空物理量。
+    amendment: >-
+      【2026-10-22 修订】初版原文为"每个 quantity 至少被 1 个 occurrence 引用"。
+      实测：STRUCT / SEAL / DRIVE / BOLT / FLOW 域的物理量只出现在公式变量绑定里，
+      没有任何参数条目承载它们 —— 例如 Q:STRUCT:HOOP_STRESS 只能出现在
+      F-STR-001 的 variables 里。按初版原文会把 40 余个合法物理量全部误判为违规。
+      本体允许"只被公式绑定引用"的物理量存在：这是公式层与参数层的分工，不是缺陷。
+      修订理由已如实记录，不做静默改动。
+
+  - id: INV-03
+    title: 判据方向不可弱化
+    rule: >-
+      occurrence.relation 与 criterion.relation 必须一致于原文判据方向。
+      原文「不超过」不得记为 "="；原文「不超过且不低于」不得记为单边。
+    amendment: >-
+      【2026-10-22 补充】同时校验 occurrence.role 与条目 param_kind 的关系，
+      规则见 controlled_vocabulary.role_vs_param_kind。
+      首轮运行即由此抓到 P-MAT-026：本体把原文 "exceeds 1 in. (25 mm)" 的
+      严格大于记成了 ">="，属方向弱化，已按条目方向改回 ">"。
+
+  - id: INV-04
+    title: 符号碰撞必须消歧
+    rule: >-
+      同一 local_symbol 绑定到多个 quantity 时，必须在 notes 里说明消歧依据；
+      校验器不报错，但列为「需人工确认」清单。
+
+  - id: INV-05
+    title: 单位制配对双向闭合
+    rule: >-
+      kind=UNIT_CONVERSION 的等价集里，US 与 SI 两侧必须成对出现；
+      单侧出现即报错。同时记录换算因子来源，可核。
+
+  - id: INV-06
+    title: 易混对必须显式登记
+    rule: >-
+      同一 quantity 在两个及以上标准下都有 criterion 时，
+      必须登记为 CONFUSABLE 等价集，或显式声明二者等价（并给出理由）。
+      不允许沉默地并存。
+
+  - id: INV-07
+    title: 阈值可回溯
+    rule: >-
+      criterion.threshold 的数值必须出现在其引用条目 entry 的
+      source.snippet 或 value.canonical 中。不允许凭空写阈值。
+      当条目的 value.canonical 本身是一个算式（如 "1/500"、"0.90/51.45"）时，
+      阈值必须能由该算式**复算**得到（相对容差 1e-9），
+      且算式的分量数字必须能在原文 snippet 中找到 ——
+      否则"算式"就成了脱离原文的第二个事实来源。
+    amendment: >-
+      【2026-10-22 修订】初版只要求"数值出现在文本中"，实测把 4 条合法条目判成违规：
+      P-TEST-010 (1/500)、P-TEST-011 (1/60)、P-TEST-016 (0.90/51.45)、P-TEST-017 (0.95/5.25)。
+      它们的 value.numeric 是由 canonical 算式求得的**派生数**，按定义不会作为字面量
+      出现在 canonical 里。修订后增加"算式可复算"这一支，使校验既能抓住
+      "数值被手改成与 canonical 不符"，又不误伤合法的派生阈值。
+
+  - id: INV-08
+    title: 上下文不得越界
+    rule: >-
+      occurrence 的 contexts 只能引用本体词表里已定义的 Context。
+      新增上下文必须先进词表。
+
+  - id: INV-09
+    title: 数量与单位不分离
+    rule: >-
+      quantity.canonical_unit 必填。无量纲写 dimensionless。
+      单位制差异由 occurrence.unit_system 承担，不由 quantity 承担。
+
+  - id: INV-10
+    title: 本体不产生新事实
+    rule: >-
+      本体文件中出现的任何数值，都必须能回溯到被引用条目：
+      (a) CONFUSABLE 集合登记的取值，必须能在该条目的
+          source.snippet / value.canonical / value.display 中找到；
+      (b) UNIT_CONVERSION 集合的 expression_ratio，必须等于两个成员
+          条目取值之比（容差 1e-6 相对误差）—— 它是**可复算的派生量**，
+          不是新事实，两个被引用的数本身都在条目里；
+      (c) 等价集的 members 必须是真实存在的条目 ID。
+      本体不新增标准正文里没有的数字。
+    amendment: >-
+      【2026-10-22 修订】初版原文只说"任何数值都必须能在条目里找到"。
+      实测这会误判 expression_ratio：它是两个条目取值的比，
+      比值本身按定义不会出现在任一条目的 snippet 里，但它可由两个条目复算，
+      因此不构成"新事实"。修订后把 (b) 单列并给出复算要求，
+      既保住"不新增数字"的底线，又不把派生量判成违规。
+
+  - id: INV-11
+    title: 同名不同 qid 必须合并或显式登记
+    rule: >-
+      词表里不允许出现两个 name_zh 相同但 qid 不同的物理量。
+      同一物理量在库里只能有一个 qid；确需并存（如同一量在不同标准下
+      适用面型不同）时，必须在 vocabulary.yaml 的 open_questions 段
+      显式登记理由，否则校验器报错。
+    note: >-
+      本条是建数据层时踩出来的：螺栓数量与通流截面积各有两个 qid，
+      本轮已合并（详见词表 notes）。

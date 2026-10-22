@@ -1,6 +1,6 @@
 {
   "schema": "standards_kb.fetch_manifest/1.0",
-  "updated_at": "2026-10-22T15:11:46+08:00",
+  "updated_at": "2026-10-23T00:25:18+08:00",
   "note": "登记本地已落地的标准正文。只证明「这份正文在这儿、哈希是多少」，不证明条款级结论正确 —— 结论见 kb/formulas/ 每条的 evidence 字段。",
   "standards": [
     {
@@ -38,7 +38,8 @@
       "curated_entries": [],
       "curated_data_entries": [],
       "curated_param_entries": [],
-      "rebuilt_at": "2026-10-22T15:11:46+08:00"
+      "curated_ontology_entries": [],
+      "rebuilt_at": "2026-10-23T00:25:18+08:00"
     },
     {
       "source_id": "ASME-B31.1",
@@ -87,7 +88,18 @@
         "P-MAT-017",
         "P-MAT-018"
       ],
-      "rebuilt_at": "2026-10-22T15:11:46+08:00"
+      "curated_ontology_entries": [
+        "F-MAT-003",
+        "P-MAT-011",
+        "P-MAT-012",
+        "P-MAT-013",
+        "P-MAT-014",
+        "P-MAT-015",
+        "P-MAT-016",
+        "P-MAT-017",
+        "P-MAT-018"
+      ],
+      "rebuilt_at": "2026-10-23T00:25:18+08:00"
     },
     {
       "source_id": "ASME-B31.4",
@@ -141,7 +153,8 @@
       "curated_entries": [],
       "curated_data_entries": [],
       "curated_param_entries": [],
-      "rebuilt_at": "2026-10-22T15:11:46+08:00"
+      "curated_ontology_entries": [],
+      "rebuilt_at": "2026-10-23T00:25:19+08:00"
     },
     {
       "source_id": "ASME-B31.9",
@@ -195,7 +208,8 @@
       "curated_entries": [],
       "curated_data_entries": [],
       "curated_param_entries": [],
-      "rebuilt_at": "2026-10-22T15:11:46+08:00"
+      "curated_ontology_entries": [],
+      "rebuilt_at": "2026-10-23T00:25:19+08:00"
     },
     {
       "source_id": "ASME-BPVC-I",
@@ -312,7 +326,70 @@
         "P-TEST-029",
         "P-TEST-030"
       ],
-      "rebuilt_at": "2026-10-22T15:11:46+08:00"
+      "curated_ontology_entries": [
+        "F-MAT-002",
+        "F-STR-003",
+        "F-STR-004",
+        "F-STR-005",
+        "F-STR-006",
+        "F-STR-007",
+        "F-TEST-001",
+        "F-TEST-002",
+        "F-TEST-003",
+        "F-TEST-004",
+        "F-TEST-005",
+        "F-TEST-006",
+        "P-MAT-001",
+        "P-MAT-002",
+        "P-MAT-003",
+        "P-MAT-004",
+        "P-MAT-005",
+        "P-MAT-006",
+        "P-MAT-007",
+        "P-MAT-008",
+        "P-MAT-009",
+        "P-MAT-010",
+        "P-MAT-019",
+        "P-MAT-020",
+        "P-MAT-021",
+        "P-MAT-022",
+        "P-MAT-023",
+        "P-MAT-024",
+        "P-MAT-025",
+        "P-MAT-026",
+        "P-MAT-027",
+        "P-TEST-001",
+        "P-TEST-002",
+        "P-TEST-003",
+        "P-TEST-004",
+        "P-TEST-005",
+        "P-TEST-006",
+        "P-TEST-007",
+        "P-TEST-008",
+        "P-TEST-009",
+        "P-TEST-010",
+        "P-TEST-011",
+        "P-TEST-012",
+        "P-TEST-013",
+        "P-TEST-014",
+        "P-TEST-015",
+        "P-TEST-016",
+        "P-TEST-017",
+        "P-TEST-018",
+        "P-TEST-019",
+        "P-TEST-020",
+        "P-TEST-021",
+        "P-TEST-022",
+        "P-TEST-023",
+        "P-TEST-024",
+        "P-TEST-025",
+        "P-TEST-026",
+        "P-TEST-027",
+        "P-TEST-028",
+        "P-TEST-029",
+        "P-TEST-030"
+      ],
+      "rebuilt_at": "2026-10-23T00:25:19+08:00"
     },
     {
       "source_id": "ASME-BPVC-IV",
@@ -350,7 +427,8 @@
       "curated_entries": [],
       "curated_data_entries": [],
       "curated_param_entries": [],
-      "rebuilt_at": "2026-10-22T15:11:46+08:00"
+      "curated_ontology_entries": [],
+      "rebuilt_at": "2026-10-23T00:25:19+08:00"
     },
     {
       "source_id": "ASME-BPVC-IX",
@@ -388,7 +466,8 @@
       "curated_entries": [],
       "curated_data_entries": [],
       "curated_param_entries": [],
-      "rebuilt_at": "2026-10-22T15:11:46+08:00"
+      "curated_ontology_entries": [],
+      "rebuilt_at": "2026-10-23T00:25:19+08:00"
     },
     {
       "source_id": "ASME-BPVC-VII",
@@ -442,7 +521,8 @@
       "curated_entries": [],
       "curated_data_entries": [],
       "curated_param_entries": [],
-      "rebuilt_at": "2026-10-22T15:11:46+08:00"
+      "curated_ontology_entries": [],
+      "rebuilt_at": "2026-10-23T00:25:19+08:00"
     },
     {
       "source_id": "GB-GB_T_15530.1-2008",
@@ -616,7 +696,15 @@
         "D-GBT15530-PT-PN"
       ],
       "curated_param_entries": [],
-      "rebuilt_at": "2026-10-22T15:11:46+08:00"
+      "curated_ontology_entries": [
+        "D-GBT15530-PN10-RF",
+        "D-GBT15530-PN16-RF",
+        "D-GBT15530-PN25-RF",
+        "D-GBT15530-PN6-RF",
+        "D-GBT15530-PT-CLASS",
+        "D-GBT15530-PT-PN"
+      ],
+      "rebuilt_at": "2026-10-23T00:25:19+08:00"
     },
     {
       "source_id": "GOST-LOCAL",
@@ -667,7 +755,16 @@
         "D-GOST1536-PN63"
       ],
       "curated_param_entries": [],
-      "rebuilt_at": "2026-10-22T15:11:46+08:00"
+      "curated_ontology_entries": [
+        "D-GOST1536-PN025",
+        "D-GOST1536-PN063",
+        "D-GOST1536-PN10",
+        "D-GOST1536-PN16",
+        "D-GOST1536-PN25",
+        "D-GOST1536-PN40",
+        "D-GOST1536-PN63"
+      ],
+      "rebuilt_at": "2026-10-23T00:25:19+08:00"
     }
   ],
   "summary": {
@@ -678,6 +775,19 @@
     "files": 48,
     "bytes": 74268726,
     "candidates": 188,
-    "curated_entries": 23
+    "curated_entries": 23,
+    "ontology_entries": 93,
+    "ontology": {
+      "quantities": 140,
+      "contexts": 18,
+      "equivalence_sets": 14,
+      "occurrences": 80,
+      "criteria": 57,
+      "variable_bindings": 127,
+      "table_columns": 126,
+      "mapped_entries": 93,
+      "open_questions": 2,
+      "symbol_collisions": 13
+    }
   }
 }

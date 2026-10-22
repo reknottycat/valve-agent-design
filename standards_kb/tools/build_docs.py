@@ -94,6 +94,30 @@ def load_candidates() -> list[dict]:
     return d
 
 
+def ontology_summary() -> dict:
+    """本体层统计摘要。本体层缺失时返回 error，不让覆盖表整个挂掉。"""
+    try:
+        import onto_model as OM
+        onto = OM.load(ROOT)
+    except Exception as exc:  # noqa: BLE001
+        return {"error": f"{type(exc).__name__}: {exc}"}
+    mapped = 0
+    for lay in ("formula", "parameter", "data"):
+        mapped += len(((onto.maps.get(lay) or {}).get("mappings") or {}))
+    return {
+        "quantities": len(onto.quantities),
+        "contexts": len(onto.contexts),
+        "sets": len(onto.sets),
+        "occurrences": len(onto.occurrences),
+        "criteria": len(onto.criteria),
+        "bindings": len(onto.bindings),
+        "columns": len(onto.columns),
+        "mapped_entries": mapped,
+        "collisions": len(OM.symbol_collisions(onto)),
+        "open_questions": len(onto.open_questions),
+    }
+
+
 def build_coverage() -> str:
     reg = load_json(ROOT / "registry" / "registry.json") or {}
     formulas = load_formulas()
@@ -255,6 +279,38 @@ def build_coverage() -> str:
     L.append("> 「视觉核验」= 该条目的数值在 PDF **纯位图**（剥离 OCR 文本层）上"
              "逐字肉眼核过。只有这一层核验通过，才允许标 `VERIFIED_CLAUSE`。")
     L.append("")
+
+    # 本体层（映射层，不产生新事实）
+    onto_s = ontology_summary()
+    L.append("## 本体层（映射层）")
+    L.append("")
+    if onto_s.get("error"):
+        L.append(f"> 本体层统计失败：{onto_s['error']}")
+        L.append("")
+    else:
+        L.append("本体层是建立在三类条目之上的**映射层**：它不新增任何事实，"
+                 "只声明「这些条目说的是不是同一个东西」。")
+        L.append("完整索引见 [`ONTOLOGY_INDEX.md`](ONTOLOGY_INDEX.md)。")
+        L.append("")
+        L.append("| 项 | 值 |")
+        L.append("|---|---|")
+        L.append(f"| 已映射条目 | **{onto_s['mapped_entries']}** / "
+                 f"{len(formulas) + len(data_entries) + len(params)} |")
+        L.append(f"| 物理量 Quantity | {onto_s['quantities']} |")
+        L.append(f"| 上下文 Context | {onto_s['contexts']} |")
+        L.append(f"| 等价集 EquivalenceSet | {onto_s['sets']} |")
+        L.append(f"| 出现 Occurrence | {onto_s['occurrences']} |")
+        L.append(f"| 判据 Criterion（派生） | {onto_s['criteria']} |")
+        L.append(f"| 变量绑定 VariableBinding | {onto_s['bindings']} |")
+        L.append(f"| 表列投影 TableColumn | {onto_s['columns']} |")
+        L.append(f"| 符号碰撞组 | {onto_s['collisions']} |")
+        L.append(f"| 未决问题登记 | {onto_s['open_questions']} |")
+        L.append("")
+        L.append("> **符号碰撞组** = 同一个字母在库里指向多个物理量（实测 13 组）。"
+                 "这是读公式时最容易串味的地方，消歧靠 qid，不靠人脑。")
+        L.append("> **未决问题登记** = 疑似同族但证据不足以合并的物理量。"
+                 "本库宁可留待决，也不靠命名相似度擅自合并。")
+        L.append("")
 
     # 覆盖缺口（诚实列出）
     L.append("## 已知覆盖缺口")

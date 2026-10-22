@@ -31,6 +31,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import kb_entries as K  # noqa: E402
 from standard_ids import std_of  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -188,6 +189,76 @@ def curated_param_entries_by_standard() -> dict[str, list[str]]:
     return out
 
 
+def _entry_standard(e: dict) -> str:
+    """条目所属标准全名。公式/参数在 source 里，数据表在顶层。"""
+    src = e.get("source") or {}
+    return str(src.get("standard_id") or e.get("standard_id") or "")
+
+
+def curated_ontology_entries_by_standard() -> dict[str, list[str]]:
+    """统计**已纳入本体映射**的条目，按标准分组。
+
+    本体层是映射层，不产生新事实。台账要能看出
+    「某标准有 12 条公式，但只有 8 条进了本体」这种缺口，
+    所以这里统计的是被本体映射覆盖的条目，而不是本体自己造的东西。
+    """
+    out: dict[str, list[str]] = {}
+    onto_dir = KB / "ontology" / "mappings"
+    if not onto_dir.exists():
+        return out
+    mapped: set[str] = set()
+    for fname in ("formulas.json", "parameters.json", "data.json"):
+        p = onto_dir / fname
+        if not p.exists():
+            continue
+        try:
+            doc = json.loads(p.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        for eid in (doc.get("mappings") or {}):
+            mapped.add(eid)
+    if not mapped:
+        return out
+    for layer in ("formula", "parameter", "data"):
+        for e in (K.formula_entries(ROOT) if layer == "formula"
+                  else K.param_entries(ROOT) if layer == "parameter"
+                  else K.data_entries(ROOT)):
+            eid = e.get("id")
+            if not eid or eid not in mapped:
+                continue
+            sid = _entry_standard(e)
+            if sid:
+                out.setdefault(sid, []).append(eid)
+    return out
+
+
+def ontology_asset_stats() -> dict:
+    """本体层资产统计（词表/等价集/映射/投影/碰撞）。
+
+    失败时返回 error 字段而不是抛异常 —— 台账不该因为本体层缺失而整体挂掉。
+    """
+    try:
+        import onto_model as OM
+        onto = OM.load(ROOT)
+    except Exception as exc:  # noqa: BLE001
+        return {"error": f"{type(exc).__name__}: {exc}"}
+    mapped = 0
+    for lay in ("formula", "parameter", "data"):
+        mapped += len(((onto.maps.get(lay) or {}).get("mappings") or {}))
+    return {
+        "quantities": len(onto.quantities),
+        "contexts": len(onto.contexts),
+        "equivalence_sets": len(onto.sets),
+        "occurrences": len(onto.occurrences),
+        "criteria": len(onto.criteria),
+        "variable_bindings": len(onto.bindings),
+        "table_columns": len(onto.columns),
+        "mapped_entries": mapped,
+        "open_questions": len(onto.open_questions),
+        "symbol_collisions": len(OM.symbol_collisions(onto)),
+    }
+
+
 def candidate_count(source_id: str) -> tuple[int, list[str]]:
     """统计该标准目录下已落地的候选公式文件与条目数。"""
     d = RUNS / source_id
@@ -234,6 +305,7 @@ def build(source_id: str, reg_src: dict | None) -> dict:
     curated = []
     curated_data = []
     curated_param = []
+    curated_ontology = []
     if std_key:
         for k, ids in curated_entries_by_standard().items():
             if std_of(k) == std_key:
@@ -244,6 +316,9 @@ def build(source_id: str, reg_src: dict | None) -> dict:
         for k, ids in curated_param_entries_by_standard().items():
             if std_of(k) == std_key:
                 curated_param += ids
+        for k, ids in curated_ontology_entries_by_standard().items():
+            if std_of(k) == std_key:
+                curated_ontology += ids
 
     rec = {
         "source_id": source_id,
@@ -262,6 +337,7 @@ def build(source_id: str, reg_src: dict | None) -> dict:
         "curated_entries": sorted(curated),
         "curated_data_entries": sorted(curated_data),
         "curated_param_entries": sorted(curated_param),
+        "curated_ontology_entries": sorted(curated_ontology),
         "rebuilt_at": datetime.now(CST).isoformat(timespec="seconds"),
     }
     return rec
@@ -281,6 +357,7 @@ def rebuild_manifest(reg: dict | None = None) -> dict:
     curated_by_std = curated_entries_by_standard()
     curated_data_by_std = curated_data_entries_by_standard()
     curated_param_by_std = curated_param_entries_by_standard()
+    curated_ontology_by_std = curated_ontology_entries_by_standard()
 
     std_dirs = []
     if RUNS.exists():
@@ -306,6 +383,8 @@ def rebuild_manifest(reg: dict | None = None) -> dict:
         "bytes": sum(f["bytes"] for s in manifest["standards"] for f in s["files"]),
         "candidates": sum(s["candidates_extracted"] for s in manifest["standards"]),
         "curated_entries": sum(len(v) for v in curated_by_std.values()),
+        "ontology_entries": sum(len(v) for v in curated_ontology_by_std.values()),
+        "ontology": ontology_asset_stats(),
     }
     return manifest
 
@@ -380,7 +459,21 @@ def main() -> int:
           f"文件 {sm['files']} 个 / {sm['bytes']/1048576:.1f} MB | "
           f"待复核候选 {sm['candidates']} 条 | 公式条目 {sm['curated_entries']} 条 | "
           f"数据表 {sm['data_entries']} 条 | "
-          f"参数表 {sm['parameter_entries']} 条")
+          f"参数表 {sm['parameter_entries']} 条 | "
+          f"本体映射 {sm.get('ontology_entries', 0)} 条")
+    onto = sm.get("ontology") or {}
+    if onto.get("error"):
+        print(f"本体层统计失败: {onto['error']}")
+    else:
+        print(f"本体层: 物理量 {onto.get('quantities', 0)} | "
+              f"上下文 {onto.get('contexts', 0)} | "
+              f"等价集 {onto.get('equivalence_sets', 0)} | "
+              f"出现 {onto.get('occurrences', 0)} | "
+              f"判据 {onto.get('criteria', 0)} | "
+              f"变量绑定 {onto.get('variable_bindings', 0)} | "
+              f"表列 {onto.get('table_columns', 0)} | "
+              f"碰撞组 {onto.get('symbol_collisions', 0)} | "
+              f"未决问题 {onto.get('open_questions', 0)}")
 
     if args.verify:
         if not drift:

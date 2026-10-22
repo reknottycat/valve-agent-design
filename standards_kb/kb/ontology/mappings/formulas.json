@@ -1,0 +1,297 @@
+{
+  "schema": "standards_kb.ontology.mapping/1.0",
+  "layer": "formula",
+  "version": "1.0.0+20261022",
+  "note": "公式条目 → 本体投影。variables 把**局部符号**绑到**全局物理量**，这是消除符号碰撞的唯一手段：局部符号允许重名，绑定后即可区分。",
+  "mappings": {
+
+    "F-MAT-001": {
+      "result_quantity": "Q:MAT:STRENGTH_UTILIZATION",
+      "variables": {
+        "utilization": "Q:MAT:STRENGTH_UTILIZATION",
+        "sigma_max": "Q:MAT:MAX_WORKING_STRESS",
+        "sigma_allow": "Q:MAT:ALLOWABLE_STRESS"
+      },
+      "uses_parameters": [],
+      "note": "通用力学式，无标准来源绑定"
+    },
+    "F-MAT-002": {
+      "result_quantity": "Q:MAT:CARBON_EQUIVALENT",
+      "variables": {
+        "CE": "Q:MAT:CARBON_EQUIVALENT",
+        "C": "Q:MAT:CHEM_CARBON",
+        "Mn": "Q:MAT:CHEM_MANGANESE",
+        "Si": "Q:MAT:CHEM_SILICON",
+        "Cr": "Q:MAT:CHEM_CHROMIUM",
+        "Mo": "Q:MAT:CHEM_MOLYBDENUM",
+        "V": "Q:MAT:CHEM_VANADIUM",
+        "Ni": "Q:MAT:CHEM_NICKEL",
+        "Cu": "Q:MAT:CHEM_COPPER"
+      },
+      "uses_parameters": ["P-MAT-001", "P-MAT-002"],
+      "note": "BPVC-I 版；替代值 0.15% 见 P-MAT-002"
+    },
+    "F-MAT-003": {
+      "result_quantity": "Q:MAT:CARBON_EQUIVALENT",
+      "variables": {
+        "CE": "Q:MAT:CARBON_EQUIVALENT",
+        "C": "Q:MAT:CHEM_CARBON",
+        "Mn": "Q:MAT:CHEM_MANGANESE",
+        "Si": "Q:MAT:CHEM_SILICON",
+        "Cr": "Q:MAT:CHEM_CHROMIUM",
+        "Mo": "Q:MAT:CHEM_MOLYBDENUM",
+        "V": "Q:MAT:CHEM_VANADIUM",
+        "Ni": "Q:MAT:CHEM_NICKEL",
+        "Cu": "Q:MAT:CHEM_COPPER"
+      },
+      "uses_parameters": ["P-MAT-011", "P-MAT-012"],
+      "note": "B31.1 版，与 F-MAT-002 同量同式但阈值不同；替代值 0.1% 见 P-MAT-012"
+    },
+
+    "F-SEAL-001": {
+      "result_quantity": "Q:SEAL:NORMAL_CONTACT_FORCE",
+      "variables": {
+        "N_seat": "Q:SEAL:NORMAL_CONTACT_FORCE",
+        "F_flow": "Q:SEAL:FLOW_THRUST",
+        "phi": "Q:SEAL:SEAT_INCLINATION",
+        "q_contact": "Q:SEAL:CONTACT_PRESSURE"
+      },
+      "uses_parameters": []
+    },
+    "F-SEAL-002": {
+      "result_quantity": "Q:SEAL:CONTACT_PRESSURE",
+      "variables": {
+        "q_contact": "Q:SEAL:CONTACT_PRESSURE",
+        "N_seat": "Q:SEAL:NORMAL_CONTACT_FORCE",
+        "A_line": "Q:SEAL:CONTACT_LINE_AREA",
+        "D_seat": "Q:SEAL:SEAL_DIAMETER",
+        "w_seat": "Q:SEAL:CONTACT_LINE_WIDTH"
+      },
+      "uses_parameters": []
+    },
+
+    "F-STR-001": {
+      "result_quantity": "Q:STRUCT:HOOP_STRESS",
+      "variables": {
+        "sigma_h": "Q:STRUCT:HOOP_STRESS",
+        "p": "Q:STRUCT:INTERNAL_PRESSURE",
+        "D": "Q:STRUCT:INNER_DIAMETER",
+        "t_net": "Q:STRUCT:NET_WALL_THICKNESS"
+      },
+      "uses_parameters": [],
+      "note": "局部符号 'p' 为内压，与 F-TEST-001 的 'P'（入口压力）不是同一个量"
+    },
+    "F-STR-002": {
+      "result_quantity": "Q:STRUCT:INNER_HOOP_STRESS",
+      "variables": {
+        "sigma_theta_inner": "Q:STRUCT:INNER_HOOP_STRESS",
+        "p": "Q:STRUCT:INTERNAL_PRESSURE",
+        "a": "Q:STRUCT:INNER_RADIUS",
+        "b": "Q:STRUCT:OUTER_RADIUS"
+      },
+      "uses_parameters": []
+    },
+    "F-STR-003": {
+      "result_quantity": "Q:STRUCT:REINFORCEMENT_AREA",
+      "variables": {
+        "WM": "Q:STRUCT:REINFORCEMENT_AREA",
+        "A": "Q:STRUCT:OPENING_DEDUCTION_AREA",
+        "d": "Q:STRUCT:NOZZLE_DIAMETER",
+        "t_n": "Q:STRUCT:NOZZLE_WALL_THICKNESS",
+        "t_r": "Q:STRUCT:REINFORCEMENT_THICKNESS",
+        "F": "Q:STRUCT:CAST_QUALITY_FACTOR"
+      },
+      "uses_parameters": [],
+      "note": "局部符号 'A' 是开孔削弱面积，与 F-TEST-001 的 'A'（喉部面积）不是同一个量"
+    },
+    "F-STR-004": {
+      "result_quantity": "Q:STRUCT:MIN_WALL_THICKNESS",
+      "variables": {
+        "t": "Q:STRUCT:MIN_WALL_THICKNESS",
+        "Z_1": "Q:STRUCT:GEOM_FACTOR_Z1",
+        "R": "Q:STRUCT:INNER_RADIUS",
+        "R_0": "Q:STRUCT:OUTER_RADIUS",
+        "S": "Q:STRUCT:ALLOWABLE_STRESS",
+        "E": "Q:STRUCT:JOINT_EFFICIENCY",
+        "P": "Q:STRUCT:MAX_WORKING_PRESSURE",
+        "w": "Q:STRUCT:WELD_STRENGTH_REDUCTION"
+      },
+      "uses_parameters": [],
+      "note": "局部符号 'P' 为许用工作压力、'w' 为焊缝强度折减系数，与 F-TEST-001 的 'P'/'w' 完全不同"
+    },
+    "F-STR-005": {
+      "result_quantity": "Q:STRUCT:MAX_WORKING_PRESSURE",
+      "variables": {
+        "P": "Q:STRUCT:MAX_WORKING_PRESSURE",
+        "S": "Q:STRUCT:ALLOWABLE_STRESS",
+        "E": "Q:STRUCT:JOINT_EFFICIENCY",
+        "Z_2": "Q:STRUCT:GEOM_FACTOR_Z2",
+        "Z_1": "Q:STRUCT:GEOM_FACTOR_Z1",
+        "R": "Q:STRUCT:INNER_RADIUS",
+        "R_0": "Q:STRUCT:OUTER_RADIUS",
+        "t": "Q:STRUCT:MIN_WALL_THICKNESS"
+      },
+      "uses_parameters": []
+    },
+    "F-STR-006": {
+      "result_quantity": "Q:STRUCT:NET_AREA_REQUIRED",
+      "variables": {
+        "nar": "Q:STRUCT:NET_AREA_REQUIRED",
+        "nav": "Q:STRUCT:NET_AREA_VESSEL",
+        "nan": "Q:STRUCT:NET_AREA_NOZZLE",
+        "F": "Q:STRUCT:PLANE_COEFF",
+        "t": "Q:STRUCT:MIN_WALL_THICKNESS",
+        "D": "Q:STRUCT:OPENING_CENTER_DISTANCE",
+        "dl_1": "Q:STRUCT:OPENING_DIAMETER",
+        "dl_2": "Q:STRUCT:OPENING_DIAMETER",
+        "t_n1": "Q:STRUCT:NOZZLE_WALL_THICKNESS",
+        "t_n2": "Q:STRUCT:NOZZLE_WALL_THICKNESS",
+        "W_d1": "Q:STRUCT:WELD_SIZE",
+        "W_d2": "Q:STRUCT:WELD_SIZE",
+        "W_d3": "Q:STRUCT:WELD_SIZE",
+        "W_d4": "Q:STRUCT:WELD_SIZE"
+      },
+      "uses_parameters": [],
+      "note": "局部符号 'F' 是平面方向系数，与 F-STR-003 的 'F'（铸造质量系数）不是同一个量"
+    },
+    "F-STR-007": {
+      "result_quantity": "Q:STRUCT:LOAD_PATH_STRENGTH",
+      "variables": {
+        "W": "Q:STRUCT:LOAD_PATH_STRENGTH",
+        "A": "Q:STRUCT:GROSS_AREA",
+        "A_l": "Q:STRUCT:NET_AREA",
+        "S_y": "Q:STRUCT:YIELD_STRENGTH"
+      },
+      "uses_parameters": [],
+      "note": "局部符号 'W' 是所需强度，与 F-TEST-004/005 的 'W'（泄放能力）不是同一个量"
+    },
+
+    "F-FLW-001": {
+      "result_quantity": "Q:FLOW:FLOW_COEFFICIENT_KV",
+      "variables": {
+        "Kv": "Q:FLOW:FLOW_COEFFICIENT_KV",
+        "A": "Q:FLOW:FLOW_AREA",
+        "zeta": "Q:FLOW:RESISTANCE_COEFF",
+        "rho": "Q:FLOW:DENSITY"
+      },
+      "uses_parameters": []
+    },
+    "F-FLW-002": {
+      "result_quantity": "Q:FLOW:FLOW_COEFFICIENT_KV",
+      "variables": {
+        "Kv": "Q:FLOW:FLOW_COEFFICIENT_KV",
+        "Cv_US": "Q:FLOW:FLOW_COEFFICIENT_CV"
+      },
+      "uses_parameters": [],
+      "note": "Kv 与 Cv 是两个不同的物理量（单位制不同），换算关系本身是本式的结果"
+    },
+
+    "F-DRV-001": {
+      "result_quantity": "Q:DRIVE:RAISING_TORQUE",
+      "variables": {
+        "T_raise": "Q:DRIVE:RAISING_TORQUE",
+        "F": "Q:DRIVE:AXIAL_LOAD",
+        "d": "Q:DRIVE:THREAD_MAJOR_DIAMETER",
+        "mu_prime": "Q:DRIVE:EQUIV_FRICTION_COEFF",
+        "lambda": "Q:DRIVE:LEAD_ANGLE",
+        "pitch": "Q:DRIVE:PITCH"
+      },
+      "uses_parameters": [],
+      "note": "局部符号 'd' 是螺纹外径，与 F-STR-003 的 'd'（接管直径）不是同一个量"
+    },
+    "F-DRV-002": {
+      "result_quantity": "Q:DRIVE:LEVER_RATIO",
+      "variables": {
+        "F_hand": "Q:DRIVE:HAND_FORCE",
+        "T_drive": "Q:DRIVE:DRIVE_TORQUE",
+        "L_arm": "Q:DRIVE:LEVER_ARM",
+        "lever_ratio": "Q:DRIVE:LEVER_RATIO"
+      },
+      "uses_parameters": []
+    },
+
+    "F-BOLT-001": {
+      "result_quantity": "Q:BOLT:BOLT_STRESS",
+      "variables": {
+        "sigma_bolt": "Q:BOLT:BOLT_STRESS",
+        "p": "Q:STRUCT:INTERNAL_PRESSURE",
+        "A_bore": "Q:FLOW:FLOW_AREA",
+        "n": "Q:GEOM:BOLT_COUNT",
+        "As": "Q:BOLT:STRESS_AREA"
+      },
+      "uses_parameters": [],
+      "note": "内压复用 F-STR-001/002 的同一物理量 Q:STRUCT:INTERNAL_PRESSURE。局部符号 'n'（螺栓数量）绑定到 Q:GEOM:BOLT_COUNT，与法兰尺寸表的 n / bolt_count 列同量 —— 这是公式层与数据层通过同一 qid 对齐的例子；'A_bore'（通流截面积）绑定到 Q:FLOW:FLOW_AREA，与 F-FLW-001 的 'A' 同量。"
+    },
+
+    "F-TEST-001": {
+      "result_quantity": "Q:TEST:THEORETICAL_FLOW",
+      "variables": {
+        "W_T": "Q:TEST:THEORETICAL_FLOW",
+        "A": "Q:TEST:NOZZLE_THROAT_AREA",
+        "D": "Q:TEST:SEAT_DIAMETER",
+        "L": "Q:TEST:LIFT",
+        "P": "Q:TEST:INLET_PRESSURE",
+        "P_d": "Q:TEST:DISCHARGE_PRESSURE",
+        "w": "Q:TEST:WATER_SPECIFIC_WEIGHT"
+      },
+      "uses_parameters": ["P-TEST-001", "P-TEST-002", "P-TEST-005"],
+      "note": "W_T = C × πDL × (0.707) × √((P−P_d)w)；C 与 0.707 来自参数层"
+    },
+    "F-TEST-002": {
+      "result_quantity": "Q:TEST:THEORETICAL_FLOW",
+      "variables": {
+        "W_T": "Q:TEST:THEORETICAL_FLOW",
+        "A": "Q:TEST:NOZZLE_THROAT_AREA",
+        "D": "Q:TEST:SEAT_DIAMETER",
+        "L": "Q:TEST:LIFT",
+        "P": "Q:TEST:INLET_PRESSURE"
+      },
+      "uses_parameters": ["P-TEST-003", "P-TEST-004"],
+      "note": "W_T = C × πDLP（压力项线性，无根号）——与 F-TEST-001 形式不同"
+    },
+    "F-TEST-003": {
+      "result_quantity": "Q:TEST:DISCHARGE_COEFF",
+      "variables": {
+        "K_D": "Q:TEST:DISCHARGE_COEFF",
+        "Q_actual": "Q:TEST:ACTUAL_FLOW",
+        "Q_theoretical": "Q:TEST:THEORETICAL_FLOW",
+        "avg_K_D": "Q:TEST:MEAN_DISCHARGE_COEFF",
+        "K": "Q:TEST:DISCHARGE_COEFF"
+      },
+      "uses_parameters": ["P-TEST-006", "P-TEST-007", "P-TEST-008", "P-TEST-009", "P-TEST-014"],
+      "note": "K_D 与 K 绑定到同一物理量 Q:TEST:DISCHARGE_COEFF —— K 是 K_D 的设计上限侧"
+    },
+    "F-TEST-004": {
+      "result_quantity": "Q:TEST:CORRECTION_FACTOR",
+      "variables": {
+        "W": "Q:TEST:CORRECTED_CAPACITY",
+        "W_base": "Q:TEST:BASE_CAPACITY",
+        "P": "Q:TEST:INLET_PRESSURE",
+        "CF": "Q:TEST:CORRECTION_FACTOR"
+      },
+      "uses_parameters": ["P-TEST-012", "P-TEST-013", "P-TEST-021", "P-TEST-022", "P-TEST-023", "P-TEST-024", "P-TEST-025", "P-TEST-026"],
+      "note": "CF = (aP − b)/(cP − d)；US 与 SI 两套系数共用同一 P（各自单位制下）"
+    },
+    "F-TEST-005": {
+      "result_quantity": "Q:TEST:CORRECTED_CAPACITY",
+      "variables": {
+        "W": "Q:TEST:CORRECTED_CAPACITY",
+        "dW_dP": "Q:TEST:CAPACITY_PRESSURE_SLOPE",
+        "P": "Q:TEST:INLET_PRESSURE",
+        "v": "Q:TEST:INLET_SPECIFIC_VOLUME",
+        "gamma": "Q:TEST:GAMMA_FACTOR"
+      },
+      "uses_parameters": ["P-TEST-015", "P-TEST-016", "P-TEST-017", "P-TEST-018", "P-TEST-019"],
+      "note": "W = 1,135.8 × (0.90/51.45 或 0.95/5.25) × (dW/dP) × √(P/ν)"
+    },
+    "F-TEST-006": {
+      "result_quantity": "Q:TEST:INLET_PRESSURE",
+      "variables": {
+        "P": "Q:TEST:INLET_PRESSURE",
+        "set_pressure": "Q:TEST:SET_PRESSURE"
+      },
+      "uses_parameters": ["P-TEST-027", "P-TEST-028", "P-TEST-029"],
+      "note": "P = (1.03 × set pressure + 14.7) psia 或 (set pressure + 2 + 14.7) psia，取大者"
+    }
+  }
+}

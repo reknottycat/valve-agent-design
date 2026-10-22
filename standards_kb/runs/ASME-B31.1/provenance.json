@@ -45,5 +45,16 @@
     "P-MAT-017",
     "P-MAT-018"
   ],
-  "rebuilt_at": "2026-10-22T15:11:46+08:00"
+  "curated_ontology_entries": [
+    "F-MAT-003",
+    "P-MAT-011",
+    "P-MAT-012",
+    "P-MAT-013",
+    "P-MAT-014",
+    "P-MAT-015",
+    "P-MAT-016",
+    "P-MAT-017",
+    "P-MAT-018"
+  ],
+  "rebuilt_at": "2026-10-23T00:25:18+08:00"
 }
