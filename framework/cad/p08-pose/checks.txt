@@ -1,0 +1,4 @@
+PASS original source JSON SHA256 checks against PRODUCT_INDEX (2 files)
+PASS four historical +Z57 transforms with zero bidirectional reported set differences
+PASS exact P08 output hash linkage
+PASS this run does not claim pose recomputation
