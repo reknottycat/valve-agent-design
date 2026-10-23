@@ -1,0 +1,18 @@
+{
+  "archive": "local-volume-grading.zip",
+  "bytes": 13012610,
+  "sha256": "0d7ced9b0b269f0c8a217642161077379623a5db1604ad94547001d196292891",
+  "parts": [
+    {
+      "name": "local-volume-grading.zip.part01",
+      "bytes": 8000000,
+      "sha256": "6c20110d39d7714e3ecae94aada3854887fcd6c533be19f92c3bb1eb96f03504"
+    },
+    {
+      "name": "local-volume-grading.zip.part02",
+      "bytes": 5012610,
+      "sha256": "1879172bc08e7ab3c95ebd6799729b4e42d4b340ad975bbfd010dfd713f993c1"
+    }
+  ],
+  "status": "614334 positive tetrahedra, unchanged surface. Native validation separate; not CFD release."
+}
