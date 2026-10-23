@@ -1,0 +1,9 @@
+{
+  "archive": "two-pair-volume.zip",
+  "bytes": 5608825,
+  "sha256": "68294c65a22c7259a99c54f97021a6dd52837ec202c2cfab0e5973cd42f3e89c",
+  "actual_msh_sha256": "904ef11aff65088f83cafb8f4dcd28f4c44c68ad72ce164ca47d3de5c9e31df8",
+  "volume_generated_and_basic_readback_pass": true,
+  "CFD_ready": false,
+  "engineering_release": false
+}

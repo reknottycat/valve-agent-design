@@ -1,0 +1,40 @@
+{
+  "surface_mapping_count": 132,
+  "errors": [],
+  "inlet": {
+    "gmsh_surface": 79,
+    "source_face": 79,
+    "role": "inlet",
+    "family": "generic",
+    "area_mm2": 31415.926535897932,
+    "bbox_mm": [
+      -600.0,
+      -100.0,
+      -100.0,
+      -600.0,
+      100.0,
+      100.0
+    ],
+    "source_bbox_max_delta_mm": 0.0,
+    "mapping_bbox_tolerance_mm": 0.2
+  },
+  "outlet": {
+    "gmsh_surface": 34,
+    "source_face": 34,
+    "role": "outlet",
+    "family": "generic",
+    "area_mm2": 31415.926535897932,
+    "bbox_mm": [
+      1200.0,
+      -100.0,
+      -100.0,
+      1200.0,
+      100.0,
+      100.0
+    ],
+    "source_bbox_max_delta_mm": 0.0,
+    "mapping_bbox_tolerance_mm": 0.2
+  },
+  "complete_closure_triangles": 9491,
+  "source_unchanged": true
+}
