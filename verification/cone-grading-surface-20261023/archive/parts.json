@@ -1,0 +1,14 @@
+{
+  "archive": "cone-grading-surface.zip",
+  "bytes": 4528075,
+  "sha256": "fe81cd6a31b40f686fe5e0676c7f4f0279774a79974c6345bc11d7a62c4fbcfc",
+  "part_size": 8000000,
+  "parts": [
+    {
+      "file": "cone-grading-surface.zip.part001",
+      "bytes": 4528075,
+      "sha256": "fe81cd6a31b40f686fe5e0676c7f4f0279774a79974c6345bc11d7a62c4fbcfc"
+    }
+  ],
+  "reassembly_verified": true
+}

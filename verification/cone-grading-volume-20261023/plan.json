@@ -1,0 +1,15 @@
+{
+  "scope": "One fresh 3D cone grading comparison; no CFD or retry",
+  "expected_surface_triangles": 231120,
+  "limits": {
+    "wall_s": 360,
+    "rss_bytes": 2147483648,
+    "address_space_bytes": 4294967296,
+    "threads": 1,
+    "surface_cost_screen": 240000
+  },
+  "source_sha256": "a9aeb45996a388a3d894f69605205c70c25edd154adc6d3c71658329a730e787",
+  "reviewed_2d_mesh_sha256": "2ea4bcb38856c313ef5fa50c43c408d19972cf3805481c3ec6a2df0272a3c78c",
+  "regression": "Face 124 sampled radial error increased from 0.0020541316 to 0.0033343040 mm; not a full-facet bound or tolerance acceptance.",
+  "preserved": "CAD, guide, retainer, plane and finite trimmed torus dim3 law; source surface remains immutable"
+}

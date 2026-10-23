@@ -1,0 +1,1 @@
+Concatenate parts in numeric order. Verify each part byte count and SHA256 in parts.json, then the complete ZIP byte count and SHA256 before extracting. Parts are byte splits, not independent ZIP files. Native candidate still Failed 3; no engineering release or physical flow acceptance.
