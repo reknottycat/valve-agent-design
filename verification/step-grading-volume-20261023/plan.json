@@ -1,0 +1,16 @@
+{
+  "scope": "One 3D finite-step and finite-torus minimum-law comparison; no CFD or retries",
+  "expected_surface_triangles": 259002,
+  "expected_surface_sha256": "950a4d49a3b9969f61ad521810e4085a5cf1c791145385e4f751686296195524",
+  "limits": {
+    "wall_s": 360,
+    "rss_bytes": 2147483648,
+    "address_bytes": 4294967296,
+    "threads": 1
+  },
+  "estimated_tets": 807785,
+  "planning_range_tets": [
+    800000,
+    1100000
+  ]
+}
