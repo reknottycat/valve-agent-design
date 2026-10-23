@@ -1,0 +1,611 @@
+{
+  "schema": "valve.step_roundtrip/v1",
+  "scope": "AGR1 closed assembly; neutral STEP representation exchange only, not P08 fluid domain",
+  "source": {
+    "name": "AGR1_closed_assembly.step",
+    "sha256": "4720192e2fb9d4c26b9a4b2be521d29508667eda67bd9301a9273df11c570fff",
+    "bytes": 1274477,
+    "length_units": [
+      ".MILLI.,.METRE."
+    ]
+  },
+  "output": {
+    "name": "roundtrip.step",
+    "sha256": "3349e803db2f4ab8ac0bd4584df405d9d1ccb1fc5a10d546a87e329dea62fdcc",
+    "bytes": 1280764,
+    "length_units": [
+      ".MILLI.,.METRE."
+    ]
+  },
+  "cadquery_version": "2.7.0",
+  "OCP_version": "7.8.1.1",
+  "export_options": {
+    "write_pcurves": true,
+    "precision_mode": 0,
+    "transfer": "STEPControl_AsIs"
+  },
+  "tolerances": {
+    "coordinate_abs_mm": 1e-05,
+    "volume_abs_mm3": 0.001,
+    "volume_rel": 1e-08
+  },
+  "tolerance_basis": "Numerical serialization regression thresholds only: 1e-5 mm coordinate, max(1e-3 mm3, 1e-8 relative) volume. Not manufacturing tolerances or a standard-based acceptance criterion.",
+  "source_shape_valid": true,
+  "output_shape_valid": true,
+  "source_solids": [
+    {
+      "valid": true,
+      "faces": 34,
+      "shells": 1,
+      "edges": 71,
+      "vertices": 46,
+      "volume_mm3": 753753.2351782008,
+      "centroid_mm": [
+        299.99999998954377,
+        1.732921335162808e-06,
+        39.77579168164312
+      ],
+      "bbox_mm": [
+        180.0,
+        -120.0,
+        21.9999999,
+        420.0,
+        120.0,
+        140.0000001
+      ]
+    },
+    {
+      "valid": true,
+      "faces": 26,
+      "shells": 1,
+      "edges": 55,
+      "vertices": 36,
+      "volume_mm3": 431367.8538120313,
+      "centroid_mm": [
+        300.0000000000019,
+        9.421583852464292e-14,
+        165.38073749885737
+      ],
+      "bbox_mm": [
+        230.0,
+        -70.0,
+        96.0,
+        370.0,
+        70.0,
+        218.0
+      ]
+    },
+    {
+      "valid": true,
+      "faces": 48,
+      "shells": 1,
+      "edges": 102,
+      "vertices": 68,
+      "volume_mm3": 4614953.9152294155,
+      "centroid_mm": [
+        300.0000000000078,
+        -1.0796391953471122e-13,
+        278.6162631198514
+      ],
+      "bbox_mm": [
+        120.0,
+        -180.0,
+        212.0,
+        480.0,
+        180.0,
+        362.0
+      ]
+    },
+    {
+      "valid": true,
+      "faces": 5,
+      "shells": 1,
+      "edges": 6,
+      "vertices": 4,
+      "volume_mm3": 1870.0330270493137,
+      "centroid_mm": [
+        337.47665940287993,
+        37.476659402887,
+        208.85405291894156
+      ],
+      "bbox_mm": [
+        330.97665940288,
+        30.976659402887,
+        197.0,
+        343.97665940288,
+        43.976659402887,
+        226.0
+      ]
+    },
+    {
+      "valid": true,
+      "faces": 5,
+      "shells": 1,
+      "edges": 6,
+      "vertices": 4,
+      "volume_mm3": 1870.0330270493137,
+      "centroid_mm": [
+        262.52334059710995,
+        37.476659402887,
+        208.85405291894156
+      ],
+      "bbox_mm": [
+        256.02334059711,
+        30.976659402887,
+        197.0,
+        269.02334059711,
+        43.976659402887,
+        226.0
+      ]
+    },
+    {
+      "valid": true,
+      "faces": 5,
+      "shells": 1,
+      "edges": 6,
+      "vertices": 4,
+      "volume_mm3": 1870.0330270493137,
+      "centroid_mm": [
+        262.52334059710995,
+        -37.47665940288,
+        208.85405291894156
+      ],
+      "bbox_mm": [
+        256.02334059711,
+        -43.97665940288,
+        197.0,
+        269.02334059711,
+        -30.976659402880003,
+        226.0
+      ]
+    },
+    {
+      "valid": true,
+      "faces": 5,
+      "shells": 1,
+      "edges": 6,
+      "vertices": 4,
+      "volume_mm3": 1870.0330270493134,
+      "centroid_mm": [
+        337.47665940288,
+        -37.47665940288,
+        208.8540529189416
+      ],
+      "bbox_mm": [
+        330.97665940288,
+        -43.97665940288,
+        197.0,
+        343.97665940288,
+        -30.976659402880003,
+        226.0
+      ]
+    },
+    {
+      "valid": true,
+      "faces": 40,
+      "shells": 1,
+      "edges": 114,
+      "vertices": 76,
+      "volume_mm3": 93700.13662436928,
+      "centroid_mm": [
+        300.000000000013,
+        1.8772253879204878e-13,
+        16.977600167745535
+      ],
+      "bbox_mm": [
+        186.0,
+        -114.0,
+        12.0,
+        414.0,
+        114.0,
+        22.0
+      ]
+    },
+    {
+      "valid": true,
+      "faces": 12,
+      "shells": 1,
+      "edges": 22,
+      "vertices": 14,
+      "volume_mm3": 551633.0712415703,
+      "centroid_mm": [
+        299.99999999999983,
+        -8.285972067915738e-16,
+        319.92941552101445
+      ],
+      "bbox_mm": [
+        280.0,
+        -20.0,
+        50.5,
+        320.0,
+        20.0,
+        609.0
+      ]
+    },
+    {
+      "valid": true,
+      "faces": 12,
+      "shells": 1,
+      "edges": 24,
+      "vertices": 16,
+      "volume_mm3": 16577.17555200386,
+      "centroid_mm": [
+        299.9999999999978,
+        -2.446981801086302e-13,
+        43.71467929429557
+      ],
+      "bbox_mm": [
+        278.0,
+        -22.0,
+        36.0,
+        322.0,
+        22.0,
+        50.5
+      ]
+    },
+    {
+      "valid": true,
+      "faces": 6,
+      "shells": 1,
+      "edges": 12,
+      "vertices": 8,
+      "volume_mm3": 794.9026309443834,
+      "centroid_mm": [
+        299.34477509606165,
+        2.6420520606612456e-14,
+        48.0
+      ],
+      "bbox_mm": [
+        276.1,
+        -23.9,
+        47.0,
+        323.8161709768804,
+        23.9,
+        49.0
+      ]
+    },
+    {
+      "valid": true,
+      "faces": 119,
+      "shells": 1,
+      "edges": 298,
+      "vertices": 203,
+      "volume_mm3": 17957473.604395833,
+      "centroid_mm": [
+        308.47892900464376,
+        0.0018171985167988777,
+        -20.284438438907646
+      ],
+      "bbox_mm": [
+        -1e-07,
+        -180.0,
+        -165.0000001,
+        600.0000001,
+        180.0,
+        210.0000001
+      ]
+    }
+  ],
+  "output_solids": [
+    {
+      "valid": true,
+      "faces": 34,
+      "shells": 1,
+      "edges": 71,
+      "vertices": 46,
+      "volume_mm3": 753753.2351783093,
+      "centroid_mm": [
+        299.9999999895578,
+        1.7329213389923746e-06,
+        39.775791681642566
+      ],
+      "bbox_mm": [
+        180.0,
+        -120.0,
+        21.9999999,
+        420.0,
+        120.0,
+        140.0000001
+      ]
+    },
+    {
+      "valid": true,
+      "faces": 26,
+      "shells": 1,
+      "edges": 55,
+      "vertices": 36,
+      "volume_mm3": 431367.8538120313,
+      "centroid_mm": [
+        300.0000000000019,
+        9.421583852464292e-14,
+        165.38073749885737
+      ],
+      "bbox_mm": [
+        230.0,
+        -70.0,
+        96.0,
+        370.0,
+        70.0,
+        218.0
+      ]
+    },
+    {
+      "valid": true,
+      "faces": 48,
+      "shells": 1,
+      "edges": 102,
+      "vertices": 68,
+      "volume_mm3": 4614953.915228811,
+      "centroid_mm": [
+        299.9999999999937,
+        -1.108904782223747e-13,
+        278.61626311985555
+      ],
+      "bbox_mm": [
+        120.0,
+        -180.0,
+        212.0,
+        480.0,
+        180.0,
+        362.0
+      ]
+    },
+    {
+      "valid": true,
+      "faces": 5,
+      "shells": 1,
+      "edges": 6,
+      "vertices": 4,
+      "volume_mm3": 1870.0330270493137,
+      "centroid_mm": [
+        337.47665940287993,
+        37.476659402887,
+        208.85405291894156
+      ],
+      "bbox_mm": [
+        330.97665940288,
+        30.976659402887,
+        197.0,
+        343.97665940288,
+        43.976659402887,
+        226.0
+      ]
+    },
+    {
+      "valid": true,
+      "faces": 5,
+      "shells": 1,
+      "edges": 6,
+      "vertices": 4,
+      "volume_mm3": 1870.0330270493137,
+      "centroid_mm": [
+        262.52334059710995,
+        37.476659402887,
+        208.85405291894156
+      ],
+      "bbox_mm": [
+        256.02334059711,
+        30.976659402887,
+        197.0,
+        269.02334059711,
+        43.976659402887,
+        226.0
+      ]
+    },
+    {
+      "valid": true,
+      "faces": 5,
+      "shells": 1,
+      "edges": 6,
+      "vertices": 4,
+      "volume_mm3": 1870.0330270493137,
+      "centroid_mm": [
+        262.52334059710995,
+        -37.47665940288,
+        208.85405291894156
+      ],
+      "bbox_mm": [
+        256.02334059711,
+        -43.97665940288,
+        197.0,
+        269.02334059711,
+        -30.976659402880003,
+        226.0
+      ]
+    },
+    {
+      "valid": true,
+      "faces": 5,
+      "shells": 1,
+      "edges": 6,
+      "vertices": 4,
+      "volume_mm3": 1870.0330270493134,
+      "centroid_mm": [
+        337.47665940288,
+        -37.47665940288,
+        208.8540529189416
+      ],
+      "bbox_mm": [
+        330.97665940288,
+        -43.97665940288,
+        197.0,
+        343.97665940288,
+        -30.976659402880003,
+        226.0
+      ]
+    },
+    {
+      "valid": true,
+      "faces": 40,
+      "shells": 1,
+      "edges": 114,
+      "vertices": 76,
+      "volume_mm3": 93700.13662435164,
+      "centroid_mm": [
+        299.99999999998977,
+        1.740558720589272e-13,
+        16.977600167745386
+      ],
+      "bbox_mm": [
+        186.0,
+        -114.0,
+        12.0,
+        414.0,
+        114.0,
+        22.0
+      ]
+    },
+    {
+      "valid": true,
+      "faces": 12,
+      "shells": 1,
+      "edges": 22,
+      "vertices": 14,
+      "volume_mm3": 551633.0712415703,
+      "centroid_mm": [
+        299.99999999999983,
+        -8.285972067915738e-16,
+        319.92941552101445
+      ],
+      "bbox_mm": [
+        280.0,
+        -20.0,
+        50.5,
+        320.0,
+        20.0,
+        609.0
+      ]
+    },
+    {
+      "valid": true,
+      "faces": 12,
+      "shells": 1,
+      "edges": 24,
+      "vertices": 16,
+      "volume_mm3": 16577.17555200386,
+      "centroid_mm": [
+        299.9999999999978,
+        -2.446981801086302e-13,
+        43.71467929429557
+      ],
+      "bbox_mm": [
+        278.0,
+        -22.0,
+        36.0,
+        322.0,
+        22.0,
+        50.5
+      ]
+    },
+    {
+      "valid": true,
+      "faces": 6,
+      "shells": 1,
+      "edges": 12,
+      "vertices": 8,
+      "volume_mm3": 794.9026309443834,
+      "centroid_mm": [
+        299.34477509606165,
+        2.6420520606612456e-14,
+        48.0
+      ],
+      "bbox_mm": [
+        276.1,
+        -23.9,
+        47.0,
+        323.8161709768804,
+        23.9,
+        49.0
+      ]
+    },
+    {
+      "valid": true,
+      "faces": 119,
+      "shells": 1,
+      "edges": 298,
+      "vertices": 203,
+      "volume_mm3": 17957473.604395695,
+      "centroid_mm": [
+        308.47892900464365,
+        0.0018171985150317231,
+        -20.28443843891121
+      ],
+      "bbox_mm": [
+        -1e-07,
+        -180.0,
+        -165.0000001,
+        600.0000001,
+        180.0,
+        210.0000001
+      ]
+    }
+  ],
+  "bijective_matches": [
+    {
+      "source_index": 0,
+      "roundtrip_index": 0
+    },
+    {
+      "source_index": 1,
+      "roundtrip_index": 1
+    },
+    {
+      "source_index": 2,
+      "roundtrip_index": 2
+    },
+    {
+      "source_index": 3,
+      "roundtrip_index": 3
+    },
+    {
+      "source_index": 4,
+      "roundtrip_index": 4
+    },
+    {
+      "source_index": 5,
+      "roundtrip_index": 5
+    },
+    {
+      "source_index": 6,
+      "roundtrip_index": 6
+    },
+    {
+      "source_index": 7,
+      "roundtrip_index": 7
+    },
+    {
+      "source_index": 8,
+      "roundtrip_index": 8
+    },
+    {
+      "source_index": 9,
+      "roundtrip_index": 9
+    },
+    {
+      "source_index": 10,
+      "roundtrip_index": 10
+    },
+    {
+      "source_index": 11,
+      "roundtrip_index": 11
+    }
+  ],
+  "max_coordinate_delta_mm": 2.3248958314070478e-11,
+  "max_volume_delta_mm3": 6.044283509254456e-07,
+  "max_relative_volume_delta": 1.8822727364298914e-13,
+  "original_file_unchanged": true,
+  "numerical_roundtrip_passed": true,
+  "elapsed_seconds": 2.656156340992311,
+  "explicit_healing_or_boolean_requested": false,
+  "meshing_or_solver_started": false,
+  "engineering_release": false,
+  "unverified": [
+    "Exact pointwise geometric identity",
+    "Names and assembly metadata",
+    "Native parametric features",
+    "BOM correspondence",
+    "SOLIDWORKS import",
+    "Manufacturing and fit",
+    "P08 fluid domain and CFD"
+  ]
+}
