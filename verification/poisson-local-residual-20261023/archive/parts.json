@@ -1,0 +1,30 @@
+{
+  "filename": "read-only-residual-supplement-final.zip",
+  "full_bytes": 24115898,
+  "full_sha256": "8f349dee97ff7bf5513181e3b9b504f86d4bd571a27b9f64468eb6b2302a896b",
+  "parts": [
+    {
+      "name": "read-only-residual-supplement-final.zip.part01",
+      "bytes": 8000000,
+      "sha256": "bfb15849ba8c1ebd2c5c7500aac631ac05d73d0237f345a68a3640c54481d5c9"
+    },
+    {
+      "name": "read-only-residual-supplement-final.zip.part02",
+      "bytes": 8000000,
+      "sha256": "7a8e1cd5e410d2a2506fbdb6ba08bf80dc77182494a67c2459b57f979bf8665c"
+    },
+    {
+      "name": "read-only-residual-supplement-final.zip.part03",
+      "bytes": 8000000,
+      "sha256": "e5ee811399ff98cb81c540a2bf528f23d0aa678535279483dc65840d809a2e5e"
+    },
+    {
+      "name": "read-only-residual-supplement-final.zip.part04",
+      "bytes": 115898,
+      "sha256": "b41ba90a7dec9eef5266a7a69c29297c919f56f179f4311289284802091bb3b1"
+    }
+  ],
+  "reassembly_verified": true,
+  "previous_supplement_sha256": "827104dfb1481e3465d7dd57b5661b65c97de9c275bbeb7ecaa7c9c8774673cc",
+  "reassembly_command": "cat read-only-residual-supplement-final.zip.part?? > read-only-residual-supplement-final.zip"
+}

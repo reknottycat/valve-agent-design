@@ -1,0 +1,414 @@
+{
+  "field_time": 30,
+  "operator": "Steady -div(DT gradT)-S, DT=1, S=-6, Gausslinear limited0.5",
+  "limiter_formula": "min(0.5*abs(a)/(0.5*abs(c)+1e-15),1); q=-|Sf|*(a+limiter*c)",
+  "formula_evidence": "installed scalar limitedSnGrad<double>::correction disassembly; scalar0.5constructor; saved exact1912correctedSnGrad/interpolation/fixedValue/gaussLaplacian source",
+  "libfiniteVolume_sha256": "5f806491488e220f08162c0597257822064de8309d5120b04f1260b937b3a196",
+  "constant_ELF_values": {
+    "0x23666b0": 1e-15,
+    "0x23666c8": 1.0
+  },
+  "gradient_comparison": {
+    "max_abs": 1.1691447809880628e-10,
+    "relative_weighted_L2": 4.6233901006641666e-14
+  },
+  "independent_local_residual": {
+    "L1": 0.0712620342907522,
+    "L2": 106.67335517857653,
+    "Linf": 2789604.7171808863,
+    "normalized_by_source_L1": 0.011877005715125366,
+    "normalized_by_source_L2": 17.778892529762754,
+    "normalized_by_source_Linf": 464934.1195301477
+  },
+  "local_residual_using_native_saved_gradient": {
+    "L1": 0.07126203429087076,
+    "L2": 106.6733551785784,
+    "Linf": 2789604.7171808863,
+    "normalized_by_source_L1": 0.011877005715145127,
+    "normalized_by_source_L2": 17.778892529763066,
+    "normalized_by_source_Linf": 464934.1195301477
+  },
+  "residual_difference_from_native_gradient": {
+    "L1": 2.8993573607424855e-12,
+    "L2": 1.0433321146133147e-09,
+    "Linf": 5.2285583596045626e-05,
+    "normalized_by_source_L1": 4.832262267904143e-13,
+    "normalized_by_source_L2": 1.738886857688858e-10,
+    "normalized_by_source_Linf": 8.714263932674271e-06
+  },
+  "sampled_exact_truncation_residual": {
+    "L1": 41.60941544492382,
+    "L2": 8573.436453094513,
+    "Linf": 12243974.168248635,
+    "normalized_by_source_L1": 6.93490257415397,
+    "normalized_by_source_L2": 1428.9060755157523,
+    "normalized_by_source_Linf": 2040662.3613747724
+  },
+  "limiter": {
+    "min": 2.5549685497793417e-06,
+    "mean": 0.8905013377647909,
+    "count_below_one": 231599,
+    "total_internal_faces": 1130205,
+    "fraction_limited": 0.20491769192314668,
+    "p01": 0.04052736768430802,
+    "p50": 1.0
+  },
+  "global_check": {
+    "sum_Vr": -1.567918114120016e-10,
+    "boundary_minus_source": -1.5679174625304881e-10,
+    "identity_absolute_error": 6.515895278947749e-17,
+    "source_integral": -0.38221137736336175,
+    "relative_flux_imbalance": 4.1022260335277675e-10
+  },
+  "worst_cell": {
+    "id": 532976,
+    "C_m": [
+      0.2905545655403807,
+      0.020819495957618426,
+      0.103925
+    ],
+    "residual": -2789604.7171808863,
+    "deltaT_29to30": -0.00029855226363828535,
+    "in_step_band": false
+  },
+  "top30residual_overlap_top30change_count": 8,
+  "step_band_residual_squared_energy_fraction": 0.1263087653751462,
+  "top30_residual_cells": [
+    {
+      "id": 532976,
+      "C_m": [
+        0.2905545655403807,
+        0.020819495957618426,
+        0.103925
+      ],
+      "residual": -2789604.7171808863,
+      "deltaT": -0.00029855226363828535,
+      "step_band": false
+    },
+    {
+      "id": 532718,
+      "C_m": [
+        0.29008450913580625,
+        0.020651479436657752,
+        0.103925
+      ],
+      "residual": 1199507.3364628004,
+      "deltaT": -9.011428846239511e-06,
+      "step_band": false
+    },
+    {
+      "id": 532492,
+      "C_m": [
+        0.29129159386376174,
+        0.02110148352842315,
+        0.10395
+      ],
+      "residual": 864023.8921080512,
+      "deltaT": 8.018524559227913e-05,
+      "step_band": false
+    },
+    {
+      "id": 532496,
+      "C_m": [
+        0.29103120430186397,
+        0.02096781340719505,
+        0.103925
+      ],
+      "residual": -763416.0776902407,
+      "deltaT": -0.000276978705288089,
+      "step_band": false
+    },
+    {
+      "id": 599084,
+      "C_m": [
+        0.2922308385904792,
+        0.021935502729185277,
+        0.10607500000000002
+      ],
+      "residual": 666313.0025105473,
+      "deltaT": 6.872535133650715e-05,
+      "step_band": false
+    },
+    {
+      "id": 532987,
+      "C_m": [
+        0.29223828902981946,
+        0.021417817498960448,
+        0.10395
+      ],
+      "residual": -430606.1418091436,
+      "deltaT": -0.0001857457104108562,
+      "step_band": false
+    },
+    {
+      "id": 533014,
+      "C_m": [
+        0.307685823306572,
+        0.02205724199955853,
+        0.103925
+      ],
+      "residual": -411230.42084649607,
+      "deltaT": -8.64074334212539e-05,
+      "step_band": false
+    },
+    {
+      "id": 591117,
+      "C_m": [
+        0.28210541555295526,
+        0.014943566654423,
+        0.106075
+      ],
+      "residual": 398688.8077410879,
+      "deltaT": 2.3291311602280373e-05,
+      "step_band": false
+    },
+    {
+      "id": 599102,
+      "C_m": [
+        0.28208206316096174,
+        -0.014924823647616124,
+        0.103925
+      ],
+      "residual": 379580.9186064843,
+      "deltaT": 2.7997088956288607e-05,
+      "step_band": false
+    },
+    {
+      "id": 532763,
+      "C_m": [
+        0.27716839542041805,
+        -0.0019876645732465887,
+        0.103925
+      ],
+      "residual": -373314.61978842574,
+      "deltaT": -5.779324586541179e-05,
+      "step_band": false
+    },
+    {
+      "id": 533094,
+      "C_m": [
+        0.27716839542041805,
+        0.0019876645732464413,
+        0.103925
+      ],
+      "residual": -372826.62206639803,
+      "deltaT": -5.74279902141317e-05,
+      "step_band": false
+    },
+    {
+      "id": 532697,
+      "C_m": [
+        0.27863033759500727,
+        0.0041554891396480415,
+        0.10395
+      ],
+      "residual": 348091.7351708133,
+      "deltaT": 0.0002342086680593436,
+      "step_band": false
+    },
+    {
+      "id": 532688,
+      "C_m": [
+        0.27863033759500727,
+        0.0041554891396480415,
+        0.10605
+      ],
+      "residual": -347926.90572896186,
+      "deltaT": -0.00023569919413235496,
+      "step_band": false
+    },
+    {
+      "id": 532710,
+      "C_m": [
+        0.27863033759500727,
+        -0.004155489139648254,
+        0.10604999999999999
+      ],
+      "residual": -347917.1123288844,
+      "deltaT": -0.00023571660940180372,
+      "step_band": false
+    },
+    {
+      "id": 532518,
+      "C_m": [
+        0.27863033759500727,
+        -0.004155489139648253,
+        0.10395
+      ],
+      "residual": 344199.77212473337,
+      "deltaT": 0.0002354249444893597,
+      "step_band": false
+    },
+    {
+      "id": 532494,
+      "C_m": [
+        0.27716839542041805,
+        0.0019876645732464417,
+        0.10607500000000002
+      ],
+      "residual": 332631.58754636376,
+      "deltaT": 5.93959534118671e-05,
+      "step_band": false
+    },
+    {
+      "id": 532810,
+      "C_m": [
+        0.277168395420418,
+        -0.0019876645732465887,
+        0.106075
+      ],
+      "residual": 332610.5782378707,
+      "deltaT": 5.935616242025432e-05,
+      "step_band": false
+    },
+    {
+      "id": 590999,
+      "C_m": [
+        0.28208206316096174,
+        -0.014924823647616126,
+        0.10607500000000002
+      ],
+      "residual": 331037.88489971985,
+      "deltaT": 3.158828936733471e-05,
+      "step_band": false
+    },
+    {
+      "id": 532706,
+      "C_m": [
+        0.27709595291238526,
+        0.001493767156947044,
+        0.10607500000000002
+      ],
+      "residual": 321845.55300459644,
+      "deltaT": 6.559101457193073e-05,
+      "step_band": false
+    },
+    {
+      "id": 533083,
+      "C_m": [
+        0.27709595291238526,
+        -0.001493767156947191,
+        0.106075
+      ],
+      "residual": 321823.01066137874,
+      "deltaT": 6.548095974889812e-05,
+      "step_band": false
+    },
+    {
+      "id": 533076,
+      "C_m": [
+        0.27709595291238526,
+        0.0014937671569470441,
+        0.103925
+      ],
+      "residual": -316165.945227863,
+      "deltaT": -5.411606031757721e-05,
+      "step_band": false
+    },
+    {
+      "id": 532521,
+      "C_m": [
+        0.27709595291238526,
+        -0.001493767156947191,
+        0.103925
+      ],
+      "residual": -315471.4077434088,
+      "deltaT": -5.4758174407476545e-05,
+      "step_band": false
+    },
+    {
+      "id": 590798,
+      "C_m": [
+        0.29175419982899603,
+        0.021787185279608653,
+        0.106075
+      ],
+      "residual": -315199.90197651915,
+      "deltaT": -1.4302035636237775e-05,
+      "step_band": false
+    },
+    {
+      "id": 532927,
+      "C_m": [
+        0.28962333300041754,
+        0.020209056079910227,
+        0.10395
+      ],
+      "residual": 313408.6974206672,
+      "deltaT": 0.0001947831363966479,
+      "step_band": false
+    },
+    {
+      "id": 533117,
+      "C_m": [
+        0.2773745676123058,
+        -0.002964287297560101,
+        0.10607500000000002
+      ],
+      "residual": 305765.62187653175,
+      "deltaT": -8.031049011814062e-06,
+      "step_band": false
+    },
+    {
+      "id": 532695,
+      "C_m": [
+        0.2773745676123058,
+        0.0029642872975599566,
+        0.10607500000000002
+      ],
+      "residual": 305623.2937911598,
+      "deltaT": -8.033257978823372e-06,
+      "step_band": false
+    },
+    {
+      "id": 532468,
+      "C_m": [
+        0.2775056760878635,
+        0.0038872493852948314,
+        0.10604999999999999
+      ],
+      "residual": 298229.35862143134,
+      "deltaT": 6.431382743521397e-05,
+      "step_band": false
+    },
+    {
+      "id": 533084,
+      "C_m": [
+        0.27750567608786353,
+        -0.003887249385294934,
+        0.10605
+      ],
+      "residual": 297784.02288636676,
+      "deltaT": 6.419286899661536e-05,
+      "step_band": false
+    },
+    {
+      "id": 591033,
+      "C_m": [
+        0.2817732024591135,
+        0.014570985072648573,
+        0.106075
+      ],
+      "residual": -297468.6130362572,
+      "deltaT": -3.374267711686585e-05,
+      "step_band": false
+    },
+    {
+      "id": 532488,
+      "C_m": [
+        0.27750567608786353,
+        0.0038872493852948314,
+        0.10395
+      ],
+      "residual": -286214.2427759448,
+      "deltaT": -5.493610310525199e-05,
+      "step_band": false
+    }
+  ],
+  "native_expression_attempt": "grad(T) unsupported by installed1912setExprFields parser onNEWpostprocessingcopy; failedlog retained. Nativecomparison uses original solver-written gradTx/y/z, not fabricated expression output.",
+  "remaining_limits": [
+    "No independent native per-face limited-flux export or direct TEqn matrix comparison; operator reconstructed from matching installed implementation and saved source.",
+    "Final-field nonlinear residual differs from lagged linear-system PCG residual; no historical subiteration matrix/RHS saved.",
+    "Large nonlinear residual is evidence of failure to reach this fixedpoint, not a designbug/universalsoftwarebug/physicalflowresult."
+  ]
+}
