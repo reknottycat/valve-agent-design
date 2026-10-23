@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-23T03:55:00Z",
+  "purpose": "Reference-only reusable CAD dependency candidates; no installation or capability acceptance",
+  "policy": {
+    "retain_existing_pipeline": "CadQuery -> STEP audit/reimport -> Gmsh -> open-source solver",
+    "solidworks": "deferred_research_only_user_has_no_installation",
+    "download": "On future authorized use, fetch upstream locked revision, verify archive hash, record dependency licenses; no vendored commercial libraries",
+    "mcp": "optional transport, not a solver or engineering acceptance gate"
+  },
+  "providers": [
+    {
+      "id": "solidworks_mcp",
+      "role": "optional CAD adapter",
+      "upstream": "https://github.com/hjbaard/SolidWorks-MCP",
+      "commit": "95bcd56306e63a8a44e18afa487469dcccc71774",
+      "version": "0.16.1",
+      "release": "https://github.com/hjbaard/SolidWorks-MCP/releases/tag/v0.16.1",
+      "wrapper_license": "MIT",
+      "host_license": "Separate commercial SOLIDWORKS license required; not supplied by wrapper",
+      "runtime": [
+        "Windows",
+        "Python>=3.11",
+        "running licensed SOLIDWORKS",
+        "Y-up part template"
+      ],
+      "transport": "stdio",
+      "source_verified_capabilities": [
+        "part modeling",
+        "assembly/mates/interference",
+        "STEP/STL/IGES/Parasolid/3MF export",
+        "native CAD files",
+        "mesh cross-sections/comparison (not CFD meshing)"
+      ],
+      "cfd_control": "not_found_in_reviewed_server_tools",
+      "maintainer_tested_host": "SOLIDWORKS 2026 / 3DEXPERIENCE R2026x; not our runtime test",
+      "runtime_verified": false,
+      "status": "deferred",
+      "artifact_exchange": [
+        "STEP",
+        "SLDPRT",
+        "SLDASM"
+      ],
+      "future_probe": [
+        "Host version/license",
+        "tool capability enumeration",
+        "disposable part create/measure/export/reimport",
+        "Flow Simulation capability requires separate investigation, not inferred from CAD API"
+      ],
+      "provenance": [
+        "README.md",
+        "pyproject.toml",
+        "LICENSE",
+        "src/solidworks_mcp/server.py"
+      ]
+    },
+    {
+      "id": "freecad_mcp",
+      "role": "alternative CAD adapter; not required for existing CadQuery path",
+      "upstream": "https://github.com/neka-nat/freecad-mcp",
+      "commit": "78bf0230a03324b56c9a0b7f55150fb5be2a0d42",
+      "version": "0.1.27",
+      "wrapper_license": "MIT",
+      "host_license": "FreeCAD LGPL; individual add-ons/dependencies separately licensed",
+      "runtime": [
+        "FreeCAD host/addon",
+        "Python>=3.12 external MCP server",
+        "matching addon and server revision"
+      ],
+      "transport": "external MCP server plus local XML-RPC addon",
+      "source_verified_capabilities": [
+        "model editing",
+        "Python execution",
+        "document inspection"
+      ],
+      "cfd_control": "not_verified; FEM helpers do not establish CFD support",
+      "runtime_verified": false,
+      "status": "candidate_not_installed",
+      "artifact_exchange": [
+        "FCStd",
+        "STEP (requires tested export/reimport)"
+      ],
+      "future_probe": [
+        "Host/addon handshake",
+        "local endpoint binding",
+        "execute-code scope",
+        "disposable part export/reimport",
+        "explicit solver backend capability"
+      ],
+      "provenance": [
+        "README.md",
+        "pyproject.toml",
+        "LICENSE",
+        "addon/FreeCADMCP/package.xml"
+      ]
+    }
+  ],
+  "artifact_contract": {
+    "required": [
+      "source revision",
+      "provider version",
+      "host version",
+      "units",
+      "coordinate frame",
+      "input hash",
+      "output hash",
+      "scope",
+      "limitations",
+      "logs"
+    ],
+    "step": "Exchange geometry only; do not claim full native feature history preservation"
+  },
+  "future_flow_plan": [
+    "Continue current open-source CFD; do not wait for commercial software",
+    "Research Flow Simulation official workflow/mesh handling separately",
+    "When host and licenses exist, verify installed Flow Simulation version and documented automation interface",
+    "If no verified Flow tools exist, build only a narrow adapter or use a supervised workflow; do not claim current MCP supports CFD",
+    "Compare one small identical geometry/BC case, report mass balance, flow, pressure drop, convergence and mesh sensitivity; then decide reuse"
+  ]
+}
