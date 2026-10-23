@@ -1,0 +1,50 @@
+{
+  "original_filename": "poisson-diagnostics-evidence.zip",
+  "full_bytes": 61885438,
+  "full_sha256": "4eb940e86bc49e5ba020445dea92c54350f069942b99dc2fb6d386e67cf41a8a",
+  "part_size_limit": 8000000,
+  "parts": [
+    {
+      "name": "poisson-diagnostics-evidence.zip.part01",
+      "bytes": 8000000,
+      "sha256": "89d642781484ba20b20502b9f2299f5ce655f6d0e3db129fc2acd437ab6677d8"
+    },
+    {
+      "name": "poisson-diagnostics-evidence.zip.part02",
+      "bytes": 8000000,
+      "sha256": "fec8eeaa0c4714fc00fdadb3dc94b64a719137cea6a282eb8692ddb9c1de16e6"
+    },
+    {
+      "name": "poisson-diagnostics-evidence.zip.part03",
+      "bytes": 8000000,
+      "sha256": "949d520b31f08b2bf800363024c2da676f035f8b2974ac3c00fdca93a95c3e63"
+    },
+    {
+      "name": "poisson-diagnostics-evidence.zip.part04",
+      "bytes": 8000000,
+      "sha256": "0ca12b4e48076e02441e772126ba6b765d99773cadd475ef678dd74d4ade0b12"
+    },
+    {
+      "name": "poisson-diagnostics-evidence.zip.part05",
+      "bytes": 8000000,
+      "sha256": "7c00ca12672c0166e17b87741ab9230d145b7b999b08fefb3cda2aaa3de08488"
+    },
+    {
+      "name": "poisson-diagnostics-evidence.zip.part06",
+      "bytes": 8000000,
+      "sha256": "7af0feaf62dc1779bdd1d71bc012d08847cdcb10fb36584cba2a6178834bb622"
+    },
+    {
+      "name": "poisson-diagnostics-evidence.zip.part07",
+      "bytes": 8000000,
+      "sha256": "e33b32b69b5382796512168de0392d8f9ec13878a96f8f446299655848c3b942"
+    },
+    {
+      "name": "poisson-diagnostics-evidence.zip.part08",
+      "bytes": 5885438,
+      "sha256": "5c084a429b67fe68bd6b285b54adb962a13c76b60b72295fbad73eb680c8336d"
+    }
+  ],
+  "reassembly_verified": true,
+  "reassembly_command": "cat poisson-diagnostics-evidence.zip.part?? > poisson-diagnostics-evidence.zip; sha256sum poisson-diagnostics-evidence.zip"
+}

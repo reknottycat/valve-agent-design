@@ -1,0 +1,32 @@
+{
+  "status": "BOUNDED_LIMITED05_BUT_STABILITY_GATE_UNMET",
+  "mesh_cells": 614334,
+  "scheme": "Gauss linear limited 0.5; snGrad limited 0.5",
+  "source": -6,
+  "initial_internal_T": 1,
+  "completed_outer_iterations": 30,
+  "mathematical_solver_pilots_in_this_case": 1,
+  "pre_solve_aborted_startups": 1,
+  "startup_abort_reason": "Watchdog false-positive on normal FPE trapping banner; no equation evaluated, fixed/tested with retained evidence",
+  "all_other_numerical_case_controls_identical_to_corrected": true,
+  "runtime_log_only_debug_switch": "limited=1",
+  "runtime_scheme_evidence": "Installed scalar limitedSnGrad constructor disassembly accepts numeric0.5 and constructs corrected base; exact dictionary fingerprint bound to successful runtime, registered limited debug switch accepted. No explicit limiter statistics emitted; do not claim them.",
+  "fvSchemes_sha256": "217a6b6eceaa144cf376586e5be13c90082450932f5e184c441948d7559704e2",
+  "elapsed_seconds": 89.95714740900439,
+  "peak_solver_tree_rss_bytes": 448507904,
+  "exit_code": 0,
+  "gates": {
+    "native_geometry_probe": true,
+    "finite_fields": true,
+    "linear_final_residual_le_1e_10": true,
+    "source_flux_balance_le_1e_8": true,
+    "consecutive_relative_L2_le_1e_9": false,
+    "independent_limited_operator_residual": null
+  },
+  "overall_numerical_verification_pass": false,
+  "R1_full_check_PASS": false,
+  "engineering_acceptance": false,
+  "physical_CFD": false,
+  "source_mesh_and_R1_hashes_unchanged": true,
+  "local_residual_note": "Local limited-snGrad residual not independently reconstructed; no direct matrix export. Corrected-scheme residual must NOT be reused for this different operator. Conservative fixedValue boundary flux is unchanged because noncoupled boundary correction is zero."
+}
