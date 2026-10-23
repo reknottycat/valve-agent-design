@@ -1,0 +1,9 @@
+{
+  "initial_surface_count_gate": 50000,
+  "observed_triangles": 157086,
+  "initial_gate_declined_3d": true,
+  "revised_decision": "One monitored continuation reusing saved surface; count gate is exploratory, not engineering requirement. Actual RSS/time caps remain.",
+  "authorization": "Parent delegated approval 2026-10-23T01:04:53Z",
+  "critical_passage_resolution_verified": false,
+  "no_automatic_retry": true
+}

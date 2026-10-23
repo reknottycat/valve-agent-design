@@ -1,0 +1,2392 @@
+{
+  "elements": {
+    "2": 157086
+  },
+  "count": 157086,
+  "missing_faces": [],
+  "faces": [
+    {
+      "gmsh_surface": 1,
+      "source_face": 1,
+      "role": "wall_FDG_1",
+      "family": "generic",
+      "area_mm2": 106080.4020184881,
+      "bbox_mm": [
+        405.0,
+        -99.99999632863634,
+        -99.96700102691392,
+        585.0,
+        100.0,
+        160.54054051486
+      ],
+      "source_bbox_max_delta_mm": 0.032999073086074304,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 442
+    },
+    {
+      "gmsh_surface": 2,
+      "source_face": 2,
+      "role": "wall_FDG_2",
+      "family": "generic",
+      "area_mm2": 149259.4676494088,
+      "bbox_mm": [
+        155.0,
+        -145.0,
+        20.0,
+        445.0,
+        145.0,
+        212.0
+      ],
+      "source_bbox_max_delta_mm": 1.0000002248489182e-07,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 601
+    },
+    {
+      "gmsh_surface": 3,
+      "source_face": 3,
+      "role": "wall_FDG_3",
+      "family": "generic",
+      "area_mm2": 9424.77796004594,
+      "bbox_mm": [
+        585.0,
+        -99.99889421708478,
+        -99.96510879713206,
+        600.0,
+        100.0,
+        99.95158162047707
+      ],
+      "source_bbox_max_delta_mm": 0.04841847952292255,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 106
+    },
+    {
+      "gmsh_surface": 4,
+      "source_face": 4,
+      "role": "wall_FDG_4",
+      "family": "generic",
+      "area_mm2": 21940.849606813128,
+      "bbox_mm": [
+        155.07220419130422,
+        -144.95690773000047,
+        20.0,
+        429.98970494115,
+        144.95690773000027,
+        20.0
+      ],
+      "source_bbox_max_delta_mm": 0.07220429130421735,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 112
+    },
+    {
+      "gmsh_surface": 5,
+      "source_face": 5,
+      "role": "wall_FDG_5",
+      "family": "generic",
+      "area_mm2": 1851.244572912052,
+      "bbox_mm": [
+        186.0,
+        -113.99957603094236,
+        12.0,
+        414.0,
+        113.99957603094228,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 0.0004240690577148598,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 87
+    },
+    {
+      "gmsh_surface": 6,
+      "source_face": 6,
+      "role": "wall_FDG_6",
+      "family": "generic",
+      "area_mm2": 27.756542216586098,
+      "bbox_mm": [
+        412.33336939911646,
+        -12.47967298279,
+        12.0,
+        414.0,
+        12.479672982797,
+        12.0
+      ],
+      "source_bbox_max_delta_mm": 3.611658615909619e-05,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 2
+    },
+    {
+      "gmsh_surface": 7,
+      "source_face": 7,
+      "role": "wall_FDG_7",
+      "family": "generic",
+      "area_mm2": 50658.18153913541,
+      "bbox_mm": [
+        155.0,
+        -145.0,
+        212.0,
+        445.0,
+        145.0,
+        212.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 211
+    },
+    {
+      "gmsh_surface": 8,
+      "source_face": 8,
+      "role": "wall_FDG_8",
+      "family": "generic",
+      "area_mm2": 376991.11843072553,
+      "bbox_mm": [
+        600.0,
+        -100.0,
+        -99.99980497176499,
+        1200.0,
+        100.0,
+        99.93091574409961
+      ],
+      "source_bbox_max_delta_mm": 0.06908425590039258,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 1416
+    },
+    {
+      "gmsh_surface": 9,
+      "source_face": 9,
+      "role": "wall_FDG_9",
+      "family": "finiteVent",
+      "area_mm2": 3.197075989642311,
+      "bbox_mm": [
+        412.4,
+        -1.0,
+        21.75,
+        414.0,
+        1.0,
+        21.75
+      ],
+      "source_bbox_max_delta_mm": 2.6867397195928788e-14,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 3
+    },
+    {
+      "gmsh_surface": 10,
+      "source_face": 10,
+      "role": "wall_FDG_10",
+      "family": "finiteVent",
+      "area_mm2": 0.3941257142894983,
+      "bbox_mm": [
+        412.4,
+        1.0,
+        21.75,
+        413.99561395071,
+        1.0,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 11,
+      "source_face": 11,
+      "role": "wall_FDG_11",
+      "family": "generic",
+      "area_mm2": 174.8926450217882,
+      "bbox_mm": [
+        357.11380313766,
+        1.0,
+        22.0,
+        413.99561395071,
+        98.223097601321,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 3.069544618483633e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 10
+    },
+    {
+      "gmsh_surface": 12,
+      "source_face": 12,
+      "role": "wall_FDG_12",
+      "family": "finiteVent",
+      "area_mm2": 0.39412571429060456,
+      "bbox_mm": [
+        357.06602540378,
+        96.841255385371,
+        21.75,
+        357.86383237914,
+        98.223097601321,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 8.469669410260394e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 13,
+      "source_face": 13,
+      "role": "wall_FDG_13",
+      "family": "finiteVent",
+      "area_mm2": 3.1970759896477463,
+      "bbox_mm": [
+        355.33397459621,
+        96.841255385371,
+        21.75,
+        357.86383237914,
+        99.223097601321,
+        21.75
+      ],
+      "source_bbox_max_delta_mm": 1.4210854715202004e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 14,
+      "source_face": 14,
+      "role": "wall_FDG_14",
+      "family": "finiteVent",
+      "area_mm2": 0.39412571429060456,
+      "bbox_mm": [
+        355.33397459621,
+        97.841255385371,
+        21.75,
+        356.13178157157,
+        99.223097601321,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 8.412825991399586e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 15,
+      "source_face": 15,
+      "role": "wall_FDG_15",
+      "family": "generic",
+      "area_mm2": 174.89264502216542,
+      "bbox_mm": [
+        243.86821842842,
+        97.924008847922,
+        22.0,
+        356.13178157157,
+        114.0,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 8.44124770082999e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 10
+    },
+    {
+      "gmsh_surface": 16,
+      "source_face": 16,
+      "role": "wall_FDG_16",
+      "family": "finiteVent",
+      "area_mm2": 0.3941257142906053,
+      "bbox_mm": [
+        243.86821842842,
+        97.841255385371,
+        21.75,
+        244.66602540378,
+        99.223097601321,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 8.44124770082999e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 17,
+      "source_face": 17,
+      "role": "wall_FDG_17",
+      "family": "finiteVent",
+      "area_mm2": 3.1970759896395435,
+      "bbox_mm": [
+        242.13616762085,
+        96.841255385371,
+        21.75,
+        244.66602540378,
+        99.223097601321,
+        21.75
+      ],
+      "source_bbox_max_delta_mm": 2.2168933355715126e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 18,
+      "source_face": 18,
+      "role": "wall_FDG_18",
+      "family": "finiteVent",
+      "area_mm2": 0.3941257142906053,
+      "bbox_mm": [
+        242.13616762085,
+        96.841255385371,
+        21.75,
+        242.93397459621,
+        98.223097601321,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 8.44124770082999e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 19,
+      "source_face": 19,
+      "role": "wall_FDG_19",
+      "family": "generic",
+      "area_mm2": 174.89264502194555,
+      "bbox_mm": [
+        186.00438604928,
+        1.0,
+        22.0,
+        242.88619686233,
+        98.223097601321,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 3.780087354243733e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 10
+    },
+    {
+      "gmsh_surface": 20,
+      "source_face": 20,
+      "role": "wall_FDG_20",
+      "family": "finiteVent",
+      "area_mm2": 0.394125714291502,
+      "bbox_mm": [
+        186.00438604928,
+        1.0,
+        21.75,
+        187.6,
+        1.0,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 7.105427357601002e-15,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 21,
+      "source_face": 21,
+      "role": "wall_FDG_21",
+      "family": "finiteVent",
+      "area_mm2": 3.197075989642091,
+      "bbox_mm": [
+        186.00048734158747,
+        -1.0,
+        21.75,
+        187.6,
+        1.0,
+        21.75
+      ],
+      "source_bbox_max_delta_mm": 0.0004873415874726561,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 22,
+      "source_face": 22,
+      "role": "wall_FDG_22",
+      "family": "finiteVent",
+      "area_mm2": 0.394125714291502,
+      "bbox_mm": [
+        186.00438604928,
+        -1.0,
+        21.75,
+        187.6,
+        -1.0,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 7.105427357601002e-15,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 23,
+      "source_face": 23,
+      "role": "wall_FDG_23",
+      "family": "generic",
+      "area_mm2": 174.89264502197284,
+      "bbox_mm": [
+        186.00438604928,
+        -98.22309760132,
+        22.0,
+        242.88619686233,
+        -1.0,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 3.0411229090532288e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 10
+    },
+    {
+      "gmsh_surface": 24,
+      "source_face": 24,
+      "role": "wall_FDG_24",
+      "family": "finiteVent",
+      "area_mm2": 0.3941257142906522,
+      "bbox_mm": [
+        242.13616762085,
+        -98.22309760132,
+        21.75,
+        242.93397459621,
+        -96.84125538537,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 1.0203393685515039e-11,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 25,
+      "source_face": 25,
+      "role": "wall_FDG_25",
+      "family": "finiteVent",
+      "area_mm2": 3.197075989639254,
+      "bbox_mm": [
+        242.13616762085,
+        -99.22309760132,
+        21.75,
+        244.66602540378,
+        -96.84125538537,
+        21.75
+      ],
+      "source_bbox_max_delta_mm": 1.8189894035458565e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 26,
+      "source_face": 26,
+      "role": "wall_FDG_26",
+      "family": "finiteVent",
+      "area_mm2": 0.3941257142906522,
+      "bbox_mm": [
+        243.86821842842,
+        -99.22309760132,
+        21.75,
+        244.66602540378,
+        -97.84125538537,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 1.0174971976084635e-11,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 27,
+      "source_face": 27,
+      "role": "wall_FDG_27",
+      "family": "generic",
+      "area_mm2": 174.89264502222204,
+      "bbox_mm": [
+        243.86821842842,
+        -114.0,
+        22.0,
+        356.13178157157,
+        -97.92400884792,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 1.0174971976084635e-11,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 10
+    },
+    {
+      "gmsh_surface": 28,
+      "source_face": 28,
+      "role": "wall_FDG_28",
+      "family": "finiteVent",
+      "area_mm2": 0.39412571429065146,
+      "bbox_mm": [
+        355.33397459621,
+        -99.22309760132,
+        21.75,
+        356.13178157157,
+        -97.84125538537,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 1.0174971976084635e-11,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 29,
+      "source_face": 29,
+      "role": "wall_FDG_29",
+      "family": "finiteVent",
+      "area_mm2": 3.1970759896512777,
+      "bbox_mm": [
+        355.33397459621,
+        -99.22309760132,
+        21.75,
+        357.86383237914,
+        -96.84125538537,
+        21.75
+      ],
+      "source_bbox_max_delta_mm": 1.8189894035458565e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 30,
+      "source_face": 30,
+      "role": "wall_FDG_30",
+      "family": "finiteVent",
+      "area_mm2": 0.39412571429065146,
+      "bbox_mm": [
+        357.06602540378,
+        -98.22309760132,
+        21.75,
+        357.86383237914,
+        -96.84125538537,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 1.0231815394945443e-11,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 31,
+      "source_face": 31,
+      "role": "wall_FDG_31",
+      "family": "generic",
+      "area_mm2": 174.89264502178457,
+      "bbox_mm": [
+        357.11380313766,
+        -98.22309760132,
+        22.0,
+        413.99561395071,
+        -1.0,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 3.069544618483633e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 10
+    },
+    {
+      "gmsh_surface": 32,
+      "source_face": 32,
+      "role": "wall_FDG_32",
+      "family": "finiteVent",
+      "area_mm2": 0.3941257142894983,
+      "bbox_mm": [
+        412.4,
+        -1.0,
+        21.75,
+        413.99561395071,
+        -1.0,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 33,
+      "source_face": 33,
+      "role": "wall_FDG_33",
+      "family": "generic",
+      "area_mm2": 4398.229715026,
+      "bbox_mm": [
+        230.0,
+        -70.0,
+        202.0,
+        370.0,
+        70.0,
+        212.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 72
+    },
+    {
+      "gmsh_surface": 34,
+      "source_face": 34,
+      "role": "outlet",
+      "family": "generic",
+      "area_mm2": 31415.926535897932,
+      "bbox_mm": [
+        1200.0,
+        -100.0,
+        -100.0,
+        1200.0,
+        100.0,
+        100.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 136
+    },
+    {
+      "gmsh_surface": 35,
+      "source_face": 35,
+      "role": "wall_FDG_35",
+      "family": "finiteVent",
+      "area_mm2": 0.3999999999999985,
+      "bbox_mm": [
+        412.4,
+        -1.0,
+        21.75,
+        412.4,
+        1.0,
+        21.95
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 2
+    },
+    {
+      "gmsh_surface": 36,
+      "source_face": 36,
+      "role": "wall_FDG_36",
+      "family": "generic",
+      "area_mm2": 8343.673264086465,
+      "bbox_mm": [
+        187.50444453223,
+        -112.44843959374842,
+        21.95,
+        412.49555546776,
+        112.44843959374842,
+        21.95
+      ],
+      "source_bbox_max_delta_mm": 0.05156040625158198,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 78
+    },
+    {
+      "gmsh_surface": 37,
+      "source_face": 37,
+      "role": "wall_FDG_37",
+      "family": "wallStep",
+      "area_mm2": 5.7904849085604555,
+      "bbox_mm": [
+        357.11380313766,
+        1.0,
+        21.95,
+        412.49555546776,
+        96.924008847922,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 2.1316282072803006e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 10
+    },
+    {
+      "gmsh_surface": 38,
+      "source_face": 38,
+      "role": "wall_FDG_38",
+      "family": "finiteVent",
+      "area_mm2": 0.4000000000001889,
+      "bbox_mm": [
+        355.33397459621,
+        96.841255385371,
+        21.75,
+        357.06602540378,
+        97.841255385371,
+        21.95
+      ],
+      "source_bbox_max_delta_mm": 1.7195134205394424e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 2
+    },
+    {
+      "gmsh_surface": 39,
+      "source_face": 39,
+      "role": "wall_FDG_39",
+      "family": "wallStep",
+      "area_mm2": 5.790484908562582,
+      "bbox_mm": [
+        244.6182476699,
+        97.924008847922,
+        21.95,
+        355.38175233009,
+        112.5,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 1.7195134205394424e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 10
+    },
+    {
+      "gmsh_surface": 40,
+      "source_face": 40,
+      "role": "wall_FDG_40",
+      "family": "finiteVent",
+      "area_mm2": 0.40000000000019376,
+      "bbox_mm": [
+        242.93397459621,
+        96.841255385371,
+        21.75,
+        244.66602540378,
+        97.841255385371,
+        21.95
+      ],
+      "source_bbox_max_delta_mm": 1.7337242752546445e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 2
+    },
+    {
+      "gmsh_surface": 41,
+      "source_face": 41,
+      "role": "wall_FDG_41",
+      "family": "wallStep",
+      "area_mm2": 5.790484908556956,
+      "bbox_mm": [
+        187.50444453223,
+        1.0,
+        21.95,
+        242.88619686233,
+        96.924008847922,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 1.3073986337985843e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 10
+    },
+    {
+      "gmsh_surface": 42,
+      "source_face": 42,
+      "role": "wall_FDG_42",
+      "family": "finiteVent",
+      "area_mm2": 0.3999999999999985,
+      "bbox_mm": [
+        187.6,
+        -1.0,
+        21.75,
+        187.6,
+        1.0,
+        21.95
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 2
+    },
+    {
+      "gmsh_surface": 43,
+      "source_face": 43,
+      "role": "wall_FDG_43",
+      "family": "wallStep",
+      "area_mm2": 5.7904849085625845,
+      "bbox_mm": [
+        187.50444453223,
+        -96.92400884792,
+        21.95,
+        242.88619686233,
+        -1.0,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 4.263256414560601e-13,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 10
+    },
+    {
+      "gmsh_surface": 44,
+      "source_face": 44,
+      "role": "wall_FDG_44",
+      "family": "finiteVent",
+      "area_mm2": 0.4000000000001938,
+      "bbox_mm": [
+        242.93397459621,
+        -97.84125538537,
+        21.75,
+        244.66602540378,
+        -96.84125538537,
+        21.95
+      ],
+      "source_bbox_max_delta_mm": 1.7195134205394424e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 2
+    },
+    {
+      "gmsh_surface": 45,
+      "source_face": 45,
+      "role": "wall_FDG_45",
+      "family": "wallStep",
+      "area_mm2": 5.790484908562581,
+      "bbox_mm": [
+        244.6182476699,
+        -112.5,
+        21.95,
+        355.38175233009,
+        -97.92400884792,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 2.3305801732931286e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 10
+    },
+    {
+      "gmsh_surface": 46,
+      "source_face": 46,
+      "role": "wall_FDG_46",
+      "family": "finiteVent",
+      "area_mm2": 0.4000000000001889,
+      "bbox_mm": [
+        355.33397459621,
+        -97.84125538537,
+        21.75,
+        357.06602540378,
+        -96.84125538537,
+        21.95
+      ],
+      "source_bbox_max_delta_mm": 1.7195134205394424e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 2
+    },
+    {
+      "gmsh_surface": 47,
+      "source_face": 47,
+      "role": "wall_FDG_47",
+      "family": "wallStep",
+      "area_mm2": 5.790484908562582,
+      "bbox_mm": [
+        357.11380313766,
+        -96.92400884792,
+        21.95,
+        412.49555546776,
+        -1.0,
+        22.0
+      ],
+      "source_bbox_max_delta_mm": 3.595346242946107e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 10
+    },
+    {
+      "gmsh_surface": 48,
+      "source_face": 48,
+      "role": "wall_FDG_48",
+      "family": "generic",
+      "area_mm2": 8780.751466783471,
+      "bbox_mm": [
+        230.0,
+        -70.0,
+        202.0,
+        370.0,
+        70.0,
+        202.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 126
+    },
+    {
+      "gmsh_surface": 49,
+      "source_face": 49,
+      "role": "wall_FDG_49",
+      "family": "generic",
+      "area_mm2": 47872.46495575273,
+      "bbox_mm": [
+        200.0,
+        -100.0,
+        -80.0,
+        400.0,
+        100.0,
+        21.95
+      ],
+      "source_bbox_max_delta_mm": 1.0000002248489182e-07,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 215
+    },
+    {
+      "gmsh_surface": 50,
+      "source_face": 50,
+      "role": "wall_FDG_50",
+      "family": "generic",
+      "area_mm2": 204.20352248334996,
+      "bbox_mm": [
+        256.02334059711,
+        -43.97665940288,
+        197.0,
+        269.02334059711,
+        -30.976659402880003,
+        202.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 50
+    },
+    {
+      "gmsh_surface": 51,
+      "source_face": 51,
+      "role": "wall_FDG_51",
+      "family": "generic",
+      "area_mm2": 204.20352248334996,
+      "bbox_mm": [
+        330.97665940288,
+        -43.97665940288,
+        197.0,
+        343.97665940288,
+        -30.976659402880003,
+        202.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 50
+    },
+    {
+      "gmsh_surface": 52,
+      "source_face": 52,
+      "role": "wall_FDG_52",
+      "family": "generic",
+      "area_mm2": 204.20352248334996,
+      "bbox_mm": [
+        256.02334059711,
+        30.976659402887,
+        197.0,
+        269.02334059711,
+        43.976659402887,
+        202.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 50
+    },
+    {
+      "gmsh_surface": 53,
+      "source_face": 53,
+      "role": "wall_FDG_53",
+      "family": "generic",
+      "area_mm2": 29304.776272687523,
+      "bbox_mm": [
+        256.0262178157529,
+        -43.99344505779737,
+        96.0,
+        344.0,
+        43.99344505779737,
+        202.0
+      ],
+      "source_bbox_max_delta_mm": 0.02621781575288651,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 144
+    },
+    {
+      "gmsh_surface": 54,
+      "source_face": 54,
+      "role": "wall_FDG_54",
+      "family": "generic",
+      "area_mm2": 204.20352248334996,
+      "bbox_mm": [
+        330.97665940288,
+        30.976659402887,
+        197.0,
+        343.97665940288,
+        43.976659402887,
+        202.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 50
+    },
+    {
+      "gmsh_surface": 55,
+      "source_face": 55,
+      "role": "wall_FDG_55",
+      "family": "generic",
+      "area_mm2": 15707.963267948966,
+      "bbox_mm": [
+        300.0,
+        -100.0,
+        -80.0,
+        400.0,
+        100.0,
+        -80.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 70
+    },
+    {
+      "gmsh_surface": 56,
+      "source_face": 56,
+      "role": "wall_FDG_56",
+      "family": "generic",
+      "area_mm2": 13227.548398413903,
+      "bbox_mm": [
+        300.0,
+        -119.97893630299554,
+        -144.98996977975318,
+        300.0,
+        120.0,
+        -44.06989810448
+      ],
+      "source_bbox_max_delta_mm": 0.021063697004464643,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 61
+    },
+    {
+      "gmsh_surface": 57,
+      "source_face": 57,
+      "role": "wall_FDG_57",
+      "family": "generic",
+      "area_mm2": 69808.12639806846,
+      "bbox_mm": [
+        155.0,
+        -119.99989552225148,
+        -144.99978289454626,
+        300.0,
+        120.0,
+        -15.002126233040514
+      ],
+      "source_bbox_max_delta_mm": 0.0021263330405130176,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 327
+    },
+    {
+      "gmsh_surface": 58,
+      "source_face": 58,
+      "role": "wall_FDG_58",
+      "family": "generic",
+      "area_mm2": 132.73228961416876,
+      "bbox_mm": [
+        256.02334059711,
+        -43.97665940288,
+        197.0,
+        269.02334059711,
+        -30.976659402880003,
+        197.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 12
+    },
+    {
+      "gmsh_surface": 59,
+      "source_face": 59,
+      "role": "wall_FDG_59",
+      "family": "generic",
+      "area_mm2": 132.73228961416876,
+      "bbox_mm": [
+        330.97665940288,
+        -43.97665940288,
+        197.0,
+        343.97665940288,
+        -30.976659402880003,
+        197.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 12
+    },
+    {
+      "gmsh_surface": 60,
+      "source_face": 60,
+      "role": "wall_FDG_60",
+      "family": "generic",
+      "area_mm2": 132.73228961416876,
+      "bbox_mm": [
+        256.02334059711,
+        30.976659402887,
+        197.0,
+        269.02334059711,
+        43.976659402887,
+        197.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 12
+    },
+    {
+      "gmsh_surface": 61,
+      "source_face": 61,
+      "role": "wall_FDG_61",
+      "family": "generic",
+      "area_mm2": 2865.1325000738916,
+      "bbox_mm": [
+        256.0,
+        -44.0,
+        96.0,
+        344.0,
+        44.0,
+        96.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 24
+    },
+    {
+      "gmsh_surface": 62,
+      "source_face": 62,
+      "role": "wall_FDG_62",
+      "family": "generic",
+      "area_mm2": 132.73228961416876,
+      "bbox_mm": [
+        330.97665940288,
+        30.976659402887,
+        197.0,
+        343.97665940288,
+        43.976659402887,
+        197.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 12
+    },
+    {
+      "gmsh_surface": 63,
+      "source_face": 63,
+      "role": "wall_FDG_63",
+      "family": "generic",
+      "area_mm2": 93967.74202834621,
+      "bbox_mm": [
+        15.0,
+        -119.99823017349148,
+        -144.9926357632285,
+        155.0,
+        120.0,
+        99.95384268753332
+      ],
+      "source_bbox_max_delta_mm": 0.04615741246666971,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 407
+    },
+    {
+      "gmsh_surface": 64,
+      "source_face": 64,
+      "role": "wall_FDG_64",
+      "family": "guide",
+      "area_mm2": 22097.38376284863,
+      "bbox_mm": [
+        268.0,
+        -31.994358608585646,
+        96.0,
+        332.0,
+        31.99435860858565,
+        212.0
+      ],
+      "source_bbox_max_delta_mm": 0.005641391414354047,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 222
+    },
+    {
+      "gmsh_surface": 65,
+      "source_face": 65,
+      "role": "wall_FDG_65",
+      "family": "generic",
+      "area_mm2": 9424.777960045109,
+      "bbox_mm": [
+        0.0,
+        -99.99889421708478,
+        -99.96510879713206,
+        15.0,
+        100.0,
+        99.95158162047707
+      ],
+      "source_bbox_max_delta_mm": 0.04841847952292255,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 106
+    },
+    {
+      "gmsh_surface": 66,
+      "source_face": 66,
+      "role": "wall_FDG_66",
+      "family": "generic",
+      "area_mm2": 1696.460032938487,
+      "bbox_mm": [
+        268.0,
+        -32.0,
+        212.0,
+        332.0,
+        32.0,
+        212.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 24
+    },
+    {
+      "gmsh_surface": 67,
+      "source_face": 67,
+      "role": "wall_FDG_67",
+      "family": "keySide",
+      "area_mm2": 516.0245937030958,
+      "bbox_mm": [
+        302.99999999999,
+        26.8,
+        100.0,
+        303.0,
+        31.859064644148,
+        202.0
+      ],
+      "source_bbox_max_delta_mm": 1.000444171950221e-11,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 12
+    },
+    {
+      "gmsh_surface": 68,
+      "source_face": 68,
+      "role": "wall_FDG_68",
+      "family": "generic",
+      "area_mm2": 30.918378042535316,
+      "bbox_mm": [
+        297.0,
+        26.8,
+        202.0,
+        303.0,
+        32.0,
+        202.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 69,
+      "source_face": 69,
+      "role": "wall_FDG_69",
+      "family": "keySide",
+      "area_mm2": 516.0245937030958,
+      "bbox_mm": [
+        297.0,
+        26.8,
+        100.0,
+        297.0,
+        31.859064644148,
+        202.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 12
+    },
+    {
+      "gmsh_surface": 70,
+      "source_face": 70,
+      "role": "wall_FDG_70",
+      "family": "generic",
+      "area_mm2": 30.918378042540915,
+      "bbox_mm": [
+        297.0,
+        26.8,
+        100.0,
+        303.0,
+        32.0,
+        100.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 71,
+      "source_face": 71,
+      "role": "wall_FDG_71",
+      "family": "keySide",
+      "area_mm2": 516.0245937022797,
+      "bbox_mm": [
+        297.0,
+        -31.85906464414,
+        100.0,
+        297.0,
+        -26.8,
+        202.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 12
+    },
+    {
+      "gmsh_surface": 72,
+      "source_face": 72,
+      "role": "wall_FDG_72",
+      "family": "generic",
+      "area_mm2": 30.918378042487706,
+      "bbox_mm": [
+        297.0,
+        -32.0,
+        202.0,
+        303.0,
+        -26.8,
+        202.0
+      ],
+      "source_bbox_max_delta_mm": 7.389644451905042e-13,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 73,
+      "source_face": 73,
+      "role": "wall_FDG_73",
+      "family": "keySide",
+      "area_mm2": 516.0245937022797,
+      "bbox_mm": [
+        302.99999999999,
+        -31.85906464414,
+        100.0,
+        303.0,
+        -26.8,
+        202.0
+      ],
+      "source_bbox_max_delta_mm": 1.000444171950221e-11,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 12
+    },
+    {
+      "gmsh_surface": 74,
+      "source_face": 74,
+      "role": "wall_FDG_74",
+      "family": "generic",
+      "area_mm2": 30.918378042493327,
+      "bbox_mm": [
+        297.0,
+        -32.0,
+        100.0,
+        303.0,
+        -26.8,
+        100.0
+      ],
+      "source_bbox_max_delta_mm": 7.389644451905042e-13,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 75,
+      "source_face": 75,
+      "role": "wall_FDG_75",
+      "family": "generic",
+      "area_mm2": 376991.11843072553,
+      "bbox_mm": [
+        -600.0,
+        -100.0,
+        -99.99980497176499,
+        0.0,
+        100.0,
+        99.93091574409961
+      ],
+      "source_bbox_max_delta_mm": 0.06908425590039258,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 1416
+    },
+    {
+      "gmsh_surface": 76,
+      "source_face": 76,
+      "role": "wall_FDG_76",
+      "family": "neck",
+      "area_mm2": 16587.6092109552,
+      "bbox_mm": [
+        278.0291700225337,
+        -21.99270628531489,
+        212.0,
+        322.0,
+        21.99270628531489,
+        332.0
+      ],
+      "source_bbox_max_delta_mm": 0.029170022533719475,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 308
+    },
+    {
+      "gmsh_surface": 77,
+      "source_face": 77,
+      "role": "wall_FDG_77",
+      "family": "keyRoot",
+      "area_mm2": 612.0,
+      "bbox_mm": [
+        297.0,
+        26.8,
+        100.0,
+        303.0,
+        26.8,
+        202.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 10
+    },
+    {
+      "gmsh_surface": 78,
+      "source_face": 78,
+      "role": "wall_FDG_78",
+      "family": "keyRoot",
+      "area_mm2": 612.0,
+      "bbox_mm": [
+        297.0,
+        -26.8,
+        100.0,
+        303.0,
+        -26.8,
+        202.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 10
+    },
+    {
+      "gmsh_surface": 79,
+      "source_face": 79,
+      "role": "inlet",
+      "family": "generic",
+      "area_mm2": 31415.926535897932,
+      "bbox_mm": [
+        -600.0,
+        -100.0,
+        -100.0,
+        -600.0,
+        100.0,
+        100.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 136
+    },
+    {
+      "gmsh_surface": 80,
+      "source_face": 80,
+      "role": "wall_FDG_80",
+      "family": "generic",
+      "area_mm2": 502.65482457436735,
+      "bbox_mm": [
+        278.0,
+        -22.0,
+        332.0,
+        322.0,
+        22.0,
+        332.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 24
+    },
+    {
+      "gmsh_surface": 81,
+      "source_face": 81,
+      "role": "wall_FDG_81",
+      "family": "neck",
+      "area_mm2": 24259.37847102039,
+      "bbox_mm": [
+        282.0,
+        -17.964481111708892,
+        117.5,
+        318.0,
+        17.96448111170889,
+        332.0
+      ],
+      "source_bbox_max_delta_mm": 0.035518888291111494,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 656
+    },
+    {
+      "gmsh_surface": 82,
+      "source_face": 82,
+      "role": "wall_FDG_82",
+      "family": "generic",
+      "area_mm2": 533.8859195591547,
+      "bbox_mm": [
+        280.0,
+        -20.0,
+        113.5,
+        320.0,
+        20.0,
+        117.5
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 48
+    },
+    {
+      "gmsh_surface": 83,
+      "source_face": 83,
+      "role": "wall_FDG_83",
+      "family": "generic",
+      "area_mm2": 1256.637061436,
+      "bbox_mm": [
+        280.0,
+        -20.0,
+        103.5,
+        320.0,
+        20.0,
+        113.5
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 48
+    },
+    {
+      "gmsh_surface": 84,
+      "source_face": 84,
+      "role": "wall_FDG_84",
+      "family": "generic",
+      "area_mm2": 263.8937829015424,
+      "bbox_mm": [
+        278.0,
+        -22.0,
+        103.5,
+        322.0,
+        22.0,
+        103.5
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 24
+    },
+    {
+      "gmsh_surface": 85,
+      "source_face": 85,
+      "role": "wall_FDG_85",
+      "family": "generic",
+      "area_mm2": 276.46015351592,
+      "bbox_mm": [
+        278.0,
+        -22.0,
+        101.5,
+        322.0,
+        22.0,
+        103.5
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 24
+    },
+    {
+      "gmsh_surface": 86,
+      "source_face": 86,
+      "role": "wall_FDG_86",
+      "family": "generic",
+      "area_mm2": 519.4054775628993,
+      "bbox_mm": [
+        278.0,
+        -22.0,
+        101.5,
+        322.0,
+        22.0,
+        101.5
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 18
+    },
+    {
+      "gmsh_surface": 87,
+      "source_face": 87,
+      "role": "wall_FDG_87",
+      "family": "generic",
+      "area_mm2": 166.85422779578644,
+      "bbox_mm": [
+        309.81495457622,
+        0.0,
+        93.0,
+        319.62990915244,
+        17.0,
+        101.5
+      ],
+      "source_bbox_max_delta_mm": 6.423306331271306e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 88,
+      "source_face": 88,
+      "role": "wall_FDG_88",
+      "family": "generic",
+      "area_mm2": 166.85422779578644,
+      "bbox_mm": [
+        309.81495457622,
+        -17.0,
+        93.0,
+        319.62990915244,
+        0.0,
+        101.5
+      ],
+      "source_bbox_max_delta_mm": 6.423306331271306e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 89,
+      "source_face": 89,
+      "role": "wall_FDG_89",
+      "family": "generic",
+      "area_mm2": 166.8542277958246,
+      "bbox_mm": [
+        290.18504542377,
+        -17.0,
+        93.0,
+        309.81495457622,
+        -17.0,
+        101.5
+      ],
+      "source_bbox_max_delta_mm": 1.4210854715202004e-14,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 90,
+      "source_face": 90,
+      "role": "wall_FDG_90",
+      "family": "generic",
+      "area_mm2": 166.8542277957865,
+      "bbox_mm": [
+        280.37009084755,
+        -17.0,
+        93.0,
+        290.18504542377,
+        2.40397054111e-15,
+        101.5
+      ],
+      "source_bbox_max_delta_mm": 6.423306331271306e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 91,
+      "source_face": 91,
+      "role": "wall_FDG_91",
+      "family": "generic",
+      "area_mm2": 166.85422779578644,
+      "bbox_mm": [
+        280.37009084755,
+        2.40397054111e-15,
+        93.0,
+        290.18504542377,
+        17.0,
+        101.5
+      ],
+      "source_bbox_max_delta_mm": 6.423306331271306e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 92,
+      "source_face": 92,
+      "role": "wall_FDG_92",
+      "family": "generic",
+      "area_mm2": 166.8542277958246,
+      "bbox_mm": [
+        290.18504542377,
+        17.0,
+        93.0,
+        309.81495457622,
+        17.0,
+        101.5
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 93,
+      "source_face": 93,
+      "role": "wall_FDG_93",
+      "family": "generic",
+      "area_mm2": 11.81258650775078,
+      "bbox_mm": [
+        280.25462079371,
+        -17.1,
+        93.0,
+        319.74537920628,
+        17.1,
+        93.0
+      ],
+      "source_bbox_max_delta_mm": 5.6843418860808015e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 12
+    },
+    {
+      "gmsh_surface": 94,
+      "source_face": 94,
+      "role": "wall_FDG_94",
+      "family": "generic",
+      "area_mm2": 157.96303365027137,
+      "bbox_mm": [
+        309.87268960314,
+        0.0,
+        93.0,
+        319.74537920628,
+        17.1,
+        101.0
+      ],
+      "source_bbox_max_delta_mm": 5.6843418860808015e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 95,
+      "source_face": 95,
+      "role": "wall_FDG_95",
+      "family": "generic",
+      "area_mm2": 157.96303365027137,
+      "bbox_mm": [
+        309.87268960314,
+        -17.1,
+        93.0,
+        319.74537920628,
+        0.0,
+        101.0
+      ],
+      "source_bbox_max_delta_mm": 5.6843418860808015e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 96,
+      "source_face": 96,
+      "role": "wall_FDG_96",
+      "family": "generic",
+      "area_mm2": 157.96303365031963,
+      "bbox_mm": [
+        290.12731039685,
+        17.1,
+        93.0,
+        309.87268960314,
+        17.1,
+        101.0
+      ],
+      "source_bbox_max_delta_mm": 3.552713678800501e-15,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 97,
+      "source_face": 97,
+      "role": "wall_FDG_97",
+      "family": "generic",
+      "area_mm2": 157.96303365031963,
+      "bbox_mm": [
+        290.12731039685,
+        -17.1,
+        93.0,
+        309.87268960314,
+        -17.1,
+        101.0
+      ],
+      "source_bbox_max_delta_mm": 1.4210854715202004e-14,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 98,
+      "source_face": 98,
+      "role": "wall_FDG_98",
+      "family": "generic",
+      "area_mm2": 157.96303365027137,
+      "bbox_mm": [
+        280.25462079371,
+        2.418111544293e-15,
+        93.0,
+        290.12731039685,
+        17.1,
+        101.0
+      ],
+      "source_bbox_max_delta_mm": 5.6843418860808015e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 99,
+      "source_face": 99,
+      "role": "wall_FDG_99",
+      "family": "generic",
+      "area_mm2": 157.96303365027137,
+      "bbox_mm": [
+        280.25462079371,
+        -17.1,
+        93.0,
+        290.12731039685,
+        2.418111544293e-15,
+        101.0
+      ],
+      "source_bbox_max_delta_mm": 8.01492205937393e-12,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 100,
+      "source_face": 100,
+      "role": "wall_FDG_100",
+      "family": "generic",
+      "area_mm2": 648.9645604668174,
+      "bbox_mm": [
+        277.0,
+        -23.0,
+        101.0,
+        323.0,
+        23.0,
+        101.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 18
+    },
+    {
+      "gmsh_surface": 101,
+      "source_face": 101,
+      "role": "wall_FDG_101",
+      "family": "generic",
+      "area_mm2": 419.08845998887926,
+      "bbox_mm": [
+        277.0,
+        -23.0,
+        101.0,
+        323.0,
+        23.0,
+        103.9
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 24
+    },
+    {
+      "gmsh_surface": 102,
+      "source_face": 102,
+      "role": "wall_FDG_102",
+      "family": "retainer",
+      "area_mm2": 147.65485471872148,
+      "bbox_mm": [
+        276.0,
+        -24.0,
+        103.9,
+        324.0,
+        24.0,
+        103.9
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 24
+    },
+    {
+      "gmsh_surface": 103,
+      "source_face": 103,
+      "role": "wall_FDG_103",
+      "family": "retainer",
+      "area_mm2": 331.7521842191023,
+      "bbox_mm": [
+        276.0,
+        -24.0,
+        103.9,
+        324.0,
+        24.0,
+        106.1
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 24
+    },
+    {
+      "gmsh_surface": 104,
+      "source_face": 104,
+      "role": "wall_FDG_104",
+      "family": "retainer",
+      "area_mm2": 147.65485471872148,
+      "bbox_mm": [
+        276.0,
+        -24.0,
+        106.1,
+        324.0,
+        24.0,
+        106.1
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 24
+    },
+    {
+      "gmsh_surface": 105,
+      "source_face": 105,
+      "role": "wall_FDG_105",
+      "family": "generic",
+      "area_mm2": 13136.255521720363,
+      "bbox_mm": [
+        277.0225117900406,
+        -22.99437136376059,
+        106.1,
+        323.0,
+        22.99437136376059,
+        197.0
+      ],
+      "source_bbox_max_delta_mm": 0.022511790040596225,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 226
+    },
+    {
+      "gmsh_surface": 106,
+      "source_face": 106,
+      "role": "wall_FDG_106",
+      "family": "generic",
+      "area_mm2": 1300.2738451593048,
+      "bbox_mm": [
+        269.0151073966904,
+        -30.83439637807,
+        197.0,
+        331.0,
+        30.834396378071,
+        197.0
+      ],
+      "source_bbox_max_delta_mm": 0.015107396690382302,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 38
+    },
+    {
+      "gmsh_surface": 107,
+      "source_face": 107,
+      "role": "wall_FDG_107",
+      "family": "keySide",
+      "area_mm2": 426.07116396428825,
+      "bbox_mm": [
+        303.2,
+        -30.83439637807,
+        98.7,
+        303.2,
+        -26.5,
+        197.0
+      ],
+      "source_bbox_max_delta_mm": 1.4921397450962104e-13,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 20
+    },
+    {
+      "gmsh_surface": 108,
+      "source_face": 108,
+      "role": "wall_FDG_108",
+      "family": "guide",
+      "area_mm2": 18964.312573481966,
+      "bbox_mm": [
+        269.0,
+        -30.999547984765172,
+        93.0,
+        331.0,
+        30.999555545187164,
+        197.0
+      ],
+      "source_bbox_max_delta_mm": 0.00045211523482890925,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 254
+    },
+    {
+      "gmsh_surface": 109,
+      "source_face": 109,
+      "role": "wall_FDG_109",
+      "family": "keySide",
+      "area_mm2": 426.0711639643864,
+      "bbox_mm": [
+        303.2,
+        26.5,
+        98.7,
+        303.2,
+        30.834396378071,
+        197.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 19
+    },
+    {
+      "gmsh_surface": 110,
+      "source_face": 110,
+      "role": "wall_FDG_110",
+      "family": "keyRoot",
+      "area_mm2": 645.2049543863774,
+      "bbox_mm": [
+        296.8,
+        26.5,
+        95.50631446902953,
+        303.2,
+        26.5,
+        197.0
+      ],
+      "source_bbox_max_delta_mm": 0.006314469029533143,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 29
+    },
+    {
+      "gmsh_surface": 111,
+      "source_face": 111,
+      "role": "wall_FDG_111",
+      "family": "keySide",
+      "area_mm2": 426.0711639643864,
+      "bbox_mm": [
+        296.8,
+        26.5,
+        98.7,
+        296.8,
+        30.834396378071,
+        197.0
+      ],
+      "source_bbox_max_delta_mm": 1.4921397450962104e-13,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 20
+    },
+    {
+      "gmsh_surface": 112,
+      "source_face": 112,
+      "role": "wall_FDG_112",
+      "family": "keySide",
+      "area_mm2": 426.07116396428825,
+      "bbox_mm": [
+        296.8,
+        -30.83439637807,
+        98.7,
+        296.8,
+        -26.5,
+        197.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 19
+    },
+    {
+      "gmsh_surface": 113,
+      "source_face": 113,
+      "role": "wall_FDG_113",
+      "family": "keyRoot",
+      "area_mm2": 645.2049543863774,
+      "bbox_mm": [
+        296.8,
+        -26.5,
+        95.50631446902953,
+        303.2,
+        -26.5,
+        197.0
+      ],
+      "source_bbox_max_delta_mm": 0.006314469029533143,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 27
+    },
+    {
+      "gmsh_surface": 114,
+      "source_face": 114,
+      "role": "wall_FDG_114",
+      "family": "generic",
+      "area_mm2": 44.407137810661155,
+      "bbox_mm": [
+        296.8,
+        -30.999967490217216,
+        95.5,
+        303.2,
+        -26.5,
+        98.7
+      ],
+      "source_bbox_max_delta_mm": 3.259475607819695e-05,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 47
+    },
+    {
+      "gmsh_surface": 115,
+      "source_face": 115,
+      "role": "wall_FDG_115",
+      "family": "generic",
+      "area_mm2": 42219.86367159324,
+      "bbox_mm": [
+        180.0,
+        -120.0,
+        93.0,
+        420.0,
+        120.0,
+        93.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 199
+    },
+    {
+      "gmsh_surface": 116,
+      "source_face": 116,
+      "role": "wall_FDG_116",
+      "family": "generic",
+      "area_mm2": 44.406952265719816,
+      "bbox_mm": [
+        296.8,
+        26.5,
+        95.5,
+        303.2,
+        30.99988096736717,
+        98.7
+      ],
+      "source_bbox_max_delta_mm": 0.00011913403415775292,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 47
+    },
+    {
+      "gmsh_surface": 117,
+      "source_face": 117,
+      "role": "wall_FDG_117",
+      "family": "generic",
+      "area_mm2": 10555.751316060025,
+      "bbox_mm": [
+        180.0,
+        -120.0,
+        79.0,
+        420.0,
+        120.0,
+        93.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 124
+    },
+    {
+      "gmsh_surface": 118,
+      "source_face": 118,
+      "role": "wall_FDG_118",
+      "family": "generic",
+      "area_mm2": 6705.556661209128,
+      "bbox_mm": [
+        180.0,
+        -120.0,
+        79.0,
+        420.0,
+        120.0,
+        79.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 5565
+    },
+    {
+      "gmsh_surface": 119,
+      "source_face": 119,
+      "role": "wall_FDG_119",
+      "family": "generic",
+      "area_mm2": 345.5827213189321,
+      "bbox_mm": [
+        189.25003375904998,
+        -110.74996624095,
+        79.0,
+        410.74996624095,
+        110.74996624095,
+        79.351684160769
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 48154
+    },
+    {
+      "gmsh_surface": 120,
+      "source_face": 120,
+      "role": "wall_FDG_120",
+      "family": "generic",
+      "area_mm2": 2095.5075048777976,
+      "bbox_mm": [
+        188.25779042229,
+        -111.74220957771,
+        79.351684160769,
+        411.74220957771,
+        111.74220957771,
+        82.093263356924
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 8037
+    },
+    {
+      "gmsh_surface": 121,
+      "source_face": 121,
+      "role": "wall_FDG_121",
+      "family": "generic",
+      "area_mm2": 1394.3632104852513,
+      "bbox_mm": [
+        188.1768139845616,
+        -111.82318601543841,
+        82.093263356924,
+        411.82866412007,
+        111.82318601543841,
+        83.5
+      ],
+      "source_bbox_max_delta_mm": 0.005478204631600647,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 12095
+    },
+    {
+      "gmsh_surface": 122,
+      "source_face": 122,
+      "role": "wall_FDG_122",
+      "family": "generic",
+      "area_mm2": 3838.9725010513284,
+      "bbox_mm": [
+        189.17133587992998,
+        -110.82866412007,
+        83.5,
+        410.82866412007,
+        110.82866412007,
+        83.5
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 3253
+    },
+    {
+      "gmsh_surface": 123,
+      "source_face": 123,
+      "role": "wall_FDG_123",
+      "family": "generic",
+      "area_mm2": 1305.960553653989,
+      "bbox_mm": [
+        194.82866412008002,
+        -105.17133587992,
+        82.093263356924,
+        405.17133587992,
+        105.17133587992,
+        83.5
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 11397
+    },
+    {
+      "gmsh_surface": 124,
+      "source_face": 124,
+      "role": "wall_FDG_124",
+      "family": "generic",
+      "area_mm2": 1977.3972374099812,
+      "bbox_mm": [
+        194.52157987655,
+        -105.47842012345,
+        79.351684160769,
+        405.47842012345,
+        105.47842012345,
+        82.093263356924
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 7633
+    },
+    {
+      "gmsh_surface": 125,
+      "source_face": 125,
+      "role": "wall_FDG_125",
+      "family": "generic",
+      "area_mm2": 329.4982197157485,
+      "bbox_mm": [
+        194.5013357671179,
+        -105.49866423288209,
+        79.0,
+        405.50003375904,
+        105.49866423288209,
+        79.351684160769
+      ],
+      "source_bbox_max_delta_mm": 0.0013696261578957092,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 45539
+    },
+    {
+      "gmsh_surface": 126,
+      "source_face": 126,
+      "role": "wall_FDG_126",
+      "family": "generic",
+      "area_mm2": 34801.21129471586,
+      "bbox_mm": [
+        194.74996624096002,
+        -105.25003375904,
+        79.0,
+        405.25003375904,
+        105.25003375904,
+        79.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 5840
+    },
+    {
+      "gmsh_surface": 127,
+      "source_face": 127,
+      "role": "wall_FDG_127",
+      "family": "retainer",
+      "area_mm2": 292.3268912327309,
+      "bbox_mm": [
+        276.11187436031304,
+        -23.89184248482045,
+        104.0,
+        323.81617097688,
+        23.89184248482045,
+        106.0
+      ],
+      "source_bbox_max_delta_mm": 0.011874360313015586,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 24
+    },
+    {
+      "gmsh_surface": 128,
+      "source_face": 128,
+      "role": "wall_FDG_128",
+      "family": "retainer",
+      "area_mm2": 397.451315472244,
+      "bbox_mm": [
+        276.11187436031304,
+        -23.89184248482045,
+        106.0,
+        323.81617097688,
+        23.89184248482045,
+        106.0
+      ],
+      "source_bbox_max_delta_mm": 0.011874360313015586,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 24
+    },
+    {
+      "gmsh_surface": 129,
+      "source_face": 129,
+      "role": "wall_FDG_129",
+      "family": "retainer",
+      "area_mm2": 5.823252033040035,
+      "bbox_mm": [
+        320.90454496036,
+        2.0,
+        104.0,
+        323.81617097688,
+        2.0,
+        106.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 130,
+      "source_face": 130,
+      "role": "wall_FDG_130",
+      "family": "retainer",
+      "area_mm2": 397.451315472244,
+      "bbox_mm": [
+        276.11187436031304,
+        -23.89184248482045,
+        104.0,
+        323.81617097688,
+        23.89184248482045,
+        104.0
+      ],
+      "source_bbox_max_delta_mm": 0.011874360313015586,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 24
+    },
+    {
+      "gmsh_surface": 131,
+      "source_face": 131,
+      "role": "wall_FDG_131",
+      "family": "retainer",
+      "area_mm2": 5.823252033040035,
+      "bbox_mm": [
+        320.90454496036,
+        -2.0,
+        104.0,
+        323.81617097688,
+        -2.0,
+        106.0
+      ],
+      "source_bbox_max_delta_mm": 0.0,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 4
+    },
+    {
+      "gmsh_surface": 132,
+      "source_face": 132,
+      "role": "wall_FDG_132",
+      "family": "retainer",
+      "area_mm2": 255.88163954483727,
+      "bbox_mm": [
+        279.0103545162728,
+        -20.99002762275777,
+        104.0,
+        320.90454496036,
+        20.99002762275777,
+        106.0
+      ],
+      "source_bbox_max_delta_mm": 0.010354516272798264,
+      "mapping_bbox_tolerance_mm": 0.2,
+      "triangles": 24
+    }
+  ],
+  "msh_sha256": "396f7a7ff1387a18bbcca0df01812a0cab2791274d26ec7a4658d2aa66c19e9c",
+  "bytes": 7598266,
+  "eligible_for_bounded_volume_trial": false,
+  "peak_RSS_KiB": 176428,
+  "elapsed_s": 9.69583693399909,
+  "critical_passage_resolution_verified": false,
+  "engineering_release": false
+}

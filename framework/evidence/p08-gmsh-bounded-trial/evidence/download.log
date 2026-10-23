@@ -1,0 +1,10 @@
+WARNING: The directory '/home/agent/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Collecting gmsh==4.15.2
+  Downloading gmsh-4.15.2-py2.py3-none-manylinux_2_24_x86_64.whl.metadata (1.7 kB)
+Downloading gmsh-4.15.2-py2.py3-none-manylinux_2_24_x86_64.whl (40.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.0/40.0 MB 63.2 MB/s  0:00:00
+Saved /workspace/shared/valve-gmsh-trial-20261023/wheels/gmsh-4.15.2-py2.py3-none-manylinux_2_24_x86_64.whl
+Successfully downloaded gmsh
+
+[notice] A new release of pip is available: 26.2.1 -> 26.2.2
+[notice] To update, run: pip install --upgrade pip

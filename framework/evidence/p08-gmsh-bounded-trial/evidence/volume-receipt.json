@@ -1,0 +1,8 @@
+{
+  "stage": "volume",
+  "returncode": 1,
+  "stop_reason": null,
+  "elapsed_s": 12.83945944601146,
+  "sampled_peak_rss_bytes": 376946688,
+  "limits_are_cost_controls_not_quality_criteria": true
+}

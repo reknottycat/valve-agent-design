@@ -1,0 +1,31 @@
+Info    : Reading '/workspace/shared/valve-gmsh-trial-20261023/surface.msh'...
+Info    : 641 entities
+Info    : 78547 nodes
+Info    : 157086 elements
+Info    : Done reading '/workspace/shared/valve-gmsh-trial-20261023/surface.msh'
+{
+  "component_oriented_volumes_mm3": [
+    -759.5809455677036,
+    63700354.57422701
+  ],
+  "surface_sha256": "396f7a7ff1387a18bbcca0df01812a0cab2791274d26ec7a4658d2aa66c19e9c",
+  "saved_msh_reopened": true,
+  "triangles": 157086,
+  "nodes": 78547,
+  "physical_surface_groups": 132,
+  "physical_group_mismatches": [],
+  "edge_incidence_counts": {
+    "2": 235629
+  },
+  "closed_two_manifold_edges": true,
+  "connected_surface_components": 2,
+  "oriented_surface_volume_mm3": 63699594.99328342,
+  "CAD_volume_mm3": 64142426.1438,
+  "relative_volume_difference": -0.006903872789654077,
+  "peak_RSS_KiB": 164908,
+  "elapsed_s": 3.384557679994032,
+  "volume_mesh_created": false,
+  "self_intersections_tested": false,
+  "critical_passage_resolution_verified": false,
+  "engineering_release": false
+}
