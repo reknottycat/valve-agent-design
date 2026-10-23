@@ -1,0 +1,44 @@
+{
+  "filename": "step759760-poisson-evidence.zip",
+  "bytes": 50860945,
+  "sha256": "bc35995e8a0cbed5c0ecbfb22ba0dfe877940493fd67acec43648a31ea30d87a",
+  "parts": [
+    {
+      "name": "step759760-poisson-evidence.zip.part01",
+      "bytes": 8000000,
+      "sha256": "42822ad92012c42f41ac3f1cd1935729af8e1ba269a8000baa9d56850f6b9128"
+    },
+    {
+      "name": "step759760-poisson-evidence.zip.part02",
+      "bytes": 8000000,
+      "sha256": "f9eeba5896b46637430b426980a6bc19dcc0584e0d41189d6d65ba315310368b"
+    },
+    {
+      "name": "step759760-poisson-evidence.zip.part03",
+      "bytes": 8000000,
+      "sha256": "a79e483a16565827172c5fa33d5639d7423df0babdbeae626218ec520ccd368f"
+    },
+    {
+      "name": "step759760-poisson-evidence.zip.part04",
+      "bytes": 8000000,
+      "sha256": "58dd059f74ad9a4389dc891ce01d8f3f08c1207ecd5b5f5d2a95ff4d5be593ec"
+    },
+    {
+      "name": "step759760-poisson-evidence.zip.part05",
+      "bytes": 8000000,
+      "sha256": "3fbb9d2e5e7aa4ea4d708cf491490ffa506fa5f9f00da093205e152e3f21aa91"
+    },
+    {
+      "name": "step759760-poisson-evidence.zip.part06",
+      "bytes": 8000000,
+      "sha256": "4d7f8fc544afb2d36832c849506b41ccc74798e322b14a6e9cbca9b967c400c2"
+    },
+    {
+      "name": "step759760-poisson-evidence.zip.part07",
+      "bytes": 2860945,
+      "sha256": "e98d2a8a7640bd9a4a5ef0c595eb1730908a9e3afe87080f9c73b596fb2e9563"
+    }
+  ],
+  "reassembly_verified": true,
+  "reassembly_command": "cat step759760-poisson-evidence.zip.part?? > step759760-poisson-evidence.zip"
+}

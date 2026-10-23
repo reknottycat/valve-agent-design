@@ -1,0 +1,1 @@
+Concatenate seven byte-split parts in numeric order and verify part/full bytes and SHA256 before extraction. This archive records NOT_CONVERGED, including local alternating oscillation and mixed improvement/worsening. It excludes duplicate mesh and binds to the exact source mesh/native archive by hashes. No physical CFD or engineering release.

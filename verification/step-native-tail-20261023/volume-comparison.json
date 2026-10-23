@@ -1,0 +1,19 @@
+{
+  "cone688424": {
+    "sha256": "ec42b02e7f907abd5297bfdeeb74afa1917730ed986541eb7113fdfd95d1c3ef",
+    "tetrahedra": 688424,
+    "nonpositive": 0,
+    "determinant_sum_volume_mm3": 63701896.365641885,
+    "relative_error_vs_CAD": -0.0068679936922013685
+  },
+  "step759760": {
+    "sha256": "4e1b4168c9cfdd8d248a54dbbe2411c6fd7661305e479d77f53e3a0f07568a98",
+    "tetrahedra": 759760,
+    "nonpositive": 0,
+    "determinant_sum_volume_mm3": 63707302.427355856,
+    "relative_error_vs_CAD": -0.0067837115401379044
+  },
+  "delta_mm3": 5406.061713971198,
+  "relative_delta": 8.486500437832056e-05,
+  "CAD_unchanged_does_not_mean_discrete_volume_identical": true
+}

@@ -1,0 +1,124 @@
+{
+  "status": "NOT_CONVERGED_MANUFACTURED_DIAGNOSTIC",
+  "mesh_cells": 759760,
+  "mesh_source_msh_sha256": "4e1b4168c9cfdd8d248a54dbbe2411c6fd7661305e479d77f53e3a0f07568a98",
+  "native_quality": "Failed3; lowdet6988 retained; not all qualitymetrics improved",
+  "physical_CFD": false,
+  "R1_waived": false,
+  "solver_launches": 1,
+  "source_hashes_unchanged": true,
+  "runtime": {
+    "argv": [
+      "/workspace/shared/valve-openfoam-quality-20261023/root/usr/bin/laplacianFoam",
+      "-case",
+      "/workspace/shared/valve-poisson-step759760-20261023/step-limited05",
+      "-debug-switch",
+      "limited=1"
+    ],
+    "cwd": "/workspace/shared/valve-poisson-step759760-20261023/step-limited05",
+    "seconds": 113.94227373799367,
+    "peak_solver_rss": 539140096,
+    "peak_total_rss": 1032736768,
+    "stop_reason": null,
+    "exit_code": 0,
+    "history_count": 30
+  },
+  "gates": {
+    "native_C_V_face_centres": true,
+    "analytic_source_flux": true,
+    "finite": true,
+    "linear_final_residual_le_1e_10": true,
+    "global_balance_le_1e_8": true,
+    "relative_deltaL2_le_1e_9": false,
+    "nonlinear_local_residual_negligible": false,
+    "independent_native_face_flux_matrix_export": null
+  },
+  "comparison_614334_to_759760": {
+    "relative_L2_error": [
+      0.0008201045528350824,
+      0.0008595896309761545
+    ],
+    "relative_deltaL2": [
+      6.780857897017608e-07,
+      1.7282452205004932e-07
+    ],
+    "deltaLinf": [
+      0.0003541535459559153,
+      0.0007406955176043617
+    ],
+    "global_balance": [
+      4.1022260335277675e-10,
+      5.33984527294525e-11
+    ],
+    "absolute_integrated_residual_over_total_source": [
+      0.01187700571512537,
+      0.009370891573465543
+    ],
+    "integrated_residual_relative_reduction": 0.21100555154808842
+  },
+  "local_alternation": [
+    {
+      "outer": 26,
+      "cell": 695824,
+      "C_m": [
+        0.2928520330296665,
+        0.021110502975306974,
+        0.10604999999999999
+      ],
+      "T": 1.0967537525763076,
+      "delta": -0.0007408103594523929
+    },
+    {
+      "outer": 27,
+      "cell": 695824,
+      "C_m": [
+        0.2928520330296665,
+        0.021110502975306974,
+        0.10604999999999999
+      ],
+      "T": 1.0974984324173345,
+      "delta": 0.0007446798410268851
+    },
+    {
+      "outer": 28,
+      "cell": 695824,
+      "C_m": [
+        0.2928520330296665,
+        0.021110502975306974,
+        0.10604999999999999
+      ],
+      "T": 1.0967581518341143,
+      "delta": -0.0007402805832201764
+    },
+    {
+      "outer": 29,
+      "cell": 695824,
+      "C_m": [
+        0.2928520330296665,
+        0.021110502975306974,
+        0.10604999999999999
+      ],
+      "T": 1.0974953968893053,
+      "delta": 0.0007372450551910159
+    },
+    {
+      "outer": 30,
+      "cell": 695824,
+      "C_m": [
+        0.2928520330296665,
+        0.021110502975306974,
+        0.10604999999999999
+      ],
+      "T": 1.096754701371701,
+      "delta": -0.0007406955176043617
+    }
+  ],
+  "causality_scope": "Comparison of local geometry-control candidates, including cone andstepmeshingchanges; NOT isolatedstepcause or gridconvergenceorder",
+  "stop": "One30outercomparison completed; no extension/no relaxation/no oldcase reruns",
+  "native_gradient_relative_L2": 4.6026876711437856e-14,
+  "local_operator_limitations": [
+    "No independent native per-face limited-flux export or direct TEqn matrix comparison; operator reconstructed from matching installed implementation and saved source.",
+    "Final-field nonlinear residual differs from lagged linear-system PCG residual; no historical subiteration matrix/RHS saved.",
+    "Large nonlinear residual is evidence of failure to reach this fixedpoint, not a designbug/universalsoftwarebug/physicalflowresult."
+  ]
+}
