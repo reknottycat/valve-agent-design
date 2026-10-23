@@ -1,0 +1,51 @@
+[
+  {
+    "label": "volume",
+    "archive": "boundary-grading-volume.zip",
+    "bytes": 6584002,
+    "sha256": "5286f3226fa6ecc32a471d558c57b6dea9357096c2cfa436130d94634187c886",
+    "parts": [
+      {
+        "name": "boundary-grading-volume.zip",
+        "bytes": 6584002,
+        "sha256": "5286f3226fa6ecc32a471d558c57b6dea9357096c2cfa436130d94634187c886"
+      }
+    ]
+  },
+  {
+    "label": "native",
+    "archive": "boundary-grading-native-quality.zip",
+    "bytes": 17591975,
+    "sha256": "0238639e09229efad9a1eef273d2c9304ebc345aa9e4af59006f57937d44f334",
+    "parts": [
+      {
+        "name": "boundary-grading-native-quality.zip.part01",
+        "bytes": 8000000,
+        "sha256": "c26f904de57afe88746ded721d04436dab922cba8dbb31723ebe29eac66f3d48"
+      },
+      {
+        "name": "boundary-grading-native-quality.zip.part02",
+        "bytes": 8000000,
+        "sha256": "0fd48686acaa06a1f59262db9c6bd1e8487af63c3824bb46cfafec799fdb4384"
+      },
+      {
+        "name": "boundary-grading-native-quality.zip.part03",
+        "bytes": 1591975,
+        "sha256": "9393d32c56f52c1ec5780c96e9ef2bd5e35b64e9a565604685744a2e7c2fded7"
+      }
+    ]
+  },
+  {
+    "label": "surface",
+    "archive": "boundary-grading.zip",
+    "bytes": 3821620,
+    "sha256": "c3fa2c4ab15e8db0c6400d389ae7082132b88399dfdab96bc3615607954afaff",
+    "parts": [
+      {
+        "name": "boundary-grading.zip",
+        "bytes": 3821620,
+        "sha256": "c3fa2c4ab15e8db0c6400d389ae7082132b88399dfdab96bc3615607954afaff"
+      }
+    ]
+  }
+]
