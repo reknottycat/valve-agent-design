@@ -1,0 +1,182 @@
+{
+  "verify_conversion.py": {
+    "bytes": 2715,
+    "sha256": "82008a7febba9d5386ab14dc9307f329df938914497a6afbcdfaf42578853f22"
+  },
+  "export_copy.py": {
+    "bytes": 1764,
+    "sha256": "db9aab6fd2dfc3d7b811d2187ad4bcdab5b06b62af6ee43c55ebc929f0164519"
+  },
+  "README.md": {
+    "bytes": 2863,
+    "sha256": "1a9adb6d23359cf2ec29c793597ceec92b8d672a6a1c5459b33159d5ac5aea10"
+  },
+  "source-copy-ascii22-mm.msh": {
+    "bytes": 20418200,
+    "sha256": "244ec495daec599579df541cd91c9d8193e532410a292abdcc44f0d0d62bfdf6"
+  },
+  "fetch.py": {
+    "bytes": 844,
+    "sha256": "d160dc8bd4532bea11a8e17173bb2b9e9739e3298af275d496746aeb3812040a"
+  },
+  "bounded.py": {
+    "bytes": 797,
+    "sha256": "2ce0af94b27a554b9f62037ff8c49fa02e9e262a0840fe1da3e615be2eb82ef3"
+  },
+  "env.sh": {
+    "bytes": 280,
+    "sha256": "d3e499d13f6956fcf1bfc86c7b82d76f4527874b37883d2a66aafcbf0d144f9f"
+  },
+  "evidence/conversion-verification.json": {
+    "bytes": 700,
+    "sha256": "20a349923f5b2764ff7ecd8a2349fedb35a6d2cb4f481c565fdacdad8fa527cd"
+  },
+  "evidence/scale.json": {
+    "bytes": 253,
+    "sha256": "5ac5451a93fe7e251dc4fcf38a4abc973b6d7ed7d3bf9fda2a7d5db36e805ef0"
+  },
+  "evidence/transformPoints-help.txt": {
+    "bytes": 1645,
+    "sha256": "2b678c6a9eb1403247c81e9cbba4f8fbdf5b9b2818a967ae693cbf8c9d656246"
+  },
+  "evidence/checkMesh.log": {
+    "bytes": 23858,
+    "sha256": "8d107be25de11e2b5694539616028f8631797b08ff08eb6754a8892720390287"
+  },
+  "evidence/export.json": {
+    "bytes": 13225,
+    "sha256": "3e585cbce91fe8b0d5167c6227d1c45bd7df4edd897980ad6bca83e39e6ad4dd"
+  },
+  "evidence/openfoam-download.html": {
+    "bytes": 13239,
+    "sha256": "ac1c869cb379326b54e742a325fb0067a03da82764298a6298a822ec39b73a22"
+  },
+  "evidence/scale.log": {
+    "bytes": 1383,
+    "sha256": "29ee19298af03600ee378df6e1e3c8fb72217e1c4a09cb2ee1822534415483e2"
+  },
+  "evidence/convert.json": {
+    "bytes": 304,
+    "sha256": "b10d762d989046c6aaa120895d7090b012196af1f703097fdc5dac1f1c212039"
+  },
+  "evidence/export.log": {
+    "bytes": 805,
+    "sha256": "d3e4cd0e8fbb88a59844aa2e2e017578dcbf5ae626b5d29f1e0a05e0c3ee63f9"
+  },
+  "evidence/checkMesh-help.txt": {
+    "bytes": 1372,
+    "sha256": "c389a38f299779745a42dc5756ad47e6f1f74938bdc795c75e3732353f86f352"
+  },
+  "evidence/checkMesh-missing-dictionary.log": {
+    "bytes": 1704,
+    "sha256": "3428824178104e4d6bc88524591c3df289710cfc4a18ff97828a5b0a7c4e9ffe"
+  },
+  "evidence/gmshToFoam-help.txt": {
+    "bytes": 522,
+    "sha256": "ceb3c725329f18d3f9cc6d7f7475c46229193c632faecad7ad3c66733b945df6"
+  },
+  "evidence/packages.json": {
+    "bytes": 488,
+    "sha256": "aa56aa1609930c3bc317af43867df5083de998e5aedbd74e24dfcbe5d751a77d"
+  },
+  "evidence/libopenfoam-download.html": {
+    "bytes": 13416,
+    "sha256": "f71e3fc1e5085490cef3c08246ddf2a4fb975b245a50fbddf54b99f25d6d37b6"
+  },
+  "evidence/checkMesh.json": {
+    "bytes": 276,
+    "sha256": "0e7b033c65aab170b328792511bd1ae384d9b23c11d37619af4fac29f9b50239"
+  },
+  "evidence/convert-tag-collision.json": {
+    "bytes": 305,
+    "sha256": "5bcd4a4c59d8ecb655b3b6bdcb4dd945dbb6803e002d539c362d6d2653dda7b7"
+  },
+  "evidence/conversion-verification.log": {
+    "bytes": 1392,
+    "sha256": "1e9a2bfffe0b6bc0f25a78607cac941d9690bc80b6bc4ff40685bb3f7b627e0f"
+  },
+  "evidence/convert-tag-collision.log": {
+    "bytes": 18095,
+    "sha256": "152d82336983aab2e7dd2b1376364394d2f666f20d128fa683e180c2ced37812"
+  },
+  "evidence/convert.log": {
+    "bytes": 18103,
+    "sha256": "fb802314a68108e8afc73d6a1f0a779e6b6718b9b3d1a9f586e6eb5927f94efd"
+  },
+  "evidence/checkMesh-missing-dictionary.json": {
+    "bytes": 277,
+    "sha256": "c6adfd5c4a836420446d566166939c449a3130c481553f93a9d24855d305c8d0"
+  },
+  "case/system/controlDict": {
+    "bytes": 275,
+    "sha256": "d68ea9237e8f5d543a6e98ba031b2137e5e13dcc47cbee9d12959fa583426725"
+  },
+  "case/system/fvSchemes": {
+    "bytes": 310,
+    "sha256": "8759ffa7b2e83dee1355b956d93ead3c68d7053d5bb91405b74a41a715a5ccd1"
+  },
+  "case/system/fvSolution": {
+    "bytes": 88,
+    "sha256": "48e61e0402615d31ff14eba640055603421bb51a9f2372bb18cb865a4a5f9f40"
+  },
+  "case/constant/polyMesh/boundary": {
+    "bytes": 20711,
+    "sha256": "36c092260baa0ec16fa3d3e62cf9ee2458c740075bf9791335a029b24801e8b7"
+  },
+  "case/constant/polyMesh/pointZones": {
+    "bytes": 877,
+    "sha256": "a4a6a2dcd51a046ec166f12f8fb6f70d0cc21e238dc6ae1d1db90effcf542a29"
+  },
+  "case/constant/polyMesh/points": {
+    "bytes": 4754459,
+    "sha256": "a88b2ead6d4a470f34e4fe17fb91394f70be260898f2027e672b04ad2c2cf665"
+  },
+  "case/constant/polyMesh/cellZones": {
+    "bytes": 1503716,
+    "sha256": "e40e72dd6e590105a1610215800e75e1f0f44a6a3296c72a9e91a5a93d8fdd61"
+  },
+  "case/constant/polyMesh/neighbour": {
+    "bytes": 2510063,
+    "sha256": "14bf3e3fdb76d29c91b15028b1d6c9d1d321b56a01e25ba8b239fb9d7a679363"
+  },
+  "case/constant/polyMesh/owner": {
+    "bytes": 3502915,
+    "sha256": "2670c82775bd8d14c7d372c11900f74e98a793736c66d2582b4d3a1cb0a79a3c"
+  },
+  "case/constant/polyMesh/faces": {
+    "bytes": 11270613,
+    "sha256": "06dc828786447599ec324f1379cbda5d77a387280f0159405c3cb6bcafba300d"
+  },
+  "case/constant/polyMesh/faceZones": {
+    "bytes": 876,
+    "sha256": "1a3fc3f2f2c7f76c597df378690ccbf4b8a8013456e58f0c87dcf4ecaca5220f"
+  },
+  "case/constant/polyMesh/sets/fluid_proxy": {
+    "bytes": 1503649,
+    "sha256": "873511eb7c18a4992bcf4ce8eb6feb3af8a943ea66dcc0f364f0f8cca33c82ba"
+  },
+  "case/constant/polyMesh/sets/twoInternalFacesCells": {
+    "bytes": 50031,
+    "sha256": "7b174a06b12228dc9cacc76254fd5f930a69a25ee0bf6a4788e1137e8523c438"
+  },
+  "case/constant/polyMesh/sets/underdeterminedCells": {
+    "bytes": 1012959,
+    "sha256": "322d363cca29deb84f7eb993ac083bba8f1ef18761749d9baae87c219cbab4f1"
+  },
+  "case/constant/polyMesh/sets/lowWeightFaces": {
+    "bytes": 221196,
+    "sha256": "61b5a7020e8569cd1d9992da159dd3ec15a50997261162e99ae71d52a9f21cf0"
+  },
+  "case/constant/polyMesh/sets/nonOrthoFaces": {
+    "bytes": 66527,
+    "sha256": "90f4c9c3f2000d0fc342aeb8be4f9e1c08526b0a394465e4249283260e0e0687"
+  },
+  "case/constant/polyMesh/sets/skewFaces": {
+    "bytes": 7561,
+    "sha256": "4b31cbdeb224252dbfcd7a8a3a2b68f70400029c0dbb0d50f403db9751dc43a9"
+  },
+  "case/constant/polyMesh/sets/lowVolRatioFaces": {
+    "bytes": 5995,
+    "sha256": "fe08d0df60137ebce595f60ddf0e61d8fef6ccdfec97597035d4c9d1d649b205"
+  }
+}

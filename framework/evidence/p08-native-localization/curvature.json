@@ -1,0 +1,42 @@
+{
+  "119": {
+    "mid_parameter_principal_curvatures_per_mm": [
+      0.007587011963736857,
+      -4.0
+    ],
+    "inverse_abs_principal_curvatures_mm": [
+      131.80419442853582,
+      0.25
+    ]
+  },
+  "121": {
+    "mid_parameter_principal_curvatures_per_mm": [
+      -0.007510437768476054,
+      -1.0
+    ],
+    "inverse_abs_principal_curvatures_mm": [
+      133.148030890736,
+      1.0
+    ]
+  },
+  "123": {
+    "mid_parameter_principal_curvatures_per_mm": [
+      0.00803842751872456,
+      -1.0
+    ],
+    "inverse_abs_principal_curvatures_mm": [
+      124.40244036170246,
+      1.0
+    ]
+  },
+  "125": {
+    "mid_parameter_principal_curvatures_per_mm": [
+      -0.007952521738675737,
+      -4.0
+    ],
+    "inverse_abs_principal_curvatures_mm": [
+      125.74627682395007,
+      0.25
+    ]
+  }
+}
