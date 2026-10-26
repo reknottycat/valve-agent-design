@@ -1,0 +1,52 @@
+{
+  "schema": "valve.delivery-retrospective/1.0",
+  "r1_ref": "aa80b87b6ee9617754101a238f70bec99393ad9a",
+  "purpose": "Curated private retrospective; no engineering release",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5317,
+      "sha256": "3232b6670ec178d5965f93a608dc8299f8d7a90ad0ecebe9e44e9a4fc0bc36bd"
+    },
+    {
+      "path": "completion-matrix.md",
+      "bytes": 7754,
+      "sha256": "49e2094c56c046bb02e087b09ec859adee64c00217eb38b3e04746bd60749eb7"
+    },
+    {
+      "path": "evidence/audit-scope.json",
+      "bytes": 1896,
+      "sha256": "40cd420de01910c411d40a5778b0bc0ef88b8ab5be15977f8181d8f7342fa2fb"
+    },
+    {
+      "path": "evidence/c2-delivery-plan.json",
+      "bytes": 4548,
+      "sha256": "c3e58ca8ac0313813490b77cd3e508b10f8f3d4f569dad5fad74eb6d970b00dc"
+    },
+    {
+      "path": "evidence/c2-input-corrections.json",
+      "bytes": 16174,
+      "sha256": "a7a6ae95f9f25ee1a5a5c67c2094c42bf13c17d616374c52e9e4da5b60d1057a"
+    },
+    {
+      "path": "evidence/original-source-snapshots.json",
+      "bytes": 21057,
+      "sha256": "b4beea2371b70ff19967b4c2a2665e41c98787d6e358248988fbc68049ae0062"
+    },
+    {
+      "path": "evidence/research-excerpts.json",
+      "bytes": 43916,
+      "sha256": "4e2f22e066bbf77f3e5e640d76cd0ff048ff011830097425a83755859c8409e1"
+    },
+    {
+      "path": "failure-register.md",
+      "bytes": 10632,
+      "sha256": "54a945f8b89e50a33c0e129cce0b64a1d042b8bcbceaa5657d8d8a822005e429"
+    },
+    {
+      "path": "software-boundaries.md",
+      "bytes": 5364,
+      "sha256": "09be92d9b51ab71a3d7aeecf5d1469a64e79028b7fda5b16e9f3007bf300a4f0"
+    }
+  ]
+}

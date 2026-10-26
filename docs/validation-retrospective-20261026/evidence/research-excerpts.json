@@ -1,0 +1,556 @@
+{
+  "as_of_utc": "2026-10-26T05:34:00Z",
+  "note": "Exact selected lines; omissions are not replacements for full reports. No claim every historical artifact is already published. Hashes identify retained original reports, not this excerpt JSON.",
+  "items": [
+    {
+      "artifact_id": "acceptance-basis-audit",
+      "source_file_name": "AUDIT.md",
+      "source_sha256": "0cd078c063b359f65523d3c6627fd8084b75b48aa6337c4acaeb1795930e2ee8",
+      "source_bytes": 12147,
+      "authority": "retained project report; read-only, not a rerun",
+      "tracking_url": "https://linear.app/zhenhe-fu/issue/ZHE-93",
+      "excerpts": [
+        {
+          "line": 3,
+          "text": "**结论：没有新增工程绿灯。R1 物理流动仍阻塞；现有制造解联合诊断门未达；真实 Q、ΔP、K 均为 `null`。**"
+        },
+        {
+          "line": 5,
+          "text": "核查时间：2026-10-23 UTC（UTC+8 为 10-24）。本目录为新建只读输入审计工件，不修改原 CAD、R1、网格、算例、原阈值或已有失败记录。"
+        },
+        {
+          "line": 11,
+          "text": "| 标准要求候选 | 单独列出 `STANDARD-CANDIDATE-001`；原标准正文、现行版本、适用性未独立核验 | 不能把库作者 `E1`、`VERIFIED_CLAUSE`、`project_usage: 已核对` 当作本项目认可 |"
+        },
+        {
+          "line": 12,
+          "text": "| 源冻结要求 | 保留 R1 五条原文及已有观测定义，按同版 hash 关联 | 不能替换原文、增写 flags 后冒称原要求，也不能挑少检查的结果变绿 |"
+        },
+        {
+          "line": 13,
+          "text": "| 项目自建诊断准则 | `1e-9` 稳定、`1e-8` 平衡来自 agent 制定的诊断计划及冻结 controls | 不是行业标准；不是最终阀门精度、安全裕量或放行依据；不得事后改门 |"
+        },
+        {
+          "line": 14,
+          "text": "| 待核假设 | packing 截断、真实工况/物性、note24 比较合同、低温覆盖缺口分别登记 | 不补猜测为事实，不发明低温标准，不把未查的覆盖写成“无标准” |"
+        },
+        {
+          "line": 20,
+          "text": "“R1”以下指物理流动前提/验收；“诊断”指已授权结束的制造解研究；“最终”指产品工程放行。**数值子项通过不能转移成整项通过。**"
+        },
+        {
+          "line": 22,
+          "text": "诊断数值门影响 R1 的含义是：**现有用于支撑 R1 验证前提的证据包尚未完成/获认可**，并非把 `1e-9`、`1e-8` 追写为 R1 原文或行业强制值。当前不授权重新计算，也不以解释调整代替独立审查。"
+        },
+        {
+          "line": 26,
+          "text": "| `STANDARD-CANDIDATE-001` 标准候选 | 固定 standards-kb `7eda528…`，`D-GOST1536-PN063`，ГОСТ 1536-76 表2候选接口数据 | 原记录确为 `UNVERIFIED_CLAUSE / E1`；第三方镜像未经官方正文逐字核对。DN200 行无 `As`；`usage.how` 压力选档方向仍待核 | 如用于接口/强度工程结论则阻塞对应最终验收；不是制造解或 Re10 的 CFD 收敛门 |"
+        },
+        {
+          "line": 27,
+          "text": "| `R1-MESH-001` full checkMesh | 原 R1 `/execution_prerequisites/0`；同版 759760 tet / 132 patches | 原文仅 **“Current mesh files bound to a fresh full checkMesh PASS with all warnings retained”**，没有 flags。默认 `Mesh OK`；扩展 `Failed 3 mesh checks`，二者 exit 都是 0 | R1 充分性/范围解释未解决，继续阻塞；不能默认 PASS 替代失败。扩展检查零失败也不是已证明的普适行业定律 |"
+        },
+        {
+          "line": 28,
+          "text": "| `R1-PROBE-002` native 探针 | 既有 `native-probe-comparison.json` 与 input manifest；只针对几何 | 几何比较历史 `passed=true`；nativeCf 边界未填，实际以 nativeC 边界验证。保留这一**有限子项**，未重跑或重新解析完整场 | 不重复已做几何计算；对 R1 全部 field/face 措辞的充分性仍待审查，不验证未来 U/p/phi |"
+        },
+        {
+          "line": 29,
+          "text": "| `R1-POISSON-003` 非零源及敏感性 | 原 R1 `/execution_prerequisites/2`，现有 result/verification/history | 有计算不等于已验证：联合门未达、局部算子充分性及适当网格/格式敏感性未认可 | R1、诊断整体完成及最终均不能通过 |"
+        },
+        {
+          "line": 30,
+          "text": "| `R1-FINGERPRINT-004` 启动指纹 | 原 R1 `/execution_prerequisites/3`、Re10 input manifest | 草稿输入/选定工具有 hash；尚无完整物理 case、完整 resolved library 闭包及实际启动前合同 | 阻塞物理启动；准备 hash 不能冒充启动证据 |"
+        },
+        {
+          "line": 31,
+          "text": "| `R1-FLOW-EVIDENCE-005` 残差/稳定/守恒/有界/近壁 | 原 R1 `/execution_prerequisites/4`、observation contract | 物理流动未跑，观测容差与窗口待前置审核，真实结果没有 | R1 原文把运行后量列入前提，需要明确“前置协议 + 后验结果”；不可要求未运行先造结果，也不可当已满足 |"
+        },
+        {
+          "line": 32,
+          "text": "| `FLOW-OBS-001` Q、ΔP、K | R1 公式与现有 `contract.observations()`；常密度端口静压 | 实际三量均 `null`；名义输入 Q=`1.650060221652016e-6 m³/s`；离散面积推导 BC Q=`1.6340464601299477e-6 m³/s`。后两者不是实测/实算出口通量 | 阻塞物理验收；不阻塞全数学 BC 的制造解研究 |"
+        },
+        {
+          "line": 34,
+          "text": "| `DIAG-BALANCE-002` 全局原方程守恒 | 同上，保存的 history 与 verification 一致 | 最终 `1.2889773118864194e-7 > 1e-8`；联合连续三步门为 false | 已冻结诊断未通过；不能用小线性内残差替代或降低门限 |"
+        }
+      ]
+    },
+    {
+      "artifact_id": "pressure-reltol-ab",
+      "source_file_name": "REPORT.md",
+      "source_sha256": "a4c8a48b1942f8084fc4e5b29d8a2cc7e1da14da91f37435e1b135190e1a4490",
+      "source_bytes": 6964,
+      "authority": "retained project report; read-only, not a rerun",
+      "tracking_url": "https://linear.app/zhenhe-fu/issue/ZHE-91",
+      "excerpts": [
+        {
+          "line": 1,
+          "text": "# p.relTol 单变量对照：local 改善，steady启动迭代压力换号仍在"
+        },
+        {
+          "line": 3,
+          "text": "**唯一数值改变 `p.relTol 0.05→0.005`；从相同 checkpoint1，仅 outer2–4。一次启动已用完，无继续/自动重试。**"
+        },
+        {
+          "line": 5,
+          "text": "实际完成3个原生写场及完整观测，exit0、原生End、无停止异常。native启动至最终观测/终止决策 **21.832659 s**（45s上限），清理另 0.031598 s；只读baseline预检另计。单逻辑CPU、各进程1线程，硬AS1280+704+64MiB=2GiB；采样aggregate RSS峰值 1133867008 B（不是精确瞬时峰值）。"
+        },
+        {
+          "line": 19,
+          "text": "- **仍存在的启动迭代压力换号：** outer2 pmax=2.51109e-6，outer3 pmax=4.00081e-7，outer4 pmin=−1.10936e-6；基线outer4 pmin=−1.07730e-6。本次负向幅值略大，Δp/p=1.36802。收紧到0.005并未消除这三个未收敛steady启动迭代的固定参考压力极值换号；不能推广为所有内层误差都无关，也不能仅剩“mesh坏”一个原因。"
+        },
+        {
+          "line": 26,
+          "text": "已从observer代码核实：`Δp/p = ||p_n−p_(n−1)||₂ / ||p_n||₂`，是**当前场**非体积加权范数分母。摘要未保存独立分子/分母，故本次不能定量拆分“分母接近零”的放大贡献，也不重读大场取数。outer3的p幅值较outer2小很多与Δp/p很大同时出现，支持需要警惕分母效应，但极值不是L2范数，不能用极值替代证明。"
+        },
+        {
+          "line": 28,
+          "text": "基线/候选都固定出口p=0，参考定义未变，无参考压力漂移证据。不过p的相对范数量本身依赖压力零点，不是参考不变的物理指标。outer4在同一零点下负向极值确实存在（不只是百分比分母伪象）；严格只能说保存场极值从正向占优变成负向占优，不能仅凭极值声称全部单元或端口平均压差都换号。负的kinematic gauge pressure也不等于负绝对压力。"
+        },
+        {
+          "line": 30,
+          "text": "这些Time索引是未收敛的steady SIMPLE启动迭代，不是物理时间序列。现有证据可说“启动迭代压力摆动、尚未证稳”，不能说已经发现实物的周期振荡或物理不稳定。"
+        },
+        {
+          "line": 36,
+          "text": "1. 同时保存相邻场变化的绝对量、体积加权RMS，以及独立分子/分母；采用预先固定的物理/参考尺度作无量纲量，不依赖可能很小的当前p范数。需要网格体积和完整场，本次未计算。"
+        },
+        {
+          "line": 39,
+          "text": "4. 只有上述观测可靠、无gross/非有限/未知BC异常，且固定同一checkpoint及一个数值方案、明确有限outer/壁钟/AS预算与终止理由，才有评审有限续算的依据；三步local改善不自动选出“最佳方案”。若窗口内仍不稳定，按预算终态收口，不自动补跑或再扫参数。R1物理/网格/manufactured门仍独立阻塞。"
+        },
+        {
+          "line": 44,
+          "text": "- 26项新case输入前后hash一致；20项冻结实现/协议文件、原32项源+43项依赖前后hash一致；原pilot174文件内容hash一致。原pilot/resume全树大小、mtime_ns、inode及文件集合均一致；这项metadata核对不冒充对resume全部后续大场新做完整内容hash。"
+        },
+        {
+          "line": 45,
+          "text": "- 本次保存outer1–4的U/p/phi再核hash与观测时一致。6项启动前诊断文件hash未变，未用结果改写预先解释或比较准则。50项测试通过，独立审查无阻塞；当前预算内只有1次native launch。"
+        },
+        {
+          "line": 48,
+          "text": "## 成功经验与未解决项保留"
+        },
+        {
+          "line": 50,
+          "text": "已验证observer的noSlip/zeroGradient解码、原生phi、精确owner索引、未知类型停止、完成写场后暂停再观测、AS分区和一次启动锁继续有效。原Missing value失败根位置与修复证据见只读诊断 `source-excerpts.txt` 和原pilot `evidence/observer-failure-and-recovery.md`；原失败、原场和本次退步全保留。"
+        },
+        {
+          "line": 52,
+          "text": "本对照只否定“该次10倍收紧足够消除这三个启动迭代的压力极值换号”，没有隔离外层松弛/初场/受限非正交修正与坏mesh之间的作用。Failed3仍具体是低determinant、低interpolation-weight和低volume-ratio三类，严重非正交另列；未做坏元空间归因，不统包定因。"
+        },
+        {
+          "line": 54,
+          "text": "**人工face80封口、Re10/57mm研究限制不变；R1仍阻塞，manufactured联合门未达，最终产品Q/ΔP/K留空，不称收敛，不作工程放行。** 本次限定授权已结束，无下一次运行或改参。"
+        }
+      ]
+    },
+    {
+      "artifact_id": "momentum-reltol-comparison",
+      "source_file_name": "AUTHORIZED-RESULT-REPORT.md",
+      "source_sha256": "e37ba68764e70a4e717844b5ec0137228a5fbca3764c5d78d88421d6bc8299b0",
+      "source_bytes": 5935,
+      "authority": "retained project report; read-only, not a rerun",
+      "tracking_url": "https://linear.app/zhenhe-fu/issue/ZHE-91",
+      "excerpts": [
+        {
+          "line": 1,
+          "text": "# Authorized U relTol counterfactual — completed"
+        },
+        {
+          "line": 3,
+          "text": "Exactly one native attempt and one serial bounded offline analysis completed. Engineering pass: **false**. R1: **BLOCKED**. Product real_Q, real_DeltaP, real_K: **null**."
+        },
+        {
+          "line": 8,
+          "text": "- All 73 tests passed in seven serial isolated pinned interpreter processes. Existing guard test regenerated dummy-results.json; second preflight correctly stopped on this diagnostic-only delta. Old manifest/hash retained, original dummy result bytes not restored or claimed preserved. Parent approved documented regeneration. See authorized-offline-preflight-history.json."
+        },
+        {
+          "line": 10,
+          "text": "- Exact sole numerical change: U relTol 0.05 → 0. U absolute tolerance 1e-10, maxIter 100; p relTol 0; all physics, mesh, checkpoint 15, discretization and relaxation unchanged; targets 16/17."
+        },
+        {
+          "line": 12,
+          "text": "- Offline exit 0 in 7.643604 s, reviewed 32+2016 MiB AS / 1+43 CPU-second partitions; actual offline file cap 134217727 bytes; integrity-only bundle check. Field hash binding/normalization passed before and after port reads."
+        },
+        {
+          "line": 13,
+          "text": "- Full metadata (mode/size/mtime/ctime, not full content hashes) of 25,446 old-tree entries unchanged. Old selective hashes, candidate input hashes, source pins, saved-port pins and enabled frozen bundle verified unchanged after execution."
+        },
+        {
+          "line": 26,
+          "text": "All six baseline solves met only relative criterion; all six candidate solves met absolute 1e-10. None reached maxIter 100. This establishes these linear stopping criteria, not nonlinear/physical convergence."
+        },
+        {
+          "line": 34,
+          "text": "| 16 | Predictor self | 3.55056735e-14 | 3.7517688e-14 | +5.666741% of abs(baseline) |"
+        },
+        {
+          "line": 35,
+          "text": "| 16 | Pressure-velocity self | 1.79183613e-14 | 1.79188177e-14 | +0.002547% of abs(baseline) |"
+        },
+        {
+          "line": 36,
+          "text": "| 16 | Predictor × pressure cross | 7.04245275e-15 | 6.08643443e-15 | -13.575076% of abs(baseline) |"
+        },
+        {
+          "line": 37,
+          "text": "| 16 | Total outer | 6.04664876e-14 | 6.15229402e-14 | +1.747170% of abs(baseline) |"
+        },
+        {
+          "line": 38,
+          "text": "| 17 | Predictor self | 1.58840688e-13 | 1.687802e-13 | +6.257535% of abs(baseline) |"
+        },
+        {
+          "line": 39,
+          "text": "| 17 | Pressure-velocity self | 2.51821666e-15 | 3.00708686e-15 | +19.413350% of abs(baseline) |"
+        },
+        {
+          "line": 40,
+          "text": "| 17 | Predictor × pressure cross | -2.5182321e-14 | -3.13604852e-14 | -24.533736% of abs(baseline) |"
+        },
+        {
+          "line": 41,
+          "text": "| 17 | Total outer | 1.36176584e-13 | 1.40426801e-13 | +3.121107% of abs(baseline) |"
+        },
+        {
+          "line": 47,
+          "text": "Outer-start → final U increment; 7,597 selected internal cells only, not full-domain RMS or candidate-minus-baseline field norm. Units m/s."
+        }
+      ]
+    },
+    {
+      "artifact_id": "monitor-memory-repair",
+      "source_file_name": "REPAIR-REPORT.md",
+      "source_sha256": "06cb533313163c06bc51230afef76117b92deb85f114fb3603d1f7bcd5ae88b0",
+      "source_bytes": 4852,
+      "authority": "retained project report; read-only, not a rerun",
+      "tracking_url": "https://linear.app/zhenhe-fu/issue/ZHE-91",
+      "excerpts": [
+        {
+          "line": 5,
+          "text": "The historical native failure has no traceback; its precise original allocation cannot be retroactively proved. We reproduced the same `MemoryError` class and monitor cache-hashing path using a fixed Python dummy, actual private read-only data mappings of all 36 pinned runtime files, real selected IDs/config, and the unchanged 32 MiB soft-AS. No mapped library was loaded or executed."
+        },
+        {
+          "line": 7,
+          "text": "`baseline-actual-result.log` records the preserved original `hash_file` implementation failing at `f.read(1024*1024)`, a 1,048,576-byte requested allocation for a 140,683-byte cache, after 162,030 bytes and 12 mapping samples. All 36 pinned mappings had been observed; events=0; child killed/reaped, exit -9. Trace is bounded to 12 stack frames. Monitor VmSize was 39,920 KiB while soft-AS was 33,554,432 bytes."
+        },
+        {
+          "line": 9,
+          "text": "The current default `python` is the bundled static Python 3.12. Even bare pathlib measured 35,772 KiB; real-plan imports/preflight measured approximately 38–40 MiB. Linux setting RLIMIT_AS below existing AS does not unmap memory: some allocations reuse heap, others fail. This explains why tiny dummy tests can pass but real-sized streams fail. A smaller hash buffer alone is insufficient: `fixed-full-bundled-result.log` preserves a later exact-config bytearray MemoryError. No claim that native CFD exhausted its own memory is warranted."
+        },
+        {
+          "line": 13,
+          "text": "- `mapping_guard.hash_file` and `prospective_runner.sha` now use a reusable 65,536-byte readinto buffer, avoiding repeated 1 MiB allocations. Every file is still fully SHA-256 hashed."
+        },
+        {
+          "line": 18,
+          "text": "- Dummy integration/CLI adds only the exact pre-existing `/etc/ld.so.cache` pin and passes full cache identity to the unchanged fail-closed mapping policy. Unknown paths, changed cache hashes/metadata, writable/executable cache mappings remain rejected. Production runtime allowlist is unchanged."
+        },
+        {
+          "line": 23,
+          "text": "- `acceptance-targeted-result.json`: under 32 MiB soft-AS, verifies real case/source inputs, all 36 actual runtime file hashes (largest file 44,018,408 bytes), exact 48,456-byte config, 7,597 selected IDs, exact cache identity and adversarial identity/perms/path rejection."
+        },
+        {
+          "line": 26,
+          "text": "- `preservation-result.json`, `prior-before.json`, `prior-after.json`: all 449 original capture/source paths unchanged; no new file in original capture tree; original consumed lock hash unchanged; no repair native-attempt lock."
+        }
+      ]
+    },
+    {
+      "artifact_id": "velocity-stage-recovery",
+      "source_file_name": "RECOVERY-REPORT.md",
+      "source_sha256": "042cd870f91f2227a5acc409dd519b67dbbc82bf5d7b36d23481f3217b41ea35",
+      "source_bytes": 5064,
+      "authority": "retained project report; read-only, not a rerun",
+      "tracking_url": "https://linear.app/zhenhe-fu/issue/ZHE-91",
+      "excerpts": [
+        {
+          "line": 6,
+          "text": "Explicit interpreter /usr/bin/python3 -B, resolved /usr/bin/python3.13, SHA256 889c603f0d17cb54060951bcf4c4f9b8c9ebd9e52b392c70209bbb9755d797d9. Resolved path and complete hash enforced before consuming the new latch. Frozen bundle SHA256 34ff104293b68e2fc52a6bf71851ce9e989d0124b695fb78614d2a07c9c3aa64 independently reviewed and pinned in execution-authorization.txt before launch. The exact repaired 64 KiB streaming hashes and pre-fork AS rejection were promoted; only ROOT environment paths relocated, not numerical dictionaries, mesh/checkpoint, selected IDs/groups or compiled probe. No resource increase: 32+32+1984 MiB AS = 2 GiB; 44 CPU/inner-wall seconds, 45 outer-wall seconds, one CPU/thread, seccomp descendant denial, 128 MiB file and strictly-under-128 MiB combined-output limit."
+        },
+        {
+          "line": 8,
+          "text": "Prelaunch tests: 19/19 regression, actual pins/32 MiB targeted checks, wrong-interpreter path/hash rejection, full dummy with all 36 actual private read-only mappings and 18 events. Initial synthetic failure due to omitted fixture.json retained in missing-fixture-stream.log and full-result-missing-fixture.log. Parent authorized copying unchanged fixture and corrected synthetic validation; no native attempt had occurred. Corrected synthetic monitor peak 29,660 KiB."
+        },
+        {
+          "line": 10,
+          "text": "All 12 ordinary files at times 16 and 17 have identical paths and SHA256 to baseline; full list in postcheck.json. All 591 original capture/repair/source paths remain unchanged, with no added files in either old capture or repair tree. Original consumed lock SHA256 remains fc5906588d245d77dfb768410bef1a4d03237c93e2cf5f890b3f6cd8688215b9. New lock has the same content hash because its fixed text is identical, but is a distinct new durable file."
+        }
+      ]
+    },
+    {
+      "artifact_id": "momentum-balance-analysis",
+      "source_file_name": "README.md",
+      "source_sha256": "d265c9adeb5592734e76dad6f82e4af43b915e7cbf76171ebddd17cee253d1e7",
+      "source_bytes": 8476,
+      "authority": "retained project report; read-only, not a rerun",
+      "tracking_url": "https://linear.app/zhenhe-fu/issue/ZHE-91",
+      "excerpts": [
+        {
+          "line": 3,
+          "text": "**Result:** at time/index 17, the frozen raw momentum residual fell only **11.208% in integrated L2** (8.028% in volume RMS), while the relaxed residual fell **96.220%** (95.112%). A small relaxed linear remainder is not a small raw fixed-point defect, local convergence, a physically valid boundary condition, or engineering release."
+        },
+        {
+          "line": 25,
+          "text": "4. The log gives `ΣD_rel/ΣD_raw = 1.484112`, not `1/0.7 = 1.428571`. The excess over `ΣD_raw/0.7` is **4.106072802e-4 m³/s**, 11.4727% of the signed aggregate ΔD. This falsifies a simple `D/alpha` model for this event. It does not distinguish boundary handling from dominance/sign augmentation or establish relaxation as root cause."
+        },
+        {
+          "line": 30,
+          "text": "**Use one held-operator continuation, not an alpha/scheme sweep.** The question is whether further reduction of the relaxed solve remainder on *the exact same equation* materially reduces the raw defect, or whether the compensation remains. Existing changed-trajectory relTol comparisons cannot answer that frozen-system question."
+        },
+        {
+          "line": 32,
+          "text": "- A separately reviewed/authorized bounded native observation must retain hashes of the actual assembled raw and relaxed complete operators, sources, Uold, pressure RHS, volumes, addressing and evaluated boundary operands. The current event has no retained frozen-q/operator hashes and cannot be replayed from these eight summaries. Do not reassemble saved fields and call that the observed frozen system."
+        },
+        {
+          "line": 34,
+          "text": "- At each matched checkpoint reduce `r_raw`, `r_rel`, `C=ΔDΔU`, their dot products and identity defects in integrated and volume-weighted metrics. Record complete-domain maxima of `|r|/V` and a predeclared bounded set of baseline-selected cell IDs with V and signed vectors; keep the same IDs at subsequent checkpoints. Domain norms/global conservation cannot certify local convergence."
+        },
+        {
+          "line": 45,
+          "text": "`analyze.py` is a standard-library, read-only analyzer. It verifies the raw/event/attempt linkage, emits absolute and relative metrics separately, calculates norm-specific triangle bounds, reports unavailable quantities as null/NOT_CAPTURED, and refuses output overwrite. `native_relaxation_decomposition()` is a tiny scalar planning/synthetic oracle, not a native mesh reconstruction."
+        },
+        {
+          "line": 57,
+          "text": "18 new targeted synthetic tests cover sharp/opposite/orthogonal norm cases, nonuniform-volume weighting, undefined ratios, identity envelopes, native diagonal decomposition, alpha=1 nonidentity, units/nonfinite/duplicate/mixed-event/hash rejection and absence of false acceptance. Tests are limited to this new directory; no historical test suite was run. `tests-run-1.log` and its exit code are retained. Actual result is `analysis.json`; rejected CLI fixture output is retained separately as expected synthetic rejection."
+        },
+        {
+          "line": 59,
+          "text": "Source anchors are the **exact locally pinned** `fvMatrix.C:574–720`, `fvMatrixSolve.C:137–228`, `lduMatrixSolver.C:196–215`, `smoothSolver.C:128–214`, and the actual instrumented `MomentumBalanceProbe.H:65–73,152–183` / `UEqn.H`. Forty source/artifact pins were checked. `preserved-input-hashes.before.json` and the final verification protect 79 source/metadata/evidence files, including the earlier stopped/inconclusive attempt and its consumed latch. No old artifact was modified, no solver/compile/full-field scan/old tests/network/upload was performed."
+        },
+        {
+          "line": 61,
+          "text": "**Positive volumes, native structural checks, numerical convergence, physical boundary validity and engineering release remain separate gates. R1 stays BLOCKED; Q/ΔP/K remain null; identityAcceptance is NOT_ASSIGNED.**"
+        }
+      ]
+    },
+    {
+      "artifact_id": "pressure-path-audit",
+      "source_file_name": "REPORT.md",
+      "source_sha256": "440d729749824af86525676800ed993bcbd20bb98981560184cd04457e78c9bc",
+      "source_bytes": 11974,
+      "authority": "retained project report; read-only, not a rerun",
+      "tracking_url": "https://linear.app/zhenhe-fu/issue/ZHE-91",
+      "excerpts": [
+        {
+          "line": 13,
+          "text": "- After scope refinement allowed public source browsing, the official migrated repository supplied **tag `OpenFOAM-v1912`** source. This is not a claim of byte-identical source for Debian `1912.200626-3+b1`. The exact patch tag/commit could not be resolved through the web tool; no remote source-byte hash is claimed. Failed old-host/API/helper retrievals were not replaced by a newer release."
+        },
+        {
+          "line": 19,
+          "text": "Baseline `case/system/fvSolution` line 4 specifies p GAMG/GaussSeidel, absolute tolerance `1e-10`, `relTol 0.05`, `maxIter 100`. There is no pFinal entry. Line 7 specifies one additional nonorthogonal corrector and `consistent no`; line 8 has pressure field relaxation 0.3 and U equation relaxation 0.7. `fvSchemes` lines 2–7 use steadyState, bounded upwind momentum convection, and limited 0.5 Laplacian/snGrad. `controlDict` line 7 sets deltaT=1, and line 16 forbids runtime dictionary modification. The A/B changes only p.relTol to 0.005 numerically; its endTime change is a budget limit."
+        },
+        {
+          "line": 21,
+          "text": "The baseline pressure diagnosis already independently extracted all 30 solves: every final residual exceeds 1e-10, every final/initial ratio is below 0.05, and none reaches maxIter=100. At outer15, the second solve is `0.13735887012709364 → 0.0068347364574117067`, one iteration (baseline log lines 182–183). Thus the observed stop is consistent with the relative branch, not absolute tolerance or the iteration cap. It is not evidence of a pressure solve to 1e-10 or outer convergence."
+        },
+        {
+          "line": 23,
+          "text": "In v1912, [GAMGSolverSolve.C](https://gitlab.com/openfoam/core/openfoam/-/raw/OpenFOAM-v1912/src/OpenFOAM/matrices/lduMatrix/solvers/GAMG/GAMGSolverSolve.C) lines 53–76 form a solve-specific normalization N and the initial normalized L1 residual; lines 127–146 recompute the final L1 residual and stop on convergence or maxIter, subject to minIter. [SolverPerformance.C](https://gitlab.com/openfoam/core/openfoam/-/raw/OpenFOAM-v1912/src/OpenFOAM/matrices/LduMatrix/LduMatrix/SolverPerformance.C), lines 70–87, accepts absolute tolerance **or**, for active relTol, `finalResidual_ < cmptMultiply(RelTolerance, initialResidual_)`. [lduMatrixSolver.C](https://gitlab.com/openfoam/core/openfoam/-/raw/OpenFOAM-v1912/src/OpenFOAM/matrices/lduMatrix/lduMatrix/lduMatrixSolver.C), lines 151–156, reads those controls with minIter default 0. Its lines 182–200 show N depends on the initial pressure, matrix, source and a reference-pressure average; N is not total mesh volume."
+        },
+        {
+          "line": 63,
+          "text": "The needed same-stage matrix/residual/N were not saved, so this observation cannot be established from the current checkpoints and is **not authorization for instrumentation, build or CFD**. Exact patch200626 source identity remains a prerequisite before implementing it. No relTol sweep, new geometry investigation or new acceptance framework is proposed."
+        },
+        {
+          "line": 80,
+          "text": "Only this new report was written. Existing evidence was not edited; no claim of newly rehashing all large fields or meshes is made. Linear context was attempted once and returned `McpServerError: Tool get_agent_context not found`; no retry or remote write. Source retrieval limitations were unavailable/cache-miss results, not a filesystem permission denial."
+        }
+      ]
+    },
+    {
+      "artifact_id": "local-continuity-hotspots",
+      "source_file_name": "REPORT.md",
+      "source_sha256": "a6802205d292bbc8b98457862df859b89e9650e99bae930ee9594aa16eea035c",
+      "source_bytes": 9431,
+      "authority": "retained project report; read-only, not a rerun",
+      "tracking_url": "https://linear.app/zhenhe-fu/issue/ZHE-91",
+      "excerpts": [
+        {
+          "line": 1,
+          "text": "# Local continuity hotspots: saved baseline 14 → 15"
+        },
+        {
+          "line": 13,
+          "text": "Both case and native-probe case match all eight frozen polyMesh hashes. Native V and C match the frozen preparation manifest and existing probe provenance. All **39 consumed source files** have identical before/after SHA-256. The existing native log's local continuity value is reproduced from `Σ|s| / ΣV` to relative differences `8.35e-14` and `1.22e-13`. Outer labels are SIMPLE iterations, not physical time."
+        },
+        {
+          "line": 64,
+          "text": "Any later authorized diagnosis should preserve **both** integrated-imbalance ranking and volume-normalized ranking, inspect the retained incident-face balances and native mesh neighborhoods, and evaluate broad pressure/flux-correction deterioration as well as small-volume hotspots. Restricting attention to the known Failed3 cells, the single largest |div| cell, or global cancellation would miss most integrated deterioration. The present association is descriptive, not a causal diagnosis or authority to rerun/change CFD."
+        },
+        {
+          "line": 76,
+          "text": "No native executable, solver, mesh operation, case edit, user-machine action, prohibited original drawing, upload or remote write. Existing saved intermediates only. No physical boundary validation, physical/engineering convergence, product Q/ΔP/K, mesh acceptance or R1 change. Positive native volumes, discrete balance identity and small linear residuals are different facts from local convergence. Failed3 quality checks, manufactured diagnostic failure, artificial-cap limitation and **R1 BLOCKED** remain preserved."
+        },
+        {
+          "line": 80,
+          "text": "## Exact primary hashes"
+        },
+        {
+          "line": 99,
+          "text": "All other consumed-file hashes are in `source-hashes-before-after.json`. `top-cell-evidence.json` contains only 38 selected native cell IDs/centers/volumes and their incident-face phi values for the two saved checkpoints; no huge field copy is included."
+        }
+      ]
+    },
+    {
+      "artifact_id": "held-operator-build",
+      "source_file_name": "REPORT.md",
+      "source_sha256": "23812f345bcca213e7110486cad5ece5779c527ccb568c2149b8d634330b6734",
+      "source_bytes": 6862,
+      "authority": "retained project report; read-only, not a rerun",
+      "tracking_url": "https://linear.app/zhenhe-fu/issue/ZHE-91",
+      "excerpts": [
+        {
+          "line": 1,
+          "text": "# Implemented held-operator shadow diagnostic — compiled and tiny-native tested"
+        },
+        {
+          "line": 8,
+          "text": "`HeldContext.H` hashes actual complete scalar LDU/source/addressing/component-boundary operands before/after; normal psi before/after; physical p/phi/volumes at context boundaries. SHA256 encoding tags native DP32/endianness, lengths/widths, field semantics/dimensions and patch counts. This is exact endpoint identity on this ABI, not portable canonical numerical values or proof of every possible transient event. The source's restricted same-smoother call supplies the no-BC/p/phi-call argument. System libcrypto.so.3 is newly linked for SHA256; not installed or modified. Its runtime mapping approval/pin integration is pending."
+        },
+        {
+          "line": 16,
+          "text": "- Final tiny native test `bin/test-native-v3`: compile exit 0, 4.727 s wall / 4.688 s CPU, peak 504828 KiB."
+        },
+        {
+          "line": 17,
+          "text": "- Four tiny executions, each bounded at 256 MiB AS / 5 CPU seconds / 10 wall seconds / one CPU / 1 MiB output / no core: positive exit 0, 0.065 s; three explicit refusal modes exit 1 with the expected rejection (wrong nSweeps, component order, or baseline iteration count). Peak 92476 KiB. These are **3-cell synthetic LDU systems**, not the 759760-cell case."
+        },
+        {
+          "line": 18,
+          "text": "- Positive test compares original solver and new solver normal U, solver name, iteration count, initial/final residual and convergence/singularity flags exactly. Shadow equals an independent native symGS single-sweep reference exactly. Captured normFactor equals independent original-entry calculation. Inactive solution/performance agrees. Six independently restored coefficient/source/boundary hash mutations are detected, restoration hashes checked after each."
+        },
+        {
+          "line": 19,
+          "text": "- Fixture has nonzero explicitly assembled boundary diagonal/source and nonzero bc/ic arrays. Actual/frozen maxDiag/maxSource differences are zero in this fixture. **It is not an fvMesh boundary-lifecycle test** and does not validate pressureInletOutletVelocity evaluation. Full p/phi fields are absent in this synthetic-only compile path; output says SYNTHETIC_ONLY_NO_PHYSICAL_FIELDS."
+        },
+        {
+          "line": 20,
+          "text": "- 1188 final compile dependency hashes saved; 1174 overlap prior build and match exactly. 40 existing source/artifact pins match. Coverage overlaps; do not add counts. No full historical tree rehash claimed."
+        },
+        {
+          "line": 23,
+          "text": "First tiny C++ compile failed on comparison of tmp<Field> versus Field; corrected by explicit tmp dereference. First tiny execution stopped before solving because WM_PROJECT_DIR was absent and mandatory controlDict was not found; adding the exact established project directory resolved it. Initial and corrected logs/results retained. Production builds v1–v4 were incremental source enhancements, not repeated CFD attempts; source-v1/v2/v3 snapshots and logs retained. Compiler OpenSSL deprecation, prior OpenFOAM template and indentation warnings remain in logs. No warning suppression/security change was introduced."
+        },
+        {
+          "line": 28,
+          "text": "- Time15→16→17, target invocationOuter=2 at timeName/timeIndex17; selectedIDs empty; one extra shadow sweep per component at the matched three-sweep checkpoint. Existing 12 ordinary output hashes remain the nonperturbation reference."
+        },
+        {
+          "line": 30,
+          "text": "- Prior run took 37.191 s; hashes plus extra sweeps may exhaust the roughly 6.8 s inner-wall headroom. A capped attempt would be terminal evidence, not permission to expand limits."
+        },
+        {
+          "line": 31,
+          "text": "- Required next: independent frozen review; resolve actual fvMatrix/BC-lifecycle fixture coverage; updated exact runtime mappings (including libcrypto), strict HOP parser/phase/count/unit/finite guards; isolated disabled supervisor preserving existing process controls; new exact case/latch freeze; separate exact-digest one-attempt authorization."
+        },
+        {
+          "line": 33,
+          "text": "Positive mesh volumes, native structural checks, numerical convergence, actual face80 physical closure and engineering release remain distinct. R1 unchanged/BLOCKED; product Q/DeltaP/K null. No large solve, new physical input, GitHub/CNB write or publication occurred."
+        }
+      ]
+    },
+    {
+      "artifact_id": "held-fvmesh-fixture",
+      "source_file_name": "REPORT.md",
+      "source_sha256": "eff1776b7de1519eba5411ff38e19104a3175a9d958ad8c6c6e55448823071f1",
+      "source_bytes": 5832,
+      "authority": "retained project report; read-only, not a rerun",
+      "tracking_url": "https://linear.app/zhenhe-fu/issue/ZHE-91",
+      "excerpts": [
+        {
+          "line": 1,
+          "text": "# Actual fvMesh / noncoupled BC lifecycle slice — verified synthetic fixture"
+        },
+        {
+          "line": 6,
+          "text": "One pinned blockMesh invocation generated a full-three-dimensional **2-cell / 11-face / 1-internal-face** hex mesh. Two pre-frozen variants then ran once each: outlet phi +0.25 (outflow) and −0.25 (backflow). Their 12-file manifests differ only in that outlet phi value. These are synthetic stress fixtures, not new valve physical assumptions, real operating points or a mass-consistent flow model."
+        },
+        {
+          "line": 8,
+          "text": "The native fixture loads real fvMesh, U/p/phi objects and actual boundary classes: inlet fixedValue, walls noSlip, outlet pressureInletOutletVelocity with deliberately nonzero tangentialVelocity (0,0.4,0.5). Native directionMixed valueFraction trace is exactly 0 for outflow and 2 for backflow. This exercises both signs of the actual neg(phi)*(I−nn) boundary path."
+        },
+        {
+          "line": 10,
+          "text": "The fixture assembles actual fvm::div(phi,U) − fvm::laplacian(nu,U) + fvm::Sp(rate,U), relaxes at 0.7 and applies manufactured constant acceleration RHS (0.01,0.02,0.03). It does **not** evaluate −grad(p), solve pEqn, advance phi/time, reproduce valve geometry or validate momentum physics. All three vector components are active."
+        },
+        {
+          "line": 15,
+          "text": "| blockMesh, once | 0 | 0.115630 | 56676 |"
+        },
+        {
+          "line": 16,
+          "text": "| Outflow fixture, once | 0 | 0.115375 | 94480 |"
+        },
+        {
+          "line": 17,
+          "text": "| Backflow fixture, once | 0 | 0.115618 | 94044 |"
+        },
+        {
+          "line": 19,
+          "text": "Every invocation retained predeclared **256 MiB AS / 5 CPU seconds / 10 wall seconds / one CPU / 1 MiB file/output cap / core 0**. There was no native retry or budget increase. Final fixture compiled under the separate existing 2 GiB / 80 CPU / 90 wall build ceiling: exit 0, 15.413 s wall, 15.372 s CPU, 670116 KiB peak."
+        },
+        {
+          "line": 22,
+          "text": "- Original Uref and candidate U start with identical complete internal/boundary values. Independently assembled raw, relaxed and complete-RHS matrix coefficients/source/boundary arrays hash identically."
+        },
+        {
+          "line": 23,
+          "text": "- Actual fvMatrix::solve adds component boundary diagonal/source, solves, restores diagonal, and calls correctBoundaryConditions. Whole equation hashes before/after each normal solve are exactly unchanged."
+        },
+        {
+          "line": 25,
+          "text": "- A fixture-only subclass exposes the actual protected addBoundarySource/addBoundaryDiag methods. A separately instantiated native smoother on that actual augmented component system reproduces each shadow's one additional sweep exactly; original-entry native normalization matches exactly."
+        },
+        {
+          "line": 26,
+          "text": "- Candidate HeldContext physical p/phi/V identity is unchanged across its bracket. Whole fixture time index/value is unchanged; source contains no pEqn/phi-update/time-loop path. The reference solve occurs before the candidate physical hash bracket; no additional measured pre-reference physical hash claim is made."
+        },
+        {
+          "line": 29,
+          "text": "Native versus frozen reconstructed arithmetic is **not bit-identical**: max component diagonal difference is 8.881784197001252e−16 (outflow), 4.440892098500626e−16 (backflow). Largest absolute normalized residual-link difference is 1.0842021724855044e−15. Differences remain recorded with tolerance_NOT_ASSIGNED; they are not silently zeroed, certified as an error bound or assigned an engineering acceptance threshold."
+        },
+        {
+          "line": 37,
+          "text": "Build1 failed on guessed directionMixed header spelling; corrected to the actual SDK alias header. Build2 failed on Info.precision rather than Info().precision; corrected to pinned API syntax. Both logs/source versions remain. Independent pre-execution review caught a string/Path hash-helper mismatch; fixed and tested before consuming any native latch, old wrapper retained. These are fixture/API preparation defects, not flow divergence, permission denial or native failed attempts."
+        },
+        {
+          "line": 42,
+          "text": "Still HOLD the 759760-cell case. Next gates are strict HOP parser/phase/count/finite/unit verification and failure-path tests; pinned complete runtime mappings including libcrypto; a new exclusive case/latch and disabled supervisor preserving original limits and ordinary-output hashes; independent exact-digest review and separate one-attempt authorization. The real-case caps remain 2 GiB aggregate / 44 CPU/inner-wall / 45 outer-wall seconds / one CPU; no increase proposed. p/phi physical-drift rejection fault injection is not established merely by the observed unchanged hashes here."
+        },
+        {
+          "line": 44,
+          "text": "R1 unchanged/BLOCKED; real product Q/DeltaP/K null. No original physical input change, large solve, installation, security change, GitHub/CNB attempt or publication. Linear remains In Progress."
+        }
+      ]
+    },
+    {
+      "artifact_id": "poisson-local-residual",
+      "source_file_name": "FINAL_REPORT.md",
+      "source_sha256": "1951c247f2f4a82bd1b9b15fb05d71b4f796425b4f853182872af7327336dcb5",
+      "source_bytes": 4781,
+      "authority": "retained project report; read-only, not a rerun",
+      "tracking_url": "https://linear.app/zhenhe-fu/issue/ZHE-91",
+      "excerpts": [
+        {
+          "line": 3,
+          "text": "**The limited0.5 pilot is NOT a converged manufactured-Poisson verification.** Its relative solution L2error0.0820% and signed sourcebalance4.10e-10 are insufficient: the savedfield has a significant reconstructed nonlinear local residual, and measured iteratechange exceeds the frozen stabilitygate. Original R1 fullcheck prerequisite remains Failed4 and physicalCFD/engineering acceptance remains blocked."
+        },
+        {
+          "line": 17,
+          "text": "- 1e-10<=V<1e-8:78.67819%."
+        },
+        {
+          "line": 18,
+          "text": "- 1e-8<=V<1e-6:4.95582%."
+        },
+        {
+          "line": 27,
+          "text": "**Still missing:** independent native perface limitedflux or TEqn matrixexport. Thus these are implementation-matched reconstructed residuals, cross-checked at thegradientstage and globalconservationidentity, not a direct nativefaceoperator comparison. Historical laggedsubiteration RHS/matrices were notsaved; PCGnormalizedfinalresiduals~1e-11 cannot be equated to the finalfield nonlinearresidual. No thirdsolve, compile,install,download,or sourcecasechange occurred."
+        }
+      ]
+    }
+  ]
+}
