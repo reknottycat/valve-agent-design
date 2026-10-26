@@ -1,0 +1,173 @@
+{
+  "schema": "valve.gapfill.gap-ledger/1.0",
+  "engineering_release": false,
+  "readiness": {
+    "public_reference_fields_available": true,
+    "original_engineering_inputs_complete": false,
+    "candidate_configuration_selected": false,
+    "formula_execution_ready": false,
+    "platform_execution_ready": false,
+    "manufacturing_ready": false
+  },
+  "gaps": [
+    {
+      "id": "G01",
+      "title": "产品身份及候选配置",
+      "status": "OPEN",
+      "proposed_review_role": "design_authority",
+      "slots": [
+        "all"
+      ],
+      "next_action": "选原522变型或明确新基线；公开参照只选一个产品族，决定直通/角式、SDNR/SDSL、有无弹簧及具体BOM选项。",
+      "closing_evidence": "签署的候选定义、机构简图、变型适用要求与源修订。",
+      "why_catalogue_is_insufficient": "不同产品目录不能互相补洞后当原件；未证明原瓣杆耦合。",
+      "blocks": "全部后续模型解释"
+    },
+    {
+      "id": "G02",
+      "title": "压力基准",
+      "status": "OPEN",
+      "proposed_review_role": "pressure_design",
+      "slots": [
+        "loads",
+        "sealing",
+        "strength_contact"
+      ],
+      "next_action": "解释原Ру6与标准/修订；分列工作、设计、最大正反向压差、瞬变、试压与绝压/表压。",
+      "closing_evidence": "批准的工况表、适用规范条款与原缺失时间分布协议或替代设计载荷。",
+      "why_catalogue_is_insufficient": "PN标识、法兰几何匹配或别家试压都不能给出真实关阀压差。",
+      "blocks": "强度载荷及试验定值"
+    },
+    {
+      "id": "G03",
+      "title": "材料与许用值",
+      "status": "OPEN",
+      "proposed_review_role": "materials",
+      "slots": [
+        "materials"
+      ],
+      "next_action": "建立逐件牌号、状态、制造路线、温度依赖性能、腐蚀裕量/配对和材证要求。",
+      "closing_evidence": "受控BOM、合法材料规范、性能/许用值来源及海水/低温适用审查。",
+      "why_catalogue_is_insufficient": "目录牌号不是原件材证；材料类别更不能直接选许用应力。",
+      "blocks": "强度、热配合与寿命"
+    },
+    {
+      "id": "G04",
+      "title": "完整内部几何",
+      "status": "OPEN",
+      "proposed_review_role": "mechanical_design",
+      "slots": [
+        "key_dimensions"
+      ],
+      "next_action": "确认座/瓣有效直径、座宽/角度、最小壁厚、杆根径/导程、导向、完整接头及真实行程。",
+      "closing_evidence": "可验证零件图/实测或明确标注的新设计尺寸；同版CAD与接口控制图。",
+      "why_catalogue_is_insufficient": "外形、DN、Kvs只有约束；不允许像素量取未标尺寸，不由57*认定自由瓣升程。",
+      "blocks": "有效面积、接触、流域真实性"
+    },
+    {
+      "id": "G05",
+      "title": "公差及制造检验",
+      "status": "OPEN",
+      "proposed_review_role": "manufacturing_engineering",
+      "slots": [
+        "tolerances"
+      ],
+      "next_action": "制定导向/杆配合、密封带、同轴/形位/粗糙度、冷热间隙和装配公差链。",
+      "closing_evidence": "公差计算、全温域最坏情况/合理统计模型、加工与检验可行性。",
+      "why_catalogue_is_insufficient": "本次厂家公开资料未给可用完整控制公差；不得填一个看似合理数字。",
+      "blocks": "接触连续性、卡滞和泄漏"
+    },
+    {
+      "id": "G06",
+      "title": "载荷和驱动",
+      "status": "OPEN",
+      "proposed_review_role": "mechanical_design",
+      "slots": [
+        "loads"
+      ],
+      "next_action": "由已定义有效面积和压差求压力合力，补预紧、填料与螺纹摩擦、导向损失及手轮/辅助工具力臂。",
+      "closing_evidence": "逐载荷工况、方向/符号、组合规则、摩擦依据和独立手算。",
+      "why_catalogue_is_insufficient": "45kgf注记不是轮缘力；额定压力或Kv不决定操作扭矩。",
+      "blocks": "杆、螺纹、接触强度"
+    },
+    {
+      "id": "G07",
+      "title": "公式语义与实现一致性",
+      "status": "OPEN",
+      "proposed_review_role": "methods_review",
+      "slots": [
+        "strength_contact"
+      ],
+      "next_action": "复核F-STR-002、F-FLW-001、F-DRV-002及F-FLW-002局部冲突；另核密封符号与螺纹模型。",
+      "closing_evidence": "合法正文定位/适用条件、单位/物理量绑定、实现与样例一致性、消费者调用链。",
+      "why_catalogue_is_insufficient": "局部代数修正不升级标准等级；现有project_usage自述不证明历史运行受影响。",
+      "blocks": "相关公式自动执行；不阻止只读检索"
+    },
+    {
+      "id": "G08",
+      "title": "结构和接触验证",
+      "status": "OPEN",
+      "proposed_review_role": "structural_analysis",
+      "slots": [
+        "strength_contact"
+      ],
+      "next_action": "检查杆压扭/屈曲、螺纹承载、体盖/螺栓、座接触与热变形；明确边界和安全准则。",
+      "closing_evidence": "同版输入、解析基准、合适FEA、网格/接触敏感性和工程审查。",
+      "why_catalogue_is_insufficient": "厂家PN、已有简化CAD或Fluent压力场都不是本阀强度验证。",
+      "blocks": "结构合格结论"
+    },
+    {
+      "id": "G09",
+      "title": "密封验收",
+      "status": "OPEN",
+      "proposed_review_role": "test_engineering",
+      "slots": [
+        "sealing"
+      ],
+      "next_action": "定义内漏与外漏分项、方向、介质、温度、压力、保持时间、泄漏限、循环与操作状态。",
+      "closing_evidence": "适用产品/试验标准和合同、仪器方案、实际试验记录或被接受的证据。",
+      "why_catalogue_is_insufficient": "接触压力大于流体压力不充分；别家壳/座试压不替代本阀验收。",
+      "blocks": "密封合格和制造放行"
+    },
+    {
+      "id": "G10",
+      "title": "流动目标与可比基准",
+      "status": "OPEN",
+      "proposed_review_role": "fluid_analysis",
+      "slots": [
+        "loads",
+        "key_dimensions"
+      ],
+      "next_action": "确定流量域、物性、瓣姿态、取压/参考面积、管段修正及Kv/K/CFD比较条件。",
+      "closing_evidence": "实际工况或明确独立研究假设；流态/汽蚀门；守恒、稳定性和敏感性证据。",
+      "why_catalogue_is_insufficient": "原Re10是层流诊断；不得使用常ζ/湍流Kv平方律跨流态外推。",
+      "blocks": "产品流量/压降/阻力系数发布"
+    },
+    {
+      "id": "G11",
+      "title": "平台资源与执行授权",
+      "status": "OPEN",
+      "proposed_review_role": "platform_owner",
+      "slots": [
+        "all"
+      ],
+      "next_action": "核实际CAD/FluentMeshing/Fluent/结构求解器版本、可用模块和合法许可证，再定授权运行范围。",
+      "closing_evidence": "只读环境盘点与授权；许可条件、资源上限、输入哈希和任务目标。",
+      "why_catalogue_is_insufficient": "公开产品能力页不证明本环境已安装或拥有许可证。",
+      "blocks": "安装、采购、模型运行"
+    },
+    {
+      "id": "G12",
+      "title": "同版交付与工程验收",
+      "status": "OPEN",
+      "proposed_review_role": "design_authority",
+      "slots": [
+        "all"
+      ],
+      "next_action": "汇总已批准的CAD/BOM/工况/计算/模型/标准/试验及剩余风险，由负责方审查。",
+      "closing_evidence": "可追溯总清单与独立签审，所有工程门关闭或明确批准的豁免。",
+      "why_catalogue_is_insufficient": "包校验通过只说明记录自洽，不能证明物理产品正确。",
+      "blocks": "完整工程交付和制造批准"
+    }
+  ]
+}

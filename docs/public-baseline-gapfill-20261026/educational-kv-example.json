@@ -1,0 +1,55 @@
+{
+  "schema": "valve.educational-kv-example/1.0",
+  "status": "derived-under-assumptions",
+  "track": "educational-only",
+  "engineering_release": false,
+  "adopted_for_original": false,
+  "adopted_for_candidate": false,
+  "actual_valve_result": false,
+  "source_ids": [
+    "METHOD-SPIRAX",
+    "METHOD-IEC60534"
+  ],
+  "inputs": {
+    "Kv": {
+      "value": 10,
+      "unit": "m³/h at 1 bar reference pressure drop"
+    },
+    "SG": {
+      "value": 1,
+      "unit": "1"
+    },
+    "rho": {
+      "value": 1000,
+      "unit": "kg/m³"
+    },
+    "delta_p": {
+      "value": 0.25,
+      "unit": "bar"
+    }
+  },
+  "assumptions": [
+    "Synthetic values, not measurements or catalogue Kvs for valve 522.",
+    "Fixed opening; incompressible Newtonian fluid; sufficiently turbulent flow; no cavitation, flashing or choking.",
+    "Same pressure-measurement boundary; no additional pipe-fitting correction; SG uses a 1000 kg/m³ reference.",
+    "CdA uses an additional simplified orifice model and is an equivalent product, not actual seat area.",
+    "Do not apply this constant-coefficient square-root law directly to the Re≈10 diagnostic."
+  ],
+  "formula_Q": "Q_m3_h = Kv * sqrt(delta_p_bar / SG)",
+  "formula_CdA": "CdA_m2 = (Q_m3_h / 3600) / sqrt(2 * delta_p_Pa / rho_kg_m3)",
+  "outputs": {
+    "Q": {
+      "value": 5,
+      "unit": "m³/h"
+    },
+    "CdA": {
+      "value": 0.00019641855032959653,
+      "unit": "m²"
+    },
+    "CdA_mm2": {
+      "value": 196.4185503295965,
+      "unit": "mm²"
+    }
+  },
+  "inference_limit": "Only the product Cd*A is constrained in this model; many geometries and coefficients fit it. No actual seat diameter, tolerance, preload, material or product qualification is identified."
+}

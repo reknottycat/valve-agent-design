@@ -1,0 +1,234 @@
+{
+  "schema": "valve.gapfill.source-register/1.0",
+  "sources": [
+    {
+      "id": "ORIG-C2",
+      "title": "Original drawing evidence review",
+      "url": "https://github.com/reknottycat/valve-agent-design/blob/aa80b87b6ee9617754101a238f70bec99393ad9a/runs/20261006/C2/T06/evidence_matrix.md",
+      "locator": "Primary drawing evidence; Geometry and mechanism corrections; Pressure and flange ambiguity",
+      "revision": "aa80b87b6ee9617754101a238f70bec99393ad9a",
+      "kind": "original_evidence_review",
+      "allowed_tracks": [
+        "original-R1"
+      ],
+      "accessed_utc_date": "2026-10-26",
+      "limitations": "Read from existing immutable-source audit snapshot; confirms recorded drawing annotations, not physical product certification.",
+      "redistribution": "Selected facts and original paraphrases only; source document/CAD not redistributed; no open-design license inferred."
+    },
+    {
+      "id": "ORIG-R1-FLOW",
+      "title": "Frozen R1 flow study plan",
+      "url": "https://github.com/reknottycat/valve-agent-design/blob/aa80b87b6ee9617754101a238f70bec99393ad9a/runs/20261006/CALCULATIONS/R1/sources_new/FLOW_PLAN_NEW/flow_study_plan.json",
+      "locator": "pose; pressure_interpretation; selected_study_property_state; cases; modeling_limits",
+      "revision": "aa80b87b6ee9617754101a238f70bec99393ad9a",
+      "kind": "original_study_plan",
+      "allowed_tracks": [
+        "original-R1"
+      ],
+      "accessed_utc_date": "2026-10-26",
+      "limitations": "Study assumptions and planned cases only; present package does not change or rerun R1.",
+      "redistribution": "Selected facts and original paraphrases only; source document/CAD not redistributed; no open-design license inferred."
+    },
+    {
+      "id": "ORIG-C2-GEOM",
+      "title": "C2 geometry stage verification",
+      "url": "https://github.com/reknottycat/valve-agent-design/blob/aa80b87b6ee9617754101a238f70bec99393ad9a/runs/20261006/C2/10_handoff/VERIFICATION.md",
+      "locator": "Proven artifacts; Remaining gates",
+      "revision": "aa80b87b6ee9617754101a238f70bec99393ad9a",
+      "kind": "original_evidence_review",
+      "allowed_tracks": [
+        "original-R1"
+      ],
+      "accessed_utc_date": "2026-10-26",
+      "limitations": "Simplified seven-part study model and exchange checks, not a complete manufacturing assembly.",
+      "redistribution": "Selected facts and original paraphrases only; source document/CAD not redistributed; no open-design license inferred."
+    },
+    {
+      "id": "ORIG-RETRO",
+      "title": "Valve delivery retrospective",
+      "url": "https://github.com/reknottycat/valve-agent-design/commit/3aee833",
+      "locator": "README section 57 mm与机构的精确含义",
+      "revision": "3aee833, 2026-10-26",
+      "kind": "original_evidence_review",
+      "allowed_tracks": [
+        "original-R1"
+      ],
+      "accessed_utc_date": "2026-10-26",
+      "limitations": "57* refers to stem/handwheel reference travel; do not promote to verified free-disc travel.",
+      "redistribution": "Selected facts and original paraphrases only; source document/CAD not redistributed; no open-design license inferred."
+    },
+    {
+      "id": "PUB-PERLWITZ",
+      "title": "Perlwitz Type 017960 and 018960 SDNR",
+      "url": "https://perlwitz.de/wp-content/uploads/2024/06/017960.pdf",
+      "locator": "PDF p1; printed 01-33; DN200 row, materials and admissible-pressure notes",
+      "revision": "Not stated; URL upload folder is not a revision",
+      "kind": "manufacturer_catalog",
+      "allowed_tracks": [
+        "public-perlwitz-017960-DN200"
+      ],
+      "accessed_utc_date": "2026-10-26",
+      "limitations": "Straight/angle and spring options must be selected explicitly. No internal machining dimensions or manufacturing tolerances.",
+      "redistribution": "Selected facts and original paraphrases only; source document/CAD not redistributed; no open-design license inferred.",
+      "source_file_sha256": "a0e3abd989e10cbcf0843971bab2799af047b24ec84662a1a0739c50729a8150"
+    },
+    {
+      "id": "PUB-ILSHIN",
+      "title": "IL SHIN marine valve product catalogue",
+      "url": "https://ilshinkorea.com/wp-content/uploads/2021/11/PRODUCT-CATALOGUE_overall.pdf",
+      "locator": "PDF p12 / printed p12; JIS F7305 and F7353; DN200 JIS5K row and test table",
+      "revision": "Not stated; URL upload folder is not a revision",
+      "kind": "manufacturer_catalog",
+      "allowed_tracks": [
+        "public-ilshin-F7353-DN200"
+      ],
+      "accessed_utc_date": "2026-10-26",
+      "limitations": "Shared page for stop and SDNR products; detailed row applicability must be confirmed before candidate adoption. Material classes are not grades.",
+      "redistribution": "Selected facts and original paraphrases only; source document/CAD not redistributed; no open-design license inferred.",
+      "source_file_sha256": "b7f72a4497756509f043f0b59c02c91295402382f022c48dc06effc0c68dedd1"
+    },
+    {
+      "id": "PUB-MESON",
+      "title": "MESON 410-D2X SDSL straight no-spring family",
+      "url": "https://www.mesongroup.com/products/globe-valve-stop-valve/sdsl/straight/without-spring-rg5-rg5_7",
+      "locator": "Range 410-D2X; item 150-00000279 DN200",
+      "revision": "Current HTML; no revision stated",
+      "kind": "manufacturer_catalog",
+      "allowed_tracks": [
+        "public-meson-410-D2X-DN200"
+      ],
+      "accessed_utc_date": "2026-10-26",
+      "limitations": "Family page only; specific-item generated PDF not obtained; SDSL stop valve is a mechanism comparator, not proof of SDNR behavior.",
+      "redistribution": "Selected facts and original paraphrases only; source document/CAD not redistributed; no open-design license inferred."
+    },
+    {
+      "id": "STD-DIN86261",
+      "title": "DIN 86261 marine screw-down non-return valves",
+      "url": "https://www.dinmedia.de/en/standard/din-86261/315052432?indexName=prod_dinmedia_products",
+      "locator": "Official catalogue scope; 15 pages",
+      "revision": "2020-02",
+      "kind": "standards_metadata",
+      "allowed_tracks": [],
+      "accessed_utc_date": "2026-10-26",
+      "limitations": "Scope metadata only, not licensed clause text or project applicability approval.",
+      "redistribution": "Selected facts and original paraphrases only; source document/CAD not redistributed; no open-design license inferred."
+    },
+    {
+      "id": "STD-EN12516-4",
+      "title": "Non-steel metallic valve-shell calculation standard",
+      "url": "https://www.dinmedia.de/de/norm/din-en-12516-4/280948661",
+      "locator": "Official catalogue scope; 24 pages",
+      "revision": "EN12516-4:2014+A1:2018 / DIN 2018-11",
+      "kind": "standards_metadata",
+      "allowed_tracks": [],
+      "accessed_utc_date": "2026-10-26",
+      "limitations": "No allowable-stress or detailed shell formula extracted; not automatic adoption for this legacy drawing.",
+      "redistribution": "Selected facts and original paraphrases only; source document/CAD not redistributed; no open-design license inferred."
+    },
+    {
+      "id": "STD-ISO5208",
+      "title": "Metallic valve pressure testing",
+      "url": "https://committee.iso.org/cms/live/live/en/sites/isoorg/contents/data/standard/06/51/65111.html?browse=tc",
+      "locator": "Official scope and review status",
+      "revision": "ISO5208:2015; catalogue reports reviewed 2025",
+      "kind": "standards_metadata",
+      "allowed_tracks": [],
+      "accessed_utc_date": "2026-10-26",
+      "limitations": "Full product-specific test pressure, duration and leakage basis not obtained or approved.",
+      "redistribution": "Selected facts and original paraphrases only; source document/CAD not redistributed; no open-design license inferred."
+    },
+    {
+      "id": "STD-EN12266-1",
+      "title": "Industrial metallic-valve pressure testing",
+      "url": "https://www.dinmedia.de/en/standard/din-en-12266-1/146321301",
+      "locator": "Official catalogue scope; 19 pages",
+      "revision": "EN12266-1:2012 / DIN 2012-06",
+      "kind": "standards_metadata",
+      "allowed_tracks": [],
+      "accessed_utc_date": "2026-10-26",
+      "limitations": "Catalogue only, no clause-level compliance claim.",
+      "redistribution": "Selected facts and original paraphrases only; source document/CAD not redistributed; no open-design license inferred."
+    },
+    {
+      "id": "PLATFORM-FLUENT",
+      "title": "Workbench Fluent with Fluent Meshing workflow",
+      "url": "https://ansyshelp.ansys.com/public/Views/Secured/corp/v252/en/wb2_help/wb2h_fluid_flow_fluent_meshing.html",
+      "locator": "Fluid Flow (Fluent with Fluent Meshing), steps 1–5",
+      "revision": "Release 2025 R2",
+      "kind": "official_platform_docs",
+      "allowed_tracks": [],
+      "accessed_utc_date": "2026-10-26",
+      "limitations": "Describes capabilities/workflow; does not prove installation, licensing or correctness of this model.",
+      "redistribution": "Selected facts and original paraphrases only; source document/CAD not redistributed; no open-design license inferred."
+    },
+    {
+      "id": "PLATFORM-MECHANICAL",
+      "title": "Ansys Mechanical structural FEA",
+      "url": "https://ansys.synopsys.com/products/structures/ansys-mechanical",
+      "locator": "Product overview and nonlinear structural capabilities",
+      "revision": "Current HTML; no revision stated",
+      "kind": "official_platform_docs",
+      "allowed_tracks": [],
+      "accessed_utc_date": "2026-10-26",
+      "limitations": "Describes structural analysis capability; installed modules and license entitlement remain unknown.",
+      "redistribution": "Selected facts and original paraphrases only; source document/CAD not redistributed; no open-design license inferred."
+    },
+    {
+      "id": "METHOD-EMERSON",
+      "title": "Fisher Control Valve Handbook official entry",
+      "url": "https://www.emerson.com/en/final-control/catalog/products-and-software/valves/control-valves/control-valve-handbook",
+      "locator": "Official handbook entry; control-valve fundamentals and sizing methods",
+      "revision": "Edition not pinned from the entry page",
+      "kind": "official_method_source",
+      "allowed_tracks": [
+        "educational-only"
+      ],
+      "accessed_utc_date": "2026-10-26",
+      "limitations": "Publisher entry and method lead only, not target-valve geometry or a claim of full handbook review.",
+      "redistribution": "Selected facts and original paraphrases only; no source document or paid standard body included."
+    },
+    {
+      "id": "METHOD-SAMSON",
+      "title": "SAMSON Type 3241 control valve T8015 EN",
+      "url": "https://france.samsongroup.com/document/t80150en.pdf",
+      "locator": "p6 Table4, without flow divider, DN25 Kvs choices",
+      "revision": "Cover Edition November 2022; last-page 2026-08-27 marking retained but not interpreted as a technical revision.",
+      "kind": "official_method_source",
+      "allowed_tracks": [
+        "educational-only"
+      ],
+      "accessed_utc_date": "2026-10-26",
+      "limitations": "Pneumatic control-valve example demonstrates non-uniqueness; not a manually operated marine stop-check design source.",
+      "redistribution": "Selected facts and original paraphrases only; no source document or paid standard body included.",
+      "source_file_sha256": "faa358b5567ab76da8b3cec986de31293489bcf070300771eb33692066c3e691"
+    },
+    {
+      "id": "METHOD-SPIRAX",
+      "title": "Control valve sizing for water systems",
+      "url": "https://www.spiraxsarco.com/learn-about-steam/control-hardware-electric-pneumatic-actuation/control-valve-sizing-for-water-systems",
+      "locator": "Equation 6.3.1 and flow-coefficient definition",
+      "revision": "Current official tutorial; revision date not stated",
+      "kind": "official_method_source",
+      "allowed_tracks": [
+        "educational-only"
+      ],
+      "accessed_utc_date": "2026-10-26",
+      "limitations": "Educational incompressible-liquid relation; low Reynolds, cavitation, choking, installation and geometry-identification limits must be handled separately.",
+      "redistribution": "Selected facts and original paraphrases only; no source document or paid standard body included."
+    },
+    {
+      "id": "METHOD-IEC60534",
+      "title": "IEC60534-2-1 official publication abstract",
+      "url": "https://webstore.iec.ch/en/publication/2461",
+      "locator": "Official abstract, liquid/gas flow sizing and non-turbulent corrections",
+      "revision": "IEC60534-2-1:2011, edition 2, 2011-03-30; official abstract reports April 2015 corrigendum included.",
+      "kind": "official_method_source",
+      "allowed_tracks": [
+        "educational-only"
+      ],
+      "accessed_utc_date": "2026-10-26",
+      "limitations": "Abstract only, no paid body redistributed or clause-level validation claimed.",
+      "redistribution": "Selected facts and original paraphrases only; no source document or paid standard body included."
+    }
+  ]
+}

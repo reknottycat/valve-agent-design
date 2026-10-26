@@ -1,0 +1,13 @@
+test_cv_candidate_result_binding (test_candidate_consistency.SourceAndCandidateChecks.test_cv_candidate_result_binding) ... ok
+test_flow_original_conflict_candidate_unit_chain (test_candidate_consistency.SourceAndCandidateChecks.test_flow_original_conflict_candidate_unit_chain) ... ok
+test_hand_force_candidate_result_binding (test_candidate_consistency.SourceAndCandidateChecks.test_hand_force_candidate_result_binding) ... ok
+test_lame_original_conflict_and_candidate_algebra (test_candidate_consistency.SourceAndCandidateChecks.test_lame_original_conflict_and_candidate_algebra) ... ok
+test_lame_scale_unit_invariance (test_candidate_consistency.SourceAndCandidateChecks.test_lame_scale_unit_invariance) ... ok
+test_original_status_preserved (test_candidate_consistency.SourceAndCandidateChecks.test_original_status_preserved) ... ok
+test_seal_symbol_discrepancy_remains_explicit (test_candidate_consistency.SourceAndCandidateChecks.test_seal_symbol_discrepancy_remains_explicit) ... ok
+test_source_pin_and_fingerprints (test_candidate_consistency.SourceAndCandidateChecks.test_source_pin_and_fingerprints) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK

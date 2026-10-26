@@ -1,0 +1,852 @@
+{
+  "schema": "valve.engineering-input-matrix/1.0",
+  "package_status": "ENGINEERING_CANDIDATE_NOT_MANUFACTURING_RELEASE",
+  "original_revision": "aa80b87b6ee9617754101a238f70bec99393ad9a",
+  "manufacturing_authorized": false,
+  "solver_executed": false,
+  "original_inputs_modified": false,
+  "candidate_adoption_authorized": false,
+  "selected_public_candidate": null,
+  "classifications": {
+    "confirmed-original": "已复核原图/原记录注记，不等于实物验证或完整设计确认",
+    "published-otherproduct": "其他厂家具体产品公开值，仅候选/对照",
+    "derived-under-assumptions": "显式假设下关系/既有研究设定，不作为产品结论",
+    "unresolved": "无足够证据，value必须null"
+  },
+  "product_performance": {
+    "Q_m3_s": null,
+    "pressure_drop_Pa": null,
+    "loss_coefficient": null,
+    "seat_leakage": null
+  },
+  "rows": [
+    {
+      "id": "MAT-O-01",
+      "slot": "materials",
+      "track": "original-R1",
+      "label": "原件逐零件完整材料牌号及状态",
+      "status": "unresolved",
+      "value": null,
+      "unit": "designation",
+      "source_ids": [
+        "ORIG-C2"
+      ],
+      "assumptions": [],
+      "limitations": "原图复核未建立完整BOM与材料状态；不能把目录铜合金写回原阀。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "MAT-O-02",
+      "slot": "materials",
+      "track": "original-R1",
+      "label": "许用应力及温度依赖弹塑性数据",
+      "status": "unresolved",
+      "value": null,
+      "unit": "MPa",
+      "source_ids": [
+        "ORIG-C2"
+      ],
+      "assumptions": [],
+      "limitations": "须确定牌号、工艺、温度、铸造质量与适用规范，公开PN不能反算。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "MAT-P-01",
+      "slot": "materials",
+      "track": "public-perlwitz-017960-DN200",
+      "label": "DN200体盖座瓣候选牌号",
+      "status": "published-otherproduct",
+      "value": "CC491K / CuSn5Zn5Pb5-C",
+      "unit": "designation",
+      "source_ids": [
+        "PUB-PERLWITZ"
+      ],
+      "assumptions": [],
+      "limitations": "只属于该厂家系列；材证、状态、腐蚀/冲蚀与本项目工况适用性未核。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "MAT-P-02",
+      "slot": "materials",
+      "track": "public-perlwitz-017960-DN200",
+      "label": "阀杆候选牌号",
+      "status": "published-otherproduct",
+      "value": "CW710R / CuZn35Ni3Mn2AlPb",
+      "unit": "designation",
+      "source_ids": [
+        "PUB-PERLWITZ"
+      ],
+      "assumptions": [],
+      "limitations": "不推定与原件材料等同，不提供本项目许用应力。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "MAT-I-01",
+      "slot": "materials",
+      "track": "public-ilshin-F7353-DN200",
+      "label": "体盖材质类别",
+      "status": "published-otherproduct",
+      "value": "cast iron",
+      "unit": "material class",
+      "source_ids": [
+        "PUB-ILSHIN"
+      ],
+      "assumptions": [],
+      "limitations": "未给完整牌号，不与Perlwitz青铜体混装为一个基线。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "MAT-I-02",
+      "slot": "materials",
+      "track": "public-ilshin-F7353-DN200",
+      "label": "瓣座材质类别",
+      "status": "published-otherproduct",
+      "value": "bronze or stainless steel",
+      "unit": "material class",
+      "source_ids": [
+        "PUB-ILSHIN"
+      ],
+      "assumptions": [],
+      "limitations": "选项未确定；不是同时存在于已确定BOM。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "MAT-M-01",
+      "slot": "materials",
+      "track": "public-meson-410-D2X-DN200",
+      "label": "阀体产品材质标识",
+      "status": "published-otherproduct",
+      "value": "Rg5",
+      "unit": "designation",
+      "source_ids": [
+        "PUB-MESON"
+      ],
+      "assumptions": [],
+      "limitations": "原样保留厂家名称；不做跨标准材料等同。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "DIM-O-01",
+      "slot": "key_dimensions",
+      "track": "original-R1",
+      "label": "名义通径标记",
+      "status": "confirmed-original",
+      "value": 200,
+      "unit": "DN",
+      "source_ids": [
+        "ORIG-C2"
+      ],
+      "assumptions": [],
+      "limitations": "DN不是实测内径，也不是关阀有效受压直径。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "DIM-O-02",
+      "slot": "key_dimensions",
+      "track": "original-R1",
+      "label": "面间距600*",
+      "status": "confirmed-original",
+      "value": 600,
+      "unit": "mm",
+      "source_ids": [
+        "ORIG-C2"
+      ],
+      "assumptions": [],
+      "limitations": "星号参考尺寸；未转换为制造控制尺寸。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "DIM-O-03",
+      "slot": "key_dimensions",
+      "track": "original-R1",
+      "label": "手轮直径Ø320*",
+      "status": "confirmed-original",
+      "value": 320,
+      "unit": "mm",
+      "source_ids": [
+        "ORIG-C2"
+      ],
+      "assumptions": [],
+      "limitations": "仅参考外形；不能未经受力位置说明换算辅助扳手扭矩。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "DIM-O-04",
+      "slot": "key_dimensions",
+      "track": "original-R1",
+      "label": "原图法兰外径参考Ø295*",
+      "status": "confirmed-original",
+      "value": 295,
+      "unit": "mm",
+      "source_ids": [
+        "ORIG-C2"
+      ],
+      "assumptions": [],
+      "limitations": "原图尺寸注记；法兰标准与压力等级仍需版本核对。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "DIM-O-05",
+      "slot": "key_dimensions",
+      "track": "original-R1",
+      "label": "原图Ø264*参考注记",
+      "status": "confirmed-original",
+      "value": 264,
+      "unit": "mm",
+      "source_ids": [
+        "ORIG-C2"
+      ],
+      "assumptions": [],
+      "limitations": "尺寸端点/标准定义须在控制图复核，不与厂家PCD295拼接。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "DIM-O-06",
+      "slot": "key_dimensions",
+      "track": "original-R1",
+      "label": "原图12孔Ø15*参考注记",
+      "status": "confirmed-original",
+      "value": {
+        "count": 12,
+        "diameter": 15
+      },
+      "unit": "count; mm",
+      "source_ids": [
+        "ORIG-C2"
+      ],
+      "assumptions": [],
+      "limitations": "完整接口控制尺寸与孔位公差未冻结。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "DIM-O-07",
+      "slot": "key_dimensions",
+      "track": "original-R1",
+      "label": "阀杆/手轮参考行程57*",
+      "status": "confirmed-original",
+      "value": 57,
+      "unit": "mm",
+      "source_ids": [
+        "ORIG-RETRO"
+      ],
+      "assumptions": [],
+      "limitations": "不是自由阀瓣的已验证全开行程。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "DIM-O-08",
+      "slot": "key_dimensions",
+      "track": "original-R1",
+      "label": "R1固定研究姿态瓣位移",
+      "status": "derived-under-assumptions",
+      "value": 57,
+      "unit": "mm",
+      "source_ids": [
+        "ORIG-R1-FLOW"
+      ],
+      "assumptions": [
+        "R1将瓣固定在此位移，另设阀杆回撤57 mm；不求自由升程或受力平衡。"
+      ],
+      "limitations": "历史研究姿态记录，不是本次采用或实际自然开启结果。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "DIM-O-09",
+      "slot": "key_dimensions",
+      "track": "original-R1",
+      "label": "密封有效直径、座宽和座角",
+      "status": "unresolved",
+      "value": null,
+      "unit": "mm / geometry",
+      "source_ids": [
+        "ORIG-C2",
+        "ORIG-C2-GEOM"
+      ],
+      "assumptions": [],
+      "limitations": "需要原零件图、可核验实测或明确新设计选择；目录外形/Cv不能唯一确定。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "DIM-O-10",
+      "slot": "key_dimensions",
+      "track": "original-R1",
+      "label": "最薄壁、螺杆根径/螺距和导向长度",
+      "status": "unresolved",
+      "value": null,
+      "unit": "mm / geometry",
+      "source_ids": [
+        "ORIG-C2",
+        "ORIG-C2-GEOM"
+      ],
+      "assumptions": [],
+      "limitations": "需要原零件图、可核验实测或明确新设计选择；目录外形/Cv不能唯一确定。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "DIM-O-11",
+      "slot": "key_dimensions",
+      "track": "original-R1",
+      "label": "阀杆与阀瓣耦合及自由升程",
+      "status": "unresolved",
+      "value": null,
+      "unit": "mm / geometry",
+      "source_ids": [
+        "ORIG-C2",
+        "ORIG-C2-GEOM"
+      ],
+      "assumptions": [],
+      "limitations": "需要原零件图、可核验实测或明确新设计选择；目录外形/Cv不能唯一确定。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "DIM-P-01",
+      "slot": "key_dimensions",
+      "track": "public-perlwitz-017960-DN200",
+      "label": "直通型面间距L",
+      "status": "published-otherproduct",
+      "value": 600,
+      "unit": "mm",
+      "source_ids": [
+        "PUB-PERLWITZ"
+      ],
+      "assumptions": [],
+      "limitations": "保留整套同厂家DN200直通候选；未采用为522原阀几何。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "DIM-P-02",
+      "slot": "key_dimensions",
+      "track": "public-perlwitz-017960-DN200",
+      "label": "法兰外径D",
+      "status": "published-otherproduct",
+      "value": 340,
+      "unit": "mm",
+      "source_ids": [
+        "PUB-PERLWITZ"
+      ],
+      "assumptions": [],
+      "limitations": "保留整套同厂家DN200直通候选；未采用为522原阀几何。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "DIM-P-03",
+      "slot": "key_dimensions",
+      "track": "public-perlwitz-017960-DN200",
+      "label": "PCD",
+      "status": "published-otherproduct",
+      "value": 295,
+      "unit": "mm",
+      "source_ids": [
+        "PUB-PERLWITZ"
+      ],
+      "assumptions": [],
+      "limitations": "保留整套同厂家DN200直通候选；未采用为522原阀几何。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "DIM-P-04",
+      "slot": "key_dimensions",
+      "track": "public-perlwitz-017960-DN200",
+      "label": "目录高度H",
+      "status": "published-otherproduct",
+      "value": 580,
+      "unit": "mm",
+      "source_ids": [
+        "PUB-PERLWITZ"
+      ],
+      "assumptions": [],
+      "limitations": "保留整套同厂家DN200直通候选；未采用为522原阀几何。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "DIM-P-05",
+      "slot": "key_dimensions",
+      "track": "public-perlwitz-017960-DN200",
+      "label": "法兰孔表",
+      "status": "published-otherproduct",
+      "value": {
+        "count": 8,
+        "diameter": 22
+      },
+      "unit": "count; mm",
+      "source_ids": [
+        "PUB-PERLWITZ"
+      ],
+      "assumptions": [],
+      "limitations": "不能和原件12孔Ø15*接口混用。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "DIM-I-01",
+      "slot": "key_dimensions",
+      "track": "public-ilshin-F7353-DN200",
+      "label": "目录面间距L",
+      "status": "published-otherproduct",
+      "value": 570,
+      "unit": "mm",
+      "source_ids": [
+        "PUB-ILSHIN"
+      ],
+      "assumptions": [],
+      "limitations": "JIS5K页面的DN200候选；不能与600 mm求平均或替代。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "DIM-I-02",
+      "slot": "key_dimensions",
+      "track": "public-ilshin-F7353-DN200",
+      "label": "目录法兰外径/PCD/厚度",
+      "status": "published-otherproduct",
+      "value": {
+        "D": 320,
+        "PCD": 280,
+        "t": 24
+      },
+      "unit": "mm",
+      "source_ids": [
+        "PUB-ILSHIN"
+      ],
+      "assumptions": [],
+      "limitations": "F7305与F7353共页；需确认具体订货配置。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "DIM-I-03",
+      "slot": "key_dimensions",
+      "track": "public-ilshin-F7353-DN200",
+      "label": "目录孔表",
+      "status": "published-otherproduct",
+      "value": {
+        "count": 8,
+        "diameter": 23
+      },
+      "unit": "count; mm",
+      "source_ids": [
+        "PUB-ILSHIN"
+      ],
+      "assumptions": [],
+      "limitations": "不作为俄罗斯原件接口依据。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "DIM-M-01",
+      "slot": "key_dimensions",
+      "track": "public-meson-410-D2X-DN200",
+      "label": "DN200产品面间距L",
+      "status": "published-otherproduct",
+      "value": 600,
+      "unit": "mm",
+      "source_ids": [
+        "PUB-MESON"
+      ],
+      "assumptions": [],
+      "limitations": "同长不证明同内部流道或阀瓣运动方式。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "TOL-O-01",
+      "slot": "tolerances",
+      "track": "original-R1",
+      "label": "原图锁紧细节内螺纹",
+      "status": "confirmed-original",
+      "value": "M6-7H",
+      "unit": "designation",
+      "source_ids": [
+        "ORIG-C2"
+      ],
+      "assumptions": [],
+      "limitations": "仅此原图细节有依据；不能外推主杆螺纹公差或全部制造公差。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "TOL-O-02",
+      "slot": "tolerances",
+      "track": "original-R1",
+      "label": "阀杆/导向配合和全温域间隙",
+      "status": "unresolved",
+      "value": null,
+      "unit": "mm",
+      "source_ids": [
+        "ORIG-C2",
+        "ORIG-C2-GEOM"
+      ],
+      "assumptions": [],
+      "limitations": "本次厂家公开资料未补得控制值；需公差链、热膨胀、变形及加工检验方案。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "TOL-O-03",
+      "slot": "tolerances",
+      "track": "original-R1",
+      "label": "座面同轴度、圆度、平面度与表面粗糙度",
+      "status": "unresolved",
+      "value": null,
+      "unit": "mm / µm",
+      "source_ids": [
+        "ORIG-C2",
+        "ORIG-C2-GEOM"
+      ],
+      "assumptions": [],
+      "limitations": "本次厂家公开资料未补得控制值；需公差链、热膨胀、变形及加工检验方案。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "TOL-O-04",
+      "slot": "tolerances",
+      "track": "original-R1",
+      "label": "密封接触带宽与装配预紧公差",
+      "status": "unresolved",
+      "value": null,
+      "unit": "mm / N",
+      "source_ids": [
+        "ORIG-C2",
+        "ORIG-C2-GEOM"
+      ],
+      "assumptions": [],
+      "limitations": "本次厂家公开资料未补得控制值；需公差链、热膨胀、变形及加工检验方案。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "LOAD-O-01",
+      "slot": "loads",
+      "track": "original-R1",
+      "label": "原图压力字面标记",
+      "status": "confirmed-original",
+      "value": "Ру6",
+      "unit": "literal designation",
+      "source_ids": [
+        "ORIG-C2"
+      ],
+      "assumptions": [],
+      "limitations": "保留原文，不在本包擅自换成0.6、0.63 MPa或PN10。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "LOAD-O-02",
+      "slot": "loads",
+      "track": "original-R1",
+      "label": "基础型号海水工作温度范围",
+      "status": "confirmed-original",
+      "value": [
+        -2,
+        50
+      ],
+      "unit": "°C",
+      "source_ids": [
+        "ORIG-C2"
+      ],
+      "assumptions": [],
+      "limitations": "含义来自适用注4；28%氯化钙低温工况是-02变型，不移植到基型。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "LOAD-O-03",
+      "slot": "loads",
+      "track": "original-R1",
+      "label": "辅助扳手作用力上限原注",
+      "status": "confirmed-original",
+      "value": 45,
+      "unit": "kgf",
+      "source_ids": [
+        "ORIG-C2"
+      ],
+      "assumptions": [],
+      "limitations": "仅基型/-01适用；不是已证实的手轮轮缘力，力臂及扭矩未给。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "LOAD-O-04",
+      "slot": "loads",
+      "track": "original-R1",
+      "label": "R1结构研究表压",
+      "status": "derived-under-assumptions",
+      "value": 0.63,
+      "unit": "MPa(g)",
+      "source_ids": [
+        "ORIG-R1-FLOW"
+      ],
+      "assumptions": [
+        "仅记录冻结R1的结构研究载荷；不修改原图压力标记或压力设计基准。"
+      ],
+      "limitations": "已有研究假设，不是新确认额定压力，也不是CFD压降。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "LOAD-O-05",
+      "slot": "loads",
+      "track": "original-R1",
+      "label": "最大关阀/反向压差与瞬变包络",
+      "status": "unresolved",
+      "value": null,
+      "unit": "MPa",
+      "source_ids": [
+        "ORIG-C2"
+      ],
+      "assumptions": [],
+      "limitations": "需真实工况；工作额定压力、试验压力和关阀压差分开。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "LOAD-O-06",
+      "slot": "loads",
+      "track": "original-R1",
+      "label": "手轮输入扭矩及填料/螺纹摩擦",
+      "status": "unresolved",
+      "value": null,
+      "unit": "N·m / 1",
+      "source_ids": [
+        "ORIG-C2"
+      ],
+      "assumptions": [],
+      "limitations": "无法由PN、手轮外径或Kv唯一反推。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "LOAD-P-01",
+      "slot": "loads",
+      "track": "public-perlwitz-017960-DN200",
+      "label": "DN200目录允许压力不高于120°C",
+      "status": "published-otherproduct",
+      "value": 10,
+      "unit": "bar",
+      "source_ids": [
+        "PUB-PERLWITZ"
+      ],
+      "assumptions": [],
+      "limitations": "该产品温压表，不是522原阀载荷；页面高温段另限6 bar。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "LOAD-P-02",
+      "slot": "loads",
+      "track": "public-perlwitz-017960-DN200",
+      "label": "DN200目录高于120°C允许压力",
+      "status": "published-otherproduct",
+      "value": 6,
+      "unit": "bar",
+      "source_ids": [
+        "PUB-PERLWITZ"
+      ],
+      "assumptions": [],
+      "limitations": "只在厂家给定介质/最高温度范围内解释，不泛化为所有海水或蒸汽工况。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "LOAD-M-01",
+      "slot": "loads",
+      "track": "public-meson-410-D2X-DN200",
+      "label": "DN200压力/连接标识",
+      "status": "published-otherproduct",
+      "value": "PN10",
+      "unit": "designation",
+      "source_ids": [
+        "PUB-MESON"
+      ],
+      "assumptions": [],
+      "limitations": "铭牌级别不是本项目关阀压差或实测承压结果。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "STR-O-01",
+      "slot": "strength_contact",
+      "track": "original-R1",
+      "label": "阀杆压扭、屈曲、螺纹承载合格结果",
+      "status": "unresolved",
+      "value": null,
+      "unit": "pass/fail",
+      "source_ids": [
+        "ORIG-C2-GEOM"
+      ],
+      "assumptions": [],
+      "limitations": "需要材料、根径、有效长度、端部约束、载荷和适用计算式；旧公式矛盾先解决。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "STR-O-02",
+      "slot": "strength_contact",
+      "track": "original-R1",
+      "label": "阀体阀盖螺栓强度合格结果",
+      "status": "unresolved",
+      "value": null,
+      "unit": "pass/fail",
+      "source_ids": [
+        "ORIG-C2-GEOM"
+      ],
+      "assumptions": [],
+      "limitations": "需要完整壁厚、开孔、铸造系数、腐蚀裕量、接头和载荷；目录PN不是替代证据。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "STR-O-03",
+      "slot": "strength_contact",
+      "track": "original-R1",
+      "label": "阀座接触压力分布和变形合格结果",
+      "status": "unresolved",
+      "value": null,
+      "unit": "MPa / mm",
+      "source_ids": [
+        "ORIG-C2-GEOM"
+      ],
+      "assumptions": [],
+      "limitations": "必须用结构/接触模型；Fluent流动计算不能单独判定。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "STR-O-04",
+      "slot": "strength_contact",
+      "track": "original-R1",
+      "label": "静压合力关系作为待接入计算路线",
+      "status": "derived-under-assumptions",
+      "value": "F_pressure = Δp × A_effective",
+      "unit": "N = Pa × m²",
+      "source_ids": [
+        "ORIG-C2"
+      ],
+      "assumptions": [
+        "压差和投影有效面积定义已明确且压力可视为均匀时才使用；否则应积分压力和黏性载荷。"
+      ],
+      "limitations": "只给均匀压力投影简式；不包含摩擦、预紧、非均匀压强、导向及动载；本次不生成原阀数值。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false,
+      "derivation_note": "Uniform pressure projected-force identity; ORIG-C2 supports the unresolved-input context, not a quoted standard formula."
+    },
+    {
+      "id": "SEAL-O-01",
+      "slot": "sealing",
+      "track": "original-R1",
+      "label": "原阀泄漏等级与方向/持续时间",
+      "status": "unresolved",
+      "value": null,
+      "unit": "acceptance specification",
+      "source_ids": [
+        "ORIG-C2"
+      ],
+      "assumptions": [],
+      "limitations": "需合同/产品标准和完整条款；不能由金属密封或PN推出。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "SEAL-O-02",
+      "slot": "sealing",
+      "track": "original-R1",
+      "label": "原阀壳体试验/阀座试验压力",
+      "status": "unresolved",
+      "value": null,
+      "unit": "MPa",
+      "source_ids": [
+        "ORIG-C2"
+      ],
+      "assumptions": [],
+      "limitations": "不采用别家JIS产品试压；需原压力基准和适用验收规则。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "SEAL-I-01",
+      "slot": "sealing",
+      "track": "public-ilshin-F7353-DN200",
+      "label": "JIS5K ≤300A目录壳体水压试验",
+      "status": "published-otherproduct",
+      "value": 1.03,
+      "unit": "MPa",
+      "source_ids": [
+        "PUB-ILSHIN"
+      ],
+      "assumptions": [],
+      "limitations": "只作为分项试验架构实例；未给本项目持续时间/泄漏判据。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "SEAL-I-02",
+      "slot": "sealing",
+      "track": "public-ilshin-F7353-DN200",
+      "label": "JIS5K ≤300A目录阀座水压试验",
+      "status": "published-otherproduct",
+      "value": 0.76,
+      "unit": "MPa",
+      "source_ids": [
+        "PUB-ILSHIN"
+      ],
+      "assumptions": [],
+      "limitations": "不是原阀已通过此试验，非原阀验收值。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    },
+    {
+      "id": "SEAL-O-03",
+      "slot": "sealing",
+      "track": "original-R1",
+      "label": "填料与阀盖垫片材料、压紧及泄漏",
+      "status": "unresolved",
+      "value": null,
+      "unit": "specification",
+      "source_ids": [
+        "ORIG-C2-GEOM"
+      ],
+      "assumptions": [],
+      "limitations": "需独立建立；主密封面接触并不覆盖外漏边界。",
+      "adopted_for_original": false,
+      "adopted_for_candidate": false
+    }
+  ],
+  "engineering_release": false,
+  "candidate_configuration_gates": {
+    "public-perlwitz-017960-DN200": {
+      "spring_selection": null,
+      "ordering_revision_confirmed": false
+    },
+    "public-ilshin-F7353-DN200": {
+      "disc_seat_material_option": null,
+      "specific_sdnr_configuration_confirmed": false
+    },
+    "public-meson-410-D2X-DN200": {
+      "mechanism_role": "SDSL stop-only comparator",
+      "full_item_drawing_available": false
+    }
+  }
+}

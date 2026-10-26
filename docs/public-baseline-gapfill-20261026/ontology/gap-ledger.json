@@ -1,0 +1,143 @@
+{
+  "scope": "Read-only reuse review; not a full engineering audit; does not revise upstream evidence states",
+  "repository": "reknottycat/standards-kb",
+  "commit": "2937b5901b26d02456b95545ab2c1a059676e82a",
+  "engineering_release": false,
+  "gaps": [
+    {
+      "id": "REUSE-G01",
+      "targets": [
+        "F-STR-002"
+      ],
+      "status": "INTERNAL_INCONSISTENCY_REVIEW_REQUIRED",
+      "evidence": "canonical p*(b^2+a^2)/(b^2-a^2); rearranged p*(1+a^2/(b^2-a^2)); sample p=1 MPa,a=100 mm,b=112 mm,result 1.1299 MPa. Direct arithmetic: 8.861635220125786 versus 4.930817610062893, neither equals sample.",
+      "action": "Do not execute/use this record for engineering pending independent source, expression and sample review; do not mutate upstream."
+    },
+    {
+      "id": "REUSE-G02",
+      "targets": [
+        "F-FLW-001"
+      ],
+      "status": "INTERNAL_INCONSISTENCY_REVIEW_REQUIRED",
+      "evidence": "canonical A*3600*sqrt(2*1e5/(zeta*rho))/1000; units A=m^2,rho=kg/m^3; sample D=200 mm,zeta=6,rho=1000,result Kv=653 m^3/h. Canonical arithmetic using stated area gives 0.6529677711243186.",
+      "action": "Review source, units, normalization and sample before reuse; no silent correction."
+    },
+    {
+      "id": "REUSE-G03",
+      "targets": [
+        "F-DRV-002",
+        "F-FLW-002"
+      ],
+      "status": "RESULT_BINDING_REVIEW_REQUIRED",
+      "evidence": "F-DRV-002 solved_for=F_hand but result_quantity=Q:DRIVE:LEVER_RATIO; F-FLW-002 solved_for=Cv_US but result_quantity=Q:FLOW:FLOW_COEFFICIENT_KV.",
+      "action": "Review intended result semantics rather than blindly joining result_quantity."
+    },
+    {
+      "id": "REUSE-G04",
+      "targets": [
+        "F-SEAL-002"
+      ],
+      "status": "SYMBOL_ALIGNMENT_REVIEW_REQUIRED",
+      "evidence": "rearranged_forms uses w_seal while variables and ontology mapping declare w_seat.",
+      "action": "Explicit symbol reconciliation with source before execution."
+    },
+    {
+      "id": "REUSE-G05",
+      "targets": [
+        "F-DRV-001",
+        "M02"
+      ],
+      "status": "MODEL_DIFFERENCE_REVIEW_REQUIRED",
+      "evidence": "Existing thread record labels d as major diameter mm with torque N*m; M02 is ideal square thread using mean diameter m; existing source mixes pitch/lead and a 30 degree half-angle claim.",
+      "action": "Review thread type, half-angle, mean diameter, lead and conversion; not automatic same-formula equivalence."
+    },
+    {
+      "id": "REUSE-G06",
+      "targets": [
+        "M01",
+        "M03",
+        "M04",
+        "M06"
+      ],
+      "status": "UNIMPLEMENTED_OR_UNBOUND",
+      "evidence": "M01 JSON executable=false implementation_ref=null; M03/M04/M06 prose, no approved implementation or validated global qid crosswalk.",
+      "action": "Reuse available model structure; preserve unknowns, research-only and nonexecution status."
+    },
+    {
+      "id": "REUSE-G07",
+      "targets": [
+        "adapter"
+      ],
+      "status": "PIN_VERSION_DIFFERENCE",
+      "evidence": "Adapter hardcodes 7eda528a8795b8fbd850d6d35ac67e198de5810a; current standards-kb is 2937b5901b26d02456b95545ab2c1a059676e82a. Current GOST file blob differs from pinned historical file.",
+      "action": "Keep old snapshot truthful; a new version requires separately reviewed exact-byte manifest and authorized adapter change."
+    },
+    {
+      "id": "REUSE-G08",
+      "targets": [
+        "CFD sidecar"
+      ],
+      "status": "RESEARCH_ONLY",
+      "evidence": "Full text not reviewed; externalLinks=[]; formulaExecution=false; diagnostic test NOT_EXECUTED; acceptance threshold null.",
+      "action": "Parallel method reference only; no normative criterion or formula execution claims."
+    },
+    {
+      "id": "REUSE-G09",
+      "targets": [
+        "valve-agent-design README"
+      ],
+      "status": "STALE_SUMMARY",
+      "evidence": "README says 93 verified; actual current records count 65 VERIFIED_CLAUSE,11 PENDING_VERIFICATION,17 UNVERIFIED_CLAUSE.",
+      "action": "Use detailed evidence states, not summary sentence."
+    }
+  ],
+  "execution_decisions": [
+    {
+      "gap_id": "REUSE-G01",
+      "targets": [
+        "F-STR-002"
+      ],
+      "execution_review_status": "BLOCKED_PENDING_REVIEW",
+      "deployed": false,
+      "original_evidence_unchanged": true
+    },
+    {
+      "gap_id": "REUSE-G02",
+      "targets": [
+        "F-FLW-001"
+      ],
+      "execution_review_status": "BLOCKED_PENDING_REVIEW",
+      "deployed": false,
+      "original_evidence_unchanged": true
+    },
+    {
+      "gap_id": "REUSE-G03",
+      "targets": [
+        "F-DRV-002",
+        "F-FLW-002"
+      ],
+      "execution_review_status": "BLOCKED_PENDING_REVIEW",
+      "deployed": false,
+      "original_evidence_unchanged": true
+    },
+    {
+      "gap_id": "REUSE-G04",
+      "targets": [
+        "F-SEAL-002"
+      ],
+      "execution_review_status": "BLOCKED_PENDING_REVIEW",
+      "deployed": false,
+      "original_evidence_unchanged": true
+    },
+    {
+      "gap_id": "REUSE-G05",
+      "targets": [
+        "F-DRV-001",
+        "M02"
+      ],
+      "execution_review_status": "BLOCKED_PENDING_REVIEW",
+      "deployed": false,
+      "original_evidence_unchanged": true
+    }
+  ]
+}

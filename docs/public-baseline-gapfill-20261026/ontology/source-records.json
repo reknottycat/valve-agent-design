@@ -1,0 +1,957 @@
+{
+  "repository": "reknottycat/standards-kb",
+  "commit": "2937b5901b26d02456b95545ab2c1a059676e82a",
+  "retrieved_on": "2026-10-26",
+  "note": "Original record objects retained. Hash uses sorted compact UTF-8 JSON; not original file byte SHA256. Git blob IDs are connector-returned at explicit commit.",
+  "records": [
+    {
+      "path": "kb/ontology/mappings/formulas.json",
+      "git_blob": "3f645cc1af80dda991fe82061aadd8f588bede3f",
+      "id": "F-SEAL-002",
+      "canonical_record_sha256": "034eddbb05025f586349e1605079c1ef68ab67708f919fb6d293bbaf2018b3be",
+      "record": {
+        "result_quantity": "Q:SEAL:CONTACT_PRESSURE",
+        "variables": {
+          "q_contact": "Q:SEAL:CONTACT_PRESSURE",
+          "N_seat": "Q:SEAL:NORMAL_CONTACT_FORCE",
+          "A_line": "Q:SEAL:CONTACT_LINE_AREA",
+          "D_seat": "Q:SEAL:SEAL_DIAMETER",
+          "w_seat": "Q:SEAL:CONTACT_LINE_WIDTH"
+        },
+        "uses_parameters": []
+      }
+    },
+    {
+      "path": "kb/ontology/mappings/formulas.json",
+      "git_blob": "3f645cc1af80dda991fe82061aadd8f588bede3f",
+      "id": "F-STR-002",
+      "canonical_record_sha256": "8e25b1b154b4029537d29e23715d034f7d1217ca405e9cd49e20cc259782e2e2",
+      "record": {
+        "result_quantity": "Q:STRUCT:INNER_HOOP_STRESS",
+        "variables": {
+          "sigma_theta_inner": "Q:STRUCT:INNER_HOOP_STRESS",
+          "p": "Q:STRUCT:INTERNAL_PRESSURE",
+          "a": "Q:STRUCT:INNER_RADIUS",
+          "b": "Q:STRUCT:OUTER_RADIUS"
+        },
+        "uses_parameters": []
+      }
+    },
+    {
+      "path": "kb/ontology/mappings/formulas.json",
+      "git_blob": "3f645cc1af80dda991fe82061aadd8f588bede3f",
+      "id": "F-FLW-001",
+      "canonical_record_sha256": "50608fca261e9eda1c9a8a03396e194263fb4e2193292d33831e739753eec60b",
+      "record": {
+        "result_quantity": "Q:FLOW:FLOW_COEFFICIENT_KV",
+        "variables": {
+          "Kv": "Q:FLOW:FLOW_COEFFICIENT_KV",
+          "A": "Q:FLOW:FLOW_AREA",
+          "zeta": "Q:FLOW:RESISTANCE_COEFF",
+          "rho": "Q:FLOW:DENSITY"
+        },
+        "uses_parameters": []
+      }
+    },
+    {
+      "path": "kb/ontology/mappings/formulas.json",
+      "git_blob": "3f645cc1af80dda991fe82061aadd8f588bede3f",
+      "id": "F-FLW-002",
+      "canonical_record_sha256": "6c4eddb438e15b50206d20adaab120abc4c06074f1e0384ff97994015df95d62",
+      "record": {
+        "result_quantity": "Q:FLOW:FLOW_COEFFICIENT_KV",
+        "variables": {
+          "Kv": "Q:FLOW:FLOW_COEFFICIENT_KV",
+          "Cv_US": "Q:FLOW:FLOW_COEFFICIENT_CV"
+        },
+        "uses_parameters": [],
+        "note": "Kv 与 Cv 是两个不同的物理量（单位制不同），换算关系本身是本式的结果"
+      }
+    },
+    {
+      "path": "kb/ontology/mappings/formulas.json",
+      "git_blob": "3f645cc1af80dda991fe82061aadd8f588bede3f",
+      "id": "F-DRV-001",
+      "canonical_record_sha256": "6655aba073f9474b2c0b08c6e3d8aed1bc23fc90a8f3eb9c5a441c22e7cb803d",
+      "record": {
+        "result_quantity": "Q:DRIVE:RAISING_TORQUE",
+        "variables": {
+          "T_raise": "Q:DRIVE:RAISING_TORQUE",
+          "F": "Q:DRIVE:AXIAL_LOAD",
+          "d": "Q:DRIVE:THREAD_MAJOR_DIAMETER",
+          "mu_prime": "Q:DRIVE:EQUIV_FRICTION_COEFF",
+          "lambda": "Q:DRIVE:LEAD_ANGLE",
+          "pitch": "Q:DRIVE:PITCH"
+        },
+        "uses_parameters": [],
+        "note": "局部符号 'd' 是螺纹外径，与 F-STR-003 的 'd'（接管直径）不是同一个量"
+      }
+    },
+    {
+      "path": "kb/ontology/mappings/formulas.json",
+      "git_blob": "3f645cc1af80dda991fe82061aadd8f588bede3f",
+      "id": "F-DRV-002",
+      "canonical_record_sha256": "76c833c595e9773622f5baaa6a93d2d6bfaaf6a00716797d2c1a0ba39525e918",
+      "record": {
+        "result_quantity": "Q:DRIVE:LEVER_RATIO",
+        "variables": {
+          "F_hand": "Q:DRIVE:HAND_FORCE",
+          "T_drive": "Q:DRIVE:DRIVE_TORQUE",
+          "L_arm": "Q:DRIVE:LEVER_ARM",
+          "lever_ratio": "Q:DRIVE:LEVER_RATIO"
+        },
+        "uses_parameters": []
+      }
+    },
+    {
+      "path": "kb/formulas/seed_core.json",
+      "git_blob": "cf64498bec7e5cc413bf72bdfafb8370129ba77c",
+      "id": "F-STR-002",
+      "canonical_record_sha256": "65189ae0ff15f10a6cb95384a000c4926a7991b3adc3ab03abe9c83568d1a8f4",
+      "record": {
+        "id": "F-STR-002",
+        "title_zh": "厚壁圆筒应力（Lame 方程）",
+        "title_en": "Thick-Walled Cylinder Stress (Lamé)",
+        "aliases": [
+          "Lame方程",
+          "厚壁筒",
+          "Lamé",
+          "内壁应力",
+          "外壁应力"
+        ],
+        "expression": {
+          "canonical": "sigma_theta_inner = p * (b^2 + a^2) / (b^2 - a^2)",
+          "display": "σ_θ,i = p·(b²+a²)/(b²−a²)",
+          "latex": "\\sigma_{\\theta,i} = p \\frac{b^2 + a^2}{b^2 - a^2}",
+          "rearranged_forms": [
+            "sigma_theta_inner = p * (1 + a^2 / (b^2 - a^2))",
+            "sigma_r_inner = 0"
+          ],
+          "solved_for": "sigma_theta_inner"
+        },
+        "variables": [
+          {
+            "symbol": "sigma_theta_inner",
+            "name_zh": "内壁环向应力",
+            "name_en": "inner wall hoop stress",
+            "unit": "MPa",
+            "source_of_value": "DERIVED"
+          },
+          {
+            "symbol": "p",
+            "name_zh": "内压",
+            "name_en": "internal pressure",
+            "unit": "MPa",
+            "source_of_value": "DRAWING 或 STANDARD"
+          },
+          {
+            "symbol": "a",
+            "name_zh": "内半径",
+            "name_en": "inner radius",
+            "unit": "mm",
+            "source_of_value": "DRAWING"
+          },
+          {
+            "symbol": "b",
+            "name_zh": "外半径",
+            "name_en": "outer radius",
+            "unit": "mm",
+            "source_of_value": "DERIVED = a + t"
+          }
+        ],
+        "domain": "STRUCT",
+        "tags": [
+          "厚壁",
+          "Lame",
+          "承压",
+          "弹性"
+        ],
+        "source": {
+          "standard_id": "ASME BPVC Section VIII-1 (UG-27(b))",
+          "clause": "UG-27(b) 厚壁圆筒应力",
+          "body_status": "PAYWALL",
+          "evidence_grade": "E1",
+          "snippet": "",
+          "locator": "",
+          "extraction_note": "本项目 FEA 验证脚本已用它作基准解：FE 2.8957 MPa vs Lame 2.827 MPa，偏差 2.43%。该对照属第二数值方法的交叉核对，是「数值自洽」的强化；按项目 E0–E3 口径（E2 需可比物理数据），不构成 E2，故本条仍为 E1。BPVC Section VIII 正文本机不可得，body_status 记 PAYWALL。",
+          "cross_refs": [
+            "F-STR-001",
+            "F-STR-003"
+          ]
+        },
+        "applicability": {
+          "valid_when": [
+            "t/D >= 0.1（薄膜假设不成立时）",
+            "材料在弹性范围内（应力未超过比例极限）",
+            "内压作用、忽略端部封头影响"
+          ],
+          "not_valid_when": [
+            "t/D < 0.1（此时薄膜公式更准且更安全）",
+            "塑性变形 / 有明显应变硬化",
+            "温度梯度显著导致附加热应力"
+          ],
+          "range_limits": [
+            "最大应力出现在内壁；外表面环向应力为 p·a²/b²"
+          ],
+          "conservatism": "弹性解；进入塑性后实际承载能力高于此值，但变形增大。",
+          "must_pair_with": []
+        },
+        "usage": {
+          "where": [
+            "厚壁阀体 / 接管 / 阀杆套管承压校核",
+            "FEA 解析解对照（本项目已用作 CalculiX 基准）",
+            "决定是否需要按厚壁公式重算壁厚"
+          ],
+          "how": "取内半径 a = D/2、外半径 b = a + t、代入得内壁环向应力（最大值）。该应力与许用应力比较得占用率。",
+          "step_order": [
+            "1. a = D/2, b = a + t",
+            "2. σ_θ,i = p(b²+a²)/(b²−a²)",
+            "3. 与 [σ] 比较"
+          ],
+          "output_used_by": [
+            "F-MAT-001"
+          ],
+          "sample": {
+            "inputs": {
+              "p": 1.0,
+              "a": 100.0,
+              "b": 112.0
+            },
+            "result": "σ_θ,i = 1.1299 MPa",
+            "source_of_inputs": "基准算例（用于 FEA 对照）"
+          },
+          "pitfalls": [
+            "把内壁应力当成平均应力（最大应力在内壁）",
+            "在薄壁条件仍用厚壁公式（结果偏保守但无必要）"
+          ]
+        },
+        "evidence": {
+          "grade": "E1",
+          "status": "UNVERIFIED_CLAUSE",
+          "verified_on": "2026-10-22",
+          "verified_by": "standards_kb 种子语料",
+          "note": "数值已由 CalculiX 厚壁圆筒基准算例对照（偏差 2.43%，属第二数值方法的交叉核对，按项目口径不构成 E2），但 BPVC Section VIII 正文本机不可得、条款号仍待核，故 status 保持 UNVERIFIED_CLAUSE。"
+        },
+        "project_usage": [
+          {
+            "task": "T24",
+            "status": "用作 FEA 解析基准",
+            "note": "FE 2.8957 MPa vs Lame 2.827 MPa，偏差 2.43%"
+          }
+        ],
+        "related": [
+          "F-STR-001",
+          "F-MAT-001"
+        ]
+      }
+    },
+    {
+      "path": "kb/formulas/seed_core.json",
+      "git_blob": "cf64498bec7e5cc413bf72bdfafb8370129ba77c",
+      "id": "F-FLW-001",
+      "canonical_record_sha256": "d8b4db6ea20fc871c828d7fd50233d0c77797a66ed94c1a47e6fe9d88e7f9976",
+      "record": {
+        "id": "F-FLW-001",
+        "title_zh": "由阻力系数反推流量系数 Kv",
+        "title_en": "Flow Coefficient from Resistance Coefficient",
+        "aliases": [
+          "Kv",
+          "流量系数",
+          "阻力系数",
+          "zeta",
+          "Кз",
+          "Cv"
+        ],
+        "expression": {
+          "canonical": "Kv = A * 3600 * sqrt(2 * 1e5 / (zeta * rho)) / 1000",
+          "display": "Kv = A·3600·√(2×10⁵/(ζ·ρ)) / 1000",
+          "latex": "K_v = \\frac{A \\cdot 3600 \\sqrt{2\\times10^5/(\\zeta \\rho)}}{1000}",
+          "rearranged_forms": [
+            "zeta = 2 * 1e5 / (rho * (Kv / (A * 3600 * 1000))^2)"
+          ],
+          "solved_for": "Kv"
+        },
+        "variables": [
+          {
+            "symbol": "Kv",
+            "name_zh": "流量系数（公制）",
+            "name_en": "flow coefficient (metric)",
+            "unit": "m^3/h",
+            "source_of_value": "DERIVED"
+          },
+          {
+            "symbol": "A",
+            "name_zh": "通流截面积",
+            "name_en": "flow area",
+            "unit": "m^2",
+            "source_of_value": "DERIVED = π/4·D²"
+          },
+          {
+            "symbol": "zeta",
+            "name_zh": "阻力系数",
+            "name_en": "resistance coefficient",
+            "unit": "dimensionless",
+            "source_of_value": "DRAWING 技术要求 或 STANDARD 试验值"
+          },
+          {
+            "symbol": "rho",
+            "name_zh": "介质密度",
+            "name_en": "fluid density",
+            "unit": "kg/m^3",
+            "source_of_value": "工况介质物性"
+          }
+        ],
+        "domain": "FLOW",
+        "tags": [
+          "Kv",
+          "Cv",
+          "阻力系数",
+          "流量",
+          "不可压缩"
+        ],
+        "source": {
+          "standard_id": "IEC 60534-2-1:2011",
+          "clause": "液体流量方程（不可压缩）",
+          "body_status": "PAYWALL",
+          "evidence_grade": "E1",
+          "snippet": "",
+          "locator": "",
+          "extraction_note": "IEC 60534-2-1 正文付费不可得。本式为通用不可压缩流体推导（Δp 消元后 Kv 只取决于 ζ 与 ρ），已在项目内复算。升级为 VERIFIED_CLAUSE 需先取得 IEC 正文。",
+          "cross_refs": [
+            "F-FLW-002"
+          ]
+        },
+        "applicability": {
+          "valid_when": [
+            "不可压缩液体（气体需按 IEC 60534-2-1 的可压缩分支，另有 F 因子）",
+            "阻力系数 ζ 的参考基准与取压截面已定义",
+            "单一流路、忽略局部速度分布畸变"
+          ],
+          "not_valid_when": [
+            "可压缩气体（需 F 因子与临界压降判定）",
+            "浆料 / 多相流",
+            "ζ 的取压截面未定义（实测与预测不可比）"
+          ],
+          "range_limits": [
+            "SG=1 与 rho=1000 kg/m³ 时的换算关系；Cv(US) = 1.156 × Kv"
+          ],
+          "conservatism": "本身不含保守余量；保守性取决于 ζ 取值。",
+          "must_pair_with": []
+        },
+        "usage": {
+          "where": [
+            "T08 水力阻力与流量能力估算",
+            "由图纸给定的 Кз 上限反推可用流量",
+            "选型阶段与同类阀门 Kv 横向比较"
+          ],
+          "how": "由公称通径算 A = π/4·D²（m²），代入 ζ 与 ρ。注意 Δp 在推导中被约掉，故 Kv 只随 ζ 与 ρ 变化 —— 这一点用于快速估算。",
+          "step_order": [
+            "1. A = π/4·D²（D 用 mm 时除以 1e6 换 m²）",
+            "2. Kv = A·3600·√(2×10⁵/(ζ·ρ))/1000",
+            "3. 需要时 Cv(US) = 1.156 × Kv"
+          ],
+          "output_used_by": [
+            "F-FLW-002"
+          ],
+          "sample": {
+            "inputs": {
+              "D_mm": 200.0,
+              "zeta": 6.0,
+              "rho": 1000.0
+            },
+            "result": "Kv = 653 m³/h（Cv = 755）",
+            "source_of_inputs": "D 与 ζ≤6 来自图纸 п.23 / 标题栏；ρ 为海水近似"
+          },
+          "pitfalls": [
+            "把公称通径当实际通流直径（阀座内径通常小于通径）",
+            "ζ 的基准未定义就报 Kv 数值（数值对定义不敏感，但验收口径无法冻结）"
+          ]
+        },
+        "evidence": {
+          "grade": "E1",
+          "status": "UNVERIFIED_CLAUSE",
+          "verified_on": "2026-10-22",
+          "verified_by": "standards_kb 种子语料（引自 runs/20261006/C0/T15 已复算结果）",
+          "note": "IEC 正文未取得（付费），公式为通用推导并已在项目内复算。口径缺口见 F-FLW-002。"
+        },
+        "project_usage": [
+          {
+            "task": "T08",
+            "status": "已用于 522-35.4179СБ 流量能力估算",
+            "note": "Kv=653 m³/h；两种 ζ 解释仅差约 8%，但验收口径仍无法冻结"
+          }
+        ],
+        "related": [
+          "F-FLW-002"
+        ]
+      }
+    },
+    {
+      "path": "kb/formulas/seed_core.json",
+      "git_blob": "cf64498bec7e5cc413bf72bdfafb8370129ba77c",
+      "id": "F-DRV-001",
+      "canonical_record_sha256": "6a7ca48b923a8ea2a5f94e11cd246de463459897c5ad890b0c48f03e5cbd95cc",
+      "record": {
+        "id": "F-DRV-001",
+        "title_zh": "梯形螺纹启闭力矩",
+        "title_en": "Trapezoidal Screw Drive Torque",
+        "aliases": [
+          "螺纹力矩",
+          "阀杆力矩",
+          "Tr36x6",
+          "导程角",
+          "摩擦系数 mu",
+          "梯形螺纹",
+          "启闭力矩"
+        ],
+        "expression": {
+          "canonical": "T_raise = F * d / 2 * (mu_prime + tan(lambda)) / (1 - mu_prime * tan(lambda))",
+          "display": "T升 = F·d/2 · (μ′ + tanλ)/(1 − μ′·tanλ)",
+          "latex": "T_{raise} = F\\frac{d}{2}\\frac{\\mu' + \\tan\\lambda}{1 - \\mu'\\tan\\lambda}",
+          "rearranged_forms": [
+            "T_lower = F * d / 2 * (mu_prime - tan(lambda)) / (1 + mu_prime * tan(lambda))",
+            "mu_prime = mu / cos(30)",
+            "lambda = atan(pitch / (pi * d_mean))"
+          ],
+          "solved_for": "T_raise"
+        },
+        "variables": [
+          {
+            "symbol": "T_raise",
+            "name_zh": "旋紧（关闭）力矩",
+            "name_en": "closing torque",
+            "unit": "N*m",
+            "source_of_value": "DERIVED"
+          },
+          {
+            "symbol": "F",
+            "name_zh": "轴向载荷",
+            "name_en": "axial load",
+            "unit": "N",
+            "source_of_value": "DERIVED = A·Δp"
+          },
+          {
+            "symbol": "d",
+            "name_zh": "螺纹外径",
+            "name_en": "thread major diameter",
+            "unit": "mm",
+            "source_of_value": "DRAWING 标注（如 Tr36×6）"
+          },
+          {
+            "symbol": "mu_prime",
+            "name_zh": "当量摩擦系数",
+            "name_en": "equivalent friction coefficient",
+            "unit": "dimensionless",
+            "source_of_value": "DERIVED = μ/cos30°，μ 取自摩擦副材料对"
+          },
+          {
+            "symbol": "lambda",
+            "name_zh": "导程角",
+            "name_en": "helix angle",
+            "unit": "deg",
+            "source_of_value": "DERIVED = atan(导程/(π·中径))"
+          },
+          {
+            "symbol": "pitch",
+            "name_zh": "螺距",
+            "name_en": "pitch",
+            "unit": "mm",
+            "source_of_value": "DRAWING"
+          }
+        ],
+        "domain": "DRIVE",
+        "tags": [
+          "螺纹",
+          "力矩",
+          "启闭",
+          "摩擦",
+          "公制粗牙"
+        ],
+        "source": {
+          "standard_id": "通用机械设计（螺旋传动摩擦理论）",
+          "clause": "N/A — 通用机械原理，非标准条款",
+          "body_status": "DERIVED_NO_TEXT",
+          "evidence_grade": "E1",
+          "snippet": "",
+          "locator": "",
+          "extraction_note": "标准机械原理公式。摩擦系数 μ 是 ASSUMED，在本项目里是最大不确定项。",
+          "cross_refs": [
+            "F-SEAL-001",
+            "F-DRV-002"
+          ]
+        },
+        "applicability": {
+          "valid_when": [
+            "公制梯形/粗牙螺纹（牙型半角 30°）",
+            "自锁条件满足（导程角小于摩擦角）",
+            "准静态启闭，不计惯性"
+          ],
+          "not_valid_when": [
+            "梯形螺纹以外的牙型（方牙、半圆牙需改牙型半角）",
+            "润滑状态与取值不符（干摩擦 vs 润滑差异可达 ±30%）",
+            "强制开启（此时应取 T_lower 或按需要加大输入力）"
+          ],
+          "range_limits": [
+            "μ 每 ±0.05，力矩约 ∓25%（本项目实测敏感性）"
+          ],
+          "conservatism": "偏保守（真实力矩通常略低于此式，因存在助力与摩擦波动）",
+          "must_pair_with": []
+        },
+        "usage": {
+          "where": [
+            "T17 阀杆启闭力矩计算",
+            "手轮/扳手操作力估算",
+            "驱动选型（手轮、电动执行机构输入力矩）"
+          ],
+          "how": "F 由关闭压差与面积得；d 取螺纹外径；导程角 λ = atan(pitch/(π·中径))；μ′ = μ/cos30°；代入得旋紧力矩，除以杠杆臂得操作力。",
+          "step_order": [
+            "1. F = A · Δp",
+            "2. d_mean = d − 0.5·pitch（保守近似）",
+            "3. λ = atan(pitch/(π·d_mean))",
+            "4. μ′ = μ/cos30°",
+            "5. T_raise = F·d/2·(μ′+tanλ)/(1−μ′tanλ)",
+            "6. 手轮力 = T_raise / 杠杆臂长"
+          ],
+          "output_used_by": [
+            "F-DRV-002"
+          ],
+          "sample": {
+            "inputs": {
+              "F_N": 18485.0,
+              "d_mm": 36.0,
+              "pitch_mm": 6.0,
+              "mu": 0.15
+            },
+            "result": "λ = 3.31°，T_close = 78 N·m，手轮力 = 52.8 kgf（臂比 8.3:1）",
+            "source_of_inputs": "d/pitch 来自图纸（Tr36×6）；μ=0.15 为 ASSUMED"
+          },
+          "pitfalls": [
+            "把 п.20 的 45 kgf 辅助扳手限值与手轮操作力直接比较（两者不是同一个量）",
+            "用图纸给的螺纹规格但算错中径",
+            "忽略摩擦系数是材料相关且随润滑状态变化"
+          ]
+        },
+        "evidence": {
+          "grade": "E1",
+          "status": "UNVERIFIED_CLAUSE",
+          "verified_on": "2026-10-22",
+          "verified_by": "standards_kb 种子语料（引自 runs/20261006/C0/T15）",
+          "note": "非标准条款，通用机械原理。数值在项目内复算自洽；μ 为假设值，是本项最大不确定源。"
+        },
+        "project_usage": [
+          {
+            "task": "T17",
+            "status": "已用于 522-35.4179СБ 启闭力矩计算",
+            "note": "得 78 N·m；μ 每 ±0.05 敏感度约 ∓25%"
+          }
+        ],
+        "related": [
+          "F-DRV-002",
+          "F-SEAL-001"
+        ]
+      }
+    },
+    {
+      "path": "kb/formulas/seed_engineering.json",
+      "git_blob": "8f8c051a7508ede7e3c340930382f14cd1ed3241",
+      "id": "F-SEAL-002",
+      "canonical_record_sha256": "067cc2a2a329ee5b2f14aea00f652cf308fa59972f17095274c4723a9a678f43",
+      "record": {
+        "id": "F-SEAL-002",
+        "title_zh": "密封接触压强",
+        "title_en": "Seal Contact Pressure",
+        "aliases": [
+          "接触压强",
+          "contact pressure",
+          "座面压强",
+          "密封线宽",
+          "线接触"
+        ],
+        "expression": {
+          "canonical": "q_contact = N_seat / A_line",
+          "display": "q = N / A_line",
+          "latex": "q = \\frac{N}{A_{line}}",
+          "rearranged_forms": [
+            "A_line = pi * D_seat * w_seal",
+            "N_seat = q_contact * pi * D_seat * w_seal"
+          ],
+          "solved_for": "q_contact"
+        },
+        "variables": [
+          {
+            "symbol": "q_contact",
+            "name_zh": "接触压强",
+            "name_en": "contact pressure",
+            "unit": "MPa",
+            "source_of_value": "DERIVED"
+          },
+          {
+            "symbol": "N_seat",
+            "name_zh": "座面法向力",
+            "name_en": "seat normal force",
+            "unit": "N",
+            "source_of_value": "DERIVED 由 F-SEAL-001"
+          },
+          {
+            "symbol": "A_line",
+            "name_zh": "密封接触线面积",
+            "name_en": "seal contact line area",
+            "unit": "mm^2",
+            "source_of_value": "DERIVED = π·D_seat·w_seal"
+          },
+          {
+            "symbol": "D_seat",
+            "name_zh": "阀座密封直径",
+            "name_en": "seat sealing diameter",
+            "unit": "mm",
+            "source_of_value": "DRAWING 或 DERIVED"
+          },
+          {
+            "symbol": "w_seat",
+            "name_zh": "密封接触线宽",
+            "name_en": "seal contact width",
+            "unit": "mm",
+            "source_of_value": "DERIVED 设计变量"
+          }
+        ],
+        "domain": "SEAL",
+        "tags": [
+          "密封",
+          "接触压强",
+          "金属密封",
+          "线宽"
+        ],
+        "source": {
+          "standard_id": "ISO 5208:2015 (密封等级) / 通用密封力学",
+          "clause": "ISO 5208 泄漏等级（需正文）；压强计算为通用力学",
+          "body_status": "PAYWALL",
+          "evidence_grade": "E1",
+          "snippet": "",
+          "locator": "",
+          "extraction_note": "接触压强是力学量，标准只给等级判据不给计算式。ISO 5208 正文付费，本条只入计算式部分。",
+          "cross_refs": [
+            "F-SEAL-001"
+          ]
+        },
+        "applicability": {
+          "valid_when": [
+            "线接触（金属对金属线密封）",
+            "接触线宽 w_seal 已知或有依据的取值",
+            "接触应力低于材料屈服强度（弹性接触近似）"
+          ],
+          "not_valid_when": [
+            "面接触（垫片压缩率模型）",
+            "接触压强超过材料屈服（需接触力学/弹塑性分析）",
+            "软密封（弹性体变形主导，模型不同）"
+          ],
+          "range_limits": [
+            "青铜对青铜金属密封典型量级 10~30 MPa"
+          ],
+          "conservatism": "不含余量；w_seat 的假设直接决定结果。",
+          "must_pair_with": [
+            "F-SEAL-001"
+          ]
+        },
+        "usage": {
+          "where": [
+            "T16 金属密封可关闭性判断",
+            "阀座线宽设计（过宽则压强不足，过窄则接触应力过高）",
+            "与材料许用值比较判断座面是否被压溃"
+          ],
+          "how": "A_line = π·D_seat·w_seal；q = N/A_line。q 与 [σ] 比较判断座圈是否过载；q 低于材料可关闭门限则金属密封关不住。",
+          "step_order": [
+            "1. 由 F-SEAL-001 得 N",
+            "2. A_line = π·D_seat·w_seat",
+            "3. q = N / A_line",
+            "4. q 与 [σ] 及可关闭门限比较"
+          ],
+          "output_used_by": [],
+          "sample": {
+            "inputs": {
+              "N_seat_N": 26141.0,
+              "D_seat_mm": 200.0,
+              "w_seal_mm": 4.0
+            },
+            "result": "A_line = 2513.3 mm²，q = 10.4 MPa",
+            "source_of_inputs": "D 取公称通径；w=4mm 为 ASSUMED"
+          },
+          "pitfalls": [
+            "把『金属密封可关闭』直接等同于『泄漏等级达标』",
+            "w_seat 随 φ 联动却当成独立量",
+            "忽略座圈材料的接触屈服"
+          ]
+        },
+        "evidence": {
+          "grade": "E1",
+          "status": "UNVERIFIED_CLAUSE",
+          "verified_on": "2026-10-22",
+          "verified_by": "standards_kb 种子语料（引自 runs/20261006/C0/T15）",
+          "note": "计算式为通用力学并已复算；泄漏等级部分因 ISO 5208 正文未取得，明确不给结论。"
+        },
+        "project_usage": [
+          {
+            "task": "T16",
+            "status": "已用于 522-35.4179СБ",
+            "note": "10.4 MPa，判为青铜对青铜金属密封可行量级"
+          }
+        ],
+        "related": [
+          "F-SEAL-001",
+          "F-MAT-001"
+        ]
+      }
+    },
+    {
+      "path": "kb/formulas/seed_engineering.json",
+      "git_blob": "8f8c051a7508ede7e3c340930382f14cd1ed3241",
+      "id": "F-FLW-002",
+      "canonical_record_sha256": "af0851d03ac37805193f278768d78d76f80908b8b6e5924dc31519657aec7905",
+      "record": {
+        "id": "F-FLW-002",
+        "title_zh": "流量系数单位换算 Kv ↔ Cv",
+        "title_en": "Flow Coefficient Unit Conversion Kv to Cv",
+        "aliases": [
+          "Cv",
+          "Kv换算",
+          "US单位",
+          "流量系数换算"
+        ],
+        "expression": {
+          "canonical": "Cv_US = 1.156 * Kv",
+          "display": "Cv(US) = 1.156 · Kv",
+          "latex": "C_v = 1.156\\, K_v",
+          "rearranged_forms": [
+            "Kv = Cv_US / 1.156"
+          ],
+          "solved_for": "Cv_US"
+        },
+        "variables": [
+          {
+            "symbol": "Cv_US",
+            "name_zh": "美制流量系数",
+            "name_en": "US flow coefficient",
+            "unit": "US gpm",
+            "source_of_value": "DERIVED"
+          },
+          {
+            "symbol": "Kv",
+            "name_zh": "公制流量系数",
+            "name_en": "metric flow coefficient",
+            "unit": "m^3/h",
+            "source_of_value": "DERIVED 由 F-FLW-001"
+          }
+        ],
+        "domain": "FLOW",
+        "tags": [
+          "Kv",
+          "Cv",
+          "换算",
+          "单位"
+        ],
+        "source": {
+          "standard_id": "IEC 60534-2-1:2011",
+          "clause": "流量系数定义与单位换算",
+          "body_status": "PAYWALL",
+          "evidence_grade": "E1",
+          "snippet": "",
+          "locator": "",
+          "extraction_note": "固定换算关系，属定义性常数。正文未取得故保持 UNVERIFIED_CLAUSE。",
+          "cross_refs": [
+            "F-FLW-001"
+          ]
+        },
+        "applicability": {
+          "valid_when": [
+            "两个系数均按各自标准的标准状态定义"
+          ],
+          "not_valid_when": [
+            "任一侧系数由非标准口径测得（如不同取压截面）"
+          ],
+          "range_limits": [],
+          "conservatism": "不适用（是定义关系）。",
+          "must_pair_with": [
+            "F-FLW-001"
+          ]
+        },
+        "usage": {
+          "where": [
+            "与国际厂商样本/数据手册横向比较",
+            "进口阀门规格书换算"
+          ],
+          "how": "Kv × 1.156 = Cv(US)。注意换算的前提是两边口径一致，否则数值可比性不成立。",
+          "step_order": [
+            "1. Kv × 1.156",
+            "2. 记录口径来源"
+          ],
+          "output_used_by": [],
+          "sample": {
+            "inputs": {
+              "Kv": 653.0
+            },
+            "result": "Cv = 755",
+            "source_of_inputs": "Kv 来自 F-FLW-001"
+          },
+          "pitfalls": [
+            "用换算掩盖口径差异（数值对了但不可比）"
+          ]
+        },
+        "evidence": {
+          "grade": "E1",
+          "status": "UNVERIFIED_CLAUSE",
+          "verified_on": "2026-10-22",
+          "verified_by": "standards_kb 种子语料",
+          "note": "定义性换算，正文未取得。"
+        },
+        "project_usage": [
+          {
+            "task": "T08",
+            "status": "已用于 522-35.4179СБ",
+            "note": "Kv 653 → Cv 755，供国际样本比较"
+          }
+        ],
+        "related": [
+          "F-FLW-001"
+        ]
+      }
+    },
+    {
+      "path": "kb/formulas/seed_engineering.json",
+      "git_blob": "8f8c051a7508ede7e3c340930382f14cd1ed3241",
+      "id": "F-DRV-002",
+      "canonical_record_sha256": "0023345afe45d39ee4c03a4d603bcd803b2892d6dda1fdaf7c8a489a7cc0f5be",
+      "record": {
+        "id": "F-DRV-002",
+        "title_zh": "杠杆比与操作力换算",
+        "title_en": "Lever Ratio and Operator Force",
+        "aliases": [
+          "杠杆比",
+          "手轮力",
+          "操作力",
+          "lever ratio",
+          "力矩换算"
+        ],
+        "expression": {
+          "canonical": "F_hand = T_drive / L_arm",
+          "display": "F手 = T / L臂",
+          "latex": "F_{hand} = \\frac{T}{L_{arm}}",
+          "rearranged_forms": [
+            "lever_ratio = L_arm / (d / 2)",
+            "T_hand = F_hand * L_arm"
+          ],
+          "solved_for": "F_hand"
+        },
+        "variables": [
+          {
+            "symbol": "F_hand",
+            "name_zh": "手轮操作力",
+            "name_en": "handwheel operating force",
+            "unit": "N",
+            "source_of_value": "DERIVED"
+          },
+          {
+            "symbol": "T_drive",
+            "name_zh": "驱动轴力矩",
+            "name_en": "drive shaft torque",
+            "unit": "N*m",
+            "source_of_value": "DERIVED 由 F-DRV-001"
+          },
+          {
+            "symbol": "L_arm",
+            "name_zh": "手轮到阀杆轴的有效力臂",
+            "name_en": "effective lever arm",
+            "unit": "mm",
+            "source_of_value": "DRAWING 或 ASSUMED"
+          },
+          {
+            "symbol": "lever_ratio",
+            "name_zh": "杠杆比",
+            "name_en": "lever ratio",
+            "unit": "dimensionless",
+            "source_of_value": "DERIVED"
+          }
+        ],
+        "domain": "DRIVE",
+        "tags": [
+          "手轮",
+          "杠杆",
+          "操作力",
+          "人机工程"
+        ],
+        "source": {
+          "standard_id": "通用机械（杠杆原理）",
+          "clause": "N/A — 通用力学，非标准条款",
+          "body_status": "DERIVED_NO_TEXT",
+          "evidence_grade": "E1",
+          "snippet": "",
+          "locator": "",
+          "extraction_note": "杠杆原理；手轮操作力的上限判据来自驱动选型或标准，非本式本身。",
+          "cross_refs": [
+            "F-DRV-001"
+          ]
+        },
+        "applicability": {
+          "valid_when": [
+            "力臂为有效力臂（考虑受力点实际位置）",
+            "忽略摩擦损失（效率另计）",
+            "静态力矩平衡"
+          ],
+          "not_valid_when": [
+            "自锁状态下的开启操作",
+            "有显著摩擦或效率损失未计入"
+          ],
+          "range_limits": [
+            "人力手轮操作力通常在几十 kgf 量级；超过需评估人机工程"
+          ],
+          "conservatism": "不含传动效率损失，偏不安全；宜另乘效率系数。",
+          "must_pair_with": [
+            "F-DRV-001"
+          ]
+        },
+        "usage": {
+          "where": [
+            "T17 手轮操作力估算",
+            "驱动方案选择（手轮/电动/液动）",
+            "人机工程校核"
+          ],
+          "how": "F_hand = T_drive / L_arm（注意单位：T 用 N·m，L 用 mm 时结果为 kN，换算注意）。得到力后与驱动选型给出的允许值比较。",
+          "step_order": [
+            "1. 由 F-DRV-001 得 T_drive",
+            "2. L_arm = 手轮到阀杆轴距离",
+            "3. F_hand = T_drive / L_arm"
+          ],
+          "output_used_by": [],
+          "sample": {
+            "inputs": {
+              "T_Nm": 78.0,
+              "L_arm_mm": 150.0
+            },
+            "result": "F_hand = 520 N = 53.0 kgf，杠杆比 8.3:1",
+            "source_of_inputs": "T 来自 F-DRV-001；L_arm=150mm 为 ASSUMED"
+          },
+          "pitfalls": [
+            "把 п.20 的辅助扳手 45 kgf 限值与手轮操作力直接比较（不是同一个量）",
+            "力臂单位混用（N·m 与 mm）导致 1000 倍误差",
+            "不乘传动效率"
+          ]
+        },
+        "evidence": {
+          "grade": "E1",
+          "status": "UNVERIFIED_CLAUSE",
+          "verified_on": "2026-10-22",
+          "verified_by": "standards_kb 种子语料（引自 runs/20261006/C0/T15）",
+          "note": "通用力学；力臂为 ASSUMED 假设值。"
+        },
+        "project_usage": [
+          {
+            "task": "T17",
+            "status": "已用于 522-35.4179СБ",
+            "note": "得 52.8 kgf，判为人力手动的常见量级，未构成矛盾"
+          }
+        ],
+        "related": [
+          "F-DRV-001"
+        ]
+      }
+    }
+  ]
+}

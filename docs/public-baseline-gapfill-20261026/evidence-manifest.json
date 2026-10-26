@@ -1,0 +1,117 @@
+{
+  "schema": "valve.gapfill.evidence-manifest/1.0",
+  "created_utc": "2026-10-26T06:27:40Z",
+  "status": "FROZEN_CANDIDATE_PACKAGE",
+  "engineering_release": false,
+  "manufacturing_authorized": false,
+  "solver_executed": false,
+  "original_R1_modified": false,
+  "selected_public_candidate": null,
+  "source_scope": "Selected facts, original paraphrases, source metadata and isolated candidate arithmetic; no source PDF/CAD/paid standard body.",
+  "verification_scope": "17 package/educational checks and 8 ontology checks passed; these are software/record consistency and bounded arithmetic checks, not physical validation or standard approval.",
+  "classification_counts": {
+    "unresolved": 16,
+    "published-otherproduct": 19,
+    "confirmed-original": 11,
+    "derived-under-assumptions": 3
+  },
+  "file_count_excluding_manifest": 19,
+  "manifest_self_excluded": true,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4916,
+      "sha256": "4a12b18394f24ef2bd370dffcb5e721ffe32d15d87ef344cca0ef3cc246f24dc"
+    },
+    {
+      "path": "educational-kv-example.json",
+      "bytes": 1732,
+      "sha256": "d958dfd94bff4e8fd083081518b49807746eca5d8abc2cbcee6289a7123ad4c1"
+    },
+    {
+      "path": "engineering-input-matrix.json",
+      "bytes": 26041,
+      "sha256": "ae012feb3f5c57d9e9249fe7f225aaeba5b7b44eae2df8a8e93453be1b6dfbac"
+    },
+    {
+      "path": "engineering-input-matrix.md",
+      "bytes": 10664,
+      "sha256": "b338a16460ac95b4512348cbe39b5227bd43eb86e1017880230d4e9c8ab376b1"
+    },
+    {
+      "path": "gap-ledger.json",
+      "bytes": 7901,
+      "sha256": "50b81509bdaf4728dcea23c03e6db3997f97772456e6505efb8377cacfde1061"
+    },
+    {
+      "path": "gap-ledger.md",
+      "bytes": 4039,
+      "sha256": "7e064f9048fbb2729235713d8d8c57f12e905e8e628519d285b7b3e76038202a"
+    },
+    {
+      "path": "mature-backend-rebuild-plan.md",
+      "bytes": 4769,
+      "sha256": "1bca5f129fa37fa3e091ce4ab792e911fcebe330fed2b953a619587652cd29ab"
+    },
+    {
+      "path": "ontology/CANDIDATE-CORRECTIONS.md",
+      "bytes": 4213,
+      "sha256": "5f3a31bf3a7d2a25d78a5696ff713adef99609a69e081ff0342c9777a7f451db"
+    },
+    {
+      "path": "ontology/REUSE-MAP.md",
+      "bytes": 6943,
+      "sha256": "a343b0742c70aeeaffe5b1faf5312caa42abacdc65918b36abaaabf57ee0a713"
+    },
+    {
+      "path": "ontology/gap-ledger.json",
+      "bytes": 5219,
+      "sha256": "aadf1fd45ac61ae9594a5e1f1a204f046bd8057bcdefae34dd2c1a4885a47e17"
+    },
+    {
+      "path": "ontology/source-records.json",
+      "bytes": 34639,
+      "sha256": "a8176e7d7b5cad77bca6d4ce6f69fa077331a4c891b89c01399fa240c649cebf"
+    },
+    {
+      "path": "ontology/test-results.txt",
+      "bytes": 1216,
+      "sha256": "48f645a84533356cea250bbbbf359b098e6b20dcdb38f3b15e18426f42e3cdda"
+    },
+    {
+      "path": "ontology/test_candidate_consistency.py",
+      "bytes": 4318,
+      "sha256": "a2ad5b35ba9aae3afc239dc83833f4b2e0ea110c1c3ae6aa23fa26daaf64c72f"
+    },
+    {
+      "path": "parameter-constraints.md",
+      "bytes": 5426,
+      "sha256": "8446e6b8db075232a61a56247228e1cc0c3e8e3f9ea30f1aac7d869845737695"
+    },
+    {
+      "path": "public-reference-cards.md",
+      "bytes": 2109,
+      "sha256": "2e11221dac2f75c0ae7a1ba65d2f7dd63a498a63ec4010150ba9e72610bf5167"
+    },
+    {
+      "path": "source-register.json",
+      "bytes": 13020,
+      "sha256": "8bee8112a5c20c270484ec586a6ea72ad60237bb04dab9460849b649773eb856"
+    },
+    {
+      "path": "validation/test-results.txt",
+      "bytes": 1847,
+      "sha256": "d4d278989c60cdcd0533cd782e03748b95e091b0a431c9cdb7034c367a8ecc07"
+    },
+    {
+      "path": "validation/test_package.py",
+      "bytes": 2860,
+      "sha256": "fadc8b75d516879f5f2095c758298749858c16e1d051a8d384c9acdc87df532f"
+    },
+    {
+      "path": "validation/validate_package.py",
+      "bytes": 6868,
+      "sha256": "b134af376814e065a378d1f9ce35264828004db439f3b77f4cc4133ad61224a8"
+    }
+  ]
+}
