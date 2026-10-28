@@ -1,0 +1,27 @@
+{
+  "source_sha256": "a9aeb45996a388a3d894f69605205c70c25edd154adc6d3c71658329a730e787",
+  "source_solid_valid": true,
+  "source_face_count": 132,
+  "identified_face_1based": 80,
+  "face_bbox_mm": [
+    278.0,
+    -22.0,
+    332.0,
+    322.0,
+    22.0,
+    332.0
+  ],
+  "source_face_area_mm2": 502.65482457436735,
+  "candidate_bottom_area_mm2": 502.6548245743671,
+  "common_area_mm2": 502.65482457436735,
+  "source_minus_common_area_mm2": 0.0,
+  "candidate_minus_common_area_mm2": -2.2737367544323206e-13,
+  "candidate_solid_intersection_with_proxy_fluid_mm3": {
+    "new_sleeve_shoulder": 4799.096937623838,
+    "new_sleeve_wall": 0.0,
+    "packing_compressed_envelope": 0.0,
+    "follower": 0.0,
+    "stem_envelope": 0.0
+  },
+  "scope": "Exact face-to-candidate planar overlap and candidate solids against fluid only. This does not compare to source cover, stem solids or establish leakage, attachment, manufacturing or mesh-patch correspondence."
+}

@@ -1,0 +1,151 @@
+{
+  "schema": "p08.face80_readonly_check/v1",
+  "status": "PASS",
+  "input": {
+    "filename": "p08_origin.step",
+    "sha256": "a9aeb45996a388a3d894f69605205c70c25edd154adc6d3c71658329a730e787",
+    "scope": "seal-omitted proxy fluid domain, nominal open57; not a verified manufactured valve"
+  },
+  "environment": {
+    "cadquery": "2.7.0",
+    "ocp": "7.8.1.1",
+    "python": "3.12.14"
+  },
+  "tolerances": {
+    "coordinate_and_circumference_mm": 1e-05,
+    "area_mm2": 1e-05,
+    "normal_component": 1e-09,
+    "point_classifier_mm": 1e-07
+  },
+  "geometry": {
+    "import_face_index_1_based": 80,
+    "surface_type": "PLANE",
+    "center_mm": [
+      300.00000000000006,
+      -5.720152234811615e-15,
+      332.0
+    ],
+    "area_mm2": 502.65482457436735,
+    "normal": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "wire_count": 2,
+    "edges": [
+      {
+        "type": "CIRCLE",
+        "length_mm": 113.09733552923255,
+        "bbox_mm": [
+          282.0,
+          318.0,
+          -18.0,
+          18.0,
+          332.0,
+          332.0
+        ]
+      },
+      {
+        "type": "CIRCLE",
+        "length_mm": 138.23007675795088,
+        "bbox_mm": [
+          278.0,
+          322.0,
+          -22.0,
+          22.0,
+          332.0,
+          332.0
+        ]
+      }
+    ]
+  },
+  "samples": [
+    {
+      "radius_mm": 17.9,
+      "z_mm": 331.9,
+      "inside_fluid_solid": false,
+      "expected_inside": false,
+      "pass": true
+    },
+    {
+      "radius_mm": 17.9,
+      "z_mm": 332.1,
+      "inside_fluid_solid": false,
+      "expected_inside": false,
+      "pass": true
+    },
+    {
+      "radius_mm": 18.1,
+      "z_mm": 331.9,
+      "inside_fluid_solid": true,
+      "expected_inside": true,
+      "pass": true
+    },
+    {
+      "radius_mm": 18.1,
+      "z_mm": 332.1,
+      "inside_fluid_solid": false,
+      "expected_inside": false,
+      "pass": true
+    },
+    {
+      "radius_mm": 20.0,
+      "z_mm": 331.9,
+      "inside_fluid_solid": true,
+      "expected_inside": true,
+      "pass": true
+    },
+    {
+      "radius_mm": 20.0,
+      "z_mm": 332.1,
+      "inside_fluid_solid": false,
+      "expected_inside": false,
+      "pass": true
+    },
+    {
+      "radius_mm": 21.9,
+      "z_mm": 331.9,
+      "inside_fluid_solid": true,
+      "expected_inside": true,
+      "pass": true
+    },
+    {
+      "radius_mm": 21.9,
+      "z_mm": 332.1,
+      "inside_fluid_solid": false,
+      "expected_inside": false,
+      "pass": true
+    },
+    {
+      "radius_mm": 22.1,
+      "z_mm": 331.9,
+      "inside_fluid_solid": false,
+      "expected_inside": false,
+      "pass": true
+    },
+    {
+      "radius_mm": 22.1,
+      "z_mm": 332.1,
+      "inside_fluid_solid": false,
+      "expected_inside": false,
+      "pass": true
+    }
+  ],
+  "checks": {
+    "valid_solid": true,
+    "solid_count_1": true,
+    "face_count_132": true,
+    "matching_import_face_index_80": true,
+    "two_wires_two_circular_edges": true,
+    "inner_outer_circumferences": true,
+    "annular_area": true,
+    "outward_normal_plus_z": true,
+    "sampled_inside_outside": true
+  },
+  "limitations": [
+    "Point classifications sample one radial line, not an exhaustive topology proof.",
+    "Face index is local to this import; final mesh patch correspondence is not established.",
+    "Dimensions match the GA1 D36/D44 packing candidate but do not prove assembled physical sealing or leak-tightness.",
+    "Only the packing cap was examined; other omitted seal and assembly features remain open."
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "design_id": "P08-PACK-C02",
+  "state": "PROVISIONAL_NOT_MANUFACTURE_NOT_CFD_RELEASE",
+  "source_cover_file": "bonnet_GA1_derivative.step",
+  "source_cover_sha256": "80cd7e1cd6791a7aa0589f72275c048614261942c9b53c7b090b0aa071a04729",
+  "source_proxy_fluid_sha256": "a9aeb45996a388a3d894f69605205c70c25edd154adc6d3c71658329a730e787",
+  "new_shoulder_xyz": "center (300,0); z322\u2013332, r18.2\u201322 mm",
+  "original_cover_shoulder_overlap_mm3": 0.0,
+  "cover_volume_mm3_before": 4661470.046655449,
+  "shoulder_volume_mm3": 4799.0969376237745,
+  "fused_cover_volume_mm3": 4666269.143593077,
+  "fused_cover_valid": true,
+  "fused_cover_number_solids": 1,
+  "fused_cover_readback_valid": true,
+  "fused_cover_readback_number_solids": 1,
+  "proxy_fluid_removed_mm3": 4799.096937623836,
+  "proxy_fluid_before_mm3": 64142426.14375954,
+  "proxy_fluid_after_mm3": 64137627.07769583,
+  "fluid_volume_balance_mm3": -0.030873917043209076,
+  "cut_fluid_valid": true,
+  "cut_fluid_number_solids": 1,
+  "cut_fluid_readback_valid": true,
+  "cut_fluid_readback_number_solids": 1,
+  "pose": "GA1 A05 fully_open only",
+  "component_checks": {
+    "stem_GA1.step": {
+      "file_sha256": "5d3f18483dbf5bf2f92750e831edb2e720b557ea745be0cbc3f94b75e6de75f7",
+      "shoulder_overlap_mm3": 0.0,
+      "modified_cover_overlap_mm3": 0.0
+    },
+    "gland_follower.step": {
+      "file_sha256": "debb5e77bc74b05f9959d28e6df10791dd9fb084bb3565dae6044152b34cce3c",
+      "shoulder_overlap_mm3": 0.0,
+      "modified_cover_overlap_mm3": 0.0
+    },
+    "packing_ring_1.step": {
+      "file_sha256": "c2c30141efa2a9a24ef199a8307fb7206304c8cc50e7660d5e40c9862158fddf",
+      "shoulder_overlap_mm3": 0.0,
+      "modified_cover_overlap_mm3": 0.0
+    },
+    "packing_ring_2.step": {
+      "file_sha256": "30b894ebfa740bd97e9b5ff777855b4ef424d669b7f4f62383b796eddee683b4",
+      "shoulder_overlap_mm3": 0.0,
+      "modified_cover_overlap_mm3": 0.0
+    },
+    "packing_ring_3.step": {
+      "file_sha256": "5462f471f5758f13fdc8f88a64f2a7d2058a597816a3bd808fadfc4d3896ccb8",
+      "shoulder_overlap_mm3": 0.0,
+      "modified_cover_overlap_mm3": 0.0
+    },
+    "packing_ring_4.step": {
+      "file_sha256": "b38aab84463c4f669a923e8638bb705b8cb6e35dc3de1c92d0e1d5a468455b03",
+      "shoulder_overlap_mm3": 0.0,
+      "modified_cover_overlap_mm3": 0.0
+    },
+    "packing_ring_5.step": {
+      "file_sha256": "2c2ccedceef4ffac66d23cd2609e9e1390d6e43b2c3051f005ef8be8ab97507f",
+      "shoulder_overlap_mm3": 0.0,
+      "modified_cover_overlap_mm3": 0.0
+    }
+  },
+  "limitations": [
+    "GA1 bonnet differs from FDG1 cover; no proof of real physical configuration or exact cover-fluid mutual consistency.",
+    "No stress, fatigue, wall thickness, casting or manufacturing validation.",
+    "Packing is material envelope only; no contact, preload or leakage model.",
+    "D40 stem head cannot pass D36.4 bore: assembly sequence and insertion from below are unverified.",
+    "No face mapping, mesh or field generation. Rebuild and remap CFD case before use.",
+    "External environment and actual operating flow not known; no fabricated product performance."
+  ]
+}

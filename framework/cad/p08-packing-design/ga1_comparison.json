@@ -1,0 +1,121 @@
+{
+  "local_stem_proxy": {
+    "z_range_mm": [
+      322,
+      380
+    ],
+    "candidate_volume_mm3": 59036.8091462594,
+    "common_with_ga1_stem_mm3": 59036.80914626198,
+    "candidate_minus_stem_mm3": -2.5756889954209328e-09,
+    "method": "volume within finite local cylinder; no full-stem equivalence claimed"
+  },
+  "ga1_pose": "fully_open",
+  "source_scope": "GA1 A05 study geometry, not approved actual hardware",
+  "new_sleeve_is_unattached": true,
+  "results": {
+    "stem_GA1.step": {
+      "sha256": "5d3f18483dbf5bf2f92750e831edb2e720b557ea745be0cbc3f94b75e6de75f7",
+      "bbox_mm": [
+        280.0,
+        -20.0,
+        99.5,
+        320.0,
+        20.0,
+        666.0
+      ],
+      "intersection_with_proposed_sleeve_mm3": 0.0,
+      "is_valid": true
+    },
+    "bonnet_GA1_derivative.step": {
+      "sha256": "80cd7e1cd6791a7aa0589f72275c048614261942c9b53c7b090b0aa071a04729",
+      "bbox_mm": [
+        120.0,
+        -180.0,
+        212.0,
+        480.0,
+        180.0,
+        362.0
+      ],
+      "intersection_with_proposed_sleeve_mm3": 24127.431579569748,
+      "is_valid": true
+    },
+    "gland_follower.step": {
+      "sha256": "debb5e77bc74b05f9959d28e6df10791dd9fb084bb3565dae6044152b34cce3c",
+      "bbox_mm": [
+        236.0,
+        -30.0,
+        346.85,
+        364.0,
+        30.0,
+        378.85
+      ],
+      "intersection_with_proposed_sleeve_mm3": 0.0,
+      "is_valid": true
+    },
+    "packing_ring_1.step": {
+      "sha256": "c2c30141efa2a9a24ef199a8307fb7206304c8cc50e7660d5e40c9862158fddf",
+      "bbox_mm": [
+        278.0,
+        -22.0,
+        332.0,
+        322.0,
+        22.0,
+        334.97
+      ],
+      "intersection_with_proposed_sleeve_mm3": 0.0,
+      "is_valid": true
+    },
+    "packing_ring_2.step": {
+      "sha256": "30b894ebfa740bd97e9b5ff777855b4ef424d669b7f4f62383b796eddee683b4",
+      "bbox_mm": [
+        278.0,
+        -22.0,
+        334.97,
+        322.0,
+        22.0,
+        337.94
+      ],
+      "intersection_with_proposed_sleeve_mm3": 0.0,
+      "is_valid": true
+    },
+    "packing_ring_3.step": {
+      "sha256": "5462f471f5758f13fdc8f88a64f2a7d2058a597816a3bd808fadfc4d3896ccb8",
+      "bbox_mm": [
+        278.0,
+        -22.0,
+        337.94,
+        322.0,
+        22.0,
+        340.91
+      ],
+      "intersection_with_proposed_sleeve_mm3": 0.0,
+      "is_valid": true
+    },
+    "packing_ring_4.step": {
+      "sha256": "b38aab84463c4f669a923e8638bb705b8cb6e35dc3de1c92d0e1d5a468455b03",
+      "bbox_mm": [
+        278.0,
+        -22.0,
+        340.91,
+        322.0,
+        22.0,
+        343.88
+      ],
+      "intersection_with_proposed_sleeve_mm3": 0.0,
+      "is_valid": true
+    },
+    "packing_ring_5.step": {
+      "sha256": "2c2ccedceef4ffac66d23cd2609e9e1390d6e43b2c3051f005ef8be8ab97507f",
+      "bbox_mm": [
+        278.0,
+        -22.0,
+        343.88,
+        322.0,
+        22.0,
+        346.85
+      ],
+      "intersection_with_proposed_sleeve_mm3": 0.0,
+      "is_valid": true
+    }
+  }
+}
