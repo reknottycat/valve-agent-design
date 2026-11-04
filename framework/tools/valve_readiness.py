@@ -117,7 +117,7 @@ def _validate_meta(meta):
         raise ReadinessError('Manifest exceeds input resource limit')
     allowed = {'requested_action', 'domain_scope', 'execution_budget', 'milestone_complete',
                'new_objective', 'boundary_conditions_verified', 'pressure_role', 'mesh_stage',
-               'mesh_quality_pass', 'pressure_stability_pass', 'source_note', 'standards'}
+               'mesh_quality_pass', 'pressure_stability_pass', 'source_note', 'standards', 'formula_input_binding'}
     if set(meta) - allowed:
         raise ReadinessError('Unknown manifest fields: ' + str(sorted(set(meta) - allowed)))
     for name in ('requested_action', 'domain_scope', 'new_objective', 'pressure_role', 'mesh_stage', 'source_note'):
@@ -215,6 +215,16 @@ def audit(meta, case=None):
     result['schema'] = 'valve.readiness/v2'
     result['standards'] = _standards_checks(meta)
     result['requested_checks_pass'] = result['preflight_pass'] and not result['standards']['errors']
+    if 'formula_input_binding' in meta:
+        binding_path = Path(__file__).with_name('state21_flow_binding.py')
+        binding = ModuleType('_state21_flow_binding')
+        binding.__file__ = str(binding_path)
+        exec(compile(binding_path.read_bytes(), str(binding_path), 'exec', dont_inherit=True), binding.__dict__)
+        try:
+            result['formula_input_binding'] = binding.bind(meta['formula_input_binding'], result['standards'], _adapter, meta.get('standards', {}).get('root'))
+        except (OSError, UnicodeError, ValueError, RuntimeError, TypeError) as exc:
+            raise ReadinessError('Invalid flow binding: ' + str(exc)) from exc
+        result['requested_checks_pass'] = False  # Current profile always has unmet applicability.
     result['engineering_release'] = False
     result['engineering_acceptance'] = 'NOT_ASSESSED'
     result['notes'].extend([

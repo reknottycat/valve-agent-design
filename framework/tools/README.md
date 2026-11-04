@@ -131,7 +131,7 @@ Port source: `reknottycat/valve-agent-design` research commit
 - [Original unchanged 12-test file](https://github.com/reknottycat/valve-agent-design/blob/5dcc3b8302f566678259bcbeeb36a891a593eba6/framework/tests/test_valve_readiness.py), Git blob
   `049d819d123df93d23b9ce2047813ed7a7d81efd`.
 
-Target main baseline: `4259a86a9147829ed4aac2fb5a433e213f64501e`.
+Original readiness integration target baseline: `4259a86a9147829ed4aac2fb5a433e213f64501e`.
 The adapter is the existing reviewed current implementation, not a new substitute.
 Its external source is `reknottycat/standards-kb` commit
 `19d586bb53cb452325d815313a895a1dfafa868b`; production lock SHA256 is
@@ -140,3 +140,22 @@ The adapter authenticates selected dependency bytes before running their guards.
 This is selected-file provenance, not verification of snapshot HEAD, a whole
 repository, source PDFs, historical R1 or physical evidence. No numerical limit
 or formula is invented by this consumer.
+
+## Optional state21 research observation binding
+
+The same `audit(meta, case=None)` and CLI now accept `formula_input_binding`.
+See [the strict operational contract](STATE21_FLOW_CONTRACT.md). This is a fixed,
+reviewed native-observation profile, not a generic formula evaluator. It reads
+seven selected external files without running their code, checks immutable
+hashes, then reconciles raw log and observation JSON plus producer semantics.
+No native process file, field, raw log, observation JSON or standards table is
+shipped in this module. The legacy 0/U and 0/p preflight is unchanged and does not
+validate a state21 checkpoint.
+
+For this profile, source identity and proxy-K arithmetic can pass while flow
+applicability remains **HOLD**. `requested_checks_pass=false` and CLI exit 2 are
+intentional, even with `preflight_pass=true`. Kv, Cv and pressure drop in Pa stay
+null. This does not prohibit unrelated bounded research or source inspection.
+The nine pinned acceptance conditions and their HOLD status remain separate.
+
+State21 binding starts from main runtime baseline `11f3d904a1dde3cb45c20593143a87a25c0493d4`.

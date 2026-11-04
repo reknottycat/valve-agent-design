@@ -6,7 +6,7 @@
 
 - 研究对象是无后缀 **522-35.4179，DN200 青铜止回-截止阀**，base 海水 −2～+50℃。−02 的盐水 −40℃工况不能混入 base；旧底铰链摆盘解释已停用。
 - 标准库当前核实版本为 [19d586b](https://github.com/reknottycat/standards-kb/tree/19d586bb53cb452325d815313a895a1dfafa868b)。旧“93 条已核”“As=147 已解”不再有效；九项工程验收仍 HOLD。
-- main 的 [只读标准 API/CLI](framework/standards/README.md) 固定到 19d586b；选取的 [研究预检入口](framework/tools/README.md) 已在真实元数据/算例检查路径中消费公式来源、隔离和当前验收卡护栏。完整研究线及 CAD/CFD 编排尚未集成，历史 C0 脚本不被该入口拦截；候选、软件回归、有限数值研究和工程验收仍分开。
+- main 的 [只读标准 API/CLI](framework/standards/README.md) 固定到 19d586b；选取的 [研究预检入口](framework/tools/README.md) 已在真实元数据/算例检查路径中消费公式来源、隔离和当前验收卡护栏。该入口已有限绑定 state21 的原生数值流量/面积/运动学静压差；因层流、未稳态等条件，容量使用仍 HOLD，Kv/Cv 不输出。完整研究线及 CAD/CFD 编排尚未集成，历史 C0 脚本不被该入口拦截；候选、软件回归、有限数值研究和工程验收仍分开。
 - R1 [aa80b87](https://github.com/reknottycat/valve-agent-design/tree/aa80b87b6ee9617754101a238f70bec99393ad9a) 保持冻结，不删除历史分支或证据；没有新 CAD/CFD/FEA 计算或制造放行。
 
 仓库保持 **private**；原始图纸及工程资料请勿公开转发。
