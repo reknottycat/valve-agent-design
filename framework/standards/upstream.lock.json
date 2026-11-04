@@ -1,0 +1,31 @@
+{
+  "commit": "19d586bb53cb452325d815313a895a1dfafa868b",
+  "files": {
+    "kb/acceptance/AC-VALVE-001.json": "3879f2c69235a2f0eae198750fd266c4723ccc9ed70abf7d1a50739ed8ac72ec",
+    "kb/data/GB_T_15530.1-2008.json": "5e2dddebf20f48198baa07d4588907578476bbd33e7ff97483bf3a9fdb07f954",
+    "kb/data/ГОСТ_1536-76.json": "a2126f89e8df425d6f7de4abc1fdfde3489cb5266475520c634e158ffa3bf4f4",
+    "kb/derived/seed_cryogenic.json": "257ba16a9445edb4107cff68633754cf4b686a446f3a712b5774bc8a9271eced",
+    "kb/formulas/seed_b31_1.json": "352015efa2a23dad6e9c1a98e0613c3cef2aad4e5c34693889dc6e10a55b039a",
+    "kb/formulas/seed_bpvci.json": "3725f726a0ef6a41c268242547c1a428504f775ac211792fe9364329e5d407bf",
+    "kb/formulas/seed_core.json": "7e6be967bc43afa784791726a3c0f33a5a366facafff1f28fc6e6b1c63c3eb7d",
+    "kb/formulas/seed_engineering.json": "970ee5931115eb8e5a73774f84ca5ffd599ec4d9d4d9781e12e0cfcd8e8679ad",
+    "kb/ontology/mappings/formulas.json": "280a9387fee97ad91e54896841e46b6f636b26e308f7c53b39f28625fbfcb6f6",
+    "kb/ontology/vocabulary.yaml": "3a8a69c5f660fc9fb1f5217a04fa2fb73e2bc5ab86ab625a1c8564a5324dff81",
+    "kb/parameters/seed_b31_1_table132.json": "ac2ca5071718ab9593ad116a021df5c62fe17933cf65545bc41f983c25e9e15b",
+    "kb/parameters/seed_bpvc_pg69.json": "d6d12ac686fbc5d4514e884de62b7fed0021261f5b5866057955f51dbfe5e5c2",
+    "kb/parameters/seed_bpvc_pw39.json": "af690e52b7260601f6b262c82e353e710d22807451bf10383d4df54d6c4d4531",
+    "tools/acceptance_card.py": "b0081cbc97e87af05c07d5908a7fad62c27af1184e93f5891506571e89df9ef0",
+    "tools/flw001_contract.py": "aae3923dd415ed2bb2fb96d84580cc47643476b9a571df541ae59d83bf52c7be",
+    "tools/formula_input_contract.py": "d58e65bfafb46ff1870673a2339029635ba1793e123c72b7f9ea7dee22c1e22a",
+    "tools/kb_entries.py": "7d3a02633e8dd4c557380516c43051860fa5af460b0bbe27feda3828cadf7f03",
+    "tools/source_closure_contract.py": "206cab14c4f9814bf348b0ce23ca8c67bfde3a166ea564455918cb778c282fdf",
+    "tools/valve_completion_contract.py": "05de668dd27c5fabea5ab96d5bb687af8d27d5655a1f664718fe22c84c175757",
+    "tools/valve_variant_binding.py": "e564a27fa7afd7c36ee2dff13b09245789bcc4fbcc1ebeb9c3ada88ddc07da5e"
+  },
+  "repository": "reknottycat/standards-kb",
+  "runtime": {
+    "PyYAML": "6.0.3",
+    "python": ">=3.10"
+  },
+  "scope": "selected_files"
+}

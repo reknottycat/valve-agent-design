@@ -1,12 +1,12 @@
 # 阀门工程：当前方案与交付入口
 
-核对日期：2026-11-04，事实快照截至 09:07 UTC。**本文件是当前方案的唯一入口**；README 只保留导航与历史说明。后续沿用此路径更新，不再并列新增“最新方案”。
+核对日期：2026-11-04，事实快照截至 09:33 UTC。**本文件是当前方案的唯一入口**；README 只保留导航与历史说明。后续沿用此路径更新，不再并列新增“最新方案”。
 
 ## 1. 目标、优先级与边界
 
 先把用户选定的无后缀 **522-35.4179，DN200 青铜止回-截止阀** 做成可重复执行、可独立核查的流动性能研究链：参数与假设 → CAD 与湿域 → 边界 → 网格 → 求解 → 守恒、收敛及敏感性 → 流量 Q、压降 ΔP、阻力系数 K 的同版证据。再从真实链中提炼可复用工具，而不是另起一套万能 Agent。
 
-**当前优先事项是修正已讨论公式、确定验收依据并接通两仓规则。** 本次仅整理最终方案和导航，没有改研究模型、运行 CAD/CFD/FEA 或进行物理试验。以下研究成果是读取既有记录所得，不代表本次重新运行或恢复完整算例。
+**当前优先事项是修正已讨论公式、确定验收依据并接通两仓规则。** 本批在现行方案基础上接通只读标准 API/CLI，并更新导航；没有改研究模型、运行 CAD/CFD/FEA 或进行物理试验。以下研究成果是读取既有记录所得，不代表本次重新运行或恢复完整算例。
 
 制造放行、完整生产 BOM、实物装拆和密封合格不是所有有限研究的统一前置条件。研究可以使用明确且可审查的假设，但不能把推导值、假设值、软件测试或数值收敛写成实物验证。C02 是独立候选，不是必须采用的基线。产品设计及制造验收另按九项卡逐项闭合。此区分与 [ZHE-93 的目标及交付记录](https://linear.app/zhenhe-fu/issue/ZHE-93) 一致。
 
@@ -23,15 +23,17 @@
 
 | 对象 | 固定版本及角色 | 不能据此声称 |
 |---|---|---|
-| 本仓库 main 的代码/数据基线 | [a8ada4ed61b15e408979b8025ff8a58ceac0ae31](https://github.com/reknottycat/valve-agent-design/tree/a8ada4ed61b15e408979b8025ff8a58ceac0ae31)，本次文档更新前的 main。此后本批只更改 README 与新增本方案 | 研究线已集成 main；此处列的是文档更新前代码基线，不是发布后 main 的 HEAD |
-| 标准库当前采用的阅读基线 | [19d586bb53cb452325d815313a895a1dfafa868b](https://github.com/reknottycat/standards-kb/tree/19d586bb53cb452325d815313a895a1dfafa868b)，已核为标准库 main | 自动成为本阀已接入/已批准的工程依赖 |
+| 本仓库 main | 本批接线前为 [5f0ae528d777972ea3650b79528b795900dfec15](https://github.com/reknottycat/valve-agent-design/tree/5f0ae528d777972ea3650b79528b795900dfec15)；本批选取并修复 [标准 API/CLI](framework/standards/README.md)，其余研究线未整体迁入 | 整支研究线、CAD/CFD 编排或研究结果已集成；前列 SHA 是本批前版本，不是发布后的 HEAD |
+| 标准库当前阅读及只读适配器依赖基线 | [19d586bb53cb452325d815313a895a1dfafa868b](https://github.com/reknottycat/standards-kb/tree/19d586bb53cb452325d815313a895a1dfafa868b)，已核为标准库 main | 自动成为本阀已批准的工程依据，或已被全部计算调用路径采用 |
 | 阀门复用研究线 | [5dcc3b8302f566678259bcbeeb36a891a593eba6](https://github.com/reknottycat/valve-agent-design/tree/5dcc3b8302f566678259bcbeeb36a891a593eba6) | 整阀通过、已合 main 或原生 runner 已完整交付 |
 | P08 C02 独立候选 | [e008a3939a7730b3aedbbf3c0b54ceac1a58663d](https://github.com/reknottycat/valve-agent-design/tree/e008a3939a7730b3aedbbf3c0b54ceac1a58663d) | 已与复用研究线合并、全行程/装拆/密封已验 |
 | R1 冻结来源 | [aa80b87b6ee9617754101a238f70bec99393ad9a](https://github.com/reknottycat/valve-agent-design/tree/aa80b87b6ee9617754101a238f70bec99393ad9a) | 可回改历史消除冲突，或已制造放行 |
 
 标准库 19d586b 比 fc62e1f 仅多同步工具的只读检查修复及测试，公式/验收卡数据未变；`--check` 不应再写文件，错误与差异分开返回。该修复不证明现有镜像已经无差异，也没有自动重新生成资产。
 
-**两仓还没有接通最新规则。** 研究线的 [standards 适配器来源说明](https://github.com/reknottycat/valve-agent-design/blob/5dcc3b8302f566678259bcbeeb36a891a593eba6/framework/standards/PROVENANCE.md) 仍固定标准库 `7eda528a8795b8fbd850d6d35ac67e198de5810a`，真实固定源测试只覆盖一个 ГОСТ 文件，不是当前全库适配。不能仅改一个版本号就称完成集成。
+**main 的只读标准 API/CLI 已接通 19d586b，完整设计/求解调用链尚未接通。** 当前 [适配器](framework/standards/README.md) 用生产锁验真 20 个依赖，在同一入口实际调用公式一致性、三条输入语义元数据、法兰使用隔离及当前验收卡护栏；不是只改版本号。源库数据仍在外部快照，不复制标准表入本仓库。
+
+研究线的 [旧适配器](https://github.com/reknottycat/valve-agent-design/blob/5dcc3b8302f566678259bcbeeb36a891a593eba6/framework/standards/PROVENANCE.md) 仍固定 `7eda528a8795b8fbd850d6d35ac67e198de5810a`，只覆盖单个 ГОСТ 文件的真实测试，现作为历史保留。main 当前入口拒绝旧 pin、变更数据及自行重哈希的 manifest；不在 main 另开可执行旧源入口。历史 C0 脚本、网格建议、CFD 预检及任务拓扑检查尚未调用新适配器，本批不会拦截人直接运行旧脚本。
 
 本仓库 main 未设 STATUS.md；当前状态集中于本方案，不新增平行状态页。旧研究分支和旧文档中的“当前”“下一步”均须结合其日期与固定提交阅读。本次不删除、改写或全量合并任何历史分支。
 
@@ -47,7 +49,7 @@
 | p=0.15 对照 | 已有两步配对试验结论 NOT_SUPPORTED，失败/退化证据保留 | 不支持替换主轨迹；也不证明 0.15 长期无效或 0.3 最优。不重跑此对照 |
 | 离线 continuation 审计 | 11 月 4 日交付 6 个最终工具文件，固定两步协议的日志/身份检查 | 不是求解器启动器，不含原生 runner、日志或完整场；检查通过不授予真实重启资格 |
 | P08 C02 台肩 | 单个全开姿态 CAD 有效及零正体积干涉记录 | D40 杆头不能穿 D36.4 肩孔；装拆未验；候选流体体积平衡差 −0.030874 mm³ 待核；原 face80 已改变，不能直接沿用旧边界/流场 |
-| 编排与适配工具 | 契约、预检、CAD 探针、只读适配器和离线审计可复用 | 不是已完成自主 Agent 或完整 MCP 服务；真实端到端、取消、恢复与幂等链未闭合 |
+| 编排与适配工具 | main 的只读标准 API/CLI 已接当前规则；研究线契约、预检、CAD 探针和离线审计可复用 | 不是完整 CAD/CFD 编排集成、自主 Agent 或 MCP 服务；真实端到端、取消、恢复与幂等链未闭合 |
 
 固定入口：[已有成果矩阵](https://github.com/reknottycat/valve-agent-design/blob/5dcc3b8302f566678259bcbeeb36a891a593eba6/research/reusable-framework-20261022/README.md)、[STEP 往返范围](https://github.com/reknottycat/valve-agent-design/blob/5dcc3b8302f566678259bcbeeb36a891a593eba6/framework/providers/step-roundtrip/README.md)、[离线审计工具](https://github.com/reknottycat/valve-agent-design/blob/5dcc3b8302f566678259bcbeeb36a891a593eba6/tools/continuation_audit/README.md)、[P08 C01/C02](https://github.com/reknottycat/valve-agent-design/blob/e008a3939a7730b3aedbbf3c0b54ceac1a58663d/framework/cad/p08-packing-design/README.md)、[ZHE-93 的 11 月 1 日及 11 月 4 日记录](https://linear.app/zhenhe-fu/issue/ZHE-93)。上述既有记录均需保留原工况与范围，不跨模型拼接。
 
@@ -56,11 +58,17 @@
 ### 已写入标准库 main 的纠错
 
 - 核心公式与元数据：厚壁圆筒内壁环向应力、Kv 多余除数及反式、手力的 N·m→N·mm 换算、Cv_US 与 Kv 的量及绑定已纠正。对应 [当前核心条目](https://github.com/reknottycat/standards-kb/blob/19d586bb53cb452325d815313a895a1dfafa868b/kb/formulas/seed_core.json)。公式自洽不等于本阀已重算或工程适用性已批准。
-- 驱动输入：螺纹升载需求力矩不再称纯摩擦损失；它不是整机总力矩，支承、填料、密封及启动附加另审。运行摩擦 μk 与静摩擦 μs 分开，不能凭运行扭矩判断静态自锁。安全阀容量公式的 L 绑定试验压力下升程，不能随意替换为额定升程。检查目前是需主动调用的三条元数据合同，不是全面接入所有验证入口。见 [输入语义与检查范围](https://github.com/reknottycat/standards-kb/blob/19d586bb53cb452325d815313a895a1dfafa868b/docs/formula-input-semantics.md)。
+- 驱动输入：螺纹升载需求力矩不再称纯摩擦损失；它不是整机总力矩，支承、填料、密封及启动附加另审。运行摩擦 μk 与静摩擦 μs 分开，不能凭运行扭矩判断静态自锁。安全阀容量公式的 L 绑定试验压力下升程，不能随意替换为额定升程。标准库原检查是需主动调用的三条元数据合同；本仓库当前适配器已在每次构造时调用，但仍不是全局运行时输入守卫，也不认证真实摩擦或升程试验。见 [输入语义与检查范围](https://github.com/reknottycat/standards-kb/blob/19d586bb53cb452325d815313a895a1dfafa868b/docs/formula-input-semantics.md)。
 - 碳当量和热处理：条件替代、质量百分数尺度、同版来源关系及精确阈值比较已修正；不同版次、不同材料条款不能合并成一个通用规则，更不自动适用青铜阀。见 [碳当量说明](https://github.com/reknottycat/standards-kb/blob/19d586bb53cb452325d815313a895a1dfafa868b/docs/carbon-equivalent.md)。
 - 验收卡、型号绑定、图面要求、压力来源缺口及有限防误用门已有实现。**13 条 GB/ГОСТ 法兰记录只完成隔离门，完整数据纠错尚未写回**，不得见旧 VERIFIED_CLAUSE 标签便用于工程。见 [法兰隔离边界](https://github.com/reknottycat/standards-kb/blob/19d586bb53cb452325d815313a895a1dfafa868b/docs/flange-quarantine.md)。
 
 在 19d586b 的条目数据中，23 公式＋57 参数＋13 表共 93 条，自报状态为 50 VERIFIED_CLAUSE、16 PENDING_VERIFICATION、17 UNVERIFIED_CLAUSE、10 CONFLICT；另有 2 条派生记录均 PENDING_VERIFICATION。95 条均标 E1。**这不是 95 条独立工程批准，也不是“93 条已核”。** 来源状态、模型算术、对本阀的适用性和产品验证必须分别记录。
+
+### 当前适配器实际接线
+
+[使用入口](framework/standards/README.md) 与 [固定来源/范围](framework/standards/PROVENANCE.md) 说明 API、CLI、20 个生产依赖和信任边界。实际运行读取全部 95 条研究记录，上游源级计算资格为 **44 条**；13 条法兰表与 2 条相关派生记录均被隔离。来源资格不等于适用于本青铜阀，项目适用性仍未确认、工程放行始终 false。
+
+同一入口读取当前正确 Kv 条目、核其合成样例与反式，再实际调用当前验收卡评估。只接受生产锁中的固定卡，不接任意外部候选卡；同 ID 换配置或混入 −02 盐水也会被字节绑定拒绝。这不是独立认证配置摘要，更不是新物理计算。
 
 ### 当前验收结论
 
@@ -77,11 +85,15 @@
 
 ## 5. 下一步只按依赖推进
 
-### 第一优先：把当前标准规则接入真实调用路径
+### 第一优先：当前 API/CLI 已接线，下游调用范围继续收口
 
-沿用 [M02 / ZHE-84](https://linear.app/zhenhe-fu/issue/ZHE-84)。审查旧 7eda528 适配器与 19d586b 的接口、条目语义和隔离规则；选必要代码与最终测试，不整支盲合，也不只改 pin。实际调用必须保留来源状态、项目适用性和工程放行的区分。
+沿用 [M02 / ZHE-84](https://linear.app/zhenhe-fu/issue/ZHE-84)。本批已将既有研究适配器接口迁入 main，固定到 19d586b 并调用真实上游规则。实际查询成功不等于准许计算；当前验收入口返回 9 HOLD。缺数据、缺规则、旧 pin、错式或卡变更均不得靠重新写本地 manifest 变成可信输入。
 
-**完成标志**：固定同一输入与版本后，真实入口读到当前状态；旧错式、停用法兰、未知来源及跨型号误用反例不能成为工程通过；独立复核通过并直接更正 main。**停止条件**：缺必需来源/依赖，或检查发现语义不兼容时，保留失败并明确阻塞，不伪造通过或复制被隔离数据补洞。这一阶段不启动新设计或大计算。
+**已完成的有限范围**：可运行的只读 API/CLI、当前公式/隔离/固定卡护栏及实际入口负例；代码与规则数据分开，未复制标准全文。生产用法和退出码见 [模块说明](framework/standards/README.md)。
+
+**仍欠**：选定真实研究消费入口，明确它用哪些公式、输入与结果，以及如何处理不可计算和待核状态。既有 main 任务校验器只查拓扑，研究线 candidate/readiness 只作建议/预检，都不是求解编排器；不能机械加一个 import 就说端到端接通。现有元数据检查不认证真实 μs、压力 P 下试验 L 或其他物理输入。
+
+**后继完成标志**：选定的研究调用路径实际消费当前状态，旧错式、停用法兰、未知来源、跨型号误用不能成为工程通过；独立复核后只更正必要 main 文件。**停止条件**：必需来源/依赖缺失或语义不兼容时，保留失败并报告明确受影响范围，不伪造通过或复制隔离数据补洞。公式/验收仍优先，未因此启动新设计或大计算。
 
 ### 第二优先：固定一条同版研究基线及可复现输入
 
@@ -119,5 +131,5 @@
 - [README 中折叠保留的旧说明](README.md#historical-readme) 及原始 C0 文件是历史，不再作为现行型号、机构、材料或验收结论。特别停用旧摆盘解释、base −40℃盐水、As=147 已解和“93 条已核”说法。
 - 标准库旧 README/STATUS 计数、旧“5.092 官方漏点定案”、旧低温条件合格说法不覆盖当前条目与冲突记录。历史候选可查，但不等于最新规则或已适用本阀。
 - 研究线及候选分支按上面的固定链接读取；包含某分支祖先不等于包含另一独立分支的最新更改。历史报告不复制成多份活跃真源。
-- 原始证据、反例和失败保留，不删分支、不改 R1。本次只交付本方案与 README 导航，不上传过程日志、计算场、临时工件或标准全文。
+- 原始证据、反例和失败保留，不删分支、不改 R1。本批只交付适配器代码、生产依赖锁、测试、正式说明与当前入口更新，不上传过程日志、计算场、临时工件或标准全文。
 - 每批先明确问题、固定输入、允许范围、交付物、通过/停止条件；结束只报告实际改动、实际验证、仍不能证明的内容和一个当前版本链接。按关闭的工程缺口计进度，不累加测试数、分支数或文档数充当完成率。
