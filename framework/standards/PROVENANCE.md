@@ -41,7 +41,9 @@ card has canonical SHA256
 its actual result is nine HOLD and 27 unfilled numeric limits. The canonical
 record/card digests and exact-file digests are intentionally distinct.
 
-No candidate runner, CFD preflight or topology-validation integration is claimed.
+The selected [research readiness consumer](../tools/README.md) now invokes this
+API in its existing metadata/case preflight. This is not integration of a candidate
+runner, topology validator or full solver orchestration.
 No CAD/CFD/FEA, source-PDF verification, original R1 verification, physical input
 validation, standard adoption, product acceptance or engineering release follows
 from these software checks. Existing history, R1 and source snapshots are not

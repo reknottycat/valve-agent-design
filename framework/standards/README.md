@@ -6,9 +6,11 @@ This updates the existing research adapter interface, rather than creating a new
 engineering framework. The source snapshot stays external. No standards tables,
 raw data, source PDFs, process reports or old executable manifest are included.
 
-**This is an actual API/CLI integration, not a claim that the valve candidate,
-CFD preflight, topology checks or full orchestration call this adapter.** Existing
-historical C0 scripts are not intercepted. There is no CAD, CFD or FEA run here.
+**This API/CLI is consumed by the selected existing
+[research readiness entry](../tools/README.md).** That read-only consumer checks
+its declared references and use in the same metadata/case preflight; it does not
+run a solver. The valve candidate, topology checks, historical C0 scripts and full
+orchestration are not integrated or intercepted. There is no CAD, CFD or FEA run here.
 
 ## Run
 
