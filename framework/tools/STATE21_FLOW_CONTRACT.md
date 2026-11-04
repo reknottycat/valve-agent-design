@@ -3,8 +3,9 @@
 ## Purpose and strict input
 
 This is the sole supported profile: `native-simple-state21/v1`. Add the optional
-`formula_input_binding` object to the existing readiness manifest. It has exactly
-`profile` (that literal) and `paths` (exact seven role-to-path entries):
+`formula_input_binding` object to the existing readiness manifest. Its base fields
+are `profile` (that literal) and `paths` (exact seven role-to-path entries). An
+optional `geometry_binding` is described below; no other fields are accepted:
 
 - `raw_log`: continuation.log
 - `observation`: continuation-observation.json
@@ -53,10 +54,12 @@ not pressure or measured velocity. Newtonian viscosity and laminar/Stokes model
 are read/cross-checked from the selected numerical model configuration inputs and runner. The viscosity is a
 frozen research constant, not a measured actual-fluid property.
 
-Only Q, A, area-mean static kinematic pressure and derived proxy-K arithmetic
-are bound. The arithmetic witness uses K=2*(pin_kin-pout_kin)/(|Qin|/Ain)^2.
+In base mode, only Q, A, area-mean static kinematic pressure and derived proxy-K
+arithmetic are bound. The arithmetic witness uses K=2*(pin_kin-pout_kin)/(|Qin|/Ain)^2.
 Outward-positive Qin remains signed; its magnitude is used explicitly in speed.
-Area is the recorded inlet face-area reduction, never an inferred DN area.
+The native observer area is the recorded inlet face-area reduction, never an
+inferred DN area. The optional binding retains it and adds a separate explicit
+nominal research reference.
 Finite K_valid is an arithmetic guard, not physical validity. Imposed inlet Q
 and derived K are not independent validation. No hydraulic diameter or Reynolds
 number is inferred.
@@ -104,12 +107,16 @@ HOLD is not a blanket prohibition on limited research.
 
 ## Limits and integrity boundary
 
-The runtime authenticates seven selected source byte strings only. It does NOT
-rehash state21 U/p/phi fields or revalidate mesh geometry/topology. The emitted
+Without `geometry_binding`, the runtime authenticates seven selected source byte
+strings only. That base mode does NOT rehash state21 U/p/phi fields or revalidate
+mesh geometry/topology. The optional mode below authenticates selected mesh and
+p/phi bytes and reconstructs the two ports; neither mode revalidates full mesh
+quality or the complete checkpoint. The emitted
 physical_hidden_state_hash is a recorded cross-check, not an independently
 recomputed field hash. The full checkpoint, historical R1 and product
 configuration are NOT authenticated. Area and pressure reduction consistency
-is checked against log/producer/JSON; full face geometry is not recomputed.
+is checked against log/producer/JSON in base mode. Optional measured-port mode
+adds direct selected-face geometry and saved-pressure reconstruction.
 Historical qualified_execution=true is not a new native execution verification.
 No solver, CAD, installation or process-script execution occurs.
 
@@ -132,3 +139,102 @@ Tests verify API and isolated CLI, unchanged selected-source hashes, HOLD/null
 outputs, role/path safety, malformed/old/state/unit/status mutations and existing
 readiness regressions. Mutation data are synthetic rejection cases, not physical
 evidence. No real native fixture is distributed with tests.
+
+## Optional measured port/reference binding
+
+The existing `native-simple-state21/v1` input still accepts exactly `profile` and
+`paths`. It additionally accepts one optional `geometry_binding` object with
+exactly `profile: native-simple-state21-ports/v1` and `paths`. Its exact path roles
+are `boundary`, `points`, `faces`, `owner`, `p`, `phi`, and `plan`. Paths must be
+canonical absolute paths without symlinks, including parent components. Supply
+explicit realpaths for externally symlinked case files. Values, units, hashes,
+status overrides, arbitrary state selection and alternate profiles are rejected.
+No existing seven-file behavior or small-file 4 MiB limit is relaxed.
+
+The adjacent `state21-ports.lock.json` is authenticated by a module-pinned SHA-256.
+It authenticates selected mesh bytes, saved state21 pressure/flux bytes, and the
+frozen research plan. The separate streaming reader reads under 120 MB in total,
+with 16 KiB line, 2,000,000 list-count and 4 MiB retained-text bounds. Directory
+file-descriptor traversal rejects symlinks and nonregular inputs without opening
+FIFOs for blocking reads. Parsing and hashing consume the same file descriptor;
+size, digest and before/after descriptor metadata are checked before a result is
+returned. Only 272 selected triangles and their selected vertices/owner pressures are
+retained from the large lists; p/phi boundary tails are additionally retained
+under the 4 MiB text bound. The public output contains compact summaries only. It does not execute evidence source, run
+OpenFOAM, remesh, write output files, read U, or recompute the full-case hash.
+
+Missing files yield `HOLD` with no measurement. Invalid paths, nonregular inputs,
+modified bytes, changed files, incompatible syntax, or inconsistent arithmetic
+yield API errors / CLI `INVALID`. All seven geometry inputs must authenticate
+before a measurement is exposed. This optional binding adds separate source,
+reconstruction, and eight-value observer-crosscheck statuses. Its overall status
+and all flow applicability/capacity statuses remain `HOLD` even when each limited
+source/reconstruction check passes. Omitting it preserves the original API.
+
+### What is measured, and what is now closed
+
+The two 136-triangle boundaries reconstruct inlet78 at x=-0.6 m with outward
+normal -X and outlet33 at x=1.2 m with outward normal +X. Each has 26 rim vertices
+at radius 0.1 m and summed/projected area 0.03111103635738251 m². This is the
+polygonal mesh area, not a nominal circle or a valve throat area. Inlet pressure
+has `zeroGradient` and no serialized boundary values: each face pressure is
+reconstructed from its owner-cell saved internal p. Outlet is `fixedValue uniform
+0`. The result is an area-weighted static kinematic pressure difference, not
+independent physical wall-tap data. Saved boundary phi supplies both signed fluxes.
+
+The reconstructed state21 values match all eight authenticated observer values
+at relative tolerance 1e-12 (actual maximum difference about 7.4e-16): Qin is
+-1.634046460129948e-6 m³/s, Qout is 1.634046459592463e-6 m³/s, and dpkin is
+1.599501972386503e-7 m²/s². Signed relative flux imbalance is about 3.289e-10.
+The native observer's reference explicitly uses abs(Qin). An older observation
+contract uses Qout; these conventions are not silently interchanged.
+
+The frozen R1 research plan declares D=0.2 m and A_nominal=pi*D²/4 =
+0.031415926535897934 m². With the same actual saved Qin and dpkin, the preserved
+mesh-area K is 115.96179557311874 and the separate nominal-area research K is
+118.24579895993566. The 1.969617% increase is purely reference-area arithmetic.
+`research_input_bindings.RESEARCH_REFERENCE_A` and `RESEARCH_REFERENCE_K` expose
+these closed research inputs separately. F-FLW-001 A/zeta/Kv, actual rho, Pa,
+F-FLW-002 capacity and engineering release remain null/false/HOLD. The reason is
+physical ineligibility of this laminar, nonsteady, restrained research case for
+product capacity, not that the numerical research reference area is unknown.
+
+The plan describes a restrained 57 mm research pose with 3DN straight extensions
+on each side. End-plane positions are checked against the reconstructed mesh.
+These port-to-port results include the numerical extensions and developing or
+disturbed flow; they are not automatically an isolated-valve loss coefficient.
+The plan's assumed fluid properties are not promoted to actual measured fluid
+properties. Runtime does not authenticate CAD, a product BOM, full mesh quality,
+all of R1, standard taps, steady convergence, or turbulent applicability.
+
+### Frozen-plan provenance
+
+The pinned upstream file is [flow_study_plan.json at aa80b87](https://github.com/reknottycat/valve-agent-design/blob/aa80b87b6ee9617754101a238f70bec99393ad9a/runs/20261006/CALCULATIONS/R1/sources_new/FLOW_PLAN_NEW/flow_study_plan.json),
+Git blob `0ca3766e0fffb50ab46b999f894b4a7fc481754e`. Its 6453 remote bytes hash to
+`0a83f513c91bb1703f6b00ed6fe59db63940e9ab9530779047b815d02d36bac6`.
+The reviewed local `flow_study_plan_R1_original.json` contains those bytes plus
+one appended newline: 6454 bytes, SHA-256
+`f0659ec9bc0a0d560e36ea5df1e1e3354555477ba85996514deeb5ab83d00304`.
+They are not byte-identical. Runtime pins the local newline representation.
+Neither representation is changed by this binding.
+
+### External regression inputs
+
+Set `VALVE_STATE21_INPUT` to the original seven-file readiness manifest for the
+unchanged v1 regressions. Set `VALVE_STATE21_PORT_INPUT` to a readiness manifest
+with the optional declaration above for measured-port regressions. Each manifest
+uses local external evidence paths and the existing standards root. Run:
+
+```
+python -B -m unittest discover -s framework/tests -v
+python -B -m unittest discover -s framework/standards/tests -v
+python -I -B framework/tools/valve_readiness.py "$VALVE_STATE21_PORT_INPUT"
+```
+
+Real-entry tests skip explicitly when their environment variable is absent.
+Synthetic tests cover parser arithmetic, finite values, resource bounds,
+canonical/nonregular/symlink paths, immutable locks, mutation and strict input
+shape. Real tests cover direct reconstruction, eight observer comparisons,
+modified and missing input rejection, unchanged source metadata, retained nulls,
+and the isolated CLI's exit 2 HOLD response. Do not upload field fixtures, mesh
+files, process logs, local manifests or their generated runtime output.

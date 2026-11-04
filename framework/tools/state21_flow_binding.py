@@ -6,6 +6,7 @@ an entire case, mesh, R1, product configuration, or physical validity.
 import math
 import re
 from pathlib import Path
+from types import ModuleType
 
 PROFILE = 'native-simple-state21/v1'
 LOCK_SHA256 = '23ff01987d8813fc51c4ca7decb11976e69c8e5baccb31f794cdb9fb31712ae1'
@@ -137,8 +138,8 @@ def _extract(files, adapter):
 
 
 def bind(declaration, standards, adapter, standards_root=None):
-    _need(type(declaration) is dict and set(declaration) == {'profile', 'paths'},
-          'requires exactly profile and paths; values/status/units cannot be supplied', adapter)
+    _need(type(declaration) is dict and set(declaration) in ({'profile', 'paths'}, {'profile', 'paths', 'geometry_binding'}),
+          'requires profile and paths with optional geometry_binding; values/status/units cannot be supplied', adapter)
     _need(declaration['profile'] == PROFILE, 'unknown profile/state', adapter)
     paths = declaration['paths']
     _need(type(paths) is dict and set(paths) == ROLES, 'requires exact seven evidence roles', adapter)
@@ -218,6 +219,28 @@ def bind(declaration, standards, adapter, standards_root=None):
                    'dependency': 'F-FLW-001.Kv', 'reason': 'upstream capacity remains HOLD'},
             'Cv_US': {'value': None, 'unit': 'US gal/min at reference 1 psi', 'status': 'HOLD',
                       'reason': 'no eligible Kv to convert; conversion adds no capacity evidence'}}}
+    if 'geometry_binding' in declaration:
+        module_path = Path(__file__).with_name('state21_port_geometry.py')
+        geometry = ModuleType('_state21_port_geometry')
+        geometry.__file__ = str(module_path)
+        exec(compile(module_path.read_bytes(), str(module_path), 'exec', dont_inherit=True), geometry.__dict__)
+        measured = geometry.bind(declaration['geometry_binding'], observation, adapter)
+        result['geometry_binding'] = measured
+        if measured['reconstruction_status'] == 'PASS':
+            result['integrity_scope'] = ('selected seven observer files plus boundary/points/faces/owner, saved21 p/phi and frozen plan; '
+                                         'not full case, mesh quality, CAD/BOM, R1 or product authentication')
+            reference = measured['measurement']['nominal_research_reference']
+            result['research_input_bindings'] = {
+                'RESEARCH_REFERENCE_A': {'value': reference['area_m2'], 'unit': 'm^2',
+                     'status': 'CLOSED_RESEARCH_INPUT', 'source': 'geometry_binding.measurement.nominal_research_reference',
+                     'role': 'frozen-plan nominal circle reference for same saved Qin; not formula-eligible product area'},
+                'RESEARCH_REFERENCE_K': {'value': reference['K_same_saved_Qin_and_dp'], 'unit': '1',
+                     'status': 'CLOSED_RESEARCH_INPUT', 'role': 'nominal-area static endpoint research proxy, not product zeta'}}
+            result['variable_bindings']['F-FLW-001']['A']['reason'] = (
+                'mesh and nominal research areas measured/bound; laminar nonsteady extension-to-extension restrained research '
+                'configuration is physically ineligible for product/capacity substitution; standard tap/installation mapping unverified')
+        else:
+            result['missing_reasons'].append('REQUESTED_GEOMETRY_SOURCES_MISSING')
     if result['source_binding_status'] != 'PASS':
         result['missing_reasons'].append('OBSERVATION_SEMANTICS_NOT_CHECKED_MISSING_AUTHENTICATED_SOURCES')
         return result

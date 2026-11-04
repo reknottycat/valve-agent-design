@@ -1,0 +1,39 @@
+{
+  "profile": "native-simple-state21-ports/v1",
+  "files": {
+    "boundary": {
+      "bytes": 20895,
+      "sha256": "12f47b82ab5e1b5fb42852eb2f94d722de5069bd854258a37a590e9dfb828264"
+    },
+    "faces": {
+      "bytes": 37690672,
+      "sha256": "af05f28d9354f6732b7fe8f7090a0bcad52883d37e631ffd19c18a82daeec5d6"
+    },
+    "points": {
+      "bytes": 10649585,
+      "sha256": "ec8aeb45057ccae24cdbfce016dd01f3e84e90aaf32b550bfe326d39c18e6a83"
+    },
+    "owner": {
+      "bytes": 11168332,
+      "sha256": "81e64cf269686d388188823773e57e47c6063f60a061e594c128f0358634f134"
+    },
+    "p": {
+      "bytes": 17399756,
+      "sha256": "0887fa1d9bb5d0b0d07a9486b0089de5b23cc15d0e8f5e1bb257fc287ed1bfda"
+    },
+    "phi": {
+      "bytes": 32533822,
+      "sha256": "9c5ec53718a795245d4c369e6efd1aa9a2be7a3ff3a50708e78dcd81d56a453a"
+    },
+    "plan": {
+      "bytes": 6454,
+      "sha256": "f0659ec9bc0a0d560e36ea5df1e1e3354555477ba85996514deeb5ab83d00304"
+    }
+  },
+  "plan_provenance": {
+    "url": "https://github.com/reknottycat/valve-agent-design/blob/aa80b87b6ee9617754101a238f70bec99393ad9a/runs/20261006/CALCULATIONS/R1/sources_new/FLOW_PLAN_NEW/flow_study_plan.json",
+    "remote_bytes": 6453,
+    "remote_sha256": "0a83f513c91bb1703f6b00ed6fe59db63940e9ab9530779047b815d02d36bac6",
+    "local_representation": "remote bytes with one appended newline; not byte-identical"
+  }
+}
