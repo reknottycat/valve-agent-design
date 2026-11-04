@@ -1,5 +1,26 @@
 # valve-agent-design
 
+**当前入口：[阀门工程当前方案](CURRENT_PLAN.md)**。所有当前版本、有效成果、公式/验收状态、剩余依赖与下一步集中在这一份方案；本页下方旧 README 仅作历史保留。
+
+## 当前阅读方式
+
+- 研究对象是无后缀 **522-35.4179，DN200 青铜止回-截止阀**，base 海水 −2～+50℃。−02 的盐水 −40℃工况不能混入 base；旧底铰链摆盘解释已停用。
+- 标准库当前核实版本为 [19d586b](https://github.com/reknottycat/standards-kb/tree/19d586bb53cb452325d815313a895a1dfafa868b)。旧“93 条已核”“As=147 已解”不再有效；九项工程验收仍 HOLD。
+- 本次 main **仅更新方案和导航**，尚未集成研究线。研究线适配器仍固定旧标准库，不能声称最新公式已经接入阀门计算。候选、软件回归、有限数值研究和工程验收按当前方案分开阅读。
+- R1 [aa80b87](https://github.com/reknottycat/valve-agent-design/tree/aa80b87b6ee9617754101a238f70bec99393ad9a) 保持冻结，不删除历史分支或证据；没有新 CAD/CFD/FEA 计算或制造放行。
+
+仓库保持 **private**；原始图纸及工程资料请勿公开转发。
+
+<a id="historical-readme"></a>
+## 历史 README（文档更新前版本）
+
+以下正文完整保留自 [a8ada4e](https://github.com/reknottycat/valve-agent-design/blob/a8ada4ed61b15e408979b8025ff8a58ceac0ae31/README.md)，用于理解旧工作及链接。**其中的机构解释、混用型号工况、As 数值、条目核实计数与未解项叙述可能已过时或被否定，不是当前设计输入、有效标准或执行指令。** 现行判断以 [当前方案](CURRENT_PLAN.md) 的固定来源和边界为准。
+
+<details>
+<summary>展开旧 README 原文（历史，不作当前结论）</summary>
+
+# valve-agent-design
+
 从一张 GA 外形图出发，做一套 **AI 阀门自主设计** 的完整工程资产。
 
 本仓库记录的是**第一台阀的完整设计过程**：图纸识读 → 参数提取 → 结构方案 → 参数化建模 →
@@ -101,3 +122,5 @@ standards-kb-builder/       skill 分发仓库 reknottycat/standards-kb-builder�
 ## 说明
 
 图纸为 ИТШЛ（苏联设计局）资料，仓库设为 **private**。请勿公开转发。
+
+</details>
