@@ -177,6 +177,34 @@ def summarize_port(p, faces, points, owners, pressures, flux, inlet):
                 pkin_face_range_m2_s2=[min(ps),max(ps)], phi_sum_m3_s=sum(flux))
 
 
+def research_fluid_state(plan):
+    """Validate the already authenticated plan, never caller-provided properties."""
+    state = plan['selected_study_property_state']
+    expected = {'temperature_C': 20.0, 'salinity_g_kg': 35.0,
+                'pressure_MPa_absolute': 0.101325, 'density_kg_m3': 1024.9109328963,
+                'dynamic_viscosity_Pa_s': 0.0010766289252529323,
+                'kinematic_viscosity_m2_s': 1.0504609627009073e-6,
+                'actual_duty_or_measurement': False, 'pressure_correction_implemented': False,
+                'minus_2C_phase_and_property_gate': 'UNRESOLVED'}
+    need(type(state) is dict and set(state) == set(expected), 'research fluid state shape mismatch')
+    for key, value in expected.items():
+        need(type(state[key]) is type(value) and state[key] == value,
+             'research fluid state mismatch: ' + key)
+    need(math.isclose(state['dynamic_viscosity_Pa_s']/state['density_kg_m3'],
+                      state['kinematic_viscosity_m2_s'], rel_tol=1e-14), 'research mu/rho disagreement')
+    for key, digest in (
+        ('property_code_sha256', '2767f043bd35ce52305192495003f9f639d0913e4bdf299f55c2a285b6bc214c'),
+        ('property_data_sha256', 'dd39b778058673c846109a4e5bc409147a8820a06efd4891e83b9b1938b5a0fa')):
+        need(plan['sources'][key] == digest, 'research property source mismatch')
+    pressure = plan['pressure_interpretation']
+    need(pressure['field'] == 'simpleFoam p has dimensions m2/s2; multiply by rho for Pa'
+         and type(pressure['reference_outlet_kinematic_p']) is int
+         and pressure['reference_outlet_kinematic_p'] == 0
+         and pressure['reference_outlet_axis_absolute_pressure_Pa'] == 101325.0,
+         'research pressure interpretation mismatch')
+    return dict(state)
+
+
 def reconstruct(paths, lock, adapter):
     read = lambda role: iter(lines(paths[role], lock['files'][role]))
     boundary = tail(read('boundary')); patches = []
@@ -212,6 +240,8 @@ def reconstruct(paths, lock, adapter):
         need(math.isclose(p['area_weighted_centre_m'][0],plan['domain'][name+'_x_m'],rel_tol=1e-15), 'plan end-plane mismatch')
     speed = abs(qi)/a['area_sum_m2']; k = 2*dp/speed**2; nominal_speed = abs(qi)/nominal
     return {'mesh_counts':dict(points=np,faces=nf,cells=nc,internal_faces=ni,patches=len(patches)),
+            'selected_study_property_state':research_fluid_state(plan),
+            'pressure_dimensions':[0, 2, -2, 0, 0, 0, 0],
             'ports':ports, 'dpkin_m2_s2':dp, 'speed_reference_m_s':speed, 'K_mesh_area':k,
             'flux_reference':'abs(saved Qin), not Qout; older observation-contract Qout convention is not substituted',
             'relative_signed_flux_imbalance':abs(qi+qo)/max(abs(qi),abs(qo)),

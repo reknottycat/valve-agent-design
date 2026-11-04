@@ -137,6 +137,45 @@ def _extract(files, adapter):
                                 'acceptance_threshold': None}}
 
 
+def _research_fluid_binding(measured, observation, adapter):
+    """Conditional pressure scaling, independent of capacity/source eligibility."""
+    if observation is None or any(measured[k] != 'PASS' for k in
+            ('source_binding_status', 'reconstruction_status', 'observer_crosscheck_status')):
+        return None
+    m = measured['measurement']; state = m['selected_study_property_state']
+    # Properties have been validated against the exact authenticated frozen plan.
+    rho = _number(state['density_kg_m3'], adapter)
+    mu = _number(state['dynamic_viscosity_Pa_s'], adapter)
+    nu = _number(state['kinematic_viscosity_m2_s'], adapter)
+    _need(rho > 0 and mu > 0 and nu > 0, 'nonpositive research property', adapter)
+    _close(mu/rho, nu, adapter)
+    model = observation['model']
+    _need(model['transport'] == 'Newtonian' and model['simulation'] == 'laminar'
+          and model['stress'] == 'Stokes' and model['nu']['unit'] == 'm^2/s',
+          'research model/viscosity units mismatch', adapter)
+    _close(model['nu']['value'], nu, adapter)
+    _need(observation['pressure_dimensions'] == m['pressure_dimensions'] == [0,2,-2,0,0,0,0]
+          and observation['inputs']['DeltaPkin_m2_s2']['unit'] == 'm^2/s^2',
+          'research pressure dimensions mismatch', adapter)
+    dp = _number(m['dpkin_m2_s2'], adapter)
+    _need(dp > 0, 'research pressure sign mismatch', adapter)
+    _close(dp, observation['inputs']['DeltaPkin_m2_s2']['value'], adapter)
+    pressure = _number(rho*dp, adapter)
+    return {'status': 'CLOSED_RESEARCH_INPUT',
+            'source': 'geometry_binding.measurement.selected_study_property_state',
+            'assumptions': dict(state), 'salinity_basis': 'reference-composition salinity, g/kg',
+            'nu_from_mu_over_rho_m2_s': mu/rho,
+            'run_nu_m2_s': model['nu']['value'], 'nu_reconciliation_status': 'PASS',
+            'conditional_research_pressure_difference_Pa': pressure,
+            'formula': 'rho_assumed_kg_m3 * reconstructed_dpkin_m2_s2',
+            'density_role': 'frozen research assumption, not actual density or F-FLW-001 rho_ref',
+            'pressure_dimensions': list(m['pressure_dimensions']),
+            'dpkin_m2_s2': dp, 'pressure_estimator': m['pressure_reconstruction'],
+            'pressure_sign': 'inlet area mean minus outlet area mean',
+            'scope': 'conditional static port-to-port research endpoint including extensions; not actual duty, wall taps, total pressure, capacity or steady validation',
+            'actual_duty_or_measurement': False, 'engineering_release': False}
+
+
 def bind(declaration, standards, adapter, standards_root=None):
     _need(type(declaration) is dict and set(declaration) in ({'profile', 'paths'}, {'profile', 'paths', 'geometry_binding'}),
           'requires profile and paths with optional geometry_binding; values/status/units cannot be supplied', adapter)
@@ -226,6 +265,9 @@ def bind(declaration, standards, adapter, standards_root=None):
         exec(compile(module_path.read_bytes(), str(module_path), 'exec', dont_inherit=True), geometry.__dict__)
         measured = geometry.bind(declaration['geometry_binding'], observation, adapter)
         result['geometry_binding'] = measured
+        fluid = _research_fluid_binding(measured, observation, adapter)
+        if fluid is not None:
+            result['research_fluid_binding'] = fluid
         if measured['reconstruction_status'] == 'PASS':
             result['integrity_scope'] = ('selected seven observer files plus boundary/points/faces/owner, saved21 p/phi and frozen plan; '
                                          'not full case, mesh quality, CAD/BOM, R1 or product authentication')

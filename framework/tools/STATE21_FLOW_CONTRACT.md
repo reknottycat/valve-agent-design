@@ -194,7 +194,7 @@ The frozen R1 research plan declares D=0.2 m and A_nominal=pi*D²/4 =
 mesh-area K is 115.96179557311874 and the separate nominal-area research K is
 118.24579895993566. The 1.969617% increase is purely reference-area arithmetic.
 `research_input_bindings.RESEARCH_REFERENCE_A` and `RESEARCH_REFERENCE_K` expose
-these closed research inputs separately. F-FLW-001 A/zeta/Kv, actual rho, Pa,
+these closed research inputs separately. F-FLW-001 A/zeta/Kv, actual rho, actual Pa,
 F-FLW-002 capacity and engineering release remain null/false/HOLD. The reason is
 physical ineligibility of this laminar, nonsteady, restrained research case for
 product capacity, not that the numerical research reference area is unknown.
@@ -238,3 +238,58 @@ shape. Real tests cover direct reconstruction, eight observer comparisons,
 modified and missing input rejection, unchanged source metadata, retained nulls,
 and the isolated CLI's exit 2 HOLD response. Do not upload field fixtures, mesh
 files, process logs, local manifests or their generated runtime output.
+
+## Conditional research fluid and pressure binding
+
+The same authenticated plan now exposes `selected_study_property_state` in the
+geometry measurement. Its exact state and flags are checked: 20 °C,
+reference-composition salinity 35 g/kg, P0=0.101325 MPa absolute,
+rho=1024.9109328963 kg/m³, mu=0.0010766289252529323 Pa·s and
+nu=1.0504609627009073e-6 m²/s. These are declared research assumptions, not
+measured temperature, actual density, a temperature field or actual duty.
+The original property-code/data SHA256 references are checked against the plan;
+no new profile, lock, external-code execution or property source fixture is used.
+
+The [original property implementation](https://github.com/reknottycat/valve-agent-design/blob/aa80b87b6ee9617754101a238f70bec99393ad9a/runs/20261006/CALCULATIONS/R1/sources/C4/T06/seawater_study.py)
+and [frozen cases](https://github.com/reknottycat/valve-agent-design/blob/aa80b87b6ee9617754101a238f70bec99393ad9a/runs/20261006/CALCULATIONS/R1/sources/C4/T06/seawater_study_cases.json)
+are independently implemented rounded-paper arithmetic, not MIT library code.
+An independent Decimal audit reproduced all nine frozen rows within relative
+1e-14; this is arithmetic agreement, not physical accuracy. The pinned plan
+references code SHA256 `2767f043bd35ce52305192495003f9f639d0913e4bdf299f55c2a285b6bc214c`
+and data SHA256 `dd39b778058673c846109a4e5bc409147a8820a06efd4891e83b9b1938b5a0fa`.
+Runtime authenticates the plan, not a newly fetched copy of those sources.
+
+[Sharqawy, Lienhard and Zubair (2010)](https://web.mit.edu/lienhard/www/papers/journal/Thermophysical_properties_of_seawater-DWT-16-354-2010.pdf),
+Eq.8 and Eqs.22–23 support density and viscosity at this selected state, using
+Celsius and salinity converted from g/kg to kg/kg. Eq.8 states 0.1% accuracy.
+The [MIT property tables](https://web.mit.edu/seawater/2017_MIT_Seawater_Property_Tables_r2b_2023c.pdf)
+list viscosity on printed p2 (PDF p5) and density on printed p21 (PDF p24),
+with 1.5% and 0.14% labels respectively. These are not numbered tables or
+interchangeable accuracy claims. Retained digits preserve provenance, not
+physical precision. The [MIT documentation](https://web.mit.edu/seawater/)
+has a 0 °C lower domain boundary; −2 °C phase/property eligibility remains
+unresolved. No pressure correction is implemented, and no elevated-pressure or
+full −2…50 °C validity is claimed.
+
+Only authenticated seven-file observation plus authenticated geometry,
+reconstruction and observer-crosscheck PASS produces `research_fluid_binding`.
+It reconciles mu/rho with selected nu and actual configured run nu in m²/s,
+checks kinematic pressure dimensions, and multiplies the reconstructed static
+inlet-minus-outlet area-mean difference by assumed rho:
+
+`conditional_research_pressure_difference_Pa = rho_assumed * reconstructed_dpkin`
+
+For state21 this is 0.00016393470586881226 Pa. The estimator retains inlet
+zeroGradient owner-cell reconstruction, outlet fixedValue 0 and the numerical
+extensions. It is not a wall-tap, total-pressure, hydrostatic, actual operating
+pressure or demonstrated steady result. F-FLW-001 rho_ref=1000 is never used
+as actual or assumed fluid density. Conditional scaling is independent of
+capacity-source eligibility; all existing source statuses are retained.
+
+Missing observer or geometry produces no conditional numerical pressure.
+Changed plan bytes fail the existing pin; caller density/temperature/units are
+not accepted. Original seven-file mode stays unchanged. Actual top-level
+rho_actual_kg_m3/delta_p_Pa/Kv_m3_h/Cv and applicable product A/zeta remain null;
+all nine readiness HOLD conditions, acceptance limits and release status remain
+unchanged. New `test_state21_research_fluid.py` tests exercise formula arithmetic,
+real API/isolated CLI conversion, missing evidence and mutated state/model/units.

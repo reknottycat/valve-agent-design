@@ -6,8 +6,8 @@
 
 - 研究对象是无后缀 **522-35.4179，DN200 青铜止回-截止阀**，base 海水 −2～+50℃。−02 的盐水 −40℃工况不能混入 base；旧底铰链摆盘解释已停用。
 - 标准库当前核实版本为 [19d586b](https://github.com/reknottycat/standards-kb/tree/19d586bb53cb452325d815313a895a1dfafa868b)。旧“93 条已核”“As=147 已解”不再有效；九项工程验收仍 HOLD。
-- main 的 [只读标准 API/CLI](framework/standards/README.md) 固定到 19d586b；选取的 [研究预检入口](framework/tools/README.md) 已在真实元数据/算例检查路径中消费公式来源、隔离和当前验收卡护栏。该入口可从 state21 保存网格及 p/phi 直接重建端面、流量和运动学静压差，并把 R1 圆截面与离散网格参考 K 分开；因层流、未稳态及产品取压条件未定，容量使用仍 HOLD，Kv/Cv 不输出。完整研究线及 CAD/CFD 编排尚未集成，历史 C0 脚本不被该入口拦截；候选、软件回归、有限数值研究和工程验收仍分开。
-- R1 [aa80b87](https://github.com/reknottycat/valve-agent-design/tree/aa80b87b6ee9617754101a238f70bec99393ad9a) 保持冻结，不删除历史分支或证据；本批只有既有 STEP 只读测量和离线场重建，没有新建 CAD、CFD/FEA 求解或制造放行。
+- main 的 [只读标准 API/CLI](framework/standards/README.md) 固定到 19d586b；选取的 [研究预检入口](framework/tools/README.md) 已在真实元数据/算例检查路径中消费公式来源、隔离和当前验收卡护栏。该入口可从 state21 保存网格及 p/phi 直接重建端面、流量和运动学静压差，并把 R1 圆截面与离散网格参考 K 分开；在已核 R1 20℃/35 g/kg 假设下另列条件 Pa 转换，实际密度/Pa 字段仍空；因层流、未稳态及产品取压条件未定，容量使用仍 HOLD，Kv/Cv 不输出。完整研究线及 CAD/CFD 编排尚未集成，历史 C0 脚本不被该入口拦截；候选、软件回归、有限数值研究和工程验收仍分开。
+- R1 [aa80b87](https://github.com/reknottycat/valve-agent-design/tree/aa80b87b6ee9617754101a238f70bec99393ad9a) 保持冻结，不删除历史分支或证据；当前进展为既有资料、只读几何/场重建及研究假设换算，没有新建 CAD、CFD/FEA 求解或制造放行。
 
 仓库保持 **private**；原始图纸及工程资料请勿公开转发。
 
