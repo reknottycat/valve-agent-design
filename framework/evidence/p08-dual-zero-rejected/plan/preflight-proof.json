@@ -1,0 +1,60 @@
+{
+  "source": "/workspace/shared/valve-boundary-grading-native-quality-20261023/case",
+  "new_root": "/workspace/shared/valve-dual-zero-trial-20261023",
+  "copy_whitelist": [
+    "constant/polyMesh/points",
+    "constant/polyMesh/faces",
+    "constant/polyMesh/owner",
+    "constant/polyMesh/neighbour",
+    "constant/polyMesh/boundary",
+    "constant/polyMesh/cellZones",
+    "constant/polyMesh/faceZones",
+    "constant/polyMesh/pointZones",
+    "system/controlDict",
+    "system/fvSchemes",
+    "system/fvSolution"
+  ],
+  "source_hashes": {
+    "constant/polyMesh/points": "b7b29d7363585808cbb5a5edff3529eb7a5ad3c52b4226a3364dd944d69bc127",
+    "constant/polyMesh/faces": "3fd6a80912e70067aeb3c070cba311df6971796a8f27680f66bbb03df2cbf089",
+    "constant/polyMesh/owner": "a642bf2c06883961497326fdbeb165d6adbaf87bcebfa98c279344bdf42ba15c",
+    "constant/polyMesh/neighbour": "6489d8b92e0b1f9ecfe4fd3aa6cfa20a1e7f15eaff5a42af76ff2c4a478d0021",
+    "constant/polyMesh/boundary": "627e2f13bbc8bc4849caf9e8fc787d49c8e658a4310a11df2e52cf13d7d3e00f",
+    "constant/polyMesh/cellZones": "c57a6717a8894ef09ca5c9f4359d1c3b56f92a9d19c5cac0e2c2d010c608f018",
+    "constant/polyMesh/faceZones": "1a3fc3f2f2c7f76c597df378690ccbf4b8a8013456e58f0c87dcf4ecaca5220f",
+    "constant/polyMesh/pointZones": "a4a6a2dcd51a046ec166f12f8fb6f70d0cc21e238dc6ae1d1db90effcf542a29",
+    "system/controlDict": "d68ea9237e8f5d543a6e98ba031b2137e5e13dcc47cbee9d12959fa583426725",
+    "system/fvSchemes": "8759ffa7b2e83dee1355b956d93ead3c68d7053d5bb91405b74a41a715a5ccd1",
+    "system/fvSolution": "48e61e0402615d31ff14eba640055603421bb51a9f2372bb18cb865a4a5f9f40"
+  },
+  "environment_overrides": {
+    "WM_PROJECT_DIR": "/workspace/shared/valve-openfoam-quality-20261023/root/usr/share/openfoam",
+    "FOAM_ETC": "/workspace/shared/valve-openfoam-quality-20261023/root/usr/share/openfoam/etc",
+    "LD_LIBRARY_PATH": "/workspace/shared/valve-openfoam-quality-20261023/root/usr/lib/dummy:/workspace/shared/valve-openfoam-quality-20261023/root/usr/lib",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "conversion_argv": [
+    "/workspace/shared/valve-openfoam-quality-20261023/root/usr/bin/polyDualMesh",
+    "-case",
+    "/workspace/shared/valve-dual-zero-trial-20261023/case",
+    "-noFunctionObjects",
+    "0"
+  ],
+  "postvalidation_check_argv": [
+    "/workspace/shared/valve-openfoam-quality-20261023/root/usr/bin/checkMesh",
+    "-case",
+    "/workspace/shared/valve-dual-zero-trial-20261023/case",
+    "-time",
+    "1",
+    "-allGeometry",
+    "-allTopology",
+    "-noFunctionObjects"
+  ],
+  "time_gate": "require exactly new 1/polyMesh with points faces owner neighbour boundary; check log must say time=1; never fallback constant",
+  "bounds": {
+    "wall_seconds_per_native_process": 180,
+    "rss_bytes": 2147483648
+  },
+  "no_conversion_executed": true
+}

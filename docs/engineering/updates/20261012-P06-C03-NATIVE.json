@@ -1,0 +1,227 @@
+{
+  "schema": "valve.worklog_P06_C03_NATIVE/v1",
+  "recorded_utc": "2026-10-12T04:54:44.201257+00:00",
+  "branch": "research/conformal-whole-flow-20261012",
+  "expected_parent": "90fa5d1de1b781f86aea4bb801bb52d5b816578b",
+  "scope": "Worklog and evidence references only; no modelling input/source payload upload.",
+  "source_pins": [
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_rest_CAD_remesh_C03/C03_FINAL_TERMINAL_ENTRY.json",
+      "bytes": 801,
+      "sha256": "6765faaf7fddb7dbca2872bb3920429a15f1a4f881341d6b69d321982ddf9cdd"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_rest_CAD_remesh_C03/C03_FINAL_SOURCE_MANIFEST.json",
+      "bytes": 11097,
+      "sha256": "6c7ade7fc5fadef35ba1876f56ba6ee1d899204d9915550fdf4805d125d5234c"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_rest_CAD_remesh_C03/runs/M01_A01/evidence/native-stderr.txt",
+      "bytes": 263,
+      "sha256": "a64f33dbf7d9282c4eb59aa0a4827a6bb8a6f80d75abb932a9556cdc27146147"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_join_C03_A01/runs/J01_A01/output/WHOLE_MSH_SAVED.json",
+      "bytes": 362,
+      "sha256": "ac5b9c2ebf60937b7dc84eb58ea76bc7bbd5d3b8cad92e47fae5df057aa47c61"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_join_C03_A01/runs/J01_A01/evidence/join-receipt.json",
+      "bytes": 1617,
+      "sha256": "062e1c082846ec79d1620953486a14b916c647b8e64e49343b60e6b05c4e28ea"
+    },
+    {
+      "path": "review_flow_P06_saved_2D_C03/SAVED_2D_FINAL_ENTRY_A01.json",
+      "bytes": 1084,
+      "sha256": "0d0f117113626854eebfcfdf0589b098e6a54ad6ee8bb6cef4c5443046f87a94"
+    },
+    {
+      "path": "review_flow_P06_saved_3D_C03/SAVED_3D_FINAL_ENTRY_A01.json",
+      "bytes": 1063,
+      "sha256": "c07375ebfc202f772d6376bd241dda0b71a8f3f63a3ccda5a4df70bfb68a0869"
+    },
+    {
+      "path": "review_flow_P06_whole_C03/WHOLE_SOURCE_FINAL_ENTRY_A01.json",
+      "bytes": 1045,
+      "sha256": "72b988ede7b3560511779ef35aaf20f099ac0f077a205b73df84bfb911068f86"
+    },
+    {
+      "path": "P06_native_memory_route_A01/runs/R01_split_A01/output/SPLIT_EQUIVALENCE_RESULTS.json",
+      "bytes": 4631,
+      "sha256": "d00dfa00cef7f839763a97120508bc84c5be5667704c2fe46b012b3ac55e66af"
+    },
+    {
+      "path": "P06_native_nozones_route_A01/runs/R01_nozones_A01/output/NOZONES_EQUIVALENCE_RESULTS.json",
+      "bytes": 4558,
+      "sha256": "2af45f1ab4315ade524a78de6926290382341478b2d5bb2767c49ab078f950b4"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_stream_polyMesh_A01/evidence/F01_A01.receipt.json",
+      "bytes": 763,
+      "sha256": "5e6477bf332d854b4b4186d309cf9c1106012d83469f43f05364c7fdb818635a"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_stream_polyMesh_A01/evidence/F01_A01.stderr.log",
+      "bytes": 980,
+      "sha256": "43d3dcbffbe86243ac156aed563e157dcaaf5c7071687cc8c06fb42b1dd879cb"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_stream_polyMesh_A01/output/P04_COMPLETE_FIXTURE_VALIDATION_SUMMARY.json",
+      "bytes": 3417,
+      "sha256": "b072d19587a9536dcf5b7ccd23cf618d889b35b4bac87d830360e52ea62d5d46"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_stream_polyMesh_A01/tet_fixture/runs/T01_A01/output/INDEPENDENT_OFFICIAL_FIXTURE_EQUIVALENCE.json",
+      "bytes": 4055,
+      "sha256": "a47b16e12b1590cd334e1eea7b6b0bb0966ea1eac3fd29cb0786e6551ebd6bef"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_stream_polyMesh_A01/mixed_fixture/output/MIXED_SYNTHETIC_IMPLEMENTATION_EQUIVALENCE_AND_NATIVE_DIAGNOSTICS.json",
+      "bytes": 2099,
+      "sha256": "44aa3e4eb33b01b6950cf5b92bc7a90a91d58f35435c84d4ef5e93d5ae39d60f"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_stream_polyMesh_A01/runs/W01_A01/output/CONVERSION_RESULTS.json",
+      "bytes": 14365,
+      "sha256": "14fd435b94d0adbe077dd4b35439bf62e3bc887dd751149d3d8700da8a22bc56"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_stream_polyMesh_A01/runs/W01_A01/output/OUTPUT_SHA256.json",
+      "bytes": 3958,
+      "sha256": "1664c10f963923e4b3d96ee806ae09e41d4fe62faacfb6784ae975ed3b244080"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_stream_polyMesh_A01/evidence/W01_A01_keep_zones.receipt.json",
+      "bytes": 984,
+      "sha256": "12a66bc9250bdf40a70d05e89935192ff9385ff0cccca347bdf0d7e5754d2244"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_geometry_C03_A01/evidence/all_geometry_no_topology.receipt.json",
+      "bytes": 1114,
+      "sha256": "c03615597c68a46d9b1cabe98e45ee0455cc74cd980e639961082d02353d32f1"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_geometry_C03_A01/evidence/all_geometry_no_topology.log",
+      "bytes": 4580,
+      "sha256": "a50f8cafbcb1cd08454412ea9782a2350fa45e266ea1e2b41d90a8446c508cf5"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_geometry_C03_A01/evidence/default_topology_geometry.receipt.json",
+      "bytes": 1076,
+      "sha256": "444d1db4a8ed117cb228cf25326f891aa7251f8d50a66a59562d7a1cd63602d4"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_geometry_C03_A01/evidence/default_topology_geometry.log",
+      "bytes": 4475,
+      "sha256": "82bb25071c87a24e11d84714396b3afaff916cb62c9c8f5cd26839a71d32df2f"
+    },
+    {
+      "path": "valve-source-increment-P06-C03-20261012/ARCHIVE_VERIFIED.json",
+      "bytes": 412,
+      "sha256": "5a21881177a596bcfcb0e4ebca14911ec6d11f49fd505418af0f69331e940d7c"
+    },
+    {
+      "path": "valve-source-increment-P06-C03-20261012/LIBRARY_IDENTITY_A01.json",
+      "bytes": 989,
+      "sha256": "8620e3b5b6827a98a9075855939fb1ef1a2dc365e4e41d8665f03eb4056ef0c8"
+    }
+  ],
+  "C03_actual_saved_rest": {
+    "nodes": 1855249,
+    "tets": 9328236,
+    "boundary_triangles": 1363988,
+    "bytes": 589366309,
+    "sha256": "f240e204c28e567f3b9be524087075eaad7dba171fa5b70b74bf85f57794d904",
+    "elapsed_seconds": 999.334769,
+    "peak_RSS_bytes": 6093172736,
+    "Gmsh_ill_shaped_tets_warning": 3788,
+    "source_identity_and_fixed_R32_independently_verified": true,
+    "FV_quality_qualified": false
+  },
+  "whole_saved_MSH": {
+    "bytes": 1020149403,
+    "sha256": "55df3733776f17d3791ba6dfed5b20b1536dee81c92453b440af2408fba096ff",
+    "cells": 13360764,
+    "points": 3977191,
+    "tets": 9772114,
+    "prisms": 3588650,
+    "all_source_cells_and_external_walls_independently_verified": true
+  },
+  "compact_conversion": {
+    "actual_exit_code": 0,
+    "start_utc": "2026-10-12T04:43:39.124855+00:00",
+    "end_utc": "2026-10-12T04:48:17.969800+00:00",
+    "elapsed_seconds": 278.84497700899374,
+    "peak_RSS_bytes": 4171673600,
+    "faces": 29505232,
+    "internal_faces": 27526474,
+    "external_faces": 1978758,
+    "cell_face_incidences": 57031706,
+    "cell_aggregation": false,
+    "original_two_cellZones_retained": true,
+    "original_points_retained_single_mm_to_m_conversion": true,
+    "whole_conversion_independent_full_data_review": "pending at this freeze"
+  },
+  "native_complete_geometry": {
+    "command": [
+      "-constant",
+      "-allGeometry",
+      "-noTopology"
+    ],
+    "elapsed_seconds": 66.14190021599643,
+    "peak_RSS_bytes": 5311406080,
+    "process_exit": 0,
+    "quality_failed_checks": 7,
+    "high_aspect_ratio_cells": 1252,
+    "skew_faces": 216,
+    "face_tet_diagnostic_events": 49,
+    "unique_low_quality_tet_faces": 26,
+    "low_determinant_cells": 48766,
+    "concave_cells": 44,
+    "low_weight_faces": 4020,
+    "low_volume_ratio_faces": 983,
+    "non_orthogonality_warning_faces": 312384,
+    "max_non_orthogonality_degrees": 89.99999175343928,
+    "minimum_volume_m3": 4.4508020868024176e-18,
+    "maximum_aspect_ratio": 1842447.8523414258,
+    "maximum_skewness": 35.52568563807459
+  },
+  "native_default_topology_and_geometry": {
+    "elapsed_seconds": 59.70309958299913,
+    "peak_RSS_bytes": 6493585408,
+    "process_exit": 0,
+    "connected_regions": 1,
+    "boundary_addressing_point_usage_ordering_face_vertices_and_patch_topology_pass": true,
+    "default_geometry_failed_checks": 2,
+    "extended_allTopology_complete": false
+  },
+  "R01_comparison": {
+    "cells": 6927138,
+    "quality_failed_checks": 3,
+    "low_determinant_cells": 18261,
+    "low_weight_faces": 3887,
+    "low_volume_ratio_faces": 8,
+    "C03_replaces_R01_as_accepted_mesh": false,
+    "either_mesh_qualified_for_CFD": false
+  },
+  "failed_capacity_hypotheses": {
+    "split_allGeometry_then_allTopology": "R01 predicate/badset equivalence observed; allTopology still 6656835584 B, only about 3.2% lower than original full check.",
+    "remove_diagnostic_cellZones": "R01 full check 6838530048 B, only about 0.53% lower. Memory-after-zone-log timing did not establish zone causation; that inference is withdrawn. Stop zone trials.",
+    "baseline_original_R01_full_peak_RSS_bytes": 6874935296,
+    "full_enhanced_topology_capacity_solved": false
+  },
+  "failure_trace": {
+    "converter_F01": "Final report() passed elapsed_seconds twice: TypeError after output writing; actual exit 1. Preserved, corrected in F02 and actual full conversion.",
+    "mixed_two_cell_fixture": "Official and compact conversion are equivalent. Both report rank-deficient determinant 0; implementation-equivalence proof only, not mesh-quality acceptance."
+  },
+  "current_next_action": "Map all seven actual badsets to original source blocks/CAD and overlap clusters, compare reusable R01 baseline, then execute one local multi-criterion repair candidate without global refinement or altered physical boundaries.",
+  "CFD_started": false,
+  "whole_mesh_quality_qualified": false,
+  "full_valve_qualified": false,
+  "Library_recovery": {
+    "id": "libfile_50150a2dca208191a8769b6f6bbb2c2f",
+    "bytes": 292507496,
+    "sha256": "fcd50f09bb5b5382d404c3b213f4884374fef2af9bc787657b7deb4c001320b0",
+    "scope": "Actual C03 rest3D source, 2D checkpoints and evidence; archive predates whole/converter terminal. 81 source file hashes and ZIP CRC verified; no fresh scientific rebuild."
+  }
+}

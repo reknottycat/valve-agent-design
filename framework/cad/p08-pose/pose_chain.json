@@ -1,0 +1,129 @@
+{
+  "scope": "Historical source-to-nominal-pose evidence, NOT a new CAD pose measurement",
+  "sources": [
+    {
+      "name": "FDG1_验证摘要.json",
+      "sha256": "212215d619b254e0b785ebbf76b493fb19b3743a1f3633e4664403ae06dbbc33",
+      "url": "https://drive.google.com/file/d/1HokGm7ZqAse1X3JmYX9vHAXgQKAD6MIS/view?usp=drivesdk",
+      "bytes": 32548
+    },
+    {
+      "name": "FDG1_模型范围与单位.json",
+      "sha256": "cc1f9f4ccfcfcbac99241fb6f806a1703eb9edc2e8c33718ec3c2f5ac1bf97af",
+      "url": "https://drive.google.com/file/d/1tH_XvXusDE5ouRhHpQjS-1ZHQMcvSz7b/view?usp=drivesdk",
+      "bytes": 1707
+    }
+  ],
+  "nominal_pose": {
+    "disc_lift_mm": 57,
+    "stem_retraction_mm": 57,
+    "shoe_retainer_translation_mm": 57,
+    "disc_rotation_deg": 0
+  },
+  "historical_pose_identity": {
+    "disc_AGR1": {
+      "source_translation_z_mm": 57,
+      "expected_minus_export_mm3": 0.0,
+      "export_minus_expected_mm3": 0.0,
+      "volume_difference_mm3": 1.0838266462087631e-07,
+      "bbox_mm": [
+        180.0,
+        420.0,
+        -120.0,
+        120.0,
+        78.9999999,
+        197.0000001
+      ]
+    },
+    "stem_source": {
+      "source_translation_z_mm": 57,
+      "expected_minus_export_mm3": 0.0,
+      "export_minus_expected_mm3": 0.0,
+      "volume_difference_mm3": 0.0,
+      "bbox_mm": [
+        280.0,
+        320.0,
+        -20.0,
+        20.0,
+        107.5,
+        666.0
+      ]
+    },
+    "shoe_source": {
+      "source_translation_z_mm": 57,
+      "expected_minus_export_mm3": 0.0,
+      "export_minus_expected_mm3": 0.0,
+      "volume_difference_mm3": 0.0,
+      "bbox_mm": [
+        278.0,
+        322.0,
+        -22.0,
+        22.0,
+        93.0,
+        107.5
+      ]
+    },
+    "retainer_source": {
+      "source_translation_z_mm": 57,
+      "expected_minus_export_mm3": 0.0,
+      "export_minus_expected_mm3": 0.0,
+      "volume_difference_mm3": 0.0,
+      "bbox_mm": [
+        276.1,
+        323.8161709768804,
+        -23.9,
+        23.9,
+        104.0,
+        106.0
+      ]
+    }
+  },
+  "historical_tested_hashes": {
+    "source/disc_AGR1.step": "a3ff0967d9c321e27e6a178238a26172c77ea63bdac1f454a51d642863485279",
+    "source/seat_source.step": "a061903b7f9ca9df04837ba467db638717842429878230847205e4f68fd2bb9d",
+    "source/retainer_source.step": "34f45c42896824dc0559266526edd5fd204b88bcb79ae829620f4a137c5b9a3c",
+    "source/cover_AGR1.step": "8d1b54cc7084c45843ae4d1c098ac6f4bdbd1457a4004dbd9e18e3dad7c7bdf6",
+    "source/stem_source.step": "82d4f5d49afb95b4ffcb7af11f525cf29336886df9ba5eb2ee86c2ffe3fea489",
+    "source/body_source.step": "337d2a5f3928ecf5d0c8ab0775289d5631f024169dc37bf1a6fe8eb1dea8d9c6",
+    "source/shoe_source.step": "b627f4be539fabded1298f8d4e7825d0b35306963fb14deb4821cbdacbaa9986",
+    "source/cage_AGR1.step": "25b05b489f2c82464f5e670fb65b909003c927dc9960f849eb8694d977724c66",
+    "source/mount_fastener_envelopes.step": "ace83ff376de442950e7013634ed315508946e2f5cd7785479910052e37b9cdb",
+    "source/gasket_2mm_uncompressed_envelope.step": "19e188ab0f48b74e3e11daff2a4335b097d1b7ebb509712c4df069f543f70728",
+    "source/SOURCE_MANIFEST.json": "4ed5c12daeafc1fb3254ce0437a55e4d85aab2aa9764d9c843895e16a67a70fa",
+    "source/GA1_A05_PARAMETERS.json": "12cb5a25ec13d17ea7c7e924a27963cc5cb68182033ff13e2d8d1405c3fc46ea",
+    "source/C2_parameters.json": "c35a4064403f98e3462bfea3650eebe2695ced39a15fb928f817e465169576ba",
+    "output/shoe_source_open57.step": "8fd403e6eadc69a4c40a046fc6626b25817734ae7402bebf4a22ca2a900df5ac",
+    "output/disc_AGR1_open57.step": "4c5573f0ff30e10c473b41d9eb6addc06b1509f36dbe02a284f736a9267aef2a",
+    "output/stem_source_open57.step": "bb238a64c34fc81a599cc7a4cc29696069ccab6b2643d3a61cc6a90a19f988d7",
+    "output/AGR1_open_seal_omitted_proxy_main_mm.step": "a9aeb45996a388a3d894f69605205c70c25edd154adc6d3c71658329a730e787",
+    "output/retainer_source_open57.step": "8d0223a44c291fbd8872b54c16da93c9b133179c9395032468ebd5e1bf2bd8ad",
+    "output/control_same_disc_no_cage_main_mm.step": "95f05e5fff8814e2c2c8612ad3ec5c7384ad52cc4e3fa05c10ad1cff3b2c0bd4",
+    "output/FDG1_nominal_open57_geometry_context.step": "02c1e68ed6357819505954044caf0a652dc53c6b48081da2bd12a8b7d13ea67a",
+    "output/AGR1_open_seal_omitted_proxy_mm.step": "798e490ce43c413fb3b5bf5413af5b6003ed40e8c9e5ddc690fd6c07d9c03136",
+    "output/control_same_disc_no_cage_mm.step": "f1be05ed57f9cd1b61f1964001322ee6390ee48c93dee50304d9a5bcc70de426",
+    "output/AGR1_open_seal_omitted_proxy_main_meter_coordinates.stl": "a94c64564c3cc4f962d6e8e37a7fcc2a643cc30b523fc57ee1aac0ed014269ae",
+    "output/control_same_disc_no_cage_main_meter_coordinates.stl": "22f85950afa1ee9c8c820b4a0f83d1f6ff099205b3bd0e857c377a4404a012b1",
+    "INPUTS.json": "cc1f9f4ccfcfcbac99241fb6f806a1703eb9edc2e8c33718ec3c2f5ac1bf97af",
+    "RESULTS.json": "b4d30952dae20938eb3de20905b1b6826057dd09d46f429d36e0eee71f5d919b",
+    "build_fluid_domain.py": "5006bbb7bd5f89a28fe09bb0e8531586cfcc65f733fa618db6b1b13b4a3f8c1a"
+  },
+  "historical_geometry_checks_passed": true,
+  "historical_qualification_holds": [
+    "Actual retained rubber geometry in the open pose is unknown and omitted; this is a metal-obstruction geometry proxy, not a complete physical wet domain.",
+    "Packing cap z332 comes from GA1_A05_PARAMETERS.json and is not a physical ledge in the cover STEP, whose R22 hole continues to z362.",
+    "J16 is an unloaded 2 mm gasket envelope; compressed datum and assembly tolerances are not qualified.",
+    "Pilot blind-fit cavities beyond the inherited primary cavity are not built, including 0.05 mm radial clearance and 0.2 mm tip clearance.",
+    "Main-domain clearances include 0.2 mm key sides, 0.3 mm key-to-slot floor, and 0.1 mm retainer radial/axial gaps; no volume-mesh resolution has been established.",
+    "The four 0.25 mm radial bolt-fit pockets are separate solids. Their sealed/liquid occupancy depends on actual contact, threads, fits, and assembly.",
+    "Surface tessellation, manifold checks and volume agreement do not qualify a CFD mesh; no fluid boundary cases, solution convergence, conservation, or mesh independence were tested."
+  ],
+  "this_run_recomputed_pose": false,
+  "final_mesh_mapping_verified": false,
+  "actual_product_seat_datum_verified": false,
+  "missing_for_new_independent_pose_measurement": [
+    "Exact pinned source/disc_AGR1.step and output/disc_AGR1_open57.step geometry bytes or a verified CAD face correspondence",
+    "Exact pinned source/seat_source.step and documented seat/closed-disc reference plane identifying what mechanical lift measures",
+    "Pinned build_fluid_domain.py and source/SOURCE_MANIFEST.json for direct script-level placement review; only their historical tested hashes are available in this recovered subset"
+  ],
+  "stop_condition": "Historical source chain recovered and hashes checked; no geometry reconstruction or repeated simulation in this subtask"
+}

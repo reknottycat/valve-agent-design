@@ -1,0 +1,68 @@
+{
+  "schema": "valve.engineering_direction_update/v1",
+  "compiled_utc": "2026-10-12T02:04:51.001095+00:00",
+  "target_branch": "research/conformal-whole-flow-20261012",
+  "starting_actual_anchor": "e215e7d21fe35831f4f5d5603b8105692ea7ebd8",
+  "retrospective_backdated_commit": false,
+  "source_evidence": [
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P05_T02_A01/output/NETGEN_OPTIMIZATION_AND_BOUNDARY_IDENTITY.json",
+      "bytes": 739,
+      "sha256": "4ccf78ad174f47b73808401495454b1ecc1f0c398110c734397adbf4f0523062"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P05_L01_A03/output/LOCAL_FV_POINT_OPTIMIZATION.json",
+      "bytes": 5300,
+      "sha256": "ec30120ba86db9ce0666a46840a04c9fc8299d61bf7d53559ea797274bf85efd"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P05_T04_A02/output/RANK_REFINEMENT_AND_SOURCE_SHELL_IDENTITY.json",
+      "bytes": 1220,
+      "sha256": "1111c09beb538dd682b9a721495b8bf898071490a2aa00379b1f8e5791918fbb"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P05_R01_A01/output/NEW450_DET_SOURCE_CLASSIFICATION.json",
+      "bytes": 73007,
+      "sha256": "b0081cd779e429a9a899012f0f9cc172b833d9580a7399e479dd3da6e2cd82f2"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P05_R01_A01/output/OPENFOAM_RESULTS.json",
+      "bytes": 3692,
+      "sha256": "312e0cc1f8f0a55511f9b97cf0c42ddde5b207dc0d25359a686eb1c03fe8542f"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P05_R01_A02/output/CAP_MORPH_LOCAL_PRISM_PREFILTER.json",
+      "bytes": 339,
+      "sha256": "d6cdafd5337b774671dec7c18be87c0e95809b9d185b7caf83707746f0399352"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P05_R01_A02/output/OPENFOAM_RESULTS.json",
+      "bytes": 3675,
+      "sha256": "bc9046717eae036cf3c06a50812a02e0ce0c973947f88f9e2ef5b21b9c4372f5"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P05_R01_A02/evidence/checkMesh_actual_layer.log",
+      "bytes": 5639,
+      "sha256": "5a8d84c0fef75baa6ee8f1c91ad2d59fe0975919762b11a65156f37f54bd7802"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P05_R01_A02/scripts/build_complete_original_inner_branch_neck.py",
+      "bytes": 10716,
+      "sha256": "d9c3eb5603d01640ed59465d2ddb691067a5cd48954bd4252f39c492c7139ef2"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P05_R01_A02/COMPLETE_BRANCH_BUILD_PLAN.json",
+      "bytes": 17812,
+      "sha256": "72145d02fe29e3ff3c20706b8463ee9ba71e73da4a134b74d21c55266f09724a"
+    },
+    {
+      "path": "valve-design-integration-20261011/flow_baseline_A01/FLOW_PHYSICAL_SCOPE_BINDING_A01.json",
+      "bytes": 2356,
+      "sha256": "9e4a96789e83662a3544f7f56f4f80eb2f1012b76e08ee3ca8557574ffc807e4"
+    }
+  ],
+  "source_payload_imported": false,
+  "whole_valve_qualified": false,
+  "manufacturing_release": false,
+  "scope": "Actual completed native P05 internal-branch/neck repair, failure genealogy, next outer-domain execution. Independent final geometry review pending at compilation."
+}

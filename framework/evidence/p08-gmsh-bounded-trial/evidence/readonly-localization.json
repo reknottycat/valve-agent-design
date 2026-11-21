@@ -1,0 +1,18 @@
+{
+  "method": "read-only existing log and filesystem review; no meshing rerun",
+  "log_contains_1d_and_2d_generation_after_merge": true,
+  "exact_saved_surface_reuse_established": false,
+  "failure_surface_saved": false,
+  "offending_segment_facet_ids_logged": false,
+  "offending_coordinates_logged": false,
+  "diagnostic_search_roots": [
+    "/workspace/shared/valve-gmsh-trial-20261023",
+    "/workspace/scratch/634aa36792d6"
+  ],
+  "diagnostic_search_maxdepth": 2,
+  "diagnostic_matches": [],
+  "source_cad_invalid_proven": false,
+  "saved_surface_intersection_proven": false,
+  "limitation": "No precise localization possible from retained log/artifacts. Saved MSH is initial surface, not certified identical to failed run in-memory surface.",
+  "engineering_release": false
+}

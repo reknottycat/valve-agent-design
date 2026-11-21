@@ -1,0 +1,902 @@
+{
+  "status": "NOMINAL_METAL_GEOMETRY_PROXY_VERIFIED_WITH_EXPLICIT_HOLDS",
+  "CFD_started": false,
+  "geometry_results": {
+    "schema": "valve.fluid_geometry_results/FDG1",
+    "status": "NOMINAL_OPEN_SEAL_OMITTED_GEOMETRY_PROXY_NOT_CFD_QUALIFIED",
+    "inputs": {
+      "schema": "valve.same_source_fluid_geometry/FDG1",
+      "source_manifest": "source/SOURCE_MANIFEST.json",
+      "pose": {
+        "disc_lift_mm": 57,
+        "stem_retraction_mm": 57,
+        "shoe_retainer_translation_mm": 57,
+        "disc_rotation_deg": 0
+      },
+      "pipe_extensions_each_dn": 3,
+      "pipe_extension_identity": "Inherited C2 study choice, not demonstrated entrance-length independence",
+      "body_top_mm": 210,
+      "cover_bottom_mm": 212,
+      "gasket_ring_ID_mm": 290,
+      "gasket_nominal_uncompressed_thickness_mm": 2,
+      "packing_cap_z_mm": 332.0,
+      "packing_cap_source": "GA1_A05_PARAMETERS.json packing_bottom; original C2 z330 was translated by2mm",
+      "rubber_geometry": "OMITTED: actual open retained-ring shape unknown; not a certified or leakage-domain geometry",
+      "microcavity_policy": "Subtract exact included solids within inherited primary cavity; blind hole/fit cavities beyond that cavity are not reconstructed. Connected components are reported separately, never silently deleted.",
+      "no_cage_control_identity": "Same disc/pose/cover, only cage omitted to isolate geometric obstruction; not an operable design candidate",
+      "STL_tessellation_request": {
+        "absolute_deflection_m": 2e-05,
+        "angular_tolerance_rad": 0.08,
+        "relative": false,
+        "mesh_quality_or_gap_resolution_verified": false
+      },
+      "export_units": {
+        "STEP": "ISO10303 file declares millimetres; original geometry coordinates preserved",
+        "STL": "No embedded unit in STL. Vertex coordinates explicitly in metres via0.001 scale; mesher must interpret them as m"
+      },
+      "CFD_boundary_conditions": null,
+      "CFD_run_started": false,
+      "pressure_velocity_field": null,
+      "R1_modified": false,
+      "manufacturing_release": false
+    },
+    "domains": {
+      "control_same_disc_no_cage": {
+        "total_fluid_solid_count": 1,
+        "components": [
+          {
+            "component": 0,
+            "volume_mm3": 64572195.00306395,
+            "valid": true,
+            "inlet_faces": [
+              {
+                "face": 76,
+                "area_mm2": 31415.926535897932
+              }
+            ],
+            "outlet_faces": [
+              {
+                "face": 32,
+                "area_mm2": 31415.926535897932
+              }
+            ],
+            "connects_both_ports": true
+          }
+        ],
+        "main_index": 0,
+        "valid": true,
+        "closed_shells": true,
+        "faces": 124,
+        "volume_mm3": 64572195.00306395,
+        "volume_m3": 0.06457219500306402,
+        "scale_volume_relative_error": 1.1538372819090784e-15,
+        "minimum_vertex_scale_check_scope": "Full volume and bounding box scaling; face topology stored separately",
+        "bbox_mm": [
+          -600.0,
+          1200.0,
+          -145.0000001,
+          145.0000001,
+          -145.0000001,
+          332.0
+        ],
+        "bbox_m": [
+          -0.6000100232250487,
+          1.2000100232250486,
+          -0.14501238225817073,
+          0.14501238225817073,
+          -0.14507389314937427,
+          0.33200444874505863
+        ],
+        "solid_overlap_mm3": {
+          "body_source": 0.0,
+          "cover_AGR1": 0.0,
+          "seat_source": 0.0,
+          "mount_fastener_envelopes": 0.0,
+          "gasket_2mm_uncompressed_envelope": 0.0,
+          "disc_AGR1": 0.0,
+          "stem_source": 0.0,
+          "shoe_source": 0.0,
+          "retainer_source": 0.0
+        },
+        "mm_STEP_sha256": "f1be05ed57f9cd1b61f1964001322ee6390ee48c93dee50304d9a5bcc70de426",
+        "meter_coordinate_STL_sha256": "22f85950afa1ee9c8c820b4a0f83d1f6ff099205b3bd0e857c377a4404a012b1"
+      },
+      "AGR1_open_seal_omitted_proxy": {
+        "total_fluid_solid_count": 5,
+        "components": [
+          {
+            "component": 0,
+            "volume_mm3": 64142426.14376342,
+            "valid": true,
+            "inlet_faces": [
+              {
+                "face": 78,
+                "area_mm2": 31415.926535897932
+              }
+            ],
+            "outlet_faces": [
+              {
+                "face": 33,
+                "area_mm2": 31415.926535897932
+              }
+            ],
+            "connects_both_ports": true
+          },
+          {
+            "component": 1,
+            "volume_mm3": 64.79534848029049,
+            "valid": true,
+            "inlet_faces": [],
+            "outlet_faces": [],
+            "connects_both_ports": false
+          },
+          {
+            "component": 2,
+            "volume_mm3": 64.79534848029043,
+            "valid": true,
+            "inlet_faces": [],
+            "outlet_faces": [],
+            "connects_both_ports": false
+          },
+          {
+            "component": 3,
+            "volume_mm3": 64.79534848029043,
+            "valid": true,
+            "inlet_faces": [],
+            "outlet_faces": [],
+            "connects_both_ports": false
+          },
+          {
+            "component": 4,
+            "volume_mm3": 64.79534848029037,
+            "valid": true,
+            "inlet_faces": [],
+            "outlet_faces": [],
+            "connects_both_ports": false
+          }
+        ],
+        "main_index": 0,
+        "valid": true,
+        "closed_shells": true,
+        "faces": 132,
+        "volume_mm3": 64142426.14376342,
+        "volume_m3": 0.06414242614376348,
+        "scale_volume_relative_error": 8.130977780848681e-16,
+        "minimum_vertex_scale_check_scope": "Full volume and bounding box scaling; face topology stored separately",
+        "bbox_mm": [
+          -600.0,
+          1200.0,
+          -145.0000001,
+          145.0000001,
+          -145.0000001,
+          332.0
+        ],
+        "bbox_m": [
+          -0.6000100232250487,
+          1.2000100232250486,
+          -0.14501238225817073,
+          0.14501238225817073,
+          -0.14507389314937427,
+          0.33200444874505863
+        ],
+        "solid_overlap_mm3": {
+          "body_source": 0.0,
+          "cover_AGR1": 0.0,
+          "seat_source": 0.0,
+          "cage_AGR1": 0.0,
+          "mount_fastener_envelopes": 0.0,
+          "gasket_2mm_uncompressed_envelope": 0.0,
+          "disc_AGR1": 0.0,
+          "stem_source": 0.0,
+          "shoe_source": 0.0,
+          "retainer_source": 0.0
+        },
+        "mm_STEP_sha256": "798e490ce43c413fb3b5bf5413af5b6003ed40e8c9e5ddc690fd6c07d9c03136",
+        "meter_coordinate_STL_sha256": "a94c64564c3cc4f962d6e8e37a7fcc2a643cc30b523fc57ee1aac0ed014269ae"
+      }
+    },
+    "base_void_solid_overlap_before_subtraction_mm3": {
+      "body_source": 0.0,
+      "cover_AGR1": 0.0,
+      "seat_source": 20837.043656273978,
+      "cage_AGR1": 429509.7246894432,
+      "mount_fastener_envelopes": 4665.265090580838,
+      "gasket_2mm_uncompressed_envelope": 0.0
+    },
+    "remaining_gates": [
+      "Actual open rubber shape and attachment; no arbitrary tight-seat CFD or leakage claim",
+      "J16 compressed gasket datum and toleranced assembly",
+      "Wet thin clearances, contact closure and cavity inclusion policy before mesh simplification",
+      "Boundary flow cases, seawater properties and turbulence model from documented research basis",
+      "Solver and mesh runtime recovery with resource admission",
+      "Actual mesh topology, convergence, conservation and mesh independence"
+    ],
+    "resource_observation": {
+      "python_peak_rss_MiB": 816.1796875,
+      "runtime_seconds": 13.535847738996381
+    },
+    "solver_executables_present": {
+      "simpleFoam": null,
+      "foamRun": null,
+      "checkMesh": null,
+      "gmsh": null,
+      "ccx": null
+    },
+    "main_connected_fluid_volume_reduction_mm3": 429768.859300524,
+    "newly_isolated_fluid_volume_mm3": 259.1813939211617,
+    "actual_cage_volume_intruding_fluid_mm3": 429509.67790660285
+  },
+  "independent_export_review": {
+    "schema": "valve.FDG1.independent_export_review/v1",
+    "review_mode": "READ_ONLY_SOURCE_AND_EXPORTED_GEOMETRY",
+    "candidate_builder_executed_or_imported": false,
+    "CAD_modified": false,
+    "meshing_started": false,
+    "CFD_started": false,
+    "tested_hashes": {
+      "source/disc_AGR1.step": "a3ff0967d9c321e27e6a178238a26172c77ea63bdac1f454a51d642863485279",
+      "source/seat_source.step": "a061903b7f9ca9df04837ba467db638717842429878230847205e4f68fd2bb9d",
+      "source/retainer_source.step": "34f45c42896824dc0559266526edd5fd204b88bcb79ae829620f4a137c5b9a3c",
+      "source/cover_AGR1.step": "8d1b54cc7084c45843ae4d1c098ac6f4bdbd1457a4004dbd9e18e3dad7c7bdf6",
+      "source/stem_source.step": "82d4f5d49afb95b4ffcb7af11f525cf29336886df9ba5eb2ee86c2ffe3fea489",
+      "source/body_source.step": "337d2a5f3928ecf5d0c8ab0775289d5631f024169dc37bf1a6fe8eb1dea8d9c6",
+      "source/shoe_source.step": "b627f4be539fabded1298f8d4e7825d0b35306963fb14deb4821cbdacbaa9986",
+      "source/cage_AGR1.step": "25b05b489f2c82464f5e670fb65b909003c927dc9960f849eb8694d977724c66",
+      "source/mount_fastener_envelopes.step": "ace83ff376de442950e7013634ed315508946e2f5cd7785479910052e37b9cdb",
+      "source/gasket_2mm_uncompressed_envelope.step": "19e188ab0f48b74e3e11daff2a4335b097d1b7ebb509712c4df069f543f70728",
+      "source/SOURCE_MANIFEST.json": "4ed5c12daeafc1fb3254ce0437a55e4d85aab2aa9764d9c843895e16a67a70fa",
+      "source/GA1_A05_PARAMETERS.json": "12cb5a25ec13d17ea7c7e924a27963cc5cb68182033ff13e2d8d1405c3fc46ea",
+      "source/C2_parameters.json": "c35a4064403f98e3462bfea3650eebe2695ced39a15fb928f817e465169576ba",
+      "output/shoe_source_open57.step": "8fd403e6eadc69a4c40a046fc6626b25817734ae7402bebf4a22ca2a900df5ac",
+      "output/disc_AGR1_open57.step": "4c5573f0ff30e10c473b41d9eb6addc06b1509f36dbe02a284f736a9267aef2a",
+      "output/stem_source_open57.step": "bb238a64c34fc81a599cc7a4cc29696069ccab6b2643d3a61cc6a90a19f988d7",
+      "output/AGR1_open_seal_omitted_proxy_main_mm.step": "a9aeb45996a388a3d894f69605205c70c25edd154adc6d3c71658329a730e787",
+      "output/retainer_source_open57.step": "8d0223a44c291fbd8872b54c16da93c9b133179c9395032468ebd5e1bf2bd8ad",
+      "output/control_same_disc_no_cage_main_mm.step": "95f05e5fff8814e2c2c8612ad3ec5c7384ad52cc4e3fa05c10ad1cff3b2c0bd4",
+      "output/FDG1_nominal_open57_geometry_context.step": "02c1e68ed6357819505954044caf0a652dc53c6b48081da2bd12a8b7d13ea67a",
+      "output/AGR1_open_seal_omitted_proxy_mm.step": "798e490ce43c413fb3b5bf5413af5b6003ed40e8c9e5ddc690fd6c07d9c03136",
+      "output/control_same_disc_no_cage_mm.step": "f1be05ed57f9cd1b61f1964001322ee6390ee48c93dee50304d9a5bcc70de426",
+      "output/AGR1_open_seal_omitted_proxy_main_meter_coordinates.stl": "a94c64564c3cc4f962d6e8e37a7fcc2a643cc30b523fc57ee1aac0ed014269ae",
+      "output/control_same_disc_no_cage_main_meter_coordinates.stl": "22f85950afa1ee9c8c820b4a0f83d1f6ff099205b3bd0e857c377a4404a012b1",
+      "INPUTS.json": "cc1f9f4ccfcfcbac99241fb6f806a1703eb9edc2e8c33718ec3c2f5ac1bf97af",
+      "RESULTS.json": "b4d30952dae20938eb3de20905b1b6826057dd09d46f429d36e0eee71f5d919b",
+      "build_fluid_domain.py": "5006bbb7bd5f89a28fe09bb0e8531586cfcc65f733fa618db6b1b13b4a3f8c1a"
+    },
+    "source_identity": {
+      "body_source.step": {
+        "manifest_sha256": "337d2a5f3928ecf5d0c8ab0775289d5631f024169dc37bf1a6fe8eb1dea8d9c6",
+        "actual_sha256": "337d2a5f3928ecf5d0c8ab0775289d5631f024169dc37bf1a6fe8eb1dea8d9c6",
+        "matches": true
+      },
+      "cage_AGR1.step": {
+        "manifest_sha256": "25b05b489f2c82464f5e670fb65b909003c927dc9960f849eb8694d977724c66",
+        "actual_sha256": "25b05b489f2c82464f5e670fb65b909003c927dc9960f849eb8694d977724c66",
+        "matches": true
+      },
+      "cover_AGR1.step": {
+        "manifest_sha256": "8d1b54cc7084c45843ae4d1c098ac6f4bdbd1457a4004dbd9e18e3dad7c7bdf6",
+        "actual_sha256": "8d1b54cc7084c45843ae4d1c098ac6f4bdbd1457a4004dbd9e18e3dad7c7bdf6",
+        "matches": true
+      },
+      "disc_AGR1.step": {
+        "manifest_sha256": "a3ff0967d9c321e27e6a178238a26172c77ea63bdac1f454a51d642863485279",
+        "actual_sha256": "a3ff0967d9c321e27e6a178238a26172c77ea63bdac1f454a51d642863485279",
+        "matches": true
+      },
+      "mount_fastener_envelopes.step": {
+        "manifest_sha256": "ace83ff376de442950e7013634ed315508946e2f5cd7785479910052e37b9cdb",
+        "actual_sha256": "ace83ff376de442950e7013634ed315508946e2f5cd7785479910052e37b9cdb",
+        "matches": true
+      },
+      "retainer_source.step": {
+        "manifest_sha256": "34f45c42896824dc0559266526edd5fd204b88bcb79ae829620f4a137c5b9a3c",
+        "actual_sha256": "34f45c42896824dc0559266526edd5fd204b88bcb79ae829620f4a137c5b9a3c",
+        "matches": true
+      },
+      "seat_source.step": {
+        "manifest_sha256": "a061903b7f9ca9df04837ba467db638717842429878230847205e4f68fd2bb9d",
+        "actual_sha256": "a061903b7f9ca9df04837ba467db638717842429878230847205e4f68fd2bb9d",
+        "matches": true
+      },
+      "shoe_source.step": {
+        "manifest_sha256": "b627f4be539fabded1298f8d4e7825d0b35306963fb14deb4821cbdacbaa9986",
+        "actual_sha256": "b627f4be539fabded1298f8d4e7825d0b35306963fb14deb4821cbdacbaa9986",
+        "matches": true
+      },
+      "stem_source.step": {
+        "manifest_sha256": "82d4f5d49afb95b4ffcb7af11f525cf29336886df9ba5eb2ee86c2ffe3fea489",
+        "actual_sha256": "82d4f5d49afb95b4ffcb7af11f525cf29336886df9ba5eb2ee86c2ffe3fea489",
+        "matches": true
+      },
+      "C2_parameters.json": {
+        "manifest_sha256": "c35a4064403f98e3462bfea3650eebe2695ced39a15fb928f817e465169576ba",
+        "actual_sha256": "c35a4064403f98e3462bfea3650eebe2695ced39a15fb928f817e465169576ba",
+        "matches": true
+      },
+      "C2_build_lift_model.py": {
+        "manifest_sha256": "be096d9284884c09d75a0fd19c4fc5cf7bbbff121287839b4d161e36483e640a",
+        "actual_sha256": "be096d9284884c09d75a0fd19c4fc5cf7bbbff121287839b4d161e36483e640a",
+        "matches": true
+      },
+      "GA1_A05_PARAMETERS.json": {
+        "manifest_sha256": "12cb5a25ec13d17ea7c7e924a27963cc5cb68182033ff13e2d8d1405c3fc46ea",
+        "actual_sha256": "12cb5a25ec13d17ea7c7e924a27963cc5cb68182033ff13e2d8d1405c3fc46ea",
+        "matches": true
+      },
+      "gasket_2mm_uncompressed_envelope.step": {
+        "manifest_sha256": "19e188ab0f48b74e3e11daff2a4335b097d1b7ebb509712c4df069f543f70728",
+        "actual_sha256": "19e188ab0f48b74e3e11daff2a4335b097d1b7ebb509712c4df069f543f70728",
+        "matches": true
+      }
+    },
+    "pose_identity": {
+      "disc_AGR1": {
+        "source_translation_z_mm": 57,
+        "expected_minus_export_mm3": 0.0,
+        "export_minus_expected_mm3": 0.0,
+        "volume_difference_mm3": 1.0838266462087631e-07,
+        "bbox_mm": [
+          180.0,
+          420.0,
+          -120.0,
+          120.0,
+          78.9999999,
+          197.0000001
+        ]
+      },
+      "stem_source": {
+        "source_translation_z_mm": 57,
+        "expected_minus_export_mm3": 0.0,
+        "export_minus_expected_mm3": 0.0,
+        "volume_difference_mm3": 0.0,
+        "bbox_mm": [
+          280.0,
+          320.0,
+          -20.0,
+          20.0,
+          107.5,
+          666.0
+        ]
+      },
+      "shoe_source": {
+        "source_translation_z_mm": 57,
+        "expected_minus_export_mm3": 0.0,
+        "export_minus_expected_mm3": 0.0,
+        "volume_difference_mm3": 0.0,
+        "bbox_mm": [
+          278.0,
+          322.0,
+          -22.0,
+          22.0,
+          93.0,
+          107.5
+        ]
+      },
+      "retainer_source": {
+        "source_translation_z_mm": 57,
+        "expected_minus_export_mm3": 0.0,
+        "export_minus_expected_mm3": 0.0,
+        "volume_difference_mm3": 0.0,
+        "bbox_mm": [
+          276.1,
+          323.8161709768804,
+          -23.9,
+          23.9,
+          104.0,
+          106.0
+        ]
+      }
+    },
+    "domains": {
+      "control_same_disc_no_cage": {
+        "full_step": {
+          "valid": true,
+          "solids": 1,
+          "shells": 2,
+          "all_shells_closed": true,
+          "has_free_edges": false,
+          "has_bad_edges": false,
+          "volume_mm3": 64572195.00306395,
+          "bbox_mm": [
+            -600.0,
+            1200.0,
+            -145.0000001,
+            145.0000001,
+            -145.0000001,
+            332.0
+          ]
+        },
+        "components": [
+          {
+            "component": 0,
+            "valid": true,
+            "solids": 1,
+            "shells": 2,
+            "all_shells_closed": true,
+            "has_free_edges": false,
+            "has_bad_edges": false,
+            "volume_mm3": 64572195.00306395,
+            "bbox_mm": [
+              -600.0,
+              1200.0,
+              -145.0000001,
+              145.0000001,
+              -145.0000001,
+              332.0
+            ],
+            "inlet_faces": [
+              {
+                "face_index": 76,
+                "area_mm2": 31415.926535897932,
+                "normal": [
+                  -1.0,
+                  -0.0,
+                  -0.0
+                ],
+                "bbox_mm": [
+                  -600.0,
+                  -600.0,
+                  -100.0,
+                  100.0,
+                  -100.0,
+                  100.0
+                ]
+              }
+            ],
+            "outlet_faces": [
+              {
+                "face_index": 32,
+                "area_mm2": 31415.926535897932,
+                "normal": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "bbox_mm": [
+                  1200.0,
+                  1200.0,
+                  -100.0,
+                  100.0,
+                  -100.0,
+                  100.0
+                ]
+              }
+            ],
+            "connects_both_ports": true
+          }
+        ],
+        "STEP_declares_mm": true,
+        "main_component_index": 0,
+        "packing_cap_faces": [
+          {
+            "face_index": 54,
+            "area_mm2": 502.65482457436735,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "bbox_mm": [
+              278.0,
+              322.0,
+              -22.0,
+              22.0,
+              332.0,
+              332.0
+            ]
+          }
+        ],
+        "standalone_main_comparison": {
+          "expected_minus_export_mm3": 0.0,
+          "export_minus_expected_mm3": 0.0
+        },
+        "main_solid_overlap_mm3": {
+          "body_source": 0.0,
+          "cover_AGR1": 0.0,
+          "seat_source": 0.0,
+          "mount_fastener_envelopes": 0.0,
+          "gasket_2mm_uncompressed_envelope": 0.0,
+          "disc_AGR1": 0.0,
+          "stem_source": 0.0,
+          "shoe_source": 0.0,
+          "retainer_source": 0.0
+        },
+        "STL": {
+          "binary_triangles": 246610,
+          "unique_float32_vertices": 123309,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "degenerate_triangles": 0,
+          "minimum_triangle_area_m2": 6.301566671468477e-11,
+          "surface_area_m2": 1.6230518139070262,
+          "bbox_meter_coordinates": [
+            -0.6000000238418579,
+            1.2000000476837158,
+            -0.14499999582767487,
+            0.14499999582767487,
+            -0.14499999582767487,
+            0.3319999873638153
+          ],
+          "expected_bbox_m_from_step_mm": [
+            -0.6,
+            1.2,
+            -0.1450000001,
+            0.1450000001,
+            -0.1450000001,
+            0.332
+          ],
+          "maximum_bbox_difference_m": 4.768371586472142e-08,
+          "signed_enclosed_volume_m3": 0.06456570459023463,
+          "step_volume_scaled_m3": 0.06457219500306395,
+          "relative_volume_error_vs_step": 0.0001005140498788402,
+          "units": "STL is unitless; these vertex coordinates must be interpreted as metres.",
+          "not_volume_mesh_qualification": true
+        }
+      },
+      "AGR1_open_seal_omitted_proxy": {
+        "full_step": {
+          "valid": true,
+          "solids": 5,
+          "shells": 6,
+          "all_shells_closed": true,
+          "has_free_edges": false,
+          "has_bad_edges": false,
+          "volume_mm3": 64142685.455885805,
+          "bbox_mm": [
+            -600.0,
+            1200.0,
+            -145.0000001,
+            145.0000001,
+            -145.0000001,
+            332.0
+          ]
+        },
+        "components": [
+          {
+            "component": 0,
+            "valid": true,
+            "solids": 1,
+            "shells": 2,
+            "all_shells_closed": true,
+            "has_free_edges": false,
+            "has_bad_edges": false,
+            "volume_mm3": 64142426.14376342,
+            "bbox_mm": [
+              -600.0,
+              1200.0,
+              -145.0000001,
+              145.0000001,
+              -145.0000001,
+              332.0
+            ],
+            "inlet_faces": [
+              {
+                "face_index": 78,
+                "area_mm2": 31415.926535897932,
+                "normal": [
+                  -1.0,
+                  -0.0,
+                  0.0
+                ],
+                "bbox_mm": [
+                  -600.0,
+                  -600.0,
+                  -100.0,
+                  100.0,
+                  -100.0,
+                  100.0
+                ]
+              }
+            ],
+            "outlet_faces": [
+              {
+                "face_index": 33,
+                "area_mm2": 31415.926535897932,
+                "normal": [
+                  1.0,
+                  0.0,
+                  -0.0
+                ],
+                "bbox_mm": [
+                  1200.0,
+                  1200.0,
+                  -100.0,
+                  100.0,
+                  -100.0,
+                  100.0
+                ]
+              }
+            ],
+            "connects_both_ports": true
+          },
+          {
+            "component": 1,
+            "valid": true,
+            "solids": 1,
+            "shells": 1,
+            "all_shells_closed": true,
+            "has_free_edges": false,
+            "has_bad_edges": false,
+            "volume_mm3": 64.79534848029049,
+            "bbox_mm": [
+              333.22665940288,
+              341.72665940288,
+              -41.72665940288,
+              -33.22665940288,
+              202.0,
+              212.0
+            ],
+            "inlet_faces": [],
+            "outlet_faces": [],
+            "connects_both_ports": false
+          },
+          {
+            "component": 2,
+            "valid": true,
+            "solids": 1,
+            "shells": 1,
+            "all_shells_closed": true,
+            "has_free_edges": false,
+            "has_bad_edges": false,
+            "volume_mm3": 64.79534848029043,
+            "bbox_mm": [
+              258.27334059711,
+              266.77334059711,
+              -41.72665940288,
+              -33.22665940288,
+              202.0,
+              212.0
+            ],
+            "inlet_faces": [],
+            "outlet_faces": [],
+            "connects_both_ports": false
+          },
+          {
+            "component": 3,
+            "valid": true,
+            "solids": 1,
+            "shells": 1,
+            "all_shells_closed": true,
+            "has_free_edges": false,
+            "has_bad_edges": false,
+            "volume_mm3": 64.79534848029043,
+            "bbox_mm": [
+              333.22665940288,
+              341.72665940288,
+              33.226659402887,
+              41.726659402887,
+              202.0,
+              212.0
+            ],
+            "inlet_faces": [],
+            "outlet_faces": [],
+            "connects_both_ports": false
+          },
+          {
+            "component": 4,
+            "valid": true,
+            "solids": 1,
+            "shells": 1,
+            "all_shells_closed": true,
+            "has_free_edges": false,
+            "has_bad_edges": false,
+            "volume_mm3": 64.79534848029037,
+            "bbox_mm": [
+              258.27334059711,
+              266.77334059711,
+              33.226659402887,
+              41.726659402887,
+              202.0,
+              212.0
+            ],
+            "inlet_faces": [],
+            "outlet_faces": [],
+            "connects_both_ports": false
+          }
+        ],
+        "STEP_declares_mm": true,
+        "main_component_index": 0,
+        "packing_cap_faces": [
+          {
+            "face_index": 79,
+            "area_mm2": 502.65482457436735,
+            "normal": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "bbox_mm": [
+              278.0,
+              322.0,
+              -22.0,
+              22.0,
+              332.0,
+              332.0
+            ]
+          }
+        ],
+        "standalone_main_comparison": {
+          "expected_minus_export_mm3": 0.0,
+          "export_minus_expected_mm3": 0.0
+        },
+        "main_solid_overlap_mm3": {
+          "body_source": 0.0,
+          "cover_AGR1": 0.0,
+          "seat_source": 0.0,
+          "cage_AGR1": 0.0,
+          "mount_fastener_envelopes": 0.0,
+          "gasket_2mm_uncompressed_envelope": 0.0,
+          "disc_AGR1": 0.0,
+          "stem_source": 0.0,
+          "shoe_source": 0.0,
+          "retainer_source": 0.0
+        },
+        "STL": {
+          "binary_triangles": 246154,
+          "unique_float32_vertices": 123081,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "degenerate_triangles": 0,
+          "minimum_triangle_area_m2": 6.301566671468477e-11,
+          "surface_area_m2": 1.6805954804642829,
+          "bbox_meter_coordinates": [
+            -0.6000000238418579,
+            1.2000000476837158,
+            -0.14499999582767487,
+            0.14499999582767487,
+            -0.14499999582767487,
+            0.3319999873638153
+          ],
+          "expected_bbox_m_from_step_mm": [
+            -0.6,
+            1.2,
+            -0.1450000001,
+            0.1450000001,
+            -0.1450000001,
+            0.332
+          ],
+          "maximum_bbox_difference_m": 4.768371586472142e-08,
+          "signed_enclosed_volume_m3": 0.06413604089378694,
+          "step_volume_scaled_m3": 0.06414242614376342,
+          "relative_volume_error_vs_step": 9.954799592659995e-05,
+          "units": "STL is unitless; these vertex coordinates must be interpreted as metres.",
+          "not_volume_mesh_qualification": true
+        }
+      }
+    },
+    "cage_effect": {
+      "main_connected_volume_reduction_mm3": 429768.859300524,
+      "cage_actual_intersection_with_control_mm3": 429509.72468944313,
+      "isolated_cavity_total_mm3": 259.1813939211617,
+      "expected_four_bolt_fit_cavities_each_mm3": 64.79534848028949,
+      "interpretation": "The connected-volume reduction includes physically displaced liquid and disconnected fit pockets; this is not pressure drop or flow coefficient."
+    },
+    "expected_cap_areas_mm2": {
+      "inlet": 31415.926535897932,
+      "outlet": 31415.926535897932,
+      "packing": 502.6548245743669
+    },
+    "qualification_holds": [
+      "Actual retained rubber geometry in the open pose is unknown and omitted; this is a metal-obstruction geometry proxy, not a complete physical wet domain.",
+      "Packing cap z332 comes from GA1_A05_PARAMETERS.json and is not a physical ledge in the cover STEP, whose R22 hole continues to z362.",
+      "J16 is an unloaded 2 mm gasket envelope; compressed datum and assembly tolerances are not qualified.",
+      "Pilot blind-fit cavities beyond the inherited primary cavity are not built, including 0.05 mm radial clearance and 0.2 mm tip clearance.",
+      "Main-domain clearances include 0.2 mm key sides, 0.3 mm key-to-slot floor, and 0.1 mm retainer radial/axial gaps; no volume-mesh resolution has been established.",
+      "The four 0.25 mm radial bolt-fit pockets are separate solids. Their sealed/liquid occupancy depends on actual contact, threads, fits, and assembly.",
+      "Surface tessellation, manifold checks and volume agreement do not qualify a CFD mesh; no fluid boundary cases, solution convergence, conservation, or mesh independence were tested."
+    ],
+    "reviewed_files_unchanged_during_review": true,
+    "runtime_seconds": 13.58793121900817,
+    "geometry_checks_passed": true,
+    "status": "NOMINAL_METAL_GEOMETRY_PROXY_VERIFIED_WITH_EXPLICIT_HOLDS"
+  },
+  "volume_integration": [
+    {
+      "tolerance": null,
+      "control_mm3": 64572195.00306011,
+      "main_mm3": 64142426.14375954,
+      "reduction_mm3": 429768.8593005687,
+      "intersect_mm3": 429509.72468944313,
+      "small_mm3": 259.1813939211617,
+      "volume_balance_residual_mm3": -0.04678279559192333
+    },
+    {
+      "tolerance": 1e-07,
+      "control_mm3": 64572195.061350435,
+      "main_mm3": 64142426.155278794,
+      "reduction_mm3": 429768.90607164055,
+      "intersect_mm3": 429509.7246888584,
+      "small_mm3": 259.1813939211575,
+      "volume_balance_residual_mm3": -1.1138982301872602e-05
+    },
+    {
+      "tolerance": 1e-09,
+      "control_mm3": 64572195.061349414,
+      "main_mm3": 64142426.155272566,
+      "reduction_mm3": 429768.9060768485,
+      "intersect_mm3": 429509.72468942753,
+      "small_mm3": 259.18139392115853,
+      "volume_balance_residual_mm3": -6.50018199621627e-06
+    },
+    {
+      "tolerance": 1e-11,
+      "control_mm3": 64572195.06134942,
+      "main_mm3": 64142426.15527258,
+      "reduction_mm3": 429768.90607684106,
+      "intersect_mm3": 429509.7246894264,
+      "small_mm3": 259.18139392116063,
+      "volume_balance_residual_mm3": -6.506528734462336e-06
+    }
+  ],
+  "source_manifest": {
+    "sources": [
+      {
+        "file": "body_source.step",
+        "source": "AGR1/A03/output/body_source.step",
+        "sha256": "337d2a5f3928ecf5d0c8ab0775289d5631f024169dc37bf1a6fe8eb1dea8d9c6"
+      },
+      {
+        "file": "cage_AGR1.step",
+        "source": "AGR1/A03/output/cage_AGR1.step",
+        "sha256": "25b05b489f2c82464f5e670fb65b909003c927dc9960f849eb8694d977724c66"
+      },
+      {
+        "file": "cover_AGR1.step",
+        "source": "AGR1/A03/output/cover_AGR1.step",
+        "sha256": "8d1b54cc7084c45843ae4d1c098ac6f4bdbd1457a4004dbd9e18e3dad7c7bdf6"
+      },
+      {
+        "file": "disc_AGR1.step",
+        "source": "AGR1/A03/output/disc_AGR1.step",
+        "sha256": "a3ff0967d9c321e27e6a178238a26172c77ea63bdac1f454a51d642863485279"
+      },
+      {
+        "file": "mount_fastener_envelopes.step",
+        "source": "AGR1/A03/output/mount_fastener_envelopes.step",
+        "sha256": "ace83ff376de442950e7013634ed315508946e2f5cd7785479910052e37b9cdb"
+      },
+      {
+        "file": "retainer_source.step",
+        "source": "AGR1/A03/output/retainer_source.step",
+        "sha256": "34f45c42896824dc0559266526edd5fd204b88bcb79ae829620f4a137c5b9a3c"
+      },
+      {
+        "file": "seat_source.step",
+        "source": "AGR1/A03/output/seat_source.step",
+        "sha256": "a061903b7f9ca9df04837ba467db638717842429878230847205e4f68fd2bb9d"
+      },
+      {
+        "file": "shoe_source.step",
+        "source": "AGR1/A03/output/shoe_source.step",
+        "sha256": "b627f4be539fabded1298f8d4e7825d0b35306963fb14deb4821cbdacbaa9986"
+      },
+      {
+        "file": "stem_source.step",
+        "source": "AGR1/A03/output/stem_source.step",
+        "sha256": "82d4f5d49afb95b4ffcb7af11f525cf29336886df9ba5eb2ee86c2ffe3fea489"
+      },
+      {
+        "file": "C2_parameters.json",
+        "source": "PDR1/source/C2/C2_parameters.json",
+        "sha256": "c35a4064403f98e3462bfea3650eebe2695ced39a15fb928f817e465169576ba"
+      },
+      {
+        "file": "C2_build_lift_model.py",
+        "source": "PDR1/source/C2/C2_build_lift_model.py",
+        "sha256": "be096d9284884c09d75a0fd19c4fc5cf7bbbff121287839b4d161e36483e640a"
+      },
+      {
+        "file": "GA1_A05_PARAMETERS.json",
+        "source": "PDR1/source/A05/PARAMETERS.json",
+        "sha256": "12cb5a25ec13d17ea7c7e924a27963cc5cb68182033ff13e2d8d1405c3fc46ea"
+      },
+      {
+        "file": "gasket_2mm_uncompressed_envelope.step",
+        "source": "PDR1/output/cad/PDR1_J16/gasket_2mm_uncompressed_envelope.step",
+        "sha256": "19e188ab0f48b74e3e11daff2a4335b097d1b7ebb509712c4df069f543f70728"
+      }
+    ],
+    "PDR1_Library": "libfile_042b72e535f08191af711c797400ebe5",
+    "AGR1_revision": "A03"
+  }
+}

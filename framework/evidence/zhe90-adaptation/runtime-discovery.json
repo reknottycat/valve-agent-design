@@ -1,0 +1,16 @@
+{
+  "scope": "read-only executable discovery on PATH; not proof software absent everywhere",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "commands": {
+    "docker": null,
+    "podman": null,
+    "apptainer": null,
+    "singularity": null,
+    "simpleFoam": null,
+    "checkMesh": null,
+    "gmsh": null,
+    "FreeCAD": null
+  },
+  "installation_attempted": false,
+  "container_started": false
+}

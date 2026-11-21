@@ -1,0 +1,67 @@
+{
+  "schema": "valve.source_adaptation/v1",
+  "source_ports": [
+    {
+      "role": "inlet",
+      "source_face": 79,
+      "source_planar_axis": [
+        0
+      ],
+      "coordinate_m": -0.6,
+      "source_x_matches_R1": true,
+      "source_area_m2": 0.031415926535897934,
+      "area_matches_DN200": true,
+      "unoriented_plane_normal_axis": [
+        1,
+        0,
+        0
+      ],
+      "final_mesh_outward_normal_verified": false
+    },
+    {
+      "role": "outlet",
+      "source_face": 34,
+      "source_planar_axis": [
+        0
+      ],
+      "coordinate_m": 1.2,
+      "source_x_matches_R1": true,
+      "source_area_m2": 0.031415926535897934,
+      "area_matches_DN200": true,
+      "unoriented_plane_normal_axis": [
+        1,
+        0,
+        0
+      ],
+      "final_mesh_outward_normal_verified": false
+    }
+  ],
+  "background_mm_to_m_scale_in_dictionary": true,
+  "historical_blockMesh_applied_scale": true,
+  "historical_blockMesh_only_background_patch": true,
+  "disc_lift_R1_research_mm": 57.0,
+  "disc_lift_P08_measured_mm": null,
+  "disc_lift_match_verified": false,
+  "scope": "Original source bbox/area and historical background log readback, not current geometry or final mesh validation.",
+  "missing_pose_evidence": "P08 supplement has no disc/seat datum correspondence or transform measurement to establish 57mm lift.",
+  "missing_normal_evidence": "Need retained mesh faces/owner/points or oriented source triangles with fluid-side association; bbox only establishes unoriented plane.",
+  "new_solver_run": false,
+  "inputs": [
+    {
+      "name": "ACTUAL_REGENERATED_SURFACE_NATIVE_REGION_RULES_A01.json",
+      "sha256": "38e03813143d6a6da70bc7cbc994ba628cae3c7fc5e9305490945835fd544f84"
+    },
+    {
+      "name": "flow_study_plan_R1_original.json",
+      "sha256": "f0659ec9bc0a0d560e36ea5df1e1e3354555477ba85996514deeb5ab83d00304"
+    },
+    {
+      "name": "blockMeshDict",
+      "sha256": "cfd8b79a3c0273680237cf01b2aaa33a588986f3b36e3a759882610aedf7c0f7"
+    },
+    {
+      "name": "blockMesh.log",
+      "sha256": "47136e099e992c685f938d467e3f6243dbd12db54a728cbacc61db1978d1a717"
+    }
+  ]
+}

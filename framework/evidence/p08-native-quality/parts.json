@@ -1,0 +1,18 @@
+{
+  "archive": "native-quality-evidence.zip",
+  "bytes": 15062172,
+  "sha256": "a88263ec63a98e2585f08931da6506b7e7fd7e3dbe32ba3ab34cf2b469af89a3",
+  "parts": [
+    {
+      "name": "native-quality-evidence.zip.part01",
+      "bytes": 8000000,
+      "sha256": "f5893570cc935b621331170de22b3d8b85717e077ca7c9a959bc76eb722f2f22"
+    },
+    {
+      "name": "native-quality-evidence.zip.part02",
+      "bytes": 7062172,
+      "sha256": "63613c7978b6daa239a8fc83e861247cce8beb51c5ba77cebf3f19bd7dac699a"
+    }
+  ],
+  "reason": "Transport request exceeds 16 MiB when base64-encoded; split only for transport, not a missing artifact."
+}

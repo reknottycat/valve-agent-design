@@ -1,0 +1,97 @@
+{
+  "schema": "valve.engineering_direction_update/v1",
+  "compiled_utc": "2026-10-12T02:52:26.208038+00:00",
+  "target_branch": "research/conformal-whole-flow-20261012",
+  "starting_actual_anchor": "f653e5132c65624fd49e2993540476e8c90a0414",
+  "retrospective_backdated_commit": false,
+  "source_evidence": [
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_native_A02/REST_MESH_SOURCE_PLAN.json",
+      "bytes": 8167,
+      "sha256": "ff3bbc5cac7751392718488ea5d2138b7eb08f77d9a5a103ce118dcdb0852c46"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_native_A02/runs/M01_A02/evidence/native-receipt.json",
+      "bytes": 2043,
+      "sha256": "2916af1201d98d1bb8470b4062b0fb8adbff2ad3d44e0efff8c98eed6f569ae3"
+    },
+    {
+      "path": "review_flow_P06_whole/INTERFACE_FINAL_ENTRY_A01.json",
+      "bytes": 628,
+      "sha256": "8d76cb87b4c22c52b3abe256a255e6251fb84b2f20754e4cbbfbf3df2500d7c8"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_join_A01/runs/J01_A03/output/WHOLE_JOIN_RESULTS.json",
+      "bytes": 4247,
+      "sha256": "3f2d15bf217b71e8a709c659528da273da24c945ae306da8d415a6ad8ce569ab"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_join_A01/runs/J01_A03/output/WHOLE_BOUNDARY_CAD_AND_CELL_PROVENANCE.json",
+      "bytes": 177451,
+      "sha256": "66edd4175f1c08e182a643918520a6c03d4534d76dac5c31644fc7f700481d74"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_A03/WHOLE_NATIVE_FINAL_ENTRY.json",
+      "bytes": 774,
+      "sha256": "a5da157310088cd1b4995978bea3f0c82e0e191853cda77c76ab6ff1f9e4864a"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_A03/output/OPENFOAM_RESULTS.json",
+      "bytes": 5013,
+      "sha256": "d68745ce454ed7aa2ea1e2e65d52197cb9a5d9be1086b499175428d7fc9f4e98"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_A03/evidence/checkMesh_actual_layer.log",
+      "bytes": 6394,
+      "sha256": "447c76fe82fe7b2f470ef9514abe1772653659da55481be83a1e218cc1311fbd"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_A03/evidence/OPENFOAM_CONVERT_CHECK_RECEIPTS.json",
+      "bytes": 3809,
+      "sha256": "bcbb0cb62855c74cbbfc5603a0b1f18bff9b9c964a51bd9e93aa3efdd0d1ed5c"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_A03/evidence/NATIVE_STARTUP_AFFINITY_IMPLEMENTATION_REPAIR.json",
+      "bytes": 990,
+      "sha256": "afbb9cabd47ab61c1e795473061e11b8fc3e130c972630471d2e77627b49efff"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_failure_D01/output/ACTUAL_NATIVE_REST_DETERMINANT_CLASSIFICATION.json",
+      "bytes": 11069993,
+      "sha256": "0747e352d56a83352761c06dbf5a19290bbe6775fd86ba1f4a605834a7e6d647"
+    },
+    {
+      "path": "review_flow_P06_whole/output/whole_failure_A01/ACTUAL_WHOLE_FAILURE_SUMMARY.json",
+      "bytes": 18921,
+      "sha256": "5c863954cd7025d96c5a7ffddd92ce1c4ca248cfc2d58f09b329e51af87d5374"
+    },
+    {
+      "path": "review_flow_P06_whole/output/whole_failure_A01/ACTUAL_LOW_VOLRATIO_8_FACE_WITNESSES.json",
+      "bytes": 10528,
+      "sha256": "455a25b332c4082a2328ab6ba8b7c1e0327ba0de714b444880dfdd5ca7936dcc"
+    },
+    {
+      "path": "valve-source-increment-P06-20261012/SOURCE_MANIFEST.json",
+      "bytes": 50992,
+      "sha256": "35e584a86182d7d3f5dafe353bce7fd8a67cab07dba64cbf5aecaa273e85a5a3"
+    },
+    {
+      "path": "review_P06_source_increment_A01/INDEPENDENT_ZIP_SELECTION_GATE_A02.json",
+      "bytes": 51478,
+      "sha256": "1df9f3aeb6f58966a0ce52093bd0c7c160683a79c10aa0b1c37414ada144a8d0"
+    }
+  ],
+  "source_payload_imported": false,
+  "whole_valve_qualified": false,
+  "manufacturing_release": false,
+  "whole_native_quality_pass": false,
+  "CFD_started": false,
+  "native_failed_checks": 3,
+  "source_recovery": {
+    "library_file_id": "libfile_33d4a91e25648191989c771cfc947a1d",
+    "bytes": 76544132,
+    "sha256": "d70e8019cf48755dfa975a1927df53f595dbd7554e07837c47a9eba3cff775da",
+    "scope": "Byte-verified snapshot through actual native whole Failed3. Saved rest to join recovery closed; full native CAD script also pins a 5090-byte FDG review to be included in the next small recovery supplement."
+  },
+  "scope": "Actual first complete FDG1 research-domain conformal mesh and strict quality failure, monitoring repair, sparse independent source classification; local repair pending."
+}

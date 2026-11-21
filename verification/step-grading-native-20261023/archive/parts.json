@@ -1,0 +1,38 @@
+{
+  "archive": "step-grading-native-quality.zip",
+  "bytes": 45259451,
+  "sha256": "23244da105e19ef22e66f503ea75061a888fa121cd5ad7b5faa0697f72d3f221",
+  "parts": [
+    {
+      "name": "step-grading-native-quality.zip.part01",
+      "bytes": 8000000,
+      "sha256": "d3e88fbfcc4e9deacd4c061102aa7191e6c71a75a5a2685fdf04eab1aa086740"
+    },
+    {
+      "name": "step-grading-native-quality.zip.part02",
+      "bytes": 8000000,
+      "sha256": "477172ff3e03c6df4ad2ed7ffcf50f71a5951a3ca2ba149a500b3cbf46299371"
+    },
+    {
+      "name": "step-grading-native-quality.zip.part03",
+      "bytes": 8000000,
+      "sha256": "4fd23466fbcf3622f74f9e1b69f6369b144be92ace65247401e486b249a8cce4"
+    },
+    {
+      "name": "step-grading-native-quality.zip.part04",
+      "bytes": 8000000,
+      "sha256": "5253a94b6c5c6052c71d788809ee4164afc3b32cfa8b76fda2c5fb5629c65971"
+    },
+    {
+      "name": "step-grading-native-quality.zip.part05",
+      "bytes": 8000000,
+      "sha256": "1def77a9fdcbd03ca68a40dc85b97a9738011a64cf2a4b5f71c30f2e8bd05500"
+    },
+    {
+      "name": "step-grading-native-quality.zip.part06",
+      "bytes": 5259451,
+      "sha256": "0773dfc8e41029d697036ba0aadf1d3adce23e6fd147f555eba09ab9429fd6e2"
+    }
+  ],
+  "status": "Native Failed3; lowdet worsened, other metrics improved; no physical CFD acceptance"
+}

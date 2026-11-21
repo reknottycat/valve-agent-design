@@ -1,0 +1,117 @@
+{
+  "schema": "valve.worklog_P06_C02/v1",
+  "recorded_utc": "2026-10-12T04:01:04.102647+00:00",
+  "branch": "research/conformal-whole-flow-20261012",
+  "expected_parent": "b0058060338aadaa77bd0c89c81b048718cbbe60",
+  "scope": "Worklog and evidence references only; no modelling input/source payload upload.",
+  "sources": [
+    {
+      "path": "review_flow_P06_guarded_patch_G01/GUARDED_PATCH_FINAL_ENTRY_A01.json",
+      "bytes": 868,
+      "sha256": "b8a7d3e41dd69aa1d17094d7d9a1f09cbc0132d5167c9461cd87d8fd38a493c3"
+    },
+    {
+      "path": "review_flow_P06_saved_2D_C01/SAVED_2D_FINAL_ENTRY_A01.json",
+      "bytes": 573,
+      "sha256": "a5e2f686f1be35adc4c199ed7b710a4735ef47a12ecca1181705b15f3bf6883a"
+    },
+    {
+      "path": "review_flow_P06_shelf_size_support_C02/SHELF_SIZE_SUPPORT_ASSESSMENT_A01.json",
+      "bytes": 63629,
+      "sha256": "9f6d358353ebb3049b7a72b0fad5fa242c44a3ae59bd2d588d34bab953f29388"
+    },
+    {
+      "path": "review_flow_P06_saved_2D_C01/output/ACTUAL_SAVED_2D_SCALE_AND_FACE_IDENTITIES_A01.json",
+      "bytes": 88473,
+      "sha256": "e92542c09f0e93018bf9bee4474676986751f1ea615bcd9007ecb3adf5cd2c25"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_rest_CAD_remesh_C01/runs/S01_A01/evidence/native-receipt.json",
+      "bytes": 2082,
+      "sha256": "f500471c7d2bd955ae8724b80c1c940ad72ef56324f31148cf149ebcb5a1cd00"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_rest_CAD_remesh_C01/runs/M01_A01/INTERRUPTED_REUSE_ATTEMPT.json",
+      "bytes": 508,
+      "sha256": "30987d74b1611f33fb9b02389e588f9953e3d5e0a9930a4f82a9ad8870c7307b"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_rest_CAD_remesh_C02/runs/M01_A03/evidence/native-receipt.json",
+      "bytes": 2086,
+      "sha256": "17e48420e21dda4a2a8a94a64486e84256a0a6187923bea7809adf89e5f9ea38"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_rest_CAD_remesh_C02/runs/M01_A03/evidence/native-stdout.txt",
+      "bytes": 423778,
+      "sha256": "1f1e947b87fef511a3a635c08590b701e7fb9e21636a8041e46f28748e039b5c"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_rest_CAD_remesh_C02/runs/M01_A03/output/DIRECT_CAD_FACE_AND_CONTINUOUS_SIZE_REPAIR.json",
+      "bytes": 3680,
+      "sha256": "767e567ff91c0172496ca4e686d60d93c90dd7ae04a88b3c151e79a746fc86c4"
+    },
+    {
+      "path": "valve-source-increment-P06-C02-20261012/SAVED_2D_BYTE_IDENTITIES.json",
+      "bytes": 1421,
+      "sha256": "ac101167190801dabcd91033da5495f727b68f85b32b87774e8a34377f9b8471"
+    },
+    {
+      "path": "valve-source-increment-P06-C02-20261012/ARCHIVE_VERIFIED.json",
+      "bytes": 410,
+      "sha256": "66aa69ece8038b1583ebea7f349eaf073a25acf1d9f6497890fec9caf425b459"
+    },
+    {
+      "path": "valve-source-increment-P06-C02-20261012/LIBRARY_IDENTITY_A01.json",
+      "bytes": 765,
+      "sha256": "0f88d056e8f3abdf4c916df6163c16e442db8bdfca8bf1a377c69e6de05c21b2"
+    },
+    {
+      "path": "valve-source-increment-P06-R01-20261012/R01_CORRECTED_RECOVERY_INDEX_A02.json",
+      "bytes": 25208,
+      "sha256": "20fbef423fc43d28f03b557243907618eefa3eeacb89513e7fbf4ef267cec3c9"
+    }
+  ],
+  "R01_later_independent_actual_geometry_audit_pass": true,
+  "R01_whole_native_quality_pass": false,
+  "C02_actual_3D_refinement": {
+    "nodes": 2894621,
+    "tets_created": 14945004,
+    "generate_returned": false,
+    "3D_MSH_saved": false
+  },
+  "C02_terminal": {
+    "start_utc": "2026-10-12T03:34:57.084027+00:00",
+    "end_utc": "2026-10-12T03:54:57.235894+00:00",
+    "elapsed_seconds": 1200.152198529002,
+    "peak_RSS_bytes": 5232484352,
+    "reason": "WALL_TIME_CAP",
+    "exit_code": -9,
+    "physical_failure": false
+  },
+  "C02_complete_saved_2D": {
+    "nodes": 1044164,
+    "triangles": 2088324,
+    "original_faces": 78,
+    "fixed_R32_triangles": 22876,
+    "bytes": 131403868,
+    "sha256": "02f977d517556aa84a4d051768596f4c8fbe242eba6d717888e091d8b2d71a1d",
+    "C01_same_bytes_independent_audit_reused": true
+  },
+  "new_whole_native_quality_executed": false,
+  "CFD_started": false,
+  "selected_repair": "C03: replace full-ring vent numerical size support by finite supports around six original vents; preserve original geometry, real step ring, finite vent faces/curves, fixed R32. Result pending; no waiver of native checks.",
+  "library_recovery": {
+    "id": "libfile_d9045b1e008c8191a86d81d8d53b9e27",
+    "bytes": 48086219,
+    "sha256": "9b26fa81d5ccb0df4d575b3f51afd82d80925c2735a1d7c676572031120012cd",
+    "new_directory_verified_source_files": 102,
+    "scientific_fresh_rebuild_executed": false
+  },
+  "index_erratum": {
+    "scope": "R01 source archive inherited whole_faces field only",
+    "old": 16293242,
+    "correct": 16301132,
+    "corrected_index_library": "libfile_fe8671e4a6bc8191ac82fb5b57627eba",
+    "actual_native_records_unchanged": true
+  }
+}

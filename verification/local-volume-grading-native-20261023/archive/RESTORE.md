@@ -1,0 +1,1 @@
+Concatenate the .partNN files in numeric order into the archive filename in parts.json. Verify each part's byte count and SHA256, then verify the full archive byte count and SHA256 before extracting. These are byte splits, not independent ZIP files. Evidence is diagnostic only; native checkMesh still reports Failed 4. No physical flow or engineering release.

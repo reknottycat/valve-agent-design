@@ -1,0 +1,82 @@
+{
+  "trial.py": {
+    "bytes": 5598,
+    "sha256": "d8305f596eecc0175c4fe4b1483b33bd5f0e5aa3c583cda0379d6e7315ac2faa"
+  },
+  "monitor.py": {
+    "bytes": 1290,
+    "sha256": "73ca601273a464ab2216a4453a204534d336c90222c5440a1b4ee620f4e2eb49"
+  },
+  "identity.py": {
+    "bytes": 1362,
+    "sha256": "7d6f864c24beae6d569d81e4263351c673623cc9b8148d2dc1de182d17f50265"
+  },
+  "README.md": {
+    "bytes": 2846,
+    "sha256": "c71b4bd85d29b265b42181e6dc6e070bb2428ef86925eda42fb485d3f2bc8672"
+  },
+  "verify.py": {
+    "bytes": 3296,
+    "sha256": "1a476899fc82beef242ddabc1d3db38fd1854a546b0d8e448f2a916d4580c636"
+  },
+  "check_volume.py": {
+    "bytes": 2167,
+    "sha256": "40f4def00ccbd71fe126299be5d9b0745fcb01e3bd0187d79d51229a540d879b"
+  },
+  "compare.py": {
+    "bytes": 2375,
+    "sha256": "e70c33a5a80d6db384927740e39c47f4794329dc127c31b7af3260e032964c25"
+  },
+  "fresh-local-surface.msh": {
+    "bytes": 20982322,
+    "sha256": "29877cecc2d7d3868ab877867240b0089a3c7e5d2c958f2a96a681f57787f295"
+  },
+  "evidence/readback.log": {
+    "bytes": 954,
+    "sha256": "59492d0bd2eb6b20a38db6c8b5687f09714c00534c78608b00c3f3cb62ad1300"
+  },
+  "evidence/result.json": {
+    "bytes": 29123,
+    "sha256": "34ee6c3d814e2875a24bb0efb8c282a25d0fcdc205aa0cf28e26d366fd11f9de"
+  },
+  "evidence/verify.log": {
+    "bytes": 5767,
+    "sha256": "6c0d672802a3dc3e6565a1232d7f37a7c11de870770e0cf9326e967c15116087"
+  },
+  "evidence/volume-receipt.json": {
+    "bytes": 197,
+    "sha256": "7d5fc5b84e40e837c0ef80c2e3a6cdcca992a4c8fddd2bdfe251e4a1ba9ce834"
+  },
+  "evidence/volume-readback.json": {
+    "bytes": 11454,
+    "sha256": "c605cc166b08a96f53d555f25fde61623ef9b76d867bbbc59808b7cb297f04fb"
+  },
+  "evidence/surface-identity.json": {
+    "bytes": 51524,
+    "sha256": "af01cb2d5b2ca3e4fd5f17b595be8be8f6b90264c2062a51f701b787e95f084d"
+  },
+  "evidence/verification.json": {
+    "bytes": 20844,
+    "sha256": "ecf6e4938b963e75a42cc9c1915cc3847e52ed66cdd39438e3d971a1502f28fc"
+  },
+  "evidence/retainer-boundary-audit.json": {
+    "bytes": 776,
+    "sha256": "caa8dc56c9405832d862f730a79cbf80c14435b1bc8da6e1583e74e05d4ddde3"
+  },
+  "evidence/complete-boundary-audit.json": {
+    "bytes": 1099,
+    "sha256": "11990ee3d6625a589432e0fc5d35fc60e5f147b7d315a2157d770f321a7af2be"
+  },
+  "evidence/identity.log": {
+    "bytes": 856,
+    "sha256": "fa96db51eafb761c92bfc75a279ab57a72497110dbc864af6d67f53257b18c5b"
+  },
+  "evidence/volume.log": {
+    "bytes": 27541,
+    "sha256": "5b74476d5a589c64e33b0de1e86a5d44538cf3ef87d8943a23a2df948e66ace9"
+  },
+  "evidence/geometry.json": {
+    "bytes": 51446,
+    "sha256": "b8affaf81680968eb76a74524420d02fd1ca2229532ec6faa547d910a05af1fc"
+  }
+}

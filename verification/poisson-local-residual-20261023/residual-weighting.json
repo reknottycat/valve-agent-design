@@ -1,0 +1,1158 @@
+{
+  "global": {
+    "V_min": 4.3883202631017357e-14,
+    "V_max": 7.946289075054436e-06,
+    "signed_integrated_residual_m3_per_s": -1.5679180773070013e-10,
+    "sum_abs_integrated_residual_m3_per_s": 0.004539526713330587,
+    "l2_integrated_residual_vector_m3_per_s": 0.00059647940123652,
+    "linf_integrated_residual_m3_per_s": 0.0002812549714070642,
+    "total_source_abs_m3_per_s": 0.38221137736336175,
+    "abs_integrated_residual_over_total_source": 0.01187700571512537
+  },
+  "volume_bins": [
+    {
+      "volume_interval_m3": [
+        0,
+        1e-12
+      ],
+      "cells": 138229,
+      "volume_m3": 8.430258131358712e-08,
+      "volume_fraction": 1.323392022945075e-06,
+      "sum_abs_integrated_residual_m3_per_s": 7.518956217339186e-07,
+      "absolute_integrated_fraction": 0.00016563304265308825,
+      "squared_local_residual_energy_fraction": 4.114427821458886e-05,
+      "max_abs_local_residual_per_s": 117781.13797547157,
+      "max_abs_integrated_residual_m3_per_s": 1.1743014410195624e-07
+    },
+    {
+      "volume_interval_m3": [
+        1e-12,
+        1e-10
+      ],
+      "cells": 345577,
+      "volume_m3": 5.575238236048508e-06,
+      "volume_fraction": 8.752075787762161e-05,
+      "sum_abs_integrated_residual_m3_per_s": 0.0006696873994684294,
+      "absolute_integrated_fraction": 0.1475236168347359,
+      "squared_local_residual_energy_fraction": 0.5104065868808869,
+      "max_abs_local_residual_per_s": 2789604.7171808863,
+      "max_abs_integrated_residual_m3_per_s": 6.770944971792624e-05
+    },
+    {
+      "volume_interval_m3": [
+        1e-10,
+        1e-08
+      ],
+      "cells": 99013,
+      "volume_m3": 9.233809471600179e-05,
+      "volume_fraction": 0.0014495344751846708,
+      "sum_abs_integrated_residual_m3_per_s": 0.0035716174271681537,
+      "absolute_integrated_fraction": 0.7867818943943846,
+      "squared_local_residual_energy_fraction": 0.48946531837478674,
+      "max_abs_local_residual_per_s": 348091.7351708133,
+      "max_abs_integrated_residual_m3_per_s": 0.0002812549714070642
+    },
+    {
+      "volume_interval_m3": [
+        1e-08,
+        1e-06
+      ],
+      "cells": 11246,
+      "volume_m3": 0.001763679816419551,
+      "volume_fraction": 0.027686457089573,
+      "sum_abs_integrated_residual_m3_per_s": 0.00022497076723941402,
+      "absolute_integrated_fraction": 0.04955819878287623,
+      "squared_local_residual_energy_fraction": 8.688652897951837e-05,
+      "max_abs_local_residual_per_s": 1868.940970253485,
+      "max_abs_integrated_residual_m3_per_s": 2.525123784930825e-05
+    },
+    {
+      "volume_interval_m3": [
+        1e-06,
+        null
+      ],
+      "cells": 20269,
+      "volume_m3": 0.061840218775274035,
+      "volume_fraction": 0.9707751642853417,
+      "sum_abs_integrated_residual_m3_per_s": 7.249922383285546e-05,
+      "absolute_integrated_fraction": 0.015970656945350103,
+      "squared_local_residual_energy_fraction": 6.393713222886153e-08,
+      "max_abs_local_residual_per_s": 3.1793913826255853,
+      "max_abs_integrated_residual_m3_per_s": 3.5575388687324533e-06
+    }
+  ],
+  "boundary_adjacency_exclusive_groups": {
+    "boundary_adjacent": {
+      "cells": 196448,
+      "volume_m3": 0.013132762228211019,
+      "volume_fraction": 0.20615967508040867,
+      "sum_abs_integrated_residual_m3_per_s": 0.003161498067457592,
+      "absolute_integrated_fraction": 0.6964378154607324,
+      "squared_local_residual_energy_fraction": 0.694655408842147,
+      "max_abs_local_residual_per_s": 2789604.7171808863,
+      "max_abs_integrated_residual_m3_per_s": 0.0002812549714070642
+    },
+    "interior": {
+      "cells": 417886,
+      "volume_m3": 0.05056913399901593,
+      "volume_fraction": 0.7938403249195912,
+      "sum_abs_integrated_residual_m3_per_s": 0.0013780286458729947,
+      "absolute_integrated_fraction": 0.30356218453926764,
+      "squared_local_residual_energy_fraction": 0.3053445911578531,
+      "max_abs_local_residual_per_s": 864023.8921080512,
+      "max_abs_integrated_residual_m3_per_s": 0.00010609367550149558
+    }
+  },
+  "top30_by_local_residual": [
+    {
+      "cell": 532976,
+      "C_m": [
+        0.2905545655403807,
+        0.020819495957618426,
+        0.103925
+      ],
+      "V_m3": 2.4272058797761116e-11,
+      "local_r_per_s": -2789604.7171808863,
+      "integrated_R_m3_per_s": -6.770944971792624e-05,
+      "abs_integrated_R_m3_per_s": 6.770944971792624e-05,
+      "local_source_magnitude_m3_per_s": 1.456323527865667e-10,
+      "abs_integrated_residual_to_total_source": 0.0001771518424831086,
+      "adjacent_boundary_patches": [
+        "wall_FDG_102"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532718,
+      "C_m": [
+        0.29008450913580625,
+        0.020651479436657752,
+        0.103925
+      ],
+      "V_m3": 2.141578301682088e-11,
+      "local_r_per_s": 1199507.3364628004,
+      "integrated_R_m3_per_s": 2.568838884477209e-05,
+      "abs_integrated_R_m3_per_s": 2.568838884477209e-05,
+      "local_source_magnitude_m3_per_s": 1.2849469810092529e-10,
+      "abs_integrated_residual_to_total_source": 6.720990102905959e-05,
+      "adjacent_boundary_patches": [
+        "wall_FDG_102"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532492,
+      "C_m": [
+        0.29129159386376174,
+        0.02110148352842315,
+        0.10395
+      ],
+      "V_m3": 3.418082124638947e-11,
+      "local_r_per_s": 864023.8921080512,
+      "integrated_R_m3_per_s": 2.9533046208755003e-05,
+      "abs_integrated_R_m3_per_s": 2.9533046208755003e-05,
+      "local_source_magnitude_m3_per_s": 2.0508492747833682e-10,
+      "abs_integrated_residual_to_total_source": 7.726888302615452e-05,
+      "adjacent_boundary_patches": [],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532496,
+      "C_m": [
+        0.29103120430186397,
+        0.02096781340719505,
+        0.103925
+      ],
+      "V_m3": 2.7777655684914504e-11,
+      "local_r_per_s": -763416.0776902407,
+      "integrated_R_m3_per_s": -2.120590895040745e-05,
+      "abs_integrated_R_m3_per_s": 2.120590895040745e-05,
+      "local_source_magnitude_m3_per_s": 1.6666593410948702e-10,
+      "abs_integrated_residual_to_total_source": 5.5482149947219804e-05,
+      "adjacent_boundary_patches": [
+        "wall_FDG_102"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 599084,
+      "C_m": [
+        0.2922308385904792,
+        0.021935502729185277,
+        0.10607500000000002
+      ],
+      "V_m3": 2.7777655684917073e-11,
+      "local_r_per_s": 666313.0025105473,
+      "integrated_R_m3_per_s": 1.850861316212127e-05,
+      "abs_integrated_R_m3_per_s": 1.850861316212127e-05,
+      "local_source_magnitude_m3_per_s": 1.6666593410950242e-10,
+      "abs_integrated_residual_to_total_source": 4.842507119960861e-05,
+      "adjacent_boundary_patches": [
+        "wall_FDG_104"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532987,
+      "C_m": [
+        0.29223828902981946,
+        0.021417817498960448,
+        0.10395
+      ],
+      "V_m3": 4.1661201346005815e-11,
+      "local_r_per_s": -430606.1418091436,
+      "integrated_R_m3_per_s": -1.7939569174737465e-05,
+      "abs_integrated_R_m3_per_s": 1.7939569174737465e-05,
+      "local_source_magnitude_m3_per_s": 2.4996720807603486e-10,
+      "abs_integrated_residual_to_total_source": 4.6936251083082296e-05,
+      "adjacent_boundary_patches": [],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 533014,
+      "C_m": [
+        0.307685823306572,
+        0.02205724199955853,
+        0.103925
+      ],
+      "V_m3": 2.5944045172791227e-11,
+      "local_r_per_s": -411230.42084649607,
+      "integrated_R_m3_per_s": -1.0668980614867441e-05,
+      "abs_integrated_R_m3_per_s": 1.0668980614867441e-05,
+      "local_source_magnitude_m3_per_s": 1.5566427103674737e-10,
+      "abs_integrated_residual_to_total_source": 2.7913822682270982e-05,
+      "adjacent_boundary_patches": [
+        "wall_FDG_102"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 591117,
+      "C_m": [
+        0.28210541555295526,
+        0.014943566654423,
+        0.106075
+      ],
+      "V_m3": 2.6238443596229854e-11,
+      "local_r_per_s": 398688.8077410879,
+      "integrated_R_m3_per_s": 1.0460973794362663e-05,
+      "abs_integrated_R_m3_per_s": 1.0460973794362663e-05,
+      "local_source_magnitude_m3_per_s": 1.5743066157737913e-10,
+      "abs_integrated_residual_to_total_source": 2.7369603350183886e-05,
+      "adjacent_boundary_patches": [
+        "wall_FDG_104"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 599102,
+      "C_m": [
+        0.28208206316096174,
+        -0.014924823647616124,
+        0.103925
+      ],
+      "V_m3": 2.6238443596187713e-11,
+      "local_r_per_s": 379580.9186064843,
+      "integrated_R_m3_per_s": 9.959612523045357e-06,
+      "abs_integrated_R_m3_per_s": 9.959612523045357e-06,
+      "local_source_magnitude_m3_per_s": 1.5743066157712627e-10,
+      "abs_integrated_residual_to_total_source": 2.6057865131463434e-05,
+      "adjacent_boundary_patches": [
+        "wall_FDG_102"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532763,
+      "C_m": [
+        0.27716839542041805,
+        -0.0019876645732465887,
+        0.103925
+      ],
+      "V_m3": 2.184651341186633e-11,
+      "local_r_per_s": -373314.61978842574,
+      "integrated_R_m3_per_s": -8.155622848053622e-06,
+      "abs_integrated_R_m3_per_s": 8.155622848053622e-06,
+      "local_source_magnitude_m3_per_s": 1.3107908047119797e-10,
+      "abs_integrated_residual_to_total_source": 2.133799078487455e-05,
+      "adjacent_boundary_patches": [
+        "wall_FDG_102"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 533094,
+      "C_m": [
+        0.27716839542041805,
+        0.0019876645732464413,
+        0.103925
+      ],
+      "V_m3": 2.1846513411866715e-11,
+      "local_r_per_s": -372826.62206639803,
+      "integrated_R_m3_per_s": -8.144961799274527e-06,
+      "abs_integrated_R_m3_per_s": 8.144961799274527e-06,
+      "local_source_magnitude_m3_per_s": 1.310790804712003e-10,
+      "abs_integrated_residual_to_total_source": 2.131009771467701e-05,
+      "adjacent_boundary_patches": [
+        "wall_FDG_102"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532697,
+      "C_m": [
+        0.27863033759500727,
+        0.0041554891396480415,
+        0.10395
+      ],
+      "V_m3": 3.047865398166779e-10,
+      "local_r_per_s": 348091.7351708133,
+      "integrated_R_m3_per_s": 0.00010609367550149558,
+      "abs_integrated_R_m3_per_s": 0.00010609367550149558,
+      "local_source_magnitude_m3_per_s": 1.8287192389000673e-09,
+      "abs_integrated_residual_to_total_source": 0.0002775785384343338,
+      "adjacent_boundary_patches": [],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532688,
+      "C_m": [
+        0.27863033759500727,
+        0.0041554891396480415,
+        0.10605
+      ],
+      "V_m3": 3.0478653981685004e-10,
+      "local_r_per_s": -347926.90572896186,
+      "integrated_R_m3_per_s": -0.00010604343770631367,
+      "abs_integrated_R_m3_per_s": 0.00010604343770631367,
+      "local_source_magnitude_m3_per_s": 1.8287192389011003e-09,
+      "abs_integrated_residual_to_total_source": 0.0002774470986129228,
+      "adjacent_boundary_patches": [],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532710,
+      "C_m": [
+        0.27863033759500727,
+        -0.004155489139648254,
+        0.10604999999999999
+      ],
+      "V_m3": 3.047865398168439e-10,
+      "local_r_per_s": -347917.1123288844,
+      "integrated_R_m3_per_s": -0.00010604045280978889,
+      "abs_integrated_R_m3_per_s": 0.00010604045280978889,
+      "local_source_magnitude_m3_per_s": 1.8287192389010635e-09,
+      "abs_integrated_residual_to_total_source": 0.000277439289069038,
+      "adjacent_boundary_patches": [],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532518,
+      "C_m": [
+        0.27863033759500727,
+        -0.004155489139648253,
+        0.10395
+      ],
+      "V_m3": 3.047865398166717e-10,
+      "local_r_per_s": 344199.77212473337,
+      "integrated_R_m3_per_s": 0.00010490745755158437,
+      "abs_integrated_R_m3_per_s": 0.00010490745755158437,
+      "local_source_magnitude_m3_per_s": 1.8287192389000301e-09,
+      "abs_integrated_residual_to_total_source": 0.00027447497318179164,
+      "adjacent_boundary_patches": [],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532494,
+      "C_m": [
+        0.27716839542041805,
+        0.0019876645732464417,
+        0.10607500000000002
+      ],
+      "V_m3": 2.1846513411868734e-11,
+      "local_r_per_s": 332631.58754636376,
+      "integrated_R_m3_per_s": 7.266840438542825e-06,
+      "abs_integrated_R_m3_per_s": 7.266840438542825e-06,
+      "local_source_magnitude_m3_per_s": 1.310790804712124e-10,
+      "abs_integrated_residual_to_total_source": 1.901262199119302e-05,
+      "adjacent_boundary_patches": [
+        "wall_FDG_104"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532810,
+      "C_m": [
+        0.277168395420418,
+        -0.0019876645732465887,
+        0.106075
+      ],
+      "V_m3": 2.1846513411843108e-11,
+      "local_r_per_s": 332610.5782378707,
+      "integrated_R_m3_per_s": 7.266381458394533e-06,
+      "abs_integrated_R_m3_per_s": 7.266381458394533e-06,
+      "local_source_magnitude_m3_per_s": 1.3107908047105864e-10,
+      "abs_integrated_residual_to_total_source": 1.9011421136965556e-05,
+      "adjacent_boundary_patches": [
+        "wall_FDG_104"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 590999,
+      "C_m": [
+        0.28208206316096174,
+        -0.014924823647616126,
+        0.10607500000000002
+      ],
+      "V_m3": 2.6238443596190036e-11,
+      "local_r_per_s": 331037.88489971985,
+      "integrated_R_m3_per_s": 8.685918871143349e-06,
+      "abs_integrated_R_m3_per_s": 8.685918871143349e-06,
+      "local_source_magnitude_m3_per_s": 1.5743066157714023e-10,
+      "abs_integrated_residual_to_total_source": 2.272543253699587e-05,
+      "adjacent_boundary_patches": [
+        "wall_FDG_104"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532706,
+      "C_m": [
+        0.27709595291238526,
+        0.001493767156947044,
+        0.10607500000000002
+      ],
+      "V_m3": 1.9535163759024734e-11,
+      "local_r_per_s": 321845.55300459644,
+      "integrated_R_m3_per_s": 6.287305583058667e-06,
+      "abs_integrated_R_m3_per_s": 6.287305583058667e-06,
+      "local_source_magnitude_m3_per_s": 1.1721098255414842e-10,
+      "abs_integrated_residual_to_total_source": 1.644981273564087e-05,
+      "adjacent_boundary_patches": [
+        "wall_FDG_104"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 533083,
+      "C_m": [
+        0.27709595291238526,
+        -0.001493767156947191,
+        0.106075
+      ],
+      "V_m3": 1.9535163759047507e-11,
+      "local_r_per_s": 321823.01066137874,
+      "integrated_R_m3_per_s": 6.2868652146997256e-06,
+      "abs_integrated_R_m3_per_s": 6.2868652146997256e-06,
+      "local_source_magnitude_m3_per_s": 1.1721098255428506e-10,
+      "abs_integrated_residual_to_total_source": 1.6448660576429967e-05,
+      "adjacent_boundary_patches": [
+        "wall_FDG_104"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 533076,
+      "C_m": [
+        0.27709595291238526,
+        0.0014937671569470441,
+        0.103925
+      ],
+      "V_m3": 1.9535163759008332e-11,
+      "local_r_per_s": -316165.945227863,
+      "integrated_R_m3_per_s": -6.176353515047962e-06,
+      "abs_integrated_R_m3_per_s": 6.176353515047962e-06,
+      "local_source_magnitude_m3_per_s": 1.1721098255404998e-10,
+      "abs_integrated_residual_to_total_source": 1.6159522925912826e-05,
+      "adjacent_boundary_patches": [
+        "wall_FDG_102"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532521,
+      "C_m": [
+        0.27709595291238526,
+        -0.001493767156947191,
+        0.103925
+      ],
+      "V_m3": 1.9535163759008055e-11,
+      "local_r_per_s": -315471.4077434088,
+      "integrated_R_m3_per_s": -6.162785611552293e-06,
+      "abs_integrated_R_m3_per_s": 6.162785611552293e-06,
+      "local_source_magnitude_m3_per_s": 1.1721098255404833e-10,
+      "abs_integrated_residual_to_total_source": 1.612402449677326e-05,
+      "adjacent_boundary_patches": [
+        "wall_FDG_102"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 590798,
+      "C_m": [
+        0.29175419982899603,
+        0.021787185279608653,
+        0.106075
+      ],
+      "V_m3": 2.427205879780901e-11,
+      "local_r_per_s": -315199.90197651915,
+      "integrated_R_m3_per_s": -7.65055055383771e-06,
+      "abs_integrated_R_m3_per_s": 7.65055055383771e-06,
+      "local_source_magnitude_m3_per_s": 1.4563235278685406e-10,
+      "abs_integrated_residual_to_total_source": 2.0016543219132023e-05,
+      "adjacent_boundary_patches": [
+        "wall_FDG_104"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532927,
+      "C_m": [
+        0.28962333300041754,
+        0.020209056079910227,
+        0.10395
+      ],
+      "V_m3": 7.930429289608411e-11,
+      "local_r_per_s": 313408.6974206672,
+      "integrated_R_m3_per_s": 2.4854655136428793e-05,
+      "abs_integrated_R_m3_per_s": 2.4854655136428793e-05,
+      "local_source_magnitude_m3_per_s": 4.758257573765046e-10,
+      "abs_integrated_residual_to_total_source": 6.502855908655985e-05,
+      "adjacent_boundary_patches": [],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 533117,
+      "C_m": [
+        0.2773745676123058,
+        -0.002964287297560101,
+        0.10607500000000002
+      ],
+      "V_m3": 2.842464049599601e-11,
+      "local_r_per_s": 305765.62187653175,
+      "integrated_R_m3_per_s": 8.691277877875068e-06,
+      "abs_integrated_R_m3_per_s": 8.691277877875068e-06,
+      "local_source_magnitude_m3_per_s": 1.7054784297597606e-10,
+      "abs_integrated_residual_to_total_source": 2.2739453591964692e-05,
+      "adjacent_boundary_patches": [
+        "wall_FDG_104"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532695,
+      "C_m": [
+        0.2773745676123058,
+        0.0029642872975599566,
+        0.10607500000000002
+      ],
+      "V_m3": 2.8424640496001594e-11,
+      "local_r_per_s": 305623.2937911598,
+      "integrated_R_m3_per_s": 8.687232253217594e-06,
+      "abs_integrated_R_m3_per_s": 8.687232253217594e-06,
+      "local_source_magnitude_m3_per_s": 1.7054784297600956e-10,
+      "abs_integrated_residual_to_total_source": 2.272886880852527e-05,
+      "adjacent_boundary_patches": [
+        "wall_FDG_104"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532468,
+      "C_m": [
+        0.2775056760878635,
+        0.0038872493852948314,
+        0.10604999999999999
+      ],
+      "V_m3": 3.602834911409864e-11,
+      "local_r_per_s": 298229.35862143134,
+      "integrated_R_m3_per_s": 1.0744711448486652e-05,
+      "abs_integrated_R_m3_per_s": 1.0744711448486652e-05,
+      "local_source_magnitude_m3_per_s": 2.1617009468459184e-10,
+      "abs_integrated_residual_to_total_source": 2.8111961299027057e-05,
+      "adjacent_boundary_patches": [],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 533084,
+      "C_m": [
+        0.27750567608786353,
+        -0.003887249385294934,
+        0.10605
+      ],
+      "V_m3": 3.6028349114086224e-11,
+      "local_r_per_s": 297784.02288636676,
+      "integrated_R_m3_per_s": 1.0728666737147063e-05,
+      "abs_integrated_R_m3_per_s": 1.0728666737147063e-05,
+      "local_source_magnitude_m3_per_s": 2.1617009468451735e-10,
+      "abs_integrated_residual_to_total_source": 2.806998266550162e-05,
+      "adjacent_boundary_patches": [],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 591033,
+      "C_m": [
+        0.2817732024591135,
+        0.014570985072648573,
+        0.106075
+      ],
+      "V_m3": 2.3002723930411166e-11,
+      "local_r_per_s": -297468.6130362572,
+      "integrated_R_m3_per_s": -6.8425883836353326e-06,
+      "abs_integrated_R_m3_per_s": 6.8425883836353326e-06,
+      "local_source_magnitude_m3_per_s": 1.38016343582467e-10,
+      "abs_integrated_residual_to_total_source": 1.7902628725597046e-05,
+      "adjacent_boundary_patches": [
+        "wall_FDG_104"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532488,
+      "C_m": [
+        0.27750567608786353,
+        0.0038872493852948314,
+        0.10395
+      ],
+      "V_m3": 3.602834911407418e-11,
+      "local_r_per_s": -286214.2427759448,
+      "integrated_R_m3_per_s": -1.0311826660152124e-05,
+      "abs_integrated_R_m3_per_s": 1.0311826660152124e-05,
+      "local_source_magnitude_m3_per_s": 2.1617009468444507e-10,
+      "abs_integrated_residual_to_total_source": 2.6979381752806504e-05,
+      "adjacent_boundary_patches": [],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    }
+  ],
+  "top30_by_integrated_residual": [
+    {
+      "cell": 477365,
+      "C_m": [
+        0.3173420000038968,
+        0.1075643800700471,
+        0.0219625
+      ],
+      "V_m3": 2.3633432397346713e-09,
+      "local_r_per_s": -119007.2464627018,
+      "integrated_R_m3_per_s": -0.0002812549714070642,
+      "abs_integrated_R_m3_per_s": 0.0002812549714070642,
+      "local_source_magnitude_m3_per_s": 1.4180059438408028e-08,
+      "abs_integrated_residual_to_total_source": 0.0007358623737139043,
+      "adjacent_boundary_patches": [
+        "wall_FDG_36",
+        "wall_FDG_39"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 477948,
+      "C_m": [
+        0.32300018802097774,
+        0.10638270650460709,
+        0.021975
+      ],
+      "V_m3": 2.3633432397346655e-09,
+      "local_r_per_s": 118782.88086807457,
+      "integrated_R_m3_per_s": 0.00028072471849577215,
+      "abs_integrated_R_m3_per_s": 0.00028072471849577215,
+      "local_source_magnitude_m3_per_s": 1.4180059438407992e-08,
+      "abs_integrated_residual_to_total_source": 0.0007344750447574773,
+      "adjacent_boundary_patches": [
+        "wall_FDG_39"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 533062,
+      "C_m": [
+        0.29695,
+        0.027989766161037,
+        0.19270769230769225
+      ],
+      "V_m3": 3.440163958020257e-09,
+      "local_r_per_s": -42614.0030577653,
+      "integrated_R_m3_per_s": -0.0001465991574262892,
+      "abs_integrated_R_m3_per_s": 0.0001465991574262892,
+      "local_source_magnitude_m3_per_s": 2.0640983748121542e-08,
+      "abs_integrated_residual_to_total_source": 0.00038355518989933134,
+      "adjacent_boundary_patches": [
+        "wall_FDG_69"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 486737,
+      "C_m": [
+        0.39626553389276004,
+        -0.051079317754645075,
+        0.021975
+      ],
+      "V_m3": 2.3093197344884064e-09,
+      "local_r_per_s": 62110.796755062795,
+      "integrated_R_m3_per_s": 0.00014343368867126497,
+      "abs_integrated_R_m3_per_s": 0.00014343368867126497,
+      "local_source_magnitude_m3_per_s": 1.3855918406930439e-08,
+      "abs_integrated_residual_to_total_source": 0.0003752732052633406,
+      "adjacent_boundary_patches": [
+        "wall_FDG_47"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 486210,
+      "C_m": [
+        0.3933754022326143,
+        -0.056085172630580396,
+        0.0219625
+      ],
+      "V_m3": 2.3093197344880863e-09,
+      "local_r_per_s": -62098.227467529556,
+      "integrated_R_m3_per_s": -0.00014340466216749613,
+      "abs_integrated_R_m3_per_s": 0.00014340466216749613,
+      "local_source_magnitude_m3_per_s": 1.3855918406928517e-08,
+      "abs_integrated_residual_to_total_source": 0.0003751972616743007,
+      "adjacent_boundary_patches": [
+        "wall_FDG_36",
+        "wall_FDG_47"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532697,
+      "C_m": [
+        0.27863033759500727,
+        0.0041554891396480415,
+        0.10395
+      ],
+      "V_m3": 3.047865398166779e-10,
+      "local_r_per_s": 348091.7351708133,
+      "integrated_R_m3_per_s": 0.00010609367550149558,
+      "abs_integrated_R_m3_per_s": 0.00010609367550149558,
+      "local_source_magnitude_m3_per_s": 1.8287192389000673e-09,
+      "abs_integrated_residual_to_total_source": 0.0002775785384343338,
+      "adjacent_boundary_patches": [],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532688,
+      "C_m": [
+        0.27863033759500727,
+        0.0041554891396480415,
+        0.10605
+      ],
+      "V_m3": 3.0478653981685004e-10,
+      "local_r_per_s": -347926.90572896186,
+      "integrated_R_m3_per_s": -0.00010604343770631367,
+      "abs_integrated_R_m3_per_s": 0.00010604343770631367,
+      "local_source_magnitude_m3_per_s": 1.8287192389011003e-09,
+      "abs_integrated_residual_to_total_source": 0.0002774470986129228,
+      "adjacent_boundary_patches": [],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532710,
+      "C_m": [
+        0.27863033759500727,
+        -0.004155489139648254,
+        0.10604999999999999
+      ],
+      "V_m3": 3.047865398168439e-10,
+      "local_r_per_s": -347917.1123288844,
+      "integrated_R_m3_per_s": -0.00010604045280978889,
+      "abs_integrated_R_m3_per_s": 0.00010604045280978889,
+      "local_source_magnitude_m3_per_s": 1.8287192389010635e-09,
+      "abs_integrated_residual_to_total_source": 0.000277439289069038,
+      "adjacent_boundary_patches": [],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532518,
+      "C_m": [
+        0.27863033759500727,
+        -0.004155489139648253,
+        0.10395
+      ],
+      "V_m3": 3.047865398166717e-10,
+      "local_r_per_s": 344199.77212473337,
+      "integrated_R_m3_per_s": 0.00010490745755158437,
+      "abs_integrated_R_m3_per_s": 0.00010490745755158437,
+      "local_source_magnitude_m3_per_s": 1.8287192389000301e-09,
+      "abs_integrated_residual_to_total_source": 0.00027447497318179164,
+      "adjacent_boundary_patches": [],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 590874,
+      "C_m": [
+        0.29695,
+        0.029254532322074,
+        0.18878461538461527
+      ],
+      "V_m3": 6.615699919269882e-10,
+      "local_r_per_s": 156716.99168213128,
+      "integrated_R_m3_per_s": 0.00010367925892196947,
+      "abs_integrated_R_m3_per_s": 0.00010367925892196947,
+      "local_source_magnitude_m3_per_s": 3.969419951561929e-09,
+      "abs_integrated_residual_to_total_source": 0.0002712615716392016,
+      "adjacent_boundary_patches": [
+        "wall_FDG_69"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 590872,
+      "C_m": [
+        0.2969,
+        0.02899836525555475,
+        0.18754228079989477
+      ],
+      "V_m3": 2.6597061478422217e-09,
+      "local_r_per_s": 31140.104635056392,
+      "integrated_R_m3_per_s": 8.282352774230955e-05,
+      "abs_integrated_R_m3_per_s": 8.282352774230955e-05,
+      "local_source_magnitude_m3_per_s": 1.595823688705333e-08,
+      "abs_integrated_residual_to_total_source": 0.00021669561045947267,
+      "adjacent_boundary_patches": [],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 494678,
+      "C_m": [
+        0.196901454970884,
+        -0.03494730383990137,
+        0.021974999999999998
+      ],
+      "V_m3": 2.3493904817993254e-09,
+      "local_r_per_s": 33320.16490246728,
+      "integrated_R_m3_per_s": 7.828207827384058e-05,
+      "abs_integrated_R_m3_per_s": 7.828207827384058e-05,
+      "local_source_magnitude_m3_per_s": 1.4096342890795952e-08,
+      "abs_integrated_residual_to_total_source": 0.00020481357413758817,
+      "adjacent_boundary_patches": [
+        "wall_FDG_43"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 496744,
+      "C_m": [
+        0.1950957202889955,
+        -0.029456332495000622,
+        0.0219625
+      ],
+      "V_m3": 2.3493904817993353e-09,
+      "local_r_per_s": -32894.62256110888,
+      "integrated_R_m3_per_s": -7.728231314745088e-05,
+      "abs_integrated_R_m3_per_s": 7.728231314745088e-05,
+      "local_source_magnitude_m3_per_s": 1.4096342890796012e-08,
+      "abs_integrated_residual_to_total_source": 0.000202197835345911,
+      "adjacent_boundary_patches": [
+        "wall_FDG_36",
+        "wall_FDG_43"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532976,
+      "C_m": [
+        0.2905545655403807,
+        0.020819495957618426,
+        0.103925
+      ],
+      "V_m3": 2.4272058797761116e-11,
+      "local_r_per_s": -2789604.7171808863,
+      "integrated_R_m3_per_s": -6.770944971792624e-05,
+      "abs_integrated_R_m3_per_s": 6.770944971792624e-05,
+      "local_source_magnitude_m3_per_s": 1.456323527865667e-10,
+      "abs_integrated_residual_to_total_source": 0.0001771518424831086,
+      "adjacent_boundary_patches": [
+        "wall_FDG_102"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 590915,
+      "C_m": [
+        0.30305,
+        -0.02925453232207,
+        0.18878461538461527
+      ],
+      "V_m3": 6.615699919260638e-10,
+      "local_r_per_s": 101910.20574561467,
+      "integrated_R_m3_per_s": 6.742073399230979e-05,
+      "abs_integrated_R_m3_per_s": 6.742073399230979e-05,
+      "local_source_magnitude_m3_per_s": 3.969419951556383e-09,
+      "abs_integrated_residual_to_total_source": 0.00017639646014046848,
+      "adjacent_boundary_patches": [
+        "wall_FDG_73"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 590866,
+      "C_m": [
+        0.30305,
+        0.029254532322074,
+        0.18878461538461527
+      ],
+      "V_m3": 6.615699919271106e-10,
+      "local_r_per_s": 101889.38575315684,
+      "integrated_R_m3_per_s": 6.740696011017422e-05,
+      "abs_integrated_R_m3_per_s": 6.740696011017422e-05,
+      "local_source_magnitude_m3_per_s": 3.969419951562663e-09,
+      "abs_integrated_residual_to_total_source": 0.00017636042279843385,
+      "adjacent_boundary_patches": [
+        "wall_FDG_67"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 533150,
+      "C_m": [
+        0.27887469307228474,
+        0.005564617548099187,
+        0.103975
+      ],
+      "V_m3": 4.2283957519313693e-10,
+      "local_r_per_s": -136670.34720859223,
+      "integrated_R_m3_per_s": -5.7789631555179666e-05,
+      "abs_integrated_R_m3_per_s": 5.7789631555179666e-05,
+      "local_source_magnitude_m3_per_s": 2.5370374511588215e-09,
+      "abs_integrated_residual_to_total_source": 0.0001511980934576944,
+      "adjacent_boundary_patches": [
+        "wall_FDG_130"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 533044,
+      "C_m": [
+        0.27887469307228474,
+        -0.005564617548099357,
+        0.103975
+      ],
+      "V_m3": 4.2283957519312235e-10,
+      "local_r_per_s": -131475.1611941766,
+      "integrated_R_m3_per_s": -5.559290130779291e-05,
+      "abs_integrated_R_m3_per_s": 5.559290130779291e-05,
+      "local_source_magnitude_m3_per_s": 2.5370374511587342e-09,
+      "abs_integrated_residual_to_total_source": 0.0001454506710168957,
+      "adjacent_boundary_patches": [
+        "wall_FDG_130"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 533085,
+      "C_m": [
+        0.27887469307228474,
+        -0.005564617548099356,
+        0.106025
+      ],
+      "V_m3": 4.228395751931614e-10,
+      "local_r_per_s": 127408.04775674615,
+      "integrated_R_m3_per_s": 5.387316478965256e-05,
+      "abs_integrated_R_m3_per_s": 5.387316478965256e-05,
+      "local_source_magnitude_m3_per_s": 2.5370374511589683e-09,
+      "abs_integrated_residual_to_total_source": 0.00014095123269560936,
+      "adjacent_boundary_patches": [
+        "wall_FDG_128"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532483,
+      "C_m": [
+        0.27887469307228474,
+        0.0055646175480991876,
+        0.106025
+      ],
+      "V_m3": 4.2283957519317607e-10,
+      "local_r_per_s": 127275.2880833243,
+      "integrated_R_m3_per_s": 5.381702874574195e-05,
+      "abs_integrated_R_m3_per_s": 5.381702874574195e-05,
+      "local_source_magnitude_m3_per_s": 2.5370374511590564e-09,
+      "abs_integrated_residual_to_total_source": 0.00014080436097164902,
+      "adjacent_boundary_patches": [
+        "wall_FDG_128"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532586,
+      "C_m": [
+        0.29533185164464076,
+        0.021771915381337475,
+        0.103925
+      ],
+      "V_m3": 3.539299389549449e-10,
+      "local_r_per_s": 141843.61755475306,
+      "integrated_R_m3_per_s": 5.02027029023023e-05,
+      "abs_integrated_R_m3_per_s": 5.02027029023023e-05,
+      "local_source_magnitude_m3_per_s": 2.1235796337296693e-09,
+      "abs_integrated_residual_to_total_source": 0.0001313480076093482,
+      "adjacent_boundary_patches": [
+        "wall_FDG_102"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532954,
+      "C_m": [
+        0.30315000000000003,
+        0.02874219818903545,
+        0.16572289927110326
+      ],
+      "V_m3": 5.653282629845185e-10,
+      "local_r_per_s": 80601.13035821445,
+      "integrated_R_m3_per_s": 4.556609701999811e-05,
+      "abs_integrated_R_m3_per_s": 4.556609701999811e-05,
+      "local_source_magnitude_m3_per_s": 3.391969577907111e-09,
+      "abs_integrated_residual_to_total_source": 0.0001192170084897269,
+      "adjacent_boundary_patches": [
+        "wall_FDG_109"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 590931,
+      "C_m": [
+        0.30315000000000003,
+        0.028742198189035447,
+        0.16767932485037476
+      ],
+      "V_m3": 5.653282629835176e-10,
+      "local_r_per_s": -70581.18667430691,
+      "integrated_R_m3_per_s": -3.9901539661901324e-05,
+      "abs_integrated_R_m3_per_s": 3.9901539661901324e-05,
+      "local_source_magnitude_m3_per_s": 3.3919695779011057e-09,
+      "abs_integrated_residual_to_total_source": 0.00010439652513003982,
+      "adjacent_boundary_patches": [
+        "wall_FDG_109"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 533122,
+      "C_m": [
+        0.29685,
+        0.02765859909451775,
+        0.18451787441788275
+      ],
+      "V_m3": 3.292686800226005e-09,
+      "local_r_per_s": -10999.118168060153,
+      "integrated_R_m3_per_s": -3.6216651206097706e-05,
+      "abs_integrated_R_m3_per_s": 3.6216651206097706e-05,
+      "local_source_magnitude_m3_per_s": 1.975612080135603e-08,
+      "abs_integrated_residual_to_total_source": 9.475555504374001e-05,
+      "adjacent_boundary_patches": [
+        "wall_FDG_111"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 590864,
+      "C_m": [
+        0.30310000000000004,
+        0.02899836525555472,
+        0.18754228470801576
+      ],
+      "V_m3": 2.659703511651284e-09,
+      "local_r_per_s": -12585.803268221309,
+      "integrated_R_m3_per_s": -3.3474505149440423e-05,
+      "abs_integrated_R_m3_per_s": 3.3474505149440423e-05,
+      "local_source_magnitude_m3_per_s": 1.5958221069907704e-08,
+      "abs_integrated_residual_to_total_source": 8.758113214828973e-05,
+      "adjacent_boundary_patches": [],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 590913,
+      "C_m": [
+        0.30310000000000004,
+        -0.0289983652555525,
+        0.18754228604100526
+      ],
+      "V_m3": 2.659702612491092e-09,
+      "local_r_per_s": -12545.841289120153,
+      "integrated_R_m3_per_s": -3.3368206852571485e-05,
+      "abs_integrated_R_m3_per_s": 3.3368206852571485e-05,
+      "local_source_magnitude_m3_per_s": 1.5958215674946553e-08,
+      "abs_integrated_residual_to_total_source": 8.730301824806463e-05,
+      "adjacent_boundary_patches": [],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532880,
+      "C_m": [
+        0.30305,
+        -0.027989766161035,
+        0.19270769230769225
+      ],
+      "V_m3": 3.4401639580154553e-09,
+      "local_r_per_s": -9537.873512634786,
+      "integrated_R_m3_per_s": -3.281184869427646e-05,
+      "abs_integrated_R_m3_per_s": 3.281184869427646e-05,
+      "local_source_magnitude_m3_per_s": 2.0640983748092733e-08,
+      "abs_integrated_residual_to_total_source": 8.584738874238901e-05,
+      "adjacent_boundary_patches": [
+        "wall_FDG_73"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532998,
+      "C_m": [
+        0.30305,
+        0.027989766161037,
+        0.19270769230769225
+      ],
+      "V_m3": 3.440163958020895e-09,
+      "local_r_per_s": -9493.212737580136,
+      "integrated_R_m3_per_s": -3.265820830564805e-05,
+      "abs_integrated_R_m3_per_s": 3.265820830564805e-05,
+      "local_source_magnitude_m3_per_s": 2.064098374812537e-08,
+      "abs_integrated_residual_to_total_source": 8.544541120396962e-05,
+      "adjacent_boundary_patches": [
+        "wall_FDG_67"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532787,
+      "C_m": [
+        0.27890069152324676,
+        -0.007030489139648237,
+        0.103925
+      ],
+      "V_m3": 3.537581576767601e-10,
+      "local_r_per_s": -85395.28733365986,
+      "integrated_R_m3_per_s": -3.020927952143308e-05,
+      "abs_integrated_R_m3_per_s": 3.020927952143308e-05,
+      "local_source_magnitude_m3_per_s": 2.1225489460605606e-09,
+      "abs_integrated_residual_to_total_source": 7.903814828807055e-05,
+      "adjacent_boundary_patches": [
+        "wall_FDG_102"
+      ],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    },
+    {
+      "cell": 532492,
+      "C_m": [
+        0.29129159386376174,
+        0.02110148352842315,
+        0.10395
+      ],
+      "V_m3": 3.418082124638947e-11,
+      "local_r_per_s": 864023.8921080512,
+      "integrated_R_m3_per_s": 2.9533046208755003e-05,
+      "abs_integrated_R_m3_per_s": 2.9533046208755003e-05,
+      "local_source_magnitude_m3_per_s": 2.0508492747833682e-10,
+      "abs_integrated_residual_to_total_source": 7.726888302615452e-05,
+      "adjacent_boundary_patches": [],
+      "adjacency_note": "Empty list means no directly incident boundary face, not absence of nearby wall influence."
+    }
+  ],
+  "roles_limit": "Only exact incident native patch names are assigned. No inferred CAD-role mapping; patch incidences may overlap."
+}

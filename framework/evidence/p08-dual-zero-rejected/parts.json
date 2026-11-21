@@ -1,0 +1,43 @@
+{
+  "archive": "dual-zero-diagnostic.zip",
+  "bytes": 50865181,
+  "sha256": "f7f1fdee1b14ad3d6eb5cad9b28b63695502b03f96381069c4a9623d9bc9256a",
+  "parts": [
+    {
+      "name": "dual-zero-diagnostic.zip.part01",
+      "bytes": 8000000,
+      "sha256": "f8556cce5b9edbb007bdd91beb1b8397787c4ef0c0a6c213913abdf6d3bec6b7"
+    },
+    {
+      "name": "dual-zero-diagnostic.zip.part02",
+      "bytes": 8000000,
+      "sha256": "9f7b9c394fffc0f5ea6aa9eec22483c1d664a9cb4a0710e2ea8483a491c35aba"
+    },
+    {
+      "name": "dual-zero-diagnostic.zip.part03",
+      "bytes": 8000000,
+      "sha256": "7dc26516e4fb2d2304bd6d94820575816d8daa620852363ae461573674d96119"
+    },
+    {
+      "name": "dual-zero-diagnostic.zip.part04",
+      "bytes": 8000000,
+      "sha256": "b9027f6332ba5eb9f60bd8ca105611b637878c9d1ef9e65b5baaa275b2008121"
+    },
+    {
+      "name": "dual-zero-diagnostic.zip.part05",
+      "bytes": 8000000,
+      "sha256": "b4b99338fc2a29b1becb6db0a660f473e44efdda8f24b49f3e3fc1c9a9c65459"
+    },
+    {
+      "name": "dual-zero-diagnostic.zip.part06",
+      "bytes": 8000000,
+      "sha256": "e3b7cdc2c294cdf4e5b62e8789cc9a8d5467a1d42fd5b1b881857e78eb6ebacc"
+    },
+    {
+      "name": "dual-zero-diagnostic.zip.part07",
+      "bytes": 2865181,
+      "sha256": "12dd24b09d474569bfab0a8db0557a74f6b0f2ce574b6d1647a562ae9e1949af"
+    }
+  ],
+  "status": "Rejected: native Failed10 and 55 nonpositive cells. No solver. Source inputs unchanged."
+}

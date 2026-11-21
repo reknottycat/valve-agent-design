@@ -1,0 +1,138 @@
+{
+  "schema": "valve.git_engineering_evidence_index/v1",
+  "compiled_utc": "2026-10-12T00:45:16.303486+00:00",
+  "record_kind": "RETROSPECTIVE_INDEX_COMPILED_NOW_NOT_BACKDATED_GIT_HISTORY",
+  "source_files_are_archive_paths_not_claimed_present_in_this_checkout": true,
+  "sources": {
+    "PCS_SCOPE_CORRECTION": {
+      "archive_relative_path": "valve-design-integration-20261011/CONTACT_REFERENCE_CORRECTION_1937.json",
+      "bytes": 3780,
+      "sha256": "4c499daff062c7bc7d5a77c6a6afd5848648d3bd023127c4d0b93856a3af00d4"
+    },
+    "R32_SCOPE_CORRECTION": {
+      "archive_relative_path": "valve-design-integration-20261011/r32_scope_reconciliation_2349/R32_SCOPE_RECONCILIATION.json",
+      "bytes": 1709,
+      "sha256": "0ca1d800e46476a991f1ca4f8392879730913b8eea610959ad2f23c729bdc0d3"
+    },
+    "GCB1_ORIGINAL_FINITE_WALL": {
+      "archive_relative_path": "review_flow_cage_boundary_GCB1/INDEPENDENT_CAGE_BOUNDARY_GATE.json",
+      "bytes": 11184,
+      "sha256": "47280890b7d11bc8bb7473d8913a285e6fbb54b9a6d2abc5ab0bb5032562f2ec"
+    },
+    "UCS1_NATIVE_RESULT": {
+      "archive_relative_path": "valve-unified-contact-solve-UCS1-20261011/NATIVE_RUN_RESULT.json",
+      "bytes": 1891,
+      "sha256": "cadac73768874f1df8ca62124144e11a09b763cb612e37c33005142eab80067f"
+    },
+    "UCS1_RUNTIME_CONFIGURATION": {
+      "archive_relative_path": "valve-unified-contact-solve-UCS1-20261011/scripts/run_admitted_ccx.py",
+      "bytes": 7559,
+      "sha256": "3a32d02afed68ff55c0a7481458638bbbd457213a221fffbe62437676aff0b5e"
+    },
+    "UCS1_INPUT": {
+      "archive_relative_path": "valve-unified-contact-solve-UCS1-20261011/case/disc.inp",
+      "bytes": 26292067,
+      "sha256": "8efba657ca25e7880fb7fcae2b9914d1de707249a54b22d7799ecfccc1a71273"
+    },
+    "NFA3_BODY_FIELD_RECONSTRUCTION": {
+      "archive_relative_path": "valve-unified-contact-nonlinear-field-audit-NFA3-20261011/NFA3_FINAL_ENTRY_WITH_CRITICAL_GP.json",
+      "bytes": 6161,
+      "sha256": "b027d8ef16ce108da74735458d3b0eaa862e55492e966e6ad12b5bc70345a989"
+    },
+    "NFI1_FROZEN_MEASURE": {
+      "archive_relative_path": "valve-nominal-frozen-integration-NFI1-20261011/NFI1_FINAL_ENTRY.json",
+      "bytes": 11846,
+      "sha256": "bb2b9813b687590c7afe1ba6f30ced177fbd9577a764391f2360188aeb592218"
+    },
+    "NFQ1_ORIGINAL_DOMAIN_QUADRATURE": {
+      "archive_relative_path": "valve-nominal-frozen-quadrature-NFQ1-20261011/NFQ1_FINAL_ENTRY.json",
+      "bytes": 2996,
+      "sha256": "a011019506acc204a33fccc33d4497d55760de7d42a747b4ba97adc493adec66"
+    },
+    "MCQ1_ACTUAL_CARRIER_VARIANT": {
+      "archive_relative_path": "valve-master-carrier-quadrature-MCQ1-20261012/MCQ1_FINAL_ENTRY.json",
+      "bytes": 6695,
+      "sha256": "9a8ffb41d92e4abefbfc91211c73566802d85c5f450d9666c5ff44003f97d1cb"
+    },
+    "MCQ1_ENCODED_FACE_LABEL_CORRECTION": {
+      "archive_relative_path": "valve-master-carrier-quadrature-MCQ1-20261012/FIELD_CLARIFICATION_A01.json",
+      "bytes": 1151,
+      "sha256": "938360957fbdb36bd5442e7dd1beb7cdf7200340fea0576c4cd0d3686bade8e2"
+    },
+    "MCQ1_INDEPENDENT_REVIEW": {
+      "archive_relative_path": "review_MCQ1_actual_carriers/INDEPENDENT_MCQ1_REVIEW.json",
+      "bytes": 14337,
+      "sha256": "b3c93b7e60a9ee9749b6f8953c9f9f4b4d88fb6139ad5a32618114f6660c40f1"
+    },
+    "UCG3_GENERATOR": {
+      "archive_relative_path": "valve-unified-carrier-refinement-UCG3-20261012/scripts/refine_fixed_carriers.py",
+      "bytes": 21582,
+      "sha256": "662211dae4218374c7e38d7c563327cd5b6f6802781da29cf4b6fd30f16d2899"
+    },
+    "UCG3_ACTUAL_INPUT": {
+      "archive_relative_path": "valve-unified-carrier-refinement-UCG3-20261012/output/prepared_A01/disc.inp",
+      "bytes": 28437251,
+      "sha256": "ace4b368c9a67f21d7b867bba4da21a985e88ce31d887dc9a4e039f76438fc11"
+    },
+    "UCG3_PREPARATION": {
+      "archive_relative_path": "valve-unified-carrier-refinement-UCG3-20261012/output/prepared_A01/PREPARATION_MANIFEST.json",
+      "bytes": 12945,
+      "sha256": "bc15a23eba374fe72790fc4f5ba388f54b9d450e242a50fd428bba6f2b0742f1"
+    },
+    "UCG3_INDEPENDENT_INPUT_REVIEW": {
+      "archive_relative_path": "review_UCG3_actual_deck/INDEPENDENT_ACTUAL_DECK_GATE.json",
+      "bytes": 14548,
+      "sha256": "26eb649f78182f0c93af41e9d59f39e8f6aef75e7734cc201c8c934107372f4f"
+    },
+    "GCR1_COUNT_TIMEOUT": {
+      "archive_relative_path": "valve-global-carrier-replay-GCR1-20261012/count_receipt_A01/EXECUTION_RECEIPT.json",
+      "bytes": 689,
+      "sha256": "10824c7837a477650ef0a58c43693ad951530a49a4bd3378a5e63bd7983570da"
+    },
+    "UCS2_EXECUTION_PLAN": {
+      "archive_relative_path": "valve-unified-carrier-sensitivity-UCS2-20261012/EXECUTION_PLAN.json",
+      "bytes": 2129,
+      "sha256": "b2f4ae1c99263d920797dc33e00829f7a4f48cb7ec38928cf3bd4684b144d476"
+    },
+    "UCS2_BOUND_INPUT_ADMISSION": {
+      "archive_relative_path": "valve-unified-carrier-sensitivity-UCS2-20261012/input/SOLVE_ADMISSION.json",
+      "bytes": 9778,
+      "sha256": "ada07b23104e24be9a9e7436a9525ebef2944dffe4bb2fe07879a645be821a99"
+    },
+    "UCS2_RUNNER": {
+      "archive_relative_path": "valve-unified-carrier-sensitivity-UCS2-20261012/scripts/run_admitted_ccx.py",
+      "bytes": 7559,
+      "sha256": "3a32d02afed68ff55c0a7481458638bbbd457213a221fffbe62437676aff0b5e"
+    },
+    "P04_ACTUAL_MESH": {
+      "archive_relative_path": "valve-whole-flow-mesh-WFM1-20261011/P04_P01/output/P04_actual_graded_prism_mm.msh",
+      "bytes": 23184834,
+      "sha256": "5bd24559c39058d29084eb66ea4f79bc7da17621829d43a25e27cbadae653e82"
+    },
+    "P04_NATIVE_CHECK": {
+      "archive_relative_path": "valve-whole-flow-mesh-WFM1-20261011/P04_P01/evidence/checkMesh_actual_layer.log",
+      "bytes": 5403,
+      "sha256": "d8c5b2feb94481452d86b8dbd3e01b237b5f235fb227aed74c2438066cd9e8b9"
+    },
+    "P04_INDEPENDENT_RESULT": {
+      "archive_relative_path": "review_flow_P04_result/P04_FINAL_ENTRY.json",
+      "bytes": 4817,
+      "sha256": "8902d8ca83d1faa22be3d3d1581c785fd47425eae88fc615aed7cd56981a1b11"
+    },
+    "P04_BUILDER": {
+      "archive_relative_path": "valve-whole-flow-mesh-WFM1-20261011/P04_P01/scripts/build_graded_prism_msh.py",
+      "bytes": 6779,
+      "sha256": "94c7b89b8a57fcee6cdfdbaa758b0a5495048d675e48b217281a6efbadd5e220"
+    },
+    "MAT2_PRODUCT_FORM_SCOPE": {
+      "archive_relative_path": "valve-material-primary-scope-MAT2-20261011/MAT2_PRIMARY_SCOPE.json",
+      "bytes": 3067,
+      "sha256": "abb5f54a41e71d6f5e795b6b3c21e2036fe20d40ef5e01a3f100beb3420ab3ee"
+    },
+    "CRM1_CLEAN_MINIMAL_REPLAY": {
+      "archive_relative_path": "valve-github-staging-20261011/clean-replay-verification.json",
+      "bytes": 2391,
+      "sha256": "9be41a4de7e4679bf94f43551cab94ae5724aa6b315a7350d253e3c92441a267"
+    }
+  }
+}

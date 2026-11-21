@@ -1,0 +1,38 @@
+{
+  "archive": "cone-grading-native-quality.zip",
+  "bytes": 40893717,
+  "sha256": "9b9ed629a4987de00fb1cbd29981ce1f5e6f733e3fc5d6ed8ac71fabfb3a7780",
+  "parts": [
+    {
+      "name": "cone-grading-native-quality.zip.part01",
+      "bytes": 8000000,
+      "sha256": "79c59ec813d3f2e06f2c88eceab6a4d3d60f56be48fc25f0a5ef3af0db14c7cf"
+    },
+    {
+      "name": "cone-grading-native-quality.zip.part02",
+      "bytes": 8000000,
+      "sha256": "62dee6f60391c4aa7c60f10478f3c75d6cdf5f14343fec5e0e9ffaa34f7e77b8"
+    },
+    {
+      "name": "cone-grading-native-quality.zip.part03",
+      "bytes": 8000000,
+      "sha256": "d887eda5299d6f439c6d8e6b1d7096d012aa70a1595802d448e4697e12d3e358"
+    },
+    {
+      "name": "cone-grading-native-quality.zip.part04",
+      "bytes": 8000000,
+      "sha256": "eb3b65ea4c3c78a0fdf1ab62e80da8023b343aa9a21d48c758213519491ca89f"
+    },
+    {
+      "name": "cone-grading-native-quality.zip.part05",
+      "bytes": 8000000,
+      "sha256": "6ba1333477d1172359aedf65bf346a72faedacb05d64b90f6e98dd73bf1f5761"
+    },
+    {
+      "name": "cone-grading-native-quality.zip.part06",
+      "bytes": 893717,
+      "sha256": "0975d12bdf4214098c2c6e3f6a64cfc9d758774535dbcc61fa2617bba7a2db07"
+    }
+  ],
+  "status": "Native Failed3; no physical CFD acceptance"
+}

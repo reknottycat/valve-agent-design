@@ -1,0 +1,9 @@
+test_free_linear_expansion (test_mechanical_arithmetic.SyntheticArithmeticTests.test_free_linear_expansion) ... ok
+test_ideal_square_thread_raise_torque (test_mechanical_arithmetic.SyntheticArithmeticTests.test_ideal_square_thread_raise_torque) ... ok
+test_thin_cylinder_membrane_stresses (test_mechanical_arithmetic.SyntheticArithmeticTests.test_thin_cylinder_membrane_stresses) ... ok
+test_uniform_pressure_force (test_mechanical_arithmetic.SyntheticArithmeticTests.test_uniform_pressure_force) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK

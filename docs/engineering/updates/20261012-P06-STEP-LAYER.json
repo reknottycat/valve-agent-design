@@ -1,0 +1,208 @@
+{
+  "schema": "valve.step_directed_layer.actual_progress/v1",
+  "recorded_utc": "2026-10-12T07:14:28.692074+00:00",
+  "target_branch": "research/step-directed-layer-20261012",
+  "base_commit": "01fcdf0f40e36573af2e154e0d726988745e096d",
+  "data_scope": "Engineering logs and hashes only. Source paths are relative to restored source-root; commands run there. No source or binary inputs are included in this Git increment.",
+  "whole_reference": {
+    "version": "R03",
+    "native_status": "Failed3",
+    "det_bad": 14281,
+    "weight_bad": 3881,
+    "ratio_bad": 2,
+    "CFD_started": false
+  },
+  "direction_change": {
+    "from": "Same-tet point motion and short-edge/common-circle collapse",
+    "to": "Finite real step directional layer with original fixed outside interface and positive-volume transition",
+    "reason": "Finite-wall small fixes and one interior 1-to-4 Steiner family still failed child determinant/neighbor requirements. Dominant original failures lie on the real short-step corner and adjacent transition.",
+    "original_design_CAD_unchanged": true
+  },
+  "actual_layer": {
+    "theta_degrees": [
+      145,
+      155
+    ],
+    "radii_mm": [
+      100,
+      112.5
+    ],
+    "z_mm": [
+      21.95,
+      22
+    ],
+    "axial_layers_mm": [
+      0.025,
+      0.025
+    ],
+    "prisms": 4374,
+    "points": 3471,
+    "MSH_sha256": "8f889a71fc74e63a8d784588926c3ac565085dbb2cae238dcfeec41484abb4ae",
+    "native_allGeometry_allTopology": "Mesh OK",
+    "native_start_UTC": "2026-10-12T06:57:58.439482+00:00",
+    "native_end_UTC": "2026-10-12T06:57:59.267517+00:00",
+    "min_det": 0.0022777959838577865,
+    "min_weight": 0.3449820700941276,
+    "min_volume_ratio": 0.5266757661788527,
+    "max_nonorth_degrees": 22.43289413021981,
+    "true_walls": [
+      "finite FDG36 bottom",
+      "finite FDG41 radius112.5 cylinder"
+    ],
+    "unconnected_artificial_caps": [
+      "top z22",
+      "inner R100",
+      "theta145/155"
+    ],
+    "independent_saved_mesh_and_finite_source_readback": "PASS for this sector only",
+    "true_wall_max_chord_mm": 0.000267730048,
+    "PWL_minus_CAD_volume_mm3": 5.606915e-06,
+    "connected_to_R03": false
+  },
+  "actual_original_step_cavity": {
+    "tets": 86578,
+    "components": [
+      86555,
+      23
+    ],
+    "fixed_nonwall_interface_triangles": 17971,
+    "outside_fixed_tets": 13988,
+    "true_wall_triangles": 47087,
+    "covered_det": 13519,
+    "covered_rank": 3600,
+    "covered_weight": 3697,
+    "covered_ratio": 2,
+    "weight_bad_on_fixed_interface": 0,
+    "PWL_volume_mm3": 17469.313374102836,
+    "shell_volume_relative_difference": 4.164993470762038e-16,
+    "R32_affected": false,
+    "extraction_seconds": 11.561127540975576
+  },
+  "actual_failures_and_corrections": {
+    "Steiner_family": "Two actual bounded trials rejected despite positive volumes and improved target ratios. Child determinant regression remains; no new whole mesh.",
+    "D06_reader": "First owner tail chunk exceeded internal-neighbour count. A02 caps final chunk and completed without source changes.",
+    "Gmsh_API": "Synthetic closed shell produced zero body cells with addDiscreteEntity(3). geo surface loop plus volume and synchronize produced one actual tet with exact original shell. Tool test only.",
+    "execution_status": "Code preparation before actual start was not a numerical run. UTC receipts identify actual execution."
+  },
+  "representative_A01_fit": {
+    "old_tets": 2397,
+    "layer_nodes_outside_old_PWL": 82,
+    "all_prism_centers_inside": true,
+    "strict_fixed_face_crossings_verified_by_union_sidedness": 30,
+    "direct_whole_layer_insertion_admitted": false,
+    "old_subset_shell_nonmanifold_edges": 3,
+    "next": "Complete missing original incident-cell stars, freeze corrected outside cut and connect smaller positive-volume layer core. No completed transition is claimed."
+  },
+  "source_recovery": {
+    "library_file_id": "libfile_f871702d3be88191b7619bb77578b116",
+    "bytes": 15824491,
+    "sha256": "ce858adad54dbee32e80487e1015c4e4d638705acee8ed775af2505e3748f8c6",
+    "source_files": 103,
+    "ZIP_and_fresh_directory_byte_recovery_verified": true,
+    "scientific_fresh_rebuild": false,
+    "scope": "Local layer/native case, full original step cavity and prior failures. Later independent sector/representative overlap checks postdate this checkpoint; their exact pins are listed separately."
+  },
+  "source_pins": [
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_step_region_layer_P02/output/actual_true_step_sector_two_layers_mm.msh",
+      "bytes": 474340,
+      "sha256": "8f889a71fc74e63a8d784588926c3ac565085dbb2cae238dcfeec41484abb4ae"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_step_region_layer_P02/output/ACTUAL_TRUE_SECTOR_LAYER_RESULT.json",
+      "bytes": 618,
+      "sha256": "1f2fe56016002f0f83eb8219946d63c22e40dca128e48d003848aba1847c073f"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_step_region_layer_P02/output/SOURCE_AND_BOUNDARY_MAPPING_BEFORE_MESH.json",
+      "bytes": 2537,
+      "sha256": "3612d98a0124ac52c1197491ade17d9dfd3c904308b67207ee9286e23e4550c3"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_step_region_layer_P02/scripts/build_real_finite_step_sector_layers.py",
+      "bytes": 8012,
+      "sha256": "786580c527f477cc8b9fea69b6aa7ca06ac451823dc44f4f1327e281f145b0b5"
+    },
+    {
+      "path": "review_flow_P06_step_layer_native_N01/LOCAL_NATIVE_FINAL_ENTRY_A01.json",
+      "bytes": 5275,
+      "sha256": "cf3fcb83e6db2a8d7a6de4460ec92f70f531e6ff319e47635b4da3e4b9b2a588"
+    },
+    {
+      "path": "review_flow_P06_step_layer_native_N01/evidence/checkMesh_full_local.log",
+      "bytes": 5415,
+      "sha256": "4461aaf2cf565d69f3f6cc4559b3f7acc57d4173318f024b20bd56520a10f809"
+    },
+    {
+      "path": "review_flow_P06_step_layer_native_N01/run_native.py",
+      "bytes": 3901,
+      "sha256": "cb39b4ddbb427fd027bf7b2d96cc5e8764fc0e16a20ba89de91683593d4b414c"
+    },
+    {
+      "path": "review_flow_P06_step_sector_P02_A01/SECTOR_READBACK_FINAL_ENTRY_A01.json",
+      "bytes": 913,
+      "sha256": "2dfe09940561976169f076c787e1c405b40501e9bddb2bd6c1d8b8bbbdf781bb"
+    },
+    {
+      "path": "review_flow_P06_step_sector_P02_A01/output/SAVED_P02_SECTOR_RANGE_AND_CHORD_READBACK_A01.json",
+      "bytes": 48787,
+      "sha256": "3b74dba36e8d82aab8400a099373239672c2c6947c81ced7d5e35a06b953f28c"
+    },
+    {
+      "path": "review_flow_P06_step_sector_P02_A01/output/SECTOR_SCOPE_AND_NEXT_CONNECTION_GATE_A01.json",
+      "bytes": 1970,
+      "sha256": "ef88baa684bd613b1c8b038c433d85e26e1967c99b6a69357839c60f8706afab"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_step_region_cavity_D06/output/ACTUAL_R03_STEP_CAVITY_INPUT_RECEIPT.json",
+      "bytes": 51985,
+      "sha256": "2ddebcc5ba7cafd8a2b215975e06892bd0957e1da33ccdf7412108ff13bc3b41"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_step_region_cavity_D06/evidence/READ_ONLY_EXTRACTION_A01_TAIL_CHUNK_FAILURE.json",
+      "bytes": 266,
+      "sha256": "c8c0c036e0c23c194295daf98ab4c2c6d73564c08577ca49fbf32ea023ee7282"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_step_region_cavity_D06/scripts/extract_actual_R03_step_cavity_A02.py",
+      "bytes": 23424,
+      "sha256": "3a13d123ad855ee2f211400cda7b610d1bd30cc95822d911d223d6b18d14fd40"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_step_region_steiner_P01/source_candidate/DIRECTIONAL_STEINER_ONE_TO_FOUR_RESULTS.json",
+      "bytes": 15621,
+      "sha256": "bd5d6972a565c39506389294938b25658a6a93d02d4274ac4d9e556f6c15d9ed"
+    },
+    {
+      "path": "review_flow_P06_transition_API_A01/RECEIPT.json",
+      "bytes": 997,
+      "sha256": "f541d0e710354d09a294307202155af4a07e0452c4b59206623e0c009e4fc21d"
+    },
+    {
+      "path": "review_flow_P06_transition_API_A01/RECEIPT_GEOVOLUME.json",
+      "bytes": 911,
+      "sha256": "9472aed9a4da01398a4c1fcf7715c86df0550d846b5ad005c7e5b3aa22f4ed02"
+    },
+    {
+      "path": "review_flow_P06_layer_cavity_overlap_A01/strict_A02/ACTUAL_LAYER_OLD_CAVITY_OVERLAP.json",
+      "bytes": 40799,
+      "sha256": "f9b8f2b442d408cecdbd1a6c88175b707952e14aac103ec4a284d7847ff44401"
+    },
+    {
+      "path": "review_flow_P06_layer_cavity_overlap_A01/strict_A02/STRICT_CROSSING_UNION_SIDEDNESS.json",
+      "bytes": 19185,
+      "sha256": "4d95f67e5ce01fd364b7d7a1bbe51bc9be6c9c2f8f505d960dfc1fe0da9cba95"
+    },
+    {
+      "path": "valve-source-increment-P06-STEP-LAYER-20261012/ARCHIVE_VERIFIED.json",
+      "bytes": 466,
+      "sha256": "e7262019f6b49fb27eede3c270b99a9919b3e3fc953acd3a53882555761be338"
+    },
+    {
+      "path": "valve-source-increment-P06-STEP-LAYER-20261012/LIBRARY_IDENTITY_A01.json",
+      "bytes": 449,
+      "sha256": "cb9c01bfe5b2607c4bd107a26a7ad65b8b439ff5ebb3a770c4e1b182c353660a"
+    }
+  ],
+  "whole_or_manufacturing_release": false
+}

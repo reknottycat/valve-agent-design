@@ -1,0 +1,23 @@
+{
+  "archive": "step-grading-volume.zip",
+  "bytes": 16693194,
+  "sha256": "f7a99903b26f72b3af6deb6bdab34f4c8d9571515e6e52067e41d0212558bf02",
+  "parts": [
+    {
+      "file": "step-grading-volume.zip.part001",
+      "bytes": 8000000,
+      "sha256": "d3e32f9e6c2b4585c98805655b964344361c5c81bf6aefec9c299eab8790168d"
+    },
+    {
+      "file": "step-grading-volume.zip.part002",
+      "bytes": 8000000,
+      "sha256": "d98ef0e9830d105151ecff7d6b785e1ed339189cb1a2a822259c532946471f4d"
+    },
+    {
+      "file": "step-grading-volume.zip.part003",
+      "bytes": 693194,
+      "sha256": "cbd2ee85d68961ec2402e044940bce5aa4e297443dbc5b0f48e2b3b81b2ac77c"
+    }
+  ],
+  "reassembly_verified": true
+}

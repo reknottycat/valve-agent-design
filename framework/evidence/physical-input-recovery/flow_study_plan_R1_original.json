@@ -1,0 +1,122 @@
+{
+  "schema": "valve.c5-reexecution-flow-plan/1.0",
+  "status": "PLANNED_NOT_RUN",
+  "target": "522-35.4179",
+  "manufacturing_authorized": false,
+  "selected_study_property_state": {
+    "temperature_C": 20.0,
+    "salinity_g_kg": 35.0,
+    "pressure_MPa_absolute": 0.101325,
+    "density_kg_m3": 1024.9109328963,
+    "dynamic_viscosity_Pa_s": 0.0010766289252529323,
+    "kinematic_viscosity_m2_s": 1.0504609627009073e-06,
+    "actual_duty_or_measurement": false,
+    "pressure_correction_implemented": false,
+    "minus_2C_phase_and_property_gate": "UNRESOLVED"
+  },
+  "nominal_diameter_m": 0.2,
+  "nominal_circle_area_m2": 0.031415926535897934,
+  "cases": [
+    {
+      "id": "laminar_diagnostic_Re10",
+      "status": "STUDY_ASSUMPTION_NOT_RUN",
+      "inlet_fixed_face_speed_m_s": 5.252304813504536e-05,
+      "nominal_D_Reynolds_from_face_speed": 10.0,
+      "nominal_circle_flow_m3_s": 1.650060221652016e-06,
+      "nominal_circle_flow_m3_h": 0.005940216797947258,
+      "dynamic_pressure_from_face_speed_Pa": 1.4136958216160478e-06,
+      "regime_scope": "LAMINAR_NUMERICAL_DIAGNOSTIC",
+      "actual_mesh_flux_m3_s": null,
+      "computed_pressure_drop_Pa": null,
+      "computed_loss_coefficient": null
+    },
+    {
+      "id": "speed_sensitivity_0_5",
+      "status": "STUDY_ASSUMPTION_NOT_RUN",
+      "inlet_fixed_face_speed_m_s": 0.5,
+      "nominal_D_Reynolds_from_face_speed": 95196.30290961372,
+      "nominal_circle_flow_m3_s": 0.015707963267948967,
+      "nominal_circle_flow_m3_h": 56.54866776461628,
+      "dynamic_pressure_from_face_speed_Pa": 128.1138666120375,
+      "regime_scope": "TURBULENCE_MODEL_AND_NEAR_WALL_VERIFICATION_REQUIRED",
+      "actual_mesh_flux_m3_s": null,
+      "computed_pressure_drop_Pa": null,
+      "computed_loss_coefficient": null
+    },
+    {
+      "id": "speed_sensitivity_1_0",
+      "status": "STUDY_ASSUMPTION_NOT_RUN",
+      "inlet_fixed_face_speed_m_s": 1.0,
+      "nominal_D_Reynolds_from_face_speed": 190392.60581922744,
+      "nominal_circle_flow_m3_s": 0.031415926535897934,
+      "nominal_circle_flow_m3_h": 113.09733552923257,
+      "dynamic_pressure_from_face_speed_Pa": 512.45546644815,
+      "regime_scope": "TURBULENCE_MODEL_AND_NEAR_WALL_VERIFICATION_REQUIRED",
+      "actual_mesh_flux_m3_s": null,
+      "computed_pressure_drop_Pa": null,
+      "computed_loss_coefficient": null
+    },
+    {
+      "id": "speed_sensitivity_2_0",
+      "status": "STUDY_ASSUMPTION_NOT_RUN",
+      "inlet_fixed_face_speed_m_s": 2.0,
+      "nominal_D_Reynolds_from_face_speed": 380785.2116384549,
+      "nominal_circle_flow_m3_s": 0.06283185307179587,
+      "nominal_circle_flow_m3_h": 226.19467105846513,
+      "dynamic_pressure_from_face_speed_Pa": 2049.8218657926,
+      "regime_scope": "TURBULENCE_MODEL_AND_NEAR_WALL_VERIFICATION_REQUIRED",
+      "actual_mesh_flux_m3_s": null,
+      "computed_pressure_drop_Pa": null,
+      "computed_loss_coefficient": null
+    }
+  ],
+  "pose": {
+    "disc_lift_mm": 57.0,
+    "stem_retraction_mm": 57.0,
+    "scope": "Fixed fully-open research geometry, treated as restrained for this CFD study; no prediction of spontaneous lift, force equilibrium, or closing behavior"
+  },
+  "domain": {
+    "inlet_x_m": -0.6000000000000001,
+    "outlet_x_m": 1.2000000000000002,
+    "straight_extensions_each_DN": 3,
+    "scope": "Port-to-port pressure loss includes numerical straight extensions and developing/disturbed flow; not automatically the isolated-valve coefficient"
+  },
+  "pressure_interpretation": {
+    "field": "simpleFoam p has dimensions m2/s2; multiply by rho for Pa",
+    "reference_outlet_kinematic_p": 0,
+    "reference_outlet_axis_absolute_pressure_Pa": 101325.0,
+    "design_load_pressure_MPa_g": 0.63,
+    "scope": "0.63 MPa(g) is a separate structural study load, not an imposed flow pressure drop. The initial CFD property state remains the validated atmospheric reference. Explicit gravity is omitted from this constant-density flow equation; physical vertical pressure-force postprocessing needs a separately stated hydrostatic reconstruction and contact-wetting check."
+  },
+  "formulas": {
+    "Re": "U_face*D/nu",
+    "Q_nominal_m3_s": "U_face*pi*D^2/4",
+    "dynamic_pressure_Pa": "rho*U_face^2/2",
+    "measured_flow": "Use the actual outward-normal surface flux phi: Qin<0 and Qout>0",
+    "mass_imbalance": "abs(Qin+Qout)/max(abs(Qin),abs(Qout)); reject zero/nonfinite denominator",
+    "loss_coefficient_reporting": "Use a declared reference velocity Q_actual/(pi*D^2/4); distinguish static, total-pressure, port-to-port and pipe-corrected quantities"
+  },
+  "execution_prerequisites": [
+    "Current mesh files bound to a fresh full checkMesh PASS with all warnings retained",
+    "Independent native field/face probe verification",
+    "Nonzero-source Poisson verification on this valve domain and appropriate mesh/scheme sensitivity",
+    "Actual case input hashes, solver/library fingerprints before launch",
+    "Residual history, pressure-drop/flow stabilization, mass balance, finite/bounded fields and model-specific near-wall checks"
+  ],
+  "drawing_note24_coefficient_limit_assessment": "UNASSESSED: governing test/tap and operating-flow conditions not established; no automatic <=6 pass from a port coefficient",
+  "modeling_limits": [
+    "Study speeds are deliberate sensitivity values, not sourced rated product flow or user operating data",
+    "The Re10 held-open case is a numerical diagnostic, not expected natural valve operation",
+    "No coupled disc motion, water hammer, cavitation, leakage, thermal stress or pressure-dependent property validation",
+    "No source standard or manufacturer rating is inferred from solver convergence"
+  ],
+  "sources": {
+    "basis_sha256": "a30b4aceb654b2589d4d41c1cac6eeb9a7a9950322fcb8ca83397e0c91524558",
+    "parameters_sha256": "c35a4064403f98e3462bfea3650eebe2695ced39a15fb928f817e465169576ba",
+    "property_code_sha256": "2767f043bd35ce52305192495003f9f639d0913e4bdf299f55c2a285b6bc214c",
+    "property_data_sha256": "dd39b778058673c846109a4e5bc409147a8820a06efd4891e83b9b1938b5a0fa",
+    "preparer_sha256": "b4df88963fb40432ab93194d60a0e73d52a91fa7e30bf81853907a11992f39bc",
+    "concept_documentation": "https://doc.openfoam.com/2306/tools/processing/solvers/rtm/incompressible/simpleFoam/",
+    "version_note": "Online overview is2306; actual1912 syntax must be verified against installed official examples and real executions, not assumed cross-version equivalent"
+  }
+}

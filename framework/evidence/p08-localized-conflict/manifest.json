@@ -1,0 +1,74 @@
+{
+  "status": "FAILED_MESH_DIAGNOSTIC_LOCALIZED",
+  "engineering_release": false,
+  "files": {
+    "LOCAL_REMESH_PROPOSAL.md": {
+      "sha256": "e371d998bf6806a8e8d33d97dd990d1ea1c2adf45314d0a10273d3039b396836",
+      "bytes": 4405
+    },
+    "README.md": {
+      "sha256": "5a71974ae29f649d3b4a6ac2d7fd2cda02d55350dd8e37bb56bf369eedacf967",
+      "bytes": 3566
+    },
+    "check_boundary.py": {
+      "sha256": "307c2915320bd032fb9ab04b115cd178041acc8db5aa7ce8f5066be10227da29",
+      "bytes": 906
+    },
+    "check_cad.py": {
+      "sha256": "8c2e68b8557b3edf49ba2e8916e5557b607bececf1cc07a750e4a593f7900f46",
+      "bytes": 1178
+    },
+    "classify_local.py": {
+      "sha256": "69fb93872ef77ff1a9b1055d74200d4c32d16c05a9f9159b4a3f3fd71dc7a647",
+      "bytes": 1186
+    },
+    "evidence/analytic-local-check.json": {
+      "sha256": "5d5c4a13ac4fc21485df5293f7081b2520aa9214952550e13762570e2a862699",
+      "bytes": 1009
+    },
+    "evidence/boundary-chord-check.json": {
+      "sha256": "a13fe72be1c15146f5d440c35f838e33efdae489178cd6e7d40d2e6e8d1d1852",
+      "bytes": 2326
+    },
+    "evidence/conflict-readback.json": {
+      "sha256": "2fa58768529b034826d04de995274f804c9a8dc9374264de6989da67824f1b30",
+      "bytes": 1694
+    },
+    "evidence/diagnostic.json": {
+      "sha256": "98c1a8d2ed47e6f6f8c2de9cfc82d1be3c4446613fd1116220cf2c170348c02a",
+      "bytes": 22869
+    },
+    "evidence/geometry.json": {
+      "sha256": "b8affaf81680968eb76a74524420d02fd1ca2229532ec6faa547d910a05af1fc",
+      "bytes": 51446
+    },
+    "evidence/local-domain-classification.json": {
+      "sha256": "edd6508a43c79c2c0399cd5178c31f98924a506e6f8d1c07a69a7c26d4ac6f71",
+      "bytes": 2098
+    },
+    "evidence/volume-receipt.json": {
+      "sha256": "8970f09a04587f54280d23cbf2dc51182bf82e2a44660f3c03f40a11d2422923",
+      "bytes": 197
+    },
+    "evidence/volume.log": {
+      "sha256": "bff61efcac0e6b903d94ba7ba6bad3420ac9b2a38c090faf2af05ab5b6fe4b4b",
+      "bytes": 23023
+    },
+    "failed-current.msh": {
+      "sha256": "273224f13f9f59c158395bb2816678842c17bc3f27f336a9ec4eb3e8142c3556",
+      "bytes": 8272386
+    },
+    "monitor.py": {
+      "sha256": "73ca601273a464ab2216a4453a204534d336c90222c5440a1b4ee620f4e2eb49",
+      "bytes": 1290
+    },
+    "read_conflict.py": {
+      "sha256": "de7b21e6aab5b9fa2ae6ce9afddadd9b978d6725ede8074daa295977d114fbd0",
+      "bytes": 913
+    },
+    "trial.py": {
+      "sha256": "59390c961e1a1f3c1d9ec6f458d1666b924644bf811ab70ee5b7c39fc83c3c0d",
+      "bytes": 4484
+    }
+  }
+}

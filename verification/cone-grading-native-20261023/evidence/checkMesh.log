@@ -1,0 +1,244 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:                                        |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : OPENFOAM=1912 patch=200626
+Arch   : "LSB;label=32;scalar=64"
+Exec   : /workspace/shared/valve-openfoam-quality-20261023/root/usr/bin/checkMesh -case /workspace/shared/valve-cone-grading-native-20261023/case -constant -allGeometry -allTopology -noFunctionObjects
+Date   : Oct 23 2026
+Time   : 00:48:09
+Host   : d4e7361d5367
+PID    : 11
+--> FOAM Warning : 
+    From function Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 494
+    PWD is not the cwd() - reverting to physical description
+I/O    : uncollated
+Case   : /workspace/shared/valve-cone-grading-native-20261023/case
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = constant
+
+Enabling all (cell, face, edge, point) topology checks.
+
+Enabling all geometry checks.
+
+Time = constant
+
+Mesh stats
+    points:           174496
+    faces:            1492408
+    internal faces:   1261288
+    cells:            688424
+    faces per cell:   4
+    boundary patches: 132
+    point zones:      0
+    face zones:       0
+    cell zones:       1
+
+Overall number of cells of each type:
+    hexahedra:     0
+    prisms:        0
+    wedges:        0
+    pyramids:      0
+    tet wedges:    0
+    tetrahedra:    688424
+    polyhedra:     0
+
+Checking topology...
+    Boundary definition OK.
+    Cell to face addressing OK.
+    Point usage OK.
+    Upper triangular ordering OK.
+    Face vertices OK.
+    Topological cell zip-up check OK.
+    Face-face connectivity OK.
+  <<Writing 471 cells with two non-boundary faces to set twoInternalFacesCells
+    Number of regions: 1 (OK).
+
+Checking patch topology for multiply connected surfaces...
+    Patch               Faces    Points   Surface topology                   Bounding box
+    wall_FDG_1          442      249      ok (non-closed singly connected)   (0.405 -0.1 -0.0992708874098054) (0.585 0.1 0.16054054051486)
+    wall_FDG_2          601      345      ok (non-closed singly connected)   (0.155 -0.144992706569922 0.02) (0.445 0.144977030856576 0.212)
+    wall_FDG_3          106      79       ok (non-closed singly connected)   (0.585 -0.1 -0.0999999999636155) (0.6 0.1 0.0999999999697371)
+    wall_FDG_4          112      88       ok (non-closed singly connected)   (0.155 -0.14472267939059 0.02) (0.42998970494115 0.14472267939059 0.02)
+    wall_FDG_5          87       84       ok (non-closed singly connected)   (0.186 -0.113851917137875 0.012) (0.414 0.113851917137873 0.022)
+    wall_FDG_6          2        4        ok (non-closed singly connected)   (0.41233333338253 -0.01247967298279 0.012) (0.414 0.012479672982797 0.012)
+    wall_FDG_7          211      133      ok (non-closed singly connected)   (0.155522364161334 -0.144869350099679 0.212) (0.445 0.144869350099679 0.212)
+    wall_FDG_8          1416     734      ok (non-closed singly connected)   (0.6 -0.1 -0.1) (1.2 0.1 0.1)
+    wall_FDG_9          3        5        ok (non-closed singly connected)   (0.4124 -0.001 0.02175) (0.414 0.001 0.02175)
+    wall_FDG_10         4        6        ok (non-closed singly connected)   (0.4124 0.001 0.02175) (0.41399561395071 0.001 0.022)
+    wall_FDG_11         10       12       ok (non-closed singly connected)   (0.35711380313766 0.001 0.022) (0.41399561395071 0.098223097601321 0.022)
+    wall_FDG_12         4        6        ok (non-closed singly connected)   (0.35706602540378 0.096841255385371 0.02175) (0.35786383237914 0.098223097601321 0.022)
+    wall_FDG_13         4        5        ok (non-closed singly connected)   (0.35533397459621 0.096841255385371 0.02175) (0.35786383237914 0.099223097601321 0.02175)
+    wall_FDG_14         4        6        ok (non-closed singly connected)   (0.35533397459621 0.097841255385371 0.02175) (0.35613178157157 0.099223097601321 0.022)
+    wall_FDG_15         10       12       ok (non-closed singly connected)   (0.24386821842842 0.097924008847922 0.022) (0.35613178157157 0.11339622754007 0.022)
+    wall_FDG_16         4        6        ok (non-closed singly connected)   (0.24386821842842 0.097841255385371 0.02175) (0.24466602540378 0.099223097601321 0.022)
+    wall_FDG_17         4        5        ok (non-closed singly connected)   (0.24213616762085 0.096841255385371 0.02175) (0.24466602540378 0.099223097601321 0.02175)
+    wall_FDG_18         4        6        ok (non-closed singly connected)   (0.24213616762085 0.096841255385371 0.02175) (0.24293397459621 0.098223097601321 0.022)
+    wall_FDG_19         10       12       ok (non-closed singly connected)   (0.18600438604928 0.001 0.022) (0.24288619686233 0.098223097601321 0.022)
+    wall_FDG_20         4        6        ok (non-closed singly connected)   (0.18600438604928 0.001 0.02175) (0.1876 0.001 0.022)
+    wall_FDG_21         4        5        ok (non-closed singly connected)   (0.18600438604928 -0.001 0.02175) (0.1876 0.001 0.02175)
+    wall_FDG_22         4        6        ok (non-closed singly connected)   (0.18600438604928 -0.001 0.02175) (0.1876 -0.001 0.022)
+    wall_FDG_23         10       12       ok (non-closed singly connected)   (0.18600438604928 -0.09822309760132 0.022) (0.24288619686233 -0.001 0.022)
+    wall_FDG_24         4        6        ok (non-closed singly connected)   (0.24213616762085 -0.09822309760132 0.02175) (0.24293397459621 -0.09684125538537 0.022)
+    wall_FDG_25         4        5        ok (non-closed singly connected)   (0.24213616762085 -0.09922309760132 0.02175) (0.24466602540378 -0.09684125538537 0.02175)
+    wall_FDG_26         4        6        ok (non-closed singly connected)   (0.24386821842842 -0.09922309760132 0.02175) (0.24466602540378 -0.09784125538537 0.022)
+    wall_FDG_27         10       12       ok (non-closed singly connected)   (0.24386821842842 -0.11339622754007 0.022) (0.35613178157157 -0.09792400884792 0.022)
+    wall_FDG_28         4        6        ok (non-closed singly connected)   (0.35533397459621 -0.09922309760132 0.02175) (0.35613178157157 -0.09784125538537 0.022)
+    wall_FDG_29         4        5        ok (non-closed singly connected)   (0.35533397459621 -0.09922309760132 0.02175) (0.35786383237914 -0.09684125538537 0.02175)
+    wall_FDG_30         4        6        ok (non-closed singly connected)   (0.35706602540378 -0.09822309760132 0.02175) (0.35786383237914 -0.09684125538537 0.022)
+    wall_FDG_31         10       12       ok (non-closed singly connected)   (0.35711380313766 -0.09822309760132 0.022) (0.41399561395071 -0.001 0.022)
+    wall_FDG_32         4        6        ok (non-closed singly connected)   (0.4124 -0.001 0.02175) (0.41399561395071 -0.001 0.022)
+    wall_FDG_33         72       54       ok (non-closed singly connected)   (0.23 -0.07 0.202) (0.37 0.07 0.212)
+    outlet              136      82       ok (non-closed singly connected)   (1.2 -0.1 -0.0992708874098054) (1.2 0.1 0.0992708874098054)
+    wall_FDG_35         2        4        ok (non-closed singly connected)   (0.4124 -0.001 0.02175) (0.4124 0.001 0.02195)
+    wall_FDG_36         78       76       ok (non-closed singly connected)   (0.18750444453223 -0.111904442377381 0.02195) (0.41249555546776 0.111904442377381 0.02195)
+    wall_FDG_37         10       12       ok (non-closed singly connected)   (0.35711380313766 0.001 0.02195) (0.41249555546776 0.096924008847922 0.022)
+    wall_FDG_38         2        4        ok (non-closed singly connected)   (0.35533397459621 0.096841255385371 0.02175) (0.35706602540378 0.097841255385371 0.02195)
+    wall_FDG_39         10       12       ok (non-closed singly connected)   (0.2446182476699 0.097924008847922 0.02195) (0.35538175233009 0.111904442377381 0.022)
+    wall_FDG_40         2        4        ok (non-closed singly connected)   (0.24293397459621 0.096841255385371 0.02175) (0.24466602540378 0.097841255385371 0.02195)
+    wall_FDG_41         10       12       ok (non-closed singly connected)   (0.18750444453223 0.001 0.02195) (0.24288619686233 0.096924008847922 0.022)
+    wall_FDG_42         2        4        ok (non-closed singly connected)   (0.1876 -0.001 0.02175) (0.1876 0.001 0.02195)
+    wall_FDG_43         10       12       ok (non-closed singly connected)   (0.18750444453223 -0.09692400884792 0.02195) (0.24288619686233 -0.001 0.022)
+    wall_FDG_44         2        4        ok (non-closed singly connected)   (0.24293397459621 -0.09784125538537 0.02175) (0.24466602540378 -0.09684125538537 0.02195)
+    wall_FDG_45         10       12       ok (non-closed singly connected)   (0.2446182476699 -0.111904442377381 0.02195) (0.35538175233009 -0.09792400884792 0.022)
+    wall_FDG_46         2        4        ok (non-closed singly connected)   (0.35533397459621 -0.09784125538537 0.02175) (0.35706602540378 -0.09684125538537 0.02195)
+    wall_FDG_47         10       12       ok (non-closed singly connected)   (0.35711380313766 -0.09692400884792 0.02195) (0.41249555546776 -0.001 0.022)
+    wall_FDG_48         126      98       ok (non-closed singly connected)   (0.23 -0.0689365427108546 0.202) (0.37 0.0689365427108546 0.202)
+    wall_FDG_49         215      136      ok (non-closed singly connected)   (0.2 -0.1 -0.08) (0.4 0.1 0.02195)
+    wall_FDG_50         50       37       ok (non-closed singly connected)   (0.25602334059711 -0.04397665940288 0.197) (0.26902334059711 -0.03097665940288 0.202)
+    wall_FDG_51         50       37       ok (non-closed singly connected)   (0.33097665940288 -0.04397665940288 0.197) (0.34397665940288 -0.03097665940288 0.202)
+    wall_FDG_52         50       37       ok (non-closed singly connected)   (0.25602334059711 0.030976659402887 0.197) (0.26902334059711 0.043976659402887 0.202)
+    wall_FDG_53         144      84       ok (non-closed singly connected)   (0.256 -0.044 0.096) (0.344 0.044 0.202)
+    wall_FDG_54         50       37       ok (non-closed singly connected)   (0.33097665940288 0.030976659402887 0.197) (0.34397665940288 0.043976659402887 0.202)
+    wall_FDG_55         70       47       ok (non-closed singly connected)   (0.3 -0.1 -0.08) (0.4 0.1 -0.08)
+    wall_FDG_56         61       46       ok (non-closed singly connected)   (0.3 -0.119999721571349 -0.144689785188884) (0.3 0.12 -0.04406989810448)
+    wall_FDG_57         327      192      ok (non-closed singly connected)   (0.155 -0.119999764566629 -0.144999495297436) (0.3 0.12 -0.0150007087039632)
+    wall_FDG_58         12       13       ok (non-closed singly connected)   (0.25602334059711 -0.04397665940288 0.197) (0.26902334059711 -0.03097665940288 0.197)
+    wall_FDG_59         12       13       ok (non-closed singly connected)   (0.33097665940288 -0.04397665940288 0.197) (0.34397665940288 -0.03097665940288 0.197)
+    wall_FDG_60         12       13       ok (non-closed singly connected)   (0.25602334059711 0.030976659402887 0.197) (0.26902334059711 0.043976659402887 0.197)
+    wall_FDG_61         111      87       ok (non-closed singly connected)   (0.256 -0.044 0.096) (0.344 0.044 0.096)
+    wall_FDG_62         12       13       ok (non-closed singly connected)   (0.33097665940288 0.030976659402887 0.197) (0.34397665940288 0.043976659402887 0.197)
+    wall_FDG_63         407      230      ok (non-closed singly connected)   (0.015 -0.11998270814413 -0.144716749785234) (0.155 0.12 0.0992708874098054)
+    wall_FDG_64         3322     1766     ok (non-closed singly connected)   (0.268000001746881 -0.032 0.096) (0.332 0.032 0.212)
+    wall_FDG_65         106      79       ok (non-closed singly connected)   (0 -0.1 -0.0999999999696849) (0.015 0.1 0.0999999999697371)
+    wall_FDG_66         111      87       ok (non-closed singly connected)   (0.268060693480415 -0.0319848230308277 0.212) (0.332 0.0319848230308277 0.212)
+    wall_FDG_67         31       33       ok (non-closed singly connected)   (0.30299999999999 0.0268 0.1) (0.303 0.031859064644148 0.202)
+    wall_FDG_68         5        6        ok (non-closed singly connected)   (0.297 0.0268 0.202) (0.303 0.032 0.202)
+    wall_FDG_69         31       33       ok (non-closed singly connected)   (0.297 0.0268 0.1) (0.297 0.031859064644148 0.202)
+    wall_FDG_70         5        6        ok (non-closed singly connected)   (0.297 0.0268 0.1) (0.303 0.032 0.1)
+    wall_FDG_71         31       33       ok (non-closed singly connected)   (0.297 -0.03185906464414 0.1) (0.297 -0.0268 0.202)
+    wall_FDG_72         5        6        ok (non-closed singly connected)   (0.297 -0.032 0.202) (0.303 -0.0268 0.202)
+    wall_FDG_73         31       33       ok (non-closed singly connected)   (0.30299999999999 -0.03185906464414 0.1) (0.303 -0.0268 0.202)
+    wall_FDG_74         5        6        ok (non-closed singly connected)   (0.297 -0.032 0.1) (0.303 -0.0268 0.1)
+    wall_FDG_75         1416     734      ok (non-closed singly connected)   (-0.6 -0.1 -0.1) (0 0.1 0.1)
+    wall_FDG_76         308      166      ok (non-closed singly connected)   (0.278 -0.022 0.212) (0.322 0.022 0.332)
+    wall_FDG_77         10       12       ok (non-closed singly connected)   (0.297 0.0268 0.1) (0.303 0.0268 0.202)
+    wall_FDG_78         10       12       ok (non-closed singly connected)   (0.297 -0.0268 0.1) (0.303 -0.0268 0.202)
+    inlet               136      82       ok (non-closed singly connected)   (-0.6 -0.1 -0.0992708874098054) (-0.6 0.1 0.0992708874098054)
+    wall_FDG_80         24       24       ok (non-closed singly connected)   (0.278 -0.022 0.332) (0.322 0.022 0.332)
+    wall_FDG_81         656      340      ok (non-closed singly connected)   (0.282 -0.018 0.1175) (0.318 0.018 0.332)
+    wall_FDG_82         48       36       ok (non-closed singly connected)   (0.28 -0.02 0.1135) (0.32 0.02 0.1175)
+    wall_FDG_83         48       36       ok (non-closed singly connected)   (0.28 -0.02 0.1035) (0.32 0.02 0.1135)
+    wall_FDG_84         24       24       ok (non-closed singly connected)   (0.278 -0.022 0.1035) (0.322 0.022 0.1035)
+    wall_FDG_85         24       24       ok (non-closed singly connected)   (0.278 -0.022 0.1015) (0.322 0.022 0.1035)
+    wall_FDG_86         18       18       ok (non-closed singly connected)   (0.278 -0.022 0.1015) (0.322 0.022 0.1015)
+    wall_FDG_87         4        5        ok (non-closed singly connected)   (0.30981495457622 0 0.093) (0.31962990915244 0.017 0.1015)
+    wall_FDG_88         4        5        ok (non-closed singly connected)   (0.30981495457622 -0.017 0.093) (0.31962990915244 0 0.1015)
+    wall_FDG_89         4        5        ok (non-closed singly connected)   (0.29018504542377 -0.017 0.093) (0.30981495457622 -0.017 0.1015)
+    wall_FDG_90         4        5        ok (non-closed singly connected)   (0.28037009084755 -0.017 0.093) (0.29018504542377 2.40397054111e-18 0.1015)
+    wall_FDG_91         4        5        ok (non-closed singly connected)   (0.28037009084755 2.40397054111e-18 0.093) (0.29018504542377 0.017 0.1015)
+    wall_FDG_92         4        5        ok (non-closed singly connected)   (0.29018504542377 0.017 0.093) (0.30981495457622 0.017 0.1015)
+    wall_FDG_93         12       12       ok (non-closed singly connected)   (0.28025462079371 -0.0171 0.093) (0.31974537920628 0.0171 0.093)
+    wall_FDG_94         4        5        ok (non-closed singly connected)   (0.30987268960314 0 0.093) (0.31974537920628 0.0171 0.101)
+    wall_FDG_95         4        5        ok (non-closed singly connected)   (0.30987268960314 -0.0171 0.093) (0.31974537920628 0 0.101)
+    wall_FDG_96         4        5        ok (non-closed singly connected)   (0.29012731039685 0.0171 0.093) (0.30987268960314 0.0171 0.101)
+    wall_FDG_97         4        5        ok (non-closed singly connected)   (0.29012731039685 -0.0171 0.093) (0.30987268960314 -0.0171 0.101)
+    wall_FDG_98         4        5        ok (non-closed singly connected)   (0.28025462079371 2.418111544293e-18 0.093) (0.29012731039685 0.0171 0.101)
+    wall_FDG_99         4        5        ok (non-closed singly connected)   (0.28025462079371 -0.0171 0.093) (0.29012731039685 2.418111544293e-18 0.101)
+    wall_FDG_100        18       18       ok (non-closed singly connected)   (0.277 -0.023 0.101) (0.323 0.023 0.101)
+    wall_FDG_101        24       24       ok (non-closed singly connected)   (0.277 -0.023 0.101) (0.323 0.023 0.1039)
+    wall_FDG_102        163      163      ok (non-closed singly connected)   (0.276005194113448 -0.0239987014365074 0.1039) (0.324 0.0239987014365074 0.1039)
+    wall_FDG_103        914      608      ok (non-closed singly connected)   (0.276000000000105 -0.023998702174305 0.1039) (0.324 0.0239987014365074 0.1061)
+    wall_FDG_104        163      163      ok (non-closed singly connected)   (0.276005194113448 -0.0239987014365074 0.1061) (0.324 0.0239987014365074 0.1061)
+    wall_FDG_105        226      125      ok (non-closed singly connected)   (0.277 -0.023 0.1061) (0.323 0.023 0.197)
+    wall_FDG_106        109      87       ok (non-closed singly connected)   (0.269063069245884 -0.03083439637807 0.197) (0.331 0.030834396378071 0.197)
+    wall_FDG_107        39       39       ok (non-closed singly connected)   (0.3032 -0.0308343963780701 0.0987) (0.3032 -0.0265 0.197)
+    wall_FDG_108        2892     1553     ok (non-closed singly connected)   (0.269 -0.0309972393417566 0.093) (0.331 0.0309930861755993 0.197)
+    wall_FDG_109        39       39       ok (non-closed singly connected)   (0.3032 0.0265 0.0987) (0.3032 0.030834396378071 0.197)
+    wall_FDG_110        29       26       ok (non-closed singly connected)   (0.2968 0.0265 0.0955) (0.3032 0.0265 0.197)
+    wall_FDG_111        39       39       ok (non-closed singly connected)   (0.2968 0.0265 0.0987) (0.2968 0.0308343963780711 0.197)
+    wall_FDG_112        39       39       ok (non-closed singly connected)   (0.2968 -0.03083439637807 0.0987) (0.2968 -0.0265 0.197)
+    wall_FDG_113        27       25       ok (non-closed singly connected)   (0.2968 -0.0265 0.0955) (0.3032 -0.0265 0.197)
+    wall_FDG_114        47       34       ok (non-closed singly connected)   (0.2968 -0.0309918561499376 0.0955) (0.3032 -0.0265 0.0987)
+    wall_FDG_115        252      166      ok (non-closed singly connected)   (0.180615681192972 -0.119845980860526 0.093) (0.42 0.119845980860526 0.093)
+    wall_FDG_116        47       34       ok (non-closed singly connected)   (0.2968 0.0265 0.0955) (0.3032 0.0309918561477473 0.0987)
+    wall_FDG_117        210      171      ok (non-closed singly connected)   (0.18 -0.119985487591218 0.079) (0.42 0.119985487591218 0.093)
+    wall_FDG_118        19697    12557    ok (non-closed singly connected)   (0.180058046124961 -0.119985487591218 0.079) (0.42 0.119985487591218 0.079)
+    wall_FDG_119        48146    29384    ok (non-closed singly connected)   (0.18925003375905 -0.11074996624095 0.079) (0.41074996624095 0.11074996624095 0.079351684160769)
+    wall_FDG_120        26577    16612    ok (non-closed singly connected)   (0.188258097062603 -0.111742132917605 0.079351684160769) (0.41174220957771 0.111742132917605 0.082093263356924)
+    wall_FDG_121        12073    7372     ok (non-closed singly connected)   (0.188173302717169 -0.111828554366186 0.082093263356924) (0.411826339571881 0.111827032508787 0.0835)
+    wall_FDG_122        3251     2922     ok (non-closed singly connected)   (0.18917133587993 -0.110828354935107 0.0835) (0.41082866412007 0.110828354935107 0.0835)
+    wall_FDG_123        11397    6956     ok (non-closed singly connected)   (0.194828989477125 -0.105171254540627 0.082093263356924) (0.40517133587992 0.105171254540627 0.0835)
+    wall_FDG_124        23321    14818    ok (non-closed singly connected)   (0.194521600182228 -0.10547841504703 0.079351684160769) (0.40547842012345 0.10547841504703 0.082093263356924)
+    wall_FDG_125        45535    27825    ok (non-closed singly connected)   (0.194500008573139 -0.105499843141092 0.079) (0.405499779219577 0.1054981026056 0.079351684160769)
+    wall_FDG_126        23116    14085    ok (non-closed singly connected)   (0.19474996624096 -0.10525003375904 0.079) (0.40525003375904 0.10525003375904 0.079)
+    wall_FDG_127        594      447      ok (non-closed singly connected)   (0.2761000016767 -0.0238986349700539 0.104) (0.32381617097688 0.0238987770632009 0.106)
+    wall_FDG_128        235      199      ok (non-closed singly connected)   (0.276105170580779 -0.0238986349700539 0.106) (0.32381617097688 0.0238986349700539 0.106)
+    wall_FDG_129        5        6        ok (non-closed singly connected)   (0.32090454496036 0.002 0.104) (0.32381617097688 0.002 0.106)
+    wall_FDG_130        227      195      ok (non-closed singly connected)   (0.276105170580779 -0.0238986349700539 0.104) (0.32381617097688 0.0238986349700539 0.104)
+    wall_FDG_131        5        6        ok (non-closed singly connected)   (0.32090454496036 -0.002 0.104) (0.32381617097688 -0.002 0.106)
+    wall_FDG_132        24       26       ok (non-closed singly connected)   (0.279 -0.020976122665637 0.104) (0.32090454496036 0.020976122665637 0.106)
+
+Checking faceZone topology for multiply connected surfaces...
+    No faceZones found.
+
+Checking basic cellZone addressing...
+    CellZone            Cells        Points       Volume       BoundingBox
+    fluid_proxy         688424       174496       0.0637018963656401 (-0.6 -0.144992706569922 -0.144999495297436) (1.2 0.144977030856576 0.332)
+
+Checking geometry...
+    Overall domain bounding box (-0.6 -0.144992706569922 -0.144999495297436) (1.2 0.144977030856576 0.332)
+    Mesh has 3 geometric (non-empty/wedge) directions (1 1 1)
+    Mesh has 3 solution (non-empty) directions (1 1 1)
+    Boundary openness (2.73895319710066e-17 -4.77003026542432e-18 3.94354143849774e-15) OK.
+    Max cell openness = 9.45201906430105e-15 OK.
+    Max aspect ratio = 478.835577800056 OK.
+    Minimum face area = 2.38888669398537e-09. Maximum face area = 0.000870038155779709.  Face area magnitudes OK.
+    Min volume = 4.4780297610025e-14. Max volume = 7.94628907505443e-06.  Total volume = 0.0637018963656401.  Cell volumes OK.
+    Mesh non-orthogonality Max: 89.7807095209027 average: 25.471492835516
+   *Number of severely non-orthogonal (> 70 degrees) faces: 4235.
+    Non-orthogonality check OK.
+  <<Writing 4235 non-orthogonal faces to set nonOrthoFaces
+    Face pyramids OK.
+    Max skewness = 3.66000889652733 OK.
+    Coupled point location match (average 0) OK.
+    Face tets OK.
+    Min/max edge length = 4.9999999999998e-05 0.0508676380539451 OK.
+    All angles in faces OK.
+    All face flatness OK.
+    Cell determinant (wellposedness) : minimum: 0 average: 0.093856435821867
+ ***Cells with small determinant (< 0.001) found, number of cells: 2799
+  <<Writing 2799 under-determined cells to set underdeterminedCells
+    Concave cell check OK.
+    Face interpolation weight : minimum: 0.00165226979628316 average: 0.386589278731277
+ ***Faces with small interpolation weight (< 0.05) found, number of faces: 229
+  <<Writing 229 faces with low interpolation weights to set lowWeightFaces
+    Face volume ratio : minimum: 0.00165500430991733 average: 0.659602865138484
+ ***Faces with small volume ratio (< 0.01) found, number of faces: 112
+  <<Writing 112 faces with low volume ratio cells to set lowVolRatioFaces
+
+Failed 3 mesh checks.
+
+End
+

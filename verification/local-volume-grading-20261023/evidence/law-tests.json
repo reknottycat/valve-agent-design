@@ -1,0 +1,57 @@
+{
+  "tests": [
+    {
+      "arc": 0,
+      "location": "lower",
+      "distance_mm": 2.9976021664879227e-15
+    },
+    {
+      "arc": 0,
+      "location": "middle",
+      "distance_mm": 1.1102230246251565e-16
+    },
+    {
+      "arc": 0,
+      "location": "upper",
+      "distance_mm": 0.0
+    },
+    {
+      "arc": 1,
+      "location": "lower",
+      "distance_mm": 0.0
+    },
+    {
+      "arc": 1,
+      "location": "middle",
+      "distance_mm": 8.326672684688674e-16
+    },
+    {
+      "arc": 1,
+      "location": "upper",
+      "distance_mm": 0.0
+    }
+  ],
+  "full_torus_false_zero_counterexamples": [
+    {
+      "arc": 0,
+      "rho_mm": 110.99996624095,
+      "z_mm": 79.25,
+      "full_torus_distance_mm": 0.0,
+      "finite_trimmed_distance_mm": 0.3535533905932235
+    },
+    {
+      "arc": 1,
+      "rho_mm": 105.00003375904,
+      "z_mm": 79.25,
+      "full_torus_distance_mm": 0.0,
+      "finite_trimmed_distance_mm": 0.3535533905932738
+    }
+  ],
+  "scope_non_volume_unchanged": true,
+  "existing_stricter_lc_preserved": true,
+  "far_field_exactly_inert": true,
+  "units": "All coordinates and sizes in mm; same original source CAD",
+  "h0_mm": 0.1308996938995747,
+  "cutoff_mm": 31.08637538262553,
+  "result": "PASS"
+}

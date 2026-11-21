@@ -1,0 +1,301 @@
+{
+  "schema": "valve.batch_stop_and_fixed_rank_trial/v1",
+  "recorded_utc": "2026-10-12T10:11:19.648043+00:00",
+  "branch": "research/step-directed-layer-20261012",
+  "base_commit": "c3514d5163c8096f0ebaf4b912c92a73ee7bb0b8",
+  "source_root_paths": "All source paths are relative to restored source-root. Metadata and hash references only. Original payloads are not imported.",
+  "whole_reference_unchanged": {
+    "version": "R04",
+    "cells": 6939161,
+    "det_bad": 14277,
+    "weight_bad": 3881,
+    "ratio_bad": 2,
+    "native_status": "Failed3",
+    "all_new_trials_applied_to_whole": false,
+    "CFD_started": false
+  },
+  "three_actual_parameterized_trials": [
+    {
+      "seed_R03_rest": 2733433,
+      "original_cells": 49,
+      "mixed_cells": 126,
+      "types": {
+        "prism": 16,
+        "pyramid": 12,
+        "tet": 98
+      },
+      "changed_det_before_after": [
+        15,
+        39
+      ],
+      "changed_weight_before_after": [
+        5,
+        12
+      ],
+      "changed_ratio_before_after": [
+        0,
+        1
+      ],
+      "fixed_facets": 25,
+      "new_fixed_interface_weight_ratio_bad": 0,
+      "core_bad_det": 0,
+      "transition_bad_det": 39,
+      "PWL_volume_change_mm3": 1.1537193264964302e-06,
+      "candidate_quality_gate_pass": false
+    },
+    {
+      "seed_R03_rest": 2729378,
+      "original_cells": 46,
+      "mixed_cells": 125,
+      "types": {
+        "6": 16,
+        "7": 12,
+        "4": 97
+      },
+      "changed_det_before_after": [
+        16,
+        46
+      ],
+      "changed_weight_before_after": [
+        4,
+        11
+      ],
+      "changed_ratio_before_after": [
+        0,
+        1
+      ],
+      "new_bad_det_core": 0,
+      "new_bad_det_transition": 46,
+      "fixed_facets": 20,
+      "fixed_weight_before_after": [
+        1,
+        0
+      ],
+      "fixed_ratio_before_after": [
+        0,
+        0
+      ],
+      "nonzero_PWL_volume_change_mm3": 7.110532531865244e-07,
+      "candidate_quality_gate_pass": false
+    },
+    {
+      "seed_R03_rest": 2729972,
+      "original_cells": 48,
+      "mixed_cells": 720,
+      "types": {
+        "6": 40,
+        "7": 18,
+        "4": 662
+      },
+      "changed_det_before_after": [
+        21,
+        112
+      ],
+      "changed_weight_before_after": [
+        4,
+        33
+      ],
+      "changed_ratio_before_after": [
+        0,
+        2
+      ],
+      "new_bad_det_core": 0,
+      "new_bad_det_transition": 112,
+      "fixed_facets": 15,
+      "fixed_weight_before_after": [
+        0,
+        7
+      ],
+      "fixed_ratio_before_after": [
+        0,
+        2
+      ],
+      "nonzero_PWL_volume_change_mm3": 5.250573357281814e-08,
+      "candidate_quality_gate_pass": false
+    }
+  ],
+  "third_initial47_to_final48": {
+    "actual_original_bridge_cell": 2690775,
+    "fixedcut_retained_removed_added": [
+      14,
+      2,
+      1
+    ],
+    "final_fixed_facets": 15
+  },
+  "independent_three_trial_scope": {
+    "all_actual_source_and_saved_native_standard_face_identity_verified": true,
+    "all_three_quality_gate_pass": false,
+    "second_third_bad_det_entirely_transition": true,
+    "unchanged_context_source_IDs_coordinates_connectivity_verified": true,
+    "context_not_blanket_labelled_artificial": true,
+    "finite_CAD_provenance_inherited_no_fresh_trim_boolean": true,
+    "PWL_changes_nonzero_no_manufacturing_tolerance_claim": true
+  },
+  "fixed_six_tet_mechanism": {
+    "tet_rows": [
+      43,
+      50,
+      53,
+      62,
+      78,
+      108
+    ],
+    "all_four_vertices_on_immutable_shell": true,
+    "internal_only_point_optimizer_cannot_change_these_tets": true,
+    "no_alternative_topology_impossibility_claim": true
+  },
+  "C01_ended_fixed_point_FV_trial": {
+    "original_cells": 49,
+    "same_original_outside_cells": 21,
+    "selected_original_parents": [
+      2729032,
+      2733433,
+      2735743
+    ],
+    "removed_bad_original_parents": [
+      2729032,
+      2733433
+    ],
+    "selected_three_to_one_FV": true,
+    "points_added_or_moved": 0,
+    "original_internal_faces_removed": 2,
+    "A01_added_concavity_rejected": true,
+    "A02_same_FDG36_three_coplanar_wall_triangles_to_one_five_vertex_polygon": true,
+    "exact_volume_difference": "0",
+    "exact_first_moment_difference": [
+      "0",
+      "0",
+      "0"
+    ],
+    "same_finite_PWL_wall_support_and_original_fixed_cut_verified": true,
+    "all_serialized_faces_owner_neighbour_cycles_verified": true,
+    "merged_cell_quality_gate_pass": true,
+    "changed_det_before_after": [
+      15,
+      13
+    ],
+    "changed_weight_before_after": [
+      5,
+      5
+    ],
+    "changed_ratio_before_after": [
+      0,
+      0
+    ],
+    "nonorth_warning_before_after": [
+      5,
+      5
+    ],
+    "all_original_lowweight_ratio_nonorth_face_keys_unchanged": true,
+    "raw_native_failed_checks_before_after": [
+      2,
+      2
+    ],
+    "entire_neighborhood_quality_gate_pass": false,
+    "original_context18_unchanged": true,
+    "no_whole_application": true,
+    "producer_pending_at0957_closed_by_independent1004_readback": true,
+    "original_outside_cells": 21,
+    "unchanged_context_bad_det_count": 18,
+    "mean_nonorth_degrees_before_after": [
+      39.88569625089185,
+      40.38119480629234
+    ]
+  },
+  "decision": "STOP_EXPANDING_HAND_REPAIR_AND_PARAMETERIZED_MICROLAYER_FAMILY; C01 remains an ended limited comparison, not an accepted whole mesh.",
+  "next_selected_direction": "One new bounded native snappyHexMesh controlled comparison. This new comparison has not run at freeze; earlier FDM1 native snappy trials remain recorded. Separate branch only after actual entry/results are frozen.",
+  "source_pins": [
+    {
+      "path": "review_flow_P06_corner_batch_P06_A01/THREE_ORIGINAL_STARS_AND_FIRST_ACTUAL_N05_FINAL_ENTRY_A01.json",
+      "bytes": 3383,
+      "sha256": "151abd1ce25a8d7ee1f9fcae119eee52416b714c6eb3caf9acc3a83bd5911791"
+    },
+    {
+      "path": "review_flow_P06_corner_batch_P06_A02/FINAL_THREE_BATCH_REJECTION_INDEPENDENT_FINAL_ENTRY_A01.json",
+      "bytes": 4820,
+      "sha256": "224f9fdff98bd651f1c6febb22933ddc93249b52bc1adb45c8f8f6ca19e31f5d"
+    },
+    {
+      "path": "review_flow_P06_six_fixed_transition_tets_A01/SIX_FIXED_TRANSITION_MECHANISM_FINAL_ENTRY_A01.json",
+      "bytes": 1072,
+      "sha256": "817a3c4f23bc27aac979a2838fb63b5a2f49991cd7c55c41cc54803559fd6d7e"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_fixed_rank_cluster_C01/C01_LOCAL_ACTUAL_FINAL_ENTRY_A02.json",
+      "bytes": 1467,
+      "sha256": "a9a03eb67e9fcaaf8e627140a37b410a2b3f08f9515978d385526fac7751e30b"
+    },
+    {
+      "path": "review_flow_P06_fixed_rank_cluster_C01_A01/FIXED_RANK_CLUSTER_C01_INDEPENDENT_FINAL_ENTRY_A01.json",
+      "bytes": 2079,
+      "sha256": "73fae7e95b92e8a6e6c3ab579fa9f28520acfa8c59380c6ce697076982a03e40"
+    },
+    {
+      "path": "valve-source-increment-P06-BATCH-C01-20261012/A01/LIBRARY_IDENTITY_A01.json",
+      "bytes": 345,
+      "sha256": "158e705416a2f78115146e9aa933433cdeb6823220e18e44ff646d93185a5109"
+    },
+    {
+      "path": "valve-mesh-admission-FDM1-20261011/products/FDM1_validation_summary.json",
+      "bytes": 29410,
+      "sha256": "1bc941807d908da66dcb676f4b72e93d7706d2ab553aebe548b6518690334dcc"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_fixed_rank_cluster_C01/actual_native_A01/baseline/evidence/check.log",
+      "bytes": 5066,
+      "sha256": "542457a1097f9febc897e5687e423927e5a1fabf04523ca25410bd238747fc53"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_fixed_rank_cluster_C01/actual_native_A02/candidate/evidence/check.log",
+      "bytes": 5248,
+      "sha256": "5b793d65e61317d948ec17742c6a74a9e4529621a3e6d4ebe4a45bd97cd5e95c"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_fixed_rank_cluster_batch_C02/evidence/USER_STOP_TERMINAL_RECEIPT_A01.json",
+      "bytes": 1540,
+      "sha256": "f125c5c7f4ad81f47f8e7eceaaa7f5718b76c91942af19fa75f6522c6354da72"
+    }
+  ],
+  "source_input_payload_imported": false,
+  "whole_or_manufacturing_qualified": false,
+  "earlier_FDM1_native_snappy_trials": {
+    "research_date": "2026-10-11",
+    "coarse": {
+      "cells": 46412,
+      "missing_top_neck_m": 0.11999789990000001,
+      "packingCap_missing": true,
+      "full_check_failed": 2,
+      "CFD_qualified": false
+    },
+    "targeted": {
+      "cells": 1157672,
+      "refinement_stopped_early": true,
+      "snap_started": false,
+      "actual_sampled_1mm_gap_cells": 2,
+      "CFD_qualified": false
+    },
+    "new_comparison_executed": false
+  },
+  "source_recovery": {
+    "library_file_id": "libfile_42924e1843648191a93459b2829f8f58",
+    "bytes": 1412597,
+    "sha256": "42205026801ecec6cc2b2f46adc5a01164c4abc921b3683c297a55bc64c7cd51",
+    "byte_restored_source_files": 709,
+    "scientific_rebuild": false,
+    "independent_remote_rehash_claimed": false,
+    "scope": "Three-batch and C01 recovery checkpoint, including prior two ratio merges and first15 failed flips; no source payload is imported in Git."
+  },
+  "C02_stopped_source_screen_scope": {
+    "actual_start_utc": "2026-10-12T10:07:40.535799+00:00",
+    "actual_terminal_receipt_utc": "2026-10-12T10:07:55.992601+00:00",
+    "elapsed_seconds": 15.455367668997496,
+    "stop_handled_utc": "2026-10-12T10:09:03.015836+00:00",
+    "already_terminal_reaped_exit": 0,
+    "read_only_source_screen_really_executed": true,
+    "no_signal_sent_to_unverified_PID": true,
+    "native_or_whole_started": false,
+    "further_screening_or_iteration_started": false,
+    "scope": "Source screening had already completed before stop was handled; it was not just preparation. Stop propagation timing to all workers is not inferred. C02 postdates the709-file recovery package and is excluded from its scope."
+  }
+}

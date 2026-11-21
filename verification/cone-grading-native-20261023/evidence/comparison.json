@@ -1,0 +1,45 @@
+{
+  "baseline": {
+    "cells": 614334,
+    "faces": 1327131,
+    "internal faces": 1130205,
+    "skew": 15,
+    "nonortho": 8363,
+    "det": 11091,
+    "weight": 947,
+    "ratio": 114,
+    "max_skew": 10.1340537060346,
+    "max_nonortho": 89.7807095209027,
+    "failed": 4,
+    "fractions": {
+      "skew": 1.1302576761450075e-05,
+      "nonortho": 0.006301563297067132,
+      "det": 0.018053697174501167,
+      "weight": 0.0007135693462062148,
+      "ratio": 8.589958338702058e-05
+    }
+  },
+  "new": {
+    "cells": 688424,
+    "faces": 1492408,
+    "internal faces": 1261288,
+    "skew": 0,
+    "nonortho": 4235,
+    "det": 2799,
+    "weight": 229,
+    "ratio": 112,
+    "max_skew": 3.66000889652733,
+    "max_nonortho": 89.7807095209027,
+    "failed": 3,
+    "fractions": {
+      "skew": 0.0,
+      "nonortho": 0.0028376958579691344,
+      "det": 0.00406580828094314,
+      "weight": 0.00015344329432702048,
+      "ratio": 7.504650202893578e-05
+    }
+  },
+  "fraction_denominators": "det/all cells; all face counts/all faces, not necessarily the native tested subset",
+  "engineering_release": false,
+  "R1_fullcheck_PASS": false
+}

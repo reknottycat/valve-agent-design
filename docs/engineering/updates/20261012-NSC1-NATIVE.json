@@ -1,0 +1,356 @@
+{
+  "schema": "valve.native_method_change_and_NSC1_delivery/v1",
+  "recorded_utc": "2026-10-12T12:12:11.466274+00:00",
+  "target_branch": "research/native-snappy-control-20261012",
+  "base_commit": "2860d55e2995f364f98a06216039c60401143356",
+  "branch_creation_time_bound_to_actual_publication": true,
+  "data_scope": "Engineering logs, result metadata, source hashes and product links only; no source/input/runtime/cache payload. Source paths relative to restored source-root.",
+  "direction_change": {
+    "previous_branch": "research/step-directed-layer-20261012",
+    "previous_branch_retained_head": "2860d55e2995f364f98a06216039c60401143356",
+    "previous_manual_expansion_stopped": true,
+    "new": "One bounded mature native snappyHexMesh representative control, then actual same-case laminar research continuation.",
+    "previous_FDM1_snappy_history_preserved": true
+  },
+  "actual_native_mesh": {
+    "cells": 1147080,
+    "recorded_terminal_utc": "2026-10-12T10:25:24.338593+00:00",
+    "allGeometry_allTopology_meshOK": true,
+    "one_region": true,
+    "actual_four_step_bands_by_original_FDG_face": [
+      {
+        "FDG_face": 39,
+        "actual_vertical_bands": 4,
+        "minimum_layer_range_separation_mm": 0.009675110297600042,
+        "scope": "Range separation of the directly read snapped native wall vertices; these are not exactly planar or uniformly spaced layers."
+      },
+      {
+        "FDG_face": 41,
+        "actual_vertical_bands": 4,
+        "minimum_layer_range_separation_mm": 0.009628051927830228,
+        "scope": "Range separation of the directly read snapped native wall vertices; these are not exactly planar or uniformly spaced layers."
+      }
+    ],
+    "nominal_background_spacing_mm": 0.0125,
+    "maximum_sampled_wall_radial_deviation_mm": 0.000202445,
+    "maximum_sampled_planar_z_deviation_mm": 7.5833e-05,
+    "whole_facet_supremum_error_certified": false,
+    "snappy_actual_seconds": 226.3465211650182,
+    "snappy_peak_RSS_bytes": 1710759936
+  },
+  "physical_research_scope": {
+    "original_source": "FDG1 main fluid finite phi120 crop",
+    "source_CAD_volume_mm3": 2.2408410885437724,
+    "local_u_mm": [
+      112.3,
+      114.1
+    ],
+    "local_v_mm": [
+      -1.25,
+      1.25
+    ],
+    "local_z_mm": [
+      21.7,
+      22.3
+    ],
+    "step_height_mm": 0.05,
+    "step_is_not_two_wall_gap": true,
+    "rho_kg_m3": 1024.8103,
+    "nu_m2_s": 1.0508e-06,
+    "inlet_U_m_s": 0.01,
+    "Re_inlet": 5.843501,
+    "cut_BCs": "Artificial radial inlet, pressure outlet and four impermeable slip crop planes; real wall noSlip.",
+    "laminar_with_convective_div_phi_U": true,
+    "p_native_units": "m2/s2",
+    "rho_multiplier_to_Pa": 1024.8103,
+    "phi_units": "m3/s",
+    "Time_is_Simple_iteration_not_seconds": true,
+    "not_whole_valve_or_real_local_operating_BCs": true
+  },
+  "actual_failure_and_repair": {
+    "A01_sha1_IO_failed_at_initialization": true,
+    "A01_accepted_iterations": 0,
+    "A01_exit": 1,
+    "A01_seconds": 0.868412322975928,
+    "A01_original_failure_logs_retained": true,
+    "A02_same_mesh_physics_used_official_noFunctionObjects": true,
+    "A02_completed_iterations": 200,
+    "A02_exit": 0,
+    "A02_seconds": 553.8971668040031,
+    "no_native_residualControl": true,
+    "original200_steady_gate_FAIL_retained": true,
+    "continuation_reporting_failures_retained": [
+      "Original cumulative metadata inheritance assumption failed; restart-only reporting used, not stitched metadata.",
+      "First640 p/phi receipt comparison included additionally retained U and failed; scope corrected to actual fields read, with U independently checked."
+    ]
+  },
+  "actual_bounded_continuation": {
+    "first200_unchanged_after_continuation": true,
+    "actual_iterations_this_restart": [
+      201,
+      680
+    ],
+    "actual_count": 480,
+    "terminal_exit0_End": true,
+    "seconds": 1335.7878012770088,
+    "peak_RSS_bytes": 1383895040,
+    "pressure_680_Pa": 0.4162642461063191,
+    "relative_boundary_flux_imbalance_680": 5.3331878477081953e-11,
+    "actual_last_three40_iteration_pressure_relative_changes": [
+      -0.0032113923063771636,
+      -0.0026692494157722043,
+      -0.0022242383576386933
+    ],
+    "temporary0p1percent_research_gate_PASS": false,
+    "original1e_minus7_postread_initial_residual_gate_PASS": false,
+    "640_to680_equal_cell_U_relative_L2_change": 0.004094186791391704,
+    "640_to680_equal_cell_p_relative_L2_change": 0.005310918578737379,
+    "640_to680_max_U_change_m_s": 0.00010480172703923946,
+    "equal_cell_descriptive_measure_not_volume_or_flux_weighted": true,
+    "sampling_scope": "Four retained closed raw p/phi endpoints; U retained at640/680. Early240..520 small tables are producer readbacks and are not independently recomputed from purged raw fields. No continuous20-iteration flux/pressure window is claimed.",
+    "bounded_run_ended_no_further_solve_claimed": true
+  },
+  "qualification": {
+    "native_representative_full_mesh_quality_pass": true,
+    "representative_actual_flow_completed": true,
+    "steady_state_research_qualified": false,
+    "whole_valve_CFD_started": false,
+    "whole_valve_performance_qualified": false,
+    "manufacturing_release": false
+  },
+  "actual_selected_delivery": {
+    "rd_item": "F01 整阀流动：原生代表域方法对照",
+    "Drive_folder": "https://drive.google.com/drive/folders/1QVi17EhD50q2PyP0lCqo7e1H6lSBNyxj",
+    "files_count": 9,
+    "total_bytes": 244248322,
+    "products": [
+      {
+        "name": "00_先读_NSC1选定网格与末场说明.txt",
+        "id": "15vEnX9IZi5aHyztXqdksisdnFXmqdzpq",
+        "url": "https://drive.google.com/file/d/15vEnX9IZi5aHyztXqdksisdnFXmqdzpq/view?usp=drivesdk",
+        "size_bytes": 1254,
+        "sha256": "be34894fe4e89a99d1820f786783acb3b17c6670e7f74288c3e1d987ef170b46",
+        "remote_original_bytes_verified": true,
+        "owner_only": true
+      },
+      {
+        "name": "NSC1_ENGINEERING_FACTS.json",
+        "id": "1cqaILD0X1-tFlYBCSusOSoMWRcx5oBM9",
+        "url": "https://drive.google.com/file/d/1cqaILD0X1-tFlYBCSusOSoMWRcx5oBM9/view?usp=drivesdk",
+        "size_bytes": 19000,
+        "sha256": "ea5c2e690aea22e39ebd77c5fe0597be07982ae5bb06a0470cbe4ed2e60c0442",
+        "remote_original_bytes_verified": true,
+        "owner_only": true
+      },
+      {
+        "name": "NSC1_实际40至680压力通量趋势.csv",
+        "id": "1xv7cm7Z1uM8LXPwdJV44GWtJIDpdVTfR",
+        "url": "https://drive.google.com/file/d/1xv7cm7Z1uM8LXPwdJV44GWtJIDpdVTfR/view?usp=drivesdk",
+        "size_bytes": 5430,
+        "sha256": "84f65d4fd5a8cc1c53ac3c2127ba2d11362f107c64e9d5c9e84b9dca1cfcde53",
+        "remote_original_bytes_verified": true,
+        "owner_only": true
+      },
+      {
+        "name": "NSC1_DELIVERY_MANIFEST_A01.json",
+        "id": "1LF_22cgp6tdi_iPQXCA_h2qEZSR1nRR4",
+        "url": "https://drive.google.com/file/d/1LF_22cgp6tdi_iPQXCA_h2qEZSR1nRR4/view?usp=drivesdk",
+        "size_bytes": 4543,
+        "sha256": "453be9b561f59a517aabefdd7226ef38da9f30cd8f1db821445cf8b0c4f28326",
+        "remote_original_bytes_verified": true,
+        "owner_only": true
+      },
+      {
+        "name": "DN200_NSC1_A_选定原生网格与几何_20261012.zip",
+        "id": "1PinGCOvzdHrND4GycXW1QsoI1LrYJZBv",
+        "url": "https://drive.google.com/file/d/1PinGCOvzdHrND4GycXW1QsoI1LrYJZBv/view?usp=drivesdk",
+        "size_bytes": 51337333,
+        "sha256": "4bf5230cf592810a9faf3625ef8bc9231f78fa3d3c5b71770a7a5f5eef427a49",
+        "remote_original_bytes_verified": true,
+        "owner_only": true
+      },
+      {
+        "name": "DN200_NSC1_B_实际560_600压力通量_20261012.zip",
+        "id": "1P1CyqHjFAyfaRmVvXUnqNnKjTa_wIFOi",
+        "url": "https://drive.google.com/file/d/1P1CyqHjFAyfaRmVvXUnqNnKjTa_wIFOi/view?usp=drivesdk",
+        "size_bytes": 69787001,
+        "sha256": "e25f3e31ef2947e004072d788b9d15640bd4353da3fd540c041134639c281fb9",
+        "remote_original_bytes_verified": true,
+        "owner_only": true
+      },
+      {
+        "name": "DN200_NSC1_C_实际640完整场_20261012.zip",
+        "id": "1tzBeihg_FqkHEqH_1CxVU_Ve19gH95js",
+        "url": "https://drive.google.com/file/d/1tzBeihg_FqkHEqH_1CxVU_Ve19gH95js/view?usp=drivesdk",
+        "size_bytes": 61295932,
+        "sha256": "615c7f84092c112c9e6441f819033a250f6bef7d3076219ae5e5f0a0d919c8ff",
+        "remote_original_bytes_verified": true,
+        "owner_only": true
+      },
+      {
+        "name": "DN200_NSC1_D_实际680完整末场_20261012.zip",
+        "id": "1vGjY7i_savNCJxzmma3KzuhSvqp_yhBb",
+        "url": "https://drive.google.com/file/d/1vGjY7i_savNCJxzmma3KzuhSvqp_yhBb/view?usp=drivesdk",
+        "size_bytes": 61300041,
+        "sha256": "390c08e42aea8ceb8509f11eddab3f817d6470c8568360fe0bd306dbc60cd741",
+        "remote_original_bytes_verified": true,
+        "owner_only": true
+      },
+      {
+        "name": "DN200_原生网格与代表流场_NSC1_研究未整阀验收_20261012.pdf",
+        "id": "1mc3y0AAQhpK3kYXMDcVKg7S86ueEbksU",
+        "url": "https://drive.google.com/file/d/1mc3y0AAQhpK3kYXMDcVKg7S86ueEbksU/view?usp=drivesdk",
+        "size_bytes": 497788,
+        "sha256": "7dc2c7a2258a0eaf86d709a201a1af3aa2d388d23a8fe53ab1bb74304b450b60",
+        "remote_original_bytes_verified": true,
+        "owner_only": true
+      }
+    ],
+    "all_Drive_original_size_and_streamed_SHA_verified": true,
+    "folder_owner_only": true,
+    "four_independent_effective_ZIPs_not_binary_parts": true,
+    "four_native_Library_IDs": [
+      "libfile_fac6d629f3e08191b2932830cb0755cb",
+      "libfile_5a8a79b0ca5c81919f130a52b6a33ee4",
+      "libfile_390922c100748191b9ff6d99e724415a",
+      "libfile_5226077b85f08191aa3bef6a8a8de185"
+    ],
+    "native_ZIP_Library_download_rehash_claimed": false,
+    "PDF_Library_identity": {
+      "library_file_id": "libfile_224f6db8c67c8191a74d56d8dc42949b",
+      "engineering_original_size": 497788,
+      "engineering_original_sha256": "7dc2c7a2258a0eaf86d709a201a1af3aa2d388d23a8fe53ab1bb74304b450b60",
+      "library_size_bytes": 522755,
+      "library_sha256": "81a6f9d7129607da7c1756c3cd88e97c24a18d9bc0e57283e63c24d841b7381b",
+      "original_bytes_prefix_verified": true,
+      "readable_text_identical": true
+    }
+  },
+  "recovery_source": {
+    "library_file_id": "libfile_dd1581849e3c81919ed3a0bfd400bd7f",
+    "bytes": 204382967,
+    "sha256": "58f8c8510a3825b180a8b19995d0b6754e91b0d3b865052626e7a12e4a8a340b",
+    "byte_verified_files": 387,
+    "scientific_fresh_rebuild_claimed": false,
+    "Git_or_Drive_payload_imported": false
+  },
+  "next_whole_domain_entry": {
+    "plan_summary": "完整FDG1仍有132个有限面和长窄流道。此前容量研究的约97.3万背景格是粗估；P08当前拟284×48×77=1049664背景格，尚未生成；细化只放在真实有限特征与必要过渡带，不能把本次0.0125mm均匀网格铺满全阀。已有完整表面可优先复用，但多级snap与窄通路保持仍需实际核验。",
+    "counts_are_conditional_V_over_h3_not_actual_mesh_or_RAM_bounds": true,
+    "actual_whole_mesh_CFD_run_claimed": false,
+    "two_gap_layers_not_physical_resolution_qualification": true,
+    "no_physical_passage_or_wall_removed_for_capacity": true,
+    "P08_current_planned_background_dimensions": [
+      284,
+      48,
+      77
+    ],
+    "P08_current_planned_background_cells": 1049664,
+    "P08_background_generated": false
+  },
+  "source_pins": [
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P07_native_snappy_representative_A01/P07_SOURCE_AND_NATIVE_FINAL_ENTRY_A01.json",
+      "bytes": 1713,
+      "sha256": "42d68ac69d0f2d6ee8f4c000779c8517aa2eb92f4dddf024f543f4d665506aee"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P07_native_snappy_representative_A01/native_run_A01/output/ACTUAL_REPRESENTATIVE_NATIVE_MESH_RESULT_A01.json",
+      "bytes": 6991,
+      "sha256": "a2f2b687c6ba4ab580fd80c342e3006ca2dad2a984cd9adcf803989e912d3f77"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P07_native_snappy_representative_A01/P07_200_STEP_FLOW_FINAL_ENTRY_A01.json",
+      "bytes": 1857,
+      "sha256": "9f5edcda958cd56a0d12f0f9f61cba298fdd75a7bab4afd3894f7416d449e526"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P07_native_snappy_representative_A01/flow_execution_A01/run_A01/evidence/simpleFoam.receipt.json",
+      "bytes": 1070,
+      "sha256": "7c6107a0e749cf110d180376c6956db4aee658b6881f588684d3cd58baa4e44f"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P07_native_snappy_representative_A01/flow_execution_A01/run_A01/evidence/simpleFoam.log",
+      "bytes": 2232,
+      "sha256": "f1c649343f89512d01c40ec0a271df726c3ff5f0d57128d7c442f34e09caef49"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P07_native_snappy_representative_A01/flow_execution_A01/run_A01/evidence/simpleFoam.stderr.txt",
+      "bytes": 291,
+      "sha256": "fdfbe423d936d8c56c5fcdf4509b70405158a0c274e5b0868e7aed0962845287"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P07_native_snappy_representative_A01/flow_execution_A01/run_A01/evidence/FLOW_PIPELINE_FINAL_STATE.json",
+      "bytes": 2788,
+      "sha256": "ce4833cbe465cfdb6179222501ac72321ca4d93f90301451acc288f0507c58c0"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P07_native_snappy_representative_A01/flow_execution_A01/run_A02/evidence/simpleFoam.receipt.json",
+      "bytes": 1098,
+      "sha256": "750d786df006d986e1377fb6fb05a1ab361178c5bbce9ad303bb622b2e74bb59"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P07_native_snappy_representative_A01/NSC1_NATIVE_LIBRARY_IDENTITIES_A01.json",
+      "bytes": 1974,
+      "sha256": "5cbfc5e30692ab8960f895c1c724b3ae83beab14d36fc001406fa4784b3f7e1f"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P07_native_snappy_representative_A01/products/NSC1_ENGINEERING_FACTS.json",
+      "bytes": 19000,
+      "sha256": "ea5c2e690aea22e39ebd77c5fe0597be07982ae5bb06a0470cbe4ed2e60c0442"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P07_native_snappy_representative_A01/products/NSC1_DELIVERY_MANIFEST_A01.json",
+      "bytes": 4543,
+      "sha256": "453be9b561f59a517aabefdd7226ef38da9f30cd8f1db821445cf8b0c4f28326"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P07_native_snappy_representative_A01/products/SELECTED_NATIVE_RESULTS_PACKAGING_VERIFIED.json",
+      "bytes": 6260,
+      "sha256": "7b4e1db0f7f93aa1e47e36a34c65d7efdac675ca2aaf6e8f01450fccc75ccb41"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P07_native_snappy_representative_A01/products/DN200_原生网格与代表流场_NSC1_研究未整阀验收_20261012.pdf",
+      "bytes": 497788,
+      "sha256": "7dc2c7a2258a0eaf86d709a201a1af3aa2d388d23a8fe53ab1bb74304b450b60"
+    },
+    {
+      "path": "review_flow_P07_native_representative_mesh_A01/P07_NATIVE_BOUNDARY_RESOLUTION_INDEPENDENT_FINAL_ENTRY_A01.json",
+      "bytes": 2347,
+      "sha256": "426bc57481b0b95ff08fd347d0896124adf13f0ab4ba5fc7e21a3a3ba1082473"
+    },
+    {
+      "path": "review_flow_P07_laminar_actual_A01/P07_LAMINAR_ACTUAL_INDEPENDENT_FINAL_ENTRY_A01.json",
+      "bytes": 1377,
+      "sha256": "db8bb1b63c9d9f3223be5b1905895519c6b4d7ff1a6aa66be4f66c9a93cdba98"
+    },
+    {
+      "path": "review_flow_P07_continuation_actual_A01/P07_CONTINUATION_ACTUAL_INDEPENDENT_FINAL_ENTRY_A01.json",
+      "bytes": 4461,
+      "sha256": "6ba21aa8058e443877296729babe2a29d1a08ed3f644e1d90dd3303c7237131e"
+    },
+    {
+      "path": "review_flow_P07_whole_native_capacity_A02/FINITE_NATIVE_CAPACITY_STATIC_ENTRY_A02.json",
+      "bytes": 1394,
+      "sha256": "52f0a5fc1ca3d9e43a73cea569076c91bae10da23aff29ae0e5ffdccaf1f631e"
+    },
+    {
+      "path": "review_flow_P07_NSC1_product_facts_A01/NSC1_FACT_REVIEW_ENTRY_A01.json",
+      "bytes": 572,
+      "sha256": "ed24c2091a4e4814d1af113493c377a6e745d2297626ecd60dbf55f9efdabd15"
+    },
+    {
+      "path": "valve_drive_completion/NSC1_product_delivery_verified.json",
+      "bytes": 6677,
+      "sha256": "8d748fd084b8fbb2a3b1c1dd80caa1d38cca81dadd704883a3a6117cb18e4f22"
+    },
+    {
+      "path": "valve-source-increment-NSC1-20261012/A01/LIBRARY_IDENTITY_A01.json",
+      "bytes": 470,
+      "sha256": "0d0ff79852701150f93fa265fc1e6c9a94b8def30145482d179f8b47ce0a11a2"
+    }
+  ],
+  "frozen_R1_commit": "aa80b87b6ee9617754101a238f70bec99393ad9a",
+  "main_merge_claimed": false,
+  "source22_input_approval_boundary_unchanged": true
+}

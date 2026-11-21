@@ -1,0 +1,8 @@
+test_duplicate_port_rejected (test_source_adaptation.Test.test_duplicate_port_rejected) ... ok
+test_valid_scale_not_final_proof (test_source_adaptation.Test.test_valid_scale_not_final_proof) ... ok
+test_wrong_units (test_source_adaptation.Test.test_wrong_units) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK

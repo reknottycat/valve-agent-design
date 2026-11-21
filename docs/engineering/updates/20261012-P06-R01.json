@@ -1,0 +1,78 @@
+{
+  "schema": "valve.engineering_direction_update/v1",
+  "compiled_utc": "2026-10-12T03:11:38.105129+00:00",
+  "target_branch": "research/conformal-whole-flow-20261012",
+  "starting_actual_anchor": "3209972b74fc9325bc423619621aaf12f665f1f6",
+  "retrospective_backdated_commit": false,
+  "source_evidence": [
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_repair_R01_A02/R01_FINAL_ENTRY.json",
+      "bytes": 753,
+      "sha256": "661e907dfea044c0076c77e68c407f37e76240fe2ee0b304205913911b545c51"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_repair_R01_A02/R01_SOURCE_RECOVERY_MANIFEST.json",
+      "bytes": 17565,
+      "sha256": "40b2d99f7c36e8f2c7b49ff8458eca34afd6378ae9f035c29abe5cd393dbad42"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_repair_R01_A02/output/WHOLE_JOIN_RESULTS.json",
+      "bytes": 1293,
+      "sha256": "3ed64fb98014786ae99ec78de582b12927f1efbc76f7571b58c046a8e1da7e78"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R01_A01/evidence/checkMesh_actual_layer.log",
+      "bytes": 6402,
+      "sha256": "9a4ceb7849aa449a5f10685e7a0648888fc7b3802e190589b1b2f06d6223d6d0"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R01_A01/output/OPENFOAM_RESULTS.json",
+      "bytes": 5017,
+      "sha256": "1e2857f3e443bc3ac95f3e0ea9efc5de2189dbabde632fbab6e878eda90fd843"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R01_A01/evidence/OPENFOAM_CONVERT_CHECK_RECEIPTS.json",
+      "bytes": 3820,
+      "sha256": "85f0cd22b9f428ec5937478fe7c79e1ed2a61a7e58eef314e7733d34b6c23420"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_refinement_feasibility_D02/output/GUARDED_DISJOINT_SPARSE_PATCH_RECEIPT.json",
+      "bytes": 3185,
+      "sha256": "4ec0ca981f578281a7e17a89b895f4426fcb73541c47d551e3c0cffea289c430"
+    },
+    {
+      "path": "review_flow_P06_local_repair_R01/LOCAL_CAVITY_FINAL_ENTRY_A01.json",
+      "bytes": 594,
+      "sha256": "8be129ceb64e850446132ba402cb0c46166f9699996b6987cbbbd253a00ee56b"
+    },
+    {
+      "path": "valve-design-integration-20261011/flow_baseline_A01/whole_patch_binding_A01/FINAL_ENTRY_A01.json",
+      "bytes": 1251,
+      "sha256": "ff0548d29dec6b6c17e67f197bf44af70bde895c4b0619cbe84584186ff20075"
+    }
+  ],
+  "source_payload_imported": false,
+  "native_full_quality_pass": false,
+  "CFD_started": false,
+  "whole_valve_qualified": false,
+  "manufacturing_release": false,
+  "before_after": {
+    "determinant": [
+      19473,
+      18261
+    ],
+    "low_weight": [
+      4147,
+      3887
+    ],
+    "low_volume_ratio": [
+      8,
+      8
+    ],
+    "severe_nonorthogonal_warnings": [
+      276977,
+      278261
+    ]
+  },
+  "scope": "Actual conservative sparse whole-mesh repair and unchanged native full quality checks; actual independent patch audit pending; no CFD."
+}

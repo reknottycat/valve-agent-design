@@ -1,0 +1,70 @@
+{
+  "trial.py": {
+    "bytes": 5373,
+    "sha256": "1e91ccdaff23b42bc084fa2fc05d6407728fc851bfe57a1ffc6767ba388f5a83"
+  },
+  "monitor.py": {
+    "bytes": 1290,
+    "sha256": "73ca601273a464ab2216a4453a204534d336c90222c5440a1b4ee620f4e2eb49"
+  },
+  "README.md": {
+    "bytes": 2750,
+    "sha256": "6f98c5786b0cc83aa44c944677820d8ee8b964101e8b4913ad13c13efc08a427"
+  },
+  "volume-readback.log": {
+    "bytes": 938,
+    "sha256": "f5478b70f08e5cd448e17f0feb66631e4f9a60b282545ac5a5e41fc3e612bdb0"
+  },
+  "verify.py": {
+    "bytes": 3296,
+    "sha256": "1a476899fc82beef242ddabc1d3db38fd1854a546b0d8e448f2a916d4580c636"
+  },
+  "check_volume.py": {
+    "bytes": 2167,
+    "sha256": "40f4def00ccbd71fe126299be5d9b0745fcb01e3bd0187d79d51229a540d879b"
+  },
+  "verification.log": {
+    "bytes": 5716,
+    "sha256": "0745eba244817cd4e18218264e1a324b0615415ee685d48e64604a7b7f5ba7ec"
+  },
+  "fresh-local-surface.msh": {
+    "bytes": 18018338,
+    "sha256": "904ef11aff65088f83cafb8f4dcd28f4c44c68ad72ce164ca47d3de5c9e31df8"
+  },
+  "evidence/result.json": {
+    "bytes": 29033,
+    "sha256": "694c9d1f59a7bf899df5b7083c15a4107ae49ace8ea2bcd91a0bd636821bc3e8"
+  },
+  "evidence/volume-receipt.json": {
+    "bytes": 196,
+    "sha256": "57c2052eb660eee23aa0d2c94156f5e493788ce27eeb12a5c434470f81e9abd8"
+  },
+  "evidence/role-map-verification.json": {
+    "bytes": 771,
+    "sha256": "829488c55122b6889e0beb5c6e02984751edb697abc5aed6d2de7b82d36ba15d"
+  },
+  "evidence/volume-readback.json": {
+    "bytes": 11453,
+    "sha256": "2b5a514cc5ef828337782c7d05cc81c400f7c1eb65fdc60006031de43d58cde4"
+  },
+  "evidence/verification.json": {
+    "bytes": 20807,
+    "sha256": "2aa783da213cb16af79cf1399f7c884deb0cd77185432b13905b907012812593"
+  },
+  "evidence/retainer-boundary-audit.json": {
+    "bytes": 776,
+    "sha256": "caa8dc56c9405832d862f730a79cbf80c14435b1bc8da6e1583e74e05d4ddde3"
+  },
+  "evidence/complete-boundary-audit.json": {
+    "bytes": 1099,
+    "sha256": "11990ee3d6625a589432e0fc5d35fc60e5f147b7d315a2157d770f321a7af2be"
+  },
+  "evidence/volume.log": {
+    "bytes": 27429,
+    "sha256": "e253ea04e2eaedfd4205decd5d56031dd5d06a365b5205007a4c60f611b98d47"
+  },
+  "evidence/geometry.json": {
+    "bytes": 51446,
+    "sha256": "b8affaf81680968eb76a74524420d02fd1ca2229532ec6faa547d910a05af1fc"
+  }
+}

@@ -1,0 +1,6 @@
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 8' (3D)
+Traceback (most recent call last):
+  File "/workspace/shared/valve-gmsh-trial-20261023/trial.py", line 30, in <module>
+    assert len(candidates)==1,(tag,bbox,area,len(candidates))
+           ^^^^^^^^^^^^^^^^^^
+AssertionError: (1, (405.0, -99.99999632863634, -99.96700102691392, 585.0, 100.0, 160.54054051486), 106080.4020184881, 0)

@@ -1,0 +1,1 @@
+Concatenate four parts in numeric order, verify per-part and full byte counts/SHA256 in parts.json, then extract. This final supplement establishes that the limited0.5 run is NOT verified converged. It supplements the immutable corrected/limited archives and preserves exact residual reconstruction limitations. It is not physical valve CFD or engineering acceptance.

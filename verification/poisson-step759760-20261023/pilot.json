@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/workspace/shared/valve-openfoam-quality-20261023/root/usr/bin/laplacianFoam",
+    "-case",
+    "/workspace/shared/valve-poisson-step759760-20261023/step-limited05",
+    "-debug-switch",
+    "limited=1"
+  ],
+  "cwd": "/workspace/shared/valve-poisson-step759760-20261023/step-limited05",
+  "seconds": 113.94227373799367,
+  "peak_solver_rss": 539140096,
+  "peak_total_rss": 1032736768,
+  "stop_reason": null,
+  "exit_code": 0,
+  "history_count": 30
+}

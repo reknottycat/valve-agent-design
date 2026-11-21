@@ -1,0 +1,13 @@
+{
+  "archive": "step-grading-surface.zip",
+  "bytes": 5182795,
+  "sha256": "df9855a2e9ad3a84fa81a08e274bbb125299ec7579b806b690a605552df3168e",
+  "parts": [
+    {
+      "file": "step-grading-surface.zip.part001",
+      "bytes": 5182795,
+      "sha256": "df9855a2e9ad3a84fa81a08e274bbb125299ec7579b806b690a605552df3168e"
+    }
+  ],
+  "reassembly_verified": true
+}

@@ -1,0 +1,6 @@
+﻿item,name,quantity,STEP,material_status,manufacturing_status
+1,修改盘及导筒,1,disc_AGR1.step,待产品状态/50°C性能/配副确定,研究实体；连接/公差/工艺未批准
+2,固定键套及定位凸台,1,cage_AGR1.step,待产品状态/50°C性能/配副确定,研究实体；连接/公差/工艺未批准
+3,修改阀盖,1,cover_AGR1.step,待产品状态/50°C性能/配副确定,研究实体；连接/公差/工艺未批准
+4,4处紧固件包络,4,mount_fastener_envelopes.step,待产品状态/50°C性能/配副确定,研究实体；连接/公差/工艺未批准
+

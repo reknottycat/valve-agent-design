@@ -1,0 +1,1 @@
+Concatenate parts in numeric order. Verify each part and complete archive byte count and SHA256 in parts.json before extracting. Byte-split ZIP files are not independently extractable. Native result remains Failed3 with mixed metrics: weight/ratio improve while low determinant count increases. No physical flow or engineering acceptance.

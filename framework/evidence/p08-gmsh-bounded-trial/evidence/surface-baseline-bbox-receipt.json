@@ -1,0 +1,8 @@
+{
+  "stage": "surface",
+  "returncode": 1,
+  "stop_reason": null,
+  "elapsed_s": 0.30117497500032187,
+  "sampled_peak_rss_bytes": 67715072,
+  "limits_are_cost_controls_not_quality_criteria": true
+}

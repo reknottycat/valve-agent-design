@@ -1,0 +1,47 @@
+{
+  "schema": "valve.engineering_direction_update/v1",
+  "compiled_utc": "2026-10-12T01:26:51.590223+00:00",
+  "target_branch": "research/conformal-whole-flow-20261012",
+  "starting_actual_anchor": "e92eee225755d12861930f5157ccebcf083b76cb",
+  "retrospective_backdated_commit": false,
+  "source_evidence": [
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P05_T01_A08/evidence/actual-source-lower-turn-fixed-tri-tet-generation-receipt.json",
+      "bytes": 1374,
+      "sha256": "b9ac4afcd8b7d8306cb55ef65d7697654dba13151b362c45f219318a64da1e2b"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P05_T01_A09/evidence/actual-source-lower-turn-fixed-tri-tet-generation-receipt.json",
+      "bytes": 1375,
+      "sha256": "ec312e9050a90f04597e23d63d808fa30df99dcacad4a6135a7dfba667a7bf7e"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P05_B01_A01/output/MESH_RESULTS.json",
+      "bytes": 2828,
+      "sha256": "eb1d08623e02767633e98e31a542cdb3b97de0e7852ffc9436e2e421499d36f4"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P05_B01_A01/output/OPENFOAM_RESULTS.json",
+      "bytes": 3688,
+      "sha256": "893506f83133abc57d09ad08e28769453a3b5a9a1d49efe2429fda8c40aca880"
+    },
+    {
+      "path": "review_flow_P05_failures/output/INDEPENDENT_NATIVE_FAILURE_CLASSIFICATION.json",
+      "bytes": 7699371,
+      "sha256": "c8264c3f6ebd61b6ccae5685a6f421c52f69e652ba54244f1804951e03863616"
+    },
+    {
+      "path": "review_flow_P05_failures/output/LOW_WEIGHT_15_EXACT_WITNESSES.json",
+      "bytes": 27760,
+      "sha256": "d8d9614820003bffd725c1709cdb97348435c22428a518a661d56b6522f95dfc"
+    },
+    {
+      "path": "valve-design-integration-20261011/flow_baseline_A01/FLOW_BASELINE_FINAL_ENTRY_A01.json",
+      "bytes": 1861,
+      "sha256": "fd2d572aaaa4ec4f2df0b23d73d76b875aff4660637b11188f80b3b37771fb49"
+    }
+  ],
+  "source_payload_imported": false,
+  "whole_valve_qualified": false,
+  "manufacturing_release": false
+}

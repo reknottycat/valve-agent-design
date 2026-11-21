@@ -1,0 +1,33 @@
+{
+  "archive": "local-volume-grading-native-quality.zip",
+  "bytes": 35812306,
+  "sha256": "b5d143dfd98c216c0235218da488f6017de2df2e915f9d9781724a4fd63c44c0",
+  "parts": [
+    {
+      "name": "local-volume-grading-native-quality.zip.part01",
+      "bytes": 8000000,
+      "sha256": "248ad490f693cd83f2f4cab20a98d2ebb3e262b7b042145287776f0eadbfb6d8"
+    },
+    {
+      "name": "local-volume-grading-native-quality.zip.part02",
+      "bytes": 8000000,
+      "sha256": "e87475e67af2929c522d179c8abfca6244d715af8e0c9ba807ed1514edb1a7fa"
+    },
+    {
+      "name": "local-volume-grading-native-quality.zip.part03",
+      "bytes": 8000000,
+      "sha256": "89214c2d6ccec1434a3a65da82476a75312ac3881779e67460c4d29242fe1991"
+    },
+    {
+      "name": "local-volume-grading-native-quality.zip.part04",
+      "bytes": 8000000,
+      "sha256": "d4117047e83d14ec1ccceccc2314dffbcc3ea51a59b33b008582d35dd2847bf1"
+    },
+    {
+      "name": "local-volume-grading-native-quality.zip.part05",
+      "bytes": 3812306,
+      "sha256": "acf85381299efa3472ca60a18cc49a31fa1889df171e2169e55b6da10c656472"
+    }
+  ],
+  "status": "Native Failed4 persists despite substantial improvement. No solver."
+}

@@ -1,0 +1,247 @@
+{
+  "schema": "valve.actual_corner_serialization_and_neighborhood_rejection/v1",
+  "recorded_utc": "2026-10-12T08:09:30.223502+00:00",
+  "branch": "research/step-directed-layer-20261012",
+  "base_commit": "971f2e5be848963fcbae26af84151be3ae5befb1",
+  "source_root_paths": "All source pins are relative to restored source-root. Commands are run from that root. Git contains logs and hash metadata only.",
+  "prior_P03_review_now_closed": {
+    "saved_geometry_and_serialization_pass": true,
+    "actual_paired_quality_rejection_independently_confirmed": true,
+    "changed_det_before_after": [
+      377,
+      498
+    ],
+    "changed_weight_before_after": [
+      96,
+      133
+    ],
+    "changed_ratio_before_after": [
+      1,
+      14
+    ]
+  },
+  "current_whole_reference": {
+    "version": "R03",
+    "cells": 6939074,
+    "status": "Failed3",
+    "det": 14281,
+    "weight": 3881,
+    "ratio": 2,
+    "candidate_applied": false,
+    "CFD_started": false
+  },
+  "actual_P04_source": {
+    "original_R03_rest_cell": 2721207,
+    "original_native_cell": 6753735,
+    "true_FDG_walls": [
+      36,
+      41
+    ],
+    "CAD_faces": [
+      9,
+      19
+    ],
+    "original_fixed_nonwall_faces": 2,
+    "original_outside_R03_rest_cells": [
+      2726595,
+      2721490
+    ],
+    "source_rank_coverage": 1,
+    "prisms": 8,
+    "pyramids": 10,
+    "actual_native_transition_tets": 74,
+    "saved_mixed_cells": 92,
+    "MSH_points": 33,
+    "PWL_volume_difference_mm3": 9.538982690904265e-11,
+    "wall_area_difference_mm2": 1.0262221299844367e-08,
+    "analytic_CAD_changed": false,
+    "PWL_boundary_changed": true,
+    "finite_CAD_identity_scope": "Inherited original finite FDG/CAD identity plus directly read source boundary. No new full trimmed-CAD proof is claimed."
+  },
+  "A01_format_defect": {
+    "all_ten_pyramids_canonical_node_order_mirrored": true,
+    "geometric_auto_outward_volume_had_hidden_standard_connectivity_defect": true,
+    "actual_native_failed_checks": 9,
+    "not_a_valid_physical_quality_comparison": true,
+    "fixed_by": "Reverse only the four base-node order of each pyramid; preserve all points, cells as vertex sets, shells, source tets and geometry. No mesher rerun.",
+    "canonical_face_validation_added_to_new_writer_and_neighborhood_builder": true,
+    "original_failed_records_preserved": true
+  },
+  "A02_valid_actual_comparison": {
+    "baseline_total_cells": 3,
+    "candidate_total_cells": 94,
+    "changed_cells_before_after": [
+      1,
+      92
+    ],
+    "exact_original_outside_cells": 2,
+    "native_allGeometry_allTopology_executed": true,
+    "baseline_raw_failed_checks": 1,
+    "candidate_raw_failed_checks": 3,
+    "open_negative_or_wrong_oriented_cells_after_fix": false,
+    "all_raw_points_once_mm_to_m_and_full_face_cycles_and_cell_identities_independently_verified": true,
+    "both_original_interfaces_internal_and_true_neighbors_verified": true,
+    "changed_det_before_after": [
+      1,
+      25
+    ],
+    "changed_weight_before_after": [
+      0,
+      18
+    ],
+    "changed_ratio_before_after": [
+      0,
+      3
+    ],
+    "same_exact_outside_bad_det_ids": 2,
+    "core18_bad_det": 0,
+    "transition74_bad_det": 25,
+    "transition_bad_det_with_at_least_three_internal_faces": 25,
+    "weight_by_location": {
+      "core_to_transition": 2,
+      "transition_internal": 15,
+      "original_fixed_interface": 1
+    },
+    "ratio_by_location": {
+      "core_to_transition": 0,
+      "transition_internal": 2,
+      "original_fixed_interface": 1
+    },
+    "fixed_failure_native_face": 176,
+    "fixed_failure_original_global_triangle": [
+      2137411,
+      2174132,
+      2171840
+    ],
+    "fixed_failure_original_outside_rest": 2721490,
+    "max_aspect": 49.557511936873006,
+    "min_volume_m3": 6.213470370665065e-20,
+    "min_weight": 0.006385455191067619,
+    "min_volume_ratio": 0.006426491261085606
+  },
+  "decision": "REJECT_SINGLE_CELL_MICRO_LAYER_FAMILY_KEEP_WHOLE_R03",
+  "why": "The wall-angle core removes the original topological rank deficiency, but its transition creates 25 determinant failures with at least three internal faces and worsens the original interface. Core success alone is insufficient.",
+  "selected_next": "Use a bounded complete wall-edge source star with continuous seam coverage and a transition on a usable length scale. The all93 union inventory contains414 original cells, but the first actual four-point-star candidate contains30 source cells and is only a subset; its z22 cut needs actual original neighbor closure before any generation. No next-candidate quality result is claimed.",
+  "source_recovery": {
+    "library_file_id": "libfile_752c04c157b8819192e319b1f711cb25",
+    "bytes": 749141,
+    "sha256": "8ea843750d18fbd9583cc47850517463a2a7aa92eb0ed4ae674ccd5a3eabf335",
+    "source_files": 254,
+    "fresh_directory_byte_restore_verified": true,
+    "scientific_rebuild": false,
+    "remote_download_hash_claimed": false
+  },
+  "source_pins": [
+    {
+      "path": "review_flow_P06_step_actual_mixed_A03/ACTUAL_MIXED_SOURCE_FINAL_ENTRY_A01.json",
+      "bytes": 896,
+      "sha256": "d952108b58276c846a37590ed9f66221676e8cb9bd3b039135447c9fcc49e66c"
+    },
+    {
+      "path": "review_flow_P06_step_actual_mixed_N02/N02_INDEPENDENT_REJECTION_FINAL_ENTRY_A01.json",
+      "bytes": 1514,
+      "sha256": "59ba4e941ed1b67094230933e9f90cd119ef93af964eb4a60882ac43c90ded95"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_step_corner_layer_P04/scripts/build_actual_corner_patch.py",
+      "bytes": 18670,
+      "sha256": "fb72c659982f4ed888c2bd69fcf65139a394690d21e6677be9dcc8dfb75d95d2"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_step_corner_layer_P04/output/ACTUAL_CORNER_CORE_AND_CLOSED_TRANSITION_INPUT.npz",
+      "bytes": 97377,
+      "sha256": "a7a7ca7563ecdd37332093adcee686c3a1a451dd73dd59d1f186d7c05ebbfb33"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_step_corner_layer_P04/output/ACTUAL_CORNER_LAYER_SOURCE_RESULT.json",
+      "bytes": 8607,
+      "sha256": "8ad892f14c8f5a250263a6dff86d3b053cbc2a8db580f5474a5d56d6056bf7e8"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_step_corner_layer_P04/output/actual_transition_T01/GENERATED_MSH_RECEIPT.json",
+      "bytes": 384,
+      "sha256": "eb32a51355c97e9ed18de4d0303e3d120beaa4182e6b312cbaaac54cb6e3e647"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_step_corner_layer_P04/output/actual_transition_T01/actual_fixed_triangle_transition_3D_mm.msh",
+      "bytes": 4479,
+      "sha256": "f8a2c711df160b3cdf9fa83b960db79e12f5573c82c9c3f267f58ebc8054a8fc"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_step_corner_layer_P04/output/actual_combined_A01/ACTUAL_COMBINED_CONNECTION_RESULT.json",
+      "bytes": 1159,
+      "sha256": "fb53210204e183289ba287f432cb36d7b1bfb6373b1a108f9759304e038a3fe0"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_step_corner_layer_P04/output/actual_combined_A02/ACTUAL_COMBINED_CONNECTION_RESULT.json",
+      "bytes": 1159,
+      "sha256": "e6ba48eac9f5c8789ed7833aa116a5621bb890a6ef414a52dca3dc1c9649c236"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_step_corner_layer_P04/output/actual_combined_A02/actual_R03_cavity_prism_pyramid_tet_connected_mm.msh",
+      "bytes": 5066,
+      "sha256": "caa4eda9401aab62ba6303d4d4e1d5493a278523ea0f2ca894ecf53f78b74ff1"
+    },
+    {
+      "path": "review_flow_P06_corner_neighborhood_native_N03/ACTUAL_A01_CANONICAL_ORIENTATION_DEFECT.json",
+      "bytes": 15888,
+      "sha256": "acfebd90fdc2a54a881b5957226abef8b03262ea87b58dc6f69122c0131b392b"
+    },
+    {
+      "path": "review_flow_P06_connected_neighborhood_native_N02/build_context_canonical_A02.py",
+      "bytes": 7001,
+      "sha256": "c432922400da2c31f416576febb030303aeccebbb12ea9470761300bc8742ec0"
+    },
+    {
+      "path": "review_flow_P06_corner_neighborhood_native_N03/run_A01/PAIRED_ACTUAL_CONTEXT_RESULTS.json",
+      "bytes": 5755,
+      "sha256": "30d270cd14d7889b5562b39c8cdedf001db34b18ac0731dff6d6eeb220307c61"
+    },
+    {
+      "path": "review_flow_P06_corner_neighborhood_native_N03/run_A02/PAIRED_ACTUAL_CONTEXT_RESULTS.json",
+      "bytes": 4009,
+      "sha256": "d037821a2f5e4ecaf0b86aa21a389ade99eb7df3fdbee2029afcd31533cb2673"
+    },
+    {
+      "path": "review_flow_P06_corner_neighborhood_native_N03/run_A02/baseline/evidence/check.log",
+      "bytes": 5397,
+      "sha256": "33345db7e530da041157f5fcf6a98ec2779d8f6a39f2506a6651f8d865f37331"
+    },
+    {
+      "path": "review_flow_P06_corner_neighborhood_native_N03/run_A02/candidate/evidence/check.log",
+      "bytes": 5604,
+      "sha256": "b52ecf18acdfe62d9be78273dcba06ff27142f26d128133b00ea2ff3d5d4f0a7"
+    },
+    {
+      "path": "review_flow_P06_corner_neighborhood_native_N03/A02_CORE_TRANSITION_AND_INTERFACE_CLASSIFICATION.json",
+      "bytes": 11061,
+      "sha256": "16bb08f978f3bf5b7c840a704dff3cee93f01143709bf4041480be1c7da86c7c"
+    },
+    {
+      "path": "review_flow_P06_corner_neighborhood_native_N03/A02_BAD_DET_NONWALL_FACE_COUNTS.json",
+      "bytes": 4316,
+      "sha256": "5a8e579208d5f0dddc8a003df8c556d0e85d8866f155c1894aa1d57b8e6a344b"
+    },
+    {
+      "path": "review_flow_P06_corner_neighborhood_native_N03/classify_core_transition.py",
+      "bytes": 4019,
+      "sha256": "b87553b715b55019803b8089e768f8b5a12b67dcb685bed2055d11b0b11cc232"
+    },
+    {
+      "path": "review_flow_P06_corner_actual_N03_A02/P04_N03_A02_INDEPENDENT_REJECTION_FINAL_ENTRY_A01.json",
+      "bytes": 2485,
+      "sha256": "e5edc007ae867ec234038429f022dca166b78fecb3802fef8389842bf118581e"
+    },
+    {
+      "path": "review_flow_P06_corner_actual_N03_A02/output/ACTUAL_P04_A02_SOURCE_SERIALIZATION_AND_N03_REJECTION_A01.json",
+      "bytes": 32457,
+      "sha256": "2ca7356ac1dc4c303c3c2a4901c6e4853e786f70de8cd8a089db41ed036b893a"
+    },
+    {
+      "path": "valve-source-increment-P06-CORNER-N03-20261012/A01/LIBRARY_IDENTITY_A01.json",
+      "bytes": 409,
+      "sha256": "4d05c3ab0da403c6ff3ce712d96b5e442389d488f73e00bc6b4229b407520c38"
+    }
+  ],
+  "whole_or_manufacturing_qualified": false
+}

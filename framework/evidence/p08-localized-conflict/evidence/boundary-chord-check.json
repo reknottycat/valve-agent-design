@@ -1,0 +1,122 @@
+[
+  {
+    "face": 64,
+    "curve": 161,
+    "line_elements": 12,
+    "max_cylindrical_chord_sag_mm": 1.0903735588947718
+  },
+  {
+    "face": 64,
+    "curve": 165,
+    "line_elements": 12,
+    "max_cylindrical_chord_sag_mm": 1.0903735588671637
+  },
+  {
+    "face": 64,
+    "curve": 166,
+    "line_elements": 7,
+    "max_cylindrical_chord_sag_mm": 0
+  },
+  {
+    "face": 64,
+    "curve": 167,
+    "line_elements": 1,
+    "max_cylindrical_chord_sag_mm": 0.14093535590576423
+  },
+  {
+    "face": 64,
+    "curve": 168,
+    "line_elements": 7,
+    "max_cylindrical_chord_sag_mm": 0
+  },
+  {
+    "face": 64,
+    "curve": 169,
+    "line_elements": 1,
+    "max_cylindrical_chord_sag_mm": 0.140935355874106
+  },
+  {
+    "face": 64,
+    "curve": 170,
+    "line_elements": 7,
+    "max_cylindrical_chord_sag_mm": 0
+  },
+  {
+    "face": 64,
+    "curve": 171,
+    "line_elements": 1,
+    "max_cylindrical_chord_sag_mm": 0.14093535583097605
+  },
+  {
+    "face": 64,
+    "curve": 172,
+    "line_elements": 7,
+    "max_cylindrical_chord_sag_mm": 0
+  },
+  {
+    "face": 64,
+    "curve": 173,
+    "line_elements": 1,
+    "max_cylindrical_chord_sag_mm": 0.14093535587906558
+  },
+  {
+    "face": 108,
+    "curve": 253,
+    "line_elements": 3,
+    "max_cylindrical_chord_sag_mm": 0.9224702882360063
+  },
+  {
+    "face": 108,
+    "curve": 254,
+    "line_elements": 3,
+    "max_cylindrical_chord_sag_mm": 0.9224702882849058
+  },
+  {
+    "face": 108,
+    "curve": 258,
+    "line_elements": 6,
+    "max_cylindrical_chord_sag_mm": 0.9224702882997384
+  },
+  {
+    "face": 108,
+    "curve": 261,
+    "line_elements": 9,
+    "max_cylindrical_chord_sag_mm": 0
+  },
+  {
+    "face": 108,
+    "curve": 264,
+    "line_elements": 12,
+    "max_cylindrical_chord_sag_mm": 1.0562993851941584
+  },
+  {
+    "face": 108,
+    "curve": 266,
+    "line_elements": 7,
+    "max_cylindrical_chord_sag_mm": 0.008143851426538617
+  },
+  {
+    "face": 108,
+    "curve": 267,
+    "line_elements": 8,
+    "max_cylindrical_chord_sag_mm": 0
+  },
+  {
+    "face": 108,
+    "curve": 268,
+    "line_elements": 9,
+    "max_cylindrical_chord_sag_mm": 0
+  },
+  {
+    "face": 108,
+    "curve": 269,
+    "line_elements": 7,
+    "max_cylindrical_chord_sag_mm": 0.008143855351555374
+  },
+  {
+    "face": 108,
+    "curve": 270,
+    "line_elements": 8,
+    "max_cylindrical_chord_sag_mm": 0
+  }
+]

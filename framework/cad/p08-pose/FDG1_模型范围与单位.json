@@ -1,0 +1,36 @@
+{
+  "schema": "valve.same_source_fluid_geometry/FDG1",
+  "source_manifest": "source/SOURCE_MANIFEST.json",
+  "pose": {
+    "disc_lift_mm": 57,
+    "stem_retraction_mm": 57,
+    "shoe_retainer_translation_mm": 57,
+    "disc_rotation_deg": 0
+  },
+  "pipe_extensions_each_dn": 3,
+  "pipe_extension_identity": "Inherited C2 study choice, not demonstrated entrance-length independence",
+  "body_top_mm": 210,
+  "cover_bottom_mm": 212,
+  "gasket_ring_ID_mm": 290,
+  "gasket_nominal_uncompressed_thickness_mm": 2,
+  "packing_cap_z_mm": 332.0,
+  "packing_cap_source": "GA1_A05_PARAMETERS.json packing_bottom; original C2 z330 was translated by2mm",
+  "rubber_geometry": "OMITTED: actual open retained-ring shape unknown; not a certified or leakage-domain geometry",
+  "microcavity_policy": "Subtract exact included solids within inherited primary cavity; blind hole/fit cavities beyond that cavity are not reconstructed. Connected components are reported separately, never silently deleted.",
+  "no_cage_control_identity": "Same disc/pose/cover, only cage omitted to isolate geometric obstruction; not an operable design candidate",
+  "STL_tessellation_request": {
+    "absolute_deflection_m": 2e-05,
+    "angular_tolerance_rad": 0.08,
+    "relative": false,
+    "mesh_quality_or_gap_resolution_verified": false
+  },
+  "export_units": {
+    "STEP": "ISO10303 file declares millimetres; original geometry coordinates preserved",
+    "STL": "No embedded unit in STL. Vertex coordinates explicitly in metres via0.001 scale; mesher must interpret them as m"
+  },
+  "CFD_boundary_conditions": null,
+  "CFD_run_started": false,
+  "pressure_velocity_field": null,
+  "R1_modified": false,
+  "manufacturing_release": false
+}

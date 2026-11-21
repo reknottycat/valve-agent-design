@@ -1,0 +1,8 @@
+test_p08_printed_count_not_checkpoint (test_audit.Test.test_p08_printed_count_not_checkpoint) ... ok
+test_r04_result_preserved_but_not_accepted (test_audit.Test.test_r04_result_preserved_but_not_accepted) ... ok
+test_stop_not_allocator_or_solver_failure (test_audit.Test.test_stop_not_allocator_or_solver_failure) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK

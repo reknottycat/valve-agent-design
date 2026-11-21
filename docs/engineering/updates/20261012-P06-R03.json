@@ -1,0 +1,536 @@
+{
+  "schema": "valve.worklog_P06_R03/v1",
+  "recorded_utc": "2026-10-12T06:21:13.917091+00:00",
+  "branch": "research/whole-flow-local-repair-20261012",
+  "base_commit": "a689e9917a3cd6b3626f13b9f0e024b5d8519ca1",
+  "source_pins": [
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_repair_R03_A01/evidence/ACTUAL_GENERATION_RECEIPT.json",
+      "bytes": 8347,
+      "sha256": "fd5db0f4a52b1ae111283687d133b6734221f77b458f8c09846b10bf288104b2"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_repair_R03_A01/evidence/OWNER_EXECUTION_START.json",
+      "bytes": 973,
+      "sha256": "0198321f8f430f0627a863b84f7cc8ecf05691e9b90509222f9a65e4d6d9966d"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_repair_R03_A01/R03_RECOVERY_SOURCE_MANIFEST.json",
+      "bytes": 14115,
+      "sha256": "5e3b3735a6d138d74c057fa5e1cce83fc62c6c74dfe4d51ca8b167d2e70896bc"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_repair_R03_A01/R03_RECOVERY_FINAL_ENTRY.json",
+      "bytes": 843,
+      "sha256": "25c05836e04808e6a29aaa2cdb3084ac3010f7d64cca32464b60646ef8c95d88"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R03_A01/R03_NATIVE_FINAL_ENTRY.json",
+      "bytes": 7566,
+      "sha256": "ba9a37fd43f9bbf195555b524b7f90daee3fd7be0d94411d998056ff80c230b5"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R03_A01/evidence/checkMesh_allGeometry_allTopology.log",
+      "bytes": 6020,
+      "sha256": "caf18c9ebe71b7b46d2674a982b97618f5575be7a0a89bc1eca6112f72c25a34"
+    },
+    {
+      "path": "review_flow_P06_outlet_CAD_midpoint_D01/output/LOCAL_EXACT_CAD_SUPPORT_AND_PWL_GEOMETRY_A01.json",
+      "bytes": 3259,
+      "sha256": "4ff69d1a28c970254772f5a0a3ac98b3b9bc4eae23da344268d089e7f360640d"
+    },
+    {
+      "path": "review_flow_P06_Torus_seam_D01/output/SELECTED_TORUS_SEAM_EXACT_SPARSE_PRECHECK_A01.json",
+      "bytes": 6899,
+      "sha256": "c44220711adc84306e5b2eb938b056b2bfbc8bd7441ef337160dc1197299b1c2"
+    },
+    {
+      "path": "review_flow_P06_R03_local_actual_G01/scripts/audit_actual_R03_lineage.py",
+      "bytes": 12511,
+      "sha256": "1f935a89967580ce75997badf8a988dde5c8e5f07fca1fd927e3635e5ef2cfc9"
+    },
+    {
+      "path": "review_flow_P06_R03_local_actual_G01/evidence/actual-R03-stdout.log",
+      "bytes": 3646,
+      "sha256": "0be82270bf6c9a3434ea92301a82e9224903ff17ee40992cda08020bbe8e920c"
+    },
+    {
+      "path": "review_flow_P06_R03_local_actual_G01/output/ACTUAL_R03_SOURCE_AND_NATIVE_BADSET_IDENTITY_A01.json",
+      "bytes": 4470,
+      "sha256": "46c81df1eeff54b57b8bda110e0ea5bedf5862a3e75bae64f522bd2974277c17"
+    },
+    {
+      "path": "review_flow_P06_R03_local_actual_G01/evidence/FIRST_ADAPTER_FAILURE_A01.json",
+      "bytes": 388,
+      "sha256": "76dda3ac608b5e3034314bfdc34950b2b5361f2f4b06d93e9e6dc3529a73b050"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_ratio_step_freepoint_D03/source_precheck/FIXED_WALL_FREE_APEX_SOURCE_RESULTS.json",
+      "bytes": 1743,
+      "sha256": "a4887462b8523ccdd2d561da47952e0417b8bb7df6368fcd4ba2c0ed7be5e0f6"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_step_CAD_support_D04/ORIGINAL_FINITE_SHORT_STEP_EDGE_SUPPORT.json",
+      "bytes": 5840,
+      "sha256": "efcb0a6c98bc57879c120e1a39db9ba874d8f45b85dd7d1fbf77338b5bf56e18"
+    },
+    {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_step_edge_collapse_D05/source_precheck/TRUE_CAD_SHORT_EDGE_COLLAPSE_SOURCE_RESULTS.json",
+      "bytes": 16944,
+      "sha256": "c0d2fb9d0a5fe13987439eef3ca4383f8fcc8fb3088d07a120ef0d4f712ef9e2"
+    },
+    {
+      "path": "valve-source-increment-P06-R03-20261012/LIBRARY_IDENTITY_A01.json",
+      "bytes": 770,
+      "sha256": "38bd67fdc21833412634013d75351c81308fbe25cf21e397dedabb941842468d"
+    },
+    {
+      "path": "valve-source-increment-P06-R03-20261012/FRESH_BYTE_RECOVERY_VERIFIED_A01.json",
+      "bytes": 416,
+      "sha256": "5e90efbb994f8c537d42651e9c64504bd8373d23dc56e5521dfae5bad4fff4f4"
+    },
+    {
+      "path": "valve-source-increment-P06-R02-20261012/LIBRARY_IDENTITY_A01.json",
+      "bytes": 834,
+      "sha256": "5125b7061b2c6d89e42c9a2c9b17a95572f1b8d796b048805d84a9f48cf8d5bb"
+    },
+    {
+      "path": "valve-cache-archive-C03-whole-20261012/MATERIALIZATION_STATE_ARCHIVED_A01.json",
+      "bytes": 1072,
+      "sha256": "ae85cc49613d6b8f7642607f0f460e9ab6bc827169246f01bee4fe5d04cc5d83"
+    },
+    {
+      "path": "valve-cache-archive-R02-20261012/MATERIALIZATION_STATE_ARCHIVED_A01.json",
+      "bytes": 2290,
+      "sha256": "ecb06b0437ab76e7f6e728191b85a1283742a936d6234cde021463d96ec45f16"
+    }
+  ],
+  "actual_native_terminal": {
+    "status": "ACTUAL_TWO_CAD_CAVITY_REPAIRS_FULL_NATIVE_TERMINAL",
+    "created_UTC": "2026-10-12T05:59:04.894664+00:00",
+    "cells": 6939074,
+    "points": 2775068,
+    "source": "valve-whole-flow-mesh-WFM1-20261011/P06_repair_R03_A01",
+    "whole_MSH_sha256": "c8591f58c4e7824f63be8ba944bb9bcea1a47020cec7fefd5fd1efc3510b4aed",
+    "official_allGeometry_allTopology_executed": true,
+    "one_region": true,
+    "failed_checks": 3,
+    "full_native_quality_pass": false,
+    "quality_badsets": {
+      "lowVolRatioFaces": {
+        "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R03_A01/case_actual_layer_m/constant/polyMesh/sets/lowVolRatioFaces",
+        "bytes": 901,
+        "sha256": "f1aac1c538bef5971805a8d86aeba9e0a9c0fa2335186913dffce9759e33dae9",
+        "count": 2,
+        "canonical_sorted_u64le_sha256": "1677f77e073f406b93de89fc0808dd661f3e7685a43dc1c18e0222b8a8838b6d"
+      },
+      "lowWeightFaces": {
+        "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R03_A01/case_actual_layer_m/constant/polyMesh/sets/lowWeightFaces",
+        "bytes": 35717,
+        "sha256": "6d95a4f1900a999a476150bfbd4f1bc8904f11fc356283ce1286b3ab6a856cd0",
+        "count": 3881,
+        "canonical_sorted_u64le_sha256": "cb3ec87cf59b97624cf8ce659909508dcf1b2c3ae669dca5c20780af06615d6e"
+      },
+      "nonOrthoFaces": {
+        "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R03_A01/case_actual_layer_m/constant/polyMesh/sets/nonOrthoFaces",
+        "bytes": 2195034,
+        "sha256": "6ec7afa3ac338b50d879c082ab3b615be5069617df7a5a229b25550230e0c9b7",
+        "count": 278706,
+        "canonical_sorted_u64le_sha256": "9105396499c291466ad5887407d37db700968db18b9015b9cf152413186d0b01"
+      },
+      "twoInternalFacesCells": {
+        "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R03_A01/case_actual_layer_m/constant/polyMesh/sets/twoInternalFacesCells",
+        "bytes": 31472,
+        "sha256": "83ea3e29f807dd34af6bc5e2141e39578cdde4ae65b5504b6fcbcd5692a33679",
+        "count": 3822,
+        "canonical_sorted_u64le_sha256": "202f4e69c947bb7a1d393d61f330a96d95b61763e3460c5e81f04909817aa19d"
+      },
+      "underdeterminedCells": {
+        "path": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R03_A01/case_actual_layer_m/constant/polyMesh/sets/underdeterminedCells",
+        "bytes": 115144,
+        "sha256": "25bb4123973bf3414f853814846515b502b44c7742c24b26bcc14f750ca663fe",
+        "count": 14281,
+        "canonical_sorted_u64le_sha256": "1350c1f9a207ef0ec777a5a45a49a54cac642acb8544bbd0bdd70b64129fb448"
+      }
+    },
+    "quality_count_comparison_to_R02": {
+      "underdeterminedCells": {
+        "R02": 14283,
+        "R03": 14281,
+        "delta": -2
+      },
+      "lowWeightFaces": {
+        "R02": 3887,
+        "R03": 3881,
+        "delta": -6
+      },
+      "lowVolRatioFaces": {
+        "R02": 8,
+        "R03": 2,
+        "delta": -6
+      },
+      "nonOrthoFaces": {
+        "R02": 278706,
+        "R03": 278706,
+        "delta": 0
+      },
+      "twoInternalFacesCells": {
+        "R02": 3823,
+        "R03": 3822,
+        "delta": -1
+      }
+    },
+    "original_analytic_CAD_unchanged": true,
+    "PWL_boundary_changed": true,
+    "PWL_volume_difference_mm3": 0.000840777382040404,
+    "CFD_started": false,
+    "independent_actual_source_and_ID_audit_pending": true,
+    "native_receipts": [
+      {
+        "label": "gmshToFoam_actual_layer",
+        "command": [
+          "valve-runtime-review-20261011/official_restore/root/usr/bin/gmshToFoam",
+          "-case",
+          "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R03_A01/case_actual_layer_m",
+          "valve-whole-flow-mesh-WFM1-20261011/P06_repair_R03_A01/output/P06_actual_original_whole_sparse_repaired_mm.msh"
+        ],
+        "native_executable_sha256": "0d8aa19a6618cf8529ea7af2cc653c5d71e4ed4958d9280e2365eff27c46cf32",
+        "exit_code": 0,
+        "terminated_for": null,
+        "wrapper_exception": null,
+        "elapsed_seconds": 49.5364576120046,
+        "sampled_peak_RSS_bytes": 5747679232,
+        "observed_VmPeak_bytes": 5811126272,
+        "sampled_max_threads": 1,
+        "requested_CPU": 3,
+        "observed_affinity_states": [
+          {
+            "5": [
+              0
+            ]
+          },
+          {
+            "5": [
+              3
+            ]
+          }
+        ],
+        "MemAvailable_at_start_bytes": 8505024512,
+        "MemAvailable_minimum_bytes": 2707779584,
+        "RSS_and_AS_cap_bytes": 8053063680,
+        "wall_cap_seconds": 300,
+        "MemAvailable_floor_bytes": 1073741824,
+        "sampling_interval_seconds": 0.05,
+        "RSS_trace_interval_seconds": 1.0,
+        "CFD_started": false
+      },
+      {
+        "label": "transformPoints_mm_to_m",
+        "command": [
+          "valve-runtime-review-20261011/official_restore/root/usr/bin/transformPoints",
+          "-case",
+          "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R03_A01/case_actual_layer_m",
+          "-scale",
+          "0.001"
+        ],
+        "native_executable_sha256": "9ad67dfefd34105ca68d7259929643e05489e3e268c5bc90bd2d8ba4ef6a3ed7",
+        "exit_code": 0,
+        "terminated_for": null,
+        "wrapper_exception": null,
+        "elapsed_seconds": 4.490549131005537,
+        "sampled_peak_RSS_bytes": 129245184,
+        "observed_VmPeak_bytes": 178237440,
+        "sampled_max_threads": 1,
+        "requested_CPU": 3,
+        "observed_affinity_states": [
+          {
+            "6": [
+              0
+            ]
+          },
+          {
+            "6": [
+              3
+            ]
+          }
+        ],
+        "MemAvailable_at_start_bytes": 8415821824,
+        "MemAvailable_minimum_bytes": 8387502080,
+        "RSS_and_AS_cap_bytes": 8053063680,
+        "wall_cap_seconds": 300,
+        "MemAvailable_floor_bytes": 1073741824,
+        "sampling_interval_seconds": 0.05,
+        "RSS_trace_interval_seconds": 1.0,
+        "CFD_started": false
+      },
+      {
+        "label": "checkMesh_allGeometry_allTopology",
+        "command": [
+          "valve-runtime-review-20261011/official_restore/root/usr/bin/checkMesh",
+          "-case",
+          "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R03_A01/case_actual_layer_m",
+          "-constant",
+          "-allGeometry",
+          "-allTopology"
+        ],
+        "native_executable_sha256": "d62326097607d40e460bdd5d63df245896dd51ea16cf965199b75509308de791",
+        "exit_code": 0,
+        "terminated_for": null,
+        "wrapper_exception": null,
+        "elapsed_seconds": 118.14680233897525,
+        "sampled_peak_RSS_bytes": 6883311616,
+        "observed_VmPeak_bytes": 6931951616,
+        "sampled_max_threads": 1,
+        "requested_CPU": 3,
+        "observed_affinity_states": [
+          {
+            "7": [
+              0
+            ]
+          },
+          {
+            "7": [
+              3
+            ]
+          }
+        ],
+        "MemAvailable_at_start_bytes": 8466661376,
+        "MemAvailable_minimum_bytes": 1595371520,
+        "RSS_and_AS_cap_bytes": 8053063680,
+        "wall_cap_seconds": 300,
+        "MemAvailable_floor_bytes": 1073741824,
+        "sampling_interval_seconds": 0.05,
+        "RSS_trace_interval_seconds": 1.0,
+        "CFD_started": false
+      }
+    ],
+    "manifest": "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R03_A01/R03_NATIVE_TERMINAL_MANIFEST.json",
+    "manifest_sha256": "e4d56dd0bd390677f45ac929ed076dcd71024f65077abef0b868b6dad0a95e60"
+  },
+  "actual_generation": {
+    "whole_MSH_sha256": "c8591f58c4e7824f63be8ba944bb9bcea1a47020cec7fefd5fd1efc3510b4aed",
+    "actual_total_cells": 6939074,
+    "actual_whole_points": 2775068,
+    "actual_boundary_elements": 1305064,
+    "actual_parent_tets_replaced": 4,
+    "actual_children": 6,
+    "actual_original_wall_triangles_replaced": 2,
+    "actual_new_wall_triangles": 4,
+    "actual_original_nodes_moved": 4,
+    "max_original_node_displacement_mm": 0.09999999660296209,
+    "all_other_original_nodes_displaced_mm": 0,
+    "R32_shared_nodes_triangles_changed": false,
+    "original_analytic_CAD_unchanged": true,
+    "original_piecewise_linear_domain_unchanged": false,
+    "elapsed_seconds": 12.151815049001016,
+    "max_rss_kib": 177924
+  },
+  "actual_independent_identity_scope": {
+    "actual_R03_sparse_source_and_native_identity_pass": true,
+    "whole_native_quality_gate_pass": false,
+    "native_failed_checks": 3,
+    "actual_cells": 6939074,
+    "actual_regions": 1,
+    "R02_det_bad_parents": 14283,
+    "R03_det_bad_cells": 14281,
+    "removed_bad_R02_rest_indices": [
+      2720343,
+      2743099
+    ],
+    "actual_bad_parent_set_exactly_old_minus_two": true,
+    "selected_native_children_verified": 6,
+    "selected_native_child_det_failures": 0,
+    "Torus_44_native_tets_verified": 44,
+    "all_selected_source_native_cell_triangles_and_outward_cycles_exact": true,
+    "sparse_native_cell_incidence_checked": 17973,
+    "sparse_native_faces_checked": 51909,
+    "sparse_native_points_checked": 15786,
+    "R02_weight_bad_faces": 3887,
+    "R03_weight_bad_faces": 3881,
+    "R02_ratio_bad_faces": 8,
+    "R03_ratio_bad_faces": 2,
+    "all_retained_weight_and_ratio_canonical_face_keys_and_R02_neighbor_parent_pairs_identical": true,
+    "no_new_weight_or_ratio_face_keys": true,
+    "saved_MSH_four_moved_points_and_one_new_CAD_node_exact": true,
+    "saved_MSH_6_children_and_44_Torus_tets_exact": true,
+    "saved_MSH_4_outward_CAD53_wall_facets_and_all_tags_exact": true,
+    "MSH_stream_source_connection_scope": "Only 50 selected local tets/four new walls/five selected points checked, plus all record counts and complete file SHA. Unaffected whole connectivity inherited, not newly independently compared.",
+    "saved_whole_MSH_sha256": "c8591f58c4e7824f63be8ba944bb9bcea1a47020cec7fefd5fd1efc3510b4aed",
+    "native_sparse_coordinate_error_m": 0,
+    "native_max_nonorthogonality_degrees": 85.77203769437484,
+    "native_severe_nonorthogonal_faces_over70": 278706,
+    "native_min_det": 0.0,
+    "native_min_weight": 0.007411508063043978,
+    "native_min_ratio": 0.007466848672029884,
+    "elapsed_seconds": 12.851805817976128,
+    "max_rss_KiB": 277712,
+    "CPU_affinity": [
+      5
+    ],
+    "native_log_sha256": "caf18c9ebe71b7b46d2674a982b97618f5575be7a0a89bc1eca6112f72c25a34",
+    "native_badset_sha256": {
+      "underdeterminedCells": "25bb4123973bf3414f853814846515b502b44c7742c24b26bcc14f750ca663fe",
+      "lowWeightFaces": "6d95a4f1900a999a476150bfbd4f1bc8904f11fc356283ce1286b3ab6a856cd0",
+      "lowVolRatioFaces": "f1aac1c538bef5971805a8d86aeba9e0a9c0fa2335186913dffce9759e33dae9"
+    },
+    "scope": "Actual sparse parent/facet/native incidence identity and saved candidate fulfillment only. Failed3 remains; no CFD or physical valve failure inference."
+  },
+  "geometric_tradeoff": {
+    "analytic_finite_CAD_retained": true,
+    "same_discrete_domain": false,
+    "outlet_old_and_new_max_radial_chord_error_mm": 0.00275935093297619,
+    "Torus_old_max_circle_chord_error_mm": 0.075548410394,
+    "Torus_new_max_circle_chord_error_mm": 0.077452326436,
+    "Torus_max_single_edge_chord_error_increase_mm": 0.001903941739,
+    "Torus_incident_wall_triangles": 22,
+    "Torus_wall_triangles_geometrically_changed": 20,
+    "PWL_total_volume_difference_mm3": 0.000840777382040404,
+    "manufacturing_tolerance_invented": false,
+    "geometry_accuracy_qualified": false
+  },
+  "actual_audit_execution_history": "Saved-mesh/native identity audit had not started when its delayed status was checked. It was resumed with bounded scope and reused frozen old keys. First actual run passed native key/parent tests, then failed because reader assumed all boundary elements were triangles. The existing mixed mesh has quads; reader fixed to accept original types2/3, old failure preserved, unchanged physical thresholds and mesh. Final actual run passed in12.8518s.",
+  "next_free_apex_method": {
+    "source_result": {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_ratio_step_freepoint_D03/source_precheck/FIXED_WALL_FREE_APEX_SOURCE_RESULTS.json",
+      "bytes": 1743,
+      "sha256": "a4887462b8523ccdd2d561da47952e0417b8bb7df6368fcd4ba2c0ed7be5e0f6"
+    },
+    "incident_cell_counts": [
+      50,
+      46
+    ],
+    "full_neighbor_cell_counts": [
+      90,
+      82
+    ],
+    "target_maximum_large_cell_volume_fractions_approx": [
+      0.1419,
+      0.1827
+    ],
+    "interpretation": "Two single-free-apex candidates were numerically LP-infeasible under the stated fixed-wall/all-neighbor guard and target-weight conditions. This is not a rigorous interval Farkas proof and not proof that all geometric repairs are impossible. No corresponding whole candidate executed."
+  },
+  "short_edge_endpoint_collapse_result": {
+    "four_directions_executed": true,
+    "admitted_directions": 0,
+    "all_link_closed_shell_duplicate_and_nonmanifold_checks_pass": true,
+    "first_site_positive_volume_but_target_weights": [
+      0.03284530740468829,
+      0.04093564008414459
+    ],
+    "first_site_reverse_direction_additional_det_regression": true,
+    "second_site_both_endpoint_directions_negative_volume_and_wall_orientation_flip": true,
+    "source_data_mutated": false,
+    "whole_candidate_executed": false,
+    "elapsed_seconds_approx": 2.028
+  },
+  "next_selected_alternative": "Bounded same-circle survivor parameter optimization between the original neighboring true-circle angles, reusing the complete vertex-star/link and all-neighbor guards. If this collapse topology has no admissible position, stop it and use a finite cavity directed-layer/local CAD retriangulation; no new whole run claimed. Not FV-cell agglomeration.",
+  "next_finite_CAD_support": {
+    "source_result": {
+      "path": "valve-whole-flow-mesh-WFM1-20261011/P06_step_CAD_support_D04/ORIGINAL_FINITE_SHORT_STEP_EDGE_SUPPORT.json",
+      "bytes": 5840,
+      "sha256": "efcb0a6c98bc57879c120e1a39db9ba874d8f45b85dd7d1fbf77338b5bf56e18"
+    },
+    "actual_shared_circle_tags": [
+      80,
+      104
+    ],
+    "original_FDG_surface_pairs": [
+      [
+        41,
+        19
+      ],
+      [
+        45,
+        27
+      ]
+    ],
+    "edge_lengths_mm_approx": [
+      0.0249939,
+      0.0249976
+    ],
+    "minimum_trim_endpoint_arc_distances_mm_approx": [
+      56.14,
+      38.37
+    ],
+    "finite_curve_and_both_face_inside": true,
+    "maximum_roundtrip_error_mm": 1.14e-13
+  },
+  "source_recovery": {
+    "recorded_utc": "2026-10-12T06:12:33.986274+00:00",
+    "library_file_id": "libfile_c977bff2a944819190e2e52d49483358",
+    "version": 0,
+    "file_name": "DN200_P06_R03_两处实际修复与原生终态_恢复补件_A01_20261012.zip",
+    "bytes": 1029188,
+    "sha256": "aa3e5e94532da4e5a24e32f6cc310a8c5d30783a134e72b39a2132255af2c05c",
+    "returned_xattrs_applied_and_readback": {
+      "user.library-file-version": "0"
+    },
+    "official_Library_create_succeeded": true,
+    "remote_redownload_hash_verified": false,
+    "fresh_directory_byte_restored_files": 86,
+    "scientific_fresh_rebuild_executed": false,
+    "actual_saved_source_badset_review_pending_at_freeze": true,
+    "native_quality": "Failed3",
+    "CFD_started": false,
+    "local_source_hash_unchanged_after_create": true
+  },
+  "source_recovery_scope": "86-file R03 source/native checkpoint predates this final actual identity review; later review remains a supplementary artifact, not silently inserted into the old ZIP.",
+  "capacity_state": {
+    "C03_whole": {
+      "recorded_utc": "2026-10-12T06:08:19.715101+00:00",
+      "released_materialization": "valve-whole-flow-mesh-WFM1-20261011/P06_join_C03_A01/runs/J01_A01/output/P06_actual_original_whole_connected_mm.msh",
+      "exact_bytes_retained_archive": {
+        "recorded_utc": "2026-10-12T06:06:39.978745+00:00",
+        "archive": "valve-cache-archive-C03-whole-20261012/C03_generated_whole_MSH_exact_bytes_A01.zip",
+        "bytes": 333532121,
+        "sha256": "5039022abe883fbe047d443ca8fa4f170840c0aeeb5a1e4b825feb622f19037c",
+        "complete_stream_decompressed_SHA_and_CRC_verified": true,
+        "full_materialized_restore_run": false,
+        "source_materialization_still_present": true,
+        "elapsed_seconds": 70.04188582400093,
+        "expected_net_free_bytes": 686617282
+      },
+      "source_code_original_rest_mesh_typed_arrays_logs_retained": true,
+      "R02_R03_unchanged": true,
+      "free_disk_bytes": 1777500160,
+      "restore_command": "python valve-cache-archive-C03-whole-20261012/archive_whole.py restore"
+    },
+    "R02_formats": {
+      "recorded_utc": "2026-10-12T06:12:44.285155+00:00",
+      "released_materializations": [
+        "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R02_A01/case_actual_layer_m/constant/polyMesh/points",
+        "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R02_A01/case_actual_layer_m/constant/polyMesh/faces",
+        "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R02_A01/case_actual_layer_m/constant/polyMesh/owner",
+        "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R02_A01/case_actual_layer_m/constant/polyMesh/neighbour",
+        "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R02_A01/case_actual_layer_m/constant/polyMesh/boundary",
+        "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R02_A01/case_actual_layer_m/constant/polyMesh/pointZones",
+        "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R02_A01/case_actual_layer_m/constant/polyMesh/faceZones",
+        "valve-whole-flow-mesh-WFM1-20261011/P06_whole_native_R02_A01/case_actual_layer_m/constant/polyMesh/cellZones",
+        "valve-whole-flow-mesh-WFM1-20261011/P06_repair_R02_A02/output/P06_actual_original_whole_sparse_repaired_mm.msh"
+      ],
+      "exact_bytes_retained_archive": {
+        "recorded_utc": "2026-10-12T06:11:21.698792+00:00",
+        "archive": "valve-cache-archive-R02-20261012/R02_generated_MSH_polyMesh_exact_bytes_A01.zip",
+        "bytes": 427368111,
+        "sha256": "717b07c18eecb7069197a0a36af837d88c927478cf0e4dc2bfcfd7787b1f4cb7",
+        "all_nine_stream_decompressed_SHA_and_CRC_verified": true,
+        "full_materialized_restore_run": false,
+        "materializations_still_present": true,
+        "elapsed_seconds": 96.87524414499057,
+        "expected_net_free_bytes": 1115078226
+      },
+      "retained": "R02 generation inputs, typed arrays, sparse patch, all badsets/logs/source pins and all current R03 files",
+      "free_disk_bytes": 2887749632,
+      "restore_command": "python valve-cache-archive-R02-20261012/archive_selected.py restore",
+      "R03_unchanged": true
+    },
+    "full_materialized_cache_restore_executed": false,
+    "all_selected_archive_members_stream_SHA_CRC_verified": true,
+    "current_R03_changed": false
+  },
+  "CFD_started": false,
+  "whole_mesh_quality_qualified": false,
+  "whole_valve_qualified": false,
+  "data_scope": "Only worklog and evidence metadata/pins. No binary/mesh/source-input payload imported; prior22-file input approval remains separate.",
+  "path_convention": "Engineering paths and command arguments are relative to restored source-root; run referenced commands with that root as working directory. Exact original receipts remain pinned as source evidence."
+}

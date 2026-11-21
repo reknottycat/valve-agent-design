@@ -1,0 +1,9 @@
+{
+  "archive": "p08-localized-conflict.zip",
+  "sha256": "9ec3e43fb2764aee9b8c5fe0886ecfe87fa718f670b46a8dd61849ff98684400",
+  "bytes": 2884793,
+  "contains_failed_current_mesh": true,
+  "meshing_status": "FAILED",
+  "diagnostic_status": "LOCALIZED",
+  "new_mesh_executed": false
+}

@@ -1,0 +1,16 @@
+test_ambiguous_or_unsupported_units_fail_before_output (test_step_roundtrip.ComparisonTests.test_ambiguous_or_unsupported_units_fail_before_output) ... ok
+test_coordinate_delta_beyond_budget_fails (test_step_roundtrip.ComparisonTests.test_coordinate_delta_beyond_budget_fails) ... ok
+test_empty_or_missing_solids_fail (test_step_roundtrip.ComparisonTests.test_empty_or_missing_solids_fail) ... ok
+test_invalid_or_nonfinite_fails (test_step_roundtrip.ComparisonTests.test_invalid_or_nonfinite_fails) ... ok
+test_matching_cannot_reuse_output_solid (test_step_roundtrip.ComparisonTests.test_matching_cannot_reuse_output_solid) ... ok
+test_reordering_is_bijective (test_step_roundtrip.ComparisonTests.test_reordering_is_bijective) ... ok
+test_saved_actual_report_has_matched_twelve_solids (test_step_roundtrip.ComparisonTests.test_saved_actual_report_has_matched_twelve_solids) ... ok
+test_serialization_noise_within_budget_passes (test_step_roundtrip.ComparisonTests.test_serialization_noise_within_budget_passes) ... ok
+test_source_hash_mismatch_fails_before_output (test_step_roundtrip.ComparisonTests.test_source_hash_mismatch_fails_before_output) ... ok
+test_topology_change_fails (test_step_roundtrip.ComparisonTests.test_topology_change_fails) ... ok
+test_volume_delta_beyond_budget_fails (test_step_roundtrip.ComparisonTests.test_volume_delta_beyond_budget_fails) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.002s
+
+OK

@@ -1,0 +1,19 @@
+{
+  "archive": "cone-grading-volume.zip",
+  "bytes": 15050324,
+  "sha256": "bd9c4d991b5c17d37721be9b2537592b2f83e34fce4ea1351257f11db0425e20",
+  "part_size": 8000000,
+  "parts": [
+    {
+      "file": "cone-grading-volume.zip.part001",
+      "bytes": 8000000,
+      "sha256": "559635e22f987632fbbbdb6e92b07132c1ded3349ee799f9c1421a44f584eded"
+    },
+    {
+      "file": "cone-grading-volume.zip.part002",
+      "bytes": 7050324,
+      "sha256": "bfbf546c335102e6eca9a6bee95fd29a57c3f60fc2f9eab18839fc7c7733aa00"
+    }
+  ],
+  "reassembly_verified": true
+}
