@@ -1,0 +1,43 @@
+{
+  "kv_m3_h": 147.09346585133665,
+  "uncertainty": {
+    "flag": "±30%",
+    "validated": false
+  },
+  "status": "WARNING",
+  "engineering_release": false,
+  "capacity_status": "HOLD",
+  "assumptions": [
+    "Conditional liquid estimate: Kv = Q(m³/h) * sqrt((density/1000 kg/m³)/(pressure drop/bar)).",
+    "Density and pressure drop are caller-provided assumptions, not authenticated measurements.",
+    "The ±30% flag is indicative only; it is not a validated uncertainty bound.",
+    "This estimate does not establish steady, turbulent, nonchoked flow or applicable product test conditions.",
+    "Not a validated product capacity, acceptance result, or engineering release."
+  ],
+  "flow_regime": "laminar",
+  "convergence": "unconverged",
+  "warnings": [
+    "WARNING: Conditional research estimate only; product capacity remains HOLD.",
+    "WARNING: Flow regime is laminar; turbulent applicability is not established.",
+    "WARNING: Convergence is unconverged; steady flow is not established.",
+    "WARNING: reconstructed conditional delta_p (~1.64e-4 Pa) is numerically near-zero because state21 is not steady (20->21 port static pressure still varies 19.43%). The resulting kv_m3_h diverges as delta_p -> 0 and MUST NOT be read as a capacity estimate; it is reported only to demonstrate the calculation path."
+  ],
+  "provenance": {
+    "source": "state21 reconstructed port observation (STATE21_FLOW_CONTRACT.md)",
+    "Q_in_m3_s": -1.634046460129948e-06,
+    "Q_out_m3_s": 1.634046459592463e-06,
+    "delta_pkin_m2_s2": 1.599501972386503e-07,
+    "conditional_delta_p_Pa": 0.00016393470586881226,
+    "conditional_delta_p_basis": "rho_assumed * delta_pkin, frozen research assumption",
+    "density_assumed_kg_m3": 1025,
+    "K_mesh": 115.9617955731187,
+    "K_nominal": 118.2457989599357,
+    "generator": "deliverables/quick_kv.py",
+    "generated_at": "2026-11-22"
+  },
+  "defensible_proxy": {
+    "K_mesh": 115.9617955731187,
+    "K_nominal": 118.2457989599357,
+    "note": "Resistance coefficient K from state21, area-reference dependent; still research-only, laminar/unconverged."
+  }
+}
