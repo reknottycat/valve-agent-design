@@ -6,8 +6,9 @@ item,part_name_en,part_name_zh,quantity,material,est_mass_kg_each,step_file,stat
 5,Seat ring,阀座环,1,BrA10Zh3Mc2 (БрА10Ж3Мц2),1.86,runs/20261006/C0/T12/out/parts/seat_ring.step,assumed material (A-01); seat width 8 mm
 6,Lever,手柄,1,BrA10Zh3Mc2 (БрА10Ж3Мц2),2.11,runs/20261006/C0/T12/out/parts/lever.step,assumed material (A-01); span 320 mm
 7,Flange bolt M14x60,法兰螺栓,24,per ГОСТ 1536-76 (24 = 12 holes x 2 flanges),TBD,,standard part; grade TBD by Phase 2 (pressure calc)
-8,Flange gasket DN200 PN16,法兰垫片,2,spiral wound / compressed fiber - TBD,TBD,,standard part; material TBD by Phase 2 (fluid/temp)
-9,Packing (stem seal),填料,1,PTFE / graphite - TBD,TBD,,standard part; see branch codex/p08-packing-design-c02
+8,Gasket - upper flange,上法兰垫片,1,spiral wound / compressed fiber - TBD,TBD,,standard part DN200 PN16; material TBD by Phase 2 (fluid/temp)
+9,Gasket - lower flange,下法兰垫片,1,spiral wound / compressed fiber - TBD,TBD,,standard part DN200 PN16; material TBD by Phase 2 (fluid/temp)
+10,Packing (stem seal),填料,1,PTFE / graphite - TBD,TBD,,standard part; see branch codex/p08-packing-design-c02
 
 # Total metal mass (items 1-6, assumed density 7.5 g/cm3): 71.89 kg
 # Source: runs/20261006/C0/T12/out/geometry_check.json (STEP roundtrip volume error = 0)
