@@ -47,9 +47,10 @@ foam() {
     if [ "$USE_DOCKER" = "0" ]; then
         bash -c ". $OF_BASHRC >/dev/null 2>&1; $1"
     else
+        # docker image: OpenFOAM lives under /opt/openfoam11, not /usr/lib
         docker run --rm --entrypoint /bin/bash \
             -v "$WORK:/work" -w /work/case "$FOAM_IMAGE" \
-            -c "if [ -f $OF_BASHRC ]; then . $OF_BASHRC >/dev/null 2>&1; fi; $1"
+            -c 'if [ -f /opt/openfoam11/etc/bashrc ]; then . /opt/openfoam11/etc/bashrc >/dev/null 2>&1; fi; '"$1"
     fi
 }
 
