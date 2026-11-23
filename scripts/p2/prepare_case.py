@@ -157,6 +157,7 @@ def build(case_dir, mode, velocity, rho, nu, end_time, write_interval):
             "    %s\n    {\n"
             "        type surfaceFieldValue;\n"
             '        libs ("libfieldFunctionObjects.so");\n'
+            "        writeFields false;\n"
             "        writeControl timeStep;\n"
             "        writeInterval %d;\n"
             "        regionType patch;\n"
@@ -229,23 +230,19 @@ def build(case_dir, mode, velocity, rho, nu, end_time, write_interval):
         divschemes = ("    div(phi,U)     Gauss linearUpwind grad(U);\n"
                       "    div((nuEff*dev2(T(grad(U))))) Gauss linear;\n")
 
+    # steady-state per official tutorial pitzDailySteady: SIMPLE dict
+    # (not PIMPLE) + ddtSchemes steadyState puts the module in SIMPLE mode
     solution = (
         solvers
-        + "PIMPLE\n{\n"
-        "    nOuterCorrectors 1;\n"
-        "    nCorrectors 2;\n"
+        + "SIMPLE\n{\n"
         "    nNonOrthogonalCorrectors 0;\n"
-        "    momentumPredictor yes;\n"
+        "    consistent yes;\n"
         "    residualControl { p 1e-4; U 1e-5; }\n"
         "}\n"
         + relaxation
     )
-    write(os.path.join(case_dir, "system", "fvSolution"), "dictionary",
-          "fvSolution", solution)
-
-    # ---- system/fvSchemes ------------------------------------------------
     schemes = (
-        "ddtSchemes { default steady; }\n\n"
+        "ddtSchemes { default steadyState; }\n\n"
         "gradSchemes { default Gauss linear; }\n\n"
         "divSchemes\n{\n"
         "    default none;\n"
@@ -255,6 +252,10 @@ def build(case_dir, mode, velocity, rho, nu, end_time, write_interval):
         "interpolationSchemes { default linear; }\n\n"
         "snGradSchemes { default corrected; }\n"
     )
+    write(os.path.join(case_dir, "system", "fvSolution"), "dictionary",
+          "fvSolution", solution)
+
+    # ---- system/fvSchemes (already built above, steady ddt) --------------
     write(os.path.join(case_dir, "system", "fvSchemes"), "dictionary",
           "fvSchemes", schemes)
 
