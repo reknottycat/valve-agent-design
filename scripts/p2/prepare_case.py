@@ -136,8 +136,10 @@ def build(case_dir, mode, velocity, rho, nu, end_time, write_interval):
               + bc_block(patches, inlet, outlet, spec_nut) + "}\n")
 
     # ---- constant --------------------------------------------------------
-    write(os.path.join(case_dir, "constant", "transportProperties"),
-          "dictionary", "transportProperties", "nu %s;\n" % nu)
+    # OpenFOAM 11 (openfoam.org): incompressibleFluid reads physicalProperties
+    write(os.path.join(case_dir, "constant", "physicalProperties"),
+          "dictionary", "physicalProperties",
+          "viscosityModel constant;\n nu %s;\n rho %s;\n" % (nu, rho))
     write(os.path.join(case_dir, "constant", "g"), "uniformDimensionedVectorField",
           "g", "dimensions [0 1 -2 0 0 0 0];\nvalue (0 0 0);\n")
     if mode == "ras":
@@ -171,11 +173,12 @@ def build(case_dir, mode, velocity, rho, nu, end_time, write_interval):
         + fo("qOutlet", outlet, "sum", "phi")
     )
     control = (
-        "application simpleFoam;\n\n"
+        "application     foamRun;\n\n"
+        "solver          incompressibleFluid;\n\n"
         "startFrom startTime;\nstartTime 0;\nstopAt endTime;\n"
         "endTime %d;\ndeltaT 1;\n\n"
         "writeControl timeStep;\nwriteInterval %d;\npurgeWrite 0;\n"
-        "writeFormat ascii;\nwriteFormatOptions { precision 15; }\n"
+        "writeFormat ascii;\nwritePrecision 12;\n"
         "timeFormat general;\ntimePrecision 8;\n\n"
         "functions\n{\n%s}\n" % (end_time, end_time, functions)
     )
@@ -203,9 +206,10 @@ def build(case_dir, mode, velocity, rho, nu, end_time, write_interval):
             "}\n"
         )
         divschemes = (
-            "    div(phi,U)     bounded Gauss linearUpwind grad(U);\n"
-            "    div(phi,k)     bounded Gauss limitedLinear 1;\n"
-            "    div(phi,omega) bounded Gauss limitedLinear 1;\n"
+            "    div(phi,U)     Gauss linearUpwind grad(U);\n"
+            "    div(phi,k)     Gauss limitedLinear 1;\n"
+            "    div(phi,omega) Gauss limitedLinear 1;\n"
+            "    div((nuEff*dev2(T(grad(U))))) Gauss linear;\n"
         )
     else:
         solvers = (
@@ -222,13 +226,16 @@ def build(case_dir, mode, velocity, rho, nu, end_time, write_interval):
             "    equations { U 0.7; }\n"
             "}\n"
         )
-        divschemes = "    div(phi,U)     bounded Gauss linearUpwind grad(U);\n"
+        divschemes = ("    div(phi,U)     Gauss linearUpwind grad(U);\n"
+                      "    div((nuEff*dev2(T(grad(U))))) Gauss linear;\n")
 
     solution = (
         solvers
-        + "SIMPLE\n{\n"
+        + "PIMPLE\n{\n"
+        "    nOuterCorrectors 1;\n"
+        "    nCorrectors 2;\n"
         "    nNonOrthogonalCorrectors 0;\n"
-        "    consistent no;\n"
+        "    momentumPredictor yes;\n"
         "    residualControl { p 1e-4; U 1e-5; }\n"
         "}\n"
         + relaxation

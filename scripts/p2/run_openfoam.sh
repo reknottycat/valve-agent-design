@@ -89,16 +89,11 @@ if [ $? -ne 0 ]; then
 fi
 sed 's/^/      /' log.prepareCase
 
-echo "=== [$CASE_NAME] simpleFoam"
-foam "simpleFoam" > log.simpleFoam 2>&1
+echo "=== [$CASE_NAME] foamRun (incompressibleFluid)"
+foam "foamRun -solver incompressibleFluid" > log.simpleFoam 2>&1
 SOLVER_RC=$?
 echo "    exit=$SOLVER_RC"
 tail -5 log.simpleFoam | sed 's/^/      /'
-
-echo "=== [$CASE_NAME] foamPostProcess (final values)"
-foam "foamPostProcess -funcs '(pInlet pOutlet qInlet qOutlet)' -time latest" \
-    > log.postProcess 2>&1
-echo "    exit=$?"
 
 echo "=== [$CASE_NAME] extract results"
 mkdir -p "$ROOT/results"
