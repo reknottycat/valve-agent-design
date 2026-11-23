@@ -51,7 +51,11 @@ INFO = os.path.splitext(OUT)[0] + "_info.json"
 # ~2.1e5 tets, inside the 1e5-3e5 band, with the best mesh quality of the
 # parameter sweep that was run (median minSICN 0.68, no ill-shaped tets).
 CLMAX = float(os.environ.get("P2_CLMAX", "14.0"))
-CLMIN = float(os.environ.get("P2_CLMIN", "0.4"))
+# 0.4 mm created 414 near-degenerate tets (minSICN < 0.05) around the
+# packing-gallery cutout and blew three steady-state solvers up; the
+# smallest CAD feature is the 4 mm seal line, so 1.5 mm keeps it
+# resolved while removing sliver cells
+CLMIN = float(os.environ.get("P2_CLMIN", "1.5"))
 CURV_SEGMENTS = int(os.environ.get("P2_CURV", "24"))
 ALG3D = int(os.environ.get("P2_ALG3D", "1"))     # 1 = Delaunay (HXT/Netgen/Frontal hit PLC errors)
 

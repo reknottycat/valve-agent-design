@@ -177,11 +177,13 @@ def build(case_dir, mode, velocity, rho, nu, end_time, write_interval):
         "application     foamRun;\n\n"
         "solver          incompressibleFluid;\n\n"
         "startFrom startTime;\nstartTime 0;\nstopAt endTime;\n"
-        "endTime %d;\ndeltaT 1;\n\n"
-        "writeControl timeStep;\nwriteInterval %d;\npurgeWrite 0;\n"
+        "endTime %g;\n\n"
+        "deltaT 1e-4;\n"
+        "adjustTimeStep yes;\nmaxCo 0.5;\nmaxDeltaT 1;\n\n"
+        "writeControl adjustableRunTime;\nwriteInterval %g;\npurgeWrite 2;\n"
         "writeFormat ascii;\nwritePrecision 12;\n"
         "timeFormat general;\ntimePrecision 8;\n\n"
-        "functions\n{\n%s}\n" % (end_time, end_time, functions)
+        "functions\n{\n%s}\n" % (end_time, max(1.0, end_time / 10.0), functions)
     )
     write(os.path.join(case_dir, "system", "controlDict"), "dictionary",
           "controlDict", control)
@@ -202,7 +204,7 @@ def build(case_dir, mode, velocity, rho, nu, end_time, write_interval):
         )
         relaxation = (
             "relaxationFactors\n{\n"
-            "    equations { U 0.7; k 0.5; omega 0.5; }\n"
+            "    equations { U 1; k 1; omega 1; }\n"
             "}\n"
         )
         divschemes = (
@@ -222,7 +224,7 @@ def build(case_dir, mode, velocity, rho, nu, end_time, write_interval):
         )
         relaxation = (
             "relaxationFactors\n{\n"
-            "    equations { U 0.7; }\n"
+            "    equations { U 1; }\n"
             "}\n"
         )
         # first-order start: the skewed proxy mesh (max skew 3.97, max
@@ -231,19 +233,24 @@ def build(case_dir, mode, velocity, rho, nu, end_time, write_interval):
         divschemes = ("    div(phi,U)     Gauss upwind;\n"
                       "    div((nuEff*dev2(T(grad(U))))) Gauss linear;\n")
 
-    # steady-state per official tutorial pitzDailySteady: SIMPLE dict
-    # (not PIMPLE) + ddtSchemes steadyState puts the module in SIMPLE mode
+    # transient integration: three steady-state attempts all drifted to
+    # FPE on this marginal proxy mesh (U init residual stuck at 0.4-0.7,
+    # continuity 10x/step growth regardless of relaxation/schemes).
+    # Transient with maxCo 0.5 integrates the same equations robustly;
+    # at Re=10 the flow is physically steady so late-time values are the
+    # steady-state answer. endTime is flow time [s] (--end-time).
     solution = (
         solvers
-        + "SIMPLE\n{\n"
+        + "PIMPLE\n{\n"
+        "    nOuterCorrectors 1;\n"
+        "    nCorrectors 2;\n"
         "    nNonOrthogonalCorrectors 1;\n"
-        "    consistent yes;\n"
-        "    residualControl { p 1e-4; U 1e-5; }\n"
+        "    momentumPredictor yes;\n"
         "}\n"
         + relaxation
     )
     schemes = (
-        "ddtSchemes { default steadyState; }\n\n"
+        "ddtSchemes { default Euler; }\n\n"
         "gradSchemes { default Gauss linear; }\n\n"
         "divSchemes\n{\n"
         "    default none;\n"
@@ -272,7 +279,7 @@ def main():
     ap.add_argument("--velocity", type=float, required=True)
     ap.add_argument("--rho", type=float, default=1024.0)
     ap.add_argument("--nu", default="1.025e-6")
-    ap.add_argument("--end-time", type=int, default=2000)
+    ap.add_argument("--end-time", type=float, default=2000)
     ap.add_argument("--write-interval", type=int, default=50)
     args = ap.parse_args()
     build(args.case_dir, args.mode, args.velocity, args.rho, args.nu,

@@ -58,7 +58,7 @@ jobs:
           set -x
           V=$(python3 -c "import math,os;print('%.9g'%(float(os.environ['P2_Q_LOW'])/(math.pi*0.1**2)))")
           echo "operating point A: inlet velocity = $V m/s"
-          bash scripts/p2/run_openfoam.sh case_lam results/fluid_flow.msh laminar "$V" 2000
+          bash scripts/p2/run_openfoam.sh case_lam results/fluid_flow.msh laminar "$V" 200
 
       - name: Solve operating point B (kOmegaSST, rated flow velocity)
         continue-on-error: true
@@ -66,7 +66,7 @@ jobs:
           set -x
           V=$(python3 -c "import math,os;rho=float(os.environ['P2_RHO']);kv=float(os.environ['P2_KV_RATED']);pn=float(os.environ['P2_PN_BAR']);q=kv*math.sqrt(rho/1000.0/pn)/3600.0;print('%.9g'%(q/(math.pi*0.1**2)))")
           echo "operating point B: inlet velocity = $V m/s"
-          bash scripts/p2/run_openfoam.sh case_turb results/fluid_flow.msh ras "$V" 2000
+          bash scripts/p2/run_openfoam.sh case_turb results/fluid_flow.msh ras "$V" 3
 
       - name: Collect summary
         if: always()

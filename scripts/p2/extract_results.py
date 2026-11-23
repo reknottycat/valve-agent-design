@@ -106,7 +106,12 @@ def parse_simple_foam(path):
 
 
 def parse_fo(case_dir, name):
-    """Last value written by a surfaceFieldValue function object."""
+    """Mean of the last 20 samples written by a surfaceFieldValue FO.
+
+    The run is transient (robust integration on the marginal proxy mesh),
+    so the answer is the late-time average of the signal, not the final
+    instantaneous value.
+    """
     base = os.path.join(case_dir, "postProcessing", name)
     if not os.path.isdir(base):
         return None, None
@@ -122,17 +127,23 @@ def parse_fo(case_dir, name):
         return None, None
     times.sort()
     t, path = times[-1]
-    last = None
+    vals = []
+    last_t = None
     for line in read_text(path).splitlines():
         line = line.strip()
         if not line or line.startswith("#"):
             continue
         parts = line.split()
         try:
-            last = float(parts[-1])
-        except ValueError:
+            last_t = float(parts[0])
+            vals.append(float(parts[-1]))
+        except (ValueError, IndexError):
             continue
-    return t, last
+    if not vals:
+        return None, None
+    tail = vals[-20:]
+    mean = sum(tail) / len(tail)
+    return last_t, mean
 
 
 def main():
