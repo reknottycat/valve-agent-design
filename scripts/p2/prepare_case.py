@@ -202,8 +202,7 @@ def build(case_dir, mode, velocity, rho, nu, end_time, write_interval):
         )
         relaxation = (
             "relaxationFactors\n{\n"
-            "    fields { p 0.1; }\n"
-            "    equations { U 0.3; k 0.5; omega 0.5; }\n"
+            "    equations { U 0.7; k 0.5; omega 0.5; }\n"
             "}\n"
         )
         divschemes = (
@@ -215,7 +214,7 @@ def build(case_dir, mode, velocity, rho, nu, end_time, write_interval):
     else:
         solvers = (
             "solvers\n{\n"
-            "    p     { solver GAMG; tolerance 1e-7; relTol 0.01; "
+            "    p     { solver GAMG; tolerance 1e-7; relTol 0; "
             "smoother GaussSeidel; nCellsInCoarsestLevel 10; }\n"
             "    U     { solver smoothSolver; smoother symGaussSeidel; "
             "tolerance 1e-9; relTol 0; }\n"
@@ -223,12 +222,12 @@ def build(case_dir, mode, velocity, rho, nu, end_time, write_interval):
         )
         relaxation = (
             "relaxationFactors\n{\n"
-            "    fields { p 0.1; }\n"
-            "    equations { U 0.3; }\n"
+            "    equations { U 0.7; }\n"
             "}\n"
         )
-        # first-order start: the skewed proxy mesh (max skew 3.97, 761
-        # severely non-orthogonal faces) diverged with linearUpwind
+        # first-order start: the skewed proxy mesh (max skew 3.97, max
+        # non-orthogonality 89.6 deg) diverged with linearUpwind and
+        # with unbounded 'corrected' non-orthogonal treatment
         divschemes = ("    div(phi,U)     Gauss upwind;\n"
                       "    div((nuEff*dev2(T(grad(U))))) Gauss linear;\n")
 
@@ -237,7 +236,7 @@ def build(case_dir, mode, velocity, rho, nu, end_time, write_interval):
     solution = (
         solvers
         + "SIMPLE\n{\n"
-        "    nNonOrthogonalCorrectors 2;\n"
+        "    nNonOrthogonalCorrectors 1;\n"
         "    consistent yes;\n"
         "    residualControl { p 1e-4; U 1e-5; }\n"
         "}\n"
@@ -250,9 +249,9 @@ def build(case_dir, mode, velocity, rho, nu, end_time, write_interval):
         "    default none;\n"
         + divschemes +
         "}\n\n"
-        "laplacianSchemes { default Gauss linear corrected; }\n\n"
+        "laplacianSchemes { default Gauss linear limited 0.5; }\n\n"
         "interpolationSchemes { default linear; }\n\n"
-        "snGradSchemes { default corrected; }\n"
+        "snGradSchemes { default limited 0.5; }\n"
     )
     write(os.path.join(case_dir, "system", "fvSolution"), "dictionary",
           "fvSolution", solution)
