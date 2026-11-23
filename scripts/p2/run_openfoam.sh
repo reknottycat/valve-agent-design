@@ -22,7 +22,11 @@ ROOT=$(cd "$HERE/../.." && pwd)
 RHO=${RHO:-1024}
 NU=${NU:-1.025e-6}
 WRITE_INTERVAL=${WRITE_INTERVAL:-50}
-OF_BASHRC=/usr/lib/openfoam/openfoam11/etc/bashrc
+# openfoam.org deb -> /opt/openfoam11 ; openfoam.com deb -> /usr/lib/openfoam
+OF_BASHRC=""
+for cand in /opt/openfoam11/etc/bashrc /usr/lib/openfoam/openfoam11/etc/bashrc; do
+    [ -f "$cand" ] && OF_BASHRC=$cand && break
+done
 FOAM_IMAGE=${FOAM_IMAGE:-openfoam/openfoam11-paraview510}
 
 WORK="$ROOT/work/$CASE_NAME"
@@ -34,7 +38,7 @@ mkdir -p "$WORK"
 cp -r "$HERE/case" "$CASE"
 cp "$MSH" "$CASE/fluid_flow.msh"
 
-if [ -f "$OF_BASHRC" ]; then
+if [ -n "$OF_BASHRC" ]; then
     USE_DOCKER=0
     echo "=== [$CASE_NAME] using local OpenFOAM ($OF_BASHRC)"
 else
@@ -47,8 +51,10 @@ foam() {
     if [ "$USE_DOCKER" = "0" ]; then
         bash -c ". $OF_BASHRC >/dev/null 2>&1; $1"
     else
-        # docker image: OpenFOAM lives under /opt/openfoam11, not /usr/lib
-        docker run --rm --entrypoint /bin/bash \
+        # docker image: OpenFOAM lives under /opt/openfoam11, not /usr/lib;
+        # --user root: image defaults to uid 1000 which cannot write the
+        # runner-owned mounted work dir
+        docker run --rm --user root --entrypoint /bin/bash \
             -v "$WORK:/work" -w /work/case "$FOAM_IMAGE" \
             -c 'if [ -f /opt/openfoam11/etc/bashrc ]; then . /opt/openfoam11/etc/bashrc >/dev/null 2>&1; fi; '"$1"
     fi
