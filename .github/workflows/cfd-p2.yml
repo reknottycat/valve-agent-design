@@ -1,0 +1,92 @@
+name: cfd-p2-validation
+
+on:
+  push:
+    branches:
+      - cloud/cfd-p2-20261123
+  workflow_dispatch:
+
+jobs:
+  run-cfd:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env:
+      # Sea water, 20 degC
+      P2_RHO: "1024"
+      P2_NU: "1.025e-6"
+      # Operating point A: original state21 flow rate [m3/s]
+      P2_Q_LOW: "1.634e-6"
+      # Operating point B: rated flow, Kv_rated [m3/h] at PN [bar]
+      P2_KV_RATED: "400"
+      P2_PN_BAR: "6"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install OpenFOAM 11 (apt)
+        id: install_of
+        continue-on-error: true
+        run: |
+          set -x
+          export DEBIAN_FRONTEND=noninteractive
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq software-properties-common wget ca-certificates
+          sudo sh -c "wget -O - https://dl.openfoam.org/gpg.key > /etc/apt/trusted.gpg.d/openfoam.asc"
+          sudo add-apt-repository -y http://dl.openfoam.org/ubuntu
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq openfoam11
+          test -f /usr/lib/openfoam/openfoam11/etc/bashrc
+          echo "OpenFOAM 11 installed locally"
+
+      - name: Install Python dependencies (gmsh, numpy)
+        run: |
+          set -x
+          sudo apt-get install -y -qq libgl1 libglu1-mesa libxrender1 libxcursor1 \
+            libxinerama1 libxft2 libxi6 || true
+          python3 -m pip install --upgrade pip
+          python3 -m pip install gmsh numpy
+
+      - name: Mesh the flow domain (gmsh)
+        run: |
+          set -x
+          mkdir -p results
+          python3 scripts/p2/mesh_fluid.py results/fluid_flow.msh 2>&1 | tee results/mesh.log
+
+      - name: Solve operating point A (laminar, state21 flow rate)
+        run: |
+          set -x
+          V=$(python3 -c "import math,os;print('%.9g'%(float(os.environ['P2_Q_LOW'])/(math.pi*0.1**2)))")
+          echo "operating point A: inlet velocity = $V m/s"
+          bash scripts/p2/run_openfoam.sh case_lam results/fluid_flow.msh laminar "$V" 2000
+
+      - name: Solve operating point B (kOmegaSST, rated flow velocity)
+        continue-on-error: true
+        run: |
+          set -x
+          V=$(python3 -c "import math,os;rho=float(os.environ['P2_RHO']);kv=float(os.environ['P2_KV_RATED']);pn=float(os.environ['P2_PN_BAR']);q=kv*math.sqrt(rho/1000.0/pn)/3600.0;print('%.9g'%(q/(math.pi*0.1**2)))")
+          echo "operating point B: inlet velocity = $V m/s"
+          bash scripts/p2/run_openfoam.sh case_turb results/fluid_flow.msh ras "$V" 2000
+
+      - name: Collect summary
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import json, os, glob
+          out = {}
+          for p in sorted(glob.glob("results/case_*.json")):
+              try:
+                  out[os.path.basename(p)[:-5]] = json.load(open(p))
+              except Exception as exc:
+                  out[os.path.basename(p)[:-5]] = {"error": str(exc)}
+          json.dump(out, open("results/summary.json", "w"), indent=2, sort_keys=True)
+          print(json.dumps(out, indent=2, sort_keys=True))
+          PY
+
+      - name: Upload cfd-results artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cfd-results
+          path: results/
+          retention-days: 30
