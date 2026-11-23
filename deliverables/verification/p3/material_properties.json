@@ -1,0 +1,43 @@
+{
+  "schema": "valve.material_evidence/1.0",
+  "date": "2026-11-23",
+  "task": "P3 - A-01 low-temperature verification for 522-35.4179СБ",
+  "primary_grade": {
+    "designation": "БрА10Ж3Мц2",
+    "standard": "ГОСТ 18175-78",
+    "class": "cast aluminum bronze (Cu-Al-Fe-Mn), FCC matrix",
+    "composition_verified": true,
+    "sigma_b_MPa_typical": 550,
+    "sigma_02_MPa_typical": 230,
+    "sigma_source_status": "handbook typical value, NOT standard-guaranteed; certificate required",
+    "KCU_Jcm2_20C": null,
+    "KCU_Jcm2_minus40C": "NOT_FOUND_IN_OPEN_SOURCES",
+    "search_basis": "OpenAlex (2 queries), OSTI (5 queries), GOST 18175-78 full PDF text, Bing/Google search captures"
+  },
+  "alternative_grade": {
+    "designation": "БрАЖН10-4-4 / UNS C95800",
+    "standards": ["ГОСТ 1628-2019 (bar)", "ASTM B505/B505M-23 (continuous cast)", "ГОСТ 18175-78 chemistry: БрАЖНМц9-4-4-1"],
+    "sigma_b_MPa_min": 586,
+    "sigma_05_MPa_min": 241,
+    "elongation_pct_min": 18,
+    "charpy_J_room_temp_cast": [10, 12],
+    "charpy_source": "ETASR Vol.15 No.4 2025 pp.25068-25075 (ASTM E23, as-cast)",
+    "cryogenic_evidence": "DCT at -180C caused only minor microstructural changes in NAB (MDPI Cryogenics 2024, doi:10.3390/cmd5040030) - directional FCC-stability evidence, not an acceptance criterion",
+    "marine_seawater_valve_use": "explicitly listed by CDA and manufacturer",
+    "data_conflicts": ["Mn lower bound 0.08% (Concast PDF) vs 0.8% (CDA) - resolve at purchase"]
+  },
+  "a01_recommendation": {
+    "verdict": "CONDITIONAL_RELEASE_WITH_TEMP_LIMIT",
+    "interim_min_design_temp_C": -20,
+    "if_minus40_required": {
+      "action": "switch to БрАЖН10-4-4 (C95800) + -40C Charpy (3 pcs/heat) as casting acceptance test"
+    },
+    "phase2_action": "obtain БрА10Ж3Мц2 mill certificate; confirm actual minimum design temperature with customer"
+  },
+  "honesty_notes": [
+    "No БрА10Ж3Мц2 -40C impact data exists in open sources - any -40C claim for this grade must come from certificate or new testing",
+    "C95800 Charpy values are room-temperature; not extrapolated to -40C",
+    "RS (Russian Register) rule text for -40C impact requirements not obtained in quotable form",
+    "Network captures preserved in /tmp/valve-phase2/p3/ for provenance"
+  ]
+}

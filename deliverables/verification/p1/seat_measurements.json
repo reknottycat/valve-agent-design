@@ -1,0 +1,26 @@
+{
+  "seat_cone_angle_deg": null,
+  "seat_cone_angle_status": "NOT_APPLICABLE - no CONICAL_SURFACE entities in either STEP file; seal is a tilted-disc plane-on-face design, not a conical seat",
+  "sealing_diameter_mm": [200.0, 208.0],
+  "sealing_diameter_basis": "seat bore r=100mm (cyl id418/1055) vs disc seal edge r=104mm (cyl id602/662); disc oversized to seat when inclined 45deg",
+  "seat_width_mm": 26.0,
+  "seal_line_width_mm": 4.0,
+  "seal_line_width_source": "geometry_check.json params.seal_line_width (CAD param); CAD annular face is 26mm wide (100->116mm)",
+  "disc_inclination_deg": 45.0,
+  "disc_inclination_source": "geometry_check.json params.disc_inclination; consistent with disc OD 208mm vs bore 200mm requiring tilt to seat",
+  "disc_lift_mm": null,
+  "disc_lift_status": "CANNOT_MEASURE_FROM_STATIC_STEP - closed-position geometry only; no kinematic data; geometry_check.json has no lift field",
+  "pivot_offset_e_mm": 15.0,
+  "measurement_method": "STEP AP214 text parsing (measure_seat.py): CYLINDRICAL_SURFACE / PLANE / CIRCLE entity extraction; no FreeCAD available",
+  "source_files": [
+    "seat_ring_asm.step",
+    "disc_asm.step",
+    "geometry_check.json (runs/20261006/C0/T12/out/ @ consolidated-main)"
+  ],
+  "confidence": "HIGH for surface inventory (direct entity extraction); N/A for lift (not derivable from static CAD)",
+  "a03_verdict": {
+    "cone_angle_60deg_hypothesis": "REJECTED - no conical surfaces exist in CAD",
+    "tilted_disc_plane_seal": "VERIFIED - 45deg inclination, seal line dia ~200-208mm matches DN200",
+    "lift_025xDN_hypothesis": "STILL_ON_HOLD - requires original drawing kinematic data"
+  }
+}
