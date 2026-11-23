@@ -202,14 +202,14 @@ def build(case_dir, mode, velocity, rho, nu, end_time, write_interval):
         )
         relaxation = (
             "relaxationFactors\n{\n"
-            "    fields { p 0.3; }\n"
-            "    equations { U 0.7; k 0.7; omega 0.7; }\n"
+            "    fields { p 0.1; }\n"
+            "    equations { U 0.3; k 0.5; omega 0.5; }\n"
             "}\n"
         )
         divschemes = (
-            "    div(phi,U)     Gauss linearUpwind grad(U);\n"
-            "    div(phi,k)     Gauss limitedLinear 1;\n"
-            "    div(phi,omega) Gauss limitedLinear 1;\n"
+            "    div(phi,U)     Gauss upwind;\n"
+            "    div(phi,k)     Gauss upwind;\n"
+            "    div(phi,omega) Gauss upwind;\n"
             "    div((nuEff*dev2(T(grad(U))))) Gauss linear;\n"
         )
     else:
@@ -223,11 +223,13 @@ def build(case_dir, mode, velocity, rho, nu, end_time, write_interval):
         )
         relaxation = (
             "relaxationFactors\n{\n"
-            "    fields { p 0.3; }\n"
-            "    equations { U 0.7; }\n"
+            "    fields { p 0.1; }\n"
+            "    equations { U 0.3; }\n"
             "}\n"
         )
-        divschemes = ("    div(phi,U)     Gauss linearUpwind grad(U);\n"
+        # first-order start: the skewed proxy mesh (max skew 3.97, 761
+        # severely non-orthogonal faces) diverged with linearUpwind
+        divschemes = ("    div(phi,U)     Gauss upwind;\n"
                       "    div((nuEff*dev2(T(grad(U))))) Gauss linear;\n")
 
     # steady-state per official tutorial pitzDailySteady: SIMPLE dict
@@ -235,7 +237,7 @@ def build(case_dir, mode, velocity, rho, nu, end_time, write_interval):
     solution = (
         solvers
         + "SIMPLE\n{\n"
-        "    nNonOrthogonalCorrectors 0;\n"
+        "    nNonOrthogonalCorrectors 2;\n"
         "    consistent yes;\n"
         "    residualControl { p 1e-4; U 1e-5; }\n"
         "}\n"
