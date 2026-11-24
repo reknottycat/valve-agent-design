@@ -33,7 +33,14 @@ case "$VERSION_CODENAME" in jammy|noble) ;; *) exit 2;; esac
 curl -fsSL --retry 2 https://dl.openfoam.org/gpg.key | gpg --dearmor > /tmp/p2-of11.gpg
 printf 'deb [signed-by=/tmp/p2-of11.gpg] https://dl.openfoam.org/ubuntu %s main\n' "$VERSION_CODENAME" >/etc/apt/sources.list.d/p2-of11.list
 export DEBIAN_FRONTEND=noninteractive
-apt-get -o Acquire::Retries=2 update && apt-get -o Acquire::Retries=2 install -y --no-install-recommends openfoam11
+apt-get -o Acquire::Retries=2 update
+pkg=$(apt-cache show --no-all-versions openfoam11)
+path=$(printf '%s\\n' "$pkg" | grep '^Filename: ' | cut -d' ' -f2)
+sha=$(printf '%s\\n' "$pkg" | grep '^SHA256: ' | cut -d' ' -f2)
+[[ $sha =~ ^[a-f0-9]{64}$ && $path == dists/"$VERSION_CODENAME"/main/binary-amd64/openfoam11_*.deb ]]
+curl --proto '=https' --proto-redir '=https' --retry 2 -fsSL "https://downloads.sourceforge.net/project/foam/foam/ubuntu/$path" -o /tmp/p2-openfoam11.deb
+printf '%s  %s\\n' "$sha" /tmp/p2-openfoam11.deb | sha256sum -c -
+apt-get -o Acquire::Retries=2 install -y --no-install-recommends /tmp/p2-openfoam11.deb
 '''],work,work/'install.log')
 
 
