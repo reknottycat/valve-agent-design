@@ -1,0 +1,43 @@
+{
+  "model": "analytic_benchmark_only",
+  "limits": {
+    "pipe_error": 0.03,
+    "imbalance": 0.001,
+    "flux_error": 0.001,
+    "dp_span": 0.005
+  },
+  "cases": {
+    "pipe": {
+      "dp_Pa": 72.02068787955746,
+      "dp_span": 1.3120408378621874e-10,
+      "imbalance": 1.2299876798122367e-12,
+      "flux_error": 1.2325696019388488e-12,
+      "window_iterations": [
+        1010.0,
+        1200.0
+      ],
+      "cells": 9400,
+      "mesh_sha256": "2132bdc45fe0f7f969252da46c91e3ffb88a519639e379047fa7fb6773256648",
+      "reference_Pa": 72.0,
+      "pipe_error": 0.0002873316605203069,
+      "pass": true
+    },
+    "nozzle": {
+      "dp_Pa": 81.06253534473987,
+      "dp_span": 6.006098437634169e-11,
+      "imbalance": 2.0975099637152034e-12,
+      "flux_error": 2.100097873380946e-12,
+      "window_iterations": [
+        1010.0,
+        1200.0
+      ],
+      "cells": 9400,
+      "mesh_sha256": "d5422623a5bc23c272d5c5cc51b533cf9529744d945b2b40c4297774a20cda46",
+      "pass": true
+    }
+  },
+  "pass": true,
+  "source_commit": "822a846d4d8daf295bb04f914abfb3348fe8c3e6",
+  "kaggle_version": 2,
+  "kaggle_notebook": "zhenhefu/pipe-pressure-270e78a3"
+}
