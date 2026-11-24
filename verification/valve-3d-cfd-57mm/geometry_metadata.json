@@ -1,0 +1,15 @@
+{
+  "source_step": "valve_geometry.step",
+  "surfaces_total": 132,
+  "inlet_surfaces": [
+    79
+  ],
+  "outlet_surfaces": [
+    34
+  ],
+  "wall_surfaces_count": 130,
+  "volume_m3": 0.06414242614375955,
+  "inlet_area_m2": 0.031415926535897934,
+  "outlet_area_m2": 0.031415926535897934,
+  "mesh_size_mm": 5.0
+}
