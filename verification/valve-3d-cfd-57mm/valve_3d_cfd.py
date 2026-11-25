@@ -15,10 +15,15 @@ import tempfile
 from pathlib import Path
 
 # Physical parameters (SI units)
-RHO = 1024.9109328963  # kg/m³, seawater at 20 °C and 35 g/kg
-NU = 1.0504609627009073e-6  # m²/s, same study state
+import sys
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT/'framework/tools'))
+from foam11_gates import liquid, mesh_checks, require_case, assess
+PLAN = json.loads((ROOT/'framework/evidence/physical-input-recovery/flow_study_plan_R1_original.json').read_text())
+STATE = PLAN['selected_study_property_state']
+RHO, NU = liquid(STATE)
 Q_M3H = 100.0  # m³/h, volumetric flow rate
-D = 0.2        # m, pipe diameter
+D = PLAN['nominal_diameter_m']        # m, pipe diameter
 A_INLET = math.pi * (D/2)**2  # m², inlet area
 
 # Flow velocity from Q = U * A
@@ -91,190 +96,6 @@ def write_dict(path, class_name, object_name, content):
 }}
 '''
     Path(path).write_text(header + content)
-
-
-def setup_mesh_case(case_dir, stl_path, metadata):
-    """Set up snappyHexMesh case to generate volume mesh from STL."""
-    case = Path(case_dir)
-    case.mkdir(exist_ok=True)
-
-    # Create directory structure
-    for d in ['0', 'constant/triSurface', 'system']:
-        (case / d).mkdir(parents=True, exist_ok=True)
-
-    # Copy STL to triSurface directory (convert mm → m)
-    stl_dest = case / 'constant/triSurface/valve.stl'
-    print(f"Converting STL from mm to m and writing to {stl_dest}")
-    with open(stl_path, 'r') as fin, open(stl_dest, 'w') as fout:
-        for line in fin:
-            stripped = line.strip()
-            if stripped.startswith('vertex'):
-                parts = stripped.split()
-                x, y, z = float(parts[1]) / 1000.0, float(parts[2]) / 1000.0, float(parts[3]) / 1000.0
-                fout.write(f'    vertex {x:.10f} {y:.10f} {z:.10f}\n')
-            else:
-                fout.write(line)
-    print(f"STL converted")
-
-    # Generate background mesh with blockMesh
-    # Domain covers STL range (mm→m): X=[-0.65,1.25], Y=[-0.15,0.15], Z=[-0.165,0.345]
-    # STL actual range: X[-0.6,1.2], Y[-0.145,0.145], Z[-0.145,0.332]
-    write_dict(str(case / 'system/blockMeshDict'), 'dictionary', 'blockMeshDict', '''
-vertices
-(
-    (-0.65 -0.165 -0.165)
-    ( 1.25 -0.165 -0.165)
-    ( 1.25  0.165 -0.165)
-    (-0.65  0.165 -0.165)
-    (-0.65 -0.165  0.345)
-    ( 1.25 -0.165  0.345)
-    ( 1.25  0.165  0.345)
-    (-0.65  0.165  0.345)
-);
-
-blocks
-(
-    hex (0 1 2 3 4 5 6 7) (95 17 26) simpleGrading (1 1 1)
-);
-
-edges ();
-boundary ();
-defaultPatch { type patch; }
-mergePatchPairs ();
-''')
-
-    # snappyHexMeshDict configuration
-    # STL valve_split.stl has 3 named solids: inlet, outlet, walls
-    write_dict(str(case / 'system/snappyHexMeshDict'), 'dictionary', 'snappyHexMeshDict', f'''
-castellatedMesh true;
-snap            true;
-addLayers       false;
-
-geometry
-{{
-    valve.stl
-    {{
-        type triSurfaceMesh;
-        name valve;
-        regions
-        {{
-            inlet  {{ name inlet;  }}
-            outlet {{ name outlet; }}
-            walls  {{ name valve;  }}
-        }}
-    }}
-}}
-
-castellatedMeshControls
-{{
-    maxLocalCells 5000000;
-    maxGlobalCells 10000000;
-    minRefinementCells 10;
-    maxLoadUnbalance 0.10;
-    nCellsBetweenLevels 3;
-
-    features
-    (
-    );
-
-    refinementSurfaces
-    {{
-        valve
-        {{
-            level (1 2);
-            regions
-            {{
-                inlet  {{ level (2 2); patchInfo {{ type patch; }} }}
-                outlet {{ level (2 2); patchInfo {{ type patch; }} }}
-                walls  {{ level (1 2); patchInfo {{ type wall; inGroups (wall); }} }}
-            }}
-        }}
-    }}
-
-    resolveFeatureAngle 30;
-
-    refinementRegions
-    {{
-    }}
-
-    locationInMesh (-0.5 0.0 0.0);  // 入口管道中心，肯定在流体域内
-    allowFreeStandingZoneFaces true;
-}}
-
-snapControls
-{{
-    nSmoothPatch 3;
-    tolerance 2.0;
-    nSolveIter 100;
-    nRelaxIter 5;
-    nFeatureSnapIter 10;
-    implicitFeatureSnap false;
-    explicitFeatureSnap true;
-    multiRegionFeatureSnap false;
-}}
-
-addLayersControls
-{{
-    relativeSizes true;
-    layers {{}}
-    expansionRatio 1.0;
-    finalLayerThickness 0.3;
-    minThickness 0.1;
-    nGrow 0;
-    featureAngle 30;
-    nRelaxIter 3;
-    nSmoothSurfaceNormals 1;
-    nSmoothNormals 3;
-    nSmoothThickness 10;
-    maxFaceThicknessRatio 0.5;
-    maxThicknessToMedialRatio 0.3;
-    minMedianAxisAngle 90;
-    nBufferCellsNoExtrude 0;
-    nLayerIter 50;
-}}
-
-meshQualityControls
-{{
-    maxNonOrtho 70;
-    maxBoundarySkewness 20;
-    maxInternalSkewness 4;
-    maxConcave 80;
-    minFlatness 0.5;
-    minVol 1e-18;
-    minTetQuality -1;
-    minArea -1;
-    minTwist 0.02;
-    minDeterminant 0.001;
-    minFaceWeight 0.02;
-    minVolRatio 0.01;
-    minTriangleTwist -1;
-
-    nSmoothScale 4;
-    errorReduction 0.75;
-}}
-
-writeFlags (scalarLevels layerSets layerFields);
-mergeTolerance 1e-6;
-''')
-
-    # Dummy initial fields (not used for meshing)
-    write_dict(str(case / '0/U'), 'volVectorField', 'U',
-               'dimensions [0 1 -1 0 0 0 0]; internalField uniform (0 0 0); boundaryField {}')
-    write_dict(str(case / '0/p'), 'volScalarField', 'p',
-               'dimensions [0 2 -2 0 0 0 0]; internalField uniform 0; boundaryField {}')
-
-    # controlDict for meshing
-    write_dict(str(case / 'system/controlDict'), 'dictionary', 'controlDict', '''
-application     snappyHexMesh;
-startFrom       startTime;
-startTime       0;
-stopAt          endTime;
-endTime         1;
-deltaT          1;
-writeControl    timeStep;
-writeInterval   1;
-writePrecision  14;
-''')
 
 
 def setup_solver_case(mesh_case, solver_case, metadata):
@@ -516,13 +337,13 @@ relaxationFactors
 {
     fields
     {
-        p               0.3;
+        p               0.15;
     }
     equations
     {
-        U               0.7;
-        k               0.7;
-        omega           0.7;
+        U               0.3;
+        k               0.35;
+        omega           0.35;
     }
 }
 ''')
@@ -534,10 +355,10 @@ solver          incompressibleFluid;
 startFrom       startTime;
 startTime       0;
 stopAt          endTime;
-endTime         3000;
+endTime         7500;
 deltaT          1;
 writeControl    timeStep;
-writeInterval   3000;
+writeInterval   7500;
 writePrecision  14;
 writeCompression off;
 timeFormat      general;
@@ -688,18 +509,15 @@ def evaluate_results(case_dir, area_inlet):
 
     # Quality gate checks
     result['residual_converged'] = ' solution converged in ' in (case / 'foamRun.log').read_text()
-    result['pass'] = (
-        result['residual_converged'] and
-        dp_mean > 0 and
-        dp_span is not None and dp_span <= TOL['dp_span'] and
-        imbalance_max <= TOL['imbalance'] and
-        flux_error_max <= TOL['flux_error']
-    )
-
-    result['meets_target'] = result['pass'] and kz is not None and kz <= TOL['target_kz']
+    result['study_assessment'] = assess(result, TOL)
+    result['pass'] = result['study_assessment'] in ('within_study_limit','above_study_limit')
+    result['meets_target'] = result['study_assessment']=='within_study_limit' if result['pass'] else None
 
     return result
 
+
+MESH_ASSET = 'open57-ring-v22-si.msh.gz'
+ASSET_HASHES = {'geometry_metadata.json':'ed0bbb43dec32dd3a3846b183780c8bbf70b25c4b761eaf30ded18cbd02d125c', MESH_ASSET:'5e3a72898fe148b5fcfcd38bd0d7b7e5636439ae144ada446f7a2982b3e58a81'}
 
 def main():
     """Main execution pipeline."""
@@ -715,7 +533,7 @@ def main():
         'limits': TOL,
         'target_dp_Pa': TARGET_DP_PA,
         'pressure_basis': 'area-mean static pressure between pipe end planes, including straight extensions',
-        'seawater_study': {'temperature_C': 20, 'salinity_g_kg': 35, 'density_kg_m3': RHO, 'kinematic_viscosity_m2_s': NU},
+        'study_assessment': 'not_evaluated', 'solver_started': False, 'seawater_study': STATE,
     }
 
     try:
@@ -725,10 +543,7 @@ def main():
 
         # Load geometry metadata
         assets = 'https://github.com/reknottycat/valve-agent-design/releases/download/valve-3d-v1'
-        for name, digest in {
-            'geometry_metadata.json': 'ed0bbb43dec32dd3a3846b183780c8bbf70b25c4b761eaf30ded18cbd02d125c',
-            'valve_endplanes.stl.gz': '8c99ffe22a67b05d0f386548eae574400e4a99f2539529646bca41089c471a8b',
-        }.items():
+        for name, digest in ASSET_HASHES.items():
             path = work / name
             subprocess.run(['curl', '-fsSL', '--retry', '2', '-o', str(path), f'{assets}/{name}'], check=True)
             if hashlib.sha256(path.read_bytes()).hexdigest() != digest:
@@ -740,45 +555,28 @@ def main():
         metadata = json.loads(metadata_file.read_text())
         result['geometry'] = metadata
 
-        # Stage 1: Generate mesh
-        print("\n=== Stage 1: Mesh generation ===")
         mesh_case = work / 'mesh'
-        stl_file = work / 'valve_endplanes.stl.gz'
-
-        # Decompress STL
-        stl_uncompressed = work / 'valve_split.stl'
-        print(f"Decompressing {stl_file.name}...")
-        with gzip.open(stl_file, 'rb') as f_in:
-            stl_uncompressed.write_bytes(f_in.read())
-
-        setup_mesh_case(mesh_case, stl_uncompressed, metadata)
-
-        # Run blockMesh
-        print("Running blockMesh...")
-        run(['blockMesh'], mesh_case, mesh_case / 'blockMesh.log', of=True)
-
-        # Run snappyHexMesh
-        print("Running snappyHexMesh (this may take 10-20 minutes)...")
-        run(['snappyHexMesh', '-overwrite'], mesh_case, mesh_case / 'snappyHexMesh.log', of=True)
-
-        # Check mesh quality
-        print("Running checkMesh...")
-        run(['checkMesh'], mesh_case, mesh_case / 'checkMesh.log', of=True)
-
-        mesh_log = (mesh_case / 'checkMesh.log').read_text()
-        if 'Mesh OK.' not in mesh_log:
-            raise ValueError(f"Mesh quality check failed:\n{mesh_log[-1800:]}")
-
-        # Extract cell count
-        cell_match = re.search(r'(?m)^\s*cells:\s*(\d+)', mesh_log)
-        if cell_match:
-            result['cells'] = int(cell_match.group(1))
-            print(f"Mesh generated: {result['cells']} cells")
-
+        (mesh_case/'system').mkdir(parents=True)
+        (mesh_case/'constant').mkdir()
+        write_dict(str(mesh_case/'system/controlDict'), 'dictionary', 'controlDict', 'application checkMesh; startFrom startTime; startTime 0; stopAt endTime; endTime 1; deltaT 1; writeControl timeStep; writeInterval 1; writeFormat ascii; writePrecision 14;')
+        for name in ('fvSolution','fvSchemes'):
+            write_dict(str(mesh_case/'system'/name), 'dictionary', name, '' if name=='fvSolution' else 'ddtSchemes {default steadyState;} gradSchemes {default Gauss linear;} divSchemes {default none;} laplacianSchemes {default Gauss linear corrected;} interpolationSchemes {default linear;} snGradSchemes {default corrected;}')
+        msh = work/'volume.msh'
+        with gzip.open(work/MESH_ASSET,'rb') as src, msh.open('wb') as dst: shutil.copyfileobj(src,dst)
+        run(['gmshToFoam',str(msh)],mesh_case,mesh_case/'gmshToFoam.log',of=True)
+        boundary = mesh_case/'constant/polyMesh/boundary'; b=boundary.read_text(); b,n=re.subn(r'(\bvalve\s*\{[^{}]*?\btype\s+)patch;',r'\1wall;',b); assert n==1, b; boundary.write_text(b); (output/'boundary.txt').write_text(b)
+        run(['checkMesh','-allGeometry','-allTopology'],mesh_case,mesh_case/'checkMesh.log',of=True); mesh_log=(mesh_case/'checkMesh.log').read_text(); result['cells']=int(re.search(r'(?m)^\s*cells:\s*(\d+)',mesh_log)[1])
+        points=[(-.5,.00017,.00013),(1.1,.00017,.00013),(.320,.00017,.331),(.280,.00017,.331),(.3315,.00017,.160),(.2685,.00017,.160)]
+        coords=' '.join('('+' '.join(map(str,p))+')' for p in points);write_dict(str(mesh_case/'system/topoSetDict'),'dictionary','topoSetDict','actions ( { name checkFluid; type cellSet; action new; source regionToCell; insidePoints ('+coords+'); } );');run(['topoSet'],mesh_case,mesh_case/'probeCells.log',of=True)
+        checks = mesh_checks(mesh_log, (mesh_case/'probeCells.log').read_text(), bbox_m=(-.6,-.145,-.145,1.2,.145,.332), tolerance_m=.001, points=points, cells=1291975)
+        result['mesh_checks'] = checks
         # Stage 2: Run solver
         print("\n=== Stage 2: CFD simulation ===")
         solver_case = work / 'solver'
         setup_solver_case(mesh_case, solver_case, metadata)
+
+        require_case(solver_case, checks, {'inlet':'patch','outlet':'patch','valve':'wall'}, NU)
+        result['solver_started'] = True
 
         # Run foamRun (OpenFOAM 11 replaces simpleFoam)
         print("Running foamRun -solver incompressibleFluid (steady RANS, k-omega SST)...")
@@ -794,7 +592,7 @@ def main():
         print(f"  Resistance coefficient Кз: {result['kz']:.3f}")
         print(f"  Target: Кз ≤ {TOL['target_kz']} (ΔP ≤ {TARGET_DP_PA:.2f} Pa)")
         print(f"  Quality gates: {'PASS' if result['pass'] else 'FAIL'}")
-        print(f"  Meets target: {'YES' if result['meets_target'] else 'NO'}")
+        print(f"  Study assessment: {result['study_assessment']}")
 
         result['success'] = True
 

@@ -1,0 +1,19 @@
+name: Valve flow evidence gates
+on:
+  push:
+    paths: ['framework/tools/**', 'framework/tests/**', 'framework/evidence/physical-input-recovery/**', 'verification/valve-3d-cfd-57mm/**', '.github/workflows/valve-flow-gates.yml']
+  pull_request:
+    paths: ['framework/tools/**', 'framework/tests/**', 'framework/evidence/physical-input-recovery/**', 'verification/valve-3d-cfd-57mm/**', '.github/workflows/valve-flow-gates.yml']
+permissions:
+  contents: read
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            framework
+            verification/valve-3d-cfd-57mm
+      - name: Replay framework regression tests, including archived CFD failures
+        run: python3 -m unittest discover -s framework/tests -v
