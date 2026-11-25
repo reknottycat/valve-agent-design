@@ -143,3 +143,26 @@ valve.stl
 **现象**：直接把 STL（11MB）和 CFD 脚本打包进 kernel 源码，推送时报错超过 1MB 限制。
 
 **修复**：kernel 只放轻量引导脚本（`valve_cfd_release.py` < 2KB），在运行时从 GitHub Release 下载实际文件。
+
+---
+
+## 错误 10：boundary conditions patch 名与 snappyHexMesh 实际生成的 patch 不匹配
+
+**现象（v11）**：checkMesh 显示网格正常，三个 patch（inlet/outlet/walls）都生成了，但 simpleFoam 没跑起来，kernel 状态 ERROR，无 simpleFoam.log 和 result.json。
+
+**根因**：
+- snappyHexMeshDict 的 `geometry/regions` 把 STL 的 `solid walls` 映射成 OpenFOAM 的 `walls` patch
+- boundary conditions (0/U, 0/p, 0/k, 0/omega, 0/nut) 里定义了四个 patch：`inlet`, `outlet`, `valve`, `walls`
+- snappyHexMesh 实际生成的 patch：`inlet`, `outlet`, `walls`（没有 `valve`）
+- simpleFoam 启动时读 0/U，要求 `valve` patch，但 mesh 里不存在，报错退出
+
+**证据**：
+- checkMesh.log 76-77 行：`inlet 1485, outlet 1483, walls 26400` ← 只有三个 patch
+- boundary conditions 写了四个：inlet/outlet/valve/walls
+
+**修复（v12）**：
+1. snappyHexMeshDict `geometry/regions` 中 `walls { name valve; }` — STL 的 `solid walls` 映射成 `valve` patch
+2. 删除所有 boundary conditions 文件里的 `walls` patch 定义（和 `valve` 条件完全相同，都是 noSlip / zeroGradient）
+
+**预防**：在 `valve_3d_cfd.py` 的 `run_solver()` 开头加检查：读取 `constant/polyMesh/boundary`，提取实际 patch 名列表，与 0/U 的 `boundaryField` 要求的 patch 对比，不匹配就报错退出并写入 result.json。
+
