@@ -18,3 +18,4 @@
 | Kaggle kernel 不能依赖 apt 包名假设版本 | kernel 脚本让 `valve_3d_cfd.py` 自己调 `install_openfoam()` |
 | GitHub Release 资产必须是公开仓库才能从 Kaggle 访问 | 仓库已设为 public；下载前用 SHA-256 验证 |
 | `identify_patches()` 不能是 placeholder | 已删除，改用 named-solid STL 直接生成正确 patch |
+| boundary conditions 的 patch 名必须与 mesh 实际 patch 完全匹配 | `run_solver()` 开头读 `constant/polyMesh/boundary`，与 0/U 的 `boundaryField` 对比，不匹配报错 |
