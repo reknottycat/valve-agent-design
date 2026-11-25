@@ -15,6 +15,8 @@ Status: tested foundation, not a completed CAD/CFD agent or manufacturing releas
 - `research/reusable-framework-20261022/framework/evidence_contract.py`: basic claim/scope/verification contract.
 - Original pressure/drive calculator bytes preserved with provenance. Only pure screw arithmetic was replayed against 12 saved scenarios, not the entire original load-study executable.
 
+The active [57 mm research runner](../../verification/valve-3d-cfd-57mm/valve_3d_cfd.py) calls the Foundation 11 evidence gates before starting the solver. The gate replay tests use archived runs v18–v21; a passing preflight is not evidence of product compliance.
+
 ## Reproduce bounded checks
 Run from repository root with Python 3:
 
