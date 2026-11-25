@@ -1,0 +1,53 @@
+{
+  "model": "valve_3d_57mm_opening",
+  "flow_rate_m3h": 100.0,
+  "inlet_velocity_ms": 0.8841941282883073,
+  "reynolds": 168344.0241348711,
+  "limits": {
+    "imbalance": 0.001,
+    "flux_error": 0.001,
+    "dp_span": 0.005,
+    "target_kz": 6.0
+  },
+  "target_dp_Pa": 2403.8238159496696,
+  "pressure_basis": "area-mean static pressure between pipe end planes, including straight extensions",
+  "study_assessment": "not_evaluated",
+  "solver_started": false,
+  "seawater_study": {
+    "temperature_C": 20.0,
+    "salinity_g_kg": 35.0,
+    "pressure_MPa_absolute": 0.101325,
+    "density_kg_m3": 1024.9109328963,
+    "dynamic_viscosity_Pa_s": 0.0010766289252529323,
+    "kinematic_viscosity_m2_s": 1.0504609627009073e-06,
+    "actual_duty_or_measurement": false,
+    "pressure_correction_implemented": false,
+    "minus_2C_phase_and_property_gate": "UNRESOLVED"
+  },
+  "geometry": {
+    "source_step": "valve_geometry.step",
+    "surfaces_total": 132,
+    "inlet_surfaces": [
+      79
+    ],
+    "outlet_surfaces": [
+      34
+    ],
+    "wall_surfaces_count": 130,
+    "volume_m3": 0.06414242614375955,
+    "inlet_area_m2": 0.031415926535897934,
+    "outlet_area_m2": 0.031415926535897934,
+    "mesh_size_mm": 5.0
+  },
+  "cells": 1291975,
+  "mesh_checks": {
+    "foundation11_full_check": true,
+    "native_quality": false,
+    "extent_in_metres": true,
+    "cell_count": true,
+    "connected_fluid_points": true
+  },
+  "success": false,
+  "pass": false,
+  "error": "\u7981\u6b62\u542f\u52a8\u6c42\u89e3\uff1anative_quality\uff1bMESH_QUALITY_NOT_PASSED"
+}
