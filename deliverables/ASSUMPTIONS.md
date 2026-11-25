@@ -1,5 +1,7 @@
 # Phase 1 Engineering Assumptions
 
+**Historical prototype record.** P1 tilted-disc findings describe that prototype, not the current axial-lift research assembly. Use the [current project plan](../CURRENT_PLAN.md).
+
 These assumptions are provisional inputs for Phase 1 research, not verified
 product specifications or approval for manufacture. Record their scope and
 actual use in each calculation or model. Resolve the applicable items in
@@ -10,10 +12,10 @@ Phase 2 before relying on them for design decisions.
 | A-01 | Material | БрА10Ж3Мц2 is the assumed material. Suitability at −40 °C is TBD. | Confirm the specified grade, applicable material standard, properties and suitability for the relevant service temperature and environment. The base variant is not assumed to require −40 °C service; confirm whether the −02 variant is in scope. | **CONDITIONAL RELEASE** — See P3/P3b reports |
 | A-02 | Design pressure | 0.9 MPa is a provisional design-pressure assumption. | Verify the applicable product's design pressure, pressure basis and governing requirements against authoritative specifications. Do not equate this assumption with the existing Ру6 marking, research load, rated pressure or test pressure. | **CONDITIONAL RELEASE** — See P0 report |
 | A-03 | Geometry | A 60° seat angle is assumed. | Confirm the angle, its measurement convention and applicability against an authoritative drawing or measurement. | **PARTIAL** — 60° assumption rejected; tilted-disc verified — See P1 report |
-| A-04 | CFD | Laminar flow is assumed for research, with research boundary conditions. | Document and justify inlet, outlet and wall boundaries, fluid properties and operating point; evaluate the flow regime and whether a turbulence model and sensitivity studies are needed. Research results do not establish product performance. | **IN PROGRESS** — P2 cloud verification |
+| A-04 | CFD | Laminar flow is assumed for research, with research boundary conditions. | Document and justify inlet, outlet and wall boundaries, fluid properties and operating point; evaluate the flow regime and whether a turbulence model and sensitivity studies are needed. Research results do not establish product performance. | **HISTORICAL** — P2 preparation |
 
 The current project scope and the distinction between research and product
-requirements are described in `CURRENT_PLAN.md`. Where these provisional inputs
+requirements are described in [CURRENT_PLAN.md](../CURRENT_PLAN.md). Where these provisional inputs
 conflict with verified project evidence, do not silently substitute them: record
 the discrepancy and resolve it before use.
 
@@ -79,9 +81,9 @@ the discrepancy and resolve it before use.
 
 ### A-04: CFD Validation (P2 in progress)
 
-**Status: IN PROGRESS — Cloud workflow preparation**
+**Historical preparation; superseded for new studies.**
 
-P2 agent currently running (5+ hours), preparing GitHub Actions workflow for cloud-based OpenFOAM verification. Awaiting progress report to determine next steps.
+The current fixed-input mesh failed native quality checks; no accepted pressure solution.
 
 ---
 
