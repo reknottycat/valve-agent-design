@@ -1,0 +1,134 @@
+{
+  "example": "Foundation 11 incompressibleFluid/ballValve",
+  "scope": "official tutorial and geometric sensitivity, not validation of the 57 mm valve",
+  "flow_balance_limit": 0.001,
+  "changes": {
+    "execution": "2 ranks; report numerical data instead of reconstructing visualization fields",
+    "observations": "three additional area-mean static kinematic pressures; identical in both cases",
+    "variant_only": "lPipe 50 -> 60; rPipe, rBall, motion, fluid, pressure boundary conditions and endTime unchanged"
+  },
+  "cases": [
+    {
+      "lPipe": 50,
+      "end_plane_distance_m": 0.5,
+      "physical_time_s": 1.0,
+      "samples": 2332,
+      "interval_start_s": 0.0,
+      "net_inlet_volume_m3": 0.05978735418089773,
+      "integrated_absolute_flux_imbalance": 2.4676135711106436e-07,
+      "phase_samples": {
+        "0.25": {
+          "inflow_m3_s": 0.07035307,
+          "lower_out_m3_s": 0.07035306,
+          "upper_out_m3_s": -1.938302e-10,
+          "inlet_minus_lower_kinematic_pressure_m2_s2": 7.470853,
+          "inlet_minus_upper_kinematic_pressure_m2_s2": 7.4710191543999995
+        },
+        "0.5": {
+          "inflow_m3_s": 0.04744573,
+          "lower_out_m3_s": 0.03488595,
+          "upper_out_m3_s": 0.01255979,
+          "inlet_minus_lower_kinematic_pressure_m2_s2": 8.853524035,
+          "inlet_minus_upper_kinematic_pressure_m2_s2": 8.850442
+        },
+        "0.75": {
+          "inflow_m3_s": 0.0758734,
+          "lower_out_m3_s": -4.056943e-09,
+          "upper_out_m3_s": 0.07587339,
+          "inlet_minus_lower_kinematic_pressure_m2_s2": 7.2237558,
+          "inlet_minus_upper_kinematic_pressure_m2_s2": 7.058701
+        },
+        "1.0": {
+          "inflow_m3_s": 0.04732297,
+          "lower_out_m3_s": 0.01248873,
+          "upper_out_m3_s": 0.03483425,
+          "inlet_minus_lower_kinematic_pressure_m2_s2": 8.85641301343004,
+          "inlet_minus_upper_kinematic_pressure_m2_s2": 8.8832301
+        }
+      },
+      "flow_balance_pass": true,
+      "geometry_mesh_sha256": "a207d73b9a6e75102fa4c97f2eb765751f43870e33c484f42e7e6d74c59a2233"
+    },
+    {
+      "lPipe": 60,
+      "end_plane_distance_m": 0.6,
+      "physical_time_s": 1.0,
+      "samples": 2166,
+      "interval_start_s": 0.0,
+      "net_inlet_volume_m3": 0.055315765534445,
+      "integrated_absolute_flux_imbalance": 2.683170019088191e-07,
+      "phase_samples": {
+        "0.25": {
+          "inflow_m3_s": 0.06072484,
+          "lower_out_m3_s": 0.06072484,
+          "upper_out_m3_s": -2.062773e-10,
+          "inlet_minus_lower_kinematic_pressure_m2_s2": 8.115809,
+          "inlet_minus_upper_kinematic_pressure_m2_s2": 8.115813395827
+        },
+        "0.5": {
+          "inflow_m3_s": 0.04847299,
+          "lower_out_m3_s": 0.0362643,
+          "upper_out_m3_s": 0.01220871,
+          "inlet_minus_lower_kinematic_pressure_m2_s2": 8.800043,
+          "inlet_minus_upper_kinematic_pressure_m2_s2": 8.800043
+        },
+        "0.75": {
+          "inflow_m3_s": 0.06907077,
+          "lower_out_m3_s": -7.557981e-09,
+          "upper_out_m3_s": 0.06907077,
+          "inlet_minus_lower_kinematic_pressure_m2_s2": 7.591616200000001,
+          "inlet_minus_upper_kinematic_pressure_m2_s2": 7.562363
+        },
+        "1.0": {
+          "inflow_m3_s": 0.04920741,
+          "lower_out_m3_s": 0.01222754,
+          "upper_out_m3_s": 0.03697989,
+          "inlet_minus_lower_kinematic_pressure_m2_s2": 8.763412,
+          "inlet_minus_upper_kinematic_pressure_m2_s2": 8.763412
+        }
+      },
+      "flow_balance_pass": true,
+      "geometry_mesh_sha256": "60ec8307cf9934163d082a45198e63df9956655a2a1f3e6669e6569f4a2bb736"
+    }
+  ],
+  "passed": true,
+  "source_sha256": {
+    "tutorials/incompressibleFluid/ballValve/Allrun": "c7aadf95025aa3339d6c8c821f60fd9c234f5a2b3fd73b311e4105901db7c12f",
+    "tutorials/incompressibleFluid/ballValve/system/controlDict": "db1efe1154038ad48351d6a4c8e6b5162e6151ca4db3e84f44fb0e98c58d302a",
+    "tutorials/incompressibleFluid/ballValve/constant/dynamicMeshDict": "319785dcc2c40a2777cbf4673b67046ca663b90a0e83ceb2e4e52fcafbac15ae",
+    "tutorials/incompressibleFluid/ballValve/0/U": "2d175adc798b7ec4c3d735809f6daf6588f166975000a79b4ec1fc7587ffb27a",
+    "tutorials/incompressibleFluid/ballValve/0/p": "a8da2ba599948dba8d0f1762560ef8c3f970a6bab3f8a2c2fd0e4f30d907f48f",
+    "tutorials/resources/blockMesh/ballValve": "5a1e176336f009a71fdbf47a353a4cf59d7af428bf16491e084f62f463490fcb"
+  },
+  "phase_differences_variant_minus_baseline": {
+    "0.25": {
+      "inflow_m3_s": -0.009628230000000002,
+      "lower_out_m3_s": -0.009628219999999993,
+      "upper_out_m3_s": -1.24471e-11,
+      "inlet_minus_lower_kinematic_pressure_m2_s2": 0.6449560000000005,
+      "inlet_minus_upper_kinematic_pressure_m2_s2": 0.6447942414270011
+    },
+    "0.5": {
+      "inflow_m3_s": 0.001027260000000002,
+      "lower_out_m3_s": 0.0013783500000000004,
+      "upper_out_m3_s": -0.00035108000000000014,
+      "inlet_minus_lower_kinematic_pressure_m2_s2": -0.05348103499999901,
+      "inlet_minus_upper_kinematic_pressure_m2_s2": -0.05039899999999875
+    },
+    "0.75": {
+      "inflow_m3_s": -0.00680262999999999,
+      "lower_out_m3_s": -3.501037999999999e-09,
+      "upper_out_m3_s": -0.006802619999999995,
+      "inlet_minus_lower_kinematic_pressure_m2_s2": 0.36786040000000053,
+      "inlet_minus_upper_kinematic_pressure_m2_s2": 0.5036620000000003
+    },
+    "1.0": {
+      "inflow_m3_s": 0.0018844400000000011,
+      "lower_out_m3_s": -0.0002611899999999997,
+      "upper_out_m3_s": 0.002145640000000004,
+      "inlet_minus_lower_kinematic_pressure_m2_s2": -0.09300101343003853,
+      "inlet_minus_upper_kinematic_pressure_m2_s2": -0.11981809999999982
+    }
+  },
+  "reported_pressure_changed": true
+}

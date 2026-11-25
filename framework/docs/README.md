@@ -17,6 +17,8 @@ Status: tested foundation, not a completed CAD/CFD agent or manufacturing releas
 
 The active [57 mm research runner](../../verification/valve-3d-cfd-57mm/valve_3d_cfd.py) calls the Foundation 11 evidence gates before starting the solver. The gate replay tests use archived runs v18–v21; a passing preflight is not evidence of product compliance.
 
+[Official ball-valve baseline and one-parameter sensitivity](../evidence/official-ball-valve/result.json): both transient runs reached 1 s. The archived example exercises parameter-to-flow automation, not the 57 mm product acceptance test.
+
 ## Reproduce bounded checks
 Run from repository root with Python 3:
 
