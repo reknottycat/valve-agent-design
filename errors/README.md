@@ -13,9 +13,8 @@
 |------|---------|
 | OpenFOAM STL 必须与求解器单位一致（metre） | `valve_3d_cfd.py` 在 `setup_mesh_case()` 写入 triSurface 时强制除以 1000 |
 | blockMeshDict 必须有 `defaultPatch { type patch; }` | snappyHexMesh 前的检查：`valve_3d_cfd.py` blockMeshDict 模板已内置 |
-| STL 必须有 named solids（inlet / outlet / walls） | 使用 `valve_split.stl.gz`；`valve_3d_cfd.py` main() 优先加载它 |
+| STL 必须有 named solids（inlet / outlet / walls） | v18 校验 `valve_endplanes.stl.gz` 摘要后使用两个共面端口和壁面 |
 | `locationInMesh` 必须在流体域内，不能在固体壁面内 | 固定为 `(-0.5, 0.0, 0.0)`（入口管道中心） |
 | Kaggle kernel 不能依赖 apt 包名假设版本 | kernel 脚本让 `valve_3d_cfd.py` 自己调 `install_openfoam()` |
-| GitHub Release 资产必须是公开仓库才能从 Kaggle 访问 | 仓库已设为 public；下载前用 SHA-256 验证 |
+| GitHub Release 资产必须是公开仓库才能从 Kaggle 访问 | 仓库已设为 public；下载后用 SHA-256 验证 |
 | `identify_patches()` 不能是 placeholder | 已删除，改用 named-solid STL 直接生成正确 patch |
-| boundary conditions 的 patch 名必须与 mesh 实际 patch 完全匹配 | `run_solver()` 开头读 `constant/polyMesh/boundary`，与 0/U 的 `boundaryField` 对比，不匹配报错 |
