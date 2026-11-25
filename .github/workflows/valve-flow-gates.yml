@@ -1,9 +1,9 @@
 name: Valve flow evidence gates
 on:
   push:
-    paths: ['framework/tools/**', 'framework/tests/**', 'framework/evidence/physical-input-recovery/**', 'verification/valve-3d-cfd-57mm/**', '.github/workflows/valve-flow-gates.yml']
+    paths: ['framework/tools/**', 'framework/tests/**', 'framework/evidence/physical-input-recovery/**', 'framework/evidence/official-ball-valve/**', 'verification/valve-3d-cfd-57mm/**', '.github/workflows/valve-flow-gates.yml']
   pull_request:
-    paths: ['framework/tools/**', 'framework/tests/**', 'framework/evidence/physical-input-recovery/**', 'verification/valve-3d-cfd-57mm/**', '.github/workflows/valve-flow-gates.yml']
+    paths: ['framework/tools/**', 'framework/tests/**', 'framework/evidence/physical-input-recovery/**', 'framework/evidence/official-ball-valve/**', 'verification/valve-3d-cfd-57mm/**', '.github/workflows/valve-flow-gates.yml']
 permissions:
   contents: read
 jobs:
