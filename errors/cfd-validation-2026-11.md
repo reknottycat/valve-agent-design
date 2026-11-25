@@ -132,7 +132,7 @@ valve.stl
 
 **现象**：`kaggle kernels output` 下载到大网格文件（>100MB）时，HTTP 连接断开（`IncompleteRead`），无法取到 `result.json`、`simpleFoam.log` 等关键文件。
 
-**根因**：Kaggle output 下载是按文件大小排序的，大文件（faces、points、owner 等）把连接耗尽，后面的小文件下不到。
+**根因**：整批下载在一个大文件传输中断时退出，后续文件未写入本地。可从单次作业的输出清单按文件名读取结果和日志。
 
 **缓解**：`valve_3d_cfd.py` 在 result.json 里记录完整的错误信息（error 字段），以便部分下载也能诊断。同时在 main() 里把每步关键日志也打印到 stdout（kernel log 中可见）。
 
@@ -146,23 +146,26 @@ valve.stl
 
 ---
 
-## 错误 10：boundary conditions patch 名与 snappyHexMesh 实际生成的 patch 不匹配
+## 错误 10　把边界名称差异误报为 v11 退出原因
 
-**现象（v11）**：checkMesh 显示网格正常，三个 patch（inlet/outlet/walls）都生成了，但 simpleFoam 没跑起来，kernel 状态 ERROR，无 simpleFoam.log 和 result.json。
+v11 网格检查通过。网格有入口、出口和壁面，初始场还包含一个多余的壁面条目。未取得 v11 求解报错原文，具体退出原因未确认。v12 仅删了部分字段，多余项已在 v18 从剩余三个场中移除。
 
-**根因**：
-- snappyHexMeshDict 的 `geometry/regions` 把 STL 的 `solid walls` 映射成 OpenFOAM 的 `walls` patch
-- boundary conditions (0/U, 0/p, 0/k, 0/omega, 0/nut) 里定义了四个 patch：`inlet`, `outlet`, `valve`, `walls`
-- snappyHexMesh 实际生成的 patch：`inlet`, `outlet`, `walls`（没有 `valve`）
-- simpleFoam 启动时读 0/U，要求 `valve` patch，但 mesh 里不存在，报错退出
+## 错误 11　OpenFOAM 11 配置迁移不全
 
-**证据**：
-- checkMesh.log 76-77 行：`inlet 1485, outlet 1483, walls 26400` ← 只有三个 patch
-- boundary conditions 写了四个：inlet/outlet/valve/walls
+v12 日志显示缺少 `viscosityModel`。v17 选中黏度模型后，在首次迭代前因缺少 `constant/momentumTransport` 停止，并提示旧字典类名错误。v18 按 Foundation 11 官方算例生成 `physicalProperties` 和 `momentumTransport`，两者的文件类均为 `dictionary`。
 
-**修复（v12）**：
-1. snappyHexMeshDict `geometry/regions` 中 `walls { name valve; }` — STL 的 `solid walls` 映射成 `valve` patch
-2. 删除所有 boundary conditions 文件里的 `walls` patch 定义（和 `valve` 条件完全相同，都是 noSlip / zeroGradient）
+## 错误 12　计算量纲与验收阈值混用
 
-**预防**：在 `valve_3d_cfd.py` 的 `run_solver()` 开头加检查：读取 `constant/polyMesh/boundary`，提取实际 patch 名列表，与 0/U 的 `boundaryField` 要求的 patch 对比，不匹配就报错退出并写入 result.json。
+旧脚本把 0.001 当作运动黏度，计算得到雷诺数约 177。研究工况采用 20 °C、盐度 35 g/kg 海水，运动黏度 1.0504609627009073×10⁻⁶ m²/s。DN200、100 m³/h 时雷诺数约 168344，按名义截面的动压折算，Кз 为 6 对应 2403.82 Pa。140 Pa 单列为比较值。测压位置取两侧延伸管的端面，产品验收的测压约定仍待确认。
 
+## 错误 13　清理输出导致启动报错并可能丢失日志
+
+v16 在安装前因 `main()` 中局部导入 `os` 报 `UnboundLocalError`，故没有求解结果。v17 修复导入。v18 把求解工作目录与可下载结果分开，输出结果、压缩日志和逐步监测数据，取消按大小删除文件。
+
+## 错误 14　启动器与求解程序的字段和判定不一致
+
+旧启动器读取 `pressure_drop_pa` 和 `resistance_coefficient`，而求解程序写 `dp_Pa` 和 `kz`。v18 提交的脚本直接计算、保存和显示同一份结果。用一组稳定的模拟监测数据验证，移除求解器收敛标志后，达标判定为假。
+
+## 错误 15　端口分组包含侧壁三角面
+
+原来按 5 mm 宽的轴向区间分组，入口混入 249 个侧面三角形，出口混入 247 个。逐个检查三顶点是否共面后，入口和出口各有 2964 个端面三角形。v18 固定积分入口体积流量，并核对两端实际流量与设定值的偏差。
