@@ -1,0 +1,41 @@
+{
+  "model": "valve_3d_57mm_opening",
+  "flow_rate_m3h": 100.0,
+  "inlet_velocity_ms": 0.8841941282883073,
+  "reynolds": 168344.0241348711,
+  "limits": {
+    "imbalance": 0.001,
+    "flux_error": 0.001,
+    "dp_span": 0.005,
+    "target_kz": 6.0
+  },
+  "target_dp_Pa": 2403.8238159496696,
+  "pressure_basis": "area-mean static pressure between pipe end planes, including straight extensions",
+  "seawater_study": {
+    "temperature_C": 20,
+    "salinity_g_kg": 35,
+    "density_kg_m3": 1024.9109328963,
+    "kinematic_viscosity_m2_s": 1.0504609627009073e-06
+  },
+  "geometry": {
+    "source_step": "valve_geometry.step",
+    "surfaces_total": 132,
+    "inlet_surfaces": [
+      79
+    ],
+    "outlet_surfaces": [
+      34
+    ],
+    "wall_surfaces_count": 130,
+    "volume_m3": 0.06414242614375955,
+    "inlet_area_m2": 0.031415926535897934,
+    "outlet_area_m2": 0.031415926535897934,
+    "mesh_size_mm": 5.0
+  },
+  "cells": 498572,
+  "native_mesh_ok": false,
+  "single_region_probes": true,
+  "success": false,
+  "pass": false,
+  "error": "Mesh not qualified for solving:  -0.099824373176432 -0.099956083650879) (1.2 0.1 0.099956083650879)\n    inlet               535      295      ok (non-closed singly connected)   (-0.6 -0.099824373176432 -0.099956083650879) (-0.6 0.1 0.099956083650879)\n\nChecking geometry...\n    Overall domain bounding box (-0.6 -0.145 -0.14499999998027) (1.2 0.145 0.332)\n    Mesh has 3 geometric (non-empty/wedge) directions (1 1 1)\n    Mesh has 3 solution (non-empty) directions (1 1 1)\n    Boundary openness (9.9123204813336e-18 -1.6162740268839e-16 -6.2157805944662e-17) OK.\n    Max cell openness = 6.5115354807021e-15 OK.\n    Max aspect ratio = 307.4213031024 OK.\n    Minimum face area = 2.3888866939854e-09. Maximum face area = 0.00021474414198425.  Face area magnitudes OK.\n    Min volume = 1.5923433354619e-14. Max volume = 9.1148082769092e-07.  Total volume = 0.064033925607267.  Cell volumes OK.\n    Mesh non-orthogonality Max: 89.508728256817 average: 28.147529024047\n   *Number of severely non-orthogonal (> 70 degrees) faces: 11865.\n    Non-orthogonality check OK.\n  <<Writing 11865 non-orthogonal faces to set nonOrthoFaces\n    Face pyramids OK.\n ***Max skewness = 6.0771501115204, 1097 highly skew faces detected which may impair the quality of the results\n  <<Writing 1097 skew faces to set skewFaces\n    Coupled point location match (average 0) OK.\n    Face tets OK.\n    Min/max edge length = 4.9999999999998e-05 0.026159473932644 OK.\n    All angles in faces OK.\n    All face flatness OK.\n    Cell determinant (wellposedness) : minimum: 0 average: 0.62781091762189\n ***Cells with small determinant (< 0.001) found, number of cells: 57236\n  <<Writing 57236 under-determined cells to set underdeterminedCells\n    Concave cell check OK.\n    Face interpolation weight : minimum: 0.0024853645669393 average: 0.40620709194088\n ***Faces with small interpolation weight (< 0.05) found, number of faces: 27333\n  <<Writing 27333 faces with low interpolation weights to set lowWeightFaces\n    Face volume ratio : minimum: 0.0024915569944097 average: 0.74129512686635\n ***Faces with small volume ratio (< 0.01) found, number of faces: 1198\n  <<Writing 1198 faces with low volume ratio cells to set lowVolRatioFaces\n\nFailed 4 mesh checks.\n\nEnd\n\n"
+}
