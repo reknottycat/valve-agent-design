@@ -1,4 +1,4 @@
-# Valve Agent Framework — private research foundation
+# Valve Agent Framework — research foundation
 
 Status: tested foundation, not a completed CAD/CFD agent or manufacturing release.
 
@@ -16,7 +16,7 @@ Status: tested foundation, not a completed CAD/CFD agent or manufacturing releas
 - `research/reusable-framework-20261022/framework/evidence_contract.py`: basic claim/scope/verification contract.
 - Original pressure/drive calculator bytes preserved with provenance. Only pure screw arithmetic was replayed against 12 saved scenarios, not the entire original load-study executable.
 
-The active [57 mm research runner](../../verification/valve-3d-cfd-57mm/valve_3d_cfd.py) calls the Foundation 11 evidence gates before starting the solver. The gate replay tests use archived runs v18–v21; a passing preflight is not evidence of product compliance.
+The paused [57 mm research runner](../../verification/valve-3d-cfd-57mm/valve_3d_cfd.py) refuses a new run before any external action. The Foundation 11 gates remain available for offline replay. The gate replay tests use archived runs v18–v21; a passing preflight is not evidence of product compliance.
 
 [Official ball-valve baseline and one-parameter sensitivity](../evidence/official-ball-valve/result.json): both transient runs reached 1 s. The archived example exercises parameter-to-flow automation, not the 57 mm product acceptance test.
 
@@ -34,7 +34,7 @@ python -m unittest discover -s research/reusable-framework-20261022/tests -v
 NSC1 representative domain was continued from 680 to 960 on 2026-10-19. Its three 40-step pressure-change windows passed the scoped <0.1% milestone; this does not imply all initial residuals <1e-7, grid independence or full-valve validation. Do not rerun this milestone as if it were missing.
 
 ## Product integration
-Follow the [current DN200 plan](../../CURRENT_PLAN.md). The fixed-input runner is not yet an assembly-to-flow builder.
+See the [frozen baseline and engineering assessment](dn200-baseline-review.md). Follow the [current DN200 plan](../../CURRENT_PLAN.md). The fixed-input runner is not yet an assembly-to-flow builder.
 
 ## Preservation and release
-The existing R1 snapshot is unchanged. This branch is private; no publication license has been assigned to recovered project material. Framework code, licensed handbook knowledge and customer/project data must stay separate. Commercial interoperability requires geometric and metadata round-trip checks; STEP is not a guarantee of native feature-tree preservation. A future public release needs explicit selection of publishable assets and license review, not publication of this entire research archive.
+The existing R1 snapshot is unchanged. Repository visibility is not a license to redistribute project materials. Framework code, licensed handbook knowledge and customer/project data must stay separate. Commercial interoperability requires geometric and metadata round-trip checks; STEP is not a guarantee of native feature-tree preservation. A future public release needs explicit selection of publishable assets and license review, not publication of this entire research archive.
