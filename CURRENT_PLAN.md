@@ -4,6 +4,8 @@
 
 **当前判断：57 mm 固定研究姿态，100 m³/h，阻力系数未评估。** [最近的原始记录](verification/valve-3d-cfd-57mm/v22/result.json)中，覆盖与指定点连通通过，但网格质量失败，求解没有启动。[当前固定输入求解入口](verification/valve-3d-cfd-57mm/valve_3d_cfd.py)不是参数化设计器；[官方球阀对照](framework/evidence/official-ball-valve/result.json)仅证明工具链能处理参数变化。
 
+**同工况网格诊断进展**：[本阀坏单元坐标与局部修补实跑](verification/valve-3d-cfd-57mm/ring-localization/README.md)。保持壁面不动，环区修补后整网格低行列式由 4,657 降为 2,155，16 个低权重面未消除，严重非正交面增加；候选仍拒绝求解。不必等待第二开度装配才能处理现有 57 mm 网格。
+
 ## 按交付物推进，不按重试次数推进
 
 | 阶段 | 本阀要交什么 | 怎样验收、何时停止 |
