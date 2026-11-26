@@ -1,0 +1,77 @@
+{
+  "step_sha256": "a9aeb45996a388a3d894f69605205c70c25edd154adc6d3c71658329a730e787",
+  "gmsh_version": "4.15.2",
+  "fluid_solids": 1,
+  "faces": 132,
+  "main_fluid_volume_mm3": 64142426.14375954,
+  "ports": {
+    "inlet": {
+      "center_mm": [
+        -600.0,
+        1.4210854715202004e-14,
+        5.82076609134674e-15
+      ],
+      "area_mm2": 31415.926535897932
+    },
+    "outlet": {
+      "center_mm": [
+        1200.0,
+        1.4210854715202004e-14,
+        5.82076609134674e-15
+      ],
+      "area_mm2": 31415.926535897932
+    }
+  },
+  "guide_wall_distance_mm": 0.9999999826095849,
+  "guide_section": [
+    {
+      "p_mm": [
+        330.95,
+        0.17,
+        160
+      ],
+      "fluid": false
+    },
+    {
+      "p_mm": [
+        331.5,
+        0.17,
+        160
+      ],
+      "fluid": true
+    },
+    {
+      "p_mm": [
+        332.05,
+        0.17,
+        160
+      ],
+      "fluid": false
+    },
+    {
+      "p_mm": [
+        269.05,
+        0.17,
+        160
+      ],
+      "fluid": false
+    },
+    {
+      "p_mm": [
+        268.5,
+        0.17,
+        160
+      ],
+      "fluid": true
+    },
+    {
+      "p_mm": [
+        267.95,
+        0.17,
+        160
+      ],
+      "fluid": false
+    }
+  ],
+  "scope": "Existing main wet domain only. Guide wall pair, not a global minimum, seat gap or actual lift. No rebuild or flow calculation."
+}
