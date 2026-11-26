@@ -1,0 +1,8 @@
+{
+  "original_cells": 1291975,
+  "removed_shared_internal_faces": 3783,
+  "merged_pairs": 3783,
+  "expected_cells": 1288192,
+  "selected_low_weight_shared_faces": 1,
+  "original_bad_cells_touched": 3839
+}

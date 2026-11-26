@@ -59,3 +59,13 @@ def compare(original, candidate, old_log, new_log):
     v0,v1=volume(old_log),volume(new_log)
     return {'same_boundary_and_points':original==candidate, 'same_discrete_volume':v0>0 and math.isclose(v0,v1,rel_tol=1e-8,abs_tol=0),
             'no_additional_severe_faces':after<=before, 'before_severe_faces':before,'after_severe_faces':after,'before_volume_m3':v0,'after_volume_m3':v1}
+
+
+def confirm_pair_reduction(before_cells, after_cells, before_faces, after_faces, reported_pairs, removed_faces):
+    """For disjoint pair aggregation, each merge must eliminate its common interior face."""
+    ids=list(removed_faces)
+    if (type(reported_pairs) is not int or not ids or len(ids)!=reported_pairs or len(set(ids))!=len(ids)
+        or any(type(i) is not int or not 0<=i<before_faces for i in ids)
+        or before_cells-after_cells!=len(ids) or before_faces-after_faces!=len(ids)):
+        raise ValueError('Each pair must remove one real shared internal face and one cell; rebuild from native neighbours.')
+    return len(ids)
