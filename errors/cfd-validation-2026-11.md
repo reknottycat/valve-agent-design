@@ -207,3 +207,6 @@ v21 原生转换后有 498572 个单元。六个模型内部位置各自在唯�
 
 ## 不再用官方对照或一个局部指标代替本阀结果
 本阀两次独立定位逐点一致；一次真实网格修补改善了主要环区，但没有消除第二种失败，还增加了严重非正交面。[原始记录和回归入口](../verification/valve-3d-cfd-57mm/ring-localization/README.md)。这不是产品求解或放行。
+
+## 不能用配对数代替实际合并
+原始试验报告称合并 40 对，实测单元数、内部面数均未变。改为从同一原生网格取共面邻居，完整检查独立复算减少量，并存实际面编号。见 framework/tests/test_frozen_poly_repair.py 与 verification/valve-3d-cfd-57mm/opus-repair/。

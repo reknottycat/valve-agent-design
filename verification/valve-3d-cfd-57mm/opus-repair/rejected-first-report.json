@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "source": "test_polymesh",
+  "target": "patched_polymesh",
+  "statistics": {
+    "input_cells": 1291975,
+    "output_cells": 1291975,
+    "cells_merged": 40,
+    "cells_deleted": 40,
+    "input_internal_faces": 2402416,
+    "output_internal_faces": 2402416,
+    "internal_faces_deleted": 0
+  },
+  "status": "success"
+}

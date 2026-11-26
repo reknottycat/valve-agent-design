@@ -30,3 +30,25 @@ class FrozenMesh(unittest.TestCase):
             write('faces',[faces[0],faces[1],faces[3],faces[2]]); self.assertEqual(original,envelope(case))
             write('faces',['3(0 2 1)',*faces[1:]]);self.assertNotEqual(original,envelope(case))
             write('faces',faces);write('points',[*verts[:-1],'(0 0 1.01)']); self.assertNotEqual(original,envelope(case))
+
+    def test_reject_claimed_merges_with_no_reduction(self):
+        import json
+        from frozen_poly_repair import confirm_pair_reduction
+        p=ROOT/'verification/valve-3d-cfd-57mm/opus-repair/rejected-first-report.json'
+        result=json.loads(p.read_bytes());s=result['statistics'];self.assertEqual(result['status'],'success')
+        with self.assertRaisesRegex(ValueError,'real shared'):
+            confirm_pair_reduction(s['input_cells'],s['output_cells'],s['input_internal_faces'],s['output_internal_faces'],s['cells_merged'],[])
+        self.assertEqual(confirm_pair_reduction(4,3,3,2,1,[0]),1)
+        with self.assertRaises(ValueError):confirm_pair_reduction(4,2,3,1,2,[0,0])
+
+    def test_actual_native_pair_aggregation(self):
+        import re,json
+        from frozen_poly_repair import confirm_pair_reduction
+        folder=ROOT/'verification/valve-3d-cfd-57mm/opus-repair'
+        with zipfile.ZipFile(folder/'native-record.zip') as z:
+            def counts(name):
+                t=z.read(name).decode();return [int(re.search(r'^\s*'+k+r':\s*(\d+)\s*$',t,re.M)[1]) for k in ('cells','internal faces')]
+            ac,af=counts('baseline.log');bc,bf=counts('candidate.log');m=json.loads(z.read('merge.json'));ids=list(map(int,z.read('removed_native_face_ids.txt').split()));r=json.loads(z.read('result.json'))
+            self.assertEqual(confirm_pair_reduction(ac,bc,af,bf,m['merged_pairs'],ids),m['removed_shared_internal_faces']);self.assertEqual(bc,m['expected_cells'])
+            self.assertEqual(r['candidate_envelope'],r['baseline_envelope']);self.assertTrue(r['mesh_checks']['connected_fluid_points']);
+            if not r['mesh_checks']['native_quality']:self.assertFalse(r['solver_started']);self.assertEqual(r['study_assessment'],'not_evaluated')

@@ -1,0 +1,65 @@
+{
+  "goal": "DN200 57mm 100m3/h; pressure and Kz under frozen study conditions",
+  "solver_started": false,
+  "study_assessment": "not_evaluated",
+  "comparison_resolution_verified": false,
+  "task_completed": false,
+  "baseline_envelope": {
+    "point_count": 305152,
+    "ordered_xyz_sha256": "28e1bb2b177d3be31e2d64211ee174d607e83ec456dd8022021f92142bfa3e3f",
+    "oriented_boundary_faces": {
+      "valve": [
+        "wall",
+        362000,
+        "1b9cbfdec1312a4125bb96953c9e44b4f373b8b8a8eff53eecd897efa8aff286"
+      ],
+      "outlet": [
+        "patch",
+        535,
+        "fdab1597f0b5cf7d6cb889e90e29de5522d486dc026b182e11350cdbdeae1597"
+      ],
+      "inlet": [
+        "patch",
+        533,
+        "7eae83a32e4efe71a5fe662f57c1cb98292b03632bcca723ca63535a48be6342"
+      ]
+    }
+  },
+  "candidate_envelope": {
+    "point_count": 305152,
+    "ordered_xyz_sha256": "28e1bb2b177d3be31e2d64211ee174d607e83ec456dd8022021f92142bfa3e3f",
+    "oriented_boundary_faces": {
+      "valve": [
+        "wall",
+        362000,
+        "1b9cbfdec1312a4125bb96953c9e44b4f373b8b8a8eff53eecd897efa8aff286"
+      ],
+      "outlet": [
+        "patch",
+        535,
+        "fdab1597f0b5cf7d6cb889e90e29de5522d486dc026b182e11350cdbdeae1597"
+      ],
+      "inlet": [
+        "patch",
+        533,
+        "7eae83a32e4efe71a5fe662f57c1cb98292b03632bcca723ca63535a48be6342"
+      ]
+    }
+  },
+  "comparison": {
+    "same_boundary_and_points": true,
+    "same_discrete_volume": true,
+    "no_additional_severe_faces": true,
+    "before_severe_faces": 6514,
+    "after_severe_faces": 6247,
+    "before_volume_m3": 0.064034629336831,
+    "after_volume_m3": 0.06403462933683
+  },
+  "mesh_checks": {
+    "foundation11_full_check": true,
+    "native_quality": false,
+    "extent_in_metres": true,
+    "cell_count": true,
+    "connected_fluid_points": true
+  }
+}
