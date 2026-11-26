@@ -13,3 +13,8 @@ Remaining distinctions:
 - Final retained volume-mesh patch mapping and solver acceptance remain separate; the historical pose report does not establish them.
 
 Stopped after recovering source-to-pose chain; no geometry reconstruction, new mesh or CFD. Reproduce extraction using included FDG1 JSONs and existing PRODUCT_INDEX.json: `python3 extract_pose_chain.py FDG1_验证摘要.json FDG1_模型范围与单位.json /path/to/PRODUCT_INDEX.json`.
+
+## Current reconstruction inputs (not a second pose)
+`python3 qualify_inputs.py DIRECTORY` checks the exact relative paths and original SHA-256 identities (including the C2 model builder recorded in the original source manifest); exits 2 for missing or substituted bytes. It never runs recovered code. See [the actual input inventory](source_recovery.json). `INPUTS.json` and `source/SOURCE_MANIFEST.json` were recovered from the original review JSON by serialization and matched the original hashes. The C2 builder and parameters matched `runs/20261006/C2/T12/build_lift_model.py` and `C2/T11/parameters.json` under revision `aa80b87b6ee9617754101a238f70bec99393ad9a`. The remaining inputs cannot be inferred from the final wet-domain STEP.
+
+`python3 measure_reference.py REFERENCE.step` (Gmsh Python 4.15.2) reads that specific STEP and checks the end faces, main volume and one guide wall pair with two radial probe groups. [Measured reference](measured_reference.json). This is a fresh reading of the frozen fluid shape, not a regenerated assembly, global minimum clearance, or flow result. CI replays the saved measurements against the historical CAD report; it does not import STEP.

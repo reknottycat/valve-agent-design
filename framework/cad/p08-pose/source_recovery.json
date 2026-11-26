@@ -1,0 +1,23 @@
+{
+  "inputs": {
+    "INPUTS.json": "verified",
+    "build_fluid_domain.py": "missing",
+    "output/AGR1_open_seal_omitted_proxy_main_mm.step": "verified",
+    "source/C2_build_lift_model.py": "verified",
+    "source/C2_parameters.json": "verified",
+    "source/GA1_A05_PARAMETERS.json": "missing",
+    "source/SOURCE_MANIFEST.json": "verified",
+    "source/body_source.step": "missing",
+    "source/cage_AGR1.step": "missing",
+    "source/cover_AGR1.step": "missing",
+    "source/disc_AGR1.step": "missing",
+    "source/gasket_2mm_uncompressed_envelope.step": "missing",
+    "source/mount_fastener_envelopes.step": "missing",
+    "source/retainer_source.step": "missing",
+    "source/seat_source.step": "missing",
+    "source/shoe_source.step": "missing",
+    "source/stem_source.step": "missing"
+  },
+  "originals_verified": false,
+  "reference_step_verified": true
+}
