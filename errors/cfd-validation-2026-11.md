@@ -210,3 +210,6 @@ v21 原生转换后有 498572 个单元。六个模型内部位置各自在唯�
 
 ## 不能用配对数代替实际合并
 原始试验报告称合并 40 对，实测单元数、内部面数均未变。改为从同一原生网格取共面邻居，完整检查独立复算减少量，并存实际面编号。见 framework/tests/test_frozen_poly_repair.py 与 verification/valve-3d-cfd-57mm/opus-repair/。
+
+## 收口：重复修补必须改变决策
+不能因另一指标改善而反复重试同一未通过的验收关口。四份同族整网格原生失败已绑定到 `study_retry` 检查；[基线评估](../framework/docs/dn200-baseline-review.md)记录处置与再启动条件。仓库根目录的三份 v1912 启动失败日志已按原字节移至 [历史日志](legacy-startup-1912/)，均为缺少 controlDict，不是本阀压力结果。

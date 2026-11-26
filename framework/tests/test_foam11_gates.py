@@ -80,6 +80,6 @@ class HistoricalRegressions(unittest.TestCase):
             w=Path(tmp);(w/'out').mkdir();(w/'job').mkdir();meta=b'{}';data=gzip.compress(b'synthetic conversion input');realhash=hashlib.sha256
             def download(cmd,**kwargs): Path(cmd[cmd.index('-o')+1]).write_bytes(meta if cmd[-1].endswith('json') else data)
             # Keep production hash checks active, substituting fixture assets and digests.
-            with patch.dict(os.environ,OUTPUT_DIR=str(w/'out')),patch.dict(main.__globals__,run=fake_run,install_openfoam=lambda w:None,ASSET_HASHES={'geometry_metadata.json':realhash(meta).hexdigest(),self.runner['MESH_ASSET']:realhash(data).hexdigest()}),patch('subprocess.run',download),patch('tempfile.mkdtemp',return_value=str(w/'job')):
+            with patch('study_retry.require_fixed_study_run'),patch.dict(os.environ,OUTPUT_DIR=str(w/'out')),patch.dict(main.__globals__,run=fake_run,install_openfoam=lambda w:None,ASSET_HASHES={'geometry_metadata.json':realhash(meta).hexdigest(),self.runner['MESH_ASSET']:realhash(data).hexdigest()}),patch('subprocess.run',download),patch('tempfile.mkdtemp',return_value=str(w/'job')):
                 with self.assertRaisesRegex(ValueError,'native_quality'):main()
             r=json.loads((w/'out/result.json').read_text());self.assertFalse(r['solver_started']);self.assertEqual(r['study_assessment'],'not_evaluated');self.assertNotIn('foamRun',seen);self.assertTrue((w/'out/checkMesh.log.gz').exists())

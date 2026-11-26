@@ -520,7 +520,9 @@ MESH_ASSET = 'open57-ring-v22-si.msh.gz'
 ASSET_HASHES = {'geometry_metadata.json':'ed0bbb43dec32dd3a3846b183780c8bbf70b25c4b761eaf30ded18cbd02d125c', MESH_ASSET:'5e3a72898fe148b5fcfcd38bd0d7b7e5636439ae144ada446f7a2982b3e58a81'}
 
 def main():
-    """Main execution pipeline."""
+    """Fixed-input research pipeline; consult the frozen route before any side effects."""
+    from study_retry import require_fixed_study_run
+    require_fixed_study_run()
     work = Path(tempfile.mkdtemp(prefix='valve-cfd-'))
     output = Path(os.environ.get('OUTPUT_DIR', '/kaggle/working/valve-3d'))
     output.mkdir(parents=True, exist_ok=True)
